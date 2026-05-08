@@ -1,0 +1,8 @@
+beautifulsoup4
+pandas
+pillow
+pytesseract
+requests
+PyMuPDF
+# Optional browser fallback:
+# playwright
