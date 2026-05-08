@@ -109,7 +109,13 @@ class ActionLogger:
 
 
 def parse_mmddyyyy(value: str) -> datetime:
-    return datetime.strptime(value, "%m/%d/%Y")
+    value = value.strip()
+    for fmt in ("%m/%d/%Y", "%Y-%m-%d"):
+        try:
+            return datetime.strptime(value, fmt)
+        except ValueError:
+            continue
+    raise ValueError(f"Date must be MM/DD/YYYY or YYYY-MM-DD, got: {value}")
 
 
 def iter_dates(start: str, end: str) -> Iterable[str]:
