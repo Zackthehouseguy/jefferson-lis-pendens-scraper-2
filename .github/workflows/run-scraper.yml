@@ -24,6 +24,12 @@ on:
         required: false
         default: "auto"
         type: string
+      ingest_url:
+        required: true
+        type: string
+      ingest_token:
+        required: true
+        type: string
 
 jobs:
   run-scraper:
@@ -48,29 +54,46 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Mark run as running in Supabase
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      - name: Mark run as running
         run: |
-          python .github/scripts/upload_results_to_supabase.py             --run-id "${{ inputs.run_id }}"             --mark-running
+          python .github/scripts/update_run.py \
+            --run-id "${{ inputs.run_id }}" \
+            --ingest-url "${{ inputs.ingest_url }}" \
+            --ingest-token "${{ inputs.ingest_token }}" \
+            --status running \
+            --message "GitHub Actions worker started."
 
       - name: Run scraper
         id: scrape
         continue-on-error: true
         run: |
           mkdir -p scraper_output
-          python jefferson_lis_pendens_scraper.py             --start-date "${{ inputs.start_date }}"             --end-date "${{ inputs.end_date }}"             --output-dir scraper_output             --pva-cross-check             --search-mode "${{ inputs.search_mode }}"
+          EXTRA_FLAGS=""
+          if [ "${{ inputs.pva_cross_check }}" = "true" ]; then EXTRA_FLAGS="$EXTRA_FLAGS --pva-cross-check"; fi
+          if [ "${{ inputs.resume }}" = "true" ]; then EXTRA_FLAGS="$EXTRA_FLAGS --resume"; fi
+          python jefferson_lis_pendens_scraper.py \
+            --start-date "${{ inputs.start_date }}" \
+            --end-date "${{ inputs.end_date }}" \
+            --output-dir scraper_output \
+            --search-mode "${{ inputs.search_mode }}" \
+            $EXTRA_FLAGS
 
-      - name: Upload results to Supabase
+      - name: Upload results to Lovable ingest endpoint
         if: always()
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
         run: |
-          FAILED_FLAG=""
-          if [ "${{ steps.scrape.outcome }}" != "success" ]; then FAILED_FLAG="--failed"; fi
-          python .github/scripts/upload_results_to_supabase.py             --run-id "${{ inputs.run_id }}"             --output-dir scraper_output             --finalize $FAILED_FLAG
+          STATUS="completed"
+          ERROR_MESSAGE=""
+          if [ "${{ steps.scrape.outcome }}" != "success" ]; then
+            STATUS="failed"
+            ERROR_MESSAGE="Scraper failed in GitHub Actions. Check action_log.txt and workflow logs."
+          fi
+          python .github/scripts/upload_results.py \
+            --run-id "${{ inputs.run_id }}" \
+            --ingest-url "${{ inputs.ingest_url }}" \
+            --ingest-token "${{ inputs.ingest_token }}" \
+            --output-dir scraper_output \
+            --status "$STATUS" \
+            --error-message "$ERROR_MESSAGE"
 
       - name: Upload scraper output artifact
         if: always()
