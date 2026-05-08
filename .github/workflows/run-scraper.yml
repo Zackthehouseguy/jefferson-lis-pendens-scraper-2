@@ -48,18 +48,37 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Mark run as running in Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          python .github/scripts/upload_results_to_supabase.py             --run-id "${{ inputs.run_id }}"             --mark-running
+
       - name: Run scraper
+        id: scrape
+        continue-on-error: true
         run: |
           mkdir -p scraper_output
-          python jefferson_lis_pendens_scraper.py \
-            --start-date "${{ inputs.start_date }}" \
-            --end-date "${{ inputs.end_date }}" \
-            --output-dir scraper_output \
-            --pva-cross-check \
-            --search-mode "${{ inputs.search_mode }}"
+          python jefferson_lis_pendens_scraper.py             --start-date "${{ inputs.start_date }}"             --end-date "${{ inputs.end_date }}"             --output-dir scraper_output             --pva-cross-check             --search-mode "${{ inputs.search_mode }}"
+
+      - name: Upload results to Supabase
+        if: always()
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          FAILED_FLAG=""
+          if [ "${{ steps.scrape.outcome }}" != "success" ]; then FAILED_FLAG="--failed"; fi
+          python .github/scripts/upload_results_to_supabase.py             --run-id "${{ inputs.run_id }}"             --output-dir scraper_output             --finalize $FAILED_FLAG
 
       - name: Upload scraper output artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: scraper-output-${{ inputs.run_id }}
           path: scraper_output/
+
+      - name: Fail workflow if scraper failed
+        if: steps.scrape.outcome != 'success'
+        run: exit 1
