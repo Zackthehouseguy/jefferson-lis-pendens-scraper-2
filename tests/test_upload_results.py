@@ -117,5 +117,223 @@ class LouisvilleRecordParsingTests(unittest.TestCase):
             self.assertIsNone(r["pva_verification_link"])
 
 
+def _meta_louisville() -> dict:
+    return {
+        "source_type": "louisville_code_violations",
+        "label": "Louisville Code Violations",
+        "csv_name": "louisville_code_violations_results.csv",
+        "schema": "louisville_code_violations",
+    }
+
+
+def _make_records(n: int) -> list[dict]:
+    return [
+        {
+            "run_id": "run-x",
+            "filing_date": "2026-05-08",
+            "instrument_number": f"PMV-2026-{i:06d}",
+            "parties": "X",
+            "property_address": f"{i} MAIN ST",
+            "pdf_link": "",
+            "notes": "",
+            "pva_verification_link": None,
+        }
+        for i in range(n)
+    ]
+
+
+class BuildPayloadsTests(unittest.TestCase):
+    def test_small_completed_run_emits_single_payload(self) -> None:
+        records = _make_records(50)
+        files = {"csv": {"filename": "x.csv", "content_type": "text/csv", "base64": "", "size": 0}}
+        payloads = upload_results.build_payloads(
+            run_id="run-x",
+            status="completed",
+            error_message="",
+            meta=_meta_louisville(),
+            records=records,
+            files=files,
+            summary={"total_records": 50, "addresses_found": 50, "failures": 0, "source_type": "louisville_code_violations"},
+            record_batch_size=100,
+        )
+        self.assertEqual(len(payloads), 1)
+        only = payloads[0]
+        self.assertEqual(only["status"], "completed")
+        self.assertEqual(len(only["records"]), 50)
+        self.assertEqual(only["files"], files)
+        self.assertTrue(only["is_final"])
+        self.assertFalse(only["is_partial"])
+        self.assertEqual(only["batch_count"], 1)
+
+    def test_failed_status_never_batches(self) -> None:
+        records = _make_records(841)
+        payloads = upload_results.build_payloads(
+            run_id="run-fail",
+            status="failed",
+            error_message="boom",
+            meta=_meta_louisville(),
+            records=records,
+            files={},
+            summary={"total_records": 841, "addresses_found": 0, "failures": 0, "source_type": "louisville_code_violations"},
+            record_batch_size=100,
+        )
+        self.assertEqual(len(payloads), 1)
+        self.assertEqual(payloads[0]["status"], "failed")
+        self.assertEqual(payloads[0]["error_message"], "boom")
+        self.assertEqual(len(payloads[0]["records"]), 841)
+
+    def test_large_completed_run_splits_records_then_files_only_final(self) -> None:
+        records = _make_records(841)
+        files = {
+            "csv": {"filename": "x.csv", "content_type": "text/csv", "base64": "", "size": 0},
+            "source_records_json": {"filename": "j.json", "content_type": "application/json", "base64": "", "size": 0},
+        }
+        summary = {"total_records": 841, "addresses_found": 800, "failures": 41, "source_type": "louisville_code_violations"}
+        payloads = upload_results.build_payloads(
+            run_id="run-big",
+            status="completed",
+            error_message="",
+            meta=_meta_louisville(),
+            records=records,
+            files=files,
+            summary=summary,
+            record_batch_size=100,
+        )
+        # 9 record batches (8 full, 1 partial of 41) + 1 final files-only
+        self.assertEqual(len(payloads), 10)
+
+        # Partial batches: status completed, records present, files empty, is_partial true.
+        recombined: list[dict] = []
+        for i, p in enumerate(payloads[:-1]):
+            self.assertEqual(p["status"], "completed")
+            self.assertTrue(p["is_partial"])
+            self.assertFalse(p["is_final"])
+            self.assertEqual(p["files"], {})
+            self.assertEqual(p["batch_index"], i)
+            self.assertEqual(p["batch_count"], 10)
+            self.assertEqual(p["run_id"], "run-big")
+            self.assertEqual(p["action"], "finalize_results")
+            self.assertEqual(p["type"], "scraper_results")
+            self.assertEqual(p["summary"], summary)
+            recombined.extend(p["records"])
+        self.assertEqual(len(recombined), 841)
+        # Records preserved in order, no duplicates, no losses.
+        self.assertEqual(
+            [r["instrument_number"] for r in recombined],
+            [r["instrument_number"] for r in records],
+        )
+
+        final = payloads[-1]
+        self.assertEqual(final["records"], [])
+        self.assertEqual(final["files"], files)
+        self.assertTrue(final["is_final"])
+        self.assertFalse(final["is_partial"])
+        self.assertEqual(final["status"], "completed")
+        self.assertEqual(final["batch_index"], 9)
+        self.assertEqual(final["batch_count"], 10)
+        # The summary on the final payload reflects the full record count even
+        # though records=[] (Lovable should rely on this for run-level state).
+        self.assertEqual(final["summary"]["total_records"], 841)
+
+    def test_exactly_batch_size_is_single_payload(self) -> None:
+        records = _make_records(100)
+        payloads = upload_results.build_payloads(
+            run_id="run-eq",
+            status="completed",
+            error_message="",
+            meta=_meta_louisville(),
+            records=records,
+            files={},
+            summary={"total_records": 100, "addresses_found": 0, "failures": 0, "source_type": "louisville_code_violations"},
+            record_batch_size=100,
+        )
+        self.assertEqual(len(payloads), 1)
+        self.assertEqual(len(payloads[0]["records"]), 100)
+
+    def test_empty_records_completed_emits_single_payload(self) -> None:
+        payloads = upload_results.build_payloads(
+            run_id="run-empty",
+            status="completed",
+            error_message="",
+            meta=_meta_louisville(),
+            records=[],
+            files={},
+            summary={"total_records": 0, "addresses_found": 0, "failures": 0, "source_type": "louisville_code_violations"},
+            record_batch_size=100,
+        )
+        self.assertEqual(len(payloads), 1)
+        self.assertEqual(payloads[0]["records"], [])
+        self.assertTrue(payloads[0]["is_final"])
+
+
+class ResolveBatchSizeTests(unittest.TestCase):
+    def test_cli_value_wins(self) -> None:
+        self.assertEqual(upload_results._resolve_record_batch_size(50), 50)
+
+    def test_env_var_used_when_no_cli(self) -> None:
+        import os
+        original = os.environ.get("UPLOAD_RECORD_BATCH_SIZE")
+        os.environ["UPLOAD_RECORD_BATCH_SIZE"] = "25"
+        try:
+            self.assertEqual(upload_results._resolve_record_batch_size(None), 25)
+        finally:
+            if original is None:
+                os.environ.pop("UPLOAD_RECORD_BATCH_SIZE", None)
+            else:
+                os.environ["UPLOAD_RECORD_BATCH_SIZE"] = original
+
+    def test_default_when_nothing_set(self) -> None:
+        import os
+        original = os.environ.pop("UPLOAD_RECORD_BATCH_SIZE", None)
+        try:
+            self.assertEqual(
+                upload_results._resolve_record_batch_size(None),
+                upload_results.DEFAULT_RECORD_BATCH_SIZE,
+            )
+        finally:
+            if original is not None:
+                os.environ["UPLOAD_RECORD_BATCH_SIZE"] = original
+
+    def test_invalid_env_falls_back_to_default(self) -> None:
+        import os
+        original = os.environ.get("UPLOAD_RECORD_BATCH_SIZE")
+        os.environ["UPLOAD_RECORD_BATCH_SIZE"] = "not-a-number"
+        try:
+            self.assertEqual(
+                upload_results._resolve_record_batch_size(None),
+                upload_results.DEFAULT_RECORD_BATCH_SIZE,
+            )
+        finally:
+            if original is None:
+                os.environ.pop("UPLOAD_RECORD_BATCH_SIZE", None)
+            else:
+                os.environ["UPLOAD_RECORD_BATCH_SIZE"] = original
+
+
+class PostIngestErrorTests(unittest.TestCase):
+    def test_http_error_includes_body_and_redacts_token(self) -> None:
+        import requests
+
+        class FakeResponse:
+            ok = False
+            status_code = 500
+            text = "boom: token=secret-token-123 was used"
+
+        original_post = requests.post
+        requests.post = lambda *a, **kw: FakeResponse()  # type: ignore[assignment]
+        try:
+            with self.assertRaises(requests.HTTPError) as ctx:
+                upload_results.post_ingest(
+                    "https://example.com/ingest", "secret-token-123", {"x": 1}
+                )
+            msg = str(ctx.exception)
+            self.assertIn("HTTP 500", msg)
+            self.assertIn("boom", msg)
+            self.assertNotIn("secret-token-123", msg)
+            self.assertIn("[REDACTED]", msg)
+        finally:
+            requests.post = original_post  # type: ignore[assignment]
+
+
 if __name__ == "__main__":
     unittest.main()

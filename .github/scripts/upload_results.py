@@ -9,6 +9,7 @@ import json
 import mimetypes
 import os
 import re
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
@@ -23,6 +24,8 @@ import requests
 JEFFERSON_SCHEMAS = {"jefferson_deeds"}
 LOUISVILLE_SCHEMA = "louisville_code_violations"
 INDIANAPOLIS_SCHEMA = "indianapolis_code_violations"
+
+DEFAULT_RECORD_BATCH_SIZE = 100
 
 
 def utc_now() -> str:
@@ -168,6 +171,12 @@ def encode_file(path: Path) -> dict | None:
 
 
 def post_ingest(ingest_url: str, ingest_token: str, payload: dict) -> None:
+    """POST a payload to the ingest endpoint.
+
+    Raises requests.HTTPError on non-2xx, with the response body included in the
+    exception message (with the bearer token redacted) so workflow logs are
+    actionable.
+    """
     response = requests.post(
         ingest_url,
         headers={
@@ -177,7 +186,24 @@ def post_ingest(ingest_url: str, ingest_token: str, payload: dict) -> None:
         json=payload,
         timeout=120,
     )
-    response.raise_for_status()
+    if not response.ok:
+        body_excerpt = (response.text or "")[:2000]
+        # Defense-in-depth: never echo the token even if a server reflects it back.
+        if ingest_token:
+            body_excerpt = body_excerpt.replace(ingest_token, "[REDACTED]")
+        raise requests.HTTPError(
+            f"Ingest POST failed: HTTP {response.status_code} from {ingest_url}. "
+            f"Response body: {body_excerpt}",
+            response=response,
+        )
+
+
+def _chunked(seq: list, size: int):
+    if size <= 0:
+        yield seq
+        return
+    for i in range(0, len(seq), size):
+        yield seq[i : i + size]
 
 
 def _resolve_meta(output_dir: Path, source_type_arg: str | None) -> dict:
@@ -218,6 +244,108 @@ def _resolve_meta(output_dir: Path, source_type_arg: str | None) -> dict:
     return fallback.get(source_type, fallback["lis_pendens"])
 
 
+def build_payloads(
+    *,
+    run_id: str,
+    status: str,
+    error_message: str,
+    meta: dict,
+    records: list[dict],
+    files: dict,
+    summary: dict,
+    record_batch_size: int,
+    timestamp: str | None = None,
+    github_run_id: str | None = None,
+    github_run_attempt: str | None = None,
+    github_repository: str | None = None,
+) -> list[dict]:
+    """Build the ordered list of payloads to POST.
+
+    Behaviour:
+      * If status != "completed", or records fit within record_batch_size, return
+        a single payload (preserves existing single-shot behavior used by small
+        Lis Pendens / Wills uploads and failure reports).
+      * Otherwise emit N partial payloads carrying record batches (no files,
+        status=completed, is_partial=true) followed by one final payload with
+        the full files object and an empty records array (is_final=true,
+        is_partial=false). Both partial and final payloads keep the canonical
+        action/type/run_id/status/summary fields, so any Lovable endpoint that
+        ignores unknown keys still sees a valid finalize_results message.
+
+    The final payload is guaranteed to be the last write, so the run's terminal
+    state is whatever the final payload sets (status=completed).
+    """
+    ts = timestamp or utc_now()
+    base = {
+        "action": "finalize_results",
+        "type": "scraper_results",
+        "run_id": run_id,
+        "status": status,
+        "error_message": error_message or None,
+        "github_run_id": github_run_id,
+        "github_run_attempt": github_run_attempt,
+        "github_repository": github_repository,
+        "timestamp": ts,
+        "source_type": meta["source_type"],
+        "source_label": meta["label"],
+        "source_schema": meta["schema"],
+        "summary": summary,
+    }
+
+    single_shot = status != "completed" or len(records) <= record_batch_size
+    if single_shot:
+        payload = dict(base)
+        payload["records"] = records
+        payload["files"] = files
+        payload["is_partial"] = False
+        payload["is_final"] = True
+        payload["batch_index"] = 0
+        payload["batch_count"] = 1
+        return [payload]
+
+    batches = list(_chunked(records, record_batch_size))
+    total = len(batches)
+    payloads: list[dict] = []
+    for idx, batch in enumerate(batches):
+        partial = dict(base)
+        partial["records"] = batch
+        # No files in record batches; keep payloads small. Lovable's records
+        # upsert by (run_id, instrument_number), so resending is safe.
+        partial["files"] = {}
+        partial["is_partial"] = True
+        partial["is_final"] = False
+        partial["batch_index"] = idx
+        partial["batch_count"] = total + 1  # +1 for the final files-only payload
+        payloads.append(partial)
+
+    final = dict(base)
+    # Final payload carries no records (already upserted via batches) but the
+    # full files object and is_final=true so the run's terminal state lands
+    # with summary + artifacts attached.
+    final["records"] = []
+    final["files"] = files
+    final["is_partial"] = False
+    final["is_final"] = True
+    final["batch_index"] = total
+    final["batch_count"] = total + 1
+    payloads.append(final)
+    return payloads
+
+
+def _resolve_record_batch_size(cli_value: int | None) -> int:
+    if cli_value is not None and cli_value > 0:
+        return cli_value
+    env_value = os.environ.get("UPLOAD_RECORD_BATCH_SIZE")
+    if env_value:
+        try:
+            parsed = int(env_value)
+            if parsed > 0:
+                return parsed
+        except ValueError:
+            pass
+    return DEFAULT_RECORD_BATCH_SIZE
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Upload scraper results to Lovable ingest endpoint.")
     parser.add_argument("--run-id", required=True)
@@ -230,6 +358,17 @@ def main() -> int:
         "--source-type",
         default=None,
         help="Optional override; otherwise read from source_meta.json or defaults to lis_pendens.",
+    )
+    parser.add_argument(
+        "--record-batch-size",
+        type=int,
+        default=None,
+        help=(
+            "Maximum number of records per ingest POST. Larger result sets are "
+            "split into multiple partial payloads followed by a final files-only "
+            "payload. Defaults to UPLOAD_RECORD_BATCH_SIZE env var or "
+            f"{DEFAULT_RECORD_BATCH_SIZE}."
+        ),
     )
     args = parser.parse_args()
 
@@ -265,29 +404,60 @@ def main() -> int:
         if encoded:
             files[key] = encoded
 
-    payload = {
-        "action": "finalize_results",
-        "type": "scraper_results",
-        "run_id": args.run_id,
-        "status": args.status,
-        "error_message": args.error_message or None,
-        "github_run_id": os.environ.get("GITHUB_RUN_ID"),
-        "github_run_attempt": os.environ.get("GITHUB_RUN_ATTEMPT"),
-        "github_repository": os.environ.get("GITHUB_REPOSITORY"),
-        "timestamp": utc_now(),
+    summary = {
+        "total_records": len(records),
+        "addresses_found": addresses_found,
+        "failures": failures,
         "source_type": meta["source_type"],
-        "source_label": meta["label"],
-        "source_schema": meta["schema"],
-        "summary": {
-            "total_records": len(records),
-            "addresses_found": addresses_found,
-            "failures": failures,
-            "source_type": meta["source_type"],
-        },
-        "records": records,
-        "files": files,
     }
-    post_ingest(args.ingest_url, args.ingest_token, payload)
+
+    record_batch_size = _resolve_record_batch_size(args.record_batch_size)
+    payloads = build_payloads(
+        run_id=args.run_id,
+        status=args.status,
+        error_message=args.error_message,
+        meta=meta,
+        records=records,
+        files=files,
+        summary=summary,
+        record_batch_size=record_batch_size,
+        github_run_id=os.environ.get("GITHUB_RUN_ID"),
+        github_run_attempt=os.environ.get("GITHUB_RUN_ATTEMPT"),
+        github_repository=os.environ.get("GITHUB_REPOSITORY"),
+    )
+
+    total = len(payloads)
+    print(
+        f"[upload_results] Posting {total} payload(s) to ingest "
+        f"(records={len(records)}, batch_size={record_batch_size}).",
+        flush=True,
+    )
+    for i, payload in enumerate(payloads):
+        record_count = len(payload.get("records") or [])
+        file_count = len(payload.get("files") or {})
+        is_final = payload.get("is_final")
+        print(
+            f"[upload_results] POST {i + 1}/{total} "
+            f"(records={record_count}, files={file_count}, is_final={is_final})",
+            flush=True,
+        )
+        try:
+            post_ingest(args.ingest_url, args.ingest_token, payload)
+        except requests.HTTPError as exc:
+            print(
+                f"[upload_results] FAILED on payload {i + 1}/{total}: {exc}",
+                file=sys.stderr,
+                flush=True,
+            )
+            raise
+        except requests.RequestException as exc:
+            print(
+                f"[upload_results] Network error on payload {i + 1}/{total}: {exc}",
+                file=sys.stderr,
+                flush=True,
+            )
+            raise
+
     return 0
 
 
