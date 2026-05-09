@@ -102,6 +102,8 @@ def _louisville_command(args: argparse.Namespace) -> list[str]:
     ]
     if getattr(args, "include_low_signal_code_violations", False):
         cmd.append("--include-low-signal-code-violations")
+    if getattr(args, "include_closed_code_violations", False):
+        cmd.append("--include-closed-code-violations")
     return cmd
 
 
@@ -138,6 +140,13 @@ def main() -> int:
         help="Code-violation sources only: include low-signal/administrative "
              "violations (rental registration, street-number-only, etc.). "
              "Default: high-signal distressed-property leads only.",
+    )
+    parser.add_argument(
+        "--include-closed-code-violations",
+        dest="include_closed_code_violations",
+        action="store_true",
+        help="Code-violation sources only: include closed/resolved cases. "
+             "Default: open / active-enforcement leads only.",
     )
     args = parser.parse_args()
 
