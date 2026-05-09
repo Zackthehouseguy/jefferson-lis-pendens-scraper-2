@@ -228,6 +228,7 @@ def build_distressed_leads(
     features: Iterable[dict],
     *,
     include_low_signal: bool = False,
+    include_closed: bool = False,
     min_score: int = MIN_DEFAULT_SCORE,
 ) -> list[dict]:
     """Group violation-level features into one lead per distressed property.
@@ -235,15 +236,18 @@ def build_distressed_leads(
     Each returned dict is shaped for the canonical 5-column CSV plus the
     `_instrument_number` / `_filing_date_iso` extras the ingest sidecar
     expects. PDF Link is set to the public dataset URL since there is no
-    per-property PDF.
+    per-property PDF. Output is sorted by priority/score desc, latest date desc.
     """
     rows = [_extract_row(f) for f in features]
     leads = group_and_score_rows(
-        rows, include_low_signal=include_low_signal, min_score=min_score
+        rows,
+        include_low_signal=include_low_signal,
+        include_closed=include_closed,
+        min_score=min_score,
     )
     for lead in leads:
         lead["PDF Link"] = SOURCE_URL
-        lead["Notes"] = lead["Notes"] + f"; Source: {SOURCE_NAME}"
+        lead["Notes"] = lead["Notes"] + f" | Source: {SOURCE_NAME}"
     return leads
 
 
@@ -263,6 +267,13 @@ def main() -> int:
         action="store_true",
         help="Include low-signal/administrative-only violations (rental "
              "registration, street-number-only, etc.). Default: high-signal only.",
+    )
+    parser.add_argument(
+        "--include-closed-code-violations",
+        dest="include_closed",
+        action="store_true",
+        help="Include leads whose statuses are all CLOSED. Default: open / "
+             "active-enforcement leads only.",
     )
     parser.add_argument(
         "--min-distress-score",
@@ -315,13 +326,15 @@ def main() -> int:
             rows = build_distressed_leads(
                 features,
                 include_low_signal=args.include_low_signal,
+                include_closed=args.include_closed,
                 min_score=args.min_distress_score,
             )
             log(
                 "RESULT",
                 f"Grouped {len(features)} violation rows into {len(rows)} "
                 f"distressed-property leads (include_low_signal="
-                f"{args.include_low_signal}, min_score={args.min_distress_score}).",
+                f"{args.include_low_signal}, include_closed={args.include_closed}, "
+                f"min_score={args.min_distress_score}).",
             )
         write_canonical_csv(rows, csv_path)
         log("RESULT", f"Wrote {len(rows)} rows to {csv_path}")

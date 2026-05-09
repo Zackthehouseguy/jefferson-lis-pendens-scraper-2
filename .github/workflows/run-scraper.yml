@@ -39,6 +39,11 @@ on:
         required: false
         default: "false"
         type: string
+      include_closed_code_violations:
+        description: "Code-violation sources only (optional): include closed/resolved cases. Default false = open / active-enforcement leads only."
+        required: false
+        default: "false"
+        type: string
       ingest_url:
         required: true
         type: string
@@ -95,6 +100,7 @@ jobs:
           if [ "${{ inputs.pva_cross_check }}" = "true" ]; then EXTRA_FLAGS="$EXTRA_FLAGS --pva-cross-check"; fi
           if [ "${{ inputs.resume }}" = "true" ]; then EXTRA_FLAGS="$EXTRA_FLAGS --resume"; fi
           if [ "${{ inputs.include_low_signal_code_violations }}" = "true" ]; then EXTRA_FLAGS="$EXTRA_FLAGS --include-low-signal-code-violations"; fi
+          if [ "${{ inputs.include_closed_code_violations }}" = "true" ]; then EXTRA_FLAGS="$EXTRA_FLAGS --include-closed-code-violations"; fi
           python -m scrapers.run_source \
             --source-type "${{ steps.source.outputs.source_type }}" \
             --start-date "${{ inputs.start_date }}" \

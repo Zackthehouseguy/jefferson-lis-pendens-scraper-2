@@ -1,11 +1,11 @@
 """
-Lead-quality filtering, scoring, and property-level dedupe for code-violation
-sources (currently Louisville Metro PM_SiteVisit_Violations).
+Lead-quality filtering, scoring, dedupe, and lead-brief rendering for
+code-violation sources (currently Louisville Metro PM_SiteVisit_Violations).
 
 Code-violation feeds are violation-level, so the same property typically
 appears in many rows for a single distressed condition. We want one
-distressed-property *lead* per property, with combined notes and a distress
-score that explains why the property is flagged.
+distressed-property *lead* per property, with a concise human-readable
+brief and a distress score that explains why the property is flagged.
 
 Pure functions only — no I/O, no network. The Louisville scraper feeds raw
 ArcGIS feature attributes in and gets back a list of grouped lead rows
@@ -20,17 +20,54 @@ from typing import Any, Iterable
 
 
 # ---------------------------------------------------------------------------
-# Signal taxonomy
+# Status taxonomy — open vs closed and priority weighting
 # ---------------------------------------------------------------------------
 
-# Themes are the buckets we use both for scoring and for the human-readable
-# "Reasons" string in Notes. Each theme has:
-#   - keywords: substrings matched against GUIDE_ITEM_TEXT (case-insensitive)
-#   - codes:    VIOLATION_CODE prefixes that always count for this theme
-#   - weight:   distress points contributed when present on a property
-#
-# Order matters for "Reasons" rendering — we iterate THEMES in declaration
-# order so the most distress-relevant themes appear first.
+# Statuses that mean the case is resolved / no longer actionable. Cases that
+# are *only* in these statuses are excluded by default.
+CLOSED_STATUSES = {"CLOSED"}
+
+# Statuses that signal active enforcement escalation — strongest active leads.
+HIGH_STATUSES = {"EMERGENCY REFERRAL", "CITATION REFERRAL", "CITATION"}
+
+# Statuses that indicate an open case still in inspection / notice phase.
+MEDIUM_STATUSES = {"VIOLATION NOTICE", "HOLD", "OPEN"}
+
+# Per-status weight added to the distress score when present on the group.
+STATUS_WEIGHTS = {
+    "EMERGENCY REFERRAL": 5,
+    "CITATION REFERRAL": 4,
+    "CITATION": 3,
+    "VIOLATION NOTICE": 1,
+    "HOLD": 1,
+    "OPEN": 0,
+    "CLOSED": 0,
+}
+
+
+def _normalize_status(status: str | None) -> str:
+    return (status or "").strip().upper()
+
+
+def is_closed_status(status: str | None) -> bool:
+    return _normalize_status(status) in CLOSED_STATUSES
+
+
+def is_open_status(status: str | None) -> bool:
+    s = _normalize_status(status)
+    return bool(s) and s not in CLOSED_STATUSES
+
+
+def status_priority_weight(status: str | None) -> int:
+    return STATUS_WEIGHTS.get(_normalize_status(status), 0)
+
+
+# ---------------------------------------------------------------------------
+# Signal taxonomy — distress themes
+# ---------------------------------------------------------------------------
+
+# Each theme contributes to scoring and to the human-readable "Distress
+# signals" string in Notes. Order here is the order they appear in Notes.
 THEMES: list[dict[str, Any]] = [
     {
         "name": "vacant/abandoned",
@@ -47,11 +84,11 @@ THEMES: list[dict[str, Any]] = [
             "structural", "foundation", "collapse", "unsafe", "unstable",
             "load bearing", "load-bearing",
         ],
-        "codes": ["X19", "I33"],
+        "codes": ["I33"],
         "weight": 3,
     },
     {
-        "name": "exterior",
+        "name": "exterior/foundation",
         "keywords": [
             "exterior", "siding", "stucco", "masonry", "brick", "paint peeling",
             "deteriorated",
@@ -90,7 +127,7 @@ THEMES: list[dict[str, Any]] = [
         "weight": 5,
     },
     {
-        "name": "cleaning/weeds/rubbish",
+        "name": "trash/weeds",
         "keywords": [
             "cleaning", "rubbish", "garbage", "weeds", "plant growth", "litter",
             "junk", "debris", "trash", "overgrown", "overgrowth",
@@ -99,13 +136,13 @@ THEMES: list[dict[str, Any]] = [
         "weight": 2,
     },
     {
-        "name": "graffiti/defacement",
+        "name": "graffiti",
         "keywords": ["graffiti", "defacement", "defaced"],
         "codes": ["080A"],
         "weight": 1,
     },
     {
-        "name": "abandoned/illegal vehicle",
+        "name": "abandoned vehicle",
         "keywords": [
             "abandoned vehicle", "illegally parked", "illegal vehicle",
             "inoperable vehicle", "inoperative vehicle", "junk vehicle",
@@ -114,7 +151,7 @@ THEMES: list[dict[str, Any]] = [
         "weight": 2,
     },
     {
-        "name": "accessory/fence",
+        "name": "fence/accessory",
         "keywords": [
             "fence", "gate", "retaining wall", "accessory structure",
             "shed",
@@ -123,7 +160,7 @@ THEMES: list[dict[str, Any]] = [
         "weight": 1,
     },
     {
-        "name": "drainage/stagnant water",
+        "name": "drainage",
         "keywords": [
             "drainage", "stagnant water", "standing water", "ponding",
             "flooding",
@@ -132,7 +169,7 @@ THEMES: list[dict[str, Any]] = [
         "weight": 2,
     },
     {
-        "name": "dead/dangerous tree",
+        "name": "dangerous tree",
         "keywords": [
             "dead tree", "dangerous tree", "hazardous tree", "fallen tree",
         ],
@@ -140,7 +177,7 @@ THEMES: list[dict[str, Any]] = [
         "weight": 1,
     },
     {
-        "name": "infestation/vermin",
+        "name": "infestation",
         "keywords": [
             "infestation", "rats", "rodent", "vermin", "roach", "bed bug",
             "pest",
@@ -149,7 +186,7 @@ THEMES: list[dict[str, Any]] = [
         "weight": 2,
     },
     {
-        "name": "sewage/plumbing/water",
+        "name": "sewage/plumbing",
         "keywords": [
             "sewage", "sewer", "plumbing", "water leak", "potable water",
             "no water",
@@ -170,29 +207,77 @@ THEMES: list[dict[str, Any]] = [
         "weight": 2,
     },
     {
-        "name": "public nuisance/hazard",
+        "name": "public hazard",
         "keywords": ["public nuisance", "hazard", "hazardous"],
         "codes": ["X48", "I18"],
         "weight": 2,
     },
 ]
 
-# Occupancy statuses that are themselves a strong distress signal.
+# Strong-distress themes — at least one must be present (or the property
+# must have a citation/referral status) for the property to qualify.
+STRONG_THEMES = {
+    "vacant/abandoned",
+    "structural/foundation",
+    "exterior/foundation",
+    "roof/gutters",
+    "porch/stairs",
+    "demolition",
+    "drainage",
+    "infestation",
+    "sewage/plumbing",
+    "electric",
+    "heating",
+    "public hazard",
+    "trash/weeds",
+    "abandoned vehicle",
+}
+
+# Short labels shown next to each violation code in Notes (avoids dumping
+# raw GUIDE_ITEM_TEXT). First matching prefix wins.
+CODE_LABELS: list[tuple[str, str]] = [
+    ("02A", "Cleaning"),
+    ("05A", "Abandoned Vehicle"),
+    ("080A", "Graffiti"),
+    ("I17", "Infestation"),
+    ("I18", "Public Hazard"),
+    ("I33", "Structural"),
+    ("X19", "Exterior/Foundation"),
+    ("X40", "Porch/Stairs"),
+    ("X47", "Drainage"),
+    ("X48", "Public Hazard"),
+    ("X50", "Roof/Gutters"),
+    ("X69", "Address Numbers"),
+    ("X78", "Fence/Accessory"),
+    ("X90", "Tree"),
+    ("X94", "Demolition"),
+    ("R01", "Rental Reg."),
+]
+
 HIGH_SIGNAL_OCCUPANCY = {
     "VACANT", "VACANT STRUCTURE", "VACANT LOT",
     "ABANDONED", "ABANDONED STRUCTURE", "ABANDONED LOT",
     "CONDEMNED",
 }
-OCCUPANCY_THEME_NAME = "occupancy: vacant/abandoned/condemned"
+OCCUPANCY_THEME_NAME = "vacant/abandoned"
 OCCUPANCY_WEIGHT = 4
 
-# Codes that on their own are explicitly low-signal (administrative,
-# bookkeeping). They never *create* a lead but do not suppress one if a
-# property also has high-signal items.
+# Codes that on their own are administrative and never *create* a lead.
 LOW_SIGNAL_CODES = {"R01", "X69"}
 
-# Minimum distress score for a property to be considered a lead by default.
-MIN_DEFAULT_SCORE = 3
+# Default minimum distress score for a property to qualify as a lead.
+# Tuned upward (was 3) so we surface meaningful leads, not single-violation
+# paperwork. Combined with the open-status + strong-theme requirement below.
+MIN_DEFAULT_SCORE = 5
+
+# Truncation limits for the rendered lead brief.
+MAX_VIOLATIONS_IN_NOTE = 6
+MAX_CASE_IDS_IN_NOTE = 4
+
+# Priority bands derived from score + status + occupancy.
+PRIORITY_HIGH = "HIGH"
+PRIORITY_MEDIUM = "MEDIUM"
+PRIORITY_LOW = "LOW"
 
 
 # ---------------------------------------------------------------------------
@@ -203,8 +288,6 @@ _WS_RE = re.compile(r"\s+")
 
 
 def normalize_address(addr: str | None) -> str:
-    """Normalize an address for grouping: uppercase, collapse whitespace,
-    strip punctuation that varies between rows for the same property."""
     if not addr:
         return ""
     s = addr.upper()
@@ -225,7 +308,6 @@ def _code_prefix_match(code: str, prefixes: Iterable[str]) -> bool:
 
 
 def _theme_hits_for_row(code: str, description: str) -> list[str]:
-    """Return the theme names this row contributes to."""
     desc_lower = (description or "").lower()
     hits: list[str] = []
     for theme in THEMES:
@@ -246,13 +328,16 @@ def _theme_weight(name: str) -> int:
     return 0
 
 
+def _label_for_code(code: str) -> str:
+    code = (code or "").strip().upper()
+    for prefix, label in CODE_LABELS:
+        if code.startswith(prefix.upper()):
+            return f"{code} {label}"
+    return code
+
+
 def grouping_key(parcel_id: str | None, full_addr: str | None,
                  partial_addr: str | None) -> str:
-    """Pick the best stable grouping key for a property.
-
-    Prefer normalized FullAddress + PARCEL_ID. Fall back to whichever piece
-    is available. Two rows with the same key collapse to one lead.
-    """
     addr = normalize_address(full_addr or partial_addr)
     parcel = (parcel_id or "").strip().upper()
     if addr and parcel:
@@ -272,25 +357,27 @@ def _empty_group(key: str) -> dict[str, Any]:
     return {
         "key": key,
         "rows": [],
-        "themes": OrderedDict(),     # theme_name -> True (preserves first-seen order)
+        "themes": OrderedDict(),
         "case_ids": OrderedDict(),
         "violation_codes": OrderedDict(),
         "statuses": OrderedDict(),
         "occupancy": OrderedDict(),
         "citation_total": 0.0,
         "citation_seen": False,
-        "latest_date": None,         # YYYY-MM-DD
+        "latest_date": None,
         "earliest_date": None,
         "parcel": "",
         "address_full": "",
         "address_partial": "",
         "row_count": 0,
-        "low_signal_only": True,     # cleared once a high-signal row is added
+        "low_signal_only": True,
+        "has_open_status": False,
+        "has_closed_status": False,
+        "has_high_status": False,
     }
 
 
 def _ingest_row(group: dict[str, Any], row: dict[str, Any]) -> None:
-    """Fold a single transformed Louisville row into its group."""
     code = (row.get("violation_code") or "").strip()
     description = row.get("description") or ""
     occupancy = (row.get("occupancy") or "").strip().upper()
@@ -300,7 +387,7 @@ def _ingest_row(group: dict[str, Any], row: dict[str, Any]) -> None:
     full_addr = (row.get("full_address") or "").strip()
     partial_addr = (row.get("partial_address") or "").strip()
     citation = row.get("citation_amount")
-    compl_date = row.get("compl_date")  # YYYY-MM-DD or None
+    compl_date = row.get("compl_date")
 
     group["row_count"] += 1
     group["rows"].append(row)
@@ -310,6 +397,13 @@ def _ingest_row(group: dict[str, Any], row: dict[str, Any]) -> None:
         group["violation_codes"][code.upper()] = True
     if status:
         group["statuses"][status] = True
+        norm = _normalize_status(status)
+        if norm in CLOSED_STATUSES:
+            group["has_closed_status"] = True
+        else:
+            group["has_open_status"] = True
+            if norm in HIGH_STATUSES:
+                group["has_high_status"] = True
     if occupancy:
         group["occupancy"][occupancy] = True
     if not group["parcel"] and parcel:
@@ -332,14 +426,11 @@ def _ingest_row(group: dict[str, Any], row: dict[str, Any]) -> None:
         if not group["earliest_date"] or compl_date < group["earliest_date"]:
             group["earliest_date"] = compl_date
 
-    # Theme hits from description + code
     for theme_name in _theme_hits_for_row(code, description):
         group["themes"][theme_name] = True
     if occupancy in HIGH_SIGNAL_OCCUPANCY:
         group["themes"][OCCUPANCY_THEME_NAME] = True
 
-    # Low-signal tracking: a row is low-signal if its code is in
-    # LOW_SIGNAL_CODES and it contributed no themes (no description hits).
     is_low_signal_row = False
     if code.upper() in LOW_SIGNAL_CODES and not _theme_hits_for_row(code, description):
         if occupancy not in HIGH_SIGNAL_OCCUPANCY:
@@ -355,16 +446,75 @@ def _score_group(group: dict[str, Any]) -> int:
             score += OCCUPANCY_WEIGHT
         else:
             score += _theme_weight(theme_name)
-    # Multiple distinct violation codes on the same property compound distress.
     distinct_codes = len(group["violation_codes"])
     if distinct_codes >= 3:
         score += 2
     elif distinct_codes == 2:
         score += 1
-    # Citation issued (any non-zero amount) is a real-money signal.
     if group["citation_seen"]:
         score += 1
+    best_status_weight = 0
+    for s in group["statuses"]:
+        best_status_weight = max(best_status_weight, status_priority_weight(s))
+    score += best_status_weight
     return score
+
+
+def _group_priority(group: dict[str, Any], score: int) -> str:
+    has_strong_theme = any(t in STRONG_THEMES for t in group["themes"])
+    has_vacant_occupancy = any(
+        occ in HIGH_SIGNAL_OCCUPANCY for occ in group["occupancy"]
+    )
+    if group["has_high_status"] and (has_strong_theme or has_vacant_occupancy):
+        return PRIORITY_HIGH
+    if score >= 10:
+        return PRIORITY_HIGH
+    if score >= 6:
+        return PRIORITY_MEDIUM
+    return PRIORITY_LOW
+
+
+_PRIORITY_RANK = {PRIORITY_HIGH: 3, PRIORITY_MEDIUM: 2, PRIORITY_LOW: 1}
+
+
+def _group_qualifies(
+    group: dict[str, Any],
+    score: int,
+    *,
+    include_low_signal: bool,
+    include_closed: bool,
+    min_score: int,
+) -> bool:
+    if include_low_signal:
+        return True
+
+    if group["low_signal_only"]:
+        return False
+    if not include_closed and not group["has_open_status"]:
+        return False
+
+    has_strong_theme = any(t in STRONG_THEMES for t in group["themes"])
+    has_any_theme = bool(group["themes"])
+    has_high_status = group["has_high_status"]
+
+    # Two-part rule for the strong-theme gate:
+    #   (a) citation/referral status + any distress theme, OR
+    #   (b) open status + strong distress theme.
+    # When include_closed is on, also accept closed-only groups that have a
+    # strong distress theme — the user has explicitly opted in to historical
+    # cases.
+    citation_or_high_with_theme = has_high_status and has_any_theme
+    open_with_strong_theme = group["has_open_status"] and has_strong_theme
+    closed_with_strong_theme = (
+        include_closed and not group["has_open_status"] and has_strong_theme
+    )
+
+    if not (citation_or_high_with_theme or open_with_strong_theme
+            or closed_with_strong_theme):
+        return False
+    if score < min_score:
+        return False
+    return True
 
 
 # ---------------------------------------------------------------------------
@@ -375,55 +525,61 @@ def group_and_score_rows(
     rows: Iterable[dict[str, Any]],
     *,
     include_low_signal: bool = False,
+    include_closed: bool = False,
     min_score: int = MIN_DEFAULT_SCORE,
 ) -> list[dict[str, Any]]:
     """Group violation-level rows by property and produce one lead per group.
 
-    Each input row is a dict with the following keys (all optional except
-    where noted; see Louisville scraper's `_extract_row` for the producer):
-        alt_id, full_address, partial_address, parcel,
-        compl_date (YYYY-MM-DD or None), status, status_date,
-        description, violation_code, citation_amount, occupancy
-
-    Returns a list of lead dicts shaped for the canonical CSV plus the
-    structured extras used by upload_results' sidecar:
-        {
-            "Date": "YYYY-MM-DD",
-            "Defendants/Parties": "...",
-            "Property Address": "...",
-            "PDF Link": "...",
-            "Notes": "Distress score: ...; Reasons: ...; ...",
-            "_instrument_number": "LOU_CODE::<key>::<latest_date>",
-            "_filing_date_iso": "YYYY-MM-DD",
-            "_distress_score": int,
-            "_violation_row_count": int,
-        }
+    Output is sorted by (priority desc, score desc, latest_date desc).
     """
     groups: "OrderedDict[str, dict[str, Any]]" = OrderedDict()
-    skipped_no_key = 0
     for row in rows:
         key = grouping_key(
             row.get("parcel"), row.get("full_address"), row.get("partial_address")
         )
         if not key:
-            # No usable identity — drop. These are nearly always test/garbage rows.
-            skipped_no_key += 1
             continue
         if key not in groups:
             groups[key] = _empty_group(key)
         _ingest_row(groups[key], row)
 
-    leads: list[dict[str, Any]] = []
+    qualified: list[dict[str, Any]] = []
     for group in groups.values():
         score = _score_group(group)
         group["_score"] = score
-        if not include_low_signal:
-            if group["low_signal_only"]:
-                continue
-            if score < min_score:
-                continue
-        leads.append(_render_lead(group))
-    return leads
+        group["_priority"] = _group_priority(group, score)
+        if not _group_qualifies(
+            group,
+            score,
+            include_low_signal=include_low_signal,
+            include_closed=include_closed,
+            min_score=min_score,
+        ):
+            continue
+        qualified.append(group)
+
+    qualified.sort(
+        key=lambda g: (
+            _PRIORITY_RANK.get(g["_priority"], 0),
+            g["_score"],
+            g["latest_date"] or "",
+        ),
+        reverse=True,
+    )
+    return [_render_lead(g) for g in qualified]
+
+
+def _format_citation_amount(amount: float) -> str:
+    if abs(amount - round(amount)) < 0.005:
+        return f"${int(round(amount))}"
+    return f"${amount:.2f}"
+
+
+def _truncate_list(items: list[str], limit: int) -> str:
+    if len(items) <= limit:
+        return ", ".join(items)
+    head = ", ".join(items[:limit])
+    return f"{head} +{len(items) - limit} more"
 
 
 def _render_lead(group: dict[str, Any]) -> dict[str, Any]:
@@ -432,29 +588,36 @@ def _render_lead(group: dict[str, Any]) -> dict[str, Any]:
     case_ids = list(group["case_ids"].keys())
     codes = list(group["violation_codes"].keys())
     occ_list = list(group["occupancy"].keys())
+    themes = list(group["themes"].keys())
+    priority = group["_priority"]
+    score = group["_score"]
 
+    headline_status = ""
+    for status in statuses:
+        if _normalize_status(status) in HIGH_STATUSES:
+            headline_status = status
+            break
+    if not headline_status and statuses:
+        headline_status = statuses[0]
     parties_bits = ["LMG Codes & Regulations"]
-    if statuses:
-        parties_bits.append("/".join(statuses))
+    if headline_status:
+        parties_bits.append(headline_status)
     parties = " - ".join(parties_bits)
 
-    reasons = list(group["themes"].keys())
-    note_bits: list[str] = [f"Distress score: {group['_score']}"]
-    if reasons:
-        note_bits.append(f"Reasons: {', '.join(reasons)}")
+    note_bits: list[str] = [f"Priority: {priority}", f"Distress score: {score}"]
+    if statuses:
+        note_bits.append(f"Status: {'; '.join(statuses)}")
     if occ_list:
         note_bits.append(f"Occupancy: {', '.join(occ_list)}")
-    if statuses:
-        note_bits.append(f"Statuses: {', '.join(statuses)}")
+    if themes:
+        note_bits.append(f"Distress signals: {'; '.join(themes)}")
     if codes:
-        note_bits.append(f"Violation codes: {', '.join(codes)}")
+        labels = [_label_for_code(c) for c in codes]
+        note_bits.append(f"Violations: {_truncate_list(labels, MAX_VIOLATIONS_IN_NOTE)}")
     if group["citation_seen"]:
-        # Render whole dollars when the total has no fractional cents.
-        amount = group["citation_total"]
-        if abs(amount - round(amount)) < 0.005:
-            note_bits.append(f"Citation amount: ${int(round(amount))}")
-        else:
-            note_bits.append(f"Citation amount: ${amount:.2f}")
+        note_bits.append(
+            f"Citation amount: {_format_citation_amount(group['citation_total'])}"
+        )
     if group["row_count"]:
         note_bits.append(f"Violation rows: {group['row_count']}")
     if group["earliest_date"] and group["latest_date"]:
@@ -465,7 +628,7 @@ def _render_lead(group: dict[str, Any]) -> dict[str, Any]:
                 f"Dates: {group['earliest_date']} to {group['latest_date']}"
             )
     if case_ids:
-        note_bits.append(f"Case IDs: {', '.join(case_ids)}")
+        note_bits.append(f"Case IDs: {_truncate_list(case_ids, MAX_CASE_IDS_IN_NOTE)}")
     if group["parcel"]:
         note_bits.append(f"Parcel: {group['parcel']}")
 
@@ -481,11 +644,11 @@ def _render_lead(group: dict[str, Any]) -> dict[str, Any]:
         "Date": group["latest_date"] or "",
         "Defendants/Parties": parties,
         "Property Address": address,
-        # PDF Link is filled in by the caller (it knows SOURCE_URL).
         "PDF Link": "",
-        "Notes": "; ".join(note_bits),
+        "Notes": " | ".join(note_bits),
         "_instrument_number": instrument_number,
         "_filing_date_iso": group["latest_date"],
-        "_distress_score": group["_score"],
+        "_distress_score": score,
+        "_priority": priority,
         "_violation_row_count": group["row_count"],
     }

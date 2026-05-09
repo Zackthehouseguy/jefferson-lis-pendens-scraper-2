@@ -106,6 +106,81 @@
         "CitationAmount": 150.0,
         "OccupancyStatus": "OCCUPIED"
       }
+    },
+    {
+      "attributes": {
+        "B1_ALT_ID": "PMV-2026-100400",
+        "FullAddress": "88 CLOSEDONLY DR, LOUISVILLE, KY 40208",
+        "PartialAddress": "88 CLOSEDONLY DR",
+        "PARCEL_ID": "088C00008800",
+        "G6A_G6_COMPL_DD": 1746662400000,
+        "G6A_G6_STATUS": "Closed",
+        "G6A_G6_STATUS_DD": 1746662400000,
+        "GUIDE_ITEM_TEXT": "Roof and gutters previously cited; case settled",
+        "VIOLATION_CODE": "X50",
+        "CitationAmount": 200.0,
+        "OccupancyStatus": "VACANT STRUCTURE"
+      }
+    },
+    {
+      "attributes": {
+        "B1_ALT_ID": "PMV-2026-100401",
+        "FullAddress": "88 CLOSEDONLY DR, LOUISVILLE, KY 40208",
+        "PartialAddress": "88 CLOSEDONLY DR",
+        "PARCEL_ID": "088C00008800",
+        "G6A_G6_COMPL_DD": 1746748800000,
+        "G6A_G6_STATUS": "Closed",
+        "G6A_G6_STATUS_DD": 1746748800000,
+        "GUIDE_ITEM_TEXT": "Exterior surfaces deteriorated; case settled",
+        "VIOLATION_CODE": "X19",
+        "CitationAmount": null,
+        "OccupancyStatus": "VACANT STRUCTURE"
+      }
+    },
+    {
+      "attributes": {
+        "B1_ALT_ID": "PMV-2026-100500",
+        "FullAddress": "120 MIXEDSTATUS AVE, LOUISVILLE, KY 40208",
+        "PartialAddress": "120 MIXEDSTATUS AVE",
+        "PARCEL_ID": "120M00012000",
+        "G6A_G6_COMPL_DD": 1746662400000,
+        "G6A_G6_STATUS": "Closed",
+        "G6A_G6_STATUS_DD": 1746662400000,
+        "GUIDE_ITEM_TEXT": "Earlier roof citation paid",
+        "VIOLATION_CODE": "X50",
+        "CitationAmount": 100.0,
+        "OccupancyStatus": "VACANT STRUCTURE"
+      }
+    },
+    {
+      "attributes": {
+        "B1_ALT_ID": "PMV-2026-100501",
+        "FullAddress": "120 MIXEDSTATUS AVE, LOUISVILLE, KY 40208",
+        "PartialAddress": "120 MIXEDSTATUS AVE",
+        "PARCEL_ID": "120M00012000",
+        "G6A_G6_COMPL_DD": 1746748800000,
+        "G6A_G6_STATUS": "Citation Referral",
+        "G6A_G6_STATUS_DD": 1746748800000,
+        "GUIDE_ITEM_TEXT": "Foundation cracking; structural concerns",
+        "VIOLATION_CODE": "X19",
+        "CitationAmount": 500.0,
+        "OccupancyStatus": "VACANT STRUCTURE"
+      }
+    },
+    {
+      "attributes": {
+        "B1_ALT_ID": "PMV-2026-100600",
+        "FullAddress": "300 EMERGENCY BLVD, LOUISVILLE, KY 40208",
+        "PartialAddress": "300 EMERGENCY BLVD",
+        "PARCEL_ID": "300E00030000",
+        "G6A_G6_COMPL_DD": 1746748800000,
+        "G6A_G6_STATUS": "Emergency Referral",
+        "G6A_G6_STATUS_DD": 1746748800000,
+        "GUIDE_ITEM_TEXT": "Structural collapse risk; unsafe condition",
+        "VIOLATION_CODE": "I33",
+        "CitationAmount": 1000.0,
+        "OccupancyStatus": "Condemned"
+      }
     }
   ]
 }

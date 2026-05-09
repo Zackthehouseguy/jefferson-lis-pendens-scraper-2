@@ -32,6 +32,7 @@ inputs:
 | `pva_cross_check` | no       | `true`         | Lis Pendens only — append a Jefferson PVA verification URL.            |
 | `search_mode`     | no       | `auto`         | Jefferson only — `direct`, `browser`, or `auto` (direct + fallback).   |
 | `include_low_signal_code_violations` | no | `false` | Code-violation sources only. When `false` (default), only high-signal distressed-property leads are emitted (deduped per property, with a distress score). Set `true` to also include rental-registration / address-number / other administrative-only rows. |
+| `include_closed_code_violations` | no | `false` | Code-violation sources only. Optional. When `false` (default), groups whose statuses are all `Closed` are excluded so leads focus on open / actively-enforced cases. Set `true` to also include resolved cases that still have a strong distress profile. |
 | `ingest_url`      | yes      |                | Lovable ingest endpoint.                                               |
 | `ingest_token`    | yes      |                | Bearer token for the ingest endpoint.                                  |
 
