@@ -77,10 +77,15 @@ class WillsDispatchTests(unittest.TestCase):
         self.assertNotIn("--pva-cross-check", cmd)
         self.assertIn("--skip-validation", cmd)
 
+    def test_wills_uses_smart_field_csv_format(self) -> None:
+        cmd = _jefferson_command(_make_args(), "wills")
+        self.assertIn("--wills-csv-format", cmd)
+
     def test_lis_pendens_does_not_get_wills_tag(self) -> None:
         cmd = _jefferson_command(_make_args(pva_cross_check=True), "lis_pendens")
         self.assertNotIn("--source-tag", cmd)
         self.assertNotIn("--always-include-legal-desc", cmd)
+        self.assertNotIn("--wills-csv-format", cmd)
         self.assertIn("--pva-cross-check", cmd)
         self.assertNotIn("--skip-validation", cmd)
 

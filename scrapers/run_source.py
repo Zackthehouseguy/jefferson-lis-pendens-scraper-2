@@ -95,6 +95,9 @@ def _jefferson_command(args: argparse.Namespace, source_type: str) -> list[str]:
         # since it is often the only locator we have for the estate.
         cmd.extend(["--source-tag", "Source: WILLS"])
         cmd.append("--always-include-legal-desc")
+        # Emit the Wills smart-field CSV shape (Decedent / Date of Death /
+        # Surviving Spouse / Beneficiary / Complexity Flag up front).
+        cmd.append("--wills-csv-format")
     return cmd
 
 
