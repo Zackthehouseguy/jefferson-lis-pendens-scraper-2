@@ -560,6 +560,7 @@ def process_document(
     logger: ActionLogger,
     resume: bool = False,
     pva_cross_check: bool = False,
+    always_include_legal_desc: bool = False,
 ) -> None:
     downloaded_dir = debug_dir / "downloaded_docs"
     pages_dir = debug_dir / "converted_pages"
@@ -576,6 +577,8 @@ def process_document(
         address, note = extract_property_address(ocr_text)
         record.property_address = address
         record.notes.append(f"{note} Resume mode used existing OCR text.")
+        if always_include_legal_desc and record.legal_description:
+            record.notes.append(f"Legal Desc: {record.legal_description}")
         if pva_cross_check:
             add_pva_cross_check(session, record, logger)
         return
@@ -598,6 +601,8 @@ def process_document(
         record.notes.append(note)
         if address != "Address not found":
             logger.result(f"Address found for Instrument #{record.instrument_number}: {address}")
+            if always_include_legal_desc and record.legal_description:
+                record.notes.append(f"Legal Desc: {record.legal_description}")
         else:
             logger.warning(f"Address not found for Instrument #{record.instrument_number}")
             record.notes.append(f"Legal Desc: {record.legal_description}")
@@ -610,10 +615,12 @@ def process_document(
         record.notes.append(f"Legal Desc: {record.legal_description}")
 
 
-def write_csv(records: list[FilingRecord], output_csv: Path, logger: ActionLogger) -> None:
+def write_csv(records: list[FilingRecord], output_csv: Path, logger: ActionLogger, source_tag: str = "") -> None:
     rows = []
     for record in records:
-        notes = "; ".join(x for x in record.notes if x)
+        note_parts = [source_tag] if source_tag else []
+        note_parts.extend(x for x in record.notes if x)
+        notes = "; ".join(note_parts)
         rows.append(
             {
                 "Date": record.filing_date,
@@ -665,10 +672,12 @@ def main() -> int:
     parser.add_argument("--pva-cross-check", action="store_true", help="Append a reachable Jefferson PVA manual verification URL to Notes.")
     parser.add_argument("--search-mode", choices=["direct", "browser", "auto"], default="direct", help="Search via direct HTTP, Playwright browser, or direct with browser fallback.")
     parser.add_argument("--headed-browser", action="store_true", help="Show browser window when --search-mode uses Playwright.")
-    parser.add_argument("--instrument-code", default="LP ", help="Jefferson Deeds instrument-type code (e.g. 'LP ' for Lis Pendens, 'WI ' or 'WILL' for Wills).")
+    parser.add_argument("--instrument-code", default="LP ", help="Jefferson Deeds instrument-type itype1 code (e.g. 'LP ' for Lis Pendens, 'WIL' for Wills).")
     parser.add_argument("--instrument-label", default="LIS PENDENS", help="Human-readable instrument type label, used for logging and validation.")
     parser.add_argument("--csv-name", default="lis_pendens_results.csv", help="Output CSV filename inside --output-dir.")
     parser.add_argument("--skip-validation", action="store_true", help="Skip the Lis-Pendens-specific benchmark validation report.")
+    parser.add_argument("--source-tag", default="", help="Optional tag prepended to the Notes column (e.g. 'Source: WILLS').")
+    parser.add_argument("--always-include-legal-desc", action="store_true", help="Always append Legal Desc to Notes, not only when address extraction fails.")
     args = parser.parse_args()
 
     output_dir = Path(args.output_dir).resolve()
@@ -718,11 +727,12 @@ def main() -> int:
                 logger,
                 resume=args.resume,
                 pva_cross_check=args.pva_cross_check,
+                always_include_legal_desc=args.always_include_legal_desc,
             )
             time.sleep(args.sleep)
 
         csv_path = output_dir / args.csv_name
-        write_csv(all_records, csv_path, logger)
+        write_csv(all_records, csv_path, logger, source_tag=args.source_tag)
         if not args.skip_validation:
             write_validation_report(all_records, output_dir / "validation_report.txt", logger)
 

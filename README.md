@@ -55,7 +55,7 @@ python -m scrapers.run_source --source-type lis_pendens \
   --start-date 05/07/2026 --end-date 05/08/2026 \
   --output-dir scraper_output --search-mode auto --resume --pva-cross-check
 
-# Jefferson Wills (same site, instrument type WI)
+# Jefferson Wills (same site, instrument type WIL)
 python -m scrapers.run_source --source-type wills \
   --start-date 2026-05-01 --end-date 2026-05-08 \
   --output-dir scraper_output
@@ -83,8 +83,9 @@ python -m scrapers.louisville_code_violations \
 python jefferson_lis_pendens_scraper.py \
   --start-date 2026-05-01 --end-date 2026-05-08 \
   --output-dir scraper_output \
-  --instrument-code "WI " --instrument-label "WILLS" \
-  --csv-name wills_results.csv --skip-validation
+  --instrument-code "WIL" --instrument-label "WILLS" \
+  --csv-name wills_results.csv --skip-validation \
+  --source-tag "Source: WILLS" --always-include-legal-desc
 ```
 
 ## Source details
@@ -95,10 +96,12 @@ Posts to `https://search.jeffersondeeds.com/p6.php` with `searchtype=ITYPE`.
 The instrument type is set via `itype1`:
 
 - `LP ` (with trailing space) → Lis Pendens (`--instrument-label "LIS PENDENS"`)
-- `WI ` (with trailing space) → Wills (`--instrument-label "WILLS"`)
+- `WIL` (no trailing space) → Wills (`--instrument-label "WILLS"`)
 
-If the deeds site changes the dropdown code for Wills, update
-`scrapers/run_source.py::_jefferson_command` (search for `instrument_code = "WI "`).
+The exact `itype1` values come from the `<select name="itype1">` element on
+`https://search.jeffersondeeds.com/insttype.php`. If the deeds site changes
+either dropdown code, update `scrapers/run_source.py::_jefferson_command`
+(search for `instrument_code =`).
 
 The PVA cross-check and the canned 2026 benchmark validation report are
 Lis-Pendens-specific and are skipped automatically for the Wills source.

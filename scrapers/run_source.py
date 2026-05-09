@@ -60,9 +60,10 @@ def _jefferson_command(args: argparse.Namespace, source_type: str) -> list[str]:
         instrument_code = "LP "
         instrument_label = "LIS PENDENS"
     elif source_type == "wills":
-        # Jefferson Deeds uses "WI " for Wills in the instrument-type dropdown.
-        # If a future site change renames the code, override via env or arg.
-        instrument_code = "WI "
+        # Jefferson Deeds uses "WIL" (no trailing space) as the itype1 value
+        # for the WILL instrument type, verified against the live insttype.php
+        # dropdown. The earlier "WI " value matched nothing.
+        instrument_code = "WIL"
         instrument_label = "WILLS"
     else:
         raise ValueError(f"Unsupported Jefferson source_type: {source_type}")
@@ -87,6 +88,13 @@ def _jefferson_command(args: argparse.Namespace, source_type: str) -> list[str]:
         # The benchmark validator hardcodes the Matthew Martin / Malcolm Rd
         # Lis Pendens fixtures; skip for other Jefferson types.
         cmd.append("--skip-validation")
+    if source_type == "wills":
+        # Wills filings are not deeds; addresses are usually absent. Tag the
+        # Notes column so downstream consumers can distinguish Wills records
+        # from Lis Pendens, and always retain the legal-description field
+        # since it is often the only locator we have for the estate.
+        cmd.extend(["--source-tag", "Source: WILLS"])
+        cmd.append("--always-include-legal-desc")
     return cmd
 
 
