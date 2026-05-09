@@ -91,7 +91,7 @@ def _jefferson_command(args: argparse.Namespace, source_type: str) -> list[str]:
 
 
 def _louisville_command(args: argparse.Namespace) -> list[str]:
-    return [
+    cmd = [
         sys.executable,
         "-m",
         "scrapers.louisville_code_violations",
@@ -100,6 +100,9 @@ def _louisville_command(args: argparse.Namespace) -> list[str]:
         "--output-dir", args.output_dir,
         "--csv-name", SOURCES["louisville_code_violations"]["csv_name"],
     ]
+    if getattr(args, "include_low_signal_code_violations", False):
+        cmd.append("--include-low-signal-code-violations")
+    return cmd
 
 
 def _indianapolis_command(args: argparse.Namespace) -> list[str]:
@@ -128,6 +131,14 @@ def main() -> int:
     parser.add_argument("--search-mode", default="auto")
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--pva-cross-check", action="store_true")
+    parser.add_argument(
+        "--include-low-signal-code-violations",
+        dest="include_low_signal_code_violations",
+        action="store_true",
+        help="Code-violation sources only: include low-signal/administrative "
+             "violations (rental registration, street-number-only, etc.). "
+             "Default: high-signal distressed-property leads only.",
+    )
     args = parser.parse_args()
 
     source_type = args.source_type

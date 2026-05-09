@@ -30,8 +30,13 @@ import requests
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
     from scrapers.common import parse_date_input, write_canonical_csv  # noqa: E402
+    from scrapers.code_violation_filter import (  # noqa: E402
+        MIN_DEFAULT_SCORE,
+        group_and_score_rows,
+    )
 else:
     from .common import parse_date_input, write_canonical_csv
+    from .code_violation_filter import MIN_DEFAULT_SCORE, group_and_score_rows
 
 
 SOURCE_NAME = "Louisville Metro Code Violations (PM_SiteVisit_Violations)"
@@ -201,6 +206,47 @@ def transform_features(features: Iterable[dict]) -> list[dict]:
     return [transform_feature(f) for f in features]
 
 
+def _extract_row(feature: dict) -> dict:
+    """Pull just the fields the grouping/scoring layer needs from one feature."""
+    attrs = feature.get("attributes", {}) or {}
+    return {
+        "alt_id": (attrs.get("B1_ALT_ID") or "").strip(),
+        "full_address": (attrs.get("FullAddress") or "").strip(),
+        "partial_address": (attrs.get("PartialAddress") or "").strip(),
+        "parcel": (attrs.get("PARCEL_ID") or "").strip(),
+        "compl_date": epoch_ms_to_iso_date(attrs.get(DATE_FIELD)),
+        "status": (attrs.get("G6A_G6_STATUS") or "").strip(),
+        "status_date": epoch_ms_to_iso_date(attrs.get("G6A_G6_STATUS_DD")),
+        "description": (attrs.get("GUIDE_ITEM_TEXT") or "").strip(),
+        "violation_code": (attrs.get("VIOLATION_CODE") or "").strip(),
+        "citation_amount": attrs.get("CitationAmount"),
+        "occupancy": (attrs.get("OccupancyStatus") or "").strip(),
+    }
+
+
+def build_distressed_leads(
+    features: Iterable[dict],
+    *,
+    include_low_signal: bool = False,
+    min_score: int = MIN_DEFAULT_SCORE,
+) -> list[dict]:
+    """Group violation-level features into one lead per distressed property.
+
+    Each returned dict is shaped for the canonical 5-column CSV plus the
+    `_instrument_number` / `_filing_date_iso` extras the ingest sidecar
+    expects. PDF Link is set to the public dataset URL since there is no
+    per-property PDF.
+    """
+    rows = [_extract_row(f) for f in features]
+    leads = group_and_score_rows(
+        rows, include_low_signal=include_low_signal, min_score=min_score
+    )
+    for lead in leads:
+        lead["PDF Link"] = SOURCE_URL
+        lead["Notes"] = lead["Notes"] + f"; Source: {SOURCE_NAME}"
+    return leads
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Scrape Louisville Metro code violations from ArcGIS FeatureServer."
@@ -211,6 +257,25 @@ def main() -> int:
     parser.add_argument("--csv-name", default="louisville_code_violations_results.csv")
     parser.add_argument("--page-size", type=int, default=1000)
     parser.add_argument("--sleep", type=float, default=0.25)
+    parser.add_argument(
+        "--include-low-signal-code-violations",
+        dest="include_low_signal",
+        action="store_true",
+        help="Include low-signal/administrative-only violations (rental "
+             "registration, street-number-only, etc.). Default: high-signal only.",
+    )
+    parser.add_argument(
+        "--min-distress-score",
+        type=int,
+        default=MIN_DEFAULT_SCORE,
+        help=f"Minimum distress score for a lead (default {MIN_DEFAULT_SCORE}). "
+             "Ignored when --include-low-signal-code-violations is set.",
+    )
+    parser.add_argument(
+        "--no-dedupe",
+        action="store_true",
+        help="Emit one row per violation (legacy/debug). Default: dedupe by property.",
+    )
     args = parser.parse_args()
 
     output_dir = Path(args.output_dir).resolve()
@@ -243,7 +308,21 @@ def main() -> int:
         )
         log("RESULT", f"Fetched {len(features)} features from ArcGIS")
 
-        rows = transform_features(features)
+        if args.no_dedupe:
+            rows = transform_features(features)
+            log("ACTION", "Dedupe disabled; emitting one row per violation.")
+        else:
+            rows = build_distressed_leads(
+                features,
+                include_low_signal=args.include_low_signal,
+                min_score=args.min_distress_score,
+            )
+            log(
+                "RESULT",
+                f"Grouped {len(features)} violation rows into {len(rows)} "
+                f"distressed-property leads (include_low_signal="
+                f"{args.include_low_signal}, min_score={args.min_distress_score}).",
+            )
         write_canonical_csv(rows, csv_path)
         log("RESULT", f"Wrote {len(rows)} rows to {csv_path}")
 

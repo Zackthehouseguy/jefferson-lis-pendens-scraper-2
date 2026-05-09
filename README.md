@@ -31,6 +31,7 @@ inputs:
 | `resume`          | no       | `true`         | Jefferson only — reuse downloaded docs/OCR if present.                 |
 | `pva_cross_check` | no       | `true`         | Lis Pendens only — append a Jefferson PVA verification URL.            |
 | `search_mode`     | no       | `auto`         | Jefferson only — `direct`, `browser`, or `auto` (direct + fallback).   |
+| `include_low_signal_code_violations` | no | `false` | Code-violation sources only. When `false` (default), only high-signal distressed-property leads are emitted (deduped per property, with a distress score). Set `true` to also include rental-registration / address-number / other administrative-only rows. |
 | `ingest_url`      | yes      |                | Lovable ingest endpoint.                                               |
 | `ingest_token`    | yes      |                | Bearer token for the ingest endpoint.                                  |
 
@@ -110,6 +111,15 @@ https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_
   JSON file (`louisville_code_violations_records.json`) so `upload_results.py`
   can populate `instrument_number` from `B1_ALT_ID` and `filing_date` from the
   ArcGIS epoch-ms date without re-parsing the CSV.
+- **Property-level dedupe + distress scoring (default).** Violation-level rows
+  are grouped by normalized `FullAddress` + `PARCEL_ID` so each distressed
+  property emits **one** lead with combined notes, a numeric distress score,
+  and a "Reasons" list (vacant/abandoned, structural/foundation, roof/gutters,
+  cleaning/weeds, etc.). `instrument_number` for grouped leads is
+  `LOU_CODE::<parcel-or-address>::<latest-date>`. Pure rental-registration
+  (`R01`) and address-number-only (`X69`) properties are excluded by default.
+  Pass `--include-low-signal-code-violations` to disable the filter, or
+  `--no-dedupe` to fall back to the legacy one-row-per-violation CSV.
 
 ### Indianapolis code violations (scaffold)
 
