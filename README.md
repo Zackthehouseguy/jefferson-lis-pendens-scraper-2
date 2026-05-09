@@ -13,9 +13,16 @@ single GitHub Actions workflow.
 | `louisville_code_violations`     | Louisville Metro property maintenance violations   | ArcGIS FeatureServer (REST)             |
 | `indianapolis_code_violations`   | Indianapolis Accela Enforcement                    | **Scaffold only** — see below           |
 
-All sources emit a canonical 5-column CSV (`Date`, `Defendants/Parties`,
-`Property Address`, `PDF Link`, `Notes`) and are normalized into the same
-ingest payload by `.github/scripts/upload_results.py`.
+Jefferson sources (Lis Pendens, Wills) emit the canonical 5-column CSV
+(`Date`, `Defendants/Parties`, `Property Address`, `PDF Link`, `Notes`).
+The Louisville code-violations CSV is source-specific and leads with the
+human-scannable columns (`Filing Date`, `Distress Score`, `Status`,
+`Property Address`, `Occupancy`, `Parties`, `PDF Link`, `Distress Signals`),
+followed by additional columns including `Priority`, `Violation Codes`,
+`Citation Total`, `Violation Rows`, `Case IDs`, `Parcel`, `Source Link`,
+`Instrument Number`, and `Notes`. All sources also emit a structured JSON
+sidecar that `.github/scripts/upload_results.py` prefers when building the
+canonical Lovable ingest payload.
 
 ## GitHub Actions
 

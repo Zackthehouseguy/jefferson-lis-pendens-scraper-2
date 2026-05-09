@@ -29,13 +29,16 @@ import requests
 # and as `python scrapers/louisville_code_violations.py`.
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-    from scrapers.common import parse_date_input, write_canonical_csv  # noqa: E402
+    from scrapers.common import (  # noqa: E402
+        parse_date_input,
+        write_louisville_csv,
+    )
     from scrapers.code_violation_filter import (  # noqa: E402
         MIN_DEFAULT_SCORE,
         group_and_score_rows,
     )
 else:
-    from .common import parse_date_input, write_canonical_csv
+    from .common import parse_date_input, write_louisville_csv
     from .code_violation_filter import MIN_DEFAULT_SCORE, group_and_score_rows
 
 
@@ -190,15 +193,36 @@ def transform_feature(feature: dict) -> dict:
         note_bits.append(f"Occupancy: {occupancy}")
     note_bits.append(f"Source: {SOURCE_NAME}")
 
+    citation_str = ""
+    if citation not in (None, "", 0, 0.0):
+        try:
+            citation_str = f"${float(citation):.2f}".rstrip("0").rstrip(".")
+            if not citation_str.startswith("$"):
+                citation_str = f"${citation}"
+        except (TypeError, ValueError):
+            citation_str = f"${citation}"
+
     return {
         "Date": compl_date or "",
         "Defendants/Parties": parties,
         "Property Address": address,
         "PDF Link": SOURCE_URL,
         "Notes": "; ".join(note_bits),
-        # Extras used by upload_results for canonical record fields:
+        # Extras used by upload_results for canonical record fields and the
+        # Louisville-specific CSV column layout:
         "_instrument_number": alt_id,
         "_filing_date_iso": compl_date,
+        "_distress_score": "",
+        "_priority": "",
+        "_status": status,
+        "_occupancy": occupancy,
+        "_distress_signals": "",
+        "_violation_codes": code,
+        "_citation_total": citation_str,
+        "_violation_row_count": 1,
+        "_case_ids": alt_id,
+        "_parcel": parcel,
+        "_source_link": SOURCE_URL,
     }
 
 
@@ -247,6 +271,7 @@ def build_distressed_leads(
     )
     for lead in leads:
         lead["PDF Link"] = SOURCE_URL
+        lead["_source_link"] = SOURCE_URL
         lead["Notes"] = lead["Notes"] + f" | Source: {SOURCE_NAME}"
     return leads
 
@@ -336,7 +361,7 @@ def main() -> int:
                 f"{args.include_low_signal}, include_closed={args.include_closed}, "
                 f"min_score={args.min_distress_score}).",
             )
-        write_canonical_csv(rows, csv_path)
+        write_louisville_csv(rows, csv_path)
         log("RESULT", f"Wrote {len(rows)} rows to {csv_path}")
 
         # Drop a small JSON sidecar so ingest can keep the structured fields

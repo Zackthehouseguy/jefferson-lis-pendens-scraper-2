@@ -36,6 +36,22 @@ LOUISVILLE_CSV = (
 )
 
 
+# New Louisville CSV column order — used to verify upload_results can still
+# build canonical Lovable records when the CSV is in source-specific shape
+# and no sidecar is available (fallback path).
+LOUISVILLE_CSV_NEW = (
+    "Filing Date,Distress Score,Status,Property Address,Occupancy,Parties,"
+    "PDF Link,Distress Signals,Priority,Violation Codes,Citation Total,"
+    "Violation Rows,Case IDs,Parcel,Source Link,Instrument Number,Notes\r\n"
+    "2025-05-08,12,OPEN,1234 S 4TH ST LOUISVILLE KY 40208,VACANT,"
+    "LMG Codes & Regulations - OPEN,https://services1.arcgis.com/example,"
+    "vacant/abandoned,HIGH,PMC-304.6,$250,1,PMV-2026-001234,021A00010000,"
+    "https://services1.arcgis.com/example,"
+    "LOU_CODE::1234 S 4TH ST::2025-05-08,"
+    "Priority: HIGH | Distress score: 12\r\n"
+)
+
+
 class ResolveMetaTests(unittest.TestCase):
     def test_meta_file_is_used_when_present(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -115,6 +131,95 @@ class LouisvilleRecordParsingTests(unittest.TestCase):
             self.assertEqual(r["filing_date"], "2025-05-08")
             self.assertEqual(r["property_address"], "1234 S 4TH ST LOUISVILLE KY 40208")
             self.assertIsNone(r["pva_verification_link"])
+
+
+class LouisvilleNewCsvShapeTests(unittest.TestCase):
+    """The Louisville CSV is now source-specific (Filing Date/Distress
+    Score/...). upload_results should still produce canonical Lovable records
+    via the sidecar-first path, and via the CSV-fallback path when no sidecar
+    is available."""
+
+    def test_sidecar_first_for_louisville_with_new_csv_shape(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            tmpdir = Path(tmp)
+            csv_path = tmpdir / "louisville_code_violations_results.csv"
+            csv_path.write_text(LOUISVILLE_CSV_NEW, encoding="utf-8-sig")
+            sidecar_path = tmpdir / "louisville_code_violations_records.json"
+            sidecar_path.write_text(
+                json.dumps(
+                    [
+                        {
+                            "Date": "2025-05-08",
+                            "Defendants/Parties": "LMG Codes & Regulations - OPEN",
+                            "Property Address": "1234 S 4TH ST LOUISVILLE KY 40208",
+                            "PDF Link": "https://services1.arcgis.com/example",
+                            "Notes": "Priority: HIGH | Distress score: 12",
+                            "_instrument_number": "LOU_CODE::1234 S 4TH ST::2025-05-08",
+                            "_filing_date_iso": "2025-05-08",
+                            "_distress_score": 12,
+                            "_priority": "HIGH",
+                            "_status": "OPEN",
+                            "_occupancy": "VACANT",
+                            "_distress_signals": "vacant/abandoned",
+                        }
+                    ]
+                )
+            )
+            records = upload_results.read_records(
+                csv_path, "run-3", "louisville_code_violations", sidecar_path
+            )
+            self.assertEqual(len(records), 1)
+            r = records[0]
+            self.assertEqual(
+                r["instrument_number"], "LOU_CODE::1234 S 4TH ST::2025-05-08"
+            )
+            self.assertEqual(r["filing_date"], "2025-05-08")
+            self.assertEqual(
+                r["property_address"], "1234 S 4TH ST LOUISVILLE KY 40208"
+            )
+            self.assertEqual(r["parties"], "LMG Codes & Regulations - OPEN")
+            self.assertEqual(
+                r["pdf_link"], "https://services1.arcgis.com/example"
+            )
+            self.assertIsNone(r["pva_verification_link"])
+
+    def test_louisville_fallback_to_csv_when_no_sidecar(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            tmpdir = Path(tmp)
+            csv_path = tmpdir / "louisville_code_violations_results.csv"
+            csv_path.write_text(LOUISVILLE_CSV_NEW, encoding="utf-8-sig")
+            sidecar_path = tmpdir / "louisville_code_violations_records.json"
+            # Sidecar path passed but file does not exist on disk.
+            records = upload_results.read_records(
+                csv_path, "run-4", "louisville_code_violations", sidecar_path
+            )
+            self.assertEqual(len(records), 1)
+            r = records[0]
+            # Without a sidecar we still get a valid canonical record from the
+            # source-specific CSV shape (Filing Date / Parties / Instrument
+            # Number columns), so Lovable ingest still works.
+            self.assertEqual(
+                r["instrument_number"], "LOU_CODE::1234 S 4TH ST::2025-05-08"
+            )
+            self.assertEqual(r["filing_date"], "2025-05-08")
+            self.assertEqual(r["parties"], "LMG Codes & Regulations - OPEN")
+            self.assertEqual(
+                r["property_address"], "1234 S 4TH ST LOUISVILLE KY 40208"
+            )
+            self.assertEqual(
+                r["pdf_link"], "https://services1.arcgis.com/example"
+            )
+
+    def test_jefferson_csv_unchanged(self) -> None:
+        """Sanity check that Jefferson Lis Pendens parsing is untouched."""
+        with tempfile.TemporaryDirectory() as tmp:
+            tmpdir = Path(tmp)
+            csv_path = tmpdir / "lis_pendens_results.csv"
+            csv_path.write_text(JEFFERSON_CSV, encoding="utf-8-sig")
+            records = upload_results.read_records(csv_path, "run-j", "jefferson_deeds")
+            self.assertEqual(len(records), 1)
+            self.assertEqual(records[0]["filing_date"], "2026-05-08")
+            self.assertEqual(records[0]["instrument_number"], "1234567890")
 
 
 def _meta_louisville() -> dict:

@@ -640,15 +640,41 @@ def _render_lead(group: dict[str, Any]) -> dict[str, Any]:
     latest = group["latest_date"] or ""
     instrument_number = f"LOU_CODE::{instrument_seed_key}::{latest}"
 
+    citation_str = (
+        _format_citation_amount(group["citation_total"])
+        if group["citation_seen"]
+        else ""
+    )
+    status_str = "; ".join(statuses)
+    occupancy_str = ", ".join(occ_list)
+    distress_signals_str = "; ".join(themes)
+    violations_str = (
+        _truncate_list([_label_for_code(c) for c in codes], MAX_VIOLATIONS_IN_NOTE)
+        if codes
+        else ""
+    )
+    case_ids_str = (
+        _truncate_list(case_ids, MAX_CASE_IDS_IN_NOTE) if case_ids else ""
+    )
+
     return {
+        # Canonical 5-column shape (kept for back-compat with Jefferson-shape consumers).
         "Date": group["latest_date"] or "",
         "Defendants/Parties": parties,
         "Property Address": address,
         "PDF Link": "",
         "Notes": " | ".join(note_bits),
+        # Structured extras for the Louisville-specific CSV + JSON sidecar.
         "_instrument_number": instrument_number,
         "_filing_date_iso": group["latest_date"],
         "_distress_score": score,
         "_priority": priority,
         "_violation_row_count": group["row_count"],
+        "_status": status_str,
+        "_occupancy": occupancy_str,
+        "_distress_signals": distress_signals_str,
+        "_violation_codes": violations_str,
+        "_citation_total": citation_str,
+        "_case_ids": case_ids_str,
+        "_parcel": group["parcel"],
     }
