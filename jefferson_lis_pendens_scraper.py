@@ -28,12 +28,33 @@ import requests
 from bs4 import BeautifulSoup
 from PIL import Image, ImageDraw, ImageSequence
 
+from scrapers.wills_extract import extract_wills_fields
+
 
 BASE_URL = "https://search.jeffersondeeds.com/"
 SEARCH_PAGE = urljoin(BASE_URL, "insttype.php")
 SEARCH_ENDPOINT = urljoin(BASE_URL, "p6.php")
 PVA_PROPERTY_SEARCH = "https://jeffersonpva.ky.gov/property-search/property-listings/"
 OUTPUT_COLUMNS = ["Date", "Defendants/Parties", "Property Address", "PDF Link", "Notes"]
+# Wills-specific CSV: leading "smart" fields tailored for estate leads.
+# Trailing optional columns are always present (filled from the extractor)
+# so downstream consumers can rely on a stable shape.
+WILLS_OUTPUT_COLUMNS = [
+    "Filing Date",
+    "Decedent",
+    "Date of Death",
+    "Property Address",
+    "Surviving Spouse",
+    "Beneficiary/Heir/Devisee",
+    "Complexity Flag",
+    "Parties",
+    "PDF Link",
+    "Notes",
+    "Instrument Number",
+    "Legal Description",
+    "Confidence",
+    "Complexity Reasons",
+]
 
 
 STREET_SUFFIXES = (
@@ -69,6 +90,10 @@ class FilingRecord:
     document_url: str
     property_address: str = "Address not found"
     notes: list[str] = field(default_factory=list)
+    # Cached OCR text used by source-specific extractors (e.g. Wills smart
+    # fields). Populated during process_document so write_csv can run
+    # additional extraction without re-OCRing.
+    ocr_text: str = ""
 
     @property
     def parties_for_csv(self) -> str:
@@ -574,6 +599,7 @@ def process_document(
     if resume and ocr_text_path.exists() and ocr_text_path.stat().st_size > 0:
         logger.action(f"Resume mode: using existing OCR text for Instrument #{record.instrument_number}")
         ocr_text = ocr_text_path.read_text(encoding="utf-8", errors="replace")
+        record.ocr_text = ocr_text
         address, note = extract_property_address(ocr_text)
         record.property_address = address
         record.notes.append(f"{note} Resume mode used existing OCR text.")
@@ -596,6 +622,7 @@ def process_document(
     try:
         page_paths = convert_document_to_images(doc_path, pages_dir, record.instrument_number, logger)
         ocr_text = ocr_pages(page_paths, ocr_dir, record.instrument_number, logger)
+        record.ocr_text = ocr_text
         address, note = extract_property_address(ocr_text)
         record.property_address = address
         record.notes.append(note)
@@ -639,6 +666,58 @@ def write_csv(records: list[FilingRecord], output_csv: Path, logger: ActionLogge
     logger.result(f"Saved CSV: {output_csv}")
 
 
+def write_wills_csv(
+    records: list[FilingRecord],
+    output_csv: Path,
+    logger: ActionLogger,
+    source_tag: str = "",
+) -> None:
+    """Write a Wills-specific CSV with smart-field columns up front.
+
+    Runs `extract_wills_fields` over each record's cached OCR text. When OCR
+    is missing (e.g. download failure) every smart field falls back to
+    "Unknown" and the row is still emitted so downstream consumers see one
+    line per filing.
+    """
+    rows = []
+    for record in records:
+        wills = extract_wills_fields(
+            text=record.ocr_text,
+            parties=record.parties_for_csv,
+            legal_description=record.legal_description,
+            existing_address=record.property_address,
+        )
+        note_parts = [source_tag] if source_tag else []
+        note_parts.extend(x for x in record.notes if x)
+        note_parts.extend(x for x in wills.notes if x)
+        notes = "; ".join(note_parts)
+        rows.append(
+            {
+                "Filing Date": record.filing_date,
+                "Decedent": wills.decedent,
+                "Date of Death": wills.date_of_death,
+                "Property Address": wills.property_address,
+                "Surviving Spouse": wills.surviving_spouse,
+                "Beneficiary/Heir/Devisee": wills.beneficiary_heir_devisee,
+                "Complexity Flag": wills.complexity_flag,
+                "Parties": record.parties_for_csv,
+                "PDF Link": record.document_url,
+                "Notes": notes,
+                "Instrument Number": record.instrument_number,
+                "Legal Description": record.legal_description,
+                "Confidence": wills.confidence,
+                "Complexity Reasons": "; ".join(wills.complexity_reasons),
+            }
+        )
+        logger.action(f"Saved Wills CSV row for Instrument #{record.instrument_number}")
+
+    with output_csv.open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=WILLS_OUTPUT_COLUMNS)
+        writer.writeheader()
+        writer.writerows(rows)
+    logger.result(f"Saved Wills CSV: {output_csv}")
+
+
 def write_validation_report(records: list[FilingRecord], output_path: Path, logger: ActionLogger) -> None:
     names = " | ".join(r.parties_for_csv.upper() for r in records)
     addresses = " | ".join(r.property_address.upper() for r in records)
@@ -678,6 +757,13 @@ def main() -> int:
     parser.add_argument("--skip-validation", action="store_true", help="Skip the Lis-Pendens-specific benchmark validation report.")
     parser.add_argument("--source-tag", default="", help="Optional tag prepended to the Notes column (e.g. 'Source: WILLS').")
     parser.add_argument("--always-include-legal-desc", action="store_true", help="Always append Legal Desc to Notes, not only when address extraction fails.")
+    parser.add_argument(
+        "--wills-csv-format",
+        action="store_true",
+        help="Emit the Wills-specific CSV column shape with smart fields "
+             "(Decedent, Date of Death, Surviving Spouse, Beneficiary, "
+             "Complexity Flag, ...) instead of the canonical Lis-Pendens 5-column shape.",
+    )
     args = parser.parse_args()
 
     output_dir = Path(args.output_dir).resolve()
@@ -732,7 +818,10 @@ def main() -> int:
             time.sleep(args.sleep)
 
         csv_path = output_dir / args.csv_name
-        write_csv(all_records, csv_path, logger, source_tag=args.source_tag)
+        if args.wills_csv_format:
+            write_wills_csv(all_records, csv_path, logger, source_tag=args.source_tag)
+        else:
+            write_csv(all_records, csv_path, logger, source_tag=args.source_tag)
         if not args.skip_validation:
             write_validation_report(all_records, output_dir / "validation_report.txt", logger)
 

@@ -98,6 +98,45 @@ class JeffersonRecordParsingTests(unittest.TestCase):
             self.assertEqual(r["property_address"], "123 MAIN ST")
             # The base64 'Zm9vMTIzNDU2Nzg5MC50aWY=' decodes to 'foo1234567890.tif'
             self.assertEqual(r["instrument_number"], "1234567890")
+            # Lis Pendens rows should NOT carry the wills_fields extras.
+            self.assertNotIn("wills_fields", r)
+
+    def test_parses_wills_csv_shape_with_jefferson_schema(self) -> None:
+        """The Wills CSV ships with smart-field columns up front
+        ("Filing Date", "Decedent", "Parties", ...) instead of the
+        canonical Lis Pendens 5-column shape. The jefferson_deeds reader
+        must tolerate both shapes so the same ingest pipeline handles
+        both sources.
+        """
+        wills_csv = (
+            "Filing Date,Decedent,Date of Death,Property Address,"
+            "Surviving Spouse,Beneficiary/Heir/Devisee,Complexity Flag,"
+            "Parties,PDF Link,Notes,Instrument Number,Legal Description,"
+            "Confidence,Complexity Reasons\n"
+            "05/08/2026,JOHN A. SMITH,March 14 2025,"
+            "\"4419 Malcolm Ave, Louisville, KY 40215\",Mary J. Smith,"
+            "Robert Smith,Simple,SMITH JOHN; SMITH ROBERT,"
+            "https://example/p2.php,Source: WILLS,1234567890,Lot 7 Sec A,"
+            "medium,\n"
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            tmpdir = Path(tmp)
+            csv_path = tmpdir / "wills_results.csv"
+            csv_path.write_text(wills_csv, encoding="utf-8-sig")
+            records = upload_results.read_records(csv_path, "run-1", "jefferson_deeds")
+            self.assertEqual(len(records), 1)
+            r = records[0]
+            self.assertEqual(r["filing_date"], "2026-05-08")
+            self.assertEqual(r["parties"], "SMITH JOHN; SMITH ROBERT")
+            self.assertEqual(r["property_address"], "4419 Malcolm Ave, Louisville, KY 40215")
+            # Instrument number column wins over the PDF-link fallback.
+            self.assertEqual(r["instrument_number"], "1234567890")
+            # Wills extras are surfaced under a sub-key so the canonical
+            # ingest fields (filing_date, parties, property_address, ...)
+            # are unchanged.
+            self.assertIn("wills_fields", r)
+            self.assertEqual(r["wills_fields"]["complexity_flag"], "Simple")
+            self.assertEqual(r["wills_fields"]["surviving_spouse"], "Mary J. Smith")
 
 
 class LouisvilleRecordParsingTests(unittest.TestCase):

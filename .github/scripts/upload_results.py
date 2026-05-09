@@ -67,20 +67,48 @@ def extract_pva_link(notes: str) -> str | None:
 
 
 def _row_to_jefferson_record(row: dict, run_id: str) -> dict:
-    parties = row.get("Defendants/Parties", "").strip()
-    pdf_link = row.get("PDF Link", "").strip()
-    notes = row.get("Notes", "").strip()
-    seed = "|".join([row.get("Date", ""), parties, row.get("Property Address", ""), pdf_link])
-    return {
+    # Tolerate either the canonical Lis Pendens shape ("Date" /
+    # "Defendants/Parties") or the Wills smart-field shape ("Filing Date" /
+    # "Parties"). Wills CSVs additionally carry a leading
+    # "Instrument Number" column; prefer it over the PDF-link fallback when
+    # present.
+    parties = (row.get("Defendants/Parties") or row.get("Parties") or "").strip()
+    pdf_link = (row.get("PDF Link") or "").strip()
+    notes = (row.get("Notes") or "").strip()
+    raw_date = (row.get("Date") or row.get("Filing Date") or "").strip()
+    address = (row.get("Property Address") or "").strip()
+    csv_instrument = (row.get("Instrument Number") or "").strip()
+    seed = "|".join([raw_date, parties, address, pdf_link])
+    instrument_number = csv_instrument or extract_instrument_number(pdf_link, seed)
+
+    record = {
         "run_id": run_id,
-        "filing_date": iso_date(row.get("Date", "")),
-        "instrument_number": extract_instrument_number(pdf_link, seed),
+        "filing_date": iso_date(raw_date),
+        "instrument_number": instrument_number,
         "parties": parties,
-        "property_address": row.get("Property Address", "").strip(),
+        "property_address": address,
         "pdf_link": pdf_link,
         "notes": notes,
         "pva_verification_link": extract_pva_link(notes),
     }
+
+    # Wills smart fields — only emitted when the CSV row carries them.
+    # Downstream ingest endpoints already ignore unknown keys, so this is
+    # additive and does not affect the canonical Lis Pendens shape.
+    wills_extras = {
+        "decedent": (row.get("Decedent") or "").strip(),
+        "date_of_death": (row.get("Date of Death") or "").strip(),
+        "surviving_spouse": (row.get("Surviving Spouse") or "").strip(),
+        "beneficiary_heir_devisee": (row.get("Beneficiary/Heir/Devisee") or "").strip(),
+        "complexity_flag": (row.get("Complexity Flag") or "").strip(),
+        "complexity_reasons": (row.get("Complexity Reasons") or "").strip(),
+        "confidence": (row.get("Confidence") or "").strip(),
+        "legal_description": (row.get("Legal Description") or "").strip(),
+    }
+    if any(wills_extras.values()):
+        record["wills_fields"] = {k: v for k, v in wills_extras.items() if v}
+
+    return record
 
 
 def _row_to_simple_record(
