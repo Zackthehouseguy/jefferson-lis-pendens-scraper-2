@@ -119,7 +119,10 @@ jobs:
             --output-dir scraper_output \
             --source-type "${{ steps.source.outputs.source_type }}" \
             --status "$STATUS" \
-            --error-message "$ERROR_MESSAGE"
+            --error-message "$ERROR_MESSAGE" \
+            --record-batch-size "${UPLOAD_RECORD_BATCH_SIZE:-100}"
+        env:
+          UPLOAD_RECORD_BATCH_SIZE: "100"
 
       - name: Upload scraper output artifact
         if: always()
