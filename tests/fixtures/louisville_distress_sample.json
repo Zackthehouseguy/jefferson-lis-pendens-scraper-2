@@ -1,0 +1,111 @@
+{
+  "objectIdFieldName": "OBJECTID",
+  "fields": [],
+  "features": [
+    {
+      "attributes": {
+        "B1_ALT_ID": "PMV-2026-100001",
+        "FullAddress": "1234 S 4TH ST, LOUISVILLE, KY 40208",
+        "PartialAddress": "1234 S 4TH ST",
+        "PARCEL_ID": "021A00010000",
+        "G6A_G6_COMPL_DD": 1746662400000,
+        "G6A_G6_STATUS": "OPEN",
+        "G6A_G6_STATUS_DD": 1746662400000,
+        "GUIDE_ITEM_TEXT": "Premises shall be free of weeds and plant growth in excess",
+        "VIOLATION_CODE": "02A",
+        "CitationAmount": 250.0,
+        "OccupancyStatus": "VACANT STRUCTURE"
+      }
+    },
+    {
+      "attributes": {
+        "B1_ALT_ID": "PMV-2026-100002",
+        "FullAddress": "1234 S 4TH ST, LOUISVILLE, KY 40208",
+        "PartialAddress": "1234 S 4TH ST",
+        "PARCEL_ID": "021A00010000",
+        "G6A_G6_COMPL_DD": 1746748800000,
+        "G6A_G6_STATUS": "CITATION",
+        "G6A_G6_STATUS_DD": 1746748800000,
+        "GUIDE_ITEM_TEXT": "Roof and gutters shall be maintained; missing down spout",
+        "VIOLATION_CODE": "X50",
+        "CitationAmount": 350.0,
+        "OccupancyStatus": "VACANT"
+      }
+    },
+    {
+      "attributes": {
+        "B1_ALT_ID": "PMV-2026-100003",
+        "FullAddress": "1234 S 4TH ST, LOUISVILLE, KY 40208",
+        "PartialAddress": "1234 S 4TH ST",
+        "PARCEL_ID": "021A00010000",
+        "G6A_G6_COMPL_DD": 1746748800000,
+        "G6A_G6_STATUS": "OPEN",
+        "G6A_G6_STATUS_DD": 1746748800000,
+        "GUIDE_ITEM_TEXT": "Exterior surfaces shall be free of holes; foundation deteriorated",
+        "VIOLATION_CODE": "X19",
+        "CitationAmount": null,
+        "OccupancyStatus": "VACANT"
+      }
+    },
+    {
+      "attributes": {
+        "B1_ALT_ID": "PMV-2026-100099",
+        "FullAddress": "555 RENTAL CT, LOUISVILLE, KY 40208",
+        "PartialAddress": "555 RENTAL CT",
+        "PARCEL_ID": "099Z00009999",
+        "G6A_G6_COMPL_DD": 1746662400000,
+        "G6A_G6_STATUS": "OPEN",
+        "G6A_G6_STATUS_DD": 1746662400000,
+        "GUIDE_ITEM_TEXT": "Landlord rental registration required",
+        "VIOLATION_CODE": "R01",
+        "CitationAmount": null,
+        "OccupancyStatus": "OCCUPIED"
+      }
+    },
+    {
+      "attributes": {
+        "B1_ALT_ID": "PMV-2026-100100",
+        "FullAddress": "777 NUMBERS LN, LOUISVILLE, KY 40208",
+        "PartialAddress": "777 NUMBERS LN",
+        "PARCEL_ID": "077X00007777",
+        "G6A_G6_COMPL_DD": 1746662400000,
+        "G6A_G6_STATUS": "OPEN",
+        "G6A_G6_STATUS_DD": 1746662400000,
+        "GUIDE_ITEM_TEXT": "Address numbers shall be visible from the street",
+        "VIOLATION_CODE": "X69",
+        "CitationAmount": null,
+        "OccupancyStatus": "OCCUPIED"
+      }
+    },
+    {
+      "attributes": {
+        "B1_ALT_ID": "PMV-2026-100200",
+        "FullAddress": "9 BORDERLINE WAY, LOUISVILLE, KY 40208",
+        "PartialAddress": "9 BORDERLINE WAY",
+        "PARCEL_ID": "088B00008888",
+        "G6A_G6_COMPL_DD": 1746662400000,
+        "G6A_G6_STATUS": "OPEN",
+        "G6A_G6_STATUS_DD": 1746662400000,
+        "GUIDE_ITEM_TEXT": "Window broken; replace cracked window pane",
+        "VIOLATION_CODE": "PMC-304.13",
+        "CitationAmount": null,
+        "OccupancyStatus": "OCCUPIED"
+      }
+    },
+    {
+      "attributes": {
+        "B1_ALT_ID": "PMV-2026-100300",
+        "FullAddress": "42 PORCHVIEW RD, LOUISVILLE, KY 40208",
+        "PartialAddress": "42 PORCHVIEW RD",
+        "PARCEL_ID": "044P00004242",
+        "G6A_G6_COMPL_DD": 1746748800000,
+        "G6A_G6_STATUS": "OPEN",
+        "G6A_G6_STATUS_DD": 1746748800000,
+        "GUIDE_ITEM_TEXT": "Porch handrail loose; stairs deteriorated",
+        "VIOLATION_CODE": "X40",
+        "CitationAmount": 150.0,
+        "OccupancyStatus": "OCCUPIED"
+      }
+    }
+  ]
+}

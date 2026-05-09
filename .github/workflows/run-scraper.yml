@@ -34,6 +34,11 @@ on:
         required: false
         default: "auto"
         type: string
+      include_low_signal_code_violations:
+        description: "Code-violation sources only: include low-signal/administrative violations. Default false = high-signal distressed leads only."
+        required: false
+        default: "false"
+        type: string
       ingest_url:
         required: true
         type: string
@@ -89,6 +94,7 @@ jobs:
           EXTRA_FLAGS=""
           if [ "${{ inputs.pva_cross_check }}" = "true" ]; then EXTRA_FLAGS="$EXTRA_FLAGS --pva-cross-check"; fi
           if [ "${{ inputs.resume }}" = "true" ]; then EXTRA_FLAGS="$EXTRA_FLAGS --resume"; fi
+          if [ "${{ inputs.include_low_signal_code_violations }}" = "true" ]; then EXTRA_FLAGS="$EXTRA_FLAGS --include-low-signal-code-violations"; fi
           python -m scrapers.run_source \
             --source-type "${{ steps.source.outputs.source_type }}" \
             --start-date "${{ inputs.start_date }}" \
