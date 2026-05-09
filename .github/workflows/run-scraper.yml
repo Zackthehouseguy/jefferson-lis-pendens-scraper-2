@@ -1,4 +1,4 @@
-name: Run Jefferson Lis Pendens Scraper
+name: Run Property Signal Scraper
 
 on:
   workflow_dispatch:
@@ -6,6 +6,16 @@ on:
       run_id:
         required: true
         type: string
+      source_type:
+        description: "Which source to scrape."
+        required: false
+        default: "lis_pendens"
+        type: choice
+        options:
+          - lis_pendens
+          - wills
+          - louisville_code_violations
+          - indianapolis_code_violations
       start_date:
         required: true
         type: string
@@ -54,6 +64,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Resolve source type
+        id: source
+        run: |
+          ST="${{ inputs.source_type }}"
+          if [ -z "$ST" ]; then ST="lis_pendens"; fi
+          echo "source_type=$ST" >> "$GITHUB_OUTPUT"
+          echo "Source type resolved to: $ST"
+
       - name: Mark run as running
         run: |
           python .github/scripts/update_run.py \
@@ -61,7 +79,7 @@ jobs:
             --ingest-url "${{ inputs.ingest_url }}" \
             --ingest-token "${{ inputs.ingest_token }}" \
             --status running \
-            --message "GitHub Actions worker started."
+            --message "GitHub Actions worker started (source: ${{ steps.source.outputs.source_type }})."
 
       - name: Run scraper
         id: scrape
@@ -71,7 +89,8 @@ jobs:
           EXTRA_FLAGS=""
           if [ "${{ inputs.pva_cross_check }}" = "true" ]; then EXTRA_FLAGS="$EXTRA_FLAGS --pva-cross-check"; fi
           if [ "${{ inputs.resume }}" = "true" ]; then EXTRA_FLAGS="$EXTRA_FLAGS --resume"; fi
-          python jefferson_lis_pendens_scraper.py \
+          python -m scrapers.run_source \
+            --source-type "${{ steps.source.outputs.source_type }}" \
             --start-date "${{ inputs.start_date }}" \
             --end-date "${{ inputs.end_date }}" \
             --output-dir scraper_output \
@@ -92,6 +111,7 @@ jobs:
             --ingest-url "${{ inputs.ingest_url }}" \
             --ingest-token "${{ inputs.ingest_token }}" \
             --output-dir scraper_output \
+            --source-type "${{ steps.source.outputs.source_type }}" \
             --status "$STATUS" \
             --error-message "$ERROR_MESSAGE"
 
