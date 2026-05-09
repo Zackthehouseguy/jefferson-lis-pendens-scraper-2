@@ -1,0 +1,54 @@
+{
+  "objectIdFieldName": "OBJECTID",
+  "fields": [
+    {"name": "B1_ALT_ID", "type": "esriFieldTypeString"},
+    {"name": "FullAddress", "type": "esriFieldTypeString"},
+    {"name": "PartialAddress", "type": "esriFieldTypeString"},
+    {"name": "PARCEL_ID", "type": "esriFieldTypeString"},
+    {"name": "G6A_G6_COMPL_DD", "type": "esriFieldTypeDate"},
+    {"name": "G6A_G6_STATUS", "type": "esriFieldTypeString"},
+    {"name": "G6A_G6_STATUS_DD", "type": "esriFieldTypeDate"},
+    {"name": "GUIDE_ITEM_TEXT", "type": "esriFieldTypeString"},
+    {"name": "VIOLATION_CODE", "type": "esriFieldTypeString"},
+    {"name": "CitationAmount", "type": "esriFieldTypeDouble"},
+    {"name": "OccupancyStatus", "type": "esriFieldTypeString"},
+    {"name": "Longitude", "type": "esriFieldTypeDouble"},
+    {"name": "Latitude", "type": "esriFieldTypeDouble"}
+  ],
+  "features": [
+    {
+      "attributes": {
+        "B1_ALT_ID": "PMV-2026-001234",
+        "FullAddress": "1234 S 4TH ST, LOUISVILLE, KY 40208",
+        "PartialAddress": "1234 S 4TH ST",
+        "PARCEL_ID": "021A00010000",
+        "G6A_G6_COMPL_DD": 1746662400000,
+        "G6A_G6_STATUS": "OPEN",
+        "G6A_G6_STATUS_DD": 1746662400000,
+        "GUIDE_ITEM_TEXT": "Exterior surfaces shall be free of holes",
+        "VIOLATION_CODE": "PMC-304.6",
+        "CitationAmount": 250.0,
+        "OccupancyStatus": "OCCUPIED",
+        "Longitude": -85.7585,
+        "Latitude": 38.2147
+      }
+    },
+    {
+      "attributes": {
+        "B1_ALT_ID": "PMV-2026-005678",
+        "FullAddress": null,
+        "PartialAddress": "4419 MALCOLM RD",
+        "PARCEL_ID": "045B00020000",
+        "G6A_G6_COMPL_DD": 1746748800000,
+        "G6A_G6_STATUS": "CLOSED",
+        "G6A_G6_STATUS_DD": 1746835200000,
+        "GUIDE_ITEM_TEXT": "Premises identification required",
+        "VIOLATION_CODE": "PMC-304.3",
+        "CitationAmount": null,
+        "OccupancyStatus": "VACANT",
+        "Longitude": -85.81,
+        "Latitude": 38.18
+      }
+    }
+  ]
+}

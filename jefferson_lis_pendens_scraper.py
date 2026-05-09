@@ -294,17 +294,23 @@ def parse_search_results(html: str, logger: ActionLogger) -> list[FilingRecord]:
     return records
 
 
-def search_one_date(session: requests.Session, date_value: str, logger: ActionLogger) -> list[FilingRecord]:
+def search_one_date(
+    session: requests.Session,
+    date_value: str,
+    logger: ActionLogger,
+    instrument_code: str = "LP ",
+    instrument_label: str = "LIS PENDENS",
+) -> list[FilingRecord]:
     logger.action(f"Opened {SEARCH_PAGE}")
     resp = session.get(SEARCH_PAGE, timeout=30)
     resp.raise_for_status()
     logger.action("Selected Search by Instrument Type")
-    logger.action("Selected LIS PENDENS")
+    logger.action(f"Selected {instrument_label}")
     logger.action(f"Entered Start Date: {date_value}")
     logger.action(f"Entered End Date: {date_value}")
     payload = {
         "cnum": "CNUM",
-        "itype1": "LP ",
+        "itype1": instrument_code,
         "itype2": "",
         "itype3": "",
         "bDate": date_value,
@@ -319,11 +325,17 @@ def search_one_date(session: requests.Session, date_value: str, logger: ActionLo
     if records:
         logger.result(f"Found {len(records)} records for {date_value}")
     else:
-        logger.result(f"No Lis Pendens found for {date_value}")
+        logger.result(f"No {instrument_label} found for {date_value}")
     return records
 
 
-def search_one_date_browser(date_value: str, logger: ActionLogger, headless: bool = True) -> list[FilingRecord]:
+def search_one_date_browser(
+    date_value: str,
+    logger: ActionLogger,
+    headless: bool = True,
+    instrument_code: str = "LP ",
+    instrument_label: str = "LIS PENDENS",
+) -> list[FilingRecord]:
     """
     Playwright fallback for environments where direct form posts stop working.
 
@@ -346,10 +358,10 @@ def search_one_date_browser(date_value: str, logger: ActionLogger, headless: boo
         page = browser.new_page()
         page.goto(SEARCH_PAGE, wait_until="networkidle", timeout=60000)
         logger.action("Selected Search by Instrument Type using Playwright fallback")
-        logger.action("Selected LIS PENDENS using Playwright fallback")
+        logger.action(f"Selected {instrument_label} using Playwright fallback")
         logger.action(f"Entered Start Date: {date_value}")
         logger.action(f"Entered End Date: {date_value}")
-        page.locator('select[name="itype1"]').select_option("LP ")
+        page.locator('select[name="itype1"]').select_option(instrument_code)
         page.locator('input[name="bDate"]').fill(date_value)
         page.locator('input[name="eDate"]').fill(date_value)
         logger.action("Clicked Execute Search using Playwright fallback")
@@ -362,7 +374,7 @@ def search_one_date_browser(date_value: str, logger: ActionLogger, headless: boo
     if records:
         logger.result(f"Found {len(records)} records for {date_value} using Playwright fallback")
     else:
-        logger.result(f"No Lis Pendens found for {date_value} using Playwright fallback")
+        logger.result(f"No {instrument_label} found for {date_value} using Playwright fallback")
     return records
 
 
@@ -372,16 +384,24 @@ def search_date_with_mode(
     logger: ActionLogger,
     search_mode: str,
     browser_headless: bool,
+    instrument_code: str = "LP ",
+    instrument_label: str = "LIS PENDENS",
 ) -> list[FilingRecord]:
     if search_mode == "direct":
-        return search_one_date(session, date_value, logger)
+        return search_one_date(session, date_value, logger, instrument_code, instrument_label)
     if search_mode == "browser":
-        return search_one_date_browser(date_value, logger, headless=browser_headless)
+        return search_one_date_browser(
+            date_value, logger, headless=browser_headless,
+            instrument_code=instrument_code, instrument_label=instrument_label,
+        )
     try:
-        return search_one_date(session, date_value, logger)
+        return search_one_date(session, date_value, logger, instrument_code, instrument_label)
     except Exception as exc:
         logger.warning(f"Direct search failed for {date_value}; falling back to Playwright browser mode: {exc}")
-        return search_one_date_browser(date_value, logger, headless=browser_headless)
+        return search_one_date_browser(
+            date_value, logger, headless=browser_headless,
+            instrument_code=instrument_code, instrument_label=instrument_label,
+        )
 
 
 def download_with_retries(
@@ -645,6 +665,10 @@ def main() -> int:
     parser.add_argument("--pva-cross-check", action="store_true", help="Append a reachable Jefferson PVA manual verification URL to Notes.")
     parser.add_argument("--search-mode", choices=["direct", "browser", "auto"], default="direct", help="Search via direct HTTP, Playwright browser, or direct with browser fallback.")
     parser.add_argument("--headed-browser", action="store_true", help="Show browser window when --search-mode uses Playwright.")
+    parser.add_argument("--instrument-code", default="LP ", help="Jefferson Deeds instrument-type code (e.g. 'LP ' for Lis Pendens, 'WI ' or 'WILL' for Wills).")
+    parser.add_argument("--instrument-label", default="LIS PENDENS", help="Human-readable instrument type label, used for logging and validation.")
+    parser.add_argument("--csv-name", default="lis_pendens_results.csv", help="Output CSV filename inside --output-dir.")
+    parser.add_argument("--skip-validation", action="store_true", help="Skip the Lis-Pendens-specific benchmark validation report.")
     args = parser.parse_args()
 
     output_dir = Path(args.output_dir).resolve()
@@ -673,6 +697,8 @@ def main() -> int:
                 logger,
                 args.search_mode,
                 browser_headless=not args.headed_browser,
+                instrument_code=args.instrument_code,
+                instrument_label=args.instrument_label,
             )
             for record in date_records:
                 if record.instrument_number in seen_instruments:
@@ -695,11 +721,13 @@ def main() -> int:
             )
             time.sleep(args.sleep)
 
-        write_csv(all_records, output_dir / "lis_pendens_results.csv", logger)
-        write_validation_report(all_records, output_dir / "validation_report.txt", logger)
+        csv_path = output_dir / args.csv_name
+        write_csv(all_records, csv_path, logger)
+        if not args.skip_validation:
+            write_validation_report(all_records, output_dir / "validation_report.txt", logger)
 
         preview_path = output_dir / "csv_preview.txt"
-        df = pd.read_csv(output_dir / "lis_pendens_results.csv")
+        df = pd.read_csv(csv_path)
         preview_path.write_text(df.head(20).to_string(index=False), encoding="utf-8")
         logger.result(f"CSV preview saved: {preview_path}")
         return 0
