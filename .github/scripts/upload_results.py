@@ -88,21 +88,30 @@ def _row_to_simple_record(
     run_id: str,
     sidecar_lookup: dict[str, dict] | None = None,
 ) -> dict:
-    parties = row.get("Defendants/Parties", "").strip()
-    pdf_link = row.get("PDF Link", "").strip()
-    notes = row.get("Notes", "").strip()
-    address = row.get("Property Address", "").strip()
-    raw_date = row.get("Date", "").strip()
+    # Tolerate either the legacy 5-column shape (Date / Defendants/Parties / ...)
+    # or the Louisville-specific shape (Filing Date / Parties / ...).
+    parties = (row.get("Defendants/Parties") or row.get("Parties") or "").strip()
+    pdf_link = (row.get("PDF Link") or "").strip()
+    notes = (row.get("Notes") or "").strip()
+    address = (row.get("Property Address") or "").strip()
+    raw_date = (row.get("Date") or row.get("Filing Date") or "").strip()
+    csv_instrument = (row.get("Instrument Number") or "").strip()
 
-    instrument_number: str | None = None
-    filing_date: str | None = iso_date(raw_date)
+    instrument_number: str | None = csv_instrument or None
+    filing_date: str | None = iso_date(raw_date) or (raw_date if raw_date else None)
 
     # Prefer the structured sidecar emitted by the source scraper when present.
+    sidecar = None
     if sidecar_lookup is not None:
-        key = "|".join([raw_date, parties, address, pdf_link, notes])
-        sidecar = sidecar_lookup.get(key)
+        if csv_instrument:
+            sidecar = sidecar_lookup.get(f"INSTRUMENT::{csv_instrument}")
+        if sidecar is None:
+            key = "|".join([raw_date, parties, address, pdf_link, notes])
+            sidecar = sidecar_lookup.get(key)
         if sidecar:
-            instrument_number = (sidecar.get("_instrument_number") or "").strip() or None
+            sidecar_instrument = (sidecar.get("_instrument_number") or "").strip()
+            if sidecar_instrument:
+                instrument_number = sidecar_instrument
             filing_date = sidecar.get("_filing_date_iso") or filing_date
 
     if not instrument_number:
@@ -122,6 +131,14 @@ def _row_to_simple_record(
 
 
 def _build_sidecar_lookup(sidecar_path: Path) -> dict[str, dict]:
+    """Index the JSON sidecar so each CSV row can find its structured twin.
+
+    Sidecar items emitted by code-violation scrapers carry both the legacy
+    5-column keys (Date, Defendants/Parties, ...) and the Louisville extras
+    (_instrument_number, _filing_date_iso, etc.). We index by both the legacy
+    composite key and by INSTRUMENT::<id> so the new Louisville CSV (which
+    has a dedicated Instrument Number column) can resolve directly.
+    """
     if not sidecar_path.exists():
         return {}
     try:
@@ -140,14 +157,69 @@ def _build_sidecar_lookup(sidecar_path: Path) -> dict[str, dict]:
             ]
         )
         lookup[key] = item
+        instrument = (item.get("_instrument_number") or "").strip()
+        if instrument:
+            lookup[f"INSTRUMENT::{instrument}"] = item
     return lookup
+
+
+def _sidecar_to_record(item: dict, run_id: str) -> dict:
+    """Build a canonical Lovable record straight from a sidecar JSON item.
+
+    Used for code-violation sources where the sidecar is the source-of-truth
+    for structured fields and the CSV is now source-specific (Louisville).
+    """
+    instrument = (item.get("_instrument_number") or "").strip()
+    if not instrument:
+        seed = "|".join(
+            [
+                item.get("Date", ""),
+                item.get("Defendants/Parties", "") or item.get("Parties", ""),
+                item.get("Property Address", ""),
+                item.get("PDF Link", ""),
+                item.get("Notes", ""),
+            ]
+        )
+        instrument = hashlib.sha1(seed.encode("utf-8")).hexdigest()[:16]
+    return {
+        "run_id": run_id,
+        "filing_date": item.get("_filing_date_iso")
+        or iso_date(item.get("Date", "") or item.get("Filing Date", "")),
+        "instrument_number": instrument,
+        "parties": (
+            item.get("Defendants/Parties") or item.get("Parties") or ""
+        ).strip(),
+        "property_address": (item.get("Property Address") or "").strip(),
+        "pdf_link": (item.get("PDF Link") or "").strip(),
+        "notes": (item.get("Notes") or "").strip(),
+        "pva_verification_link": None,
+    }
 
 
 def read_records(csv_path: Path, run_id: str, schema: str, sidecar_path: Path | None = None) -> list[dict]:
     records: list[dict] = []
+    sidecar_lookup = _build_sidecar_lookup(sidecar_path) if sidecar_path else {}
+
+    # For code-violation sources, the sidecar carries the canonical structured
+    # fields (instrument_number, ISO filing_date, etc.) and is the preferred
+    # source of truth — the CSV is now source-specific (Louisville's column
+    # order differs from the canonical 5-column shape) and is primarily for
+    # human consumption / spreadsheets. Fall back to CSV parsing only if the
+    # sidecar is absent.
+    if (
+        schema in (LOUISVILLE_SCHEMA, INDIANAPOLIS_SCHEMA)
+        and sidecar_path is not None
+        and sidecar_path.exists()
+    ):
+        try:
+            items = json.loads(sidecar_path.read_text(encoding="utf-8")) or []
+        except Exception:
+            items = []
+        if items:
+            return [_sidecar_to_record(item, run_id) for item in items]
+
     if not csv_path.exists():
         return records
-    sidecar_lookup = _build_sidecar_lookup(sidecar_path) if sidecar_path else {}
 
     with csv_path.open("r", encoding="utf-8-sig", newline="") as handle:
         reader = csv.DictReader(handle)
