@@ -16,6 +16,7 @@ on:
           - wills
           - louisville_code_violations
           - indianapolis_code_violations
+          - tax_delinquent
       start_date:
         required: true
         type: string

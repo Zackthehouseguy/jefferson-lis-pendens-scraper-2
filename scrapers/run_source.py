@@ -52,6 +52,11 @@ SOURCES = {
         "schema": "indianapolis_code_violations",
         "label": "Indianapolis Code Violations",
     },
+    "tax_delinquent": {
+        "csv_name": "jefferson_tax_delinquent_results.csv",
+        "schema": "jefferson_tax_delinquent",
+        "label": "Jefferson Tax Delinquent",
+    },
 }
 
 
@@ -130,6 +135,18 @@ def _indianapolis_command(args: argparse.Namespace) -> list[str]:
     ]
 
 
+def _tax_delinquent_command(args: argparse.Namespace) -> list[str]:
+    return [
+        sys.executable,
+        "-m",
+        "scrapers.jefferson_tax_delinquent",
+        "--start-date", args.start_date,
+        "--end-date", args.end_date,
+        "--output-dir", args.output_dir,
+        "--csv-name", SOURCES["tax_delinquent"]["csv_name"],
+    ]
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Property-signal scraper dispatcher.")
     parser.add_argument(
@@ -184,6 +201,8 @@ def main() -> int:
         cmd = _louisville_command(args)
     elif source_type == "indianapolis_code_violations":
         cmd = _indianapolis_command(args)
+    elif source_type == "tax_delinquent":
+        cmd = _tax_delinquent_command(args)
     else:  # pragma: no cover - argparse already restricts choices
         raise ValueError(f"Unknown source_type: {source_type}")
 

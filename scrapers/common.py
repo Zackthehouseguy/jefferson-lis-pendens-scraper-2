@@ -113,3 +113,41 @@ def write_louisville_csv(rows: Iterable[dict], output_csv: Path) -> int:
             )
             count += 1
     return count
+
+
+# Jefferson tax-delinquent CSV column order. Leading columns mirror what
+# the operator specified for Lovable + Google Sheets readability. Filing
+# Date is intentionally retained as the first column for parity with the
+# other property-signal CSVs even though the source has no per-record
+# filing date (it is always blank for this source).
+TAX_DELINQUENT_CSV_COLUMNS = [
+    "Filing Date",
+    "Tax Year",
+    "Amount Due",
+    "Status",
+    "Property Address",
+    "Parcel ID",
+    "Parties",
+    "Source Link",
+    "Notes",
+]
+
+
+def write_tax_delinquent_csv(rows: Iterable[dict], output_csv: Path) -> int:
+    """Write rows in the Jefferson tax-delinquent column order.
+
+    Required leading columns (in order):
+      Filing Date, Tax Year, Amount Due, Status, Property Address,
+      Parcel ID, Parties, Source Link, Notes
+    """
+    output_csv.parent.mkdir(parents=True, exist_ok=True)
+    count = 0
+    with output_csv.open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=TAX_DELINQUENT_CSV_COLUMNS)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow(
+                {col: row.get(col, "") for col in TAX_DELINQUENT_CSV_COLUMNS}
+            )
+            count += 1
+    return count
