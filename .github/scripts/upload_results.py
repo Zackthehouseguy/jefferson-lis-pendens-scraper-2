@@ -24,6 +24,7 @@ import requests
 JEFFERSON_SCHEMAS = {"jefferson_deeds"}
 LOUISVILLE_SCHEMA = "louisville_code_violations"
 INDIANAPOLIS_SCHEMA = "indianapolis_code_violations"
+TAX_DELINQUENT_SCHEMA = "jefferson_tax_delinquent"
 
 DEFAULT_RECORD_BATCH_SIZE = 100
 
@@ -224,6 +225,62 @@ def _sidecar_to_record(item: dict, run_id: str) -> dict:
     }
 
 
+def _tax_delinquent_sidecar_to_record(item: dict, run_id: str) -> dict:
+    """Build a canonical Lovable record for the jefferson_tax_delinquent schema.
+
+    Fields are taken from the sidecar exactly as produced by the scraper —
+    we DO NOT fabricate any field. The Clerk's published listing has no
+    per-record filing date, no bill number, and the source is annual, so
+    `filing_date` and `bill_number` are emitted as null/empty whenever
+    they are missing from the source.
+    """
+    parcel = (item.get("Parcel ID") or "").strip()
+    tax_year = (item.get("Tax Year") or "").strip()
+    instrument = (
+        (item.get("_instrument_number") or item.get("_source_record_id") or "").strip()
+    )
+    if not instrument:
+        seed = "|".join([parcel, tax_year, item.get("Source Link", "")])
+        instrument = hashlib.sha1(seed.encode("utf-8")).hexdigest()[:16]
+
+    amount_value = item.get("_amount_due_value")
+    try:
+        amount_value = float(amount_value) if amount_value not in (None, "") else None
+    except (TypeError, ValueError):
+        amount_value = None
+
+    notes = (item.get("Notes") or "").strip()
+    address = (item.get("Property Address") or "").strip()
+    if address == "Address not found":
+        # Keep the canonical "not found" marker out of the typed field; ingest
+        # logic treats empty as "unknown" rather than the literal string.
+        address = ""
+
+    return {
+        "run_id": run_id,
+        "filing_date": item.get("_filing_date_iso") or None,
+        "instrument_number": instrument,
+        "source_record_id": instrument,
+        "parties": (item.get("Parties") or "").strip(),
+        "owner": (item.get("Parties") or "").strip(),
+        "taxpayer": (item.get("Parties") or "").strip(),
+        "property_address": address,
+        "parcel_id": parcel,
+        "tax_year": tax_year or None,
+        "amount_due": (item.get("Amount Due") or "").strip() or None,
+        "amount_due_value": amount_value,
+        "status": (item.get("Status") or "").strip() or None,
+        "bill_number": (item.get("_bill_number") or "").strip() or None,
+        "list_published_date": item.get("_list_published_date") or None,
+        "kind": (item.get("_kind") or "").strip() or None,
+        "source_url": (item.get("Source Link") or "").strip() or None,
+        "document_url": (item.get("_document_url") or "").strip() or None,
+        "pdf_link": (item.get("Source Link") or item.get("_source_pdf_url") or "").strip(),
+        "notes": notes,
+        "pva_verification_link": None,
+    }
+
+
 def read_records(csv_path: Path, run_id: str, schema: str, sidecar_path: Path | None = None) -> list[dict]:
     records: list[dict] = []
     sidecar_lookup = _build_sidecar_lookup(sidecar_path) if sidecar_path else {}
@@ -245,6 +302,21 @@ def read_records(csv_path: Path, run_id: str, schema: str, sidecar_path: Path | 
             items = []
         if items:
             return [_sidecar_to_record(item, run_id) for item in items]
+
+    # Tax-delinquent sidecar carries fields that have no equivalent on the
+    # canonical 5-column shape (parcel_id, tax_year, amount_due, etc.), so
+    # we MUST use the sidecar when present rather than the CSV.
+    if (
+        schema == TAX_DELINQUENT_SCHEMA
+        and sidecar_path is not None
+        and sidecar_path.exists()
+    ):
+        try:
+            items = json.loads(sidecar_path.read_text(encoding="utf-8")) or []
+        except Exception:
+            items = []
+        if items:
+            return [_tax_delinquent_sidecar_to_record(item, run_id) for item in items]
 
     if not csv_path.exists():
         return records
@@ -339,6 +411,12 @@ def _resolve_meta(output_dir: Path, source_type_arg: str | None) -> dict:
             "label": "Indianapolis Code Violations",
             "csv_name": "indianapolis_code_violations_results.csv",
             "schema": INDIANAPOLIS_SCHEMA,
+        },
+        "tax_delinquent": {
+            "source_type": "tax_delinquent",
+            "label": "Jefferson Tax Delinquent",
+            "csv_name": "jefferson_tax_delinquent_results.csv",
+            "schema": TAX_DELINQUENT_SCHEMA,
         },
     }
     return fallback.get(source_type, fallback["lis_pendens"])
@@ -480,6 +558,8 @@ def main() -> int:
     sidecar_path = None
     if meta["schema"] == LOUISVILLE_SCHEMA:
         sidecar_path = output_dir / "louisville_code_violations_records.json"
+    elif meta["schema"] == TAX_DELINQUENT_SCHEMA:
+        sidecar_path = output_dir / "jefferson_tax_delinquent_records.json"
 
     records = read_records(csv_path, args.run_id, meta["schema"], sidecar_path)
 
