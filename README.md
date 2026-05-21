@@ -4,6 +4,15 @@ Multi-source scraper used by the Lovable property-signal app. Originally built
 for Jefferson County KY Lis Pendens, now extended to additional sources via a
 single GitHub Actions workflow.
 
+## Docs
+
+- [`docs/SCRAPER_SPEC.md`](docs/SCRAPER_SPEC.md) — Python scraper contract,
+  output schema, polite-scraping rules, QA checklist.
+- [`docs/SOURCE_ADAPTERS.md`](docs/SOURCE_ADAPTERS.md) — Source catalog:
+  lead sources vs. verification sources vs. skip/future, with known URLs.
+- [`docs/HOT_LEAD_ENGINE.md`](docs/HOT_LEAD_ENGINE.md) — Lead pipeline,
+  scoring tiers, dedupe rules, AI Lead Insight requirements.
+
 ## Supported sources
 
 | `source_type`                    | Description                                        | Method                                  |
