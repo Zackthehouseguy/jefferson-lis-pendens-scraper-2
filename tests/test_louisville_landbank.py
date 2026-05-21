@@ -124,6 +124,108 @@ class ParseInventoryTests(unittest.TestCase):
         self.assertEqual(len(records), 1)
 
 
+class PickInventoryCsvTests(unittest.TestCase):
+    """Cover the sheet-selection logic against the Data Dictionary decoy."""
+
+    INVENTORY_HEADER = (
+        "OWNER,ST ,LOC,DIR ,STREET NAME,TYPE ,BLK, LOT,SUB,PARCELID,"
+        "WIDTH,DEPTH,IMP ,ZONE,CENSUSTRACT,PVA TOTAL VALUE,\"CD, 2012\","
+        "ZIP CODE ,NHOOD ,STATUS,SOURCE DEED BKxPG,DATE OF DEED,RESERVEE,"
+        "NOTATION,LAND Value,IMP value,DATE RECEIVED\n"
+    )
+    INVENTORY_ROW = (
+        "1,2816,,S,06TH,ST,050E,114,0,050E01140000,27.5,100,0,R6-TN,37,23230,"
+        "15,40208,SOUTH LOUISVILLE,available,8851 x 0259,05/30/2006,,,,,06/01/2014\n"
+    )
+    DICTIONARY_CONTENT = (
+        "Column,Description\n"
+        "OWNER,Owner agency code: 1=Landbank 2=Urban Renewal 3=Metro\n"
+        "PARCELID,LOJIC parcel identifier (12 chars)\n"
+        "STREET NAME,Street name component\n"
+        "STATUS,Inventory status (available/sold/etc.)\n"
+    )
+
+    def _make(self, tmp: Path, name: str, content: str) -> Path:
+        path = tmp / name
+        path.write_text(content, encoding="utf-8")
+        return path
+
+    def test_skips_data_dictionary_decoy_in_filename(self) -> None:
+        # Reproduces the GHA failure: the dictionary sheet's name is
+        # "Sales_Inventory-Data Dictionary" so its filename contains
+        # "inventory" but it's not the data sheet.
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            decoy = self._make(
+                tmp_path,
+                "Sales_Inventory-Data Dictionary.csv",
+                self.DICTIONARY_CONTENT,
+            )
+            real = self._make(
+                tmp_path,
+                "Sales_Inventory-Sales Inventory.csv",
+                self.INVENTORY_HEADER + self.INVENTORY_ROW,
+            )
+            picked = llb._pick_inventory_csv([decoy, real])
+            self.assertEqual(picked, real)
+
+    def test_skips_pure_dictionary_filename(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            dictionary = self._make(
+                tmp_path, "Data Dictionary.csv", self.DICTIONARY_CONTENT
+            )
+            inventory = self._make(
+                tmp_path,
+                "Sales Inventory.csv",
+                self.INVENTORY_HEADER + self.INVENTORY_ROW,
+            )
+            picked = llb._pick_inventory_csv([dictionary, inventory])
+            self.assertEqual(picked, inventory)
+
+    def test_uses_header_content_when_filenames_uninformative(self) -> None:
+        # Both filenames are generic ("Sheet1"/"Sheet2"); selection must
+        # fall back to header inspection.
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            sheet1 = self._make(tmp_path, "Sheet1.csv", self.DICTIONARY_CONTENT)
+            sheet2 = self._make(
+                tmp_path, "Sheet2.csv", self.INVENTORY_HEADER + self.INVENTORY_ROW
+            )
+            picked = llb._pick_inventory_csv([sheet1, sheet2])
+            self.assertEqual(picked, sheet2)
+
+    def test_raises_with_diagnostics_when_no_candidate_qualifies(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            only_dictionary = self._make(
+                tmp_path, "Data Dictionary.csv", self.DICTIONARY_CONTENT
+            )
+            with self.assertRaises(RuntimeError) as ctx:
+                llb._pick_inventory_csv([only_dictionary])
+            msg = str(ctx.exception)
+            # Diagnostics must list the filename and detected headers so
+            # operators can debug a real-world schema change.
+            self.assertIn("Data Dictionary.csv", msg)
+            self.assertIn("header_hits", msg)
+
+    def test_rejects_inventory_named_csv_without_data_rows(self) -> None:
+        # A header-only sheet (no real rows) must not be selected even
+        # if the filename is the right one.
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            empty_inventory = self._make(
+                tmp_path, "Sales Inventory.csv", self.INVENTORY_HEADER
+            )
+            populated = self._make(
+                tmp_path,
+                "Sales_Inventory-Sheet2.csv",
+                self.INVENTORY_HEADER + self.INVENTORY_ROW,
+            )
+            picked = llb._pick_inventory_csv([empty_inventory, populated])
+            self.assertEqual(picked, populated)
+
+
 class CanonicalRecordTests(unittest.TestCase):
     def test_required_fields_present(self) -> None:
         records = llb.parse_inventory_csv(FIXTURE)
