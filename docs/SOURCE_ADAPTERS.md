@@ -23,7 +23,7 @@ explicitly prohibit bulk extraction.
 | `wills`                           | Lead          | P0   | Yes            | Jefferson Deeds, instrument code `WIL`. Live in this repo.            |
 | `louisville_code_violations`      | Lead          | P0   | Yes            | ArcGIS FeatureServer. Live in this repo.                              |
 | `jefferson_delinquent_taxes`      | Lead          | P0   | Yes            | Jefferson County Clerk delinquent tax list. Live in this repo.        |
-| `louisville_landbank`             | Lead          | P1   | Yes            | Public inventory of Landbank-held parcels.                            |
+| `louisville_landbank`             | Lead          | P1   | Yes            | ArcGIS Hub item (Microsoft Excel `.xls`). Live in this repo.          |
 | `fayette_clerk_tax_sale`          | Lead          | P1   | Yes            | **Placeholder** — Clerk URL discovery still needed.                   |
 | `jefferson_pva`                   | Verification  | —    | No             | Look up parcel/owner detail given an address or PIDN.                 |
 | `fayette_pva`                     | Verification  | —    | No             | Look up Fayette parcel/owner detail.                                  |
@@ -34,10 +34,10 @@ explicitly prohibit bulk extraction.
 | _PVA bulk crawls (any county)_    | Skip          | —    | No             | High legal/ToS risk and noisy; pursue official datasets instead.      |
 | _Pay-per-lead APIs_               | Skip          | —    | No             | Out of scope for the open scraper repo.                               |
 
-`lis_pendens`, `wills`, `louisville_code_violations`, and
-`jefferson_delinquent_taxes` are the four lead sources implemented today.
-`louisville_landbank` and `fayette_clerk_tax_sale` are the next two on the
-P1 list and should follow the same shape.
+`lis_pendens`, `wills`, `louisville_code_violations`,
+`jefferson_delinquent_taxes`, and `louisville_landbank` are the five lead
+sources implemented today. `fayette_clerk_tax_sale` is the remaining
+P1 placeholder and should follow the same shape.
 
 ## 2. Lead sources vs. verification sources
 
@@ -72,11 +72,35 @@ within a release or two.
 | Jefferson Clerk delinquent taxes        | <https://www.jeffersoncountyclerk.org/delinquenttaxes/>                                                                                              |
 | Jefferson PVA                           | <https://jeffersonpva.ky.gov/property-search/>                                                                                                       |
 | Louisville code violations (Data.gov)   | <https://catalog.data.gov/dataset/louisville-metro-ky-property-maintenance-inspection-violations/resource/bd0155ac-25e5-4146-82ea-9a8980e1bfde>     |
-| Louisville Landbank                     | <https://louisvillelandbank.org>                                                                                                                     |
+| Louisville Landbank (org site)          | <https://louisvillelandbank.org>                                                                                                                     |
+| Louisville Landbank inventory (Data.gov)| <https://catalog.data.gov/dataset/louisville-metro-ky-property-available-for-purchase>                                                              |
+| Louisville Landbank inventory (Hub)     | <https://louisville-metro-opendata-lojic.hub.arcgis.com/documents/LOJIC::louisville-metro-ky-property-available-for-purchase>                       |
+| Louisville Landbank inventory (XLS)     | <https://www.arcgis.com/sharing/rest/content/items/047c3ff02bb9404f8965d30e6171baa1/data>                                                            |
 | Fayette Sheriff property-tax lookup     | <https://www.fayettesheriff.com/property_taxes_lookup.php>                                                                                           |
 | Fayette PVA                             | <https://fayettepva.com>                                                                                                                             |
 | Fayette qPublic                         | <https://qpublic.net/ky/fayette/search1.html>                                                                                                        |
 | Kentucky DOR — delinquent tax overview  | <https://revenue.ky.gov/Property/Pages/Delinquent-Property-Tax.aspx>                                                                                 |
+
+### Louisville Landbank is published as a `.xls` workbook
+
+The Louisville Metro Open Data / LOJIC catalog entry for "Louisville Metro
+KY - Property Available for Purchase" is an ArcGIS Hub document item, not
+a FeatureServer. The underlying artifact is a Microsoft Excel binary
+(`Sales_Inventory_(1).xls`), so the adapter downloads
+`https://www.arcgis.com/sharing/rest/content/items/047c3ff02bb9404f8965d30e6171baa1/data`,
+converts the workbook to per-sheet CSVs using
+`libreoffice --headless --convert-to csv`, and parses the `Sales Inventory`
+sheet with the stdlib `csv` module.
+
+LibreOffice is preinstalled on the `ubuntu-latest` GitHub Actions runner.
+Local developers without LibreOffice can pre-convert the workbook and
+pass `--csv-path <file>` to skip the conversion step. No additional
+Python dependency (xlrd, openpyxl, etc.) is introduced for this source.
+
+The published list is a static snapshot — there is no per-row filing
+date, no event-driven update, and no FeatureServer query API. The
+adapter accepts `--start-date` / `--end-date` for dispatcher parity but
+treats the full sheet as one snapshot per run.
 
 ### Fayette Sheriff is verification-only
 
