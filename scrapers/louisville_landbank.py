@@ -95,10 +95,39 @@ OWNER_CODE_MAP = {
     "3": "Louisville Metro (Metro-owned)",
 }
 
-INVENTORY_SHEET_CANDIDATES = (
-    "sales inventory",
-    "inventory",
+# Filename fragments that mark a sheet as the column-legend/dictionary tab.
+# LibreOffice emits sheet names verbatim into the filename (with spaces and
+# punctuation preserved), and the dictionary sheet's name often contains
+# "Inventory" too (e.g. "Sales_Inventory-Data Dictionary.csv"), so we must
+# exclude these BEFORE matching on the positive "inventory" keyword.
+DICTIONARY_NAME_FRAGMENTS = (
+    "data dictionary",
+    "dictionary",
+    "definitions",
+    "definition",
+    "legend",
+    "glossary",
+    "metadata",
+    "readme",
+    "notes",
 )
+
+# Header tokens that mark a sheet as the real inventory data. We score each
+# candidate CSV by how many of these its header row contains.
+INVENTORY_HEADER_TOKENS = (
+    "PARCELID",
+    "PARCEL ID",
+    "STREET NAME",
+    "OWNER",
+    "ZIP CODE",
+    "STATUS",
+    "DATE RECEIVED",
+    "DATE OF DEED",
+)
+
+# A CSV must hit at least this many inventory header tokens AND have at least
+# one non-header row to qualify as the inventory sheet.
+MIN_INVENTORY_HEADER_HITS = 3
 
 
 @dataclass
@@ -244,19 +273,107 @@ def convert_xls_to_csvs(xls_path: Path, out_dir: Path) -> list[Path]:
     return csvs
 
 
+def _peek_csv_header(path: Path) -> list[str]:
+    """Return the first row of `path` as a list of cells (best-effort)."""
+    try:
+        with path.open("r", encoding="utf-8-sig", newline="") as fh:
+            reader = csv.reader(fh)
+            for row in reader:
+                if any(cell.strip() for cell in row):
+                    return [cell.strip() for cell in row]
+                # Skip leading fully-blank rows (LibreOffice sometimes emits one).
+        return []
+    except OSError:
+        return []
+
+
+def _header_inventory_hits(header: list[str]) -> int:
+    """Count how many inventory-marker tokens appear in a header row."""
+    normalized = {_normalize_header(cell) for cell in header if cell}
+    hits = 0
+    for token in INVENTORY_HEADER_TOKENS:
+        if token in normalized:
+            hits += 1
+    return hits
+
+
+def _csv_has_data_row(path: Path) -> bool:
+    """True if `path` has at least one non-empty row after the header."""
+    try:
+        with path.open("r", encoding="utf-8-sig", newline="") as fh:
+            reader = csv.reader(fh)
+            saw_header = False
+            for row in reader:
+                if not any(cell.strip() for cell in row):
+                    continue
+                if not saw_header:
+                    saw_header = True
+                    continue
+                return True
+        return False
+    except OSError:
+        return False
+
+
+def _is_dictionary_name(stem: str) -> bool:
+    lower = stem.lower()
+    return any(frag in lower for frag in DICTIONARY_NAME_FRAGMENTS)
+
+
 def _pick_inventory_csv(csvs: Iterable[Path]) -> Path:
-    """Choose the CSV file that holds the Sales Inventory sheet."""
+    """Choose the CSV file that holds the Sales Inventory sheet.
+
+    LibreOffice writes one CSV per workbook sheet using the source sheet
+    name verbatim, which means the legend tab can land at a filename like
+    `Sales_Inventory-Data Dictionary.csv` — the substring "Inventory" is
+    present even though the sheet is the column dictionary. Naive
+    substring matching picks the wrong sheet; instead we:
+
+      1. Exclude any filename whose stem looks like a dictionary/legend.
+      2. Score remaining candidates by how many real inventory header
+         tokens (PARCELID, STREET NAME, OWNER, ...) the first row contains.
+      3. Require at least MIN_INVENTORY_HEADER_HITS hits AND a data row.
+      4. Break ties by file size (the dictionary sheet is much smaller
+         than the ~400-row data sheet).
+
+    Raises RuntimeError with a diagnostic listing of every candidate's
+    filename + detected headers when nothing qualifies.
+    """
     csvs = list(csvs)
-    # Match on sheet name slug in the filename emitted by LibreOffice.
+    if not csvs:
+        raise RuntimeError("No CSV files emitted from XLS conversion.")
+
+    diagnostics: list[str] = []
+    qualified: list[tuple[int, int, Path]] = []  # (hits, size, path)
     for path in csvs:
-        lower = path.stem.lower()
-        for needle in INVENTORY_SHEET_CANDIDATES:
-            if needle in lower:
-                return path
-    # Fallback: pick the largest CSV (the dictionary sheet is much smaller).
-    if csvs:
-        return max(csvs, key=lambda p: p.stat().st_size)
-    raise RuntimeError("No CSV files emitted from XLS conversion.")
+        stem = path.stem
+        header = _peek_csv_header(path)
+        hits = _header_inventory_hits(header)
+        has_data = _csv_has_data_row(path)
+        size = path.stat().st_size if path.exists() else 0
+        dictionary = _is_dictionary_name(stem)
+        diagnostics.append(
+            f"  - {path.name} (size={size}B, header_hits={hits}, "
+            f"has_data={has_data}, dictionary_name={dictionary}, "
+            f"headers={header[:12]})"
+        )
+        if dictionary:
+            continue
+        if hits < MIN_INVENTORY_HEADER_HITS:
+            continue
+        if not has_data:
+            continue
+        qualified.append((hits, size, path))
+
+    if qualified:
+        # Highest header-hit count wins; break ties by largest file.
+        qualified.sort(key=lambda t: (t[0], t[1]), reverse=True)
+        return qualified[0][2]
+
+    raise RuntimeError(
+        "Could not identify a Sales Inventory CSV among the converted "
+        "sheets. Candidates inspected:\n" + "\n".join(diagnostics)
+    )
 
 
 def _clean(value: str | None) -> str:
@@ -368,11 +485,13 @@ def parse_inventory_csv(
     skipped = 0
     with csv_path.open("r", encoding="utf-8-sig", newline="") as fh:
         reader = csv.DictReader(fh)
-        cols = _resolve_columns(list(reader.fieldnames or []))
+        fieldnames = list(reader.fieldnames or [])
+        cols = _resolve_columns(fieldnames)
         if not cols:
             raise RuntimeError(
                 f"No header row found in {csv_path}; the workbook layout may "
-                "have changed. Inspect the converted CSV manually."
+                f"have changed. Inspect the converted CSV manually. "
+                f"Detected fieldnames: {fieldnames!r}"
             )
         parcel_col = cols.get("PARCELID")
         for row in reader:
