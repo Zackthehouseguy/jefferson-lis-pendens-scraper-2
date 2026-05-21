@@ -57,6 +57,11 @@ SOURCES = {
         "schema": "jefferson_tax_delinquent",
         "label": "Jefferson Tax Delinquent",
     },
+    "louisville_landbank": {
+        "csv_name": "louisville_landbank_results.csv",
+        "schema": "louisville_landbank",
+        "label": "Louisville Metro Landbank Inventory",
+    },
 }
 
 
@@ -147,6 +152,22 @@ def _tax_delinquent_command(args: argparse.Namespace) -> list[str]:
     ]
 
 
+def _louisville_landbank_command(args: argparse.Namespace) -> list[str]:
+    cmd = [
+        sys.executable,
+        "-m",
+        "scrapers.louisville_landbank",
+        "--start-date", args.start_date,
+        "--end-date", args.end_date,
+        "--output-dir", args.output_dir,
+        "--csv-name", SOURCES["louisville_landbank"]["csv_name"],
+    ]
+    limit = getattr(args, "limit", None)
+    if limit is not None:
+        cmd.extend(["--limit", str(limit)])
+    return cmd
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Property-signal scraper dispatcher.")
     parser.add_argument(
@@ -176,6 +197,13 @@ def main() -> int:
         help="Code-violation sources only: include closed/resolved cases. "
              "Default: open / active-enforcement leads only.",
     )
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help="Optional cap on records emitted. Currently honored by sources "
+             "whose underlying script accepts --limit (e.g. louisville_landbank).",
+    )
     args = parser.parse_args()
 
     source_type = args.source_type
@@ -203,6 +231,8 @@ def main() -> int:
         cmd = _indianapolis_command(args)
     elif source_type == "tax_delinquent":
         cmd = _tax_delinquent_command(args)
+    elif source_type == "louisville_landbank":
+        cmd = _louisville_landbank_command(args)
     else:  # pragma: no cover - argparse already restricts choices
         raise ValueError(f"Unknown source_type: {source_type}")
 

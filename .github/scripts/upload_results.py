@@ -25,6 +25,7 @@ JEFFERSON_SCHEMAS = {"jefferson_deeds"}
 LOUISVILLE_SCHEMA = "louisville_code_violations"
 INDIANAPOLIS_SCHEMA = "indianapolis_code_violations"
 TAX_DELINQUENT_SCHEMA = "jefferson_tax_delinquent"
+LOUISVILLE_LANDBANK_SCHEMA = "louisville_landbank"
 
 DEFAULT_RECORD_BATCH_SIZE = 100
 
@@ -418,6 +419,12 @@ def _resolve_meta(output_dir: Path, source_type_arg: str | None) -> dict:
             "csv_name": "jefferson_tax_delinquent_results.csv",
             "schema": TAX_DELINQUENT_SCHEMA,
         },
+        "louisville_landbank": {
+            "source_type": "louisville_landbank",
+            "label": "Louisville Metro Landbank Inventory",
+            "csv_name": "louisville_landbank_results.csv",
+            "schema": LOUISVILLE_LANDBANK_SCHEMA,
+        },
     }
     return fallback.get(source_type, fallback["lis_pendens"])
 
@@ -560,6 +567,8 @@ def main() -> int:
         sidecar_path = output_dir / "louisville_code_violations_records.json"
     elif meta["schema"] == TAX_DELINQUENT_SCHEMA:
         sidecar_path = output_dir / "jefferson_tax_delinquent_records.json"
+    elif meta["schema"] == LOUISVILLE_LANDBANK_SCHEMA:
+        sidecar_path = output_dir / "louisville_landbank_records.json"
 
     records = read_records(csv_path, args.run_id, meta["schema"], sidecar_path)
 
