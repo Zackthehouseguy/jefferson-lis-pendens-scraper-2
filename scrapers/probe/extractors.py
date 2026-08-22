@@ -185,29 +185,33 @@ def probe_jefferson(address: str, city: str, sess: requests.Session,
     fields: dict = {}
     try:
         try:
-            # 1) Address point layer -> parcel id, LRSN, normalized address, coords
-            terms = [address.upper(), f"{house_no} {street}".upper().strip()]
+            street_core = re.sub(
+                r"\b(ln|lane|rd|road|st|street|ave|avenue|dr|drive|ct|court|blvd|way|pl|place|cir|circle|ter|trl|hwy|pkwy)\b\.?",
+                "", street, flags=re.I).strip()
+            street_core = re.sub(r"^[NSEW]\s+", "", street_core, flags=re.I)
             feats = []
-            for term in terms:
-                if not term:
-                    continue
-                where = f"UPPER(ADDRESS) LIKE '%{_esc(term)}%'"
-                data, status, raw = _arcgis_query(sess, ADDR_LAYER, where, timeout=60)
+            wheres = []
+            if street_core:
+                w = f"UPPER(STRNAME) LIKE '%{_esc(street_core.upper())}%'"
+                if house_no:
+                    wheres.append(w + f" AND HOUSENO = {int(house_no)}" if house_no.isdigit() else w)
+                wheres.append(w)
+            wheres.append(f"UPPER(ADDRESS) LIKE '%{_esc(street_core.upper() or address.upper())}%'")
+            for where in wheres:
+                data, status, raw = _arcgis_query(sess, ADDR_LAYER, where, timeout=90)
                 res.http_status = status
-                JEFFERSON_DIAG.append({"step": "addr_query", "term": term, "status": status,
-                                       "count": len((data or {}).get("features", []))})
-                if data and data.get("features"):
+                cnt = len((data or {}).get("features", []))
+                JEFFERSON_DIAG.append({"step": "addr_query", "where": where, "status": status,
+                                       "count": cnt, "raw": (raw or "")[:200] if not cnt else None})
+                if cnt:
                     feats = data["features"]
                     break
-            if not feats and street:
-                where = (f"UPPER(STRNAME) LIKE '%{_esc(re.sub(r'[^A-Za-z ]', '', street).strip().upper())}%'"
-                         + (f" AND HOUSENO = '{_esc(house_no)}'" if house_no else ""))
-                data, status, raw = _arcgis_query(sess, ADDR_LAYER, where, timeout=60)
-                res.http_status = status
-                JEFFERSON_DIAG.append({"step": "addr_query_parts", "where": where, "status": status,
-                                       "count": len((data or {}).get("features", []))})
-                feats = (data or {}).get("features", [])
-
+            if feats and house_no:
+                for f in feats:
+                    a = {k.upper(): v for k, v in (f.get("attributes") or {}).items()}
+                    if str(a.get("HOUSENO") or "").strip() == house_no:
+                        feats = [f]
+                        break
             if feats:
                 a = {k.upper(): v for k, v in (feats[0].get("attributes") or {}).items()}
                 fields["situs_address"] = a.get("ADDRESS")
@@ -225,7 +229,12 @@ def probe_jefferson(address: str, city: str, sess: requests.Session,
 
         # 2) Jefferson PVA public search for owner / assessment
         pid = fields.get("parcel_id")
-        pva_url = f"{PVA_SEARCH}?searchtype=parcel&search={pid}" if pid else f"{PVA_SEARCH}?search={address.replace(' ', '+')}"
+        listings = "https://jeffersonpva.ky.gov/property-search/property-listings/"
+        if pid:
+            pva_url = f"{listings}?psfldParcelId={pid}&propertySearchFormButton=Search&searchType=ParcelSearch"
+        else:
+            from urllib.parse import quote_plus
+            pva_url = f"{listings}?psfldAddress={quote_plus(address)}&propertySearchFormButton=Search&searchType=StreetSearch"
         html = ""
         try:
             r = sess.get(pva_url, timeout=60)
