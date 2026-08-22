@@ -173,119 +173,102 @@ def _layer_catalog(sess: requests.Session) -> list[dict]:
 _CATALOG_CACHE: list = []
 
 
-def probe_jefferson(address: str, city: str, sess: requests.Session) -> ProbeResult:
-    res = ProbeResult(county="jefferson", source="LOJIC ArcGIS PVA", address=address)
+ADDR_LAYER = "https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataAddresses/MapServer/0/query"
+PVA_SEARCH = "https://jeffersonpva.ky.gov/property-search/"
+
+
+def probe_jefferson(address: str, city: str, sess: requests.Session,
+                    browser_fetch: Optional[Callable[[str], tuple[int, str]]] = None) -> ProbeResult:
+    res = ProbeResult(county="jefferson", source="LOJIC OpenDataAddresses + Jefferson PVA", address=address)
     t0 = time.time()
     house_no, street = _split_address(address)
-    street_core = re.sub(
-        r"\b(ln|lane|rd|road|st|street|ave|avenue|dr|drive|ct|court|blvd|way|pl|place|cir|circle|ter|trl)\b\.?",
-        "", street, flags=re.I,
-    ).strip()
+    fields: dict = {}
     try:
-        global _CATALOG_CACHE
-        if not _CATALOG_CACHE:
-            _CATALOG_CACHE = _layer_catalog(sess)
-        catalog = _CATALOG_CACHE
-        if not catalog:
-            res.error = "could not read LOJIC service metadata"
-            res.elapsed_ms = int((time.time() - t0) * 1000)
-            return res
-
+        # 1) Address point layer -> parcel id, LRSN, normalized address, coords
+        terms = [address.upper(), f"{house_no} {street}".upper().strip()]
         feats = []
-        used_layer = None
-        for lyr in catalog:
-            addr_fields = [f for f in lyr["fields"] if re.search(r"addr|situs|prop_?loc|location|street", f, re.I)]
-            if not addr_fields:
+        for term in terms:
+            if not term:
                 continue
-            url = f"{LOJIC_SERVICE}/{lyr['id']}/query"
-            for fld in addr_fields[:4]:
-                for term in [address.upper(), street.upper(), street_core.upper()]:
-                    if not term:
-                        continue
-                    where = f"UPPER({fld}) LIKE '%{_esc(term)}%'"
-                    data, status, raw = _arcgis_query(sess, url, where, timeout=60)
-                    res.http_status = status
-                    blocked = _detect_block(raw, status)
-                    if blocked:
-                        res.blocked_reason = blocked
-                        continue
-                    if data and data.get("features"):
-                        feats = data["features"]
-                        used_layer = f"{lyr['id']}:{lyr['name']}:{fld}"
-                        break
-                if feats:
-                    break
-            if feats:
+            where = f"UPPER(ADDRESS) LIKE '%{_esc(term)}%'"
+            data, status, raw = _arcgis_query(sess, ADDR_LAYER, where, timeout=60)
+            res.http_status = status
+            JEFFERSON_DIAG.append({"step": "addr_query", "term": term, "status": status,
+                                   "count": len((data or {}).get("features", []))})
+            if data and data.get("features"):
+                feats = data["features"]
                 break
+        if not feats and street:
+            where = (f"UPPER(STRNAME) LIKE '%{_esc(re.sub(r'[^A-Za-z ]', '', street).strip().upper())}%'"
+                     + (f" AND HOUSENO = '{_esc(house_no)}'" if house_no else ""))
+            data, status, raw = _arcgis_query(sess, ADDR_LAYER, where, timeout=60)
+            res.http_status = status
+            JEFFERSON_DIAG.append({"step": "addr_query_parts", "where": where, "status": status,
+                                   "count": len((data or {}).get("features", []))})
+            feats = (data or {}).get("features", [])
 
-        if not feats:
-            res.error = "no matching parcel features"
-            res.elapsed_ms = int((time.time() - t0) * 1000)
-            return res
+        if feats:
+            a = {k.upper(): v for k, v in (feats[0].get("attributes") or {}).items()}
+            fields["situs_address"] = a.get("ADDRESS")
+            fields["zip"] = a.get("ZIPCODE")
+            fields["parcel_id"] = a.get("PARCELID")
+            fields["lrsn"] = a.get("LRSN")
+            g = feats[0].get("geometry") or {}
+            if "x" in g and "y" in g:
+                fields["longitude"], fields["latitude"] = g["x"], g["y"]
+        else:
+            res.error = "address not found in LOJIC address points"
 
-        res.source = f"LOJIC {used_layer}"
-        chosen = None
-        if house_no:
-            for f in feats:
-                a = f.get("attributes", {})
-                blob = " ".join(str(v) for v in a.values() if v)
-                if re.search(rf"\b{re.escape(house_no)}\b", blob):
-                    chosen = f
-                    break
-        chosen = chosen or feats[0]
-        a = {k.upper(): v for k, v in (chosen.get("attributes") or {}).items()}
-        JEFFERSON_DIAG.append({"step": "sample_attributes", "layer": used_layer, "attrs": {k: str(v)[:60] for k, v in list(a.items())[:60]}})
-
-        def find(pattern, numeric=False):
-            for k, v in a.items():
-                if v in (None, "", " "):
-                    continue
-                if re.search(pattern, k, re.I):
-                    return _num(v) if numeric else v
-            return None
-
-        res.fields = {
-            "owner_name": find(r"^owner|owner_?name|^own"),
-            "mailing_address": find(r"mail"),
-            "parcel_id": find(r"parcel|^pin$|lrsn|gisid|^pva"),
-            "assessed_value": find(r"total.*val|assess", True),
-            "land_value": find(r"land.*val", True),
-            "improvement_value": find(r"(improv|bldg|building).*val", True),
-            "acreage": find(r"acre", True),
-            "year_built": find(r"year.*(built|blt)|yr_?blt", True),
-            "beds": find(r"bed", True),
-            "baths": find(r"bath", True),
-            "sqft": find(r"sq_?ft|square_?feet|sqfoot|finished", True),
-            "legal_description": find(r"legal"),
-            "deed_book_page": find(r"deed|book"),
-        }
-        geom = chosen.get("geometry") or {}
-        if "x" in geom and "y" in geom:
-            res.fields["longitude"], res.fields["latitude"] = geom["x"], geom["y"]
-        elif geom.get("rings"):
-            ring = geom["rings"][0]
-            res.fields["longitude"] = round(sum(p[0] for p in ring) / len(ring), 6)
-            res.fields["latitude"] = round(sum(p[1] for p in ring) / len(ring), 6)
-
-        res.fields = {k: v for k, v in res.fields.items() if v not in (None, "")}
+        # 2) Jefferson PVA public search for owner / assessment
+        pid = fields.get("parcel_id")
+        pva_url = f"{PVA_SEARCH}?searchtype=parcel&search={pid}" if pid else f"{PVA_SEARCH}?search={address.replace(' ', '+')}"
+        html = ""
+        try:
+            r = sess.get(pva_url, timeout=60)
+            html, pstatus = r.text, r.status_code
+        except Exception as exc:  # noqa: BLE001
+            html, pstatus = "", 0
+            JEFFERSON_DIAG.append({"step": "pva_http", "error": str(exc)})
+        blocked = _detect_block(html, pstatus)
+        if (blocked or len(html) < 2000) and browser_fetch:
+            res.browser_fallback_used = True
+            try:
+                pstatus, html = browser_fetch(pva_url)
+                blocked = _detect_block(html, pstatus)
+            except Exception as exc:  # noqa: BLE001
+                JEFFERSON_DIAG.append({"step": "pva_browser", "error": str(exc)})
+        JEFFERSON_DIAG.append({"step": "pva_page", "url": pva_url, "status": pstatus,
+                               "len": len(html), "blocked": blocked,
+                               "excerpt": re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html))[:1500]})
+        if blocked:
+            res.blocked_reason = blocked
+        else:
+            text = re.sub(r"\s+", " ", re.sub(r"<script.*?</script>", " ", html, flags=re.S | re.I))
+            text = re.sub(r"<[^>]+>", " | ", text)
+            def grab(label, pattern=r"([^|]{2,80})"):
+                m = re.search(label + r"\s*\|*\s*" + pattern, text, re.I)
+                return m.group(1).strip(" |") if m else None
+            for key, label in [("owner_name", r"Owner(?: Name)?"),
+                               ("mailing_address", r"Mailing Address"),
+                               ("assessed_value", r"(?:Total )?Assess(?:ed|ment)(?: Value)?"),
+                               ("market_value", r"Market Value"),
+                               ("year_built", r"Year Built"),
+                               ("sqft", r"(?:Total )?(?:Living|Finished) Area|Square Feet"),
+                               ("acreage", r"Acre(?:s|age)"),
+                               ("last_sale_date", r"(?:Last )?Sale Date"),
+                               ("last_sale_price", r"(?:Last )?Sale Price"),
+                               ("legal_description", r"Legal Description")]:
+                v = grab(label)
+                if v:
+                    fields[key] = v
+        res.fields = {k: v for k, v in fields.items() if v not in (None, "", " ")}
         res.ok = bool(res.fields)
+        if res.ok:
+            res.error = None
     except Exception as exc:  # noqa: BLE001
         res.error = f"{type(exc).__name__}: {exc}"
     res.elapsed_ms = int((time.time() - t0) * 1000)
     return res
-
-
-# --------------------------------------------------------------------------
-# qPublic / Schneider counties (Hardin, Bullitt, Nelson, Spencer, Washington)
-# --------------------------------------------------------------------------
-
-QPUBLIC = {
-    "hardin": "ky/hardin",
-    "bullitt": "ky/bullitt",
-    "nelson": "ky/nelson",
-    "spencer": "ky/spencer",
-    "washington": "ky/washington",
-}
 
 
 def probe_qpublic(county: str, address: str, city: str, sess: requests.Session,
@@ -358,7 +341,7 @@ def probe(county: str, address: str, city: str,
           browser_fetch: Optional[Callable[[str], tuple[int, str]]] = None) -> ProbeResult:
     sess = _session()
     if county == "jefferson":
-        return probe_jefferson(address, city, sess)
+        return probe_jefferson(address, city, sess, browser_fetch)
     if county in QPUBLIC:
         return probe_qpublic(county, address, city, sess, browser_fetch)
     r = ProbeResult(county=county, source="unknown", address=address)
