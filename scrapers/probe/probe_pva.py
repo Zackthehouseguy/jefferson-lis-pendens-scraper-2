@@ -106,6 +106,12 @@ def main() -> int:
             "source": rows[0]["source"],
         }
 
+    try:
+        from .extractors import JEFFERSON_DIAG
+        (out_dir / "jefferson_diagnostics.json").write_text(json.dumps(JEFFERSON_DIAG, indent=2, default=str))
+    except Exception as exc:  # noqa: BLE001
+        print("diag dump failed:", exc)
+
     (out_dir / "probe_results.json").write_text(
         json.dumps({"summary": summary, "results": results}, indent=2, default=str)
     )
