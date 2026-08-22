@@ -62,14 +62,14 @@ def make_browser_fetch():
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--counties", default=",".join(ALL_COUNTIES))
-    ap.add_argument("--browser-fallback", action="store_true")
-    ap.add_argument("--out-dir", default="probe_output")
+    ap.add_argument("--browser-fallback", nargs="?", const="true", default="false")
+    ap.add_argument("--out-dir", "--out", dest="out_dir", default="probe_output")
     ap.add_argument("--seeds", default=str(HERE / "test_properties.json"))
     args = ap.parse_args()
 
     counties = [c.strip().lower() for c in args.counties.split(",") if c.strip()]
     seeds = json.loads(Path(args.seeds).read_text())
-    browser_fetch = make_browser_fetch() if args.browser_fallback else None
+    browser_fetch = make_browser_fetch() if str(args.browser_fallback).lower() in ("true","1","yes") else None
 
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
