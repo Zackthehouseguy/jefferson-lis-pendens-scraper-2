@@ -74,6 +74,37 @@ def main() -> int:
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
+    if "discover" in counties:
+        import requests as _rq
+        sess = _rq.Session(); sess.headers.update({"User-Agent": "Mozilla/5.0"})
+        base = "https://gis.lojic.org/maps/rest/services"
+        cat = []
+        try:
+            root = sess.get(base, params={"f": "json"}, timeout=60).json()
+            folders = [""] + root.get("folders", [])
+            for fol in folders:
+                url = base + ("/" + fol if fol else "")
+                data = sess.get(url, params={"f": "json"}, timeout=60).json()
+                for svc in data.get("services", []):
+                    sname, stype = svc.get("name"), svc.get("type")
+                    surl = f"{base}/{sname}/{stype}"
+                    entry = {"service": sname, "type": stype, "layers": []}
+                    try:
+                        sroot = sess.get(surl, params={"f": "json"}, timeout=60).json()
+                        for lyr in sroot.get("layers", []):
+                            lr = sess.get(f"{surl}/{lyr['id']}", params={"f": "json"}, timeout=60).json()
+                            entry["layers"].append({"id": lyr["id"], "name": lyr.get("name"),
+                                                    "fields": [f.get("name") for f in (lr.get("fields") or [])]})
+                    except Exception as exc:
+                        entry["error"] = str(exc)
+                    cat.append(entry)
+                    print("svc", sname, len(entry["layers"]), flush=True)
+        except Exception as exc:
+            cat.append({"error": str(exc)})
+        (out_dir / "lojic_catalog.json").write_text(json.dumps(cat, indent=2, default=str))
+        print("wrote catalog")
+        return 0
+
     results = []
     for county in counties:
         props = seeds.get(county, [])
