@@ -256,24 +256,27 @@ def probe_jefferson(address: str, city: str, sess: requests.Session,
         if blocked:
             res.blocked_reason = blocked
         else:
-            text = re.sub(r"\s+", " ", re.sub(r"<script.*?</script>", " ", html, flags=re.S | re.I))
-            text = re.sub(r"<[^>]+>", " | ", text)
-            def grab(label, pattern=r"([^|]{2,80})"):
-                m = re.search(label + r"\s*\|*\s*" + pattern, text, re.I)
-                return m.group(1).strip(" |") if m else None
-            for key, label in [("owner_name", r"Owner(?: Name)?"),
-                               ("mailing_address", r"Mailing Address"),
-                               ("assessed_value", r"(?:Total )?Assess(?:ed|ment)(?: Value)?"),
-                               ("market_value", r"Market Value"),
-                               ("year_built", r"Year Built"),
-                               ("sqft", r"(?:Total )?(?:Living|Finished) Area|Square Feet"),
-                               ("acreage", r"Acre(?:s|age)"),
-                               ("last_sale_date", r"(?:Last )?Sale Date"),
-                               ("last_sale_price", r"(?:Last )?Sale Price"),
-                               ("legal_description", r"Legal Description")]:
-                v = grab(label)
-                if v:
-                    fields[key] = v
+            body = html[html.find("<body"):] if "<body" in html else html
+            body = re.sub(r"<(script|style).*?</\1>", " ", body, flags=re.S | re.I)
+            cells = [c.strip() for c in re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "|", body)).split("|") if c.strip()]
+            labels = {"owner_name": "Owner", "parcel_id": "Parcel ID", "assessed_value": "Assessed Value",
+                      "acreage": "Acres", "neighborhood": "Neighborhood", "mailing_address": "Mailing Address",
+                      "year_built": "Year Built", "last_sale_date": "Sale Date", "last_sale_price": "Sale Price",
+                      "legal_description": "Legal Description", "sqft": "Square Feet"}
+            for key, lab in labels.items():
+                for n, c in enumerate(cells[:-1]):
+                    if c.lower() == lab.lower():
+                        val = cells[n + 1].strip()
+                        if val and val.lower() != lab.lower():
+                            fields[key] = val
+                        break
+            if cells:
+                for c in cells:
+                    if re.match(rf"^{re.escape(house_no)}\s+\S", c) if house_no else False:
+                        fields["situs_address"] = c
+                        break
+            if any("Upgrade Subscription" in c or "Create User Account" in c for c in cells):
+                res.blocked_reason = "subscription_required_for_detail_fields"
         res.fields = {k: v for k, v in fields.items() if v not in (None, "", " ")}
         res.ok = bool(res.fields)
         if res.ok:
