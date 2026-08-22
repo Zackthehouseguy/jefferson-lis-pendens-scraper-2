@@ -677,4 +677,15 @@ def _render_lead(group: dict[str, Any]) -> dict[str, Any]:
         "_citation_total": citation_str,
         "_case_ids": case_ids_str,
         "_parcel": group["parcel"],
+        # Precise structured extras for downstream aggregation (Lovable ingest).
+        "_earliest_date": group["earliest_date"],
+        "_latest_date": group["latest_date"],
+        "_case_ids_all": list(group["case_ids"].keys()),
+        "_statuses_all": statuses,
+        "_violation_codes_all": codes,
+        "_citation_total_value": (
+            float(group["citation_total"]) if group["citation_seen"] else None
+        ),
+        "_has_closed_status": bool(group["has_closed_status"]),
+        "_has_open_status": bool(group["has_open_status"]),
     }
