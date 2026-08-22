@@ -1,1 +1,46 @@
+name: PVA Source Probe
+
+on:
+  workflow_dispatch:
+    inputs:
+      counties:
+        description: "Comma-separated counties (or 'all')"
+        required: false
+        default: "all"
+      browser_fallback:
+        description: "Use Playwright browser fallback"
+        required: false
+        default: "true"
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 lxml playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Run probe
+        run: |
+          python -m scrapers.probe.probe_pva \
+            --counties "${{ github.event.inputs.counties }}" \
+            --browser-fallback "${{ github.event.inputs.browser_fallback }}" \
+            --out reports/pva_probe
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pva-source-report
+          path: reports/pva_probe/**
+          if-no-files-found: warn
 
