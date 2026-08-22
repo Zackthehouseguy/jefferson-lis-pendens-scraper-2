@@ -98,6 +98,15 @@ def main() -> int:
             out["pva_inputs"] = _re.findall(r'<input[^>]*>', html)[:25]
         except Exception as exc:
             out["pva_error"] = str(exc)
+        try:
+            u = "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=0952118A0000&propertySearchFormButton=Search&searchType=ParcelSearch"
+            h = sess.get(u, timeout=60).text
+            body = h[h.find("<body"):] if "<body" in h else h
+            body = _re.sub(r"<(script|style).*?</\1>", " ", body, flags=_re.S | _re.I)
+            txt = _re.sub(r"\s+", " ", _re.sub(r"<[^>]+>", " | ", body))
+            (out_dir / "pva_details.txt").write_text(txt[:60000])
+        except Exception as exc:
+            out["details_error"] = str(exc)
         (out_dir / "diag.json").write_text(json.dumps(out, indent=2, default=str)[:400000])
         print("diag written")
         return 0
