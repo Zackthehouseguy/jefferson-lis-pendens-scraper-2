@@ -143,44 +143,87 @@ def _esc(v: str) -> str:
     return v.replace("'", "''")
 
 
+LOJIC_SERVICE = "https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer"
+JEFFERSON_DIAG: list = []
+
+
+def _layer_catalog(sess: requests.Session) -> list[dict]:
+    """Discover layers + their field names on the LOJIC PVA service."""
+    out = []
+    try:
+        r = sess.get(LOJIC_SERVICE, params={"f": "json"}, timeout=60)
+        root = r.json()
+    except Exception as exc:  # noqa: BLE001
+        JEFFERSON_DIAG.append({"step": "service_root", "error": str(exc)})
+        return out
+    JEFFERSON_DIAG.append({"step": "service_root", "layers": [l.get("name") for l in root.get("layers", [])]})
+    for lyr in root.get("layers", []):
+        lid = lyr.get("id")
+        try:
+            lr = sess.get(f"{LOJIC_SERVICE}/{lid}", params={"f": "json"}, timeout=60).json()
+        except Exception as exc:  # noqa: BLE001
+            JEFFERSON_DIAG.append({"step": "layer", "id": lid, "error": str(exc)})
+            continue
+        fields = [f.get("name") for f in (lr.get("fields") or [])]
+        JEFFERSON_DIAG.append({"step": "layer", "id": lid, "name": lyr.get("name"), "fields": fields})
+        out.append({"id": lid, "name": lyr.get("name") or "", "fields": fields})
+    return out
+
+
+_CATALOG_CACHE: list = []
+
+
 def probe_jefferson(address: str, city: str, sess: requests.Session) -> ProbeResult:
-    res = ProbeResult(county="jefferson", source="LOJIC ArcGIS Parcels", address=address)
+    res = ProbeResult(county="jefferson", source="LOJIC ArcGIS PVA", address=address)
     t0 = time.time()
     house_no, street = _split_address(address)
+    street_core = re.sub(
+        r"\b(ln|lane|rd|road|st|street|ave|avenue|dr|drive|ct|court|blvd|way|pl|place|cir|circle|ter|trl)\b\.?",
+        "", street, flags=re.I,
+    ).strip()
     try:
-        attempts = [
-            f"UPPER(PROPERTY_ADDRESS) LIKE '%{_esc(address.upper())}%'",
-            f"UPPER(ADDRESS) LIKE '%{_esc(address.upper())}%'",
-        ]
-        # Street-name fallback: match street, then filter by house number client-side.
-        street_core = re.sub(r"\b(ln|lane|rd|road|st|street|ave|avenue|dr|drive|ct|court|blvd|way|pl|place|cir|circle|ter|trl)\b\.?", "", street, flags=re.I).strip()
-        if street_core:
-            attempts.append(f"UPPER(PROPERTY_ADDRESS) LIKE '%{_esc(street_core.upper())}%'")
-            attempts.append(f"UPPER(ADDRESS) LIKE '%{_esc(street_core.upper())}%'")
+        global _CATALOG_CACHE
+        if not _CATALOG_CACHE:
+            _CATALOG_CACHE = _layer_catalog(sess)
+        catalog = _CATALOG_CACHE
+        if not catalog:
+            res.error = "could not read LOJIC service metadata"
+            res.elapsed_ms = int((time.time() - t0) * 1000)
+            return res
 
-        feats: list = []
-        status = None
-        for url in (LOJIC_PARCEL_LAYER, LOJIC_ALT_LAYER):
-            for where in attempts:
-                data, status, raw = _arcgis_query(sess, url, where)
-                res.http_status = status
-                blocked = _detect_block(raw, status)
-                if blocked:
-                    res.blocked_reason = blocked
-                    continue
-                if data and data.get("features"):
-                    feats = data["features"]
-                    res.source = f"ArcGIS {url.split('/services/')[-1].split('/')[0]}"
+        feats = []
+        used_layer = None
+        for lyr in catalog:
+            addr_fields = [f for f in lyr["fields"] if re.search(r"addr|situs|prop_?loc|location|street", f, re.I)]
+            if not addr_fields:
+                continue
+            url = f"{LOJIC_SERVICE}/{lyr['id']}/query"
+            for fld in addr_fields[:4]:
+                for term in [address.upper(), street.upper(), street_core.upper()]:
+                    if not term:
+                        continue
+                    where = f"UPPER({fld}) LIKE '%{_esc(term)}%'"
+                    data, status, raw = _arcgis_query(sess, url, where, timeout=60)
+                    res.http_status = status
+                    blocked = _detect_block(raw, status)
+                    if blocked:
+                        res.blocked_reason = blocked
+                        continue
+                    if data and data.get("features"):
+                        feats = data["features"]
+                        used_layer = f"{lyr['id']}:{lyr['name']}:{fld}"
+                        break
+                if feats:
                     break
             if feats:
                 break
 
         if not feats:
-            res.error = res.error or "no matching parcel features"
+            res.error = "no matching parcel features"
             res.elapsed_ms = int((time.time() - t0) * 1000)
             return res
 
-        # Filter by house number when we have one.
+        res.source = f"LOJIC {used_layer}"
         chosen = None
         if house_no:
             for f in feats:
@@ -191,27 +234,30 @@ def probe_jefferson(address: str, city: str, sess: requests.Session) -> ProbeRes
                     break
         chosen = chosen or feats[0]
         a = {k.upper(): v for k, v in (chosen.get("attributes") or {}).items()}
+        JEFFERSON_DIAG.append({"step": "sample_attributes", "layer": used_layer, "attrs": {k: str(v)[:60] for k, v in list(a.items())[:60]}})
 
-        def pick(*keys):
-            for k in keys:
-                if a.get(k) not in (None, "", " "):
-                    return a[k]
+        def find(pattern, numeric=False):
+            for k, v in a.items():
+                if v in (None, "", " "):
+                    continue
+                if re.search(pattern, k, re.I):
+                    return _num(v) if numeric else v
             return None
 
         res.fields = {
-            "owner_name": pick("OWNER", "OWNER_NAME", "OWNERNAME", "OWNER1"),
-            "mailing_address": pick("MAILING_ADDRESS", "MAIL_ADDR", "MAILADDR", "OWNER_ADDRESS"),
-            "parcel_id": pick("PARCELID", "PARCEL_ID", "PVA_PARCEL_ID", "LRSN", "GISID"),
-            "assessed_value": _num(pick("TOTAL_VALUE", "TOTALVALUE", "ASSESSED_VALUE", "TOT_VAL")),
-            "land_value": _num(pick("LAND_VALUE", "LANDVALUE", "LAND_VAL")),
-            "improvement_value": _num(pick("IMPROVEMENT_VALUE", "IMPVALUE", "IMP_VAL", "BLDG_VALUE")),
-            "acreage": _num(pick("ACRES", "ACREAGE", "DEED_ACRES", "GIS_ACRES")),
-            "year_built": _num(pick("YEAR_BUILT", "YEARBUILT", "YR_BLT")),
-            "beds": _num(pick("BEDROOMS", "BEDS", "NUM_BEDS")),
-            "baths": _num(pick("BATHROOMS", "BATHS", "NUM_BATHS", "FULL_BATHS")),
-            "sqft": _num(pick("SQUARE_FEET", "SQFT", "TOTAL_SQFT", "FIN_SQFT", "BLDG_SQFT")),
-            "legal_description": pick("LEGAL_DESCRIPTION", "LEGAL", "LEGALDESC"),
-            "deed_book_page": pick("DEED_BOOK_PAGE", "DEEDBOOK", "DEED_BK_PG"),
+            "owner_name": find(r"^owner|owner_?name|^own"),
+            "mailing_address": find(r"mail"),
+            "parcel_id": find(r"parcel|^pin$|lrsn|gisid|^pva"),
+            "assessed_value": find(r"total.*val|assess", True),
+            "land_value": find(r"land.*val", True),
+            "improvement_value": find(r"(improv|bldg|building).*val", True),
+            "acreage": find(r"acre", True),
+            "year_built": find(r"year.*(built|blt)|yr_?blt", True),
+            "beds": find(r"bed", True),
+            "baths": find(r"bath", True),
+            "sqft": find(r"sq_?ft|square_?feet|sqfoot|finished", True),
+            "legal_description": find(r"legal"),
+            "deed_book_page": find(r"deed|book"),
         }
         geom = chosen.get("geometry") or {}
         if "x" in geom and "y" in geom:
