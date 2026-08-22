@@ -223,6 +223,25 @@ def _sidecar_to_record(item: dict, run_id: str) -> dict:
         "pdf_link": (item.get("PDF Link") or "").strip(),
         "notes": (item.get("Notes") or "").strip(),
         "pva_verification_link": None,
+        # Structured code-enforcement extras, passed through verbatim from the
+        # sidecar. Missing values stay None/empty -- never fabricated.
+        "source_record_id": instrument,
+        "parcel_id": (item.get("_parcel") or "").strip() or None,
+        "status": (item.get("_status") or "").strip() or None,
+        "case_ids": item.get("_case_ids_all") or None,
+        "violation_codes": item.get("_violation_codes_all") or None,
+        "violation_row_count": item.get("_violation_row_count"),
+        "citation_total_value": item.get("_citation_total_value"),
+        "citation_total": (item.get("_citation_total") or "").strip() or None,
+        "distress_signals": (item.get("_distress_signals") or "").strip() or None,
+        "occupancy": (item.get("_occupancy") or "").strip() or None,
+        "priority": item.get("_priority") or None,
+        "distress_score": item.get("_distress_score"),
+        "earliest_date": item.get("_earliest_date") or None,
+        "latest_activity_date": item.get("_latest_date") or None,
+        "has_closed_status": item.get("_has_closed_status"),
+        "source_url": (item.get("_source_link") or item.get("PDF Link") or "").strip()
+        or None,
     }
 
 
