@@ -74,6 +74,34 @@ def main() -> int:
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
+    if "diag" in counties:
+        import requests as _rq, re as _re
+        sess = _rq.Session(); sess.headers.update({"User-Agent": "Mozilla/5.0"})
+        out = {}
+        q = "https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataAddresses/MapServer/0/query"
+        try:
+            r = sess.get(q, params={"where": "1=1", "outFields": "*", "returnGeometry": "false",
+                                    "f": "json", "resultRecordCount": 5}, timeout=90)
+            out["sample_rows"] = r.json()
+        except Exception as exc:
+            out["sample_rows_error"] = str(exc)
+        try:
+            r = sess.get(q, params={"where": "HOUSENO='3913'", "outFields": "ADDRESS,HOUSENO,STRNAME,PARCELID",
+                                    "returnGeometry": "false", "f": "json", "resultRecordCount": 10}, timeout=90)
+            out["houseno_3913"] = r.json()
+        except Exception as exc:
+            out["houseno_error"] = str(exc)
+        try:
+            html = sess.get("https://jeffersonpva.ky.gov/property-search/", timeout=60).text
+            out["pva_endpoints"] = sorted(set(_re.findall(r'https?://[^"\'\s<>]{10,140}', html)))[:120]
+            out["pva_forms"] = _re.findall(r'<form[^>]*>', html)[:10]
+            out["pva_inputs"] = _re.findall(r'<input[^>]*>', html)[:25]
+        except Exception as exc:
+            out["pva_error"] = str(exc)
+        (out_dir / "diag.json").write_text(json.dumps(out, indent=2, default=str)[:400000])
+        print("diag written")
+        return 0
+
     if "discover" in counties:
         import requests as _rq
         sess = _rq.Session(); sess.headers.update({"User-Agent": "Mozilla/5.0"})
