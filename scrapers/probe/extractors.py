@@ -104,18 +104,19 @@ def _num(v: Any) -> Optional[float]:
 # Jefferson County (Louisville) — LOJIC / Jefferson PVA ArcGIS services
 # --------------------------------------------------------------------------
 
+# Jefferson County KY Parcels (LOJIC OpenDataPVA) - authoritative PVA layer.
 LOJIC_PARCEL_LAYER = (
-    "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/"
-    "LOJIC_Parcels_Jefferson_County_KY/FeatureServer/0/query"
+    "https://gis.lojic.org/maps/rest/services/LojicSolutions/"
+    "OpenDataPVA/MapServer/1/query"
 )
-# Fallback: Louisville Metro open-data parcel service
+# Secondary PVA layer on the same service (assessment / improvement detail).
 LOJIC_ALT_LAYER = (
-    "https://maps.lojic.org/arcgis/rest/services/LOJIC_PublicSafety/"
-    "Parcels/MapServer/0/query"
+    "https://gis.lojic.org/maps/rest/services/LojicSolutions/"
+    "OpenDataPVA/MapServer/0/query"
 )
 
 
-def _arcgis_query(sess: requests.Session, url: str, where: str, timeout: int = 30) -> tuple[Optional[dict], int, str]:
+def _arcgis_query(sess: requests.Session, url: str, where: str, timeout: int = 90) -> tuple[Optional[dict], int, str]:
     params = {
         "where": where,
         "outFields": "*",
