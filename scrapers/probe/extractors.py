@@ -184,40 +184,44 @@ def probe_jefferson(address: str, city: str, sess: requests.Session,
     house_no, street = _split_address(address)
     fields: dict = {}
     try:
-        # 1) Address point layer -> parcel id, LRSN, normalized address, coords
-        terms = [address.upper(), f"{house_no} {street}".upper().strip()]
-        feats = []
-        for term in terms:
-            if not term:
-                continue
-            where = f"UPPER(ADDRESS) LIKE '%{_esc(term)}%'"
-            data, status, raw = _arcgis_query(sess, ADDR_LAYER, where, timeout=60)
-            res.http_status = status
-            JEFFERSON_DIAG.append({"step": "addr_query", "term": term, "status": status,
-                                   "count": len((data or {}).get("features", []))})
-            if data and data.get("features"):
-                feats = data["features"]
-                break
-        if not feats and street:
-            where = (f"UPPER(STRNAME) LIKE '%{_esc(re.sub(r'[^A-Za-z ]', '', street).strip().upper())}%'"
-                     + (f" AND HOUSENO = '{_esc(house_no)}'" if house_no else ""))
-            data, status, raw = _arcgis_query(sess, ADDR_LAYER, where, timeout=60)
-            res.http_status = status
-            JEFFERSON_DIAG.append({"step": "addr_query_parts", "where": where, "status": status,
-                                   "count": len((data or {}).get("features", []))})
-            feats = (data or {}).get("features", [])
+        try:
+            # 1) Address point layer -> parcel id, LRSN, normalized address, coords
+            terms = [address.upper(), f"{house_no} {street}".upper().strip()]
+            feats = []
+            for term in terms:
+                if not term:
+                    continue
+                where = f"UPPER(ADDRESS) LIKE '%{_esc(term)}%'"
+                data, status, raw = _arcgis_query(sess, ADDR_LAYER, where, timeout=60)
+                res.http_status = status
+                JEFFERSON_DIAG.append({"step": "addr_query", "term": term, "status": status,
+                                       "count": len((data or {}).get("features", []))})
+                if data and data.get("features"):
+                    feats = data["features"]
+                    break
+            if not feats and street:
+                where = (f"UPPER(STRNAME) LIKE '%{_esc(re.sub(r'[^A-Za-z ]', '', street).strip().upper())}%'"
+                         + (f" AND HOUSENO = '{_esc(house_no)}'" if house_no else ""))
+                data, status, raw = _arcgis_query(sess, ADDR_LAYER, where, timeout=60)
+                res.http_status = status
+                JEFFERSON_DIAG.append({"step": "addr_query_parts", "where": where, "status": status,
+                                       "count": len((data or {}).get("features", []))})
+                feats = (data or {}).get("features", [])
 
-        if feats:
-            a = {k.upper(): v for k, v in (feats[0].get("attributes") or {}).items()}
-            fields["situs_address"] = a.get("ADDRESS")
-            fields["zip"] = a.get("ZIPCODE")
-            fields["parcel_id"] = a.get("PARCELID")
-            fields["lrsn"] = a.get("LRSN")
-            g = feats[0].get("geometry") or {}
-            if "x" in g and "y" in g:
-                fields["longitude"], fields["latitude"] = g["x"], g["y"]
-        else:
-            res.error = "address not found in LOJIC address points"
+            if feats:
+                a = {k.upper(): v for k, v in (feats[0].get("attributes") or {}).items()}
+                fields["situs_address"] = a.get("ADDRESS")
+                fields["zip"] = a.get("ZIPCODE")
+                fields["parcel_id"] = a.get("PARCELID")
+                fields["lrsn"] = a.get("LRSN")
+                g = feats[0].get("geometry") or {}
+                if "x" in g and "y" in g:
+                    fields["longitude"], fields["latitude"] = g["x"], g["y"]
+            else:
+                res.error = "address not found in LOJIC address points"
+        except Exception as exc:  # noqa: BLE001
+            res.error = f"LOJIC unreachable: {type(exc).__name__}: {exc}"
+            JEFFERSON_DIAG.append({"step": "gis", "error": str(exc)})
 
         # 2) Jefferson PVA public search for owner / assessment
         pid = fields.get("parcel_id")
