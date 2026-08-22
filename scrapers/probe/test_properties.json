@@ -1,0 +1,27 @@
+{
+  "jefferson": [
+    { "address": "3913 Britt Ln", "city": "Louisville", "state": "KY" },
+    { "address": "1200 S 3rd St", "city": "Louisville", "state": "KY" },
+    { "address": "4406 Bardstown Rd", "city": "Louisville", "state": "KY" }
+  ],
+  "hardin": [
+    { "address": "201 W Dixie Ave", "city": "Elizabethtown", "state": "KY" },
+    { "address": "100 Peterson Dr", "city": "Elizabethtown", "state": "KY" }
+  ],
+  "bullitt": [
+    { "address": "300 S Buckman St", "city": "Shepherdsville", "state": "KY" },
+    { "address": "149 N Walnut St", "city": "Shepherdsville", "state": "KY" }
+  ],
+  "nelson": [
+    { "address": "113 E Stephen Foster Ave", "city": "Bardstown", "state": "KY" },
+    { "address": "200 N 5th St", "city": "Bardstown", "state": "KY" }
+  ],
+  "spencer": [
+    { "address": "2 W Main St", "city": "Taylorsville", "state": "KY" },
+    { "address": "18 E Main St", "city": "Taylorsville", "state": "KY" }
+  ],
+  "washington": [
+    { "address": "120 E Main St", "city": "Springfield", "state": "KY" },
+    { "address": "203 N Walnut St", "city": "Springfield", "state": "KY" }
+  ]
+}
