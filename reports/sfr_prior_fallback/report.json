@@ -1,0 +1,317 @@
+{
+  "status": "PASS",
+  "source_generated_at_et": "2026-08-22T21:09:52.630114-04:00",
+  "accepted": [
+    {
+      "rank": 1,
+      "priority_score": 92,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 100,
+      "saturation_score": 24,
+      "saturation_interpretation": "LOWER ESTIMATED COMPETITION",
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "freshness_age_hours": null,
+      "case_number": "ENF-PMNT-26-005440",
+      "record_status": "Open",
+      "property_address": "2230 GRAND AVE LOUISVILLE KY 40210",
+      "owner_name": "HENEGAR ALMA",
+      "owner_mailing_address": "2230 GRAND AVE LOUISVILLE KY 40210-1144",
+      "possible_absentee_indicator": false,
+      "parcel_id": "038E00610000",
+      "verified_open_cases_in_acceptance_set_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "abandonment",
+        "utility_issue",
+        "habitability"
+      ],
+      "ai_summary": "An abandoned-structure designation combined with reported prolonged vacancy and no electricity is a strong distress signal.",
+      "confirmed_facts": [
+        "The structured enforcement feed identifies the property as an abandoned structure.",
+        "The complaint reports that the residence has been empty for some time and has no electricity.",
+        "The complaint reports a person seen inside and dogs tied in the backyard."
+      ],
+      "speculative_claims": [
+        "Whether the person seen inside is an unauthorized occupant is not established by the extracted record."
+      ],
+      "acquisition_relevant": true,
+      "description_raw": "CALLER REPORTING SOMEONE IS INSIDE OF THIS VACANT PROPERTY. CALLER NOTICED A COUPLE OF DAYS AGO THAT THERE WERE DOGS TIED UP IN THE BACK YARD. CALLER SAYS RESIDENCE HAS NO ELECTRICITY AND HAS BEEN EMPTY FOR SOME TIME. THANK YOU.",
+      "inspector_comments": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=51444&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B5191&agencyCode=LJCMG&IsToShowInspection=",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 5286.4,
+      "lot_acres": 0.1214,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "occupancy": "Vacant",
+      "recent_window_occupancies": [],
+      "property_type": "SFR",
+      "tax_delinquent_verified": null
+    },
+    {
+      "rank": 3,
+      "priority_score": 86,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 91,
+      "saturation_score": 24,
+      "saturation_interpretation": "LOWER ESTIMATED COMPETITION",
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "freshness_age_hours": null,
+      "case_number": "ENF-PMNT-26-014897",
+      "record_status": "Open",
+      "property_address": "1529 S 31ST ST LOUISVILLE KY 40211",
+      "owner_name": "KIDANE AMHARE G",
+      "owner_mailing_address": "4315 SPRINGDALE AVE LAS VEGAS NV 89121-2742",
+      "possible_absentee_indicator": true,
+      "parcel_id": "049C01030000",
+      "verified_open_cases_in_acceptance_set_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "overgrown_vegetation",
+        "trash_or_debris",
+        "infestation",
+        "nuisance"
+      ],
+      "ai_summary": "Vacancy, severe reported overgrowth, dumping, and a reported pest condition create a strong acquisition-distress signal.",
+      "confirmed_facts": [
+        "The complaint reports extremely high grass and dumping behind the property.",
+        "The structured enforcement feed identifies the occupancy as a vacant structure.",
+        "Inspector comments direct cleanup and removal of overgrowth within seven days."
+      ],
+      "speculative_claims": [
+        "The reported presence of groundhogs, rats, and other critters is complainant-reported and is not independently confirmed by the inspector comment."
+      ],
+      "acquisition_relevant": true,
+      "description_raw": "Gras is extremely high also dumping in the back fritter have set up a home groundhogs / rats ect . Looks like a Madagascar over. There",
+      "inspector_comments": [
+        "All properties must be clean and maintained. This includes easements midway in alley and street into the property. Any overgrowth must be removed. You have 7 days to be compliant."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B4376&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B5027&agencyCode=LJCMG&IsToShowInspection=",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 3464.2,
+      "lot_acres": 0.0795,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "occupancy": "Unknown",
+      "recent_window_occupancies": [],
+      "property_type": "SFR",
+      "tax_delinquent_verified": null
+    },
+    {
+      "rank": 5,
+      "priority_score": 79,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 79,
+      "saturation_score": 24,
+      "saturation_interpretation": "LOWER ESTIMATED COMPETITION",
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "freshness_age_hours": null,
+      "case_number": "ENF-PMNT-26-018540",
+      "record_status": "Open",
+      "property_address": "8200 FERNDALE RD LOUISVILLE KY 40291",
+      "owner_name": "JAMES WESLEY CARY LIVING TRUST",
+      "owner_mailing_address": "8208 COOPER CHAPEL RD LOUISVILLE KY 40229-1756",
+      "possible_absentee_indicator": true,
+      "parcel_id": "063700520000",
+      "verified_open_cases_in_acceptance_set_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "overgrown_vegetation",
+        "repeated_noncompliance",
+        "severe_exterior_deterioration",
+        "nuisance",
+        "other"
+      ],
+      "ai_summary": "Long-running recurring overgrowth combined with inspector-directed roof/gutter work and dead-tree removal creates a strong repeated-neglect signal.",
+      "confirmed_facts": [
+        "The complaint describes recurring overgrowth over a period of years and says the condition returned after an earlier cleanup.",
+        "Inspector comments direct correction of overgrowth at the fence line, roof/gutter repairs, and removal of a dead tree."
+      ],
+      "speculative_claims": [
+        "The complainant's statements that vegetation is damaging the fence and that the large tree may threaten nearby homes are allegations beyond the inspector comments themselves."
+      ],
+      "acquisition_relevant": true,
+      "description_raw": "Email was received: Dear Louisville Metro311 / Code Enforcement, I am submitting this as an addendum to my previous complaints regarding the severely overgrown property directly behind my home at 6415 Tradesmill Drive, Louisville, KY 40291. This has been an ongoing problem for several years, and it has been reported to the city by both phone and email in the past. Several years ago, after previous complaints, the property was cleaned up one time, but it was not maintained and the overgrowth has returned. Trees, vines, brush, and other vegetation from this property are growing over, through, and against my privately owned fence. The vegetation is putting pressure on the fence and causing it to bend. Dense brush and vegetation remaining against the wood can also trap moisture and contribute to deterioration and rot. The overgrowth has interfered with access around my fence and gate as well. There is also a large mature tree immediately outside our fence that has continued to grow without apparent maintenance, with large limbs extending over the adjoining yards and toward our homes. Because of its size and proximity to the residences, I am requesting that the tree also be inspected to determine whether it presents a safety or property-damage hazard. I am attaching a photograph showing the current condition and the proximity of the large tree to the fence and surrounding homes. The property owner is associated with 8200 Ferndale Road, Louisville, KY. Because this is a recurring problem that has already been reported multiple times over a period of years, I am asking Louisville Metro Code Enforcement to inspect the property and take whatever enforcement action is necessary to require the owner to clear the overgrowth and properly maintain the property going forward. Please provide me with the service request or case number for this complaint and let me know what action will be taken. I would also appreciate confirmation once the property has been inspected. Thank you for your attention to this ongoing issue.",
+      "inspector_comments": [
+        "Please cut back overgrowth growing into and causing damage to fence line running from 6409 to 6419 TradesMill Dr.",
+        "Roof and gutter components must be properly installed and kept in good repair, functioning as intended. Clean out gutters where needed. Repair or replace downturned gutter on right side of house.",
+        "Remove dead tree, cut to the stump, located behind 6415 tradesmill rd"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D7596&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7597&agencyCode=LJCMG&IsToShowInspection=",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 39607.7,
+      "lot_acres": 0.9093,
+      "pin": null,
+      "zoning_code": "R4",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "occupancy": "Unknown",
+      "recent_window_occupancies": [],
+      "property_type": "SFR",
+      "tax_delinquent_verified": null
+    }
+  ],
+  "accepted_count": 3,
+  "rejected": [
+    {
+      "case_number": "ENF-PMNT-26-018701",
+      "parcel_id": "104906620000",
+      "reason": "not_single_family_landuse",
+      "landuse_name": "MULTI-FAMILY",
+      "failures": []
+    },
+    {
+      "case_number": "ENF-PMNT-26-018885",
+      "parcel_id": "013A00500000",
+      "reason": "not_single_family_landuse",
+      "landuse_name": "MULTI-FAMILY",
+      "failures": []
+    },
+    {
+      "case_number": "ENF-PMNT-26-016289",
+      "parcel_id": "017B01220000",
+      "reason": "not_single_family_landuse",
+      "landuse_name": "COMMERCIAL",
+      "failures": []
+    },
+    {
+      "case_number": "ENF-PMNT-26-019037",
+      "reason": "priority_below_60"
+    },
+    {
+      "case_number": "ENF-PMNT-26-008705",
+      "reason": "priority_below_60"
+    }
+  ],
+  "guardrails": {
+    "priority_floor_60": true,
+    "lojic_single_family_required": true,
+    "current_22_excluded": true
+  }
+}
