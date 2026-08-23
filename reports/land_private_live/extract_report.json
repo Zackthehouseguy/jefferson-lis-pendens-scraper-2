@@ -1332,5 +1332,7 @@
     "citation_assessed_not_current_balance": true,
     "builder_fit_is_estimate_not_buildability": true,
     "private_owner_queue_only": true
-  }
+  },
+  "generated_at_et": "2026-08-23T01:41:26.424517-04:00",
+  "generated_at_utc": "2026-08-23T05:41:26.424517+00:00"
 }
