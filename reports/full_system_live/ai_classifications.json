@@ -1,0 +1,107 @@
+{
+  "provider": "GPT-5.6 Sol current-session bench classification",
+  "generated_for": "reports/full_system_live/extract_report.json",
+  "contract_version": "reaper-ai-distress-v1",
+  "classifications": {
+    "ENF-PMNT-26-018885": {
+      "distress_level": "HIGH",
+      "signals": ["mold", "habitability", "tenant_issue"],
+      "confirmed_facts": [
+        "The complaint reports peeling kitchen flooring, mold in multiple locations, and a smoke detector without batteries.",
+        "Inspector comments call for interior surface/floor correction and properly working smoke detectors."
+      ],
+      "speculative_claims": [
+        "ADA noncompliance is alleged in the complaint but is not independently established by the extracted record."
+      ],
+      "summary": "Multiple reported interior habitability problems, mold, and a smoke-detector issue make this a strong active-distress case.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-018540": {
+      "distress_level": "HIGH",
+      "signals": ["overgrown_vegetation", "repeated_noncompliance", "severe_exterior_deterioration", "nuisance", "other"],
+      "confirmed_facts": [
+        "The complaint describes recurring overgrowth over a period of years and says the condition returned after an earlier cleanup.",
+        "Inspector comments direct correction of overgrowth at the fence line, roof/gutter repairs, and removal of a dead tree."
+      ],
+      "speculative_claims": [
+        "The complainant's statements that vegetation is damaging the fence and that the large tree may threaten nearby homes are allegations beyond the inspector comments themselves."
+      ],
+      "summary": "Long-running recurring overgrowth combined with inspector-directed roof/gutter work and dead-tree removal creates a strong repeated-neglect signal.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-018701": {
+      "distress_level": "HIGH",
+      "signals": ["fire_risk", "habitability", "tenant_issue", "owner_unresponsive"],
+      "confirmed_facts": [
+        "The complaint reports a washer/dryer setup burning clothing and creating burn holes.",
+        "Inspector comments direct repair or replacement of a dryer that is burning clothing and replacement of a smoke-detector battery."
+      ],
+      "speculative_claims": [
+        "The complaint says the condition persisted for almost five months and management refused to remove the appliance; that duration and response history are complainant-reported."
+      ],
+      "summary": "An inspector-directed repair for a dryer burning clothing, plus a smoke-detector issue, is a serious active safety and habitability signal.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-016289": {
+      "distress_level": "MEDIUM",
+      "signals": ["vacancy", "trash_or_debris", "overgrown_vegetation", "nuisance"],
+      "confirmed_facts": [
+        "The complaint reports garbage and high weeds behind the building.",
+        "The structured enforcement feed identifies the occupancy as a vacant structure."
+      ],
+      "speculative_claims": [],
+      "summary": "Vacancy combined with reported garbage and high weeds creates a meaningful exterior-neglect signal.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-008705": {
+      "distress_level": "LOW",
+      "signals": ["overgrown_vegetation"],
+      "confirmed_facts": [
+        "The complaint reports knee-high grass.",
+        "The inspector comment concerns rental registration rather than a severe property-condition defect."
+      ],
+      "speculative_claims": [],
+      "summary": "The physical-condition signal is limited to overgrown grass; the additional enforcement item is primarily administrative.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-014897": {
+      "distress_level": "HIGH",
+      "signals": ["vacancy", "overgrown_vegetation", "trash_or_debris", "infestation", "nuisance"],
+      "confirmed_facts": [
+        "The complaint reports extremely high grass and dumping behind the property.",
+        "The structured enforcement feed identifies the occupancy as a vacant structure.",
+        "Inspector comments direct cleanup and removal of overgrowth within seven days."
+      ],
+      "speculative_claims": [
+        "The reported presence of groundhogs, rats, and other critters is complainant-reported and is not independently confirmed by the inspector comment."
+      ],
+      "summary": "Vacancy, severe reported overgrowth, dumping, and a reported pest condition create a strong acquisition-distress signal.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-019037": {
+      "distress_level": "MEDIUM",
+      "signals": ["overgrown_vegetation", "trash_or_debris", "nuisance"],
+      "confirmed_facts": [
+        "The complaint says the grass is out of compliance.",
+        "Inspector comments direct removal of trash, rubbish, debris/tree cuttings and cutting high grass and weeds below ten inches."
+      ],
+      "speculative_claims": [],
+      "summary": "Inspector-directed cleanup of high grass, weeds, trash, and debris indicates active but moderate exterior neglect.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-005440": {
+      "distress_level": "HIGH",
+      "signals": ["vacancy", "abandonment", "utility_issue", "habitability"],
+      "confirmed_facts": [
+        "The structured enforcement feed identifies the property as an abandoned structure.",
+        "The complaint reports that the residence has been empty for some time and has no electricity.",
+        "The complaint reports a person seen inside and dogs tied in the backyard."
+      ],
+      "speculative_claims": [
+        "Whether the person seen inside is an unauthorized occupant is not established by the extracted record."
+      ],
+      "summary": "An abandoned-structure designation combined with reported prolonged vacancy and no electricity is a strong distress signal.",
+      "acquisition_relevant": true
+    }
+  }
+}
