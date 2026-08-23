@@ -1,0 +1,45 @@
+name: Accela Balance Visibility Probe
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scrapers/probe/accela_balance_probe.py"
+      - ".github/workflows/accela-balance-probe.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Mark startup
+        run: |
+          mkdir -p reports/accela_balance_probe
+          printf 'started_utc=%s\nrun_id=%s\nsha=%s\n' "$(date -u +%FT%TZ)" "${{ github.run_id }}" "${{ github.sha }}" > reports/accela_balance_probe/workflow_started.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/accela_balance_probe/workflow_started.txt
+          git commit -m "Mark balance probe start [skip ci]"
+          git push origin HEAD:main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: |
+          pip install requests beautifulsoup4 playwright
+          python -m playwright install --with-deps chromium
+      - name: Run balance visibility probe
+        run: python -m scrapers.probe.accela_balance_probe
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: accela-balance-probe
+          path: reports/accela_balance_probe/**
+          if-no-files-found: warn
+          retention-days: 14
