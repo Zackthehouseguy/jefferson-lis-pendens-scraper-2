@@ -1,9 +1,10 @@
 {
   "status": "PASS",
-  "generated_at_utc": "2026-08-23T00:41:14.713056+00:00",
-  "runtime_seconds": 59.917,
+  "generated_at_utc": "2026-08-23T00:57:37.239992+00:00",
+  "runtime_seconds": 84.154,
   "target_open": 5,
   "fixtures_available": 20,
+  "address_ui_bleed_check": true,
   "fully_verified_open_records": [
     {
       "case_number": "ENF-PMNT-26-019301",
@@ -18,7 +19,7 @@
       "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E2186&agencyCode=LJCMG&IsToShowInspection=",
       "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E2186&agencyCode=LJCMG&IsToShowInspection=",
       "http_status": 200,
-      "parent_browser_seconds": 5.473,
+      "parent_browser_seconds": 5.314,
       "page_title": "Accela Citizen Access"
     },
     {
@@ -34,14 +35,14 @@
       "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C2728&agencyCode=LJCMG",
       "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C2728&agencyCode=LJCMG",
       "http_status": 200,
-      "parent_browser_seconds": 3.089,
+      "parent_browser_seconds": 3.71,
       "page_title": "Accela Citizen Access"
     },
     {
       "case_number": "ENF-PMNT-26-013339",
       "record_type": "Property Maintenance Case",
       "record_status": "Open",
-      "property_address": "6807 YUMA WAY LOUISVILLE KY 40258 * View Additional Locations>>",
+      "property_address": "6807 YUMA WAY LOUISVILLE KY 40258",
       "description_raw": "CITIZEN IS REPORTING RESIDENCE HAS ALL KINDS OF TRASH AND AUTO PARTS, ETC IN THE REAR YARD THAT IS CAUSING RODENTS - 20 BUS DAYS",
       "owner_name": "HAAGA PROPERTIES LLC",
       "owner_mailing_address": "1316 HICKORY BARK LN GOSHEN KY 40026-9724",
@@ -50,7 +51,7 @@
       "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=A4429&agencyCode=LJCMG",
       "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=A4429&agencyCode=LJCMG",
       "http_status": 200,
-      "parent_browser_seconds": 3.12,
+      "parent_browser_seconds": 3.283,
       "page_title": "Accela Citizen Access"
     },
     {
@@ -66,7 +67,7 @@
       "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B8677&agencyCode=LJCMG",
       "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B8677&agencyCode=LJCMG",
       "http_status": 200,
-      "parent_browser_seconds": 8.131,
+      "parent_browser_seconds": 18.23,
       "page_title": "Accela Citizen Access"
     },
     {
@@ -82,7 +83,7 @@
       "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C4795&agencyCode=LJCMG",
       "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C4795&agencyCode=LJCMG",
       "http_status": 200,
-      "parent_browser_seconds": 2.997,
+      "parent_browser_seconds": 8.548,
       "page_title": "Accela Citizen Access"
     }
   ],
@@ -100,7 +101,7 @@
       "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E2186&agencyCode=LJCMG&IsToShowInspection=",
       "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E2186&agencyCode=LJCMG&IsToShowInspection=",
       "http_status": 200,
-      "parent_browser_seconds": 5.473,
+      "parent_browser_seconds": 5.314,
       "page_title": "Accela Citizen Access"
     },
     {
@@ -116,7 +117,7 @@
       "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C2728&agencyCode=LJCMG",
       "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C2728&agencyCode=LJCMG",
       "http_status": 200,
-      "parent_browser_seconds": 3.089,
+      "parent_browser_seconds": 3.71,
       "page_title": "Accela Citizen Access"
     },
     {
@@ -132,14 +133,14 @@
       "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=93019&agencyCode=LJCMG",
       "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=93019&agencyCode=LJCMG",
       "http_status": 200,
-      "parent_browser_seconds": 4.661,
+      "parent_browser_seconds": 5.481,
       "page_title": "Accela Citizen Access"
     },
     {
       "case_number": "ENF-PMNT-26-013339",
       "record_type": "Property Maintenance Case",
       "record_status": "Open",
-      "property_address": "6807 YUMA WAY LOUISVILLE KY 40258 * View Additional Locations>>",
+      "property_address": "6807 YUMA WAY LOUISVILLE KY 40258",
       "description_raw": "CITIZEN IS REPORTING RESIDENCE HAS ALL KINDS OF TRASH AND AUTO PARTS, ETC IN THE REAR YARD THAT IS CAUSING RODENTS - 20 BUS DAYS",
       "owner_name": "HAAGA PROPERTIES LLC",
       "owner_mailing_address": "1316 HICKORY BARK LN GOSHEN KY 40026-9724",
@@ -148,7 +149,7 @@
       "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=A4429&agencyCode=LJCMG",
       "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=A4429&agencyCode=LJCMG",
       "http_status": 200,
-      "parent_browser_seconds": 3.12,
+      "parent_browser_seconds": 3.283,
       "page_title": "Accela Citizen Access"
     },
     {
@@ -164,7 +165,7 @@
       "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D1781&agencyCode=LJCMG",
       "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D1781&agencyCode=LJCMG",
       "http_status": 200,
-      "parent_browser_seconds": 3.567,
+      "parent_browser_seconds": 4.302,
       "page_title": "Accela Citizen Access"
     },
     {
@@ -180,7 +181,7 @@
       "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0948&agencyCode=LJCMG",
       "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0948&agencyCode=LJCMG",
       "http_status": 200,
-      "parent_browser_seconds": 8.448,
+      "parent_browser_seconds": 8.18,
       "page_title": "Accela Citizen Access"
     },
     {
@@ -196,7 +197,7 @@
       "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B8677&agencyCode=LJCMG",
       "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B8677&agencyCode=LJCMG",
       "http_status": 200,
-      "parent_browser_seconds": 8.131,
+      "parent_browser_seconds": 18.23,
       "page_title": "Accela Citizen Access"
     },
     {
@@ -212,7 +213,7 @@
       "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B0371&agencyCode=LJCMG",
       "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B0371&agencyCode=LJCMG",
       "http_status": 200,
-      "parent_browser_seconds": 3.732,
+      "parent_browser_seconds": 3.812,
       "page_title": "Accela Citizen Access"
     },
     {
@@ -228,7 +229,7 @@
       "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D8336&agencyCode=LJCMG",
       "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D8336&agencyCode=LJCMG",
       "http_status": 200,
-      "parent_browser_seconds": 5.105,
+      "parent_browser_seconds": 8.332,
       "page_title": "Accela Citizen Access"
     },
     {
@@ -244,7 +245,7 @@
       "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D4662&agencyCode=LJCMG",
       "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D4662&agencyCode=LJCMG",
       "http_status": 200,
-      "parent_browser_seconds": 3.656,
+      "parent_browser_seconds": 3.748,
       "page_title": "Accela Citizen Access"
     },
     {
@@ -260,7 +261,7 @@
       "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=85202&agencyCode=LJCMG",
       "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=85202&agencyCode=LJCMG",
       "http_status": 200,
-      "parent_browser_seconds": 3.584,
+      "parent_browser_seconds": 8.145,
       "page_title": "Accela Citizen Access"
     },
     {
@@ -276,7 +277,7 @@
       "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C4795&agencyCode=LJCMG",
       "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C4795&agencyCode=LJCMG",
       "http_status": 200,
-      "parent_browser_seconds": 2.997,
+      "parent_browser_seconds": 8.548,
       "page_title": "Accela Citizen Access"
     }
   ],
