@@ -24,8 +24,7 @@ def main()->int:
         live.main()
     finally: sys.argv=old
     raw_report=json.loads((raw/'extract_report.json').read_text(encoding='utf-8'))
-    accepted=[]; excluded=[]; enrichment_failures=[]
-    seen=set()
+    accepted=[]; excluded=[]; enrichment_failures=[]; seen=set()
     for r0 in raw_report.get('verified_land_records') or []:
         r=dict(r0); pid=r.get('parcel_id')
         if not pid or pid in seen: continue
@@ -36,8 +35,6 @@ def main()->int:
             continue
         enrich,fail=enrich_parcel(pid); r.update(enrich)
         if fail: enrichment_failures.append({'parcel_id':pid,'property_address':r.get('property_address'),'failures':fail})
-        # Parcel identity + area are mandatory. Zoning/land-use may be unknown if
-        # no overlay intersects, but a network failure cannot masquerade as valid.
         transport_failure=any('ConnectionError' in x.get('reason','') or 'Timeout' in x.get('reason','') or 'HTTPError' in x.get('reason','') for x in fail)
         if not r.get('lojic_parcel_verified') or r.get('lot_sqft') is None or transport_failure:
             excluded.append({'parcel_id':pid,'owner_name':r.get('owner_name'),'property_address':r.get('property_address'),'reason':'required_lojic_enrichment_failed','detail':fail})
@@ -46,10 +43,10 @@ def main()->int:
         if len(accepted)>=args.target: break
     status='PASS' if len(accepted)==args.target else 'FAIL'
     report={
-      'status':status,'target_private_land':args.target,'raw_target':raw_target,
-      'raw_status':raw_report.get('status'),'raw_runtime_seconds':raw_report.get('runtime_seconds'),
-      'pm_features_fetched':raw_report.get('pm_features_fetched'),'parent_groups_discovered':raw_report.get('parent_groups_discovered'),
-      'vacant_lot_parent_groups':raw_report.get('vacant_lot_parent_groups'),
+      'status':status,'generated_at_utc':raw_report.get('generated_at_utc'),'generated_at_et':raw_report.get('generated_at_et'),
+      'target_private_land':args.target,'raw_target':raw_target,'raw_status':raw_report.get('status'),
+      'raw_runtime_seconds':raw_report.get('runtime_seconds'),'pm_features_fetched':raw_report.get('pm_features_fetched'),
+      'parent_groups_discovered':raw_report.get('parent_groups_discovered'),'vacant_lot_parent_groups':raw_report.get('vacant_lot_parent_groups'),
       'demolition_transition_watch_groups':raw_report.get('demolition_transition_watch_groups'),
       'private_land_records':accepted,'exclusions':excluded,'enrichment_failures':enrichment_failures,
       'raw_failures':raw_report.get('failures') or [],'demolition_watch_preview':raw_report.get('demolition_watch_preview') or [],
