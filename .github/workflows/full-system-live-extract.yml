@@ -1,0 +1,48 @@
+name: Full System Live Extract
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/full-system-live-extract.yml"
+      - "scrapers/probe/full_system_live_extract.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 playwright
+          playwright install --with-deps chromium
+      - name: Run unseen live extraction
+        run: python -m scrapers.probe.full_system_live_extract --target-open 8 --arcgis-limit 1000 --max-parent-attempts 28
+      - name: Persist extraction report
+        if: always()
+        run: |
+          if [ -f reports/full_system_live/extract_report.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add reports/full_system_live/extract_report.json
+            git diff --cached --quiet || git commit -m "Update full system live extraction report [skip ci]"
+            git push origin HEAD:main
+          fi
+      - name: Upload extraction report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: full-system-live-extract
+          path: reports/full_system_live/
+          if-no-files-found: error
+          retention-days: 14
