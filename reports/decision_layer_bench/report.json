@@ -1,0 +1,282 @@
+{
+  "status": "PASS",
+  "bench_time_utc": "2026-08-23T01:03:00+00:00",
+  "ai_fixture_provider": "GPT-5.6 Sol current-session bench classification of previously verified live Accela descriptions",
+  "ai_fixture_note": "No external model API was called from GitHub Actions; AI semantics are frozen fixtures for contract/scoring acceptance.",
+  "assertions_passed": 19,
+  "assertions_failed": 0,
+  "assertions": [
+    {
+      "name": "ai_contract_ENF-PMNT-26-019301",
+      "passed": true,
+      "level": "MEDIUM"
+    },
+    {
+      "name": "ai_contract_ENF-PMNT-26-016300",
+      "passed": true,
+      "level": "MEDIUM"
+    },
+    {
+      "name": "ai_contract_ENF-PMNT-26-013339",
+      "passed": true,
+      "level": "HIGH"
+    },
+    {
+      "name": "ai_contract_ENF-PMNT-26-015609",
+      "passed": true,
+      "level": "HIGH"
+    },
+    {
+      "name": "ai_contract_ENF-PMNT-26-016665",
+      "passed": true,
+      "level": "MEDIUM"
+    },
+    {
+      "name": "grounding_grissom_snakes_speculative",
+      "passed": true
+    },
+    {
+      "name": "grounding_fire_risk_not_confirmed_fire",
+      "passed": true
+    },
+    {
+      "name": "ai_cannot_set_numeric_score",
+      "passed": true
+    },
+    {
+      "name": "freshness_same_day_date_precision",
+      "passed": true,
+      "actual": {
+        "score": 100,
+        "label": "SAME DAY",
+        "age_hours": null,
+        "date_precision": "date"
+      }
+    },
+    {
+      "name": "freshness_23h",
+      "passed": true,
+      "actual": {
+        "score": 95,
+        "label": "<24 HOURS",
+        "age_hours": 23.0,
+        "date_precision": "timestamp"
+      }
+    },
+    {
+      "name": "freshness_48h",
+      "passed": true,
+      "actual": {
+        "score": 82,
+        "label": "1-3 DAYS",
+        "age_hours": 48.0,
+        "date_precision": "timestamp"
+      }
+    },
+    {
+      "name": "freshness_5d",
+      "passed": true,
+      "actual": {
+        "score": 65,
+        "label": "4-7 DAYS",
+        "age_hours": 120.0,
+        "date_precision": "timestamp"
+      }
+    },
+    {
+      "name": "freshness_20d",
+      "passed": true,
+      "actual": {
+        "score": 42,
+        "label": "8-30 DAYS",
+        "age_hours": 480.0,
+        "date_precision": "timestamp"
+      }
+    },
+    {
+      "name": "freshness_45d",
+      "passed": true,
+      "actual": {
+        "score": 20,
+        "label": "31-90 DAYS",
+        "age_hours": 1080.0,
+        "date_precision": "timestamp"
+      }
+    },
+    {
+      "name": "fresh_code_lower_saturation_than_lis",
+      "passed": true,
+      "code": 0,
+      "lis": 56
+    },
+    {
+      "name": "electrical_fire_case_ranks_above_grass_case",
+      "passed": true,
+      "top": "ENF-PMNT-26-015609",
+      "order": [
+        "ENF-PMNT-26-015609",
+        "ENF-PMNT-26-013339",
+        "ENF-PMNT-26-016665",
+        "ENF-PMNT-26-019301",
+        "ENF-PMNT-26-016300"
+      ]
+    },
+    {
+      "name": "retry_recovers_transient_failure",
+      "passed": true,
+      "meta": {
+        "attempts": 3,
+        "errors": [
+          "TimeoutError:forced_timeout",
+          "TimeoutError:forced_timeout"
+        ],
+        "recovered": true
+      }
+    },
+    {
+      "name": "permanent_error_no_retry",
+      "passed": true,
+      "attempts": 1
+    },
+    {
+      "name": "circuit_breaker_opens_blocks_and_recovers",
+      "passed": true
+    }
+  ],
+  "ranked_live_fixture_leads": [
+    {
+      "case": "ENF-PMNT-26-015609",
+      "address": "507 S 19TH ST LOUISVILLE KY 40203",
+      "ai": {
+        "distress_level": "HIGH",
+        "signals": [
+          "electrical",
+          "fire_risk",
+          "habitability",
+          "tenant_issue"
+        ],
+        "confirmed_facts": [
+          "The complaint reports that most electrical outlets do not work and some buzz.",
+          "The complaint reports that the oven does not operate normally."
+        ],
+        "speculative_claims": [
+          "The caller reports a possible fire risk; an actual fire hazard has not been independently verified."
+        ],
+        "summary": "Reported electrical malfunction and appliance problems create a serious habitability concern with a reported possible fire risk.",
+        "acquisition_relevant": true
+      },
+      "distress_score": 100,
+      "saturation_score": 0,
+      "freshness_score": 100,
+      "freshness_label": "SAME DAY",
+      "freshness_age_hours": null,
+      "freshness_precision": "date",
+      "priority_score": 100
+    },
+    {
+      "case": "ENF-PMNT-26-013339",
+      "address": "6807 YUMA WAY LOUISVILLE KY 40258",
+      "ai": {
+        "distress_level": "HIGH",
+        "signals": [
+          "trash_or_debris",
+          "infestation",
+          "nuisance"
+        ],
+        "confirmed_facts": [
+          "The complaint reports trash and auto parts accumulated in the rear yard.",
+          "The complaint reports a rodent problem."
+        ],
+        "speculative_claims": [
+          "The complaint attributes the rodent problem to the accumulated trash and auto parts, but that causation is not independently verified."
+        ],
+        "summary": "Reported debris accumulation plus a reported rodent problem creates a strong active-distress signal.",
+        "acquisition_relevant": true
+      },
+      "distress_score": 74,
+      "saturation_score": 0,
+      "freshness_score": 100,
+      "freshness_label": "SAME DAY",
+      "freshness_age_hours": null,
+      "freshness_precision": "date",
+      "priority_score": 84
+    },
+    {
+      "case": "ENF-PMNT-26-016665",
+      "address": "1701 W BROADWAY LOUISVILLE KY 40203",
+      "ai": {
+        "distress_level": "MEDIUM",
+        "signals": [
+          "overgrown_vegetation",
+          "trash_or_debris",
+          "nuisance"
+        ],
+        "confirmed_facts": [
+          "The complaint reports overgrown weeds and trees and trash at the rear of the property."
+        ],
+        "speculative_claims": [],
+        "summary": "Reported vegetation overgrowth and trash indicate active exterior neglect.",
+        "acquisition_relevant": true
+      },
+      "distress_score": 48,
+      "saturation_score": 0,
+      "freshness_score": 100,
+      "freshness_label": "SAME DAY",
+      "freshness_age_hours": null,
+      "freshness_precision": "date",
+      "priority_score": 69
+    },
+    {
+      "case": "ENF-PMNT-26-019301",
+      "address": "3600 GRISSOM WAY LOUISVILLE KY 40229",
+      "ai": {
+        "distress_level": "MEDIUM",
+        "signals": [
+          "overgrown_vegetation",
+          "nuisance"
+        ],
+        "confirmed_facts": [
+          "The complaint reports high grass that has persisted for an extended period."
+        ],
+        "speculative_claims": [
+          "The complainant speculates that snakes may be present."
+        ],
+        "summary": "Reported long-running overgrown grass indicates persistent exterior neglect; the snake statement is unverified speculation.",
+        "acquisition_relevant": true
+      },
+      "distress_score": 42,
+      "saturation_score": 0,
+      "freshness_score": 100,
+      "freshness_label": "SAME DAY",
+      "freshness_age_hours": null,
+      "freshness_precision": "date",
+      "priority_score": 65
+    },
+    {
+      "case": "ENF-PMNT-26-016300",
+      "address": "5508 ALICANTE LN LOUISVILLE KY 40272",
+      "ai": {
+        "distress_level": "MEDIUM",
+        "signals": [
+          "overgrown_vegetation",
+          "nuisance"
+        ],
+        "confirmed_facts": [
+          "The complaint reports overgrown grass in both the front and rear yards."
+        ],
+        "speculative_claims": [
+          "The complainant estimates that the grass may be taller than six feet."
+        ],
+        "summary": "Substantial reported overgrowth suggests meaningful exterior neglect, while the exact height remains an estimate.",
+        "acquisition_relevant": true
+      },
+      "distress_score": 39,
+      "saturation_score": 0,
+      "freshness_score": 100,
+      "freshness_label": "SAME DAY",
+      "freshness_age_hours": null,
+      "freshness_precision": "date",
+      "priority_score": 63
+    }
+  ]
+}
