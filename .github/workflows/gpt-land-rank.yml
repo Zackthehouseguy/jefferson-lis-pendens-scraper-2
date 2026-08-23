@@ -1,0 +1,33 @@
+name: GPT Land Rank 50
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'reports/land_stress_50/ai_classifications.json'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  rank:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate and rank 50
+        run: python -m scrapers.probe.land_stress_50_rank
+      - name: Render lead cards
+        run: python -m scrapers.probe.render_lead_cards --input reports/land_stress_50/ranked_report.json --output reports/land_stress_50/lead_cards.md --kind land
+      - name: Persist ranked batch
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || true
+          git add reports/land_stress_50/ranked_report.json reports/land_stress_50/ranked_report.md reports/land_stress_50/lead_cards.md reports/land_stress_50/extract_report.json || true
+          git diff --cached --quiet || git commit -m "Update GPT land ranked batch [skip ci]"
+          git push origin HEAD:main || true
