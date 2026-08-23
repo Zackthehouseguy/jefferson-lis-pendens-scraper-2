@@ -1,0 +1,14 @@
+# Stress50 Results 31-40
+
+| # | Case | Property | Occupancy | Complaint / key detail | Citation assessed |
+|---:|---|---|---|---|---:|
+| 31 | ENF-PMNT-26-018979 | 8110 ROCKY GAP RD LOUISVILLE KY 40214 | Occupied Structure | Grass and weeds over 10 inches / Inspector: The entire property must be cut within 7 days of this notice. The entire property must remain cut, clean, organized, and maintained at all times. Grass/weeds must stay under... | — |
+| 32 | ENF-PMNT-26-013375 | 3606 GARLAND AVE LOUISVILLE KY 40211 | Vacant Structure | Citizen is reporting that this property has a lot of junk, trash, and debris in the back of the property that is cluttering the alley. / Inspector: Remove all items from the backyard that are not meant to be stored ou... | $200 |
+| 33 | ENF-PMNT-26-018474 | 230 ROCHESTER DR LOUISVILLE KY 40214 | Occupied Structure | Vacant property with a For Rent sign in frony yard. Overgrown grass & weeds. / Inspector: Entire property must remain cut and clean and free of all rubbish | — |
+| 34 | ENF-PMNT-26-018209 | 7400 SUMMER WOOD LN 202 LOUISVILLE KY 40228 | Occupied Structure | mold in entire unit, in vents, mold found on clothes in dresser drawers contact (502)996-3162 Kenya Jackson | — |
+| 35 | ENF-PMNT-26-019139 | 9009 WOODDALE DR LOUISVILLE KY 40272 | Occupied Structure | Boxes and debris on the front porch and around the front porch. Vehicle sitting in the driveway for 6 weeks. | — |
+| 36 | ENF-PMNT-26-019051 | 414 LOUIS COLEMAN JR DR LOUISVILLE KY 40212 | Occupied Structure | Non operational vehicle parked behind home / Inspector: All vehicles must be currently licensed and in operable condition. All vehicles must be parked on a hard durable surface. | — |
+| 37 | ENF-PMNT-26-016335 | 329 E OAK ST LOUISVILLE KY 40203 | Occupied Structure | Raw sewage leak on property / Inspector: Front and rear of property must be cleaned and remove all trash, rubbish, and debris and ensure is disposed of properly. Yard must be cut. Entire property must be kept clean, c... | — |
+| 38 | ENF-PMNT-25-020812 | 6802 BEAU CT LOUISVILLE KY 40214 | Occupied Structure | CALLER REPORTING THERE IS A VERY LARGE, OLD OAK TREE IN THE CORNER OF THE BACK YARD THAT IS DEAD AND HAS BEEN DROPPING LIMBS. CALLER SAYS THE TREE NEEDS TO BE REMOVED AND THAT IT HAS ALREADY DONE PROPERTY DAMAGE IN TH... | — |
+| 39 | ENF-PMNT-25-010477 | 10210 MORRISON RD LOUISVILLE KY 40229 | Occupied Structure | CALLER REPORTS THAT THEY HAVE A LOT OF MISCELLANEOUS JUNK ON THE PROPERTY. (VEHICLES & TRAILERS HAVE ALREADY BEEN REPORTED TO ZONING.) THANK YOU. / Inspector: All vehicles stored outdoors must be licensed, operable, h... | $700 |
+| 40 | ENF-PMNT-26-014799 | 1134 GOSS AVE LOUISVILLE KY 40217 | Occupied Structure | Caller reports the siding is falling off the house, the grass is very tall, there's tall weeds all over, there's junk laying in the front yard, the backyard looks "horrendous" and the grass by the street is very tall.... | — |
