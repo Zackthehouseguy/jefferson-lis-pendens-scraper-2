@@ -49,16 +49,21 @@ def main()->int:
     fresh_h,skip_h=fresh(houses); fresh_l,skip_l=fresh(land)
     for i,r in enumerate(fresh_h,1):r['rank']=i
     for i,r in enumerate(fresh_l,1):r['rank']=i
-    for r in fresh_h+fresh_l:
-        props[key(r)]={'fingerprint':r['event_fingerprint'],'batch_id':batch_id,'last_case_number':r.get('case_number'),'last_event_date':r.get('event_date'),'property_type':r.get('property_type')}
-    ledger['last_batch_id']=batch_id; ledger['last_finalized_counts']={'houses':len(fresh_h),'land':len(fresh_l)}
-    LEDGER.write_text(json.dumps(ledger,indent=2,ensure_ascii=False),encoding='utf-8')
-
     status='PASS' if len(fresh_h)==TARGET and len(fresh_l)==TARGET else 'PARTIAL'
+
+    # A partial/failed qualification run is not a delivery. Only acknowledge a
+    # complete 25+25 batch so retries cannot accidentally burn valid leads.
+    if status=='PASS':
+        for r in fresh_h+fresh_l:
+            props[key(r)]={'fingerprint':r['event_fingerprint'],'batch_id':batch_id,'last_case_number':r.get('case_number'),'last_event_date':r.get('event_date'),'property_type':r.get('property_type')}
+        ledger['last_batch_id']=batch_id; ledger['last_finalized_counts']={'houses':len(fresh_h),'land':len(fresh_l)}
+        LEDGER.write_text(json.dumps(ledger,indent=2,ensure_ascii=False),encoding='utf-8')
+
     report={'status':status,'batch_id':batch_id,'minimum_priority':MIN_PRIORITY,'target_each':TARGET,'houses_count':len(fresh_h),'land_count':len(fresh_l),
             'houses':fresh_h,'land':fresh_l,'unchanged_skipped':{'houses':skip_h,'land':skip_l},
-            'guardrails':{'fresh_event_fingerprint_required':True,'unchanged_repeat_suppressed_across_new_batches':True,'same_batch_rerender_idempotent':True,'priority_floor_60':True}}
+            'ledger_acknowledged':status=='PASS','guardrails':{'fresh_event_fingerprint_required':True,'unchanged_repeat_suppressed_across_new_batches':True,
+            'same_batch_rerender_idempotent':True,'priority_floor_60':True,'partial_batches_do_not_mutate_delivery_ledger':True}}
     (OUT/'current.json').write_text(json.dumps(report,indent=2,ensure_ascii=False),encoding='utf-8')
-    print(json.dumps({'status':status,'houses':len(fresh_h),'land':len(fresh_l),'skipped_unchanged':len(skip_h)+len(skip_l)},indent=2))
+    print(json.dumps({'status':status,'houses':len(fresh_h),'land':len(fresh_l),'skipped_unchanged':len(skip_h)+len(skip_l),'ledger_acknowledged':status=='PASS'},indent=2))
     return 0 if status=='PASS' else 2
 if __name__=='__main__':raise SystemExit(main())
