@@ -1,0 +1,133 @@
+{
+  "status": "PASS",
+  "url": "https://cclix.us/Public/DTAX/Bills/Search",
+  "inputs": [
+    {
+      "name": null,
+      "id": "billNumber",
+      "type": null,
+      "placeholder": null,
+      "aria_label": null
+    },
+    {
+      "name": null,
+      "id": "mapId",
+      "type": null,
+      "placeholder": null,
+      "aria_label": null
+    },
+    {
+      "name": null,
+      "id": null,
+      "type": "checkbox",
+      "placeholder": null,
+      "aria_label": "Select all rows"
+    },
+    {
+      "name": null,
+      "id": null,
+      "type": null,
+      "placeholder": null,
+      "aria_label": "Select a page"
+    }
+  ],
+  "selects": [],
+  "buttons": [
+    {
+      "text": "Search Criteria",
+      "type": "button",
+      "id": null
+    },
+    {
+      "text": "",
+      "type": "button",
+      "id": null
+    },
+    {
+      "text": "",
+      "type": "button",
+      "id": null
+    },
+    {
+      "text": "",
+      "type": "button",
+      "id": null
+    },
+    {
+      "text": "",
+      "type": "button",
+      "id": null
+    },
+    {
+      "text": "",
+      "type": "button",
+      "id": null
+    },
+    {
+      "text": "Search",
+      "type": "submit",
+      "id": "btnSubmitDtaxBillSearchViewModel"
+    },
+    {
+      "text": "Reset",
+      "type": "button",
+      "id": "btnResetDtaxBillSearchViewModel"
+    },
+    {
+      "text": "Export to Excel",
+      "type": "button",
+      "id": "btnBillSearchExport"
+    },
+    {
+      "text": "",
+      "type": "button",
+      "id": null
+    },
+    {
+      "text": "",
+      "type": "button",
+      "id": null
+    },
+    {
+      "text": "",
+      "type": "button",
+      "id": null
+    },
+    {
+      "text": "",
+      "type": "button",
+      "id": null
+    },
+    {
+      "text": "",
+      "type": "button",
+      "id": null
+    }
+  ],
+  "labels": [
+    {
+      "text": "County",
+      "for": null
+    },
+    {
+      "text": "Bill Number",
+      "for": null
+    },
+    {
+      "text": "Tax Year",
+      "for": "ddlSearchTaxYear"
+    },
+    {
+      "text": "Map Id",
+      "for": null
+    },
+    {
+      "text": "Purchaser",
+      "for": "ddlPurchaser"
+    }
+  ],
+  "text_preview": "Public Delinquent Tax Bill Search Search Criteria Basic Advanced County Select County Bill Number Tax Year Select Tax Year Map Id Purchaser Select Purchaser Search Reset Selected: 0 Export to Excel Max 500 Rows Bill Number Tax Year Property Address Bill Total Bill Type Bill Status Lien Status Owners Map Id Assessments Flags Actions No records available. 10 items per page 0 - 0 of 0 items",
+  "error": null,
+  "http_status": 200,
+  "final_url": "https://cclix.us/Public/DTAX/Bills/Search"
+}
