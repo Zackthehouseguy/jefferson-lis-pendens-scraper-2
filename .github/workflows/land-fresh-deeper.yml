@@ -39,4 +39,4 @@ jobs:
           name: land-fresh-deeper
           path: reports/land_fresh_deeper/
           retention-days: 14
-# trigger-20260823-0305
+# trigger-20260823-0307-explicit
