@@ -1,5 +1,6 @@
 name: Accela Engine Probe
 
+# Bench-test workflow only; no production ingest.
 on:
   push:
     branches:
