@@ -1,0 +1,1424 @@
+{
+  "status": "PARTIAL",
+  "generated_at_utc": "2026-08-23T00:34:02.256661+00:00",
+  "runtime_seconds": 299.054,
+  "target_open_records": 5,
+  "arcgis_features_fetched": 500,
+  "unique_parent_groups_discovered": 272,
+  "parent_links_resolved": 1,
+  "child_http_resolution_total_seconds": 276.553,
+  "parents_rendered": 1,
+  "selected_open_records": [
+    {
+      "case_number": "ENF-PMNT-26-019301",
+      "record_type": "Property Maintenance Case",
+      "record_status": "Open",
+      "property_address": "3600 GRISSOM WAY LOUISVILLE KY 40229",
+      "description_raw": "High grass all year long. I’m sure it has tons of snakes in it by now.",
+      "owner_name": "ABDELRAZEQ IBRAHEEM A",
+      "owner_mailing_address": "3601 FREEDOM WAY LOUISVILLE KY 40229-1011",
+      "parcel_id": "095100550000",
+      "case_verified": true,
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E2186&agencyCode=LJCMG&IsToShowInspection=",
+      "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E2186&agencyCode=LJCMG&IsToShowInspection=",
+      "http_status": 200,
+      "parent_browser_seconds": 4.255,
+      "page_title": "Accela Citizen Access",
+      "fixture": true,
+      "resolved_from_child_case": null,
+      "child_source_url": null,
+      "child_http_seconds": 0.0,
+      "inspector_comments": [],
+      "structured_arcgis_parcel": null,
+      "structured_arcgis_address": "3600 GRISSOM WAY, LOUISVILLE KY 40229",
+      "site_visit_rows_in_recent_window": 0,
+      "child_cases_in_recent_window": [],
+      "violation_codes_in_recent_window": [],
+      "violation_descriptions_in_recent_window": [],
+      "citation_total_in_recent_window": 0.0,
+      "occupancies_in_recent_window": [],
+      "prefilter_signals": [
+        "persistent_neglect"
+      ],
+      "selected_open_parent_cases_same_property": 1
+    }
+  ],
+  "grissom_regression": {
+    "case_number": true,
+    "status_open": true,
+    "address": true,
+    "description": true,
+    "owner": true,
+    "parcel": true
+  },
+  "resolve_failures": [
+    {
+      "case": "ENF-PMNT-26-016300",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C2948&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-011650",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9492&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-013339",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B8740&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-017799",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D2284&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019101",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0949&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-015609",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7637&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-014265",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D6084&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018660",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8340&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018242",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5698&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-010516",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B4604&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-016665",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C9947&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-008252",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3397&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-015369",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B7356&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018733",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8777&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019272",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E2068&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018885",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0159&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018540",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7597&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018701",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8558&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018716",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8696&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-016289",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C3242&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-008705",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A2172&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-004522",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=81775&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-014897",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B5027&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019037",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0505&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-005440",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B5191&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018504",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7282&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019262",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E2004&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-007745",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=98658&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019186",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1556&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-006337",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=59182&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019257",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1955&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-002254",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7696&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019235",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1855&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018230",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1951&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-001409",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B4441&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-013625",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B2946&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-008067",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D1414&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-013626",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B2944&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-013944",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B2118&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019259",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1967&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018575",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7837&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-014413",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D0974&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-24-016884",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9099&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019075",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0696&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-25-019726",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=70705&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-006558",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=62441&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018557",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7728&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-007742",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=98652&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018477",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D6322&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-006934",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D2533&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019225",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1809&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018175",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0918&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-012024",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=97591&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-014194",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B0656&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-016900",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3203&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018385",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5704&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019149",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1325&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018761",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8908&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018754",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8887&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-25-006610",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=81239&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018414",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5878&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-017984",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D2926&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019249",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1912&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-001287",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C8219&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-013319",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D1883&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-014196",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D0981&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-006004",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=61420&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018991",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0193&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019179",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1504&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018578",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7847&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-011029",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D1740&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-004304",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D0616&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018973",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0072&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018431",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D6007&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019027",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0417&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-011727",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3190&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019136",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1179&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-014848",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5750&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019218",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1720&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-013703",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5191&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-012842",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5079&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-015601",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1302&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018979",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0126&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-009649",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9097&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018888",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9648&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019187",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1560&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018546",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7623&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019054",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0614&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-013375",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A4822&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018994",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0218&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018474",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D6312&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018209",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7472&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019139",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1237&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018489",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7151&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-008018",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7636&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019051",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1802&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019205",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1652&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-014794",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B5189&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019182",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1520&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019227",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1819&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-007485",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=65524&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-25-020442",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=75553&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-25-021345",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C0260&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018363",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5500&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-012292",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9421&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018459",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D6207&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-016335",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1211&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-25-020984",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B8401&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019223",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1794&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-25-020812",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=60499&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018196",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D4275&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-014569",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B2193&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-011753",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A6136&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-24-012338",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B4116&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-24-017394",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9756&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-25-010477",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=67703&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-016482",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5757&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019220",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1761&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-014799",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B4560&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019053",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0610&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-011596",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C4815&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-009176",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B9425&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-017755",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D1433&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019206",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1654&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-004622",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A6224&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-008075",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C4840&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-015658",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5301&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-25-017300",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=66103&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018287",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D4982&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019219",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1725&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019212",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1698&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-25-006569",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A2426&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-015492",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0453&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-015838",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5377&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-016599",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3625&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019193",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1599&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019215",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1712&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018709",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1303&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-004084",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=83811&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-25-006543",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C4877&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018889",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9650&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-014713",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B5160&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-22-000179",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=73800&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-011173",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A4584&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-013392",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A4867&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-011115",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D4131&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-017670",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D1635&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-017210",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8506&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-016676",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C4886&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-013950",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B5168&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019210",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1684&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-25-013252",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D4179&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-012558",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0358&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-012108",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B5323&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-002501",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A8500&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019208",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1663&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-011526",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B7921&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019156",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1376&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-23-008983",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C5649&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-014550",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B8170&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-013845",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A8495&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-017812",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D1926&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018377",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5586&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019204",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1648&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018784",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9008&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019191",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1592&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018337",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5362&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-25-012687",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=84506&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-015970",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C4141&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019056",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0623&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-25-016887",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D0914&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-009375",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=97639&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-012750",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A7599&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018550",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7642&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018338",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5368&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-25-018684",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B9346&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-017958",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D4291&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019196",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1608&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-22-000990",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3464&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018817",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9230&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-25-006173",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5582&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-016459",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C3663&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-25-021970",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7232&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019164",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1443&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018441",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D6061&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-013745",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A7734&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-011326",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D4341&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018940",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0303&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019190",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1589&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018990",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0188&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018052",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D6166&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-015525",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D1866&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-006275",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3534&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-014791",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B7778&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-016403",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3552&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018214",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D4394&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019150",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1335&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-013012",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A5596&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-24-001975",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=89559&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019188",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1566&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018110",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3675&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-015922",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5923&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019133",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1162&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018399",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5712&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019155",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1371&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-016925",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3768&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-017699",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3279&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018115",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3721&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018610",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8015&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-24-020140",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A1714&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-016529",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3490&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019105",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1001&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019166",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1448&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018384",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5642&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-002160",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B9350&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-016449",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3596&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-010184",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3393&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019183",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1527&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-016166",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C6720&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018667",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8382&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018234",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8094&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019117",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1094&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018975",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0089&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018710",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8645&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019171",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1467&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-008499",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9955&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018939",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9887&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-015656",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D2705&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018938",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9885&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-016450",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C3636&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018328",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5311&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018672",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8404&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019110",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1043&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-006223",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D2634&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019120",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1102&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-25-008522",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5873&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-25-021641",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3284&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018254",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7511&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018498",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7354&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018581",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7857&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019163",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1439&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019177",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1494&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019144",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1265&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018826",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9290&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018653",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8289&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-017520",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0597&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-24-013098",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=56372&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019159",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1423&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-017623",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D1477&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018721",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8720&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-014220",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5088&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-014474",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8772&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-016487",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C3796&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-013123",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A5987&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018646",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8252&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018478",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9793&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019158",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1406&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018593",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7923&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018890",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0866&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018686",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8480&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018232",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9135&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018151",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3923&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018627",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8136&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019048",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0579&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-017741",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3494&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-005717",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D4978&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018804",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9139&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018257",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7825&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018914",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9771&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-018853",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9455&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-019154",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1367&agencyCode=LJCMG&IsToShowInspection="
+    },
+    {
+      "case": "ENF-PMNT-26-014456",
+      "reason": "parent_link_not_found_in_child_html",
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0478&agencyCode=LJCMG&IsToShowInspection="
+    }
+  ],
+  "parent_failures": [],
+  "notes": [
+    "Read-only bench test; no production ingest occurs.",
+    "ArcGIS child/site-visit records are used for discovery and violation context; Related Records resolves the exact parent Property Maintenance Case URL.",
+    "Cheap HTTP is used for child-page parent-link resolution; Chromium is reserved for parent-case validation/extraction.",
+    "No CAPTCHA solver, stealth plugin, proxy rotation, or anti-bot circumvention is used.",
+    "AI distress classification is performed after extraction in ChatGPT; prefilter_signals are deterministic keywords only."
+  ]
+}
