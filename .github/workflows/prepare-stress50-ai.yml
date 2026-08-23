@@ -7,6 +7,7 @@ on:
       - ".github/workflows/prepare-stress50-ai.yml"
       - "scrapers/probe/prepare_stress50_ai_input.py"
       - "scrapers/probe/stress_50_rank.py"
+      - "scrapers/probe/render_stress50_ranked_chunks.py"
       - "reports/stress_50_live/ai_classifications.json"
   workflow_dispatch:
 
@@ -28,12 +29,14 @@ jobs:
         run: python -m scrapers.probe.prepare_stress50_ai_input
       - name: Run 50-record ranking acceptance
         run: python -m scrapers.probe.stress_50_rank
+      - name: Render ranked chunks
+        run: python -m scrapers.probe.render_stress50_ranked_chunks
       - name: Persist ranked report
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase origin main || true
-          git add reports/stress_50_live/ai_input.json reports/stress_50_live/final_ranked_report.json reports/stress_50_live/final_ranked_report.md
+          git add reports/stress_50_live/ai_input.json reports/stress_50_live/final_ranked_report.json reports/stress_50_live/final_ranked_report.md reports/stress_50_live/ranked_*.md
           git diff --cached --quiet || git commit -m "Update stress50 ranked acceptance [skip ci]"
           git push origin HEAD:main || true
