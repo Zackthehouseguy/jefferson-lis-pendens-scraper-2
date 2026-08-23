@@ -27,3 +27,4 @@ jobs:
           git add reports/land_live/ai_input.json reports/land_live/ai_input.md
           git diff --cached --quiet || git commit -m "Update land10 AI packet [skip ci]"
           git push origin HEAD:main || true
+# trigger
