@@ -1,0 +1,33 @@
+name: Reprocess Land Stress Existing
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/reprocess-land-stress.yml'
+      - 'scrapers/probe/reprocess_land_stress_existing.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  reprocess:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - run: python -m scrapers.probe.reprocess_land_stress_existing
+      - name: Persist
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || true
+          git add reports/land_stress_50/reprocessed_report.json || true
+          git diff --cached --quiet || git commit -m "Update land stress reprocess [skip ci]"
+          git push origin HEAD:main || true
+# trigger
