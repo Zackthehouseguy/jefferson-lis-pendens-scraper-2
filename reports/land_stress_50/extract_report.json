@@ -6753,5 +6753,5 @@
       }
     }
   ],
-  "ranking_source_report": "reprocessed_report.json"
+  "ranking_source_report": "extract_report.json"
 }

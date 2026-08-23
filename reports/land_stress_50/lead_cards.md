@@ -2,7 +2,7 @@
 
 Records: **50**
 
-## #1 — 2509 WOODLAND AVE LOUISVILLE KY 40210, LOUISVILLE, KY 40210
+## #1 — 2509 WOODLAND AVE LOUISVILLE KY 40210
 **LAND | CALL FIRST | Priority 91/100**
 Motivation **93/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -15,7 +15,7 @@ Motivation **93/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=19REC&capID2=00000&capID3=77171&agencyCode=LJCMG
 
-## #2 — 3939 CENTRAL AVE LOUISVILLE KY 40218, LOUISVILLE, KY 40218
+## #2 — 3939 CENTRAL AVE LOUISVILLE KY 40218
 **LAND | CALL FIRST | Priority 91/100**
 Motivation **93/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -28,7 +28,7 @@ Motivation **93/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D0257&agencyCode=LJCMG
 
-## #3 — 2215 W MADISON ST LOUISVILLE KY 40211, LOUISVILLE, KY 40211
+## #3 — 2215 W MADISON ST LOUISVILLE KY 40211
 **LAND | CALL FIRST | Priority 89/100**
 Motivation **93/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -41,7 +41,7 @@ Motivation **93/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=43183&agencyCode=LJCMG
 
-## #4 — 4209 LA SALLE AVE LOUISVILLE KY 40215, LOUISVILLE, KY 40215
+## #4 — 4209 LA SALLE AVE LOUISVILLE KY 40215
 **LAND | CALL FIRST | Priority 89/100**
 Motivation **88/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -54,7 +54,7 @@ Motivation **88/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=65934&agencyCode=LJCMG
 
-## #5 — 2417 PORTLAND AVE LOUISVILLE KY 40212, LOUISVILLE, KY 40212
+## #5 — 2417 PORTLAND AVE LOUISVILLE KY 40212
 **LAND | CALL FIRST | Priority 81/100**
 Motivation **70/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -67,7 +67,7 @@ Motivation **70/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B1751&agencyCode=LJCMG
 
-## #6 — 4208 TAYLOR BLVD LOUISVILLE KY 40215, LOUISVILLE, KY 40215
+## #6 — 4208 TAYLOR BLVD LOUISVILLE KY 40215
 **LAND | CALL FIRST | Priority 78/100**
 Motivation **69/100** · Builder Fit **93/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -80,7 +80,7 @@ Motivation **69/100** · Builder Fit **93/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=25REC&capID2=00000&capID3=59234&agencyCode=LJCMG
 
-## #7 — 1708 W ST CATHERINE ST LOUISVILLE KY 40210, LOUISVILLE, KY 40210
+## #7 — 1708 W ST CATHERINE ST LOUISVILLE KY 40210
 **LAND | CALL FIRST | Priority 77/100**
 Motivation **61/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -93,7 +93,7 @@ Motivation **61/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=58002&agencyCode=LJCMG
 
-## #8 — 2703 W KENTUCKY ST LOUISVILLE KY 40211, LOUISVILLE, KY 40211
+## #8 — 2703 W KENTUCKY ST LOUISVILLE KY 40211
 **LAND | CALL FIRST | Priority 77/100**
 Motivation **61/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -106,7 +106,7 @@ Motivation **61/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=75985&agencyCode=LJCMG
 
-## #9 — 1740 DIXIE HWY LOUISVILLE KY 40210, LOUISVILLE, KY 40210
+## #9 — 1740 DIXIE HWY LOUISVILLE KY 40210
 **LAND | CALL FIRST | Priority 76/100**
 Motivation **60/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -119,7 +119,7 @@ Motivation **60/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C5766&agencyCode=LJCMG
 
-## #10 — 2044 S PRESTON ST LOUISVILLE KY 40217, LOUISVILLE, KY 40217
+## #10 — 2044 S PRESTON ST LOUISVILLE KY 40217
 **LAND | CALL FIRST | Priority 76/100**
 Motivation **59/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -132,7 +132,7 @@ Motivation **59/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=24REC&capID2=00000&capID3=O8440&agencyCode=LJCMG
 
-## #11 — 13421 RIGGS LAKE LN LOUISVILLE KY 40299, LOUISVILLE, KY 40299
+## #11 — 13421 RIGGS LAKE LN LOUISVILLE KY 40299
 **LAND | CALL FIRST | Priority 75/100**
 Motivation **65/100** · Builder Fit **88/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -145,7 +145,7 @@ Motivation **65/100** · Builder Fit **88/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D2888&agencyCode=LJCMG
 
-## #12 — 2244 OSAGE AVE LOUISVILLE KY 40210, LOUISVILLE, KY 40210
+## #12 — 2244 OSAGE AVE LOUISVILLE KY 40210
 **LAND | STRONG | Priority 74/100**
 Motivation **61/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -158,7 +158,7 @@ Motivation **61/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=25REC&capID2=00000&capID3=I4518&agencyCode=LJCMG
 
-## #13 — 1765 W GAULBERT AVE LOUISVILLE KY 40210, LOUISVILLE, KY 40210
+## #13 — 1765 W GAULBERT AVE LOUISVILLE KY 40210
 **LAND | STRONG | Priority 73/100**
 Motivation **58/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -171,7 +171,7 @@ Motivation **58/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C7994&agencyCode=LJCMG
 
-## #14 — 2516 S 4TH ST LOUISVILLE KY 40208, LOUISVILLE, KY 40208
+## #14 — 2516 S 4TH ST LOUISVILLE KY 40208
 **LAND | STRONG | Priority 73/100**
 Motivation **58/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -184,7 +184,7 @@ Motivation **58/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0365&agencyCode=LJCMG
 
-## #15 — 2520 S 4TH ST LOUISVILLE KY 40208, LOUISVILLE, KY 40208
+## #15 — 2520 S 4TH ST LOUISVILLE KY 40208
 **LAND | STRONG | Priority 73/100**
 Motivation **58/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -197,7 +197,7 @@ Motivation **58/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0354&agencyCode=LJCMG
 
-## #16 — 2237 W KENTUCKY ST LOUISVILLE KY 40210, LOUISVILLE, KY 40210
+## #16 — 2237 W KENTUCKY ST LOUISVILLE KY 40210
 **LAND | STRONG | Priority 73/100**
 Motivation **52/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -210,7 +210,7 @@ Motivation **52/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0212&agencyCode=LJCMG
 
-## #17 — 6204 PRESTON HWY LOUISVILLE KY 40219, LOUISVILLE, KY 40219
+## #17 — 6204 PRESTON HWY LOUISVILLE KY 40219
 **LAND | STRONG | Priority 70/100**
 Motivation **58/100** · Builder Fit **82/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -223,7 +223,7 @@ Motivation **58/100** · Builder Fit **82/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1136&agencyCode=LJCMG
 
-## #18 — 7001 E MANSLICK RD LOUISVILLE KY 40228, LOUISVILLE, KY 40228
+## #18 — 7001 E MANSLICK RD LOUISVILLE KY 40228
 **LAND | STRONG | Priority 70/100**
 Motivation **56/100** · Builder Fit **93/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -236,7 +236,7 @@ Motivation **56/100** · Builder Fit **93/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B2848&agencyCode=LJCMG
 
-## #19 — 540 S 18TH ST LOUISVILLE KY 40203, LOUISVILLE, KY 40203
+## #19 — 540 S 18TH ST LOUISVILLE KY 40203
 **LAND | STRONG | Priority 70/100**
 Motivation **52/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -249,7 +249,7 @@ Motivation **52/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D9422&agencyCode=LJCMG
 
-## #20 — 1704 PRENTICE ST LOUISVILLE KY 40210, LOUISVILLE, KY 40210
+## #20 — 1704 PRENTICE ST LOUISVILLE KY 40210
 **LAND | STRONG | Priority 69/100**
 Motivation **58/100** · Builder Fit **87/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -262,7 +262,7 @@ Motivation **58/100** · Builder Fit **87/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=77179&agencyCode=LJCMG
 
-## #21 — 8607 RUNNING FOX CIR LOUISVILLE KY 40291, LOUISVILLE, KY 40291
+## #21 — 8607 RUNNING FOX CIR LOUISVILLE KY 40291
 **LAND | STRONG | Priority 67/100**
 Motivation **43/100** · Builder Fit **94/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -275,7 +275,7 @@ Motivation **43/100** · Builder Fit **94/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0473&agencyCode=LJCMG
 
-## #22 — 7299 DIXIE HWY LOUISVILLE KY 40258, LOUISVILLE, KY 40258
+## #22 — 7299 DIXIE HWY LOUISVILLE KY 40258
 **LAND | STRONG | Priority 62/100**
 Motivation **88/100** · Builder Fit **17/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -288,7 +288,7 @@ Motivation **88/100** · Builder Fit **17/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=25REC&capID2=00000&capID3=44483&agencyCode=LJCMG
 
-## #23 — 701 E MAIN ST LOUISVILLE KY 40202, LOUISVILLE, KY 40202
+## #23 — 701 E MAIN ST LOUISVILLE KY 40202
 **LAND | STRONG | Priority 62/100**
 Motivation **88/100** · Builder Fit **17/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -301,7 +301,7 @@ Motivation **88/100** · Builder Fit **17/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=25REC&capID2=00000&capID3=98240&agencyCode=LJCMG
 
-## #24 — 2232 W MUHAMMAD ALI BLVD LOUISVILLE KY 40212, LOUISVILLE, KY 40212
+## #24 — 2232 W MUHAMMAD ALI BLVD LOUISVILLE KY 40212
 **LAND | STRONG | Priority 62/100**
 Motivation **33/100** · Builder Fit **93/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -314,7 +314,7 @@ Motivation **33/100** · Builder Fit **93/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1021&agencyCode=LJCMG
 
-## #25 — 612 N 17TH ST LOUISVILLE KY 40203, LOUISVILLE, KY 40203
+## #25 — 612 N 17TH ST LOUISVILLE KY 40203
 **LAND | STRONG | Priority 61/100**
 Motivation **89/100** · Builder Fit **0/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -327,7 +327,7 @@ Motivation **89/100** · Builder Fit **0/100** · Saturation **27/100** · Fresh
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=71351&agencyCode=LJCMG
 
-## #26 — 1746 BOLLING AVE LOUISVILLE KY 40210, LOUISVILLE, KY 40210
+## #26 — 1746 BOLLING AVE LOUISVILLE KY 40210
 **LAND | STRONG | Priority 61/100**
 Motivation **33/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -340,7 +340,7 @@ Motivation **33/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C7361&agencyCode=LJCMG
 
-## #27 — 2319 CEDAR ST LOUISVILLE KY 40212, LOUISVILLE, KY 40212
+## #27 — 2319 CEDAR ST LOUISVILLE KY 40212
 **LAND | STRONG | Priority 61/100**
 Motivation **31/100** · Builder Fit **93/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -353,7 +353,7 @@ Motivation **31/100** · Builder Fit **93/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0897&agencyCode=LJCMG
 
-## #28 — 614 N 17TH ST LOUISVILLE KY 40203, LOUISVILLE, KY 40203
+## #28 — 614 N 17TH ST LOUISVILLE KY 40203
 **LAND | REVIEW | Priority 59/100**
 Motivation **85/100** · Builder Fit **0/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -366,7 +366,7 @@ Motivation **85/100** · Builder Fit **0/100** · Saturation **27/100** · Fresh
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=34669&agencyCode=LJCMG
 
-## #29 — 1429 S 9TH ST LOUISVILLE KY 40208, LOUISVILLE, KY 40208
+## #29 — 1429 S 9TH ST LOUISVILLE KY 40208
 **LAND | REVIEW | Priority 59/100**
 Motivation **61/100** · Builder Fit **40/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -379,7 +379,7 @@ Motivation **61/100** · Builder Fit **40/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D9805&agencyCode=LJCMG
 
-## #30 — 10704 GRAPE ARBOR DR LOUISVILLE KY 40272, LOUISVILLE, KY 40272
+## #30 — 10704 GRAPE ARBOR DR LOUISVILLE KY 40272
 **LAND | REVIEW | Priority 59/100**
 Motivation **33/100** · Builder Fit **93/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -392,7 +392,7 @@ Motivation **33/100** · Builder Fit **93/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D7851&agencyCode=LJCMG
 
-## #31 — 2407 W BROADWAY LOUISVILLE KY 40211, LOUISVILLE, KY 40211
+## #31 — 2407 W BROADWAY LOUISVILLE KY 40211
 **LAND | REVIEW | Priority 57/100**
 Motivation **61/100** · Builder Fit **40/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -405,7 +405,7 @@ Motivation **61/100** · Builder Fit **40/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=21REC&capID2=00000&capID3=E3878&agencyCode=LJCMG
 
-## #32 — 1717 BEECH ST LOUISVILLE KY 40210, LOUISVILLE, KY 40210
+## #32 — 1717 BEECH ST LOUISVILLE KY 40210
 **LAND | REVIEW | Priority 56/100**
 Motivation **20/100** · Builder Fit **94/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -418,7 +418,7 @@ Motivation **20/100** · Builder Fit **94/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D0342&agencyCode=LJCMG
 
-## #33 — 10250 STONESTREET RD LOUISVILLE KY 40272, LOUISVILLE, KY 40272
+## #33 — 10250 STONESTREET RD LOUISVILLE KY 40272
 **LAND | REVIEW | Priority 55/100**
 Motivation **61/100** · Builder Fit **27/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -431,7 +431,7 @@ Motivation **61/100** · Builder Fit **27/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=98072&agencyCode=LJCMG
 
-## #34 — 2518 S 4TH ST LOUISVILLE KY 40208, LOUISVILLE, KY 40208
+## #34 — 2518 S 4TH ST LOUISVILLE KY 40208
 **LAND | REVIEW | Priority 55/100**
 Motivation **58/100** · Builder Fit **40/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -444,7 +444,7 @@ Motivation **58/100** · Builder Fit **40/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0359&agencyCode=LJCMG
 
-## #35 — 521 MARRET AVE LOUISVILLE KY 40208, LOUISVILLE, KY 40208
+## #35 — 521 MARRET AVE LOUISVILLE KY 40208
 **LAND | REVIEW | Priority 55/100**
 Motivation **58/100** · Builder Fit **29/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -457,7 +457,7 @@ Motivation **58/100** · Builder Fit **29/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0075&agencyCode=LJCMG
 
-## #36 — 2528 W MUHAMMAD ALI BLVD LOUISVILLE KY 40212, LOUISVILLE, KY 40212
+## #36 — 2528 W MUHAMMAD ALI BLVD LOUISVILLE KY 40212
 **LAND | REVIEW | Priority 52/100**
 Motivation **58/100** · Builder Fit **28/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -470,7 +470,7 @@ Motivation **58/100** · Builder Fit **28/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C7365&agencyCode=LJCMG
 
-## #37 — 1538 CATALPA ST LOUISVILLE KY 40211, LOUISVILLE, KY 40211
+## #37 — 1538 CATALPA ST LOUISVILLE KY 40211
 **LAND | REVIEW | Priority 51/100**
 Motivation **68/100** · Builder Fit **0/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -483,7 +483,7 @@ Motivation **68/100** · Builder Fit **0/100** · Saturation **27/100** · Fresh
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=67935&agencyCode=LJCMG
 
-## #38 — 1525 MAPLE ST LOUISVILLE KY 40210, LOUISVILLE, KY 40210
+## #38 — 1525 MAPLE ST LOUISVILLE KY 40210
 **LAND | REVIEW | Priority 51/100**
 Motivation **49/100** · Builder Fit **40/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -496,7 +496,7 @@ Motivation **49/100** · Builder Fit **40/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D9095&agencyCode=LJCMG
 
-## #39 — 6700 STRAWBERRY LN LOUISVILLE KY 40214, LOUISVILLE, KY 40214
+## #39 — 6700 STRAWBERRY LN LOUISVILLE KY 40214
 **LAND | REVIEW | Priority 49/100**
 Motivation **58/100** · Builder Fit **17/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -509,7 +509,7 @@ Motivation **58/100** · Builder Fit **17/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=24REC&capID2=00000&capID3=N5056&agencyCode=LJCMG
 
-## #40 — 5419 DISTLER LN LOUISVILLE KY 40258, LOUISVILLE, KY 40258
+## #40 — 5419 DISTLER LN LOUISVILLE KY 40258
 **LAND | REVIEW | Priority 45/100**
 Motivation **61/100** · Builder Fit **0/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -522,7 +522,7 @@ Motivation **61/100** · Builder Fit **0/100** · Saturation **27/100** · Fresh
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=79349&agencyCode=LJCMG
 
-## #41 — 526 EASTERN PKY LOUISVILLE KY 40217, LOUISVILLE, KY 40217
+## #41 — 526 EASTERN PKY LOUISVILLE KY 40217
 **LAND | REVIEW | Priority 45/100**
 Motivation **31/100** · Builder Fit **38/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -535,7 +535,7 @@ Motivation **31/100** · Builder Fit **38/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0691&agencyCode=LJCMG
 
-## #42 — 7501 JEFFERSON BLVD LOUISVILLE KY 40219, LOUISVILLE, KY 40219
+## #42 — 7501 JEFFERSON BLVD LOUISVILLE KY 40219
 **LAND | LOW | Priority 44/100**
 Motivation **59/100** · Builder Fit **0/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -548,7 +548,7 @@ Motivation **59/100** · Builder Fit **0/100** · Saturation **27/100** · Fresh
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C8395&agencyCode=LJCMG
 
-## #43 — 11117 SANDWOOD PL LOUISVILLE KY 40272, LOUISVILLE, KY 40272
+## #43 — 11117 SANDWOOD PL LOUISVILLE KY 40272
 **LAND | LOW | Priority 44/100**
 Motivation **40/100** · Builder Fit **20/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -561,7 +561,7 @@ Motivation **40/100** · Builder Fit **20/100** · Saturation **24/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=23REC&capID2=00000&capID3=81546&agencyCode=LJCMG
 
-## #44 — 9812 SEATONVILLE RD LOUISVILLE KY 40291, LOUISVILLE, KY 40291
+## #44 — 9812 SEATONVILLE RD LOUISVILLE KY 40291
 **LAND | LOW | Priority 44/100**
 Motivation **33/100** · Builder Fit **33/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -574,7 +574,7 @@ Motivation **33/100** · Builder Fit **33/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D3818&agencyCode=LJCMG
 
-## #45 — 1329 LILLIAN AVE LOUISVILLE KY 40208, LOUISVILLE, KY 40208
+## #45 — 1329 LILLIAN AVE LOUISVILLE KY 40208
 **LAND | LOW | Priority 43/100**
 Motivation **33/100** · Builder Fit **38/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -587,7 +587,7 @@ Motivation **33/100** · Builder Fit **38/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=76551&agencyCode=LJCMG
 
-## #46 — 8500 TIFFANY BROOKE CT LOUISVILLE KY 40228, LOUISVILLE, KY 40228
+## #46 — 8500 TIFFANY BROOKE CT LOUISVILLE KY 40228
 **LAND | LOW | Priority 42/100**
 Motivation **33/100** · Builder Fit **33/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -600,7 +600,7 @@ Motivation **33/100** · Builder Fit **33/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C9488&agencyCode=LJCMG
 
-## #47 — 1823 W MAIN ST LOUISVILLE KY 40203, LOUISVILLE, KY 40203
+## #47 — 1823 W MAIN ST LOUISVILLE KY 40203
 **LAND | LOW | Priority 39/100**
 Motivation **33/100** · Builder Fit **22/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
@@ -613,7 +613,7 @@ Motivation **33/100** · Builder Fit **22/100** · Saturation **27/100** · Fres
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D9433&agencyCode=LJCMG
 
-## #48 — 1421 LEXINGTON RD LOUISVILLE KY 40206, LOUISVILLE, KY 40206
+## #48 — 1421 LEXINGTON RD LOUISVILLE KY 40206
 **LAND | LOW | Priority 38/100**
 Motivation **40/100** · Builder Fit **0/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -626,7 +626,7 @@ Motivation **40/100** · Builder Fit **0/100** · Saturation **24/100** · Fresh
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0402&agencyCode=LJCMG
 
-## #49 — 6800 SLURPEE ST LOUISVILLE KY 40228, LOUISVILLE, KY 40228
+## #49 — 6800 SLURPEE ST LOUISVILLE KY 40228
 **LAND | LOW | Priority 34/100**
 Motivation **31/100** · Builder Fit **0/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant lot
@@ -639,7 +639,7 @@ Motivation **31/100** · Builder Fit **0/100** · Saturation **27/100** · Fresh
 **Demolition:** Not verified
 **Source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1264&agencyCode=LJCMG
 
-## #50 — 1935 LOWER HUNTERS TRCE LOUISVILLE KY 40216, LOUISVILLE, KY 40216
+## #50 — 1935 LOWER HUNTERS TRCE LOUISVILLE KY 40216
 **LAND | LOW | Priority 33/100**
 Motivation **34/100** · Builder Fit **0/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
 **Occupancy:** Vacant lot
