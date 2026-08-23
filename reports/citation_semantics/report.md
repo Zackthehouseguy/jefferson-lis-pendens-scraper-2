@@ -1,0 +1,187 @@
+# Citation Semantics Probe
+
+```json
+{
+  "generated_at_utc": "2026-08-23T00:45:56.033926+00:00",
+  "runtime_seconds": 0.763,
+  "cases": [
+    {
+      "child_case": "ENF-PMNT-26-014474-8",
+      "row_count": 7,
+      "naive_row_sum": 4900.0,
+      "nonzero_amounts": [
+        700.0,
+        700.0,
+        700.0,
+        700.0,
+        700.0,
+        700.0,
+        700.0
+      ],
+      "unique_nonzero_amounts": [
+        700.0
+      ],
+      "rows": [
+        {
+          "violation_code": "K10 ",
+          "citation_amount": 700,
+          "status": "Citation",
+          "description": "K10 - KITCHEN SINK  [156.151-A] Every dwelling unit shall contain its own ... kitchen sink which shall be maintained in a sanitary, safe working condition. ..."
+        },
+        {
+          "violation_code": "T22 ",
+          "citation_amount": 700,
+          "status": "Citation",
+          "description": "T22 - LAVATORY BASIN  [156.153-A] All plumbing fixtures shall be properly installed and maintained in working order, and shall be kept free from obstructions, leaks and defects and be capable of performing the function for which such plumbing fixtures are designed. All plumbing fixtures shall be maintained in a safe, sanitary and functional condition."
+        },
+        {
+          "violation_code": "T30 ",
+          "citation_amount": 700,
+          "status": "Citation",
+          "description": "T30 - TOILET  [156.151-A] Every dwelling unit shall contain its own bathtub or shower, lavatory, ...which shall be maintained in a sanitary, safe working condition. ..."
+        },
+        {
+          "violation_code": "X18 ",
+          "citation_amount": 700,
+          "status": "Citation",
+          "description": "X18 - EXHAUST VENT DIS GAS/STEAM/VAP  [156.052-G] (Exhaust vent discharge gas/steam/vapor/smoke) Pipes, ducts, conductors, fans or blowers shall not discharge gases, steam, vapor,...or other gaseous or particulate waste directly upon abutting or adjacent public or private property or that of another tenant."
+        },
+        {
+          "violation_code": "I13 ",
+          "citation_amount": 700,
+          "status": "Citation",
+          "description": "I13 - INTERIOR SURFACE(S)/ CEILINGS/ WALLS/ FLOORS  [156.054-C/156.054-C-1] {C} All interior surfaces, including windows and doors, shall be maintained in good, clean and sanitary condition. Peeling, chipping, flaking, or abraded paint shall be repaired, removed, or covered. Cracked or loose plaster, decayed wood, and other defective surface conditions shall be corrected. {C-1} The owner must comply with federal and state statues and standards and local statutes and standards for the abatement of existing lead base paint and the application of lead base paint."
+        },
+        {
+          "violation_code": "I17 ",
+          "citation_amount": 700,
+          "status": "Citation",
+          "description": "I17 - PEST INFESTATION OF INTERIOR  [156.056-A,B,C,D] {A}...All structures in which insects or rodents are found shall be promptly exterminated by approved processes... {B} The owner of any structure shall be responsible for extermination within the structure prior to renting or leasing the structure. {C} The occupant of a one-family dwelling or of a single-tenant nonresidential structure shall be responsible for extermination on the premises ... {D} Multiple occupancy. The owner of a structure containing two or more dwelling units, a multiple occupancy, a rooming house or a nonresidential structure shall be responsible for extermination in the public or shared areas of the structure and exterior property. If infestation is caused by failure of an occupant to prevent such infestation in the area occupied, the occupant shall be responsible for extermination."
+        },
+        {
+          "violation_code": "I22 ",
+          "citation_amount": 700,
+          "status": "Citation",
+          "description": "I22 - SMOKE DETECTOR (INT. OF DWELLING)  [156.203-B-1, 3, 4 - C-1,2,4,6] (Smoke Detector Interior of Dwelling Unit) {1} In all dwelling units, smoke detectors powered by a hard wire AC primary power source or a self-monitored, non-removal ten-year lithium battery shall be installed and maintained ... Single station detectors presently installed utilizing standard batteries may continue to be used as long as the units remain operational. ...{3} Smoke detectors shall be installed in accordance with applicable NFPA Standards and the manufacturer's recommendations.  Detectors may be ceiling or wall mounted, provided that they shall be mounted at a minimum of four inches and a maximum of 12 inches from the ceiling {4} In a dwelling unit the detector shall be located in the corridor within the unit or interior area giving access to the rooms used for sleeping purposes.  Where sleeping areas are separated and/or where a single smoke detector will not adequately service all sleeping areas, there shall be a smoke detector installed adjacent to each sleeping area... {C1} The owner of a dwelling shall be responsible for supplying and installing ... detectors ... {C2} The owner of a dwelling shall be responsible for maintenance and testing of detectors, in accordance with the manufacturer's instructions which are located in common areas...{C4} At every change of tenancy in all multi-family residential units and dormitories, it shall be the duty of the owner to test and ascertain that those detectors contained in the unit are in operable condition, and if not, the owner shall be responsible for placing them in operable condition. {C6} It shall be the responsibility of the property owner to install at least smoke detectors powered by a hardwire AC primary source or a self-monitored, non-removal ten year lithium battery before transfer of the property to a new party..."
+        }
+      ]
+    },
+    {
+      "child_case": "ENF-PMNT-24-017394-74",
+      "row_count": 8,
+      "naive_row_sum": 5600.0,
+      "nonzero_amounts": [
+        700.0,
+        700.0,
+        700.0,
+        700.0,
+        700.0,
+        700.0,
+        700.0,
+        700.0
+      ],
+      "unique_nonzero_amounts": [
+        700.0
+      ],
+      "rows": [
+        {
+          "violation_code": "I03 ",
+          "citation_amount": 700,
+          "status": "Citation",
+          "description": "I03 - DOOR (INTERIOR)  [156.054-F] Every interior door shall fit reasonably well within its frame and shall be capable of being opened and closed by being properly and securely attached to jambs, headers or tracks as intended by the manufacturer of the attachment hardware."
+        },
+        {
+          "violation_code": "M100",
+          "citation_amount": 700,
+          "status": "Citation",
+          "description": "M100 - INOPERABLE MECHANICAL EQUIP. [156.182-A] All mechanical appliances, ... shall be properly installed and maintained in a safe working condition, and shall be capable of performing the intended function."
+        },
+        {
+          "violation_code": "P03 ",
+          "citation_amount": 700,
+          "status": "Citation",
+          "description": "P03 - PROPERTY WATER SUPPLY LINE/ WASTE PIPES/ SPIGOT  [156.153-A & 156.154-A,C] All plumbing fixtures shall be properly installed and maintained in working order...All plumbing fixtures shall be maintained in a safe, sanitary and functional condition. {A} Every sink, lavatory, bathtub or shower, drinking fountain, water closet, or other plumbing fixture shall be properly connected to either a public water system or to an approved private water system. {C}  The water supply system shall be installed and maintained to provide a supply of water to plumbing fixtures, devices, and appurtenances in sufficient volume and at pressures adequate to enable the fixtures to function properly, safely, and free from defects and leaks."
+        },
+        {
+          "violation_code": "X72 ",
+          "citation_amount": 700,
+          "status": "Citation",
+          "description": "X72 - WINDOW  [156.053-N,1,2] Every window, skylight,...shall be kept in sound condition, good repair and weather tight. Every window other than a fixed window shall be easily openable and capable of being held in position by window hardware. All glazing materials shall be maintained free from cracks and holes."
+        },
+        {
+          "violation_code": "X04 ",
+          "citation_amount": 700,
+          "status": "Citation",
+          "description": "X04 - CANOPY/OVERHANG/AWNING/ CORNICE/ SIGNS  [156.053-H-l] All canopies, marquees, signs, metal awnings,...and similar overhang extensions...shall be maintained in good repair and be properly anchored so as to be kept in a safe and sound condition"
+        },
+        {
+          "violation_code": "I13 ",
+          "citation_amount": 700,
+          "status": "Citation",
+          "description": "I13 - INTERIOR SURFACE(S)/ CEILINGS/ WALLS/ FLOORS  [156.054-C/156.054-C-1] {C} All interior surfaces, including windows and doors, shall be maintained in good, clean and sanitary condition. Peeling, chipping, flaking, or abraded paint shall be repaired, removed, or covered. Cracked or loose plaster, decayed wood, and other defective surface conditions shall be corrected. {C-1} The owner must comply with federal and state statues and standards and local statutes and standards for the abatement of existing lead base paint and the application of lead base paint."
+        },
+        {
+          "violation_code": "I24 ",
+          "citation_amount": 700,
+          "status": "Citation",
+          "description": "I24 - STAIR (INTERIOR)  [156.054-B-D-E] {B] (Stair Lighting/Illumination Interior) Every common hall and stairway in residential occupancies, other than in one-and two-family dwellings, shall be lighted at all times with at least a 60-watt standard incandescent light bulb for each 200 square feet (19m) of floor area... {D] Every stair, ramp, landing, balcony, porch, deck or other walking surface shall be maintained in sound condition and good repair... {E] Every handrail and guard shall be firmly fastened and capable of supporting normally imposed loads and shall be maintained in good condition. Every interior flight of stairs having more than four risers, and every open portion of a stair, landing or balcony, which is more than 30 inches (762 mm) above the floor or grade below shall have guards.  Handrails shall not be less than 30 inches (762 mm) nor more than 42 inches (1067 mm) high."
+        },
+        {
+          "violation_code": "X19 ",
+          "citation_amount": 700,
+          "status": "Citation",
+          "description": "X19 - EXTERIOR SURFACE(S)/SUPPORT MEMBERS/ FOUNDATION WALLS  [156.053-B, D, E, F, K, L]... {B] All exterior surfaces, ...shall be maintained in good condition. ... shall be protected from the elements and decay by painting or other protective covering or treatment...and shall be free of peeling and chipping paint... {E] All foundation walls shall be maintained plumb and free from open cracks and breaks... {F} All exterior walls shall be free from holes, breaks, and loose or rotting materials; and maintained weatherproof and properly surface coated where required to prevent deterioration...  {K] chimneys, cooling towers, smoke stacks, and similar appurtenances shall be maintained structurally safe and sound, and in good repair. ? {L]  All chimneys, cooling towers, smoke stacks, and similar appurtenances shall be maintained structurally safe and sound, and in good repair. ... {D] All structural members shall be maintained free from deterioration, and shall be capable of safely supporting the imposed dead and live loads."
+        }
+      ]
+    },
+    {
+      "child_case": "ENF-PMNT-26-015609-6",
+      "row_count": 3,
+      "naive_row_sum": 0,
+      "nonzero_amounts": [],
+      "unique_nonzero_amounts": [],
+      "rows": [
+        {
+          "violation_code": "X72 ",
+          "citation_amount": 0,
+          "status": "Hold",
+          "description": "X72 - WINDOW  [156.053-N,1,2] Every window, skylight,...shall be kept in sound condition, good repair and weather tight. Every window other than a fixed window shall be easily openable and capable of being held in position by window hardware. All glazing materials shall be maintained free from cracks and holes."
+        },
+        {
+          "violation_code": "K18 ",
+          "citation_amount": 0,
+          "status": "Hold",
+          "description": "K18 - REFRIGERATOR  [156.051-B-6-b] A refrigerator or similar device capable of the safe storage of food at temperatures less than 50 degrees F, but more than 3 degrees F ... to be supplied by the owner; provided, however, the owner may specify that this shall be the responsibility of the occupant if sufficient space and adequate connections are provided."
+        },
+        {
+          "violation_code": "X07 ",
+          "citation_amount": 0,
+          "status": "Hold",
+          "description": "X07 - DOOR (EXTERIOR)  [156.053-O-1, 156.053-O-2] All exterior doors, door assemblies and hardware shall be maintained in good condition?  [156.053-O-2] (Door lock provision for principle entry)   Double cylinder dead bolts requiring a key operation on both sides are prohibited on required means of egress."
+        }
+      ]
+    },
+    {
+      "child_case": "ENF-PMNT-26-013339-3",
+      "row_count": 2,
+      "naive_row_sum": 0,
+      "nonzero_amounts": [],
+      "unique_nonzero_amounts": [],
+      "rows": [
+        {
+          "violation_code": "02A ",
+          "citation_amount": 0,
+          "status": "Hold",
+          "description": "02A - CLEANING  [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti.  It shall be the responsibility of the owner to restore said surface."
+        },
+        {
+          "violation_code": "05A ",
+          "citation_amount": 0,
+          "status": "Hold",
+          "description": "05A - ILLEGALLY PARKED/ABANDONED VEH  [156.052-I, J] (156.052-I, J).... All motor vehicles must be parked on a hard and durable surface and no inoperative or unlicensed motor vehicle shall be parked, kept or stored on any premises, and no vehicle shall at any time be in a state of major disassembly, disrepair, or in the process of being stripped or dismantled. Vehicles may only be parked on those portions of the premises, which the Land Development Code allows as permissible parking areas, also all vehicles must be parked on a hard durable surface. Painting of vehicles is prohibited on residentially zoned or used property, except as provided for in other regulations.  (156.052-J)  Removal by Metro Government. In the event that any person fails to comply with an order issued pursuant to this section, the Code Official may have the vehicle parked or stored in violation of this section, removed and disposed of and may impose on the person violating the order a reasonable charge to cover the direct and indirect costs, if any, for the removal and disposition of the motor vehicle or major parts thereof.\r\n\r\n"
+        }
+      ]
+    }
+  ]
+}
+```
