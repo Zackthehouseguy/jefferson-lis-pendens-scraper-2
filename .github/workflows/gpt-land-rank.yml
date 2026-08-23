@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'reports/land_stress_50/ai_classifications.json'
+      - '.github/workflows/gpt-land-rank.yml'
   workflow_dispatch:
 permissions:
   contents: write
@@ -31,3 +32,4 @@ jobs:
           git add reports/land_stress_50/ranked_report.json reports/land_stress_50/ranked_report.md reports/land_stress_50/lead_cards.md reports/land_stress_50/extract_report.json || true
           git diff --cached --quiet || git commit -m "Update GPT land ranked batch [skip ci]"
           git push origin HEAD:main || true
+# explicit-acceptance-trigger-20260823
