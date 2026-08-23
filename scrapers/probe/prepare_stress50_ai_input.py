@@ -9,6 +9,7 @@ OUT = ROOT / 'ai_input.json'
 
 
 def main() -> int:
+    # Pure local transform of the already-saved extraction report; no web calls.
     payload = json.loads(SRC.read_text(encoding='utf-8'))
     records = payload.get('verified_open_unseen_records') or []
     compact = []
