@@ -1,0 +1,407 @@
+{
+  "provider": "GPT-5.6 Sol current-session bench classification",
+  "contract_version": "reaper-ai-distress-v1",
+  "generated_at": "2026-08-23T00:45:00-04:00",
+  "classifications": {
+    "ENF-PMNT-26-018504": {
+      "distress_level": "LOW",
+      "signals": ["nuisance", "other"],
+      "confirmed_facts": ["Inspector required the trailer to be parked on a hard durable surface."],
+      "speculative_claims": [],
+      "summary": "Parking/storage enforcement is a weak property-distress signal by itself.",
+      "acquisition_relevant": false
+    },
+    "ENF-PMNT-26-019257": {
+      "distress_level": "MEDIUM",
+      "signals": ["habitability", "severe_exterior_deterioration", "trash_or_debris", "tenant_issue"],
+      "confirmed_facts": ["Inspector documented a chirping smoke detector, peeling window frames, and a large pile of branches.", "Inspector stated the property is not owner occupied and requires rental registration."],
+      "speculative_claims": [],
+      "summary": "Multiple active exterior and safety-maintenance issues create meaningful landlord/property distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-002254": {
+      "distress_level": "MEDIUM",
+      "signals": ["vacancy", "trash_or_debris", "overgrown_vegetation", "nuisance"],
+      "confirmed_facts": ["The structured feed identifies a vacant lot.", "Complaint and inspector records document trash/litter and overgrowth."],
+      "speculative_claims": [],
+      "summary": "A vacant lot with trash and persistent overgrowth is a meaningful neglect signal.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-019235": {
+      "distress_level": "HIGH",
+      "signals": ["structural_damage", "water_damage", "habitability"],
+      "confirmed_facts": ["Complaint reports a third-floor closet ceiling falling in.", "Inspector directed repair of roof/ceiling leaks and damaged window glazing."],
+      "speculative_claims": [],
+      "summary": "Active roof leaks and falling/damaged interior surfaces create strong structural and habitability distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-018230": {
+      "distress_level": "HIGH",
+      "signals": ["fire_risk", "habitability", "utility_issue"],
+      "confirmed_facts": ["Inspector documented smoke damage on interior walls and ceiling.", "Inspector stated the furnace appears to have experienced fire or overheating and must be made operational."],
+      "speculative_claims": ["The exact cause and extent of the apparent furnace fire/overheating are not established."],
+      "summary": "Smoke damage plus apparent furnace fire/overheating is a high-priority safety and habitability signal.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-008067": {
+      "distress_level": "MEDIUM",
+      "signals": ["vacancy", "overgrown_vegetation", "repeated_noncompliance", "nuisance"],
+      "confirmed_facts": ["The structured feed identifies a vacant lot.", "Complaint describes long-running lack of maintenance, and the inspector ordered correction within seven days."],
+      "speculative_claims": [],
+      "summary": "Long-running neglect on a vacant lot with enforcement escalation is a meaningful distress signal.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-013944": {
+      "distress_level": "LOW",
+      "signals": ["trash_or_debris", "nuisance", "other"],
+      "confirmed_facts": ["Complaint reports large trash bags/debris in the rear alley.", "Inspector ordered debris cleanup and vehicle compliance."],
+      "speculative_claims": [],
+      "summary": "Trash and vehicle-storage issues show active neglect but limited deeper distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-019259": {
+      "distress_level": "HIGH",
+      "signals": ["vacancy", "boarded_or_unsecured", "unsafe_structure"],
+      "confirmed_facts": ["The structured feed identifies a vacant structure.", "Complaint and inspector records state a rear opening/broken glass door must be secured immediately."],
+      "speculative_claims": [],
+      "summary": "A vacant unsecured structure with broken access points is a strong acquisition-distress signal.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-018575": {
+      "distress_level": "HIGH",
+      "signals": ["mold", "water_damage", "structural_damage", "habitability"],
+      "confirmed_facts": ["Complaint reports mold in multiple areas, water leaking through the foundation, and foundation cracking."],
+      "speculative_claims": [],
+      "summary": "Widespread mold plus foundation water intrusion and cracking indicates serious habitability and structural distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-24-016884": {
+      "distress_level": "HIGH",
+      "signals": ["utility_issue", "boarded_or_unsecured", "severe_exterior_deterioration", "overgrown_vegetation"],
+      "confirmed_facts": ["Complaint describes broken-out windows, high grass/weeds and a downed tree.", "Inspector directed restoration of water service for continued occupancy."],
+      "speculative_claims": ["The complaint characterizes the property as vacant/open, while the structured occupancy field in this extract is not vacant."],
+      "summary": "Broken openings, utility-service issues and severe exterior neglect create strong distress even with conflicting occupancy evidence.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-018477": {
+      "distress_level": "MEDIUM",
+      "signals": ["vacancy", "nuisance", "severe_exterior_deterioration"],
+      "confirmed_facts": ["The structured feed identifies a vacant lot.", "Inspector ordered removal of a fallen tree from a drainage ditch/creek."],
+      "speculative_claims": [],
+      "summary": "A vacant lot with a fallen tree obstructing drainage is a moderate physical-distress signal.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-006934": {
+      "distress_level": "HIGH",
+      "signals": ["infestation", "habitability", "water_damage", "tenant_issue", "accumulated_fines"],
+      "confirmed_facts": ["Complaint repeatedly reports a roach infestation and broken bathroom door.", "Inspector documented damaged floors/walls/ceilings and malfunctioning window AC units.", "A $400 citation was assessed in the extracted enforcement event."],
+      "speculative_claims": [],
+      "summary": "Infestation plus multiple interior habitability defects and an assessed citation make this a strong distress case.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-019225": {
+      "distress_level": "MEDIUM",
+      "signals": ["vacancy", "overgrown_vegetation", "repeated_noncompliance"],
+      "confirmed_facts": ["The structured feed identifies a vacant structure.", "Complaint describes recurring fence-line overgrowth, and the inspector ordered vegetation control."],
+      "speculative_claims": [],
+      "summary": "A vacant structure with recurring maintenance complaints shows persistent but moderate neglect.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-018175": {
+      "distress_level": "HIGH",
+      "signals": ["vacancy", "boarded_or_unsecured", "trash_or_debris", "nuisance", "accumulated_fines"],
+      "confirmed_facts": ["The structured feed identifies a vacant structure.", "Complaint reports people entering from the rear and dumping trash.", "Inspector ordered openings secured and debris removed; a $200 citation was assessed."],
+      "speculative_claims": ["Whether reported entrants are legally unauthorized occupants is not independently established."],
+      "summary": "Vacancy, unsecured openings, dumping and an assessed citation create a strong distress signal.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-016900": {
+      "distress_level": "HIGH",
+      "signals": ["vacancy", "infestation", "overgrown_vegetation", "repeated_noncompliance", "accumulated_fines"],
+      "confirmed_facts": ["The structured feed identifies a vacant structure.", "Complaint says grass has not been cut for five to six months and reports rodents/groundhogs.", "A $300 citation was assessed."],
+      "speculative_claims": [],
+      "summary": "Long-running vacancy and neglect with pest activity and an assessed citation is a strong acquisition signal.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-019149": {
+      "distress_level": "MEDIUM",
+      "signals": ["vacancy", "overgrown_vegetation", "accumulated_fines"],
+      "confirmed_facts": ["The structured feed identifies a vacant structure.", "Inspector ordered the property kept cut and clean; a $100 citation was assessed."],
+      "speculative_claims": [],
+      "summary": "Vacancy plus active overgrowth enforcement and an assessed citation creates moderate distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-25-006610": {
+      "distress_level": "LOW",
+      "signals": ["overgrown_vegetation"],
+      "confirmed_facts": ["Complaint and inspector records are limited to high grass and weeds."],
+      "speculative_claims": [],
+      "summary": "High grass alone is a weak acquisition-distress signal.",
+      "acquisition_relevant": false
+    },
+    "ENF-PMNT-26-001287": {
+      "distress_level": "HIGH",
+      "signals": ["vacancy", "structural_damage", "severe_exterior_deterioration", "estate_or_deceased"],
+      "confirmed_facts": ["Complaint reports the owner is living elsewhere in connection with probate/inheritance and describes the home as empty/falling apart.", "Inspector documented a sagging porch/gutter area, exposed wood, furniture/debris and dead/downed trees."],
+      "speculative_claims": ["The exact probate ownership posture and whether the property is legally vacant are not independently established here."],
+      "summary": "Probate-related absentee circumstances combined with visible structural/exterior deterioration create strong acquisition distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-014196": {
+      "distress_level": "MEDIUM",
+      "signals": ["habitability", "tenant_issue", "owner_unresponsive"],
+      "confirmed_facts": ["Complaint reports the apartment AC has been out for at least two weeks and multiple work orders were filed.", "Complaint reports similar AC issues in numerous other apartments."],
+      "speculative_claims": ["The number of other affected apartments is based on the caller's statement."],
+      "summary": "Extended AC failure with repeated work orders indicates meaningful landlord/habitability distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-018991": {
+      "distress_level": "MEDIUM",
+      "signals": ["trash_or_debris", "nuisance", "repeated_noncompliance"],
+      "confirmed_facts": ["Complaint and inspector records document scrap metal, clothing, wood, tires, trash and rubbish across the property.", "Inspector ordered cleanup within seven days."],
+      "speculative_claims": [],
+      "summary": "Broad property-wide debris accumulation indicates active neglect beyond a minor yard issue.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-019179": {
+      "distress_level": "HIGH",
+      "signals": ["vacancy", "boarded_or_unsecured", "nuisance"],
+      "confirmed_facts": ["The structured feed identifies a vacant structure.", "Complaint reports people breaking into the property and high weeds around it."],
+      "speculative_claims": ["The legal status of the reported entrants is not established."],
+      "summary": "A vacant property with reported break-ins is a high-priority security and distress signal.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-018578": {
+      "distress_level": "LOW",
+      "signals": ["overgrown_vegetation"],
+      "confirmed_facts": ["Complaint and inspector records are limited to high weeds in the rear yard."],
+      "speculative_claims": [],
+      "summary": "Rear-yard weeds alone are a weak acquisition-distress signal.",
+      "acquisition_relevant": false
+    },
+    "ENF-PMNT-26-011029": {
+      "distress_level": "HIGH",
+      "signals": ["trash_or_debris", "repeated_noncompliance", "habitability", "nuisance", "accumulated_fines"],
+      "confirmed_facts": ["Complaint describes a continuing trash/overgrowth problem and a garage packed so full the door will not close.", "Inspector documented extensive cleanup needs and stagnant pool water.", "A $600 citation was assessed."],
+      "speculative_claims": ["The complaint's characterization of the condition as hoarding is not independently established."],
+      "summary": "Recurring heavy accumulation, stagnant water and a substantial assessed citation create strong distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-018973": {
+      "distress_level": "MEDIUM",
+      "signals": ["severe_exterior_deterioration", "nuisance"],
+      "confirmed_facts": ["Inspector identified a dangerous tree that must be cut to a safe height.", "Complaint reports the tree is losing large limbs and leaning toward neighboring houses."],
+      "speculative_claims": ["The caller's statement that the tree is leaning more each day is not independently measured."],
+      "summary": "A dangerous tree threatening nearby structures is a meaningful but localized distress signal.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-019027": {
+      "distress_level": "MEDIUM",
+      "signals": ["severe_exterior_deterioration", "nuisance", "repeated_noncompliance"],
+      "confirmed_facts": ["Inspector identified a dead/dangerous tree requiring corrective work.", "Complaint reports limbs have fallen and damaged neighboring property over the years."],
+      "speculative_claims": [],
+      "summary": "A long-running dangerous-tree condition with reported prior damage creates moderate distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-011727": {
+      "distress_level": "MEDIUM",
+      "signals": ["vacancy", "overgrown_vegetation", "trash_or_debris", "accumulated_fines"],
+      "confirmed_facts": ["The structured feed identifies a vacant lot.", "Inspector documented overgrown grass and tree debris; a $200 citation was assessed."],
+      "speculative_claims": [],
+      "summary": "A vacant lot with debris, overgrowth and an assessed citation shows moderate distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-019136": {
+      "distress_level": "LOW",
+      "signals": ["overgrown_vegetation", "accumulated_fines"],
+      "confirmed_facts": ["Complaint and inspector records document high grass/weeds.", "A $100 citation was assessed."],
+      "speculative_claims": [],
+      "summary": "High grass with a small assessed citation remains a relatively weak distress signal.",
+      "acquisition_relevant": false
+    },
+    "ENF-PMNT-26-019218": {
+      "distress_level": "LOW",
+      "signals": ["overgrown_vegetation"],
+      "confirmed_facts": ["Complaint and inspector records document grass not cut since before July 4 and high weeds."],
+      "speculative_claims": ["The complaint speculates about a relationship separation and family members moving out; that is not verified."],
+      "summary": "Extended grass neglect is weak-to-moderate property distress; the personal-relationship claim is not used as evidence.",
+      "acquisition_relevant": false
+    },
+    "ENF-PMNT-26-013703": {
+      "distress_level": "MEDIUM",
+      "signals": ["trash_or_debris", "repeated_noncompliance", "nuisance", "accumulated_fines"],
+      "confirmed_facts": ["Complaint describes an ongoing large trash/debris issue spilling into parking and an alley.", "A $300 citation was assessed."],
+      "speculative_claims": [],
+      "summary": "Ongoing commercial-site debris plus an assessed citation indicates moderate enforcement distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-015601": {
+      "distress_level": "LOW",
+      "signals": ["vacancy", "overgrown_vegetation"],
+      "confirmed_facts": ["The structured feed identifies a vacant lot.", "Complaint and inspector records are limited primarily to high grass/weeds."],
+      "speculative_claims": [],
+      "summary": "Vacant land with grass enforcement is a modest land-distress signal but not a severe condition.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-018979": {
+      "distress_level": "LOW",
+      "signals": ["overgrown_vegetation"],
+      "confirmed_facts": ["Complaint and inspector records are limited to grass and weeds over ten inches."],
+      "speculative_claims": [],
+      "summary": "High grass alone is a weak acquisition-distress signal.",
+      "acquisition_relevant": false
+    },
+    "ENF-PMNT-26-013375": {
+      "distress_level": "MEDIUM",
+      "signals": ["vacancy", "trash_or_debris", "nuisance", "accumulated_fines"],
+      "confirmed_facts": ["The structured feed identifies a vacant structure.", "Complaint and inspector records document significant junk/trash/debris; a $200 citation was assessed."],
+      "speculative_claims": [],
+      "summary": "Vacancy combined with substantial debris and an assessed citation creates moderate distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-018474": {
+      "distress_level": "MEDIUM",
+      "signals": ["vacancy", "overgrown_vegetation", "trash_or_debris"],
+      "confirmed_facts": ["Complaint describes a property advertised for rent as vacant with overgrown grass and weeds.", "Inspector ordered the property kept cut, clean and free of rubbish."],
+      "speculative_claims": ["The structured occupancy field says occupied, so the complaint's vacancy description is not independently confirmed."],
+      "summary": "Reported vacancy/turnover plus exterior neglect creates moderate acquisition relevance.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-018209": {
+      "distress_level": "HIGH",
+      "signals": ["mold", "habitability", "tenant_issue"],
+      "confirmed_facts": ["Complaint reports mold throughout the unit, including vents and clothing stored in drawers."],
+      "speculative_claims": [],
+      "summary": "Reported pervasive mold throughout an occupied unit is a strong habitability distress signal.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-019139": {
+      "distress_level": "LOW",
+      "signals": ["trash_or_debris", "nuisance", "other"],
+      "confirmed_facts": ["Complaint reports boxes/debris around the front porch and a vehicle sitting in the driveway for six weeks."],
+      "speculative_claims": [],
+      "summary": "Porch debris and a sitting vehicle are weak-to-moderate exterior distress indicators.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-019051": {
+      "distress_level": "LOW",
+      "signals": ["nuisance", "other"],
+      "confirmed_facts": ["Complaint and inspector records document a non-operational vehicle and parking compliance issue."],
+      "speculative_claims": [],
+      "summary": "A vehicle/storage violation is a weak acquisition-distress signal by itself.",
+      "acquisition_relevant": false
+    },
+    "ENF-PMNT-26-016335": {
+      "distress_level": "HIGH",
+      "signals": ["unsafe_structure", "habitability", "utility_issue", "water_damage", "structural_damage", "severe_exterior_deterioration", "trash_or_debris"],
+      "confirmed_facts": ["Inspector documented apparent raw sewage/stagnant water, utility service requirements, roof/window/door defects and extensive cleanup needs.", "Inspector explicitly states the property is being condemned."],
+      "speculative_claims": [],
+      "summary": "Condemnation plus sewage, utility and building-envelope failures is extreme active property distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-25-020812": {
+      "distress_level": "MEDIUM",
+      "signals": ["severe_exterior_deterioration", "nuisance"],
+      "confirmed_facts": ["Inspector required dead limbs to be removed or the tree reduced to a safe height.", "Complaint reports the dead tree has dropped limbs and caused property damage."],
+      "speculative_claims": [],
+      "summary": "A dangerous dead tree with reported prior damage is a meaningful localized distress signal.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-25-010477": {
+      "distress_level": "HIGH",
+      "signals": ["electrical", "trash_or_debris", "water_damage", "nuisance", "accumulated_fines"],
+      "confirmed_facts": ["Inspector documented extensive outdoor junk/vehicle storage, a missing electrical service-panel dead front, and standing-water conditions.", "A $700 citation was assessed."],
+      "speculative_claims": [],
+      "summary": "Electrical safety issues, broad property neglect and a $700 assessed citation create strong distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-014799": {
+      "distress_level": "MEDIUM",
+      "signals": ["severe_exterior_deterioration", "trash_or_debris", "overgrown_vegetation", "nuisance"],
+      "confirmed_facts": ["Complaint reports siding falling off, tall grass/weeds and junk in the yard."],
+      "speculative_claims": [],
+      "summary": "Exterior deterioration combined with overgrowth and junk indicates meaningful deferred maintenance.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-019053": {
+      "distress_level": "LOW",
+      "signals": ["nuisance", "other"],
+      "confirmed_facts": ["Complaint and inspector records document a non-operational vehicle and parking compliance issue."],
+      "speculative_claims": [],
+      "summary": "A vehicle-storage violation alone is a weak acquisition-distress signal.",
+      "acquisition_relevant": false
+    },
+    "ENF-PMNT-26-011596": {
+      "distress_level": "HIGH",
+      "signals": ["habitability", "mold", "structural_damage", "electrical", "utility_issue", "unsafe_structure"],
+      "confirmed_facts": ["Complaint reports failed AC, basement mold and holes in floors.", "Inspector documented nonworking electrical outlets, holes in walls/ceilings/floors, plumbing/door defects and unpermitted residential use."],
+      "speculative_claims": [],
+      "summary": "Multiple electrical, structural, plumbing and mold/habitability defects create severe active property distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-017755": {
+      "distress_level": "MEDIUM",
+      "signals": ["vacancy", "trash_or_debris", "overgrown_vegetation", "accumulated_fines"],
+      "confirmed_facts": ["The structured feed identifies a vacant lot.", "Inspector ordered trash/debris removal and a $100 citation was assessed."],
+      "speculative_claims": [],
+      "summary": "A vacant lot with trash, overgrowth and an assessed citation creates moderate distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-019206": {
+      "distress_level": "MEDIUM",
+      "signals": ["severe_exterior_deterioration", "overgrown_vegetation", "trash_or_debris", "nuisance"],
+      "confirmed_facts": ["Complaint reports extreme overgrowth, porch garbage and a potentially dangerous tree branch.", "Inspector ordered boxes and dead limbs removed."],
+      "speculative_claims": ["The complaint says the property looks abandoned/vacant, but the structured occupancy field says occupied."],
+      "summary": "Severe exterior neglect and a tree hazard create meaningful distress despite uncertain vacancy.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-004622": {
+      "distress_level": "HIGH",
+      "signals": ["habitability", "electrical", "structural_damage", "utility_issue", "trash_or_debris", "accumulated_fines"],
+      "confirmed_facts": ["Complaint reports broken appliances, a soft bathroom floor, and missing kitchen-sink plumbing.", "Inspector documented multiple electrical outlet/fixture defects, smoke-detector issues and broad cleanup needs.", "A $700 citation was assessed."],
+      "speculative_claims": [],
+      "summary": "Major habitability, electrical, plumbing and floor defects plus a $700 citation create very strong distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-008075": {
+      "distress_level": "HIGH",
+      "signals": ["vacancy", "trash_or_debris", "overgrown_vegetation", "accumulated_fines"],
+      "confirmed_facts": ["The structured feed identifies a vacant structure.", "Inspector documented overgrowth and discarded household items; a $700 citation was assessed."],
+      "speculative_claims": [],
+      "summary": "Vacancy plus significant exterior neglect and a $700 assessed citation create strong distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-015658": {
+      "distress_level": "MEDIUM",
+      "signals": ["habitability", "tenant_issue", "owner_unresponsive", "accumulated_fines"],
+      "confirmed_facts": ["Complaint reports an unresolved AC problem and communication with the landlord.", "A $100 citation was assessed."],
+      "speculative_claims": ["The exact duration/details of the landlord response are based on the tenant complaint."],
+      "summary": "An unresolved tenant AC issue with enforcement and an assessed citation indicates moderate landlord distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-018287": {
+      "distress_level": "MEDIUM",
+      "signals": ["infestation", "tenant_issue", "owner_unresponsive"],
+      "confirmed_facts": ["Complaint reports cockroach and mouse problems that had already been reported to the property owner."],
+      "speculative_claims": [],
+      "summary": "Reported rodent/cockroach infestation after owner notice is a meaningful tenant/habitability distress signal.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-015492": {
+      "distress_level": "HIGH",
+      "signals": ["vacancy", "trash_or_debris", "overgrown_vegetation", "nuisance", "accumulated_fines"],
+      "confirmed_facts": ["The structured feed identifies a vacant structure.", "Complaint reports tall grass and growing piles of couches, mattresses and other junk.", "A $200 citation was assessed."],
+      "speculative_claims": ["The complaint's belief that people are illegally dumping is not independently established."],
+      "summary": "A vacant house with large junk accumulation, overgrowth and an assessed citation is strong distress.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-016599": {
+      "distress_level": "MEDIUM",
+      "signals": ["infestation", "overgrown_vegetation", "nuisance", "accumulated_fines"],
+      "confirmed_facts": ["Complaint reports rats around high bushes/weeds.", "Inspector ordered vegetation maintained below ten inches; a $300 citation was assessed."],
+      "speculative_claims": [],
+      "summary": "Pest activity combined with overgrowth and a $300 assessed citation creates moderate distress.",
+      "acquisition_relevant": true
+    }
+  }
+}
