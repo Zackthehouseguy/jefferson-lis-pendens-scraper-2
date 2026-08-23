@@ -188,7 +188,17 @@ def main() -> int:
     ap.add_argument("--pm-limit", type=int, default=4000)
     ap.add_argument("--max-attempts", type=int, default=60)
     ap.add_argument("--out", default="reports/land_live")
+    ap.add_argument("--exclude-json", default=None, help="Optional JSON with case_numbers and/or parcel_ids to skip before browser enrichment")
     args = ap.parse_args()
+
+    exclude_cases: set[str] = set()
+    exclude_parcels: set[str] = set()
+    if args.exclude_json:
+        pth=Path(args.exclude_json)
+        if pth.exists():
+            ex=json.loads(pth.read_text(encoding="utf-8"))
+            exclude_cases={clean(x) for x in (ex.get("case_numbers") or []) if clean(x)}
+            exclude_parcels={clean(x) for x in (ex.get("parcel_ids") or []) if clean(x)}
 
     out_dir = Path(args.out)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -213,12 +223,17 @@ def main() -> int:
     selected: list[dict] = []
     failures: list[dict] = []
     inspected = 0
+    prebrowser_excluded = 0
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         ctx = browser.new_context(viewport={"width": 1280, "height": 1200}, locale="en-US")
         page = ctx.new_page()
         for idx, group in enumerate(land_groups, 1):
+            group_case=clean(group.get("parent_key")); group_parcel=clean(group.get("parcel"))
+            if group_case in exclude_cases or group_parcel in exclude_parcels:
+                prebrowser_excluded += 1
+                continue
             if len(selected) >= args.target or inspected >= args.max_attempts:
                 break
             inspected += 1
@@ -343,6 +358,7 @@ def main() -> int:
         "demolition_transition_watch_groups": len(demo_watch),
         "target_verified_land": args.target,
         "parent_groups_inspected": inspected,
+        "prebrowser_excluded": prebrowser_excluded,
         "verified_land_records": selected,
         "demolition_watch_preview": demo_preview,
         "failures": failures,
@@ -352,6 +368,7 @@ def main() -> int:
             "demolition_not_inferred_from_vacancy": True,
             "citation_assessed_not_current_balance": True,
             "builder_fit_is_estimate_not_buildability": True,
+            "prebrowser_exclusion_supported": True,
         },
     }
     (out_dir / "extract_report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
