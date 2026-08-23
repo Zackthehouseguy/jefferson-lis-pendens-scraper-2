@@ -33,6 +33,8 @@ live.KNOWN_TUNING_CASES.update(PRIOR_BENCH_CASES)
 
 
 def main() -> int:
+    # Keep this intentionally sequential and read-only: the purpose of the
+    # stress test is accuracy under a larger sample, not maximum request rate.
     sys.argv = [
         "stress_50_extract",
         "--target-open", "50",
