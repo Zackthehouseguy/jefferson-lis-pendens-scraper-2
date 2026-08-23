@@ -4254,10 +4254,12 @@
     "houses": [],
     "land": []
   },
+  "ledger_acknowledged": false,
   "guardrails": {
     "fresh_event_fingerprint_required": true,
     "unchanged_repeat_suppressed_across_new_batches": true,
     "same_batch_rerender_idempotent": true,
-    "priority_floor_60": true
+    "priority_floor_60": true,
+    "partial_batches_do_not_mutate_delivery_ledger": true
   }
 }
