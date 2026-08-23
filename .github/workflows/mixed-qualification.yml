@@ -1,0 +1,38 @@
+name: Mixed SFR Land Qualification
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/mixed-qualification.yml'
+      - 'scrapers/probe/build_mixed_qualification.py'
+      - 'scrapers/probe/render_lead_cards.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  qualify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - name: Build 25 SFR plus 25 land
+        run: python -m scrapers.probe.build_mixed_qualification
+      - name: Render cards
+        if: always()
+        run: python -m scrapers.probe.render_lead_cards --input reports/mixed_daily_current/mixed_qualification.json --output reports/mixed_daily_current/lead_cards.md --kind mixed || true
+      - name: Persist
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || true
+          git add reports/mixed_daily_current/ || true
+          git diff --cached --quiet || git commit -m "Update mixed SFR land qualification [skip ci]"
+          git push origin HEAD:main || true
+# trigger-20260823-0237
