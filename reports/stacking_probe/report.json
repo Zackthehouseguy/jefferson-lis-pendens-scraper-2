@@ -1,0 +1,696 @@
+{
+  "generated_at_utc": "2026-08-23T00:43:07.429276+00:00",
+  "runtime_seconds": 0.529,
+  "features_fetched": 1000,
+  "parent_groups": 514,
+  "parcels_with_multiple_distinct_parent_cases": 18,
+  "examples": [
+    {
+      "parcel": "064202420000",
+      "open_status_unknown_until_parent_check": true,
+      "distinct_parent_cases": 5,
+      "cases": [
+        {
+          "parent_case": "ENF-PMNT-24-009618",
+          "address": "109 ERIC CT, LOUISVILLE, KY 40219",
+          "site_visit_rows": 2,
+          "child_cases": [
+            "ENF-PMNT-24-009618-14"
+          ],
+          "violation_codes": [
+            "K06",
+            "M67"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-24-009404",
+          "address": "104 ERIC CT, LOUISVILLE, KY 40219",
+          "site_visit_rows": 3,
+          "child_cases": [
+            "ENF-PMNT-24-009404-13"
+          ],
+          "violation_codes": [
+            "E02",
+            "I13",
+            "M67"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-24-009546",
+          "address": "204 ERIC CT, LOUISVILLE, KY 40219",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-24-009546-13"
+          ],
+          "violation_codes": [
+            "M67"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-24-009554",
+          "address": "205 ERIC CT, LOUISVILLE, KY 40219",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-24-009554-10"
+          ],
+          "violation_codes": [
+            "M67"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-24-009919",
+          "address": "313 ERIC CT, LOUISVILLE, KY 40219",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-24-009919-13"
+          ],
+          "violation_codes": [
+            "M67"
+          ],
+          "citation_total": 0.0
+        }
+      ]
+    },
+    {
+      "parcel": "144800340000",
+      "open_status_unknown_until_parent_check": true,
+      "distinct_parent_cases": 4,
+      "cases": [
+        {
+          "parent_case": "ENF-PMNT-25-015953",
+          "address": "6103 LEDGEWOOD PKY 4, LOUISVILLE, KY 40214",
+          "site_visit_rows": 2,
+          "child_cases": [
+            "ENF-PMNT-25-015953-7"
+          ],
+          "violation_codes": [
+            "K09",
+            "I17"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-25-010590",
+          "address": "6222 LEDGEWOOD PKY, LOUISVILLE, KY 40214",
+          "site_visit_rows": 9,
+          "child_cases": [
+            "ENF-PMNT-25-010590-14"
+          ],
+          "violation_codes": [
+            "M02",
+            "M99",
+            "X47",
+            "X50",
+            "I13",
+            "I24",
+            "X57",
+            "X07",
+            "X19"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-25-020896",
+          "address": "6220 LEDGEWOOD PKY 2, LOUISVILLE, KY 40214",
+          "site_visit_rows": 4,
+          "child_cases": [
+            "ENF-PMNT-25-020896-11"
+          ],
+          "violation_codes": [
+            "M02",
+            "M99",
+            "X07",
+            "X19"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-25-020895",
+          "address": "6224 LEDGEWOOD PKY 1, LOUISVILLE, KY 40214",
+          "site_visit_rows": 4,
+          "child_cases": [
+            "ENF-PMNT-25-020895-11"
+          ],
+          "violation_codes": [
+            "M99",
+            "X50",
+            "X90",
+            "X07"
+          ],
+          "citation_total": 0.0
+        }
+      ]
+    },
+    {
+      "parcel": "091G02070105",
+      "open_status_unknown_until_parent_check": true,
+      "distinct_parent_cases": 3,
+      "cases": [
+        {
+          "parent_case": "ENF-PMNT-26-019257",
+          "address": "3406 ROWENA RD, LOUISVILLE, KY 40218",
+          "site_visit_rows": 4,
+          "child_cases": [
+            "ENF-PMNT-26-019257-1"
+          ],
+          "violation_codes": [
+            "02A",
+            "X72",
+            "R01",
+            "I22"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-26-018230",
+          "address": "3406 ROWENA RD 5, LOUISVILLE, KY 40218",
+          "site_visit_rows": 4,
+          "child_cases": [
+            "ENF-PMNT-26-018230-2",
+            "ENF-PMNT-26-018230-1"
+          ],
+          "violation_codes": [
+            "I13",
+            "M23"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-26-017984",
+          "address": "3406 ROWENA RD 7, LOUISVILLE, KY 40218",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-26-017984-1"
+          ],
+          "violation_codes": [],
+          "citation_total": 0.0
+        }
+      ]
+    },
+    {
+      "parcel": "102605140000",
+      "open_status_unknown_until_parent_check": true,
+      "distinct_parent_cases": 3,
+      "cases": [
+        {
+          "parent_case": "ENF-PMNT-26-014413",
+          "address": "5407 CARNAE CT, LOUISVILLE, KY 40216",
+          "site_visit_rows": 10,
+          "child_cases": [
+            "ENF-PMNT-26-014413-3"
+          ],
+          "violation_codes": [
+            "02A",
+            "E02",
+            "M99",
+            "X50",
+            "X04",
+            "I13",
+            "X57",
+            "X07",
+            "X19",
+            "SV02"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-26-019249",
+          "address": "5407 CARNAE CT 40, LOUISVILLE, KY 40216",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-26-019249-1"
+          ],
+          "violation_codes": [
+            "I13"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-26-014196",
+          "address": "5407 CARNAE CT 37, LOUISVILLE, KY 40216",
+          "site_visit_rows": 3,
+          "child_cases": [
+            "ENF-PMNT-26-014196-3"
+          ],
+          "violation_codes": [
+            "T05",
+            "T30",
+            "I13"
+          ],
+          "citation_total": 0.0
+        }
+      ]
+    },
+    {
+      "parcel": "002L00610000",
+      "open_status_unknown_until_parent_check": true,
+      "distinct_parent_cases": 2,
+      "cases": [
+        {
+          "parent_case": "ENF-PMNT-26-015609",
+          "address": "507 S 19TH ST, LOUISVILLE, KY 40203",
+          "site_visit_rows": 3,
+          "child_cases": [
+            "ENF-PMNT-26-015609-6"
+          ],
+          "violation_codes": [
+            "X72",
+            "K18",
+            "X07"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-26-014265",
+          "address": "501 S 19TH ST, LOUISVILLE, KY 40203",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-26-014265-5"
+          ],
+          "violation_codes": [],
+          "citation_total": 0.0
+        }
+      ]
+    },
+    {
+      "parcel": "088L00020003",
+      "open_status_unknown_until_parent_check": true,
+      "distinct_parent_cases": 2,
+      "cases": [
+        {
+          "parent_case": "ENF-PMNT-26-019186",
+          "address": "2601 LINDSAY AVE M2, LOUISVILLE, KY 40206",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-26-019186-1"
+          ],
+          "violation_codes": [],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-26-014474",
+          "address": "2601 LINDSAY AVE L2, LOUISVILLE, KY 40206",
+          "site_visit_rows": 7,
+          "child_cases": [
+            "ENF-PMNT-26-014474-8"
+          ],
+          "violation_codes": [
+            "K10",
+            "T22",
+            "T30",
+            "X18",
+            "I13",
+            "I17",
+            "I22"
+          ],
+          "citation_total": 4900.0
+        }
+      ]
+    },
+    {
+      "parcel": "013H02150000",
+      "open_status_unknown_until_parent_check": true,
+      "distinct_parent_cases": 2,
+      "cases": [
+        {
+          "parent_case": "ENF-PMNT-26-019235",
+          "address": "640 VILLAGE WEST DR, LOUISVILLE, KY 40203",
+          "site_visit_rows": 2,
+          "child_cases": [
+            "ENF-PMNT-26-019235-1"
+          ],
+          "violation_codes": [
+            "X72",
+            "I13"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-26-019259",
+          "address": "638 VILLAGE WEST DR, LOUISVILLE, KY 40203",
+          "site_visit_rows": 2,
+          "child_cases": [
+            "ENF-PMNT-26-019259-1"
+          ],
+          "violation_codes": [
+            "01A",
+            "X72"
+          ],
+          "citation_total": 0.0
+        }
+      ]
+    },
+    {
+      "parcel": "029H00600000",
+      "open_status_unknown_until_parent_check": true,
+      "distinct_parent_cases": 2,
+      "cases": [
+        {
+          "parent_case": "ENF-PMNT-26-019205",
+          "address": "1027 S 4TH ST, LOUISVILLE, KY 40203",
+          "site_visit_rows": 4,
+          "child_cases": [
+            "ENF-PMNT-26-019205-1"
+          ],
+          "violation_codes": [
+            "X50",
+            "I13",
+            "X07",
+            "X19"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-26-017670",
+          "address": "1027 S 4TH ST 2B, LOUISVILLE, KY 40203",
+          "site_visit_rows": 4,
+          "child_cases": [
+            "ENF-PMNT-26-017670-2"
+          ],
+          "violation_codes": [
+            "T22",
+            "I13",
+            "I18"
+          ],
+          "citation_total": 0.0
+        }
+      ]
+    },
+    {
+      "parcel": "162000030000",
+      "open_status_unknown_until_parent_check": true,
+      "distinct_parent_cases": 2,
+      "cases": [
+        {
+          "parent_case": "ENF-PMNT-25-020442",
+          "address": "2612 LANGDON DR 5, LOUISVILLE, KY 40241",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-25-020442-4"
+          ],
+          "violation_codes": [],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-26-012292",
+          "address": "2612 LANGDON DR 4, LOUISVILLE, KY 40241",
+          "site_visit_rows": 6,
+          "child_cases": [
+            "ENF-PMNT-26-012292-3"
+          ],
+          "violation_codes": [
+            "02A",
+            "I03",
+            "T05",
+            "X90",
+            "M46",
+            "X07"
+          ],
+          "citation_total": 0.0
+        }
+      ]
+    },
+    {
+      "parcel": "213700K10000",
+      "open_status_unknown_until_parent_check": true,
+      "distinct_parent_cases": 2,
+      "cases": [
+        {
+          "parent_case": "ENF-PMNT-26-018196",
+          "address": "3320 BARDSTOWN RD 102, LOUISVILLE, KY 40218",
+          "site_visit_rows": 2,
+          "child_cases": [
+            "ENF-PMNT-26-018196-2"
+          ],
+          "violation_codes": [
+            "M99",
+            "I22"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-24-017394",
+          "address": "3320 BARDSTOWN RD, LOUISVILLE, KY 40218",
+          "site_visit_rows": 8,
+          "child_cases": [
+            "ENF-PMNT-24-017394-74"
+          ],
+          "violation_codes": [
+            "I03",
+            "M100",
+            "P03",
+            "X72",
+            "X04",
+            "I13",
+            "I24",
+            "X19"
+          ],
+          "citation_total": 5600.0
+        }
+      ]
+    },
+    {
+      "parcel": "016A00060000",
+      "open_status_unknown_until_parent_check": true,
+      "distinct_parent_cases": 2,
+      "cases": [
+        {
+          "parent_case": "ENF-PMNT-26-013950",
+          "address": "537 S 3RD ST 202, LOUISVILLE, KY 40202",
+          "site_visit_rows": 3,
+          "child_cases": [
+            "ENF-PMNT-26-013950-3"
+          ],
+          "violation_codes": [
+            "M99",
+            "P03"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-26-019156",
+          "address": "537 S 3RD ST 405, LOUISVILLE, KY 40202",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-26-019156-1"
+          ],
+          "violation_codes": [],
+          "citation_total": 0.0
+        }
+      ]
+    },
+    {
+      "parcel": "103302010000",
+      "open_status_unknown_until_parent_check": true,
+      "distinct_parent_cases": 2,
+      "cases": [
+        {
+          "parent_case": "ENF-PMNT-26-016166",
+          "address": "7803 ST ANDREWS CHURCH RD, LOUISVILLE, KY 40214",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-26-016166-2"
+          ],
+          "violation_codes": [
+            "02A"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-26-019117",
+          "address": "7803 ST ANDREWS CHURCH RD 13, LOUISVILLE, KY 40214",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-26-019117-1"
+          ],
+          "violation_codes": [],
+          "citation_total": 0.0
+        }
+      ]
+    },
+    {
+      "parcel": "105002050000",
+      "open_status_unknown_until_parent_check": true,
+      "distinct_parent_cases": 2,
+      "cases": [
+        {
+          "parent_case": "ENF-PMNT-26-019163",
+          "address": "9625 LEOPOLD WOOD LOOP, LOUISVILLE, KY 40118",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-26-019163-1"
+          ],
+          "violation_codes": [
+            "02A"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-26-018826",
+          "address": "9600 LEOPOLD WOOD LOOP 102, LOUISVILLE, KY 40118",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-26-018826-1"
+          ],
+          "violation_codes": [],
+          "citation_total": 0.0
+        }
+      ]
+    },
+    {
+      "parcel": "144400220000",
+      "open_status_unknown_until_parent_check": true,
+      "distinct_parent_cases": 2,
+      "cases": [
+        {
+          "parent_case": "ENF-PMNT-26-015498",
+          "address": "3216 FORDHAVEN RD, LOUISVILLE, KY 40214",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-26-015498-2"
+          ],
+          "violation_codes": [
+            "M02"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-26-015436",
+          "address": "3216 FORDHAVEN RD 4, LOUISVILLE, KY 40214",
+          "site_visit_rows": 2,
+          "child_cases": [
+            "ENF-PMNT-26-015436-3"
+          ],
+          "violation_codes": [
+            "M99",
+            "X07"
+          ],
+          "citation_total": 0.0
+        }
+      ]
+    },
+    {
+      "parcel": "050C00430000",
+      "open_status_unknown_until_parent_check": true,
+      "distinct_parent_cases": 2,
+      "cases": [
+        {
+          "parent_case": "ENF-PMNT-26-018134",
+          "address": "2501 S 4TH ST 7405, LOUISVILLE, KY 40208",
+          "site_visit_rows": 3,
+          "child_cases": [
+            "ENF-PMNT-26-018134-2"
+          ],
+          "violation_codes": [
+            "T22",
+            "I17",
+            "I18"
+          ],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-26-014850",
+          "address": "2501 S 4TH ST, LOUISVILLE, KY 40208",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-26-014850-2"
+          ],
+          "violation_codes": [],
+          "citation_total": 0.0
+        }
+      ]
+    },
+    {
+      "parcel": "102300020002",
+      "open_status_unknown_until_parent_check": true,
+      "distinct_parent_cases": 2,
+      "cases": [
+        {
+          "parent_case": "ENF-PMNT-26-018203",
+          "address": "7313 JAN PLACE ST, LOUISVILLE, KY 40258",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-26-018203-1"
+          ],
+          "violation_codes": [],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-26-018443",
+          "address": "7200 JAN PLACE ST, LOUISVILLE, KY 40258",
+          "site_visit_rows": 4,
+          "child_cases": [
+            "ENF-PMNT-26-018443-1"
+          ],
+          "violation_codes": [
+            "02A",
+            "E05",
+            "X50",
+            "05A"
+          ],
+          "citation_total": 0.0
+        }
+      ]
+    },
+    {
+      "parcel": "028E00100000",
+      "open_status_unknown_until_parent_check": true,
+      "distinct_parent_cases": 2,
+      "cases": [
+        {
+          "parent_case": "ENF-PMNT-26-018771",
+          "address": "1102 POPLAR LEVEL PLZ 9, LOUISVILLE, KY 40217",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-26-018771-1"
+          ],
+          "violation_codes": [],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-26-018795",
+          "address": "1110 POPLAR LEVEL PLZ 5, LOUISVILLE, KY 40217",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-26-018795-1"
+          ],
+          "violation_codes": [],
+          "citation_total": 0.0
+        }
+      ]
+    },
+    {
+      "parcel": "064203050000",
+      "open_status_unknown_until_parent_check": true,
+      "distinct_parent_cases": 2,
+      "cases": [
+        {
+          "parent_case": "ENF-PMNT-26-017473",
+          "address": "1303 BATES AVE, LOUISVILLE, KY 40219",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-26-017473-2"
+          ],
+          "violation_codes": [],
+          "citation_total": 0.0
+        },
+        {
+          "parent_case": "ENF-PMNT-26-018746",
+          "address": "1301 BATES AVE, LOUISVILLE, KY 40219",
+          "site_visit_rows": 1,
+          "child_cases": [
+            "ENF-PMNT-26-018746-1"
+          ],
+          "violation_codes": [],
+          "citation_total": 0.0
+        }
+      ]
+    }
+  ],
+  "status": "PASS",
+  "note": "This proves parcel-level grouping on live recent feed. Parent OPEN/CLOSED status still comes from the Accela parent extractor before acquisition prioritization."
+}
