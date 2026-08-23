@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'scrapers/probe/render_stress50_results.py'
+      - 'scrapers/probe/split_stress50_ai_input.py'
       - '.github/workflows/render-stress50-results.yml'
   workflow_dispatch:
 permissions:
@@ -17,10 +18,12 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m scrapers.probe.render_stress50_results
-      - name: Persist result sheets
+      - run: python -m scrapers.probe.prepare_stress50_ai_input
+      - run: python -m scrapers.probe.split_stress50_ai_input
+      - name: Persist result sheets and AI input chunks
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reports/stress_50_live/results_*.md
-          git diff --cached --quiet || git commit -m "Render split 50-record results [skip ci]"
+          git add reports/stress_50_live/results_*.md reports/stress_50_live/ai_input*.json
+          git diff --cached --quiet || git commit -m "Render stress50 review chunks [skip ci]"
           git push origin HEAD:main
