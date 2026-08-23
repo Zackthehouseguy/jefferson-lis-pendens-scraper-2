@@ -1,0 +1,372 @@
+{
+  "status": "PARTIAL",
+  "generated_at_utc": "2026-08-23T00:17:56.992348+00:00",
+  "runtime_seconds": 194.006,
+  "target_open_records": 5,
+  "candidates_available": 35,
+  "candidates_attempted": 35,
+  "arcgis_discovery_error": null,
+  "grissom_regression": {
+    "case_number": true,
+    "status_open": true,
+    "address": true,
+    "description": true,
+    "owner": true
+  },
+  "selected_open_records": [
+    {
+      "case_number_extracted": "ENF-PMNT-26-019301",
+      "record_status": "Open",
+      "property_address_extracted": "3600 GRISSOM WAY LOUISVILLE KY 40229",
+      "description_raw": "High grass all year long. I’m sure it has tons of snakes in it by now.",
+      "owner_name": "ABDELRAZEQ IBRAHEEM A",
+      "owner_mailing_address": "3601 FREEDOM WAY LOUISVILLE KY 40229-1011",
+      "parcel_id_extracted": null,
+      "case_number_expected": "ENF-PMNT-26-019301",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E2186&agencyCode=LJCMG&IsToShowInspection=",
+      "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E2186&agencyCode=LJCMG&IsToShowInspection=",
+      "http_status": 200,
+      "elapsed_seconds": 6.199,
+      "page_title": "Accela Citizen Access",
+      "arcgis_address": "3600 GRISSOM WAY, LOUISVILLE KY 40229",
+      "arcgis_parcel": null,
+      "arcgis_descriptions": [],
+      "arcgis_status": null,
+      "arcgis_date": null,
+      "violation_codes": [],
+      "citation_total_in_recent_feed": 0,
+      "occupancy": null,
+      "fixture": true,
+      "case_number_verified": true,
+      "is_open": true,
+      "detail_description_extracted": true,
+      "owner_extracted": true,
+      "parcel_available": false,
+      "property_key": "3600 GRISSOM WAY LOUISVILLE KY 40229",
+      "prefilter_signals": [
+        "severe_neglect"
+      ],
+      "prefilter_hit": true,
+      "recent_feed_rows_same_parcel": 0,
+      "recent_feed_unique_cases_same_parcel": 0
+    }
+  ],
+  "all_successfully_rendered_records": [
+    {
+      "case_number_extracted": "ENF-PMNT-26-019301",
+      "record_status": "Open",
+      "property_address_extracted": "3600 GRISSOM WAY LOUISVILLE KY 40229",
+      "description_raw": "High grass all year long. I’m sure it has tons of snakes in it by now.",
+      "owner_name": "ABDELRAZEQ IBRAHEEM A",
+      "owner_mailing_address": "3601 FREEDOM WAY LOUISVILLE KY 40229-1011",
+      "parcel_id_extracted": null,
+      "case_number_expected": "ENF-PMNT-26-019301",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E2186&agencyCode=LJCMG&IsToShowInspection=",
+      "final_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E2186&agencyCode=LJCMG&IsToShowInspection=",
+      "http_status": 200,
+      "elapsed_seconds": 6.199,
+      "page_title": "Accela Citizen Access",
+      "arcgis_address": "3600 GRISSOM WAY, LOUISVILLE KY 40229",
+      "arcgis_parcel": null,
+      "arcgis_descriptions": [],
+      "arcgis_status": null,
+      "arcgis_date": null,
+      "violation_codes": [],
+      "citation_total_in_recent_feed": 0,
+      "occupancy": null,
+      "fixture": true,
+      "case_number_verified": true,
+      "is_open": true,
+      "detail_description_extracted": true,
+      "owner_extracted": true,
+      "parcel_available": false,
+      "property_key": "3600 GRISSOM WAY LOUISVILLE KY 40229",
+      "prefilter_signals": [
+        "severe_neglect"
+      ],
+      "prefilter_hit": true,
+      "recent_feed_rows_same_parcel": 0,
+      "recent_feed_unique_cases_same_parcel": 0
+    }
+  ],
+  "failures": [
+    {
+      "case_number": "ENF-PMNT-26-016300-2",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C2948&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_02_ENF-PMNT-26-016300-2.png",
+      "html": "reports/accela_engine/failure_02_ENF-PMNT-26-016300-2.html",
+      "text": "reports/accela_engine/failure_02_ENF-PMNT-26-016300-2.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-011650-4",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9492&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_03_ENF-PMNT-26-011650-4.png",
+      "html": "reports/accela_engine/failure_03_ENF-PMNT-26-011650-4.html",
+      "text": "reports/accela_engine/failure_03_ENF-PMNT-26-011650-4.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-013339-3",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B8740&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_04_ENF-PMNT-26-013339-3.png",
+      "html": "reports/accela_engine/failure_04_ENF-PMNT-26-013339-3.html",
+      "text": "reports/accela_engine/failure_04_ENF-PMNT-26-013339-3.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-017799-2",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D2284&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_05_ENF-PMNT-26-017799-2.png",
+      "html": "reports/accela_engine/failure_05_ENF-PMNT-26-017799-2.html",
+      "text": "reports/accela_engine/failure_05_ENF-PMNT-26-017799-2.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-019101-1",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0949&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_06_ENF-PMNT-26-019101-1.png",
+      "html": "reports/accela_engine/failure_06_ENF-PMNT-26-019101-1.html",
+      "text": "reports/accela_engine/failure_06_ENF-PMNT-26-019101-1.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-015609-6",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7637&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_07_ENF-PMNT-26-015609-6.png",
+      "html": "reports/accela_engine/failure_07_ENF-PMNT-26-015609-6.html",
+      "text": "reports/accela_engine/failure_07_ENF-PMNT-26-015609-6.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-014265-5",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D6084&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_08_ENF-PMNT-26-014265-5.png",
+      "html": "reports/accela_engine/failure_08_ENF-PMNT-26-014265-5.html",
+      "text": "reports/accela_engine/failure_08_ENF-PMNT-26-014265-5.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-018660-1",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8340&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_09_ENF-PMNT-26-018660-1.png",
+      "html": "reports/accela_engine/failure_09_ENF-PMNT-26-018660-1.html",
+      "text": "reports/accela_engine/failure_09_ENF-PMNT-26-018660-1.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-018242-2",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5698&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_10_ENF-PMNT-26-018242-2.png",
+      "html": "reports/accela_engine/failure_10_ENF-PMNT-26-018242-2.html",
+      "text": "reports/accela_engine/failure_10_ENF-PMNT-26-018242-2.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-010516-3",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B4604&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_11_ENF-PMNT-26-010516-3.png",
+      "html": "reports/accela_engine/failure_11_ENF-PMNT-26-010516-3.html",
+      "text": "reports/accela_engine/failure_11_ENF-PMNT-26-010516-3.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-016665-3",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C9947&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_12_ENF-PMNT-26-016665-3.png",
+      "html": "reports/accela_engine/failure_12_ENF-PMNT-26-016665-3.html",
+      "text": "reports/accela_engine/failure_12_ENF-PMNT-26-016665-3.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-008252-7",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3397&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_13_ENF-PMNT-26-008252-7.png",
+      "html": "reports/accela_engine/failure_13_ENF-PMNT-26-008252-7.html",
+      "text": "reports/accela_engine/failure_13_ENF-PMNT-26-008252-7.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-015369-2",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B7356&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_14_ENF-PMNT-26-015369-2.png",
+      "html": "reports/accela_engine/failure_14_ENF-PMNT-26-015369-2.html",
+      "text": "reports/accela_engine/failure_14_ENF-PMNT-26-015369-2.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-018733-1",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8777&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_15_ENF-PMNT-26-018733-1.png",
+      "html": "reports/accela_engine/failure_15_ENF-PMNT-26-018733-1.html",
+      "text": "reports/accela_engine/failure_15_ENF-PMNT-26-018733-1.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-019272-1",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E2068&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_16_ENF-PMNT-26-019272-1.png",
+      "html": "reports/accela_engine/failure_16_ENF-PMNT-26-019272-1.html",
+      "text": "reports/accela_engine/failure_16_ENF-PMNT-26-019272-1.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-018885-2",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0159&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_17_ENF-PMNT-26-018885-2.png",
+      "html": "reports/accela_engine/failure_17_ENF-PMNT-26-018885-2.html",
+      "text": "reports/accela_engine/failure_17_ENF-PMNT-26-018885-2.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-018540-1",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7597&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_18_ENF-PMNT-26-018540-1.png",
+      "html": "reports/accela_engine/failure_18_ENF-PMNT-26-018540-1.html",
+      "text": "reports/accela_engine/failure_18_ENF-PMNT-26-018540-1.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-018701-1",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8558&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_19_ENF-PMNT-26-018701-1.png",
+      "html": "reports/accela_engine/failure_19_ENF-PMNT-26-018701-1.html",
+      "text": "reports/accela_engine/failure_19_ENF-PMNT-26-018701-1.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-018716-1",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8696&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_20_ENF-PMNT-26-018716-1.png",
+      "html": "reports/accela_engine/failure_20_ENF-PMNT-26-018716-1.html",
+      "text": "reports/accela_engine/failure_20_ENF-PMNT-26-018716-1.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-016289-2",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C3242&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_21_ENF-PMNT-26-016289-2.png",
+      "html": "reports/accela_engine/failure_21_ENF-PMNT-26-016289-2.html",
+      "text": "reports/accela_engine/failure_21_ENF-PMNT-26-016289-2.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-008705-4",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A2172&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_22_ENF-PMNT-26-008705-4.png",
+      "html": "reports/accela_engine/failure_22_ENF-PMNT-26-008705-4.html",
+      "text": "reports/accela_engine/failure_22_ENF-PMNT-26-008705-4.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-004522-5",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=81775&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_23_ENF-PMNT-26-004522-5.png",
+      "html": "reports/accela_engine/failure_23_ENF-PMNT-26-004522-5.html",
+      "text": "reports/accela_engine/failure_23_ENF-PMNT-26-004522-5.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-014897-2",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B5027&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_24_ENF-PMNT-26-014897-2.png",
+      "html": "reports/accela_engine/failure_24_ENF-PMNT-26-014897-2.html",
+      "text": "reports/accela_engine/failure_24_ENF-PMNT-26-014897-2.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-019037-1",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0505&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_25_ENF-PMNT-26-019037-1.png",
+      "html": "reports/accela_engine/failure_25_ENF-PMNT-26-019037-1.html",
+      "text": "reports/accela_engine/failure_25_ENF-PMNT-26-019037-1.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-005440-7",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B5191&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_26_ENF-PMNT-26-005440-7.png",
+      "html": "reports/accela_engine/failure_26_ENF-PMNT-26-005440-7.html",
+      "text": "reports/accela_engine/failure_26_ENF-PMNT-26-005440-7.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-018504-1",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7282&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_27_ENF-PMNT-26-018504-1.png",
+      "html": "reports/accela_engine/failure_27_ENF-PMNT-26-018504-1.html",
+      "text": "reports/accela_engine/failure_27_ENF-PMNT-26-018504-1.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-019262-1",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E2004&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_28_ENF-PMNT-26-019262-1.png",
+      "html": "reports/accela_engine/failure_28_ENF-PMNT-26-019262-1.html",
+      "text": "reports/accela_engine/failure_28_ENF-PMNT-26-019262-1.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-007745-3",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=98658&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_29_ENF-PMNT-26-007745-3.png",
+      "html": "reports/accela_engine/failure_29_ENF-PMNT-26-007745-3.html",
+      "text": "reports/accela_engine/failure_29_ENF-PMNT-26-007745-3.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-019186-1",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1556&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_30_ENF-PMNT-26-019186-1.png",
+      "html": "reports/accela_engine/failure_30_ENF-PMNT-26-019186-1.html",
+      "text": "reports/accela_engine/failure_30_ENF-PMNT-26-019186-1.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-006337-2",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=59182&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_31_ENF-PMNT-26-006337-2.png",
+      "html": "reports/accela_engine/failure_31_ENF-PMNT-26-006337-2.html",
+      "text": "reports/accela_engine/failure_31_ENF-PMNT-26-006337-2.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-019257-1",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1955&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_32_ENF-PMNT-26-019257-1.png",
+      "html": "reports/accela_engine/failure_32_ENF-PMNT-26-019257-1.html",
+      "text": "reports/accela_engine/failure_32_ENF-PMNT-26-019257-1.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-002254-18",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7696&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_33_ENF-PMNT-26-002254-18.png",
+      "html": "reports/accela_engine/failure_33_ENF-PMNT-26-002254-18.html",
+      "text": "reports/accela_engine/failure_33_ENF-PMNT-26-002254-18.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-019235-1",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1855&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_34_ENF-PMNT-26-019235-1.png",
+      "html": "reports/accela_engine/failure_34_ENF-PMNT-26-019235-1.html",
+      "text": "reports/accela_engine/failure_34_ENF-PMNT-26-019235-1.txt"
+    },
+    {
+      "case_number": "ENF-PMNT-26-018230-2",
+      "reason": "case_number_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1951&agencyCode=LJCMG&IsToShowInspection=",
+      "screenshot": "reports/accela_engine/failure_35_ENF-PMNT-26-018230-2.png",
+      "html": "reports/accela_engine/failure_35_ENF-PMNT-26-018230-2.html",
+      "text": "reports/accela_engine/failure_35_ENF-PMNT-26-018230-2.txt"
+    }
+  ],
+  "notes": [
+    "This is an isolated read-only bench test; no production ingestion occurs.",
+    "Chromium executes Accela JavaScript; no CAPTCHA bypass, stealth plugin, proxy rotation, or anti-bot circumvention is used.",
+    "The keyword prefilter is NOT the AI classification. AI classification is performed from description_raw after this report is returned for review.",
+    "recent_feed_* stacking fields are proof-of-concept counts within the fetched recent ArcGIS window, not lifetime case totals."
+  ]
+}
