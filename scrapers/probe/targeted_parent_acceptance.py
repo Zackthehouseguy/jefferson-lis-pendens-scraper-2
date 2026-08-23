@@ -4,7 +4,7 @@ from the prior live Chromium child-page artifacts. Read-only; no production writ
 """
 from __future__ import annotations
 
-import argparse, json, time
+import argparse, json, re, time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -33,6 +33,13 @@ FIXTURES = [
     ("ENF-PMNT-26-018701", "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D8557&agencyCode=LJCMG"),
     ("ENF-PMNT-26-018716", "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D8695&agencyCode=LJCMG"),
 ]
+
+
+def sanitize_location(value: str | None) -> str | None:
+    if not value:
+        return value
+    value = re.sub(r"\s*\*?\s*View\s+Additional\s+Locations\s*>>.*$", "", value, flags=re.I)
+    return probe.clean(value)
 
 
 def complete_open(r: dict) -> bool:
@@ -66,6 +73,7 @@ def main():
             rec, fail = probe.browser_parent(page, case, url, out, idx)
             if fail:
                 failures.append(fail); continue
+            rec["property_address"] = sanitize_location(rec.get("property_address"))
             inspected.append(rec)
             if complete_open(rec):
                 selected.append(rec)
@@ -79,24 +87,26 @@ def main():
         ctx.close(); browser.close()
 
     runtime = round(time.perf_counter() - started, 3)
-    status = "PASS" if len(selected) >= args.target_open else ("PARTIAL" if selected else "FAIL")
+    no_ui_bleed = all("View Additional Locations" not in (r.get("property_address") or "") for r in selected)
+    status = "PASS" if len(selected) >= args.target_open and no_ui_bleed else ("PARTIAL" if selected else "FAIL")
     report = {
         "status": status,
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "runtime_seconds": runtime,
         "target_open": args.target_open,
         "fixtures_available": len(FIXTURES),
+        "address_ui_bleed_check": no_ui_bleed,
         "fully_verified_open_records": selected,
         "all_inspected_records": inspected,
         "failures": failures,
         "provenance": "Parent URLs were resolved from live Chromium-rendered child Related Records in the preceding probe artifacts; this test independently validates parent extraction at scale."
     }
     (out / "report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
-    md = ["# Targeted Parent Acceptance", "", f"Status: **{status}**", f"Runtime: **{runtime}s**", f"Verified OPEN records: **{len(selected)}**", ""]
+    md = ["# Targeted Parent Acceptance", "", f"Status: **{status}**", f"Runtime: **{runtime}s**", f"Verified OPEN records: **{len(selected)}**", f"Address UI bleed clean: **{no_ui_bleed}**", ""]
     for i, r in enumerate(selected, 1):
         md += [f"## {i}. {r.get('case_number')}", f"- Status: {r.get('record_status')}", f"- Address: {r.get('property_address')}", f"- Description: {r.get('description_raw')}", f"- Owner: {r.get('owner_name')}", f"- Mailing: {r.get('owner_mailing_address')}", f"- Parcel: {r.get('parcel_id')}", f"- Source: {r.get('source_url')}", f"- Seconds: {r.get('parent_browser_seconds')}", ""]
     (out / "report.md").write_text("\n".join(md), encoding="utf-8")
-    print(json.dumps({"status": status, "selected_count": len(selected), "runtime_seconds": runtime, "records": selected, "failure_count": len(failures)}, indent=2, ensure_ascii=False))
+    print(json.dumps({"status": status, "selected_count": len(selected), "runtime_seconds": runtime, "address_ui_bleed_check": no_ui_bleed, "records": selected, "failure_count": len(failures)}, indent=2, ensure_ascii=False))
     return 0 if status == "PASS" else 2
 
 if __name__ == "__main__":
