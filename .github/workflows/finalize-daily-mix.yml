@@ -3,6 +3,7 @@ on:
   push:
     branches: [main]
     paths:
+      - 'reports/mixed_daily_current/mixed_qualification.json'
       - 'reports/sfr_fill_live/ranked_report.json'
       - 'reports/sfr_prior_fallback/report.json'
       - 'scrapers/probe/finalize_daily_mix.py'
@@ -34,4 +35,4 @@ jobs:
           git add reports/daily_mix_final/ data/reaper_delivery_ledger.json || true
           git diff --cached --quiet || git commit -m "Update final daily mixed batch [skip ci]"
           git push origin HEAD:main || true
-# trigger-20260823-0252-fallback-aware
+# trigger-20260823-0255-quality-aware
