@@ -1,5 +1,361 @@
 {
   "version": 1,
   "market": "Jefferson County, Kentucky",
-  "properties": {}
+  "properties": {
+    "JEFFERSON|005000750000": {
+      "fingerprint": "b28b7ab7ba7c63d49b1aecd2d765dbbe879e4abacb952d8ae01fc6a609914554",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-018575",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|030K00850000": {
+      "fingerprint": "d34823f97e00831b8d166cd82f0e3246a85ce2bee3a15b2e3d119162ce11542d",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-016335",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|009D01050000": {
+      "fingerprint": "ad72e88e6fa9696a6c0ecb1b35104825dc4341e41b51857c931bc943ef8f0a93",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-004622",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|038E00610000": {
+      "fingerprint": "393d9c2439e1a43b3f471ec1e0f9fdd521efa314d5949b4bf654f87e1bd4222b",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-005440",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|002L00030000": {
+      "fingerprint": "95a913ed7dc53b9899ac1d5c6208164e1315e0bb74a6bc3c7d3deec617691b16",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-016900",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|043E01760000": {
+      "fingerprint": "4438df94500cf1d8c4270b1a76db175f72d22c9c642696023146fa47f6f3f625",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-001287",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|036F02460000": {
+      "fingerprint": "e8e55ca13b7dc0e42fcc379d37b8dfed647d3de476778300c84f3112d311897b",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-018175",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|008501770000": {
+      "fingerprint": "ef202de401fb8c827ded4bbfe30e57b27a45c8fc7ff1875e0c6b96d63700287f",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-25-010477",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|049C01030000": {
+      "fingerprint": "1e78871343bd2a73cddc3b347bc3d6752618a24fea84890d6af951c2bf35c663",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-014897",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|134701090000": {
+      "fingerprint": "acee1ea1100f62db11b179ae46e733c3263fa67f46b5e49b1f6b9e0cb0524585",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-011029",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|038A00720000": {
+      "fingerprint": "681dd48b319c42772fee579a14a15ffc42f7352677d01f35c4f454037c9e1bb1",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-015492",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|022B00460000": {
+      "fingerprint": "f6fc5a8802f449c2eb0ca1f977b4d7731d282bac4f3384265345181df97b6a44",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-24-016884",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|015G00640000": {
+      "fingerprint": "98a89c1e8214d13a7c8f70ffa7c25c1d1b5414c2b2adbb99387a7ca42dd87579",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-008075",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|008G01350000": {
+      "fingerprint": "b01076f506cb78a342ed1f6bedb82fac48224b389f9194c589872c9def2dafe5",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-019179",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|063700520000": {
+      "fingerprint": "dc461669d3c3490f3a57926f6e8ea14fc45051c6baf77c54a1b07f39cd382b84",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-018540",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|045A00750000": {
+      "fingerprint": "eef47c09f120939280e2b953cd8a1130bd4861caef87445049ec9cd1959d339b",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-013375",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|001E00940000": {
+      "fingerprint": "65a0f981557256cc3bffd2a98c38463ab06b81453e82ad4341b18359b27b3c4e",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-011727",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|038F01540000": {
+      "fingerprint": "2ff0f77e24b73830447fe86c531260c63dcbe9551b1e3320bc2bfd2271916307",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-015658",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|007H00780000": {
+      "fingerprint": "302321989379285e3fcc41fd7da5dba883c6101a55116f021cd24a7a02b83c18",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-019225",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|379800060000": {
+      "fingerprint": "e00ebbb656ae4767262cc106b91d0ac2bbaed87719a8948b99ff867596911217",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-016599",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|026E00450000": {
+      "fingerprint": "4a1a188bfbaba54977db278a25c8c935b898e82fea8fef0755ec0a54127cae03",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-019027",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|060D00040000": {
+      "fingerprint": "ab894f77cdfe849e0e165b94b72a0f6ae70e1894178cbcbf28b6a9fcaf2b362d",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-018474",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|059F00960114": {
+      "fingerprint": "a04786515d1a87420746b254e945a07ec8bce1ad33a286eedb46a9960e7c2cb0",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-018991",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|026C02110000": {
+      "fingerprint": "277a8a8bf0b4445c60be5f2e0af3d0d040e051fd15e87118045d6e206ab050cd",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-014799",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|076F00040000": {
+      "fingerprint": "a191711d726e655619ca7ff7872f020452474bb26b04c5a8d436cf5373be60c1",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-019206",
+      "last_event_date": "2026-08-21",
+      "property_type": "SFR"
+    },
+    "JEFFERSON|040J00300000": {
+      "fingerprint": "067ff0be8af3fd367528d99ed6af6c36fa4411fa8da7edc9eba35eb9d5975856",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-19-012574",
+      "last_event_date": "2026-08-20",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|012101790000": {
+      "fingerprint": "88a4434da5e62d1645c63ad381a47bb9d58bc16a12a3cdfc3d8213e97eaf7500",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-017562",
+      "last_event_date": "2026-08-20",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|002J00360000": {
+      "fingerprint": "07b9ba15e55926d6c00e32584ee9e644df5b5cd288d42bc241fbe27fcb30c8f8",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-004374",
+      "last_event_date": "2026-08-18",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|067G00590000": {
+      "fingerprint": "37dcb6330595e8b5c13e191e210ed3524c4b1d42846e773711d85556db035a2d",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-007727",
+      "last_event_date": "2026-08-20",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|005F00660000": {
+      "fingerprint": "e9bacbd9f537ecab8991498ba362e56524a1922484b94757a5a78567bc89fab8",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-014496",
+      "last_event_date": "2026-08-20",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|067A00850000": {
+      "fingerprint": "5835a33c292d011f2c4ecf81ff6682b3bd73b1f02718c2f0a0e3a055c01ffbfa",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-25-005787",
+      "last_event_date": "2026-08-20",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|037D00350000": {
+      "fingerprint": "ce0fdf9e773d481d17dba2a77c91ad5410e5ef9351ef551097b18bef43855f17",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-006439",
+      "last_event_date": "2026-08-20",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|046D01620000": {
+      "fingerprint": "ffad49a7298ddedbe7c118dd682b92f7206ab1cd56b372e13b796e1fb8a8d733",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-009105",
+      "last_event_date": "2026-08-20",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|041E00880000": {
+      "fingerprint": "2073805033fd0eb8545559dc11d2664694077af5acaf16916ceb627a7ccd1d6b",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-016826",
+      "last_event_date": "2026-08-20",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|035L01740000": {
+      "fingerprint": "b966992b5a42659eb96d35de419c2470352ea58f6c0593f6a1bdae0b8ff46163",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-24-020140",
+      "last_event_date": "2026-08-21",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|382301220000": {
+      "fingerprint": "8b31a72be62dae32a91ef48adb542a6d6577f482b1eb4e2f9c1894234af96244",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-017977",
+      "last_event_date": "2026-08-20",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|038E00210000": {
+      "fingerprint": "355e7b241f87470ec29f2d0a7fe3f2b44982fe447d67768f2a18a178db71b075",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-25-022750",
+      "last_event_date": "2026-08-19",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|041F00760000": {
+      "fingerprint": "b617446eca4faf1a1bee4f1685d16ebc49e76b4b4dec1f8191cfbf5cf2b68396",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-017197",
+      "last_event_date": "2026-08-19",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|050D01450000": {
+      "fingerprint": "01d0af24a2e0233086df51724f31e2cb4a8868aaa11a77a01a0fc7ca4cdfacd6",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-019022",
+      "last_event_date": "2026-08-19",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|050D01470000": {
+      "fingerprint": "93e58e2addd5b73c94c408fd7f924e098e6c2e7d87b5bf7805accb9bb4740eda",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-019019",
+      "last_event_date": "2026-08-19",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|038B00350000": {
+      "fingerprint": "c29c9b72bbc9d288938a629f1e65566cc322c57037657f3e9f5298e7886624d6",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-018993",
+      "last_event_date": "2026-08-20",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|063204560000": {
+      "fingerprint": "06dd5a8eae9e8d3539490e50062f4be50815b9200bdf3ea3b4b4eafe247f2323",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-019127",
+      "last_event_date": "2026-08-20",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|065402830000": {
+      "fingerprint": "9e810bd599db1b69ebbf8b6dd9a641595d80b9249cdc20cfa6540ddac4fcda0e",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-014657",
+      "last_event_date": "2026-08-19",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|001E01280000": {
+      "fingerprint": "8df1949dfe1e9c0548583d7a39598c487053c24c26636aea8687206b6901d3e6",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-018846",
+      "last_event_date": "2026-08-19",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|037D01140000": {
+      "fingerprint": "b6c546aa73817ea6036971fd2d48d72f6509a54beaffc061fae29ca05d255969",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-009265",
+      "last_event_date": "2026-08-19",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|208201840000": {
+      "fingerprint": "9b541049837619b1d39aea16073f8593665fd98c4299d0f5e6a3e12335c4804e",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-019035",
+      "last_event_date": "2026-08-20",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|011500750000": {
+      "fingerprint": "4855d2a39994d13bd1dd49df3a0e0618d010ee822d796c54641b59fe530f1d54",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-25-004260",
+      "last_event_date": "2026-08-19",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|019F00010000": {
+      "fingerprint": "9699d1e0b5f5d406ea0d1261a47ef62b53bdb54abb297c5763c9b40d99c9e3cc",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-25-011294",
+      "last_event_date": "2026-08-18",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|002J00680000": {
+      "fingerprint": "237d6cce693f485ebd212372c509ede925ab0e4c2d73cbcbd04f4599bb26d845",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-019108",
+      "last_event_date": "2026-08-20",
+      "property_type": "LAND"
+    },
+    "JEFFERSON|015J01650000": {
+      "fingerprint": "e767b12c7989b16d33787cc92de072aae9b166af210e28e3f577a063521c10d7",
+      "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+      "last_case_number": "ENF-PMNT-26-008499",
+      "last_event_date": "2026-08-21",
+      "property_type": "LAND"
+    }
+  },
+  "last_batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
+  "last_finalized_counts": {
+    "houses": 25,
+    "land": 25
+  }
 }
