@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "source": "CCLIX official Public Delinquent Tax Bill Search",
+  "results": [
+    {
+      "map_id": "001E00940000",
+      "status": "PASS_NO_DELINQUENT_RECORD",
+      "text": "Public Delinquent Tax Bill Search Search Criteria Basic Advanced County Select County Required Bill Number Tax Year Select Tax Year Map Id Purchaser Select Purchaser Search Reset Selected: 0 Export to Excel Max 500 Rows Bill Number Tax Year Property Address Bill Total Bill Type Bill Status Lien Status Owners Map Id Assessments Flags Actions No records available. 10 items per page 0 - 0 of 0 items",
+      "rows": [],
+      "error": null
+    },
+    {
+      "map_id": "048E00960000",
+      "status": "PASS_NO_DELINQUENT_RECORD",
+      "text": "Public Delinquent Tax Bill Search Search Criteria Basic Advanced County Select County Required Bill Number Tax Year Select Tax Year Map Id Purchaser Select Purchaser Search Reset Selected: 0 Export to Excel Max 500 Rows Bill Number Tax Year Property Address Bill Total Bill Type Bill Status Lien Status Owners Map Id Assessments Flags Actions No records available. 10 items per page 0 - 0 of 0 items",
+      "rows": [],
+      "error": null
+    },
+    {
+      "map_id": "046K00380000",
+      "status": "PASS_NO_DELINQUENT_RECORD",
+      "text": "Public Delinquent Tax Bill Search Search Criteria Basic Advanced County Select County Required Bill Number Tax Year Select Tax Year Map Id Purchaser Select Purchaser Search Reset Selected: 0 Export to Excel Max 500 Rows Bill Number Tax Year Property Address Bill Total Bill Type Bill Status Lien Status Owners Map Id Assessments Flags Actions No records available. 10 items per page 0 - 0 of 0 items",
+      "rows": [],
+      "error": null
+    },
+    {
+      "map_id": "039B01220000",
+      "status": "PASS_NO_DELINQUENT_RECORD",
+      "text": "Public Delinquent Tax Bill Search Search Criteria Basic Advanced County Select County Required Bill Number Tax Year Select Tax Year Map Id Purchaser Select Purchaser Search Reset Selected: 0 Export to Excel Max 500 Rows Bill Number Tax Year Property Address Bill Total Bill Type Bill Status Lien Status Owners Map Id Assessments Flags Actions No records available. 10 items per page 0 - 0 of 0 items",
+      "rows": [],
+      "error": null
+    }
+  ],
+  "guardrails": {
+    "no_record_means_no_result_in_this_search_not_tax_current_proof": true,
+    "bill_total_only_used_when_returned_by_cclix": true
+  }
+}
