@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "agents": [
+    {
+      "agent_id": "zack",
+      "display_name": "Zack",
+      "active": true,
+      "daily_sfr_target": 25,
+      "daily_land_target": 25
+    },
+    {
+      "agent_id": "kyle",
+      "display_name": "Kyle",
+      "active": true,
+      "daily_sfr_target": 25,
+      "daily_land_target": 25
+    }
+  ]
+}
