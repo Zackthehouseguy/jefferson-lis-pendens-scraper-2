@@ -56,7 +56,7 @@ jobs:
           TARGET_OPEN: ${{ github.event.inputs.target_open || '5' }}
           MAX_PARENT_ATTEMPTS: ${{ github.event.inputs.max_parent_attempts || '15' }}
         run: |
-          python scrapers/probe/accela_engine_probe_v3.py \
+          python -m scrapers.probe.accela_engine_probe_v3 \
             --target-open "$TARGET_OPEN" \
             --max-parent-attempts "$MAX_PARENT_ATTEMPTS" \
             --out reports/accela_engine_v3
