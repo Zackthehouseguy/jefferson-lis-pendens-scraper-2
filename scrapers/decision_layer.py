@@ -147,8 +147,10 @@ def saturation_score(*, source_type: str, freshness_score: int,
                      has_free_text_description: bool, open_case_count: int = 1,
                      new_transition_event: bool = False) -> int:
     # Bench calibration, not empirical truth. Higher = likely more investor competition.
+    # A floor of 5 prevents "low competition" from ever being presented as proof
+    # that no other investor has the same public record.
     source_base = {
-        "code_enforcement": 22,
+        "code_enforcement": 30,
         "lis_pendens": 68,
         "tax_delinquent": 55,
         "generic_absentee": 78,
@@ -156,18 +158,18 @@ def saturation_score(*, source_type: str, freshness_score: int,
     }.get(source_type, 50)
     score = source_base
     if freshness_score >= 95:
-        score -= 12
+        score -= 8
     elif freshness_score <= 20:
-        score += 20
+        score += 18
     elif freshness_score <= 42:
         score += 10
     if has_free_text_description:
-        score -= 8
+        score -= 6
     if open_case_count >= 2:
-        score -= min(12, 4 * (open_case_count - 1))
+        score -= min(9, 3 * (open_case_count - 1))
     if new_transition_event:
-        score -= 12
-    return clamp(score)
+        score -= 8
+    return clamp(score, 5, 100)
 
 
 def priority_score(*, distress: int, freshness_score: int, saturation: int) -> int:
