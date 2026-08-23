@@ -26,11 +26,23 @@ def pva_lines(x):
     return [f"**Parcel:** {parcel}", f"**PVA parcel search:** {PVA_SEARCH}  ·  Search Parcel ID: `{parcel}`"]
 
 def occupancy_from(x):
-    if clean(x.get('occupancy')): return clean(x.get('occupancy'))
     vals=[clean(v).upper() for v in (x.get('recent_window_occupancies') or []) if clean(v)]
-    if any('VACANT STRUCTURE' in v for v in vals): return 'Vacant'
-    if any('OCCUPIED STRUCTURE' in v for v in vals): return 'Occupied'
-    return 'Unknown'
+    structured='Vacant' if any('VACANT STRUCTURE' in v for v in vals) else ('Occupied' if any('OCCUPIED STRUCTURE' in v for v in vals) else clean(x.get('occupancy')) or 'Unknown')
+    narrative=(clean(x.get('description_raw'))+' '+' '.join(clean(v) for v in (x.get('inspector_comments') or []))).upper()
+    narrative_vacant=bool(re.search(r'\bVACANT\b|\bABANDONED\b|\bUNOCCUPIED\b',narrative))
+    narrative_occupied=bool(re.search(r'\bTENANT\b|\bRENTER\b|\bOCCUPIED\b|\bLIVES? (?:HERE|THERE|IN)\b',narrative))
+    if structured=='Occupied' and narrative_vacant:
+        return 'Conflicting — structured source says occupied; narrative reports vacant/abandoned; verify'
+    if structured=='Vacant' and narrative_occupied:
+        return 'Conflicting — structured source says vacant; narrative indicates occupancy; verify'
+    return structured
+
+def land_occupancy(x):
+    narrative=(clean(x.get('description_raw'))+' '+' '.join(clean(v) for v in (x.get('inspector_comments') or []))).upper()
+    building_terms=('HOUSE','BUILDING','STRUCTURE','ROOF','BEDROOM','KITCHEN','WINDOW','FURNACE','CEILING')
+    if any(t in narrative for t in building_terms):
+        return 'Vacant lot per structured source — narrative references a structure; verify parcel/structure status'
+    return 'Vacant lot'
 
 def citation_line(x):
     assessed=float(x.get('citation_assessed_total') or 0)
@@ -50,7 +62,7 @@ def land_card(x:dict)->str:
       f"## #{x.get('rank')} — {full_address(x)}",
       f"**LAND | {x.get('priority_tier')} | Priority {x.get('priority_score')}/100**",
       f"Motivation **{x.get('motivation_score')}/100** · Builder Fit **{x.get('builder_fit_score')}/100** · Saturation **{x.get('saturation_score')}/100** · Freshness **{x.get('freshness_score')}/100 ({x.get('freshness_label')})**",
-      "**Occupancy:** Vacant lot",
+      f"**Occupancy / site status:** {land_occupancy(x)}",
       f"**Why:** {excerpt(x.get('ai_summary')) or '—'}",
       f"**Complaint / distress:** {excerpt(x.get('description_raw') or ((x.get('confirmed_facts') or ['—'])[0]))}",
       f"**Owner:** {clean(x.get('owner_name')) or '—'}",
