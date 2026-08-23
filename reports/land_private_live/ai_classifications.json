@@ -1,0 +1,86 @@
+{
+  "provider": "GPT-5.6 Sol current-session bench classification",
+  "contract_version": "reaper-land-motivation-v1",
+  "classifications": {
+    "ENF-PMNT-26-002254": {
+      "motivation_level": "HIGH",
+      "signals": ["vacant_lot", "trash_or_dumping", "overgrown_vegetation", "absentee_owner", "estate_or_deceased", "accumulated_fines"],
+      "confirmed_facts": ["Source identifies a vacant lot with litter/trash and overgrowth.", "Owner-of-record label includes HEIRS OR DEVISEES OF.", "Owner mailing differs from the property address.", "$100 citation was assessed in the extracted event."],
+      "speculative_claims": ["The HEIRS OR DEVISEES OF label is an estate/deceased-owner indicator but does not by itself prove an active probate case."],
+      "summary": "Estate/heirs ownership, off-site mailing, active cleanup issues and an assessed citation create a strong land-motivation stack.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-013625": {
+      "motivation_level": "MEDIUM",
+      "signals": ["vacant_lot", "overgrown_vegetation", "absentee_owner", "accumulated_fines"],
+      "confirmed_facts": ["Source identifies a vacant lot with high grass/overgrowth enforcement.", "Owner mailing is in Indianapolis and differs from the property.", "$200 citation was assessed."],
+      "speculative_claims": ["Inspector language says Metro correction may be requested, but the extract does not prove Metro has already completed cleanup or added a new lien."],
+      "summary": "Out-of-state ownership plus active lot-maintenance enforcement and a $200 assessed citation creates meaningful motivation.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-008067": {
+      "motivation_level": "MEDIUM",
+      "signals": ["vacant_lot", "overgrown_vegetation", "long_term_neglect", "absentee_owner"],
+      "confirmed_facts": ["Source identifies a vacant lot with neglected fencing, weeds and cut/left trees.", "Complaint says portions have been unmaintained since last year.", "Owner mailing differs from the parcel address."],
+      "speculative_claims": ["Generic enforcement language references possible costs/liens, but no assessed citation or current balance was verified in this extract."],
+      "summary": "A large vacant parcel with documented long-running maintenance neglect and off-site ownership shows moderate seller-motivation potential.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-013626": {
+      "motivation_level": "MEDIUM",
+      "signals": ["vacant_lot", "overgrown_vegetation", "absentee_owner", "accumulated_fines"],
+      "confirmed_facts": ["Source identifies a vacant lot under high-grass/overgrowth enforcement.", "Owner mailing is in California.", "$200 citation was assessed."],
+      "speculative_claims": ["The extract does not verify a current unpaid balance or completed Metro cleanup."],
+      "summary": "California ownership plus active lot enforcement and a $200 assessed citation creates a useful motivation stack.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-018477": {
+      "motivation_level": "MEDIUM",
+      "signals": ["vacant_lot", "dangerous_tree", "overgrown_vegetation", "absentee_owner"],
+      "confirmed_facts": ["Source identifies a vacant lot with a fallen tree blocking a creek/drainage area.", "Inspector ordered removal/disposal of the fallen tree.", "Owner mailing differs from the parcel address."],
+      "speculative_claims": ["The complaint says vines/ivy could damage other trees; future damage is not confirmed."],
+      "summary": "A vacant parcel with an active drainage/tree maintenance problem and off-site ownership shows moderate motivation.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-011727": {
+      "motivation_level": "MEDIUM",
+      "signals": ["vacant_lot", "trash_or_dumping", "overgrown_vegetation", "absentee_owner", "accumulated_fines"],
+      "confirmed_facts": ["Source identifies a vacant lot with high grass, bushes and rear-easement tree debris.", "Owner mailing differs from the property.", "$200 citation was assessed."],
+      "speculative_claims": [],
+      "summary": "A small vacant lot with debris, overgrowth, off-site ownership and an assessed citation is a solid distressed-land lead.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-017755": {
+      "motivation_level": "MEDIUM",
+      "signals": ["vacant_lot", "trash_or_dumping", "overgrown_vegetation", "absentee_owner", "accumulated_fines"],
+      "confirmed_facts": ["Source identifies a vacant lot with high grass and rear-lot trash/debris.", "Owner mailing differs from the parcel.", "$100 citation was assessed."],
+      "speculative_claims": ["LOJIC land-use says RIGHT-OF-WAY, which affects builder-fit estimation but does not by itself prove the parcel cannot be transferred or developed."],
+      "summary": "The owner shows moderate enforcement-related motivation, but parcel-use data creates a separate builder-fit concern.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-011115": {
+      "motivation_level": "MEDIUM",
+      "signals": ["vacant_lot", "overgrown_vegetation", "estate_or_deceased"],
+      "confirmed_facts": ["Source identifies a vacant lot with maintenance/overgrowth enforcement.", "Owner-of-record label includes HEIRS OR DEVISEES OF."],
+      "speculative_claims": ["The owner label indicates heirs/devises but does not prove an active probate proceeding."],
+      "summary": "Heirs/devises ownership on a small vacant lot adds an ownership-friction signal beyond ordinary grass enforcement.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-018052": {
+      "motivation_level": "LOW",
+      "signals": ["vacant_lot", "overgrown_vegetation", "accumulated_fines"],
+      "confirmed_facts": ["Source identifies an overgrown vacant lot.", "$200 citation was assessed.", "Owner record is an exempt religious organization."],
+      "speculative_claims": ["The extract does not establish that the exempt owner wants to sell or that the parcel is appropriate for private residential development."],
+      "summary": "Overgrowth and a citation create some pressure, but the ownership/use context makes this a weak acquisition lead.",
+      "acquisition_relevant": true
+    },
+    "ENF-PMNT-26-018115": {
+      "motivation_level": "LOW",
+      "signals": ["vacant_lot", "absentee_owner"],
+      "confirmed_facts": ["Source classifies the parcel as a vacant lot.", "Owner mailing differs from the property address."],
+      "speculative_claims": ["No complaint narrative, inspector comment, citation, tax delinquency or demolition event was verified in this extract."],
+      "summary": "Vacancy and off-site mailing are useful baseline signals, but there is little verified active distress in this record.",
+      "acquisition_relevant": true
+    }
+  }
+}
