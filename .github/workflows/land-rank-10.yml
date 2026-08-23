@@ -6,6 +6,7 @@ on:
       - '.github/workflows/land-rank-10.yml'
       - 'reports/land_private_live/ai_classifications.json'
       - 'scrapers/probe/land_rank_acceptance.py'
+      - 'scrapers/probe/land_private_rank_fix.py'
       - 'scrapers/land_decision_layer.py'
       - 'scrapers/land_filters.py'
   workflow_dispatch:
@@ -21,14 +22,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m scrapers.probe.land_rank_acceptance --root reports/land_private_live --target 10
+      - run: python -m scrapers.probe.land_private_rank_fix
       - name: Persist
         if: always()
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "4189822+github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase origin main || true
-          git add reports/land_private_live/ranked_report.json reports/land_private_live/ranked_report.md || true
+          git add reports/land_private_live/extract_report.json reports/land_private_live/ranked_report.json reports/land_private_live/ranked_report.md || true
           git diff --cached --quiet || git commit -m "Update private land10 ranking [skip ci]"
           git push origin HEAD:main || true
-# trigger-20260823-0207
+# timestamp-fix
