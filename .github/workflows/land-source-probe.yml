@@ -1,0 +1,41 @@
+name: Land Source Probe
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/land-source-probe.yml"
+      - "scrapers/probe/land_source_probe.py"
+      - "scrapers/probe/land_live_extract.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests beautifulsoup4 playwright
+      - name: Mark start
+        run: |
+          mkdir -p reports/land_source_probe
+          echo started > reports/land_source_probe/workflow_started.txt
+      - name: Probe sources
+        run: python -m scrapers.probe.land_source_probe
+      - name: Persist report
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || true
+          git add reports/land_source_probe/ || true
+          git diff --cached --quiet || git commit -m "Update land source probe report [skip ci]"
+          git push origin HEAD:main || true
