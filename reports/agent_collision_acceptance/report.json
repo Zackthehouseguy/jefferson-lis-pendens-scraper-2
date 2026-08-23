@@ -1,0 +1,777 @@
+{
+  "status": "PASS",
+  "generated_at_utc": "2026-08-23T07:42:32.704614+00:00",
+  "source_pool": "reports/daily_mix_final/current.json",
+  "source_is_saved_real_jefferson_data": true,
+  "production_assignment_ledger_modified": false,
+  "allocator_uses_shared_parcel_first_identity": true,
+  "real_pool": {
+    "house_rows_loaded": 25,
+    "land_rows_loaded": 20,
+    "qualified_unique_house_properties": 25,
+    "qualified_unique_land_properties": 20,
+    "house_prep": {
+      "seen": 25,
+      "failed_quality": 0,
+      "duplicate_property_rows_collapsed": 0
+    },
+    "land_prep": {
+      "seen": 20,
+      "failed_quality": 0,
+      "duplicate_property_rows_collapsed": 0
+    }
+  },
+  "fair_share_test": {
+    "requested_each": {
+      "houses": 12,
+      "land": 10
+    },
+    "zack": {
+      "houses": [
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::005000750000",
+          "parcel_id": "005000750000",
+          "property_address": "5817 BARDSTOWN RD LOUISVILLE KY 40291",
+          "priority_score": 92,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::030K00850000",
+          "parcel_id": "030K00850000",
+          "property_address": "329 E OAK ST LOUISVILLE KY 40203",
+          "priority_score": 92,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::009D01050000",
+          "parcel_id": "009D01050000",
+          "property_address": "3908 JEWELL AVE LOUISVILLE KY 40212",
+          "priority_score": 92,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::038E00610000",
+          "parcel_id": "038E00610000",
+          "property_address": "2230 GRAND AVE LOUISVILLE KY 40210",
+          "priority_score": 92,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::002L00030000",
+          "parcel_id": "002L00030000",
+          "property_address": "517 S 20TH ST LOUISVILLE KY 40203",
+          "priority_score": 88,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::043E01760000",
+          "parcel_id": "043E01760000",
+          "property_address": "821 S 39TH ST LOUISVILLE KY 40211",
+          "priority_score": 88,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::036F02460000",
+          "parcel_id": "036F02460000",
+          "property_address": "843 S 26TH ST LOUISVILLE KY 40211",
+          "priority_score": 88,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::008501770000",
+          "parcel_id": "008501770000",
+          "property_address": "10210 MORRISON RD LOUISVILLE KY 40229",
+          "priority_score": 88,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::049C01030000",
+          "parcel_id": "049C01030000",
+          "property_address": "1529 S 31ST ST LOUISVILLE KY 40211",
+          "priority_score": 86,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::134701090000",
+          "parcel_id": "134701090000",
+          "property_address": "5846 NEW CUT RD LOUISVILLE KY 40214",
+          "priority_score": 85,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::038A00720000",
+          "parcel_id": "038A00720000",
+          "property_address": "2315 W KENTUCKY ST LOUISVILLE KY 40210",
+          "priority_score": 84,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::022B00460000",
+          "parcel_id": "022B00460000",
+          "property_address": "727 E KENTUCKY ST LOUISVILLE KY 40203",
+          "priority_score": 83,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        }
+      ],
+      "land": [
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::040J00300000",
+          "parcel_id": "040J00300000",
+          "property_address": "2509 WOODLAND AVE LOUISVILLE KY 40210",
+          "priority_score": 91,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::012101790000",
+          "parcel_id": "012101790000",
+          "property_address": "3939 CENTRAL AVE LOUISVILLE KY 40218",
+          "priority_score": 91,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::002J00360000",
+          "parcel_id": "002J00360000",
+          "property_address": "2215 W MADISON ST LOUISVILLE KY 40211",
+          "priority_score": 89,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::067G00590000",
+          "parcel_id": "067G00590000",
+          "property_address": "4209 LA SALLE AVE LOUISVILLE KY 40215",
+          "priority_score": 89,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::005F00660000",
+          "parcel_id": "005F00660000",
+          "property_address": "2417 PORTLAND AVE LOUISVILLE KY 40212",
+          "priority_score": 81,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::067A00850000",
+          "parcel_id": "067A00850000",
+          "property_address": "4208 TAYLOR BLVD LOUISVILLE KY 40215",
+          "priority_score": 78,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::037D00350000",
+          "parcel_id": "037D00350000",
+          "property_address": "1708 W ST CATHERINE ST LOUISVILLE KY 40210",
+          "priority_score": 77,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::046D01620000",
+          "parcel_id": "046D01620000",
+          "property_address": "2703 W KENTUCKY ST LOUISVILLE KY 40211",
+          "priority_score": 77,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::041E00880000",
+          "parcel_id": "041E00880000",
+          "property_address": "1740 DIXIE HWY LOUISVILLE KY 40210",
+          "priority_score": 76,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::035L01740000",
+          "parcel_id": "035L01740000",
+          "property_address": "2044 S PRESTON ST LOUISVILLE KY 40217",
+          "priority_score": 76,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        }
+      ],
+      "stats": {
+        "house": {
+          "seen": 25,
+          "failed_quality": 0,
+          "duplicate_property_rows_collapsed": 0,
+          "qualified_unique_properties": 25,
+          "assigned_other": 0,
+          "unchanged_self": 0,
+          "dnc_or_closed": 0,
+          "new_assignments": 12,
+          "reactivations": 0
+        },
+        "land": {
+          "seen": 20,
+          "failed_quality": 0,
+          "duplicate_property_rows_collapsed": 0,
+          "qualified_unique_properties": 20,
+          "assigned_other": 0,
+          "unchanged_self": 0,
+          "dnc_or_closed": 0,
+          "new_assignments": 10,
+          "reactivations": 0
+        }
+      }
+    },
+    "kyle": {
+      "houses": [
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::015G00640000",
+          "parcel_id": "015G00640000",
+          "property_address": "1837 LYTLE ST LOUISVILLE KY 40203",
+          "priority_score": 82,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::008G01350000",
+          "parcel_id": "008G01350000",
+          "property_address": "316 LOUIS COLEMAN JR DR LOUISVILLE KY 40212",
+          "priority_score": 81,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::063700520000",
+          "parcel_id": "063700520000",
+          "property_address": "8200 FERNDALE RD LOUISVILLE KY 40291",
+          "priority_score": 79,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::045A00750000",
+          "parcel_id": "045A00750000",
+          "property_address": "3606 GARLAND AVE LOUISVILLE KY 40211",
+          "priority_score": 70,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::001E00940000",
+          "parcel_id": "001E00940000",
+          "property_address": "543 S 20TH ST LOUISVILLE KY 40203",
+          "priority_score": 70,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::038F01540000",
+          "parcel_id": "038F01540000",
+          "property_address": "1838 GREENWOOD AVE LOUISVILLE KY 40210",
+          "priority_score": 68,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::007H00780000",
+          "parcel_id": "007H00780000",
+          "property_address": "3637 RIVER PARK DR LOUISVILLE KY 40211",
+          "priority_score": 68,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::379800060000",
+          "parcel_id": "379800060000",
+          "property_address": "9723 COLLIER LN LOUISVILLE KY 40291",
+          "priority_score": 66,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::026E00450000",
+          "parcel_id": "026E00450000",
+          "property_address": "1029 MAYER AVE LOUISVILLE KY 40217",
+          "priority_score": 65,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::060D00040000",
+          "parcel_id": "060D00040000",
+          "property_address": "230 ROCHESTER DR LOUISVILLE KY 40214",
+          "priority_score": 65,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::059F00960114",
+          "parcel_id": "059F00960114",
+          "property_address": "6526 MILES AVE LOUISVILLE KY 40214",
+          "priority_score": 64,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::026C02110000",
+          "parcel_id": "026C02110000",
+          "property_address": "1134 GOSS AVE LOUISVILLE KY 40217",
+          "priority_score": 64,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        }
+      ],
+      "land": [
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::382301220000",
+          "parcel_id": "382301220000",
+          "property_address": "13421 RIGGS LAKE LN LOUISVILLE KY 40299",
+          "priority_score": 75,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::038E00210000",
+          "parcel_id": "038E00210000",
+          "property_address": "2244 OSAGE AVE LOUISVILLE KY 40210",
+          "priority_score": 74,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::041F00760000",
+          "parcel_id": "041F00760000",
+          "property_address": "1765 W GAULBERT AVE LOUISVILLE KY 40210",
+          "priority_score": 73,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::050D01450000",
+          "parcel_id": "050D01450000",
+          "property_address": "2516 S 4TH ST LOUISVILLE KY 40208",
+          "priority_score": 73,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::050D01470000",
+          "parcel_id": "050D01470000",
+          "property_address": "2520 S 4TH ST LOUISVILLE KY 40208",
+          "priority_score": 73,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::038B00350000",
+          "parcel_id": "038B00350000",
+          "property_address": "2237 W KENTUCKY ST LOUISVILLE KY 40210",
+          "priority_score": 73,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::063204560000",
+          "parcel_id": "063204560000",
+          "property_address": "6204 PRESTON HWY LOUISVILLE KY 40219",
+          "priority_score": 70,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::065402830000",
+          "parcel_id": "065402830000",
+          "property_address": "7001 E MANSLICK RD LOUISVILLE KY 40228",
+          "priority_score": 70,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::001E01280000",
+          "parcel_id": "001E01280000",
+          "property_address": "540 S 18TH ST LOUISVILLE KY 40203",
+          "priority_score": 70,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        {
+          "property_key": "JEFFERSON_KY::PARCEL::037D01140000",
+          "parcel_id": "037D01140000",
+          "property_address": "1704 PRENTICE ST LOUISVILLE KY 40210",
+          "priority_score": 69,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        }
+      ],
+      "stats": {
+        "house": {
+          "seen": 25,
+          "failed_quality": 0,
+          "duplicate_property_rows_collapsed": 0,
+          "qualified_unique_properties": 25,
+          "assigned_other": 12,
+          "unchanged_self": 0,
+          "dnc_or_closed": 0,
+          "new_assignments": 12,
+          "reactivations": 0
+        },
+        "land": {
+          "seen": 20,
+          "failed_quality": 0,
+          "duplicate_property_rows_collapsed": 0,
+          "qualified_unique_properties": 20,
+          "assigned_other": 10,
+          "unchanged_self": 0,
+          "dnc_or_closed": 0,
+          "new_assignments": 10,
+          "reactivations": 0
+        }
+      }
+    },
+    "shared_property_keys": [],
+    "shared_parcels": []
+  },
+  "full_25_25_request_test": {
+    "zack_counts": {
+      "houses": 25,
+      "land": 20,
+      "total": 45
+    },
+    "kyle_counts": {
+      "houses": 0,
+      "land": 0,
+      "total": 0
+    },
+    "shared_property_keys": [],
+    "shared_parcels": [],
+    "zack_stats": {
+      "house": {
+        "seen": 25,
+        "failed_quality": 0,
+        "duplicate_property_rows_collapsed": 0,
+        "qualified_unique_properties": 25,
+        "assigned_other": 0,
+        "unchanged_self": 0,
+        "dnc_or_closed": 0,
+        "new_assignments": 25,
+        "reactivations": 0
+      },
+      "land": {
+        "seen": 20,
+        "failed_quality": 0,
+        "duplicate_property_rows_collapsed": 0,
+        "qualified_unique_properties": 20,
+        "assigned_other": 0,
+        "unchanged_self": 0,
+        "dnc_or_closed": 0,
+        "new_assignments": 20,
+        "reactivations": 0
+      }
+    },
+    "kyle_stats": {
+      "house": {
+        "seen": 25,
+        "failed_quality": 0,
+        "duplicate_property_rows_collapsed": 0,
+        "qualified_unique_properties": 25,
+        "assigned_other": 25,
+        "unchanged_self": 0,
+        "dnc_or_closed": 0,
+        "new_assignments": 0,
+        "reactivations": 0
+      },
+      "land": {
+        "seen": 20,
+        "failed_quality": 0,
+        "duplicate_property_rows_collapsed": 0,
+        "qualified_unique_properties": 20,
+        "assigned_other": 20,
+        "unchanged_self": 0,
+        "dnc_or_closed": 0,
+        "new_assignments": 0,
+        "reactivations": 0
+      }
+    }
+  },
+  "reactivation_test": {
+    "tested": true,
+    "real_property": {
+      "property_key": "JEFFERSON_KY::PARCEL::005000750000",
+      "parcel_id": "005000750000",
+      "property_address": "5817 BARDSTOWN RD LOUISVILLE KY 40291",
+      "priority_score": 92,
+      "assignment_status": "NEW",
+      "property_event_rows_in_pool": 1
+    },
+    "test_change": "Appended controlled material-change marker; this marker is NOT public-source evidence.",
+    "owner_before": "zack",
+    "kyle_delivery_count": 0,
+    "kyle_stats": {
+      "seen": 1,
+      "failed_quality": 0,
+      "duplicate_property_rows_collapsed": 0,
+      "qualified_unique_properties": 1,
+      "assigned_other": 1,
+      "unchanged_self": 0,
+      "dnc_or_closed": 0,
+      "new_assignments": 0,
+      "reactivations": 0
+    },
+    "zack_delivery_count": 1,
+    "zack_assignment_status": "REACTIVATED",
+    "zack_stats": {
+      "seen": 1,
+      "failed_quality": 0,
+      "duplicate_property_rows_collapsed": 0,
+      "qualified_unique_properties": 1,
+      "assigned_other": 0,
+      "unchanged_self": 0,
+      "dnc_or_closed": 0,
+      "new_assignments": 0,
+      "reactivations": 1
+    },
+    "owner_after": "zack"
+  },
+  "assertions_passed": 19,
+  "assertions_failed": 0,
+  "failed_assertions": [],
+  "assertions": [
+    {
+      "name": "real_pool_exists",
+      "pass": true,
+      "detail": "reports/daily_mix_final/current.json"
+    },
+    {
+      "name": "real_house_pool_nonempty",
+      "pass": true,
+      "detail": 25
+    },
+    {
+      "name": "real_land_pool_nonempty",
+      "pass": true,
+      "detail": 20
+    },
+    {
+      "name": "fair_share_zack_house_target",
+      "pass": true,
+      "detail": {
+        "target": 12,
+        "actual": 12
+      }
+    },
+    {
+      "name": "fair_share_kyle_house_target",
+      "pass": true,
+      "detail": {
+        "target": 12,
+        "actual": 12
+      }
+    },
+    {
+      "name": "fair_share_zack_land_target",
+      "pass": true,
+      "detail": {
+        "target": 10,
+        "actual": 10
+      }
+    },
+    {
+      "name": "fair_share_kyle_land_target",
+      "pass": true,
+      "detail": {
+        "target": 10,
+        "actual": 10
+      }
+    },
+    {
+      "name": "fair_share_zero_property_key_overlap",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "fair_share_zero_parcel_overlap",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "zack_no_internal_property_duplicates",
+      "pass": true,
+      "detail": {
+        "rows": 22,
+        "keys": 22
+      }
+    },
+    {
+      "name": "kyle_no_internal_property_duplicates",
+      "pass": true,
+      "detail": {
+        "rows": 22,
+        "keys": 22
+      }
+    },
+    {
+      "name": "zack_no_internal_parcel_duplicates",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "kyle_no_internal_parcel_duplicates",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "full_request_zero_property_key_overlap",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "full_request_zero_parcel_overlap",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "full_request_ledger_unique_owner",
+      "pass": true,
+      "detail": 45
+    },
+    {
+      "name": "reactivation_wrong_agent_blocked",
+      "pass": true,
+      "detail": {
+        "tested": true,
+        "real_property": {
+          "property_key": "JEFFERSON_KY::PARCEL::005000750000",
+          "parcel_id": "005000750000",
+          "property_address": "5817 BARDSTOWN RD LOUISVILLE KY 40291",
+          "priority_score": 92,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        "test_change": "Appended controlled material-change marker; this marker is NOT public-source evidence.",
+        "owner_before": "zack",
+        "kyle_delivery_count": 0,
+        "kyle_stats": {
+          "seen": 1,
+          "failed_quality": 0,
+          "duplicate_property_rows_collapsed": 0,
+          "qualified_unique_properties": 1,
+          "assigned_other": 1,
+          "unchanged_self": 0,
+          "dnc_or_closed": 0,
+          "new_assignments": 0,
+          "reactivations": 0
+        },
+        "zack_delivery_count": 1,
+        "zack_assignment_status": "REACTIVATED",
+        "zack_stats": {
+          "seen": 1,
+          "failed_quality": 0,
+          "duplicate_property_rows_collapsed": 0,
+          "qualified_unique_properties": 1,
+          "assigned_other": 0,
+          "unchanged_self": 0,
+          "dnc_or_closed": 0,
+          "new_assignments": 0,
+          "reactivations": 1
+        },
+        "owner_after": "zack"
+      }
+    },
+    {
+      "name": "reactivation_returns_to_original_agent",
+      "pass": true,
+      "detail": {
+        "tested": true,
+        "real_property": {
+          "property_key": "JEFFERSON_KY::PARCEL::005000750000",
+          "parcel_id": "005000750000",
+          "property_address": "5817 BARDSTOWN RD LOUISVILLE KY 40291",
+          "priority_score": 92,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        "test_change": "Appended controlled material-change marker; this marker is NOT public-source evidence.",
+        "owner_before": "zack",
+        "kyle_delivery_count": 0,
+        "kyle_stats": {
+          "seen": 1,
+          "failed_quality": 0,
+          "duplicate_property_rows_collapsed": 0,
+          "qualified_unique_properties": 1,
+          "assigned_other": 1,
+          "unchanged_self": 0,
+          "dnc_or_closed": 0,
+          "new_assignments": 0,
+          "reactivations": 0
+        },
+        "zack_delivery_count": 1,
+        "zack_assignment_status": "REACTIVATED",
+        "zack_stats": {
+          "seen": 1,
+          "failed_quality": 0,
+          "duplicate_property_rows_collapsed": 0,
+          "qualified_unique_properties": 1,
+          "assigned_other": 0,
+          "unchanged_self": 0,
+          "dnc_or_closed": 0,
+          "new_assignments": 0,
+          "reactivations": 1
+        },
+        "owner_after": "zack"
+      }
+    },
+    {
+      "name": "reactivation_owner_remains_zack",
+      "pass": true,
+      "detail": {
+        "tested": true,
+        "real_property": {
+          "property_key": "JEFFERSON_KY::PARCEL::005000750000",
+          "parcel_id": "005000750000",
+          "property_address": "5817 BARDSTOWN RD LOUISVILLE KY 40291",
+          "priority_score": 92,
+          "assignment_status": "NEW",
+          "property_event_rows_in_pool": 1
+        },
+        "test_change": "Appended controlled material-change marker; this marker is NOT public-source evidence.",
+        "owner_before": "zack",
+        "kyle_delivery_count": 0,
+        "kyle_stats": {
+          "seen": 1,
+          "failed_quality": 0,
+          "duplicate_property_rows_collapsed": 0,
+          "qualified_unique_properties": 1,
+          "assigned_other": 1,
+          "unchanged_self": 0,
+          "dnc_or_closed": 0,
+          "new_assignments": 0,
+          "reactivations": 0
+        },
+        "zack_delivery_count": 1,
+        "zack_assignment_status": "REACTIVATED",
+        "zack_stats": {
+          "seen": 1,
+          "failed_quality": 0,
+          "duplicate_property_rows_collapsed": 0,
+          "qualified_unique_properties": 1,
+          "assigned_other": 0,
+          "unchanged_self": 0,
+          "dnc_or_closed": 0,
+          "new_assignments": 0,
+          "reactivations": 1
+        },
+        "owner_after": "zack"
+      }
+    }
+  ]
+}
