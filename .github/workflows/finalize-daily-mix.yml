@@ -1,0 +1,36 @@
+name: Finalize Daily Mixed Batch
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'reports/sfr_fill_live/ranked_report.json'
+      - 'scrapers/probe/finalize_daily_mix.py'
+      - 'scrapers/probe/render_lead_cards.py'
+      - '.github/workflows/finalize-daily-mix.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m scrapers.probe.finalize_daily_mix
+      - name: Render final cards
+        if: always()
+        run: python -m scrapers.probe.render_lead_cards --input reports/daily_mix_final/current.json --output reports/daily_mix_final/lead_cards.md --kind mixed || true
+      - name: Persist final batch and ledger
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || true
+          git add reports/daily_mix_final/ data/reaper_delivery_ledger.json || true
+          git diff --cached --quiet || git commit -m "Update final daily mixed batch [skip ci]"
+          git push origin HEAD:main || true
+# waits-for-sfr-rank
