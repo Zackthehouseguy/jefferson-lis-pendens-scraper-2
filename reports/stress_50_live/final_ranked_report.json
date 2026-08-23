@@ -1,0 +1,2605 @@
+{
+  "status": "PASS",
+  "target": 50,
+  "source_extract_status": "PASS",
+  "source_extract_runtime_seconds": 1343.878,
+  "source_extract_generated_at_et": "2026-08-22T23:09:17.750538-04:00",
+  "ai_provider_for_bench": "GPT-5.6 Sol current-session bench classification",
+  "ai_contract_version": "reaper-ai-distress-v1",
+  "assertions_passed": 409,
+  "assertions_failed": 0,
+  "failed_assertions": [],
+  "distress_level_distribution": {
+    "HIGH": 18,
+    "MEDIUM": 21,
+    "LOW": 11
+  },
+  "priority_tier_distribution": {
+    "CALL FIRST": 19,
+    "STRONG": 18,
+    "REVIEW": 5,
+    "LOW": 8
+  },
+  "ranked_live_leads": [
+    {
+      "rank": 1,
+      "priority_score": 92,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 100,
+      "saturation_score": 21,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-019235",
+      "property_address": "640 VILLAGE WEST DR LOUISVILLE KY 40203",
+      "owner_name": "HC RUSSELL NEIGHBORHOOD LP",
+      "owner_mailing_address": "1101 30TH ST NW FL 4 WASHINGTON DC 20007-3708",
+      "parcel_id": "013H02150000",
+      "open_cases_in_50_sample_same_parcel": 2,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "structural_damage",
+        "water_damage",
+        "habitability"
+      ],
+      "ai_summary": "Active roof leaks and falling/damaged interior surfaces create strong structural and habitability distress.",
+      "confirmed_facts": [
+        "Complaint reports a third-floor closet ceiling falling in.",
+        "Inspector directed repair of roof/ceiling leaks and damaged window glazing."
+      ],
+      "speculative_claims": [],
+      "description_raw": "3rd floor closet ceiling is falling in",
+      "inspector_comments": [
+        "All interior surfaces must be in good repair. Repair the leak in the roof and ceiling in the 3rd floor bedroom closet. Repair leak and kitchen ceiling around the light fixture.",
+        "All windows must be maintained in good condition and function as intended. Replace glazing in the 2nd floor back bedroom"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1854&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "priority_score": 92,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 100,
+      "saturation_score": 21,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-018230",
+      "property_address": "3406 ROWENA RD 5 LOUISVILLE KY 40218",
+      "owner_name": "ARROWHILL FAMILY LIMITED PARTNESHIP",
+      "owner_mailing_address": "2022 WOODBOURNE AVE APT 1 LOUISVILLE KY 40205-1990",
+      "parcel_id": "091G02070105",
+      "open_cases_in_50_sample_same_parcel": 2,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "fire_risk",
+        "habitability",
+        "utility_issue"
+      ],
+      "ai_summary": "Smoke damage plus apparent furnace fire/overheating is a high-priority safety and habitability signal.",
+      "confirmed_facts": [
+        "Inspector documented smoke damage on interior walls and ceiling.",
+        "Inspector stated the furnace appears to have experienced fire or overheating and must be made operational."
+      ],
+      "speculative_claims": [
+        "The exact cause and extent of the apparent furnace fire/overheating are not established."
+      ],
+      "description_raw": "AC not working",
+      "inspector_comments": [
+        "Interior walls and ceiling appear to have smoke damage that must be cleaned and sanitized.",
+        "Furnace appears to have have experience some sort of fire or overheating. Ensure furnace is in good working order and function as intended."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D4539&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "priority_score": 92,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 100,
+      "saturation_score": 21,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-019259",
+      "property_address": "638 VILLAGE WEST DR LOUISVILLE KY 40203",
+      "owner_name": "HC RUSSELL NEIGHBORHOOD LP",
+      "owner_mailing_address": "1101 30TH ST NW FL 4 WASHINGTON DC 20007-3708",
+      "parcel_id": "013H02150000",
+      "open_cases_in_50_sample_same_parcel": 2,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "boarded_or_unsecured",
+        "unsafe_structure"
+      ],
+      "ai_summary": "A vacant unsecured structure with broken access points is a strong acquisition-distress signal.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant structure.",
+        "Complaint and inspector records state a rear opening/broken glass door must be secured immediately."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Property is not secure. Back patio window is broken out",
+      "inspector_comments": [
+        "Structure must be secured at all time. Please secure the back window / broken out glass door Subject property needs to be in compliance immediately. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount.",
+        "All windows must be maintained in good condition and function as intended. Replace glazing in the 2nd floor back bedroom"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1965&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "priority_score": 92,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 100,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-018575",
+      "property_address": "5817 BARDSTOWN RD LOUISVILLE KY 40291",
+      "owner_name": "ST STEPHEN EVANGELICAL LUTHERAN CHUR",
+      "owner_mailing_address": "5903 BARDSTOWN RD LOUISVILLE KY 40291-1934",
+      "parcel_id": "005000750000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "mold",
+        "water_damage",
+        "structural_damage",
+        "habitability"
+      ],
+      "ai_summary": "Widespread mold plus foundation water intrusion and cracking indicates serious habitability and structural distress.",
+      "confirmed_facts": [
+        "Complaint reports mold in multiple areas, water leaking through the foundation, and foundation cracking."
+      ],
+      "speculative_claims": [],
+      "description_raw": "CALLER REPORTS THAT THERE IS MOLD IN THE BASEMENT AND ATTIC, AND OTHER SPOTS THROUGHOUT THE HOUSE. CALLER STATES THAT THE FOUNDATION HAS WATER LEAKING THROUGH IT FROM THE CISTERN. CALLER REPORTS THAT THERE ARE CRACKS IN THE FOUNDATION. CALLER REPORTS THAT THE AIRWAY HAS BEEN SHUT OFF FROM THE CISTERN AREA. CALLER STATES THAT THE BACK PORCH IS CRACKED, TOO. ADVISED CALLER THAT ANY INFO PROVIDED WOULD BE PART OF THE PUBLIC RECORD. THANK YOU.",
+      "inspector_comments": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D7836&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "priority_score": 92,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 100,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-016335",
+      "property_address": "329 E OAK ST LOUISVILLE KY 40203",
+      "owner_name": "BUFFINGTON EDWARD",
+      "owner_mailing_address": "4100 GALT OCEAN DR APT 1211 FORT LAUDERDALE FL 33308-6039",
+      "parcel_id": "030K00850000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "unsafe_structure",
+        "habitability",
+        "utility_issue",
+        "water_damage",
+        "structural_damage",
+        "severe_exterior_deterioration",
+        "trash_or_debris"
+      ],
+      "ai_summary": "Condemnation plus sewage, utility and building-envelope failures is extreme active property distress.",
+      "confirmed_facts": [
+        "Inspector documented apparent raw sewage/stagnant water, utility service requirements, roof/window/door defects and extensive cleanup needs.",
+        "Inspector explicitly states the property is being condemned."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Raw sewage leak on property",
+      "inspector_comments": [
+        "Front and rear of property must be cleaned and remove all trash, rubbish, and debris and ensure is disposed of properly. Yard must be cut. Entire property must be kept clean, cut, and maintained at all times. This is to include all easement and right of ways such as alley and sidewalks. Each property owner is responsible for entire property such as fence lines, flowerbeds and to include cleaning and maintaining upto the center of the street or alley.",
+        "Utility must be restored to occupied property or property must be vacated.",
+        "Front common door is missing door knob and must be repaired or replaced.",
+        "Front yard is a large standing body of water that appears to be raw sewage that must be immediately repaired and area affected cleaned and sanitized.",
+        "Ensure trash receptacles are not blocking public right of way such as sidewalk. Stagnant water between the 329 and 327 must be abated immediately.",
+        "Ensure front section on roof tiles are secured and in place. Right side of property soffit is damaged and must be repaired or replaced.",
+        "Window missing or damaged in several areas and need to be repaired or replaced.",
+        "Property is being condemned."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C2963&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 6,
+      "priority_score": 92,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 100,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-011596",
+      "property_address": "1137 S 32ND ST LOUISVILLE KY 40211",
+      "owner_name": "CROWDER STACI",
+      "owner_mailing_address": "3210 HALE AVE LOUISVILLE KY 40211-1547",
+      "parcel_id": "046H00730000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "habitability",
+        "mold",
+        "structural_damage",
+        "electrical",
+        "utility_issue",
+        "unsafe_structure"
+      ],
+      "ai_summary": "Multiple electrical, structural, plumbing and mold/habitability defects create severe active property distress.",
+      "confirmed_facts": [
+        "Complaint reports failed AC, basement mold and holes in floors.",
+        "Inspector documented nonworking electrical outlets, holes in walls/ceilings/floors, plumbing/door defects and unpermitted residential use."
+      ],
+      "speculative_claims": [],
+      "description_raw": "air conditioning not functioning, tenant has asthma; mold in basement; holes in floor",
+      "inspector_comments": [
+        "Repair electrical outlets that aren't working in the first floor hall by the kitchen",
+        "Remove all deadbolts from all bedroom doors. Can only have turn knobs and can only lock from the inside.",
+        "Repair all holes in ceilings, floors, and walls throughout structure. Repair vents where falling from ceilings and walls through the entire structure",
+        "Repair shower handle 2nd floor bathroom across from stairs 1st stall Repair or replace all toilets that are not secured to the floor properly Install shut off valve for hot water 2nd floor bathroom sink Install doors to all batrooms",
+        "All exterior doors must be maintained in good working condition, and work as intended. Repair or replace weather stripping around doors to keep elements out. Repair or replace all locking mechanisms that do not work as intended. Front right side door and left side door of building. Repair door knob on exterior front right side.",
+        "Repair exposed wood to protect from the elements",
+        "Shelter/transitional house without licenses or permits"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=92620&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 7,
+      "priority_score": 92,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 100,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-004622",
+      "property_address": "3908 JEWELL AVE LOUISVILLE KY 40212",
+      "owner_name": "3908 JEWELL AVE REVOCABLE LAND TRUST",
+      "owner_mailing_address": "6844 BARDSTOWN RD PMB 569 LOUISVILLE KY 40291-3050",
+      "parcel_id": "009D01050000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "habitability",
+        "electrical",
+        "structural_damage",
+        "utility_issue",
+        "trash_or_debris",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Major habitability, electrical, plumbing and floor defects plus a $700 citation create very strong distress.",
+      "confirmed_facts": [
+        "Complaint reports broken appliances, a soft bathroom floor, and missing kitchen-sink plumbing.",
+        "Inspector documented multiple electrical outlet/fixture defects, smoke-detector issues and broad cleanup needs.",
+        "A $700 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Stove does not work and the refrigerator is going out. Floor is soft in the bathroom. No faucet on the kitchen sink. No pipes underneath the kitchen sink. \"The caller was informed that their contact information is part of this public record\".",
+      "inspector_comments": [
+        "Remove and properly dispose of all junk, trash and rubbish throughout the property, as well as the pile of tree debris in the backyard. You can call 311 or go to www.louisvilleky.gov to schedule a large item pickup. All grass, weeds and overgrowth must be cut below 10\". Property owner is responsible for all easements halfway out into the middle of the street or alley. Property must be kept maintained at all times. Remove and properly dispose of the framed mirror on the left side of the house.",
+        "Properly install an overhead light fixture in the rear bedroom. Properly install a safety cover on the hallway light.",
+        "Ensure all electrical outlets are wired correctly, have plug covers and are functioning as intended. Upstairs there are two nonfunctional outlets and another wired incorrectly. The GFI outlet in the kitchen doesn't reset. The GFI outlet in the bathroom is wired incorrectly. All outlets must be in good working order.",
+        "Ensure there is a working smoke detector on each habitable level. Smoke detector must be a hardwired or 10 year tamper proof lithium model. Any non working smoke detector and brackets must be removed. Install the required smoke detector in the upstairs room. Remove the nonworking smoke detector in the downstairs hallway.",
+        "Properly install a safety cover on the exterior light fixture on the front porch.",
+        "Remove all vegetation from the gutters so they work as intended."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 700.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=44971&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 8,
+      "priority_score": 89,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 95,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-006934",
+      "property_address": "1403 NIGHTINGALE RD 4 LOUISVILLE KY 40213",
+      "owner_name": "LOUISVILLE NIGHTINGALE LP",
+      "owner_mailing_address": "522 SPANISH CT LOUISVILLE KY 40214-1419",
+      "parcel_id": "084D01950000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "infestation",
+        "habitability",
+        "water_damage",
+        "tenant_issue",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Infestation plus multiple interior habitability defects and an assessed citation make this a strong distress case.",
+      "confirmed_facts": [
+        "Complaint repeatedly reports a roach infestation and broken bathroom door.",
+        "Inspector documented damaged floors/walls/ceilings and malfunctioning window AC units.",
+        "A $400 citation was assessed in the extracted enforcement event."
+      ],
+      "speculative_claims": [],
+      "description_raw": "apartment is infested with roaches, the bathroom door is broken, and there are several other issues. apartment is infested with roaches, the bathroom door is broken, and there are several other issues. apartment is infested with roaches, the bathroom door is broken, and there are several other issues. apartment is infested with roaches, the bathroom door is broken, and there are several other issues. apartment is infested with roaches, the bathroom door is broken, and there are several other issues",
+      "inspector_comments": [
+        "Floor in kitchen next to cabinet is peeling back and ensure no gaps or opens are present. All interior surfaces and floor must be in good condition, free of any cracks, damages or any missing plaster or caulking. Bathroom needs to be addressed as well as kitchen.",
+        "Bathroom ceiling is peeling and chipping and must be repaired in a workman like manner to include sanding and painting. Living room wall next to the return air vent has a large gap and opening that must be repair and sealed. All wall and ceiling surfaces must be free of any cracks, damages, missing plaster or drywall.",
+        "Window air conditioner unit in back bed room is spitting out droplets of water while running and also needs to be cleaned. Front window air conditioner needs to be cleaned and is cool, but not cold. Ensure air conditioner units are operating as intended at all times."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 400.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=60675&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 9,
+      "priority_score": 88,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 94,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-016900",
+      "property_address": "517 S 20TH ST LOUISVILLE KY 40203",
+      "owner_name": "WOOD BRICKS & MORTAR LLC",
+      "owner_mailing_address": "11700 GOLDEN LIGHT CT LOUISVILLE KY 40272-3889",
+      "parcel_id": "002L00030000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "infestation",
+        "overgrown_vegetation",
+        "repeated_noncompliance",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Long-running vacancy and neglect with pest activity and an assessed citation is a strong acquisition signal.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant structure.",
+        "Complaint says grass has not been cut for five to six months and reports rodents/groundhogs.",
+        "A $300 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Caller reports home is vacant and the grass hasn't been cut for 5-6 months. Said they've seen rodents and groundhogs coming from underneath the house.",
+      "inspector_comments": [
+        "Vacant property must be cut/clean throughout, INCLUDING REAR EASEMENT AND OVERGROWN GRASS"
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 300.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C6245&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 10,
+      "priority_score": 88,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 94,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-001287",
+      "property_address": "821 S 39TH ST LOUISVILLE KY 40211",
+      "owner_name": "MUCKER LEWIS E & ANNA L",
+      "owner_mailing_address": "821 S 39TH ST LOUISVILLE KY 40211-2819",
+      "parcel_id": "043E01760000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "structural_damage",
+        "severe_exterior_deterioration",
+        "estate_or_deceased"
+      ],
+      "ai_summary": "Probate-related absentee circumstances combined with visible structural/exterior deterioration create strong acquisition distress.",
+      "confirmed_facts": [
+        "Complaint reports the owner is living elsewhere in connection with probate/inheritance and describes the home as empty/falling apart.",
+        "Inspector documented a sagging porch/gutter area, exposed wood, furniture/debris and dead/downed trees."
+      ],
+      "speculative_claims": [
+        "The exact probate ownership posture and whether the property is legally vacant are not independently established here."
+      ],
+      "description_raw": "Email received: The owner of the subject property is not living there, instead is living in his sister's home in south Louisville, in order to establish residency for probate (inheritance) purposes. His empty home is falling apart. Pease remind him that he remains responsible for maintaining his original home in Chickasaw,",
+      "inspector_comments": [
+        "Remove portions of downed tree in rear yard. Remove furniture from rear of yard",
+        "Front porch and gutter board appear to be sagging, make repairs to this area so that it is structure is sound. Trim on both sides of property has exposed wood, Replace any rotten wood, and ensure all wood is sealed to be protected from the elements.",
+        "Remove dead tree from rear yard"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=13269&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 11,
+      "priority_score": 88,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 93,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-018175",
+      "property_address": "843 S 26TH ST LOUISVILLE KY 40211",
+      "owner_name": "GOSPEL MISSIONARY BAPTIST CHURCH INC",
+      "owner_mailing_address": "PO BOX 11437 LOUISVILLE KY 40251-0437",
+      "parcel_id": "036F02460000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "boarded_or_unsecured",
+        "trash_or_debris",
+        "nuisance",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Vacancy, unsecured openings, dumping and an assessed citation create a strong distress signal.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant structure.",
+        "Complaint reports people entering from the rear and dumping trash.",
+        "Inspector ordered openings secured and debris removed; a $200 citation was assessed."
+      ],
+      "speculative_claims": [
+        "Whether reported entrants are legally unauthorized occupants is not independently established."
+      ],
+      "description_raw": "CALLER IS REPORT SQUATTERS ARE GOING IN AND OUT FROM REAR OF PROPERTY - SOMEONE IS DUMPING TRASH IN REAR OF VACANT PROPERTY - 20 BUS DAYS",
+      "inspector_comments": [
+        "Secure all openings. Special attention at Right side basement door and basement window.",
+        "Remove them properly dispose of all junk debris, trash and garbage from property grounds. If property has been dumped on, please report It to SWMS through311. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D4057&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 12,
+      "priority_score": 88,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 93,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-25-010477",
+      "property_address": "10210 MORRISON RD LOUISVILLE KY 40229",
+      "owner_name": "ALMEIDA LEXIS R NAPOLES",
+      "owner_mailing_address": "10210 MORRISON RD LOUISVILLE KY 40229-2245",
+      "parcel_id": "008501770000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "electrical",
+        "trash_or_debris",
+        "water_damage",
+        "nuisance",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Electrical safety issues, broad property neglect and a $700 assessed citation create strong distress.",
+      "confirmed_facts": [
+        "Inspector documented extensive outdoor junk/vehicle storage, a missing electrical service-panel dead front, and standing-water conditions.",
+        "A $700 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "description_raw": "CALLER REPORTS THAT THEY HAVE A LOT OF MISCELLANEOUS JUNK ON THE PROPERTY. (VEHICLES & TRAILERS HAVE ALREADY BEEN REPORTED TO ZONING.) THANK YOU.",
+      "inspector_comments": [
+        "All vehicles stored outdoors must be licensed, operable, have properly inflated tires, not in a state of disrepair or wrecked, and parked on a hard durable surface, such as concrete or gravel. This includes vehicles in the rear.",
+        "Entire property must be kept cut, clean and maintained at all times, Grass and weeds cut at 10 inches or below. Remove any rubbish, debris, trash, etc. Property, including the rear yard, cannot be used for outdoor storage of car parts, tires, appliances, and other related items.",
+        "Install the dead front panel on service panel/circuit breaker box.",
+        "Fill in any ruts where present, allowing standing/stagnant water to accumulate."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 700.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=25REC&capID2=00000&capID3=92726&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 13,
+      "priority_score": 85,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 89,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-011029",
+      "property_address": "5846 NEW CUT RD LOUISVILLE KY 40214",
+      "owner_name": "CHITWOOD ROBERT L & JUDY I CO TRUST",
+      "owner_mailing_address": "5846 NEW CUT RD LOUISVILLE KY 40214-5660",
+      "parcel_id": "134701090000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "trash_or_debris",
+        "repeated_noncompliance",
+        "habitability",
+        "nuisance",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Recurring heavy accumulation, stagnant water and a substantial assessed citation create strong distress.",
+      "confirmed_facts": [
+        "Complaint describes a continuing trash/overgrowth problem and a garage packed so full the door will not close.",
+        "Inspector documented extensive cleanup needs and stagnant pool water.",
+        "A $600 citation was assessed."
+      ],
+      "speculative_claims": [
+        "The complaint's characterization of the condition as hoarding is not independently established."
+      ],
+      "description_raw": "This house has continued to be a problem with trash and overgrown lawn. Seems to be a hoarding case as there is trash piled in the driveway and all around. The garage is so full that the door will not close. Very concerned for the young child that lives in the home as well.",
+      "inspector_comments": [
+        "7 days on cleaning and cutting. Grass is over 10 inches. Sidewalk leading to the porch and the porch must be clean. Remove all trash, rubbish from the truck in the rear. Trash, rubbish, etc. The entire property must remain cut, clean, organized and maintained at all times. Cut grass to the street and midway into the alley if applicable. Keep the alley clean midway to the middle if applicable. Grass/weeds must stay at or under 10 inches at all times. Including the flower bed and easements.",
+        "The pool in the rear must be drained, maintained or covered. Green, stagnant water."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 600.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=88881&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 14,
+      "priority_score": 84,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 87,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-015492",
+      "property_address": "2315 W KENTUCKY ST LOUISVILLE KY 40210",
+      "owner_name": "SIMS COACHING LLC",
+      "owner_mailing_address": "2415 STEEPLECHASE DR LOUISVILLE KY 40299-2636",
+      "parcel_id": "038A00720000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "trash_or_debris",
+        "overgrown_vegetation",
+        "nuisance",
+        "accumulated_fines"
+      ],
+      "ai_summary": "A vacant house with large junk accumulation, overgrowth and an assessed citation is strong distress.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant structure.",
+        "Complaint reports tall grass and growing piles of couches, mattresses and other junk.",
+        "A $200 citation was assessed."
+      ],
+      "speculative_claims": [
+        "The complaint's belief that people are illegally dumping is not independently established."
+      ],
+      "description_raw": "Caller reports that this is a vacant house. There is tall grass on the property and a growing pile of stuff in the backyard and along the alley. Couches, junk, mattresses, etc. Said they believe people are illegally dumping on the property. Reporting dumping to SWMS.",
+      "inspector_comments": [
+        "Cut and maintain grass No taller than 10 inches tall throughout entire property grounds. Remove and probably dispose of all furniture and trash at rear portion of property grounds Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount.",
+        "Secure all openings, special attention rear basement door."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B7977&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 15,
+      "priority_score": 83,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 85,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-24-016884",
+      "property_address": "727 E KENTUCKY ST LOUISVILLE KY 40203",
+      "owner_name": "MARTINEZ JUAN M JR",
+      "owner_mailing_address": "347 SIMMS ST AURORA IL 60505-5181",
+      "parcel_id": "022B00460000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "utility_issue",
+        "boarded_or_unsecured",
+        "severe_exterior_deterioration",
+        "overgrown_vegetation"
+      ],
+      "ai_summary": "Broken openings, utility-service issues and severe exterior neglect create strong distress even with conflicting occupancy evidence.",
+      "confirmed_facts": [
+        "Complaint describes broken-out windows, high grass/weeds and a downed tree.",
+        "Inspector directed restoration of water service for continued occupancy."
+      ],
+      "speculative_claims": [
+        "The complaint characterizes the property as vacant/open, while the structured occupancy field in this extract is not vacant."
+      ],
+      "description_raw": "Vacant - open - high grass and weeds front and back yard - broken out windows - down tree in the back yard and the states the owner",
+      "inspector_comments": [
+        "Maintain overgrowth below 10\" mow yards and easements",
+        "Restore water services to continue occupancy."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=24REC&capID2=00000&capID3=K5207&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 16,
+      "priority_score": 82,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 83,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-008075",
+      "property_address": "1837 LYTLE ST LOUISVILLE KY 40203",
+      "owner_name": "APWC LLC",
+      "owner_mailing_address": "1700 MARINAS EDGE WAY APT 210 LOUISVILLE KY 40206-1383",
+      "parcel_id": "015G00640000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "trash_or_debris",
+        "overgrown_vegetation",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Vacancy plus significant exterior neglect and a $700 assessed citation create strong distress.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant structure.",
+        "Inspector documented overgrowth and discarded household items; a $700 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Open",
+      "inspector_comments": [
+        "Overgrown grass on property. All grass/weeds must be maintained to a height below 10\". Discarded household items on side of structure. Remove all discarded furniture and items and dispose of properly.",
+        "Porch light has no cover for light bulb. Install appropriate cover for porch light.",
+        "Uncovered crawl space opening. Cover opening on foundation.",
+        "Gutters detached from side of structure. Repair or replace damaged gutters."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 700.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=68256&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 17,
+      "priority_score": 81,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 82,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-019179",
+      "property_address": "316 LOUIS COLEMAN JR DR LOUISVILLE KY 40212",
+      "owner_name": "CURRY BURNS ABOITE LIVING TRUST",
+      "owner_mailing_address": "1870 NE 181ST ST NORTH MIAMI BEACH FL 33162-1523",
+      "parcel_id": "008G01350000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "boarded_or_unsecured",
+        "nuisance"
+      ],
+      "ai_summary": "A vacant property with reported break-ins is a high-priority security and distress signal.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant structure.",
+        "Complaint reports people breaking into the property and high weeds around it."
+      ],
+      "speculative_claims": [
+        "The legal status of the reported entrants is not established."
+      ],
+      "description_raw": "High weeds and grass front and alley side of property. Homeless breaking into property.",
+      "inspector_comments": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1503&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 18,
+      "priority_score": 80,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 81,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-018209",
+      "property_address": "7400 SUMMER WOOD LN 202 LOUISVILLE KY 40228",
+      "owner_name": "FRONTGATE SPE LLC",
+      "owner_mailing_address": "363 CENTENNIAL PKWY STE 210 LOUISVILLE CO 80027-1619",
+      "parcel_id": "064602790000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "mold",
+        "habitability",
+        "tenant_issue"
+      ],
+      "ai_summary": "Reported pervasive mold throughout an occupied unit is a strong habitability distress signal.",
+      "confirmed_facts": [
+        "Complaint reports mold throughout the unit, including vents and clothing stored in drawers."
+      ],
+      "speculative_claims": [],
+      "description_raw": "mold in entire unit, in vents, mold found on clothes in dresser drawers contact (502)996-3162 Kenya Jackson",
+      "inspector_comments": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D4328&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 19,
+      "priority_score": 76,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 72,
+      "saturation_score": 21,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-019257",
+      "property_address": "3406 ROWENA RD LOUISVILLE KY 40218",
+      "owner_name": "ARROWHILL FAMILY LIMITED PARTNESHIP",
+      "owner_mailing_address": "2022 WOODBOURNE AVE APT 1 LOUISVILLE KY 40205-1990",
+      "parcel_id": "091G02070105",
+      "open_cases_in_50_sample_same_parcel": 2,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "habitability",
+        "severe_exterior_deterioration",
+        "trash_or_debris",
+        "tenant_issue"
+      ],
+      "ai_summary": "Multiple active exterior and safety-maintenance issues create meaningful landlord/property distress.",
+      "confirmed_facts": [
+        "Inspector documented a chirping smoke detector, peeling window frames, and a large pile of branches.",
+        "Inspector stated the property is not owner occupied and requires rental registration."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Exterior violations",
+      "inspector_comments": [
+        "Large pile of tree branches by street must be disposed of properly.",
+        "Smoke detector towards back of building hallway is chirping and need to be replaced.",
+        "Window frames are chipping and peeling. Remove any chipping and peeling paint and ensure all exposed wood is protected from the elements.",
+        "Property is not owner occupied and must be registered as a rental property via the Louisville Metro Government Rental Registry. www.louisvilleky.gov or call 502-574-2508 for assistance."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1954&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 20,
+      "priority_score": 70,
+      "priority_tier": "STRONG",
+      "distress_score": 64,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-008067",
+      "property_address": "10100 BLACK IRON RD LOUISVILLE KY 40291",
+      "owner_name": "AL CAT LLC",
+      "owner_mailing_address": "PO BOX 22589 LOUISVILLE KY 40252-0589",
+      "parcel_id": "2527000D0000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "vacancy",
+        "overgrown_vegetation",
+        "repeated_noncompliance",
+        "nuisance"
+      ],
+      "ai_summary": "Long-running neglect on a vacant lot with enforcement escalation is a meaningful distress signal.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant lot.",
+        "Complaint describes long-running lack of maintenance, and the inspector ordered correction within seven days."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Black Iron Rd at Glenmary, property is unkept, old fence post, fencing has been dropped and left since last year and property needs cutting. Property on Glenmary Farm Drive that rear of homes back up to Club House is not being maintained weeds are getting high. The property across from club house where perfectly good trees were destroyed and left laying on property along with trees half cut. All of these things are destroying the views from our homes and reducing the interest of people who would have considered buying in the subdivision.",
+      "inspector_comments": [
+        "Exact 50 ft buffer must be maintained around public right of ways and occupied homes/businesses. (It is only about 20 ft buffer at this moment) All tall grass and weeds must be maintained and kept below 10 inches at all times. This includes all flowerbeds, around yard furniture, easements along side or rear by alleys, next to foundation, etc. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=68204&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 21,
+      "priority_score": 70,
+      "priority_tier": "STRONG",
+      "distress_score": 64,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-013375",
+      "property_address": "3606 GARLAND AVE LOUISVILLE KY 40211",
+      "owner_name": "BERRY ROBERT QUINN SR",
+      "owner_mailing_address": "9005 GRAND POINTE CT LOUISVILLE KY 40214-5957",
+      "parcel_id": "045A00750000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "vacancy",
+        "trash_or_debris",
+        "nuisance",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Vacancy combined with substantial debris and an assessed citation creates moderate distress.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant structure.",
+        "Complaint and inspector records document significant junk/trash/debris; a $200 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Citizen is reporting that this property has a lot of junk, trash, and debris in the back of the property that is cluttering the alley.",
+      "inspector_comments": [
+        "Remove all items from the backyard that are not meant to be stored outdoors. This does not include children's toys"
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=A4676&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 22,
+      "priority_score": 70,
+      "priority_tier": "STRONG",
+      "distress_score": 63,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-011727",
+      "property_address": "543 S 20TH ST LOUISVILLE KY 40203",
+      "owner_name": "LT & JT III INVESTORS LLC",
+      "owner_mailing_address": "PO BOX 206654 LOUISVILLE KY 40250-6654",
+      "parcel_id": "001E00940000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "vacancy",
+        "overgrown_vegetation",
+        "trash_or_debris",
+        "accumulated_fines"
+      ],
+      "ai_summary": "A vacant lot with debris, overgrowth and an assessed citation shows moderate distress.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant lot.",
+        "Inspector documented overgrown grass and tree debris; a $200 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "description_raw": "CITIZEN REPORTS HIGH GRASS & WEEDS, ALONG WITH OVERGROWN BUSHES. THANK YOU.",
+      "inspector_comments": [
+        "Vacant lot must be cut/clean throughout INCLUDING REAR EASEMENT OF LOT FULL OF TREE DEBRIS AND OVERGROWN GRASS"
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=93485&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 23,
+      "priority_score": 70,
+      "priority_tier": "STRONG",
+      "distress_score": 63,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-017755",
+      "property_address": "2327 W KENTUCKY ST LOUISVILLE KY 40210",
+      "owner_name": "BROWN MICHAEL LEE",
+      "owner_mailing_address": "301 N 35TH ST LOUISVILLE KY 40212-2115",
+      "parcel_id": "038A00670000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "vacancy",
+        "trash_or_debris",
+        "overgrown_vegetation",
+        "accumulated_fines"
+      ],
+      "ai_summary": "A vacant lot with trash, overgrowth and an assessed citation creates moderate distress.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant lot.",
+        "Inspector ordered trash/debris removal and a $100 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "description_raw": "CALLER REPORTING HIGH GRASS AT THIS VACANT LOT. THANK YOU.",
+      "inspector_comments": [
+        "Remove all trash, rubbish and debris from rear lot. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 100.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D1432&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 24,
+      "priority_score": 69,
+      "priority_tier": "STRONG",
+      "distress_score": 62,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-002254",
+      "property_address": "1309 OLIVE ST LOUISVILLE KY 40211",
+      "owner_name": "TOODLE NICHOLAS HEIRS OR DEVISEES OF",
+      "owner_mailing_address": "2514 GRAND AVE APT 2 LOUISVILLE KY 40210-1148",
+      "parcel_id": "048E00960000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "vacancy",
+        "trash_or_debris",
+        "overgrown_vegetation",
+        "nuisance"
+      ],
+      "ai_summary": "A vacant lot with trash and persistent overgrowth is a meaningful neglect signal.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant lot.",
+        "Complaint and inspector records document trash/litter and overgrowth."
+      ],
+      "speculative_claims": [],
+      "description_raw": "There is litter and trash items strewn all across the alley and into the yard",
+      "inspector_comments": [
+        "Cut all high grass and overgrowth."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=24330&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 25,
+      "priority_score": 68,
+      "priority_tier": "STRONG",
+      "distress_score": 61,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-018477",
+      "property_address": "9810 NEWBRIDGE RD LOUISVILLE KY 40291",
+      "owner_name": "VILLAGES AT NEWBRIDGE PROPERTY OWNER",
+      "owner_mailing_address": "6503 DUNSTONBURG LN LOUISVILLE KY 40291-4851",
+      "parcel_id": "307700730000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "vacancy",
+        "nuisance",
+        "severe_exterior_deterioration"
+      ],
+      "ai_summary": "A vacant lot with a fallen tree obstructing drainage is a moderate physical-distress signal.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant lot.",
+        "Inspector ordered removal of a fallen tree from a drainage ditch/creek."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Tree has fallen into creek blocking water flow. Overgrown vines and ivy could possibly cause damage to other trees around the area.",
+      "inspector_comments": [
+        "Please remove and properly dispose of fallen tree in drainage ditch/creek behind 6606 Brighton Hill ln"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D6321&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 26,
+      "priority_score": 68,
+      "priority_tier": "STRONG",
+      "distress_score": 61,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-015658",
+      "property_address": "1838 GREENWOOD AVE LOUISVILLE KY 40210",
+      "owner_name": "CARDINE BRITTANY",
+      "owner_mailing_address": "741 S 32ND ST LOUISVILLE KY 40211-1414",
+      "parcel_id": "038F01540000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "habitability",
+        "tenant_issue",
+        "owner_unresponsive",
+        "accumulated_fines"
+      ],
+      "ai_summary": "An unresolved tenant AC issue with enforcement and an assessed citation indicates moderate landlord distress.",
+      "confirmed_facts": [
+        "Complaint reports an unresolved AC problem and communication with the landlord.",
+        "A $100 citation was assessed."
+      ],
+      "speculative_claims": [
+        "The exact duration/details of the landlord response are based on the tenant complaint."
+      ],
+      "description_raw": "The citizen been here since Oct 2026. The citizen states she followed up with Landlord and she had no idea that the AC was not working. The citizen states she was told to buy a small AC unit. The citizen states that she works from home and is dealing with asthma. The citizen had to go to the hospital.",
+      "inspector_comments": [
+        "All grass/weeds must be cut and maintained below 10\". All overgrowth must be cut back and maintained. This includes front, rear and any easements attached to property.",
+        "All surfaces must be in good repair at all times, no chipping/peeling paint, etc. Exposed wood must be sealed/painted to protect from elements.",
+        "All porches must be secure and in good repair and all hardware properly installed. All handrails must be in good repair with no missing spindles.",
+        "All roofing materials must be properly installed and in good repair at all times. Several areas of soffit in disrepair and gutters not properly connected, not functioning as intended. Gutters must also be clean and flowing freely.",
+        "Property is not owner occupied and must be registered as a rental property via the Louisville Metro Government Rental Registry. www.louisvilleky.gov or call 502-574-2508 for assistance."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 100.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B8919&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 27,
+      "priority_score": 68,
+      "priority_tier": "STRONG",
+      "distress_score": 60,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-019225",
+      "property_address": "3637 RIVER PARK DR LOUISVILLE KY 40211",
+      "owner_name": "MCATEE TIMA SCOTT",
+      "owner_mailing_address": "3816 MELDA LN LOUISVILLE KY 40219-1400",
+      "parcel_id": "007H00780000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "vacancy",
+        "overgrown_vegetation",
+        "repeated_noncompliance"
+      ],
+      "ai_summary": "A vacant structure with recurring maintenance complaints shows persistent but moderate neglect.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant structure.",
+        "Complaint describes recurring fence-line overgrowth, and the inspector ordered vegetation control."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Citizen is reporting that the owner of this vacant property fails to clean their side of the fence line and it continuously grows over into the neighboring fence line and property. The owner has someone cut the grass but they do not weed eat. Citizen is doing their part by maintaining their side of the fence. The best view is in the alley. 1-20 business days",
+      "inspector_comments": [
+        "Grass must be kept and maintained at 10\" or below Remove noxious vine from rear of house"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1808&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 28,
+      "priority_score": 67,
+      "priority_tier": "STRONG",
+      "distress_score": 58,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-013703",
+      "property_address": "2929 PRESTON HWY LOUISVILLE KY 40217",
+      "owner_name": "FLORENTINE LLC",
+      "owner_mailing_address": "40 HILL RD LOUISVILLE KY 40204-1575",
+      "parcel_id": "084G00010000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "trash_or_debris",
+        "repeated_noncompliance",
+        "nuisance",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Ongoing commercial-site debris plus an assessed citation indicates moderate enforcement distress.",
+      "confirmed_facts": [
+        "Complaint describes an ongoing large trash/debris issue spilling into parking and an alley.",
+        "A $300 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "description_raw": "There is large amounts of trash/debris near the dumpster area behind the Dollar Tree store located at 2929 Poplar Level Rd, Louisville, KY, 40217. It is spilling out into their parking lot AND the adjacent alleyway. This has been an ongoing issue that will not be tolerated by the surrounding community. Please remedy as quicky as possible. Thank you.",
+      "inspector_comments": [
+        "Clean and maintain the entire property"
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 300.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=A6781&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 29,
+      "priority_score": 66,
+      "priority_tier": "STRONG",
+      "distress_score": 56,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-014196",
+      "property_address": "5407 CARNAE CT 37 LOUISVILLE KY 40216",
+      "owner_name": "MIKE FLINT CARNAE REVOCABLE TRUST",
+      "owner_mailing_address": "2780 HALLS HILL RD CRESTWOOD KY 40014-9521",
+      "parcel_id": "102605140000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "habitability",
+        "tenant_issue",
+        "owner_unresponsive"
+      ],
+      "ai_summary": "Extended AC failure with repeated work orders indicates meaningful landlord/habitability distress.",
+      "confirmed_facts": [
+        "Complaint reports the apartment AC has been out for at least two weeks and multiple work orders were filed.",
+        "Complaint reports similar AC issues in numerous other apartments."
+      ],
+      "speculative_claims": [
+        "The number of other affected apartments is based on the caller's statement."
+      ],
+      "description_raw": "Caller reports the air conditioning has been out in her apartment for at least 2 weeks and she knows at least 10 other apartments are having issues with their AC as well. Said she has filed multiple work orders but is told they'll \"try\" to fix it. Said the apartment is very hot especially with the temperatures like they are right now.",
+      "inspector_comments": [
+        "Drywall on bathroom wall, and bedroom wall and ceiling needs to be repaired and finished in a professional workman like manner.",
+        "Finnish on bathtub is peeling repair, and old caulking needs to be removed and recaulked.",
+        "Toilet is loose and needs to be secured to the floor properly"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=A9985&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 30,
+      "priority_score": 66,
+      "priority_tier": "STRONG",
+      "distress_score": 56,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-016599",
+      "property_address": "9723 COLLIER LN LOUISVILLE KY 40291",
+      "owner_name": "KTC INVESTMENTS LLC",
+      "owner_mailing_address": "104 MUIRS LN PEWEE VALLEY KY 40056-9019",
+      "parcel_id": "379800060000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "infestation",
+        "overgrown_vegetation",
+        "nuisance",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Pest activity combined with overgrowth and a $300 assessed citation creates moderate distress.",
+      "confirmed_facts": [
+        "Complaint reports rats around high bushes/weeds.",
+        "Inspector ordered vegetation maintained below ten inches; a $300 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "description_raw": "rats seen in high bushes and weeds at end of driveway, seen on front walk and side of house",
+      "inspector_comments": [
+        "All tall grass and weeds must be maintained and kept below 10 inches at all times. This includes all flowerbeds, around yard furniture, easements along side or rear by alleys, next to foundation, etc.",
+        "Property is not owner occupied and must be registered as a rental property via the Louisville Metro Government Rental Registry. www.louisvilleky.gov or call 502-574-2508 for assistance."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 300.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C4417&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 31,
+      "priority_score": 65,
+      "priority_tier": "STRONG",
+      "distress_score": 55,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-019027",
+      "property_address": "1029 MAYER AVE LOUISVILLE KY 40217",
+      "owner_name": "DUNLAP BNB LLC",
+      "owner_mailing_address": "25 ANDREW PKWY FISHERVILLE KY 40023-7504",
+      "parcel_id": "026E00450000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "severe_exterior_deterioration",
+        "nuisance",
+        "repeated_noncompliance"
+      ],
+      "ai_summary": "A long-running dangerous-tree condition with reported prior damage creates moderate distress.",
+      "confirmed_facts": [
+        "Inspector identified a dead/dangerous tree requiring corrective work.",
+        "Complaint reports limbs have fallen and damaged neighboring property over the years."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Large tree at the property that is completely dead with ivy growing up the side. Citizen reports over the years several limbs have fallen and damaged neighboring property.",
+      "inspector_comments": [
+        "All dead, dangerous trees must be cut back all limbs disposed of and debris alternatively Tree must be tested by a licensed arborist to determine life expectancy or failure. You may go to our website at Louisville ky.gov and look for Urban Forestry and their tree assistance program to assist"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0416&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 32,
+      "priority_score": 65,
+      "priority_tier": "STRONG",
+      "distress_score": 55,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-018474",
+      "property_address": "230 ROCHESTER DR LOUISVILLE KY 40214",
+      "owner_name": "TAYLOR RACAZIA S",
+      "owner_mailing_address": "230 ROCHESTER DR LOUISVILLE KY 40214-2649",
+      "parcel_id": "060D00040000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "vacancy",
+        "overgrown_vegetation",
+        "trash_or_debris"
+      ],
+      "ai_summary": "Reported vacancy/turnover plus exterior neglect creates moderate acquisition relevance.",
+      "confirmed_facts": [
+        "Complaint describes a property advertised for rent as vacant with overgrown grass and weeds.",
+        "Inspector ordered the property kept cut, clean and free of rubbish."
+      ],
+      "speculative_claims": [
+        "The structured occupancy field says occupied, so the complaint's vacancy description is not independently confirmed."
+      ],
+      "description_raw": "Vacant property with a For Rent sign in frony yard. Overgrown grass & weeds.",
+      "inspector_comments": [
+        "Entire property must remain cut and clean and free of all rubbish"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D6311&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 33,
+      "priority_score": 64,
+      "priority_tier": "STRONG",
+      "distress_score": 54,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-019149",
+      "property_address": "2403 GRIFFITHS AVE LOUISVILLE KY 40212",
+      "owner_name": "BIGGS LORRETTA LOUISE",
+      "owner_mailing_address": "2403 GRIFFITHS AVE LOUISVILLE KY 40212",
+      "parcel_id": "004H00700000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "vacancy",
+        "overgrown_vegetation",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Vacancy plus active overgrowth enforcement and an assessed citation creates moderate distress.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant structure.",
+        "Inspector ordered the property kept cut and clean; a $100 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "description_raw": "New Green house on Corner. Front yard is getting tall but the back yard that is not fenced in is getting out of hand. I can something growing in the yard over my privacy fence",
+      "inspector_comments": [
+        "Entire property must remain cut and clean and free of all rubbish"
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 100.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1324&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 34,
+      "priority_score": 64,
+      "priority_tier": "STRONG",
+      "distress_score": 53,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-018991",
+      "property_address": "6526 MILES AVE LOUISVILLE KY 40214",
+      "owner_name": "KF PROPERTIES LLC",
+      "owner_mailing_address": "9009 LINN STATION RD LOUISVILLE KY 40222-5722",
+      "parcel_id": "059F00960114",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "trash_or_debris",
+        "nuisance",
+        "repeated_noncompliance"
+      ],
+      "ai_summary": "Broad property-wide debris accumulation indicates active neglect beyond a minor yard issue.",
+      "confirmed_facts": [
+        "Complaint and inspector records document scrap metal, clothing, wood, tires, trash and rubbish across the property.",
+        "Inspector ordered cleanup within seven days."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Scrap metal, clothing, wood and trash throughout the front yard of this property.",
+      "inspector_comments": [
+        "Tires, trash, rubbish in the rear. The entire property must be clean within 7 days of this notice. The entire property must remain cut, clean, organized, and maintained at all times. Grass/weeds must stay under 10 inches: including easements and flower beds."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0192&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 35,
+      "priority_score": 64,
+      "priority_tier": "STRONG",
+      "distress_score": 53,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-014799",
+      "property_address": "1134 GOSS AVE LOUISVILLE KY 40217",
+      "owner_name": "CUNNINGHAM DENNIS RYAN",
+      "owner_mailing_address": "1134 GOSS AVE LOUISVILLE KY 40217-1238",
+      "parcel_id": "026C02110000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "severe_exterior_deterioration",
+        "trash_or_debris",
+        "overgrown_vegetation",
+        "nuisance"
+      ],
+      "ai_summary": "Exterior deterioration combined with overgrowth and junk indicates meaningful deferred maintenance.",
+      "confirmed_facts": [
+        "Complaint reports siding falling off, tall grass/weeds and junk in the yard."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Caller reports the siding is falling off the house, the grass is very tall, there's tall weeds all over, there's junk laying in the front yard, the backyard looks \"horrendous\" and the grass by the street is very tall.",
+      "inspector_comments": [
+        "Repair or replace siding on the left side of the house where needed"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B3754&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 36,
+      "priority_score": 64,
+      "priority_tier": "STRONG",
+      "distress_score": 53,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-019206",
+      "property_address": "1808 EDENSIDE AVE LOUISVILLE KY 40204",
+      "owner_name": "LAMBERT SAMMIE S",
+      "owner_mailing_address": "1808 EDENSIDE AVE LOUISVILLE KY 40204-1522",
+      "parcel_id": "076F00040000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "severe_exterior_deterioration",
+        "overgrown_vegetation",
+        "trash_or_debris",
+        "nuisance"
+      ],
+      "ai_summary": "Severe exterior neglect and a tree hazard create meaningful distress despite uncertain vacancy.",
+      "confirmed_facts": [
+        "Complaint reports extreme overgrowth, porch garbage and a potentially dangerous tree branch.",
+        "Inspector ordered boxes and dead limbs removed."
+      ],
+      "speculative_claims": [
+        "The complaint says the property looks abandoned/vacant, but the structured occupancy field says occupied."
+      ],
+      "description_raw": "Citizen is reporting that there is a tree branch that is potentially going to fall in the front yard of this property. Also, the grass, weeds, bushes, and trees are extremely overgrown. There is garbage on the front porch. The property is next to the St. James School and looks to be abandoned/vacant.",
+      "inspector_comments": [
+        "Remove items such as boxes from front porch",
+        "Remove dead limbs along sidewalk in front of house"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1653&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 37,
+      "priority_score": 62,
+      "priority_tier": "STRONG",
+      "distress_score": 51,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-018287",
+      "property_address": "5511 HUNT CLUB LN 12 LOUISVILLE KY 40214",
+      "owner_name": "LEGACY APARTMENTS TIC",
+      "owner_mailing_address": "2 LLC * 275 E HILLCREST DR STE 160 PMB 173 THOUSAND OAKS CA 91360-7772",
+      "parcel_id": "103500010000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "infestation",
+        "tenant_issue",
+        "owner_unresponsive"
+      ],
+      "ai_summary": "Reported rodent/cockroach infestation after owner notice is a meaningful tenant/habitability distress signal.",
+      "confirmed_facts": [
+        "Complaint reports cockroach and mouse problems that had already been reported to the property owner."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Citizen reports there are issues with cockroaches and mice in the apartment that they have reported to the property owner for correction. Citizen wanted to remain anonymous.",
+      "inspector_comments": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D4980&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 38,
+      "priority_score": 58,
+      "priority_tier": "REVIEW",
+      "distress_score": 44,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-018973",
+      "property_address": "3907 VALLEY STATION RD LOUISVILLE KY 40272",
+      "owner_name": "WATANABE AMANDA E",
+      "owner_mailing_address": "3907 VALLEY STATION RD LOUISVILLE KY 40272-2841",
+      "parcel_id": "117401990000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "severe_exterior_deterioration",
+        "nuisance"
+      ],
+      "ai_summary": "A dangerous tree threatening nearby structures is a meaningful but localized distress signal.",
+      "confirmed_facts": [
+        "Inspector identified a dangerous tree that must be cut to a safe height.",
+        "Complaint reports the tree is losing large limbs and leaning toward neighboring houses."
+      ],
+      "speculative_claims": [
+        "The caller's statement that the tree is leaning more each day is not independently measured."
+      ],
+      "description_raw": "Diseased tree in the south corner of the back yard. Tree is losing large limbs and leaning towards the neighboring houses. Caller lives at 10201 Hearthstone Court and is very concerned about this tree. He reports it is leaning a little more every day and is concerned it will fall on his house. He reports the tree can be viewed from his property and has left his contact information. \"Caller was informed that their contact information is part of this public record\".",
+      "inspector_comments": [
+        "Remove and properly dispose of all noxious vines and weeds throughout entire property grounds and maintain it all times",
+        "Dangerous tree must be cut to height that, when falling, does not hit occupied structure"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0071&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 39,
+      "priority_score": 58,
+      "priority_tier": "REVIEW",
+      "distress_score": 44,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-25-020812",
+      "property_address": "6802 BEAU CT LOUISVILLE KY 40214",
+      "owner_name": "AFTIN ABDIFATAH MAALIM",
+      "owner_mailing_address": "6802 BEAU CT LOUISVILLE KY 40214-1001",
+      "parcel_id": "136300400000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "severe_exterior_deterioration",
+        "nuisance"
+      ],
+      "ai_summary": "A dangerous dead tree with reported prior damage is a meaningful localized distress signal.",
+      "confirmed_facts": [
+        "Inspector required dead limbs to be removed or the tree reduced to a safe height.",
+        "Complaint reports the dead tree has dropped limbs and caused property damage."
+      ],
+      "speculative_claims": [],
+      "description_raw": "CALLER REPORTING THERE IS A VERY LARGE, OLD OAK TREE IN THE CORNER OF THE BACK YARD THAT IS DEAD AND HAS BEEN DROPPING LIMBS. CALLER SAYS THE TREE NEEDS TO BE REMOVED AND THAT IT HAS ALREADY DONE PROPERTY DAMAGE IN THE AREA. THANK YOU.",
+      "inspector_comments": [
+        "All limbs with no life or growth must be cut. Have the trees dead wooded or cut to a safe height."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=25REC&capID2=00000&capID3=G4705&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 40,
+      "priority_score": 51,
+      "priority_tier": "REVIEW",
+      "distress_score": 32,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-015601",
+      "property_address": "2717 ELLIOTT AVE LOUISVILLE KY 40211",
+      "owner_name": "LOUISVILLE",
+      "owner_mailing_address": "46 LLC * 3490 PIEDMONT RD NE STE 1425 ATLANTA GA 30305-4811",
+      "parcel_id": "001F00480000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "LOW",
+      "ai_signals": [
+        "vacancy",
+        "overgrown_vegetation"
+      ],
+      "ai_summary": "Vacant land with grass enforcement is a modest land-distress signal but not a severe condition.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant lot.",
+        "Complaint and inspector records are limited primarily to high grass/weeds."
+      ],
+      "speculative_claims": [],
+      "description_raw": "CITIZEN REPORTS HIGH GRASS & WEEDS. THANK YOU.",
+      "inspector_comments": [
+        "Grass must be cut at or below 10 inches tall throughout entire property grounds and maintained at all times. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B8636&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 41,
+      "priority_score": 46,
+      "priority_tier": "REVIEW",
+      "distress_score": 23,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-013944",
+      "property_address": "3219 VIRGINIA AVE LOUISVILLE KY 40211",
+      "owner_name": "BAILEY LASHONA",
+      "owner_mailing_address": "3219 VIRGINIA AVE LOUISVILLE KY 40211-3455",
+      "parcel_id": "045J00680000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "LOW",
+      "ai_signals": [
+        "trash_or_debris",
+        "nuisance",
+        "other"
+      ],
+      "ai_summary": "Trash and vehicle-storage issues show active neglect but limited deeper distress.",
+      "confirmed_facts": [
+        "Complaint reports large trash bags/debris in the rear alley.",
+        "Inspector ordered debris cleanup and vehicle compliance."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Occupants discarding huge trash and trash bags in rear alley",
+      "inspector_comments": [
+        "All building materials and debris must be in an approved container and not place on ground. All properties must be clean and maintained. This includes easements midway in alley and street into the property. Any overgrowth must be removed. You have 7 days to be compliant.",
+        "All vehicles must be parked on a hard durable surface, be operable and have current tags on vehicle. The Ribbon the backyard must be removed or brought into compliance."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=A8257&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 42,
+      "priority_score": 46,
+      "priority_tier": "REVIEW",
+      "distress_score": 23,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-019139",
+      "property_address": "9009 WOODDALE DR LOUISVILLE KY 40272",
+      "owner_name": "BUNDRAGE MICHAEL R",
+      "owner_mailing_address": "9009 WOODDALE DR LOUISVILLE KY 40272-2752",
+      "parcel_id": "129800410000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "LOW",
+      "ai_signals": [
+        "trash_or_debris",
+        "nuisance",
+        "other"
+      ],
+      "ai_summary": "Porch debris and a sitting vehicle are weak-to-moderate exterior distress indicators.",
+      "confirmed_facts": [
+        "Complaint reports boxes/debris around the front porch and a vehicle sitting in the driveway for six weeks."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Boxes and debris on the front porch and around the front porch. Vehicle sitting in the driveway for 6 weeks.",
+      "inspector_comments": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1236&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 43,
+      "priority_score": 44,
+      "priority_tier": "LOW",
+      "distress_score": 20,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-019136",
+      "property_address": "413 REVOLUTIONARY RD LOUISVILLE KY 40214",
+      "owner_name": "LEWIS WILLIAM EARL JR",
+      "owner_mailing_address": "413 REVOLUTIONARY RD LOUISVILLE KY 40214-5445",
+      "parcel_id": "139300710000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "LOW",
+      "ai_signals": [
+        "overgrown_vegetation",
+        "accumulated_fines"
+      ],
+      "ai_summary": "High grass with a small assessed citation remains a relatively weak distress signal.",
+      "confirmed_facts": [
+        "Complaint and inspector records document high grass/weeds.",
+        "A $100 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "description_raw": "High grass and weeds throughout the property.",
+      "inspector_comments": [
+        "The entire property must be cut within 7 days of this notice. The entire property must remain cut, clean, organized, and maintained at all times. Grass/weeds must stay under 10 inches: including easements and flower beds."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 100.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1178&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 44,
+      "priority_score": 43,
+      "priority_tier": "LOW",
+      "distress_score": 18,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-019218",
+      "property_address": "8922 MAPLECREEK DR LOUISVILLE KY 40219",
+      "owner_name": "WE BUY RENTAL HOUSES LLC",
+      "owner_mailing_address": "8225 SHELBYVILLE RD LOUISVILLE KY 40222-5421",
+      "parcel_id": "206300860000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "LOW",
+      "ai_signals": [
+        "overgrown_vegetation"
+      ],
+      "ai_summary": "Extended grass neglect is weak-to-moderate property distress; the personal-relationship claim is not used as evidence.",
+      "confirmed_facts": [
+        "Complaint and inspector records document grass not cut since before July 4 and high weeds."
+      ],
+      "speculative_claims": [
+        "The complaint speculates about a relationship separation and family members moving out; that is not verified."
+      ],
+      "description_raw": "The grass has not been cut since before July 4th. I believe there is an issue in the relationship and the woman and kids have moved out leaving the man.",
+      "inspector_comments": [
+        "High grass and weeds throughout are in need of immediate attention."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1719&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 45,
+      "priority_score": 43,
+      "priority_tier": "LOW",
+      "distress_score": 18,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-018979",
+      "property_address": "8110 ROCKY GAP RD LOUISVILLE KY 40214",
+      "owner_name": "ALTO ASSET CO",
+      "owner_mailing_address": "1 LLC * 3903 S CONGRESS AVE UNIT 40298 AUSTIN TX 7804-0213",
+      "parcel_id": "136001580000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "LOW",
+      "ai_signals": [
+        "overgrown_vegetation"
+      ],
+      "ai_summary": "High grass alone is a weak acquisition-distress signal.",
+      "confirmed_facts": [
+        "Complaint and inspector records are limited to grass and weeds over ten inches."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Grass and weeds over 10 inches",
+      "inspector_comments": [
+        "The entire property must be cut within 7 days of this notice. The entire property must remain cut, clean, organized, and maintained at all times. Grass/weeds must stay under 10 inches: including easements and flower beds."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0125&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 46,
+      "priority_score": 42,
+      "priority_tier": "LOW",
+      "distress_score": 17,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-018504",
+      "property_address": "2910 WINDSOR FOREST DR LOUISVILLE KY 40272",
+      "owner_name": "DALY RAGEN",
+      "owner_mailing_address": "2910 WINDSOR FOREST DR LOUISVILLE KY 40272-2344",
+      "parcel_id": "143702700000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "LOW",
+      "ai_signals": [
+        "nuisance",
+        "other"
+      ],
+      "ai_summary": "Parking/storage enforcement is a weak property-distress signal by itself.",
+      "confirmed_facts": [
+        "Inspector required the trailer to be parked on a hard durable surface."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Trailer among other items in the front yard been there for several weeks",
+      "inspector_comments": [
+        "Trailer must be parked on a hard durable surface"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D7281&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 47,
+      "priority_score": 42,
+      "priority_tier": "LOW",
+      "distress_score": 17,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-019051",
+      "property_address": "414 LOUIS COLEMAN JR DR LOUISVILLE KY 40212",
+      "owner_name": "LEWIS CHRISTOPHER",
+      "owner_mailing_address": "414 LOUIS COLEMAN JR DR LOUISVILLE KY 40212-2218",
+      "parcel_id": "008G01660000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "LOW",
+      "ai_signals": [
+        "nuisance",
+        "other"
+      ],
+      "ai_summary": "A vehicle/storage violation is a weak acquisition-distress signal by itself.",
+      "confirmed_facts": [
+        "Complaint and inspector records document a non-operational vehicle and parking compliance issue."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Non operational vehicle parked behind home",
+      "inspector_comments": [
+        "All vehicles must be currently licensed and in operable condition. All vehicles must be parked on a hard durable surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0604&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 48,
+      "priority_score": 42,
+      "priority_tier": "LOW",
+      "distress_score": 17,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-019053",
+      "property_address": "418 LOUIS COLEMAN JR DR LOUISVILLE KY 40212",
+      "owner_name": "RILEY ODESSA",
+      "owner_mailing_address": "418 LOUIS COLEMAN JR DR LOUISVILLE KY 40212-2218",
+      "parcel_id": "008G01640000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "LOW",
+      "ai_signals": [
+        "nuisance",
+        "other"
+      ],
+      "ai_summary": "A vehicle-storage violation alone is a weak acquisition-distress signal.",
+      "confirmed_facts": [
+        "Complaint and inspector records document a non-operational vehicle and parking compliance issue."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Non operational vehicle parked in backyard",
+      "inspector_comments": [
+        "All vehicles must be currently licensed and in operable condition. All vehicles must be parked on a hard durable surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0609&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 49,
+      "priority_score": 41,
+      "priority_tier": "LOW",
+      "distress_score": 15,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-25-006610",
+      "property_address": "13515 BOHANNON AVE LOUISVILLE KY 40272",
+      "owner_name": "CAVINS KYRA",
+      "owner_mailing_address": "13515 BOHANNON AVE LOUISVILLE KY 40272-1407",
+      "parcel_id": "105901070000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "LOW",
+      "ai_signals": [
+        "overgrown_vegetation"
+      ],
+      "ai_summary": "High grass alone is a weak acquisition-distress signal.",
+      "confirmed_facts": [
+        "Complaint and inspector records are limited to high grass and weeds."
+      ],
+      "speculative_claims": [],
+      "description_raw": "HIGH GRASS & WEEDS - 20 BUS DAYS",
+      "inspector_comments": [
+        "All grass and weeds are to be below 10\" at all times. Cut and maintain."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=25REC&capID2=00000&capID3=65354&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "rank": 50,
+      "priority_score": 41,
+      "priority_tier": "LOW",
+      "distress_score": 15,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-018578",
+      "property_address": "10502 VISTA VIEW DR LOUISVILLE KY 40291",
+      "owner_name": "RAI NANDA KUMAR",
+      "owner_mailing_address": "10502 VISTA VIEW DR LOUISVILLE KY 40291-5150",
+      "parcel_id": "405500350000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "LOW",
+      "ai_signals": [
+        "overgrown_vegetation"
+      ],
+      "ai_summary": "Rear-yard weeds alone are a weak acquisition-distress signal.",
+      "confirmed_facts": [
+        "Complaint and inspector records are limited to high weeds in the rear yard."
+      ],
+      "speculative_claims": [],
+      "description_raw": "High weeds in the back yard",
+      "inspector_comments": [
+        "Entire property must be kept cut, clean and maintained at all times, Grass and weeds cut at 10 inches or below. Rear yard needs cutting."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D7846&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    }
+  ]
+}
