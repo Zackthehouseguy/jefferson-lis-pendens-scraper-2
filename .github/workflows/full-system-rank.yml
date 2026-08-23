@@ -1,0 +1,48 @@
+name: Full System Rank Acceptance
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/full-system-rank.yml"
+      - "scrapers/probe/full_system_rank.py"
+      - "reports/full_system_live/ai_classifications.json"
+      - "scrapers/decision_layer.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rank:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run full-system ranking acceptance
+        run: python -m scrapers.probe.full_system_rank
+      - name: Persist ranked report
+        if: always()
+        run: |
+          if [ -f reports/full_system_live/final_ranked_report.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add reports/full_system_live/final_ranked_report.json reports/full_system_live/final_ranked_report.md
+            git diff --cached --quiet || git commit -m "Update full system ranked acceptance report [skip ci]"
+            git push origin HEAD:main
+          fi
+      - name: Upload ranked report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: full-system-ranked-acceptance
+          path: |
+            reports/full_system_live/final_ranked_report.json
+            reports/full_system_live/final_ranked_report.md
+          if-no-files-found: error
+          retention-days: 14
