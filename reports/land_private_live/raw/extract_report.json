@@ -1,0 +1,1608 @@
+{
+  "status": "PASS",
+  "generated_at_utc": "2026-08-23T05:41:26.424517+00:00",
+  "generated_at_et": "2026-08-23T01:41:26.424517-04:00",
+  "runtime_seconds": 187.749,
+  "pm_features_fetched": 5000,
+  "parent_groups_discovered": 2349,
+  "vacant_lot_parent_groups": 181,
+  "demolition_transition_watch_groups": 42,
+  "target_verified_land": 15,
+  "parent_groups_inspected": 22,
+  "verified_land_records": [
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-002254",
+      "record_status": "Open",
+      "property_address": "1309 OLIVE ST LOUISVILLE KY 40211",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40211",
+      "description_raw": "There is litter and trash items strewn all across the alley and into the yard",
+      "inspector_comments": [
+        "Cut all high grass and overgrowth."
+      ],
+      "owner_name": "TOODLE NICHOLAS HEIRS OR DEVISEES OF",
+      "owner_mailing_address": "2514 GRAND AVE APT 2 LOUISVILLE KY 40210-1148",
+      "owner_mailing_differs": true,
+      "parcel_id": "048E00960000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=24330&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7696&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-21",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 100.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "parcel_type": 0,
+      "lot_sqft": 11387.0,
+      "lot_acres": 0.2614,
+      "pin": null,
+      "zoning_code": "C1",
+      "zoning_name": "COMMERCIAL",
+      "zoning_type": "COMMERCIAL-INDUSTRIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-013625",
+      "record_status": "Open",
+      "property_address": "1225 CYPRESS ST LOUISVILLE KY 40211",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40211",
+      "description_raw": null,
+      "inspector_comments": [
+        "Cut all high grass and overgrowth. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "owner_name": "ABDULLAH MILANDO C",
+      "owner_mailing_address": "3675 N COLORADO AVE INDIANAPOLIS IN 46218-1555",
+      "owner_mailing_differs": true,
+      "parcel_id": "046K00380000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=A6309&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B2946&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-21",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "parcel_type": 0,
+      "lot_sqft": 7424.5,
+      "lot_acres": 0.1704,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "VACANT",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-008067",
+      "record_status": "Open",
+      "property_address": "10100 BLACK IRON RD LOUISVILLE KY 40291",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40291",
+      "description_raw": "Black Iron Rd at Glenmary, property is unkept, old fence post, fencing has been dropped and left since last year and property needs cutting. Property on Glenmary Farm Drive that rear of homes back up to Club House is not being maintained weeds are getting high. The property across from club house where perfectly good trees were destroyed and left laying on property along with trees half cut. All of these things are destroying the views from our homes and reducing the interest of people who would have considered buying in the subdivision.",
+      "inspector_comments": [
+        "Exact 50 ft buffer must be maintained around public right of ways and occupied homes/businesses. (It is only about 20 ft buffer at this moment) All tall grass and weeds must be maintained and kept below 10 inches at all times. This includes all flowerbeds, around yard furniture, easements along side or rear by alleys, next to foundation, etc. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "owner_name": "AL CAT LLC",
+      "owner_mailing_address": "PO BOX 22589 LOUISVILLE KY 40252-0589",
+      "owner_mailing_differs": true,
+      "parcel_id": "2527000D0000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=68204&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D1414&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-21",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 430354.8,
+      "lot_acres": 9.8796,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-013626",
+      "record_status": "Open",
+      "property_address": "1221 CYPRESS ST LOUISVILLE KY 40211",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40211",
+      "description_raw": null,
+      "inspector_comments": [
+        "Cut all high grass and overgrowth. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "owner_name": "GIDDOT PROPERTIES LLC",
+      "owner_mailing_address": "13251 VENTURA BLVD STUDIO CITY CA 91604-1838",
+      "owner_mailing_differs": true,
+      "parcel_id": "046K00390000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=A6312&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B2944&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-21",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "parcel_type": 0,
+      "lot_sqft": 3723.9,
+      "lot_acres": 0.0855,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "VACANT",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-018477",
+      "record_status": "Open",
+      "property_address": "9810 NEWBRIDGE RD LOUISVILLE KY 40291",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40291",
+      "description_raw": "Tree has fallen into creek blocking water flow. Overgrown vines and ivy could possibly cause damage to other trees around the area.",
+      "inspector_comments": [
+        "Please remove and properly dispose of fallen tree in drainage ditch/creek behind 6606 Brighton Hill ln"
+      ],
+      "owner_name": "VILLAGES AT NEWBRIDGE PROPERTY OWNER",
+      "owner_mailing_address": "6503 DUNSTONBURG LN LOUISVILLE KY 40291-4851",
+      "owner_mailing_differs": true,
+      "parcel_id": "307700730000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D6321&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D6322&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-21",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 115852.9,
+      "lot_acres": 2.6596,
+      "pin": null,
+      "zoning_code": "CM",
+      "zoning_name": "COMM MANUFACTURING",
+      "zoning_type": "COMMERCIAL-INDUSTRIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-011727",
+      "record_status": "Open",
+      "property_address": "543 S 20TH ST LOUISVILLE KY 40203",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40203",
+      "description_raw": "CITIZEN REPORTS HIGH GRASS & WEEDS, ALONG WITH OVERGROWN BUSHES. THANK YOU.",
+      "inspector_comments": [
+        "Vacant lot must be cut/clean throughout INCLUDING REAR EASEMENT OF LOT FULL OF TREE DEBRIS AND OVERGROWN GRASS"
+      ],
+      "owner_name": "LT & JT III INVESTORS LLC",
+      "owner_mailing_address": "PO BOX 206654 LOUISVILLE KY 40250-6654",
+      "owner_mailing_differs": true,
+      "parcel_id": "001E00940000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=93485&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3190&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-21",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "parcel_type": 0,
+      "lot_sqft": 4267.7,
+      "lot_acres": 0.098,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-015601",
+      "record_status": "Open",
+      "property_address": "2717 ELLIOTT AVE LOUISVILLE KY 40211",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40211",
+      "description_raw": "CITIZEN REPORTS HIGH GRASS & WEEDS. THANK YOU.",
+      "inspector_comments": [
+        "Grass must be cut at or below 10 inches tall throughout entire property grounds and maintained at all times. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "owner_name": "LOUISVILLE",
+      "owner_mailing_address": "46 LLC * 3490 PIEDMONT RD NE STE 1425 ATLANTA GA 30305-4811",
+      "owner_mailing_differs": true,
+      "parcel_id": "001F00480000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B8636&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1302&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-21",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 4384.3,
+      "lot_acres": 0.1007,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "VACANT",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-017755",
+      "record_status": "Open",
+      "property_address": "2327 W KENTUCKY ST LOUISVILLE KY 40210",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40210",
+      "description_raw": "CALLER REPORTING HIGH GRASS AT THIS VACANT LOT. THANK YOU.",
+      "inspector_comments": [
+        "Remove all trash, rubbish and debris from rear lot. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "owner_name": "BROWN MICHAEL LEE",
+      "owner_mailing_address": "301 N 35TH ST LOUISVILLE KY 40212-2115",
+      "owner_mailing_differs": true,
+      "parcel_id": "038A00670000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D1432&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D1433&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-21",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 100.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "parcel_type": 0,
+      "lot_sqft": 3967.7,
+      "lot_acres": 0.0911,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "RIGHT-OF-WAY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-011115",
+      "record_status": "Open",
+      "property_address": "1643 PRENTICE ST LOUISVILLE KY 40210",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40210",
+      "description_raw": null,
+      "inspector_comments": [
+        "All properties must be clean and maintained. This includes easements midway in alley and street into the property. Any overgrowth must be removed. You have 7 days to be compliant."
+      ],
+      "owner_name": "TRUNZLER MARY K HEIRS OR DEVISEES OF",
+      "owner_mailing_address": "1643 PRENTICE ST LOUISVILLE KY 40210",
+      "owner_mailing_differs": false,
+      "parcel_id": "037D02110000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=89407&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D4131&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-21",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [],
+      "violation_descriptions": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 2894.5,
+      "lot_acres": 0.0664,
+      "pin": null,
+      "zoning_code": "R7",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "VACANT",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-018052",
+      "record_status": "Open",
+      "property_address": "1481 BLAND ST LOUISVILLE KY 40217",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40217",
+      "description_raw": "Property is overgrown and has not been maintained.",
+      "inspector_comments": [
+        "Cut all tall grass and weeds throughout entire property. Property must be cleaned, cut and maintained at all times."
+      ],
+      "owner_name": "MILES METHODIST MEMORIAL COLORED EPI * ADDRESS UNKNOWN EXEMPT KY EXEMPT",
+      "owner_mailing_address": null,
+      "owner_mailing_differs": false,
+      "parcel_id": "024B00930000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D3218&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D6166&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-21",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Occupied Structure",
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "parcel_type": 0,
+      "lot_sqft": 5548.5,
+      "lot_acres": 0.1274,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "PUBLIC AND SEMI-PUBLIC",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-018115",
+      "record_status": "Open",
+      "property_address": "1612 W OAK ST LOUISVILLE KY 40210",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40210",
+      "description_raw": null,
+      "inspector_comments": [],
+      "owner_name": "NEWSOME JUSTIN",
+      "owner_mailing_address": "1921 ELBA DR LOUISVILLE KY 40218-2123",
+      "owner_mailing_differs": true,
+      "parcel_id": "039B01220000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D3714&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3721&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-21",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [],
+      "violation_descriptions": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 4537.1,
+      "lot_acres": 0.1042,
+      "pin": null,
+      "zoning_code": "R7",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-24-020140",
+      "record_status": "Open",
+      "property_address": "2044 S PRESTON ST LOUISVILLE KY 40217",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40217",
+      "description_raw": "Caller reports that he has heard people banging and hammering on things inside this vacant, boarded up building, and two nights ago smelled smoke either from a fire or from cooking. The building is boarded up but the boards on the back have been removed, and the windows on the 2nd floor are broken out. Caller is concerned that whoever is living inside may start a fire. Caller was not sure how many people may be occupying the building.",
+      "inspector_comments": [
+        "Property must be cleaned and maintained at all times and trash, rubbish and debris tree limbs, or cuttings must be properly disposed of high grass and weeds. Must be cut below 10 inches."
+      ],
+      "owner_name": "SV REHAB LLC",
+      "owner_mailing_address": "925 HOBBS LN FISHERVILLE KY 40023-8725",
+      "owner_mailing_differs": true,
+      "parcel_id": "035L01740000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=24REC&capID2=00000&capID3=O8440&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A1714&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-21",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 5830.5,
+      "lot_acres": 0.1338,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-008499",
+      "record_status": "Open",
+      "property_address": "612 N 17TH ST LOUISVILLE KY 40203",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40203",
+      "description_raw": null,
+      "inspector_comments": [
+        "Remove all trash and debris from property- property must be kept clean and maintained at all times",
+        "Sleeping outside intense is not a habitable space- please remove",
+        "Large tent encampment on property. No visible means of sanitation. Property has been referred for cleaning due to a large amount of garbage and debris. Eliminate encampment and clean property."
+      ],
+      "owner_name": "DIEHLMAN LOREN",
+      "owner_mailing_address": "170 WOODLAND RD LOT 24 VINE GROVE KY 40175-6047",
+      "owner_mailing_differs": true,
+      "parcel_id": "015J01650000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=71351&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9955&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-21",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "X48",
+        "I21"
+      ],
+      "violation_descriptions": [
+        "X48 - PUB. NUISANCE [156.051 A] All premises shall be kept and maintained free of any public nuisance.",
+        "I21 - SLEEPING IN NONHABIT. OR PUBLI [156.103-D-4] (Sleeping in Nonhabitable or Public Space) No person shall use any kitchen, nonhabitable or public space for sleeping purposes, nor shall food be prepared or cooked in any room used for sleeping purposes, except in an efficiency apartment. ..."
+      ],
+      "citation_event_count": 2,
+      "citation_assessed_total": 1200.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "parcel_type": 0,
+      "lot_sqft": 1388.2,
+      "lot_acres": 0.0319,
+      "pin": null,
+      "zoning_code": "EZ1",
+      "zoning_name": "ENTERPRISE ZONE",
+      "zoning_type": "COMMERCIAL-INDUSTRIAL",
+      "landuse_name": "RIGHT-OF-WAY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-019144",
+      "record_status": "Open",
+      "property_address": "6800 SLURPEE ST LOUISVILLE KY 40228",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40228",
+      "description_raw": null,
+      "inspector_comments": [
+        "Disabled Vehicle located at vacant lot by the street of Fagan Bush needs to be removed."
+      ],
+      "owner_name": "THG FEGENBUSH LANE SPEEDWAY LLC",
+      "owner_mailing_address": "2307 RIVER RD STE 202 LOUISVILLE KY 40206-5005",
+      "owner_mailing_differs": true,
+      "parcel_id": "063601650000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1264&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1265&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-20",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "05A"
+      ],
+      "violation_descriptions": [
+        "05A - ILLEGALLY PARKED/ABANDONED VEH [156.052-I, J] (156.052-I, J).... All motor vehicles must be parked on a hard and durable surface and no inoperative or unlicensed motor vehicle shall be parked, kept or stored on any premises, and no vehicle shall at any time be in a state of major disassembly, disrepair, or in the process of being stripped or dismantled. Vehicles may only be parked on those portions of the premises, which the Land Development Code allows as permissible parking areas, also all vehicles must be parked on a hard durable surface. Painting of vehicles is prohibited on residentially zoned or used property, except as provided for in other regulations. (156.052-J) Removal by Metro Government. In the event that any person fails to comply with an order issued pursuant to this section, the Code Official may have the vehicle parked or stored in violation of this section, removed and disposed of and may impose on the person violating the order a reasonable charge to cover the direct and indirect costs, if any, for the removal and disposition of the motor vehicle or major parts thereof."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 117783.4,
+      "lot_acres": 2.7039,
+      "pin": null,
+      "zoning_code": "C1",
+      "zoning_name": "COMMERCIAL",
+      "zoning_type": "COMMERCIAL-INDUSTRIAL",
+      "landuse_name": "RIGHT-OF-WAY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-007727",
+      "record_status": "Open",
+      "property_address": "4209 LA SALLE AVE LOUISVILLE KY 40215",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40215",
+      "description_raw": null,
+      "inspector_comments": [
+        "Remove all trash, tree debris, rubbish from the entire property. The entire property must remain cut, clean, organized and maintained at all times. Cut grass to the street and midway into the alley if applicable. Keep the alley clean midway to the middle if applicable. Grass/weeds must stay at or under 10 inches at all times. Including the flower bed and easements."
+      ],
+      "owner_name": "DURBIN CHARLES HEIRS OR DEVISEES OF",
+      "owner_mailing_address": "4209 LA SALLE AVE LOUISVILLE KY 40215",
+      "owner_mailing_differs": false,
+      "parcel_id": "067G00590000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=65934&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D2380&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-20",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [],
+      "violation_descriptions": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 2954.1,
+      "lot_acres": 0.0678,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    }
+  ],
+  "demolition_watch_preview": [
+    {
+      "parent_case": "ENF-PMNT-26-019259",
+      "parcel_id": "013H02150000",
+      "address": "638 VILLAGE WEST DR, LOUISVILLE, KY 40203",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X72"
+      ],
+      "event_date": "2026-08-21",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-018175",
+      "parcel_id": "036F02460000",
+      "address": "843 S 26TH ST, LOUISVILLE, KY 40211",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "02A"
+      ],
+      "event_date": "2026-08-21",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-015492",
+      "parcel_id": "038A00720000",
+      "address": "2315 W KENTUCKY ST, LOUISVILLE, KY 40210",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A"
+      ],
+      "event_date": "2026-08-21",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-006173",
+      "parcel_id": "039C01810000",
+      "address": "1740 W ORMSBY AVE, LOUISVILLE, KY 40210",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "X94"
+      ],
+      "event_date": "2026-08-21",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-018498",
+      "parcel_id": "014F01680000",
+      "address": "1601 W MUHAMMAD ALI BLVD 7, LOUISVILLE, KY 40203",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A"
+      ],
+      "event_date": "2026-08-21",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-018478",
+      "parcel_id": "055H00480000",
+      "address": "114 E EVELYN AVE, LOUISVILLE, KY 40214",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A"
+      ],
+      "event_date": "2026-08-20",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-018232",
+      "parcel_id": "236201300000",
+      "address": "4519 BRAMERS LN, LOUISVILLE, KY 40216",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X50",
+        "X78",
+        "X40",
+        "X19",
+        "01A"
+      ],
+      "event_date": "2026-08-20",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-006688",
+      "parcel_id": "339904330000",
+      "address": "205 LOCUST PARK PL, LOUISVILLE, KY 40245",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A"
+      ],
+      "event_date": "2026-08-20",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-023635",
+      "parcel_id": "105501610000",
+      "address": "11006 JEFFERSON HILL RD, LOUISVILLE, KY 40118",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "X94"
+      ],
+      "event_date": "2026-08-20",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-001189",
+      "parcel_id": "102800720000",
+      "address": "6912 TRIANGLE DR, LOUISVILLE, KY 40214",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A",
+        "X50",
+        "X72",
+        "X15"
+      ],
+      "event_date": "2026-08-20",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-012105",
+      "parcel_id": "003F00910000",
+      "address": "2315 DUNCAN ST, LOUISVILLE, KY 40212",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X94"
+      ],
+      "event_date": "2026-08-19",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-007793",
+      "parcel_id": "001E01350000",
+      "address": "1934 W MADISON ST, LOUISVILLE, KY 40203",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A",
+        "X50",
+        "X78",
+        "X90",
+        "X19"
+      ],
+      "event_date": "2026-08-19",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-007005",
+      "parcel_id": "049D00400000",
+      "address": "1631 S 30TH ST, LOUISVILLE, KY 40211",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A"
+      ],
+      "event_date": "2026-08-19",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-007789",
+      "parcel_id": "067D02640000",
+      "address": "1440 ARLING AVE, LOUISVILLE, KY 40215",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X94"
+      ],
+      "event_date": "2026-08-19",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-011476",
+      "parcel_id": "039C00900000",
+      "address": "1313 DIXIE HWY, LOUISVILLE, KY 40210",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X156"
+      ],
+      "event_date": "2026-08-19",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-001373",
+      "parcel_id": "122300110065",
+      "address": "6016 MIDDLEROSE CIR, LOUISVILLE, KY 40272",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "X94"
+      ],
+      "event_date": "2026-08-19",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-21-004680",
+      "parcel_id": "038D00390000",
+      "address": "2303 HALE AVE, LOUISVILLE, KY 40210",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A"
+      ],
+      "event_date": "2026-08-19",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-009565",
+      "parcel_id": "160600800000",
+      "address": "3910 BENJE WAY, LOUISVILLE, KY 40241",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A",
+        "X50",
+        "X67",
+        "X72"
+      ],
+      "event_date": "2026-08-18",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-018875",
+      "parcel_id": "004G01260000",
+      "address": "461 N 28TH ST, LOUISVILLE, KY 40212",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A",
+        "X19"
+      ],
+      "event_date": "2026-08-18",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-010802",
+      "parcel_id": "048E00010000",
+      "address": "1371 CATALPA ST, LOUISVILLE, KY 40211",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X94"
+      ],
+      "event_date": "2026-08-18",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-007775",
+      "parcel_id": "039C00870000",
+      "address": "1321 DIXIE HWY, LOUISVILLE, KY 40210",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X69",
+        "R01"
+      ],
+      "event_date": "2026-08-18",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-018806",
+      "parcel_id": "048K00040000",
+      "address": "1429 CATALPA ST, LOUISVILLE, KY 40211",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X94"
+      ],
+      "event_date": "2026-08-18",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-009874",
+      "parcel_id": "041C01420000",
+      "address": "2213 W BURNETT AVE, LOUISVILLE, KY 40210",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X78",
+        "X94",
+        "X19"
+      ],
+      "event_date": "2026-08-17",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-018333",
+      "parcel_id": "039D00650000",
+      "address": "1635 WILSON AVE, LOUISVILLE, KY 40210",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A"
+      ],
+      "event_date": "2026-08-17",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-000439",
+      "parcel_id": "063D01240000",
+      "address": "816 WINKLER AVE, LOUISVILLE, KY 40208",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A"
+      ],
+      "event_date": "2026-08-17",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-006894",
+      "parcel_id": "053D00390000",
+      "address": "715 W ASHLAND AVE, LOUISVILLE, KY 40215",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X69",
+        "X15",
+        "X19"
+      ],
+      "event_date": "2026-08-17",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-016675",
+      "parcel_id": "063300470000",
+      "address": "4310 NAOMI DR, LOUISVILLE, KY 40219",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A",
+        "05A",
+        "080A",
+        "X19",
+        "Z006"
+      ],
+      "event_date": "2026-08-17",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-018563",
+      "parcel_id": "045C00190000",
+      "address": "3201 GREENWOOD AVE, LOUISVILLE, KY 40211",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A"
+      ],
+      "event_date": "2026-08-14",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-21-007813",
+      "parcel_id": "009D00840000",
+      "address": "3821 ALFORD AVE, LOUISVILLE, KY 40212",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A",
+        "X50",
+        "X19"
+      ],
+      "event_date": "2026-08-14",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-011491",
+      "parcel_id": "002H01000000",
+      "address": "403 S 27TH ST, LOUISVILLE, KY 40212",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A",
+        "E05",
+        "X50",
+        "X69",
+        "X40",
+        "X19",
+        "HO1"
+      ],
+      "event_date": "2026-08-14",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-24-019569",
+      "parcel_id": "004G02000000",
+      "address": "2708 GILLIGAN ST, LOUISVILLE, KY 40212",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X94"
+      ],
+      "event_date": "2026-08-14",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-24-018677",
+      "parcel_id": "057A00020000",
+      "address": "4443 SOUTHERN PKY, LOUISVILLE, KY 40214",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X50",
+        "X72",
+        "X78",
+        "X40",
+        "X15",
+        "X19"
+      ],
+      "event_date": "2026-08-14",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-010547",
+      "parcel_id": "236200480000",
+      "address": "4503 LAKE DREAMLAND RD, LOUISVILLE, KY 40216",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X72",
+        "X78",
+        "X911",
+        "05A",
+        "U01"
+      ],
+      "event_date": "2026-08-13",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-008064",
+      "parcel_id": "003J02250000",
+      "address": "2640 ROWAN ST, LOUISVILLE, KY 40212",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "X69",
+        "X94"
+      ],
+      "event_date": "2026-08-13",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-24-002661",
+      "parcel_id": "006B00430000",
+      "address": "635 CECIL AVE, LOUISVILLE, KY 40211",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X156"
+      ],
+      "event_date": "2026-08-13",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-003190",
+      "parcel_id": "032E01000000",
+      "address": "1382 S 2ND ST, LOUISVILLE, KY 40208",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X69"
+      ],
+      "event_date": "2026-08-13",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-004159",
+      "parcel_id": "009000090000",
+      "address": "4613 MUD LN, LOUISVILLE, KY 40229",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A",
+        "X78"
+      ],
+      "event_date": "2026-08-13",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-24-012094",
+      "parcel_id": "003K00820000",
+      "address": "2515 W MAIN ST, LOUISVILLE, KY 40212",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "X94"
+      ],
+      "event_date": "2026-08-13",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-015904",
+      "parcel_id": "115100320000",
+      "address": "5119 EUCLID AVE 2, LOUISVILLE, KY 40272",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A"
+      ],
+      "event_date": "2026-08-12",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-023331",
+      "parcel_id": "105801450000",
+      "address": "6800 WATSON LN, LOUISVILLE, KY 40272",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A"
+      ],
+      "event_date": "2026-08-12",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-002981",
+      "parcel_id": "100300850000",
+      "address": "3347 CAMP GROUND RD, LOUISVILLE, KY 40211",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A"
+      ],
+      "event_date": "2026-08-12",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-016589",
+      "parcel_id": "103502990000",
+      "address": "5633 NEW CUT RD, LOUISVILLE, KY 40214",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A",
+        "X69"
+      ],
+      "event_date": "2026-08-12",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    }
+  ],
+  "failures": [
+    {
+      "stage": "acceptance",
+      "parcel_id": "233400800000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "008G00500000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "037A00680000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "046E00850000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "042A00070000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "2527000C0000",
+      "reason": "parent_not_open",
+      "status": "Hearing"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "105100110000",
+      "reason": "parent_not_open",
+      "status": "Hearing"
+    }
+  ],
+  "guardrails": {
+    "landbank_excluded": true,
+    "vacant_structure_is_not_land": true,
+    "demolition_not_inferred_from_vacancy": true,
+    "citation_assessed_not_current_balance": true,
+    "builder_fit_is_estimate_not_buildability": true
+  }
+}
