@@ -1,0 +1,138 @@
+name: Allocate Agent Leads
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'triggers/agent_requests/*.json'
+  workflow_dispatch:
+    inputs:
+      agent_id:
+        description: Agent ID from config/agent_roster.json
+        required: true
+        type: string
+      houses_file:
+        description: Ranked/qualified SFR JSON pool
+        required: true
+        type: string
+      land_file:
+        description: Ranked/qualified land JSON pool
+        required: true
+        type: string
+      house_limit:
+        required: false
+        default: '25'
+        type: string
+      land_limit:
+        required: false
+        default: '25'
+        type: string
+
+permissions:
+  contents: write
+
+# Critical: all agents share one lock. A second allocation waits for the first
+# to commit state/lead_assignments.json before choosing leads.
+concurrency:
+  group: reaper-global-lead-allocation
+  cancel-in-progress: false
+
+jobs:
+  allocate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Resolve request
+        id: request
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "agent_id=${{ inputs.agent_id }}" >> "$GITHUB_OUTPUT"
+            echo "houses_file=${{ inputs.houses_file }}" >> "$GITHUB_OUTPUT"
+            echo "land_file=${{ inputs.land_file }}" >> "$GITHUB_OUTPUT"
+            echo "house_limit=${{ inputs.house_limit }}" >> "$GITHUB_OUTPUT"
+            echo "land_limit=${{ inputs.land_limit }}" >> "$GITHUB_OUTPUT"
+          else
+            REQUEST_FILE=$(git show --pretty='' --name-only "$GITHUB_SHA" | grep '^triggers/agent_requests/.*\.json$' | head -1)
+            if [ -z "$REQUEST_FILE" ]; then
+              echo 'No agent request file found in triggering commit.' >&2
+              exit 2
+            fi
+            echo "request_file=$REQUEST_FILE" >> "$GITHUB_OUTPUT"
+            python - "$REQUEST_FILE" "$GITHUB_OUTPUT" <<'PY'
+          import json,sys
+          p,out=sys.argv[1:]
+          d=json.load(open(p,encoding='utf-8'))
+          required=('agent_id','houses_file','land_file')
+          missing=[k for k in required if not d.get(k)]
+          if missing: raise SystemExit('Missing request fields: '+','.join(missing))
+          with open(out,'a',encoding='utf-8') as f:
+              f.write(f"agent_id={d['agent_id']}\n")
+              f.write(f"houses_file={d['houses_file']}\n")
+              f.write(f"land_file={d['land_file']}\n")
+              f.write(f"house_limit={int(d.get('house_limit',25))}\n")
+              f.write(f"land_limit={int(d.get('land_limit',25))}\n")
+          PY
+          fi
+
+      - name: Sync latest shared ledger
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
+      - name: Validate agent is active
+        env:
+          AGENT_ID: ${{ steps.request.outputs.agent_id }}
+        run: |
+          python - <<'PY'
+          import json,os
+          d=json.load(open('config/agent_roster.json',encoding='utf-8'))
+          aid=os.environ['AGENT_ID']
+          matches=[a for a in d.get('agents',[]) if a.get('agent_id')==aid and a.get('active') is True]
+          if not matches: raise SystemExit(f'Agent is not active in roster: {aid}')
+          PY
+
+      - name: Allocate unique sticky leads
+        env:
+          AGENT_ID: ${{ steps.request.outputs.agent_id }}
+          HOUSES_FILE: ${{ steps.request.outputs.houses_file }}
+          LAND_FILE: ${{ steps.request.outputs.land_file }}
+          HOUSE_LIMIT: ${{ steps.request.outputs.house_limit }}
+          LAND_LIMIT: ${{ steps.request.outputs.land_limit }}
+        run: |
+          OUT="reports/agent_batches/${AGENT_ID}/latest.json"
+          python -m scrapers.agent_allocator \
+            --agent-id "$AGENT_ID" \
+            --houses-file "$HOUSES_FILE" \
+            --land-file "$LAND_FILE" \
+            --house-limit "$HOUSE_LIMIT" \
+            --land-limit "$LAND_LIMIT" \
+            --state-file state/lead_assignments.json \
+            --output "$OUT"
+          python -m scrapers.probe.render_lead_cards \
+            --input "$OUT" \
+            --output "reports/agent_batches/${AGENT_ID}/latest.md" \
+            --kind mixed
+
+      - name: Persist assignment atomically
+        env:
+          AGENT_ID: ${{ steps.request.outputs.agent_id }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/lead_assignments.json "reports/agent_batches/${AGENT_ID}/latest.json" "reports/agent_batches/${AGENT_ID}/latest.md"
+          git diff --cached --quiet || git commit -m "Allocate Reaper leads to ${AGENT_ID} [skip ci]"
+          git push origin HEAD:main
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reaper-agent-batch-${{ steps.request.outputs.agent_id }}
+          path: reports/agent_batches/${{ steps.request.outputs.agent_id }}/
+          retention-days: 14
