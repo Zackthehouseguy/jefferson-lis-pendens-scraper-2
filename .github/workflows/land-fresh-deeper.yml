@@ -1,0 +1,42 @@
+name: Fresh Deeper Land Fill
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/land-fresh-deeper.yml'
+      - 'scrapers/probe/land_fresh_deeper_extract.py'
+      - 'scrapers/probe/land_live_extract.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          pip install requests beautifulsoup4 playwright
+          playwright install --with-deps chromium
+      - run: python -m scrapers.probe.land_fresh_deeper_extract
+      - name: Persist
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || true
+          git add reports/land_fresh_deeper/ || true
+          git diff --cached --quiet || git commit -m "Update fresh deeper land fill [skip ci]"
+          git push origin HEAD:main || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: land-fresh-deeper
+          path: reports/land_fresh_deeper/
+          retention-days: 14
+# trigger-20260823-0305
