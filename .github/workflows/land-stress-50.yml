@@ -40,3 +40,4 @@ jobs:
           name: land-stress-50
           path: reports/land_stress_50/
           retention-days: 14
+# trigger
