@@ -1,0 +1,220 @@
+{
+  "source_status": "PASS",
+  "generated_at_et": "2026-08-22T23:09:17.750538-04:00",
+  "range": [
+    31,
+    40
+  ],
+  "records": [
+    {
+      "case_number": "ENF-PMNT-26-018979",
+      "property_address": "8110 ROCKY GAP RD LOUISVILLE KY 40214",
+      "description_raw": "Grass and weeds over 10 inches",
+      "inspector_comments": [
+        "The entire property must be cut within 7 days of this notice. The entire property must remain cut, clean, organized, and maintained at all times. Grass/weeds must stay under 10 inches: including easements and flower beds."
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-013375",
+      "property_address": "3606 GARLAND AVE LOUISVILLE KY 40211",
+      "description_raw": "Citizen is reporting that this property has a lot of junk, trash, and debris in the back of the property that is cluttering the alley.",
+      "inspector_comments": [
+        "Remove all items from the backyard that are not meant to be stored outdoors. This does not include children's toys"
+      ],
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-018474",
+      "property_address": "230 ROCHESTER DR LOUISVILLE KY 40214",
+      "description_raw": "Vacant property with a For Rent sign in frony yard. Overgrown grass & weeds.",
+      "inspector_comments": [
+        "Entire property must remain cut and clean and free of all rubbish"
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-018209",
+      "property_address": "7400 SUMMER WOOD LN 202 LOUISVILLE KY 40228",
+      "description_raw": "mold in entire unit, in vents, mold found on clothes in dresser drawers contact (502)996-3162 Kenya Jackson",
+      "inspector_comments": [],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [],
+      "violation_descriptions": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-019139",
+      "property_address": "9009 WOODDALE DR LOUISVILLE KY 40272",
+      "description_raw": "Boxes and debris on the front porch and around the front porch. Vehicle sitting in the driveway for 6 weeks.",
+      "inspector_comments": [],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [],
+      "violation_descriptions": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-019051",
+      "property_address": "414 LOUIS COLEMAN JR DR LOUISVILLE KY 40212",
+      "description_raw": "Non operational vehicle parked behind home",
+      "inspector_comments": [
+        "All vehicles must be currently licensed and in operable condition. All vehicles must be parked on a hard durable surface."
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "05A",
+        "R01"
+      ],
+      "violation_descriptions": [
+        "05A - ILLEGALLY PARKED/ABANDONED VEH [156.052-I, J] (156.052-I, J).... All motor vehicles must be parked on a hard and durable surface and no inoperative or unlicensed motor vehicle shall be parked, kept or stored on any premises, and no vehicle shall at any time be in a state of major disassembly, disrepair, or in the process of being stripped or dismantled. Vehicles may only be parked on those portions of the premises, which the Land Development Code allows as permissible parking areas, also all vehicles must be parked on a hard durable surface. Painting of vehicles is prohibited on residentially zoned or used property, except as provided for in other regulations. (156.052-J) Removal by Metro Government. In the event that any person fails to comply with an order issued pursuant to this section, the Code Official may have the vehicle parked or stored in violation of this section, removed and disposed of and may impose on the person violating the order a reasonable charge to cover the direct and indirect costs, if any, for the removal and disposition of the motor vehicle or major parts thereof.",
+        "R01 - RENTAL REGISTRATION - RES. [119-LMCO] The failure to register a rental housing unit or apartment complex in accordance with LMCO 119.03 shall be classified as a civil offense with a penalty of up to $100 per rental housing unit or apartment complex. The owner or managing operator will be sent a ten day notice of violation with a warning of the failure to comply with the rental registry. Failure to comply at the end of ten days will result in a fine of up to $100 per rental housing unit or apartment complex. Thereafter, each day of such violation(s) shall constitute a separate offense."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-016335",
+      "property_address": "329 E OAK ST LOUISVILLE KY 40203",
+      "description_raw": "Raw sewage leak on property",
+      "inspector_comments": [
+        "Front and rear of property must be cleaned and remove all trash, rubbish, and debris and ensure is disposed of properly. Yard must be cut. Entire property must be kept clean, cut, and maintained at all times. This is to include all easement and right of ways such as alley and sidewalks. Each property owner is responsible for entire property such as fence lines, flowerbeds and to include cleaning and maintaining upto the center of the street or alley.",
+        "Utility must be restored to occupied property or property must be vacated.",
+        "Front common door is missing door knob and must be repaired or replaced.",
+        "Front yard is a large standing body of water that appears to be raw sewage that must be immediately repaired and area affected cleaned and sanitized.",
+        "Ensure trash receptacles are not blocking public right of way such as sidewalk. Stagnant water between the 329 and 327 must be abated immediately.",
+        "Ensure front section on roof tiles are secured and in place. Right side of property soffit is damaged and must be repaired or replaced.",
+        "Window missing or damaged in several areas and need to be repaired or replaced.",
+        "Property is being condemned."
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X47",
+        "X48",
+        "X50",
+        "X72",
+        "U01",
+        "X07",
+        "C01"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
+        "X47 - PROPERTY WATER DRAINAGE/ STAGNANT WATER [156.052-B] All premises shall be graded and maintained to prevent the erosion of soil and to prevent the accumulation of stagnant water thereon or within any structure located thereon. Water retention areas and/or reservoirs approved by the Metropolitan Sewer District are exempted.",
+        "X48 - PUB. NUISANCE [156.051 A] All premises shall be kept and maintained free of any public nuisance.",
+        "X50 - ROOF/ROOFING MATERIAL(S)/ DOWN SPOUTS/ GUTTERS [156.053-G] The roof and flashing shall be sound, tight and not have defects that admit water/moisture. ...Roof water shall not be discharged in a manner that creates a public nuisance.",
+        "X72 - WINDOW [156.053-N,1,2] Every window, skylight,...shall be kept in sound condition, good repair and weather tight. Every window other than a fixed window shall be easily openable and capable of being held in position by window hardware. All glazing materials shall be maintained free from cracks and holes.",
+        "U01 - TERMINATED UTILITIES SERVICE [156.183-A, 156.182-A, 156.154-A]... [156.183-A] Every occupied building shall be provided with an electrical system in compliance with the requirements of this section and 156.184? [156.182-A] (Terminated fuel service gas/fuel/oil/etc.) All mechanical appliances shall be properly installed and maintained in a safe working condition, and shall be capable of performing the intended function... [156.154-A] Every sink, lavatory, bathtub or shower, drinking fountain, water closet or other plumbing fixture shall be properly connected to either a public water system or to an approved private water system.",
+        "X07 - DOOR (EXTERIOR) [156.053-O-1, 156.053-O-2] All exterior doors, door assemblies and hardware shall be maintained in good condition? [156.053-O-2] (Door lock provision for principle entry) Double cylinder dead bolts requiring a key operation on both sides are prohibited on required means of egress.",
+        "C01 - CONDEMNATION (156.805 A) UNSAFE STRUCTURES AND EQUIPMENT; CONDEMNATION AND CLOSING OF. (A) Condemnation. When a structure or part thereof is found by the Code Official to be unsafe, or when a structure or part thereof is found unfit for human occupancy or use, or is found unlawful, it shall be condemned pursuant to the provisions of this chapter and shall be placarded and vacated."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-25-020812",
+      "property_address": "6802 BEAU CT LOUISVILLE KY 40214",
+      "description_raw": "CALLER REPORTING THERE IS A VERY LARGE, OLD OAK TREE IN THE CORNER OF THE BACK YARD THAT IS DEAD AND HAS BEEN DROPPING LIMBS. CALLER SAYS THE TREE NEEDS TO BE REMOVED AND THAT IT HAS ALREADY DONE PROPERTY DAMAGE IN THE AREA. THANK YOU.",
+      "inspector_comments": [
+        "All limbs with no life or growth must be cut. Have the trees dead wooded or cut to a safe height."
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "X90"
+      ],
+      "violation_descriptions": [
+        "X90 - DEAD/DANGEROUS TREE [156.005 (Definitions) (Public Nuisance) #7] You have a tree which is in danger of collapse of which poses a danger of contamination because of disease, decay, injury, infestation or damage is prohibited or creates a public nuisance and must be corrected or removed."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-25-010477",
+      "property_address": "10210 MORRISON RD LOUISVILLE KY 40229",
+      "description_raw": "CALLER REPORTS THAT THEY HAVE A LOT OF MISCELLANEOUS JUNK ON THE PROPERTY. (VEHICLES & TRAILERS HAVE ALREADY BEEN REPORTED TO ZONING.) THANK YOU.",
+      "inspector_comments": [
+        "All vehicles stored outdoors must be licensed, operable, have properly inflated tires, not in a state of disrepair or wrecked, and parked on a hard durable surface, such as concrete or gravel. This includes vehicles in the rear.",
+        "Entire property must be kept cut, clean and maintained at all times, Grass and weeds cut at 10 inches or below. Remove any rubbish, debris, trash, etc. Property, including the rear yard, cannot be used for outdoor storage of car parts, tires, appliances, and other related items.",
+        "Install the dead front panel on service panel/circuit breaker box.",
+        "Fill in any ruts where present, allowing standing/stagnant water to accumulate."
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "E05",
+        "X47",
+        "05A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
+        "E05 - ELECT. SERVICE DIST. PANEL/ SYSTEM AMPERAGE [156.183-B-C] {B} The size and usage of appliances and equipment shall serve as a basis for determining the need for additional facilities in accordance with the ICC Electrical Code. Dwelling units shall be served by a three-wire, 120/240 volt, single-phase electrical service having a rating of not less than 60 amperes. {C} Where it is found that the electrical system in a structure constitutes a hazard to the occupants or the structure by reason of inadequate service, improper/inadequate over-current protection, insufficient receptacle and lighting outlets, improper or unsafe wiring or installation, makeshift wiring or improper/inappropriate use of electrical extension cords, deterioration or damage, or for similar reasons, the Code Official shall require the defects to be corrected to eliminate the hazard.",
+        "X47 - PROPERTY WATER DRAINAGE/ STAGNANT WATER [156.052-B] All premises shall be graded and maintained to prevent the erosion of soil and to prevent the accumulation of stagnant water thereon or within any structure located thereon. Water retention areas and/or reservoirs approved by the Metropolitan Sewer District are exempted.",
+        "05A - ILLEGALLY PARKED/ABANDONED VEH [156.052-I, J] (156.052-I, J).... All motor vehicles must be parked on a hard and durable surface and no inoperative or unlicensed motor vehicle shall be parked, kept or stored on any premises, and no vehicle shall at any time be in a state of major disassembly, disrepair, or in the process of being stripped or dismantled. Vehicles may only be parked on those portions of the premises, which the Land Development Code allows as permissible parking areas, also all vehicles must be parked on a hard durable surface. Painting of vehicles is prohibited on residentially zoned or used property, except as provided for in other regulations. (156.052-J) Removal by Metro Government. In the event that any person fails to comply with an order issued pursuant to this section, the Code Official may have the vehicle parked or stored in violation of this section, removed and disposed of and may impose on the person violating the order a reasonable charge to cover the direct and indirect costs, if any, for the removal and disposition of the motor vehicle or major parts thereof."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 700.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-014799",
+      "property_address": "1134 GOSS AVE LOUISVILLE KY 40217",
+      "description_raw": "Caller reports the siding is falling off the house, the grass is very tall, there's tall weeds all over, there's junk laying in the front yard, the backyard looks \"horrendous\" and the grass by the street is very tall.",
+      "inspector_comments": [
+        "Repair or replace siding on the left side of the house where needed"
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "X19"
+      ],
+      "violation_descriptions": [
+        "X19 - EXTERIOR SURFACE(S)/SUPPORT MEMBERS/ FOUNDATION WALLS [156.053-B, D, E, F, K, L]... {B] All exterior surfaces, ...shall be maintained in good condition. ... shall be protected from the elements and decay by painting or other protective covering or treatment...and shall be free of peeling and chipping paint... {E] All foundation walls shall be maintained plumb and free from open cracks and breaks... {F} All exterior walls shall be free from holes, breaks, and loose or rotting materials; and maintained weatherproof and properly surface coated where required to prevent deterioration... {K] chimneys, cooling towers, smoke stacks, and similar appurtenances shall be maintained structurally safe and sound, and in good repair. ? {L] All chimneys, cooling towers, smoke stacks, and similar appurtenances shall be maintained structurally safe and sound, and in good repair. ... {D] All structural members shall be maintained free from deterioration, and shall be capable of safely supporting the imposed dead and live loads."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    }
+  ]
+}

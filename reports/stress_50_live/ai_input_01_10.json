@@ -1,0 +1,214 @@
+{
+  "source_status": "PASS",
+  "generated_at_et": "2026-08-22T23:09:17.750538-04:00",
+  "range": [
+    1,
+    10
+  ],
+  "records": [
+    {
+      "case_number": "ENF-PMNT-26-018504",
+      "property_address": "2910 WINDSOR FOREST DR LOUISVILLE KY 40272",
+      "description_raw": "Trailer among other items in the front yard been there for several weeks",
+      "inspector_comments": [
+        "Trailer must be parked on a hard durable surface"
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "05A"
+      ],
+      "violation_descriptions": [
+        "05A - ILLEGALLY PARKED/ABANDONED VEH [156.052-I, J] (156.052-I, J).... All motor vehicles must be parked on a hard and durable surface and no inoperative or unlicensed motor vehicle shall be parked, kept or stored on any premises, and no vehicle shall at any time be in a state of major disassembly, disrepair, or in the process of being stripped or dismantled. Vehicles may only be parked on those portions of the premises, which the Land Development Code allows as permissible parking areas, also all vehicles must be parked on a hard durable surface. Painting of vehicles is prohibited on residentially zoned or used property, except as provided for in other regulations. (156.052-J) Removal by Metro Government. In the event that any person fails to comply with an order issued pursuant to this section, the Code Official may have the vehicle parked or stored in violation of this section, removed and disposed of and may impose on the person violating the order a reasonable charge to cover the direct and indirect costs, if any, for the removal and disposition of the motor vehicle or major parts thereof."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-019257",
+      "property_address": "3406 ROWENA RD LOUISVILLE KY 40218",
+      "description_raw": "Exterior violations",
+      "inspector_comments": [
+        "Large pile of tree branches by street must be disposed of properly.",
+        "Smoke detector towards back of building hallway is chirping and need to be replaced.",
+        "Window frames are chipping and peeling. Remove any chipping and peeling paint and ensure all exposed wood is protected from the elements.",
+        "Property is not owner occupied and must be registered as a rental property via the Louisville Metro Government Rental Registry. www.louisvilleky.gov or call 502-574-2508 for assistance."
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X72",
+        "R01",
+        "I22"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
+        "X72 - WINDOW [156.053-N,1,2] Every window, skylight,...shall be kept in sound condition, good repair and weather tight. Every window other than a fixed window shall be easily openable and capable of being held in position by window hardware. All glazing materials shall be maintained free from cracks and holes.",
+        "R01 - RENTAL REGISTRATION - RES. [119-LMCO] The failure to register a rental housing unit or apartment complex in accordance with LMCO 119.03 shall be classified as a civil offense with a penalty of up to $100 per rental housing unit or apartment complex. The owner or managing operator will be sent a ten day notice of violation with a warning of the failure to comply with the rental registry. Failure to comply at the end of ten days will result in a fine of up to $100 per rental housing unit or apartment complex. Thereafter, each day of such violation(s) shall constitute a separate offense.",
+        "I22 - SMOKE DETECTOR (INT. OF DWELLING) [156.203-B-1, 3, 4 - C-1,2,4,6] (Smoke Detector Interior of Dwelling Unit) {1} In all dwelling units, smoke detectors powered by a hard wire AC primary power source or a self-monitored, non-removal ten-year lithium battery shall be installed and maintained ... Single station detectors presently installed utilizing standard batteries may continue to be used as long as the units remain operational. ...{3} Smoke detectors shall be installed in accordance with applicable NFPA Standards and the manufacturer's recommendations. Detectors may be ceiling or wall mounted, provided that they shall be mounted at a minimum of four inches and a maximum of 12 inches from the ceiling {4} In a dwelling unit the detector shall be located in the corridor within the unit or interior area giving access to the rooms used for sleeping purposes. Where sleeping areas are separated and/or where a single smoke detector will not adequately service all sleeping areas, there shall be a smoke detector installed adjacent to each sleeping area... {C1} The owner of a dwelling shall be responsible for supplying and installing ... detectors ... {C2} The owner of a dwelling shall be responsible for maintenance and testing of detectors, in accordance with the manufacturer's instructions which are located in common areas...{C4} At every change of tenancy in all multi-family residential units and dormitories, it shall be the duty of the owner to test and ascertain that those detectors contained in the unit are in operable condition, and if not, the owner shall be responsible for placing them in operable condition. {C6} It shall be the responsibility of the property owner to install at least smoke detectors powered by a hardwire AC primary source or a self-monitored, non-removal ten year lithium battery before transfer of the property to a new party..."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-002254",
+      "property_address": "1309 OLIVE ST LOUISVILLE KY 40211",
+      "description_raw": "There is litter and trash items strewn all across the alley and into the yard",
+      "inspector_comments": [
+        "Cut all high grass and overgrowth."
+      ],
+      "occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [],
+      "violation_descriptions": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-019235",
+      "property_address": "640 VILLAGE WEST DR LOUISVILLE KY 40203",
+      "description_raw": "3rd floor closet ceiling is falling in",
+      "inspector_comments": [
+        "All interior surfaces must be in good repair. Repair the leak in the roof and ceiling in the 3rd floor bedroom closet. Repair leak and kitchen ceiling around the light fixture.",
+        "All windows must be maintained in good condition and function as intended. Replace glazing in the 2nd floor back bedroom"
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "X72",
+        "I13"
+      ],
+      "violation_descriptions": [
+        "X72 - WINDOW [156.053-N,1,2] Every window, skylight,...shall be kept in sound condition, good repair and weather tight. Every window other than a fixed window shall be easily openable and capable of being held in position by window hardware. All glazing materials shall be maintained free from cracks and holes.",
+        "I13 - INTERIOR SURFACE(S)/ CEILINGS/ WALLS/ FLOORS [156.054-C/156.054-C-1] {C} All interior surfaces, including windows and doors, shall be maintained in good, clean and sanitary condition. Peeling, chipping, flaking, or abraded paint shall be repaired, removed, or covered. Cracked or loose plaster, decayed wood, and other defective surface conditions shall be corrected. {C-1} The owner must comply with federal and state statues and standards and local statutes and standards for the abatement of existing lead base paint and the application of lead base paint."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-018230",
+      "property_address": "3406 ROWENA RD 5 LOUISVILLE KY 40218",
+      "description_raw": "AC not working",
+      "inspector_comments": [
+        "Interior walls and ceiling appear to have smoke damage that must be cleaned and sanitized.",
+        "Furnace appears to have have experience some sort of fire or overheating. Ensure furnace is in good working order and function as intended."
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "I13",
+        "M23"
+      ],
+      "violation_descriptions": [
+        "I13 - INTERIOR SURFACE(S)/ CEILINGS/ WALLS/ FLOORS [156.054-C/156.054-C-1] {C} All interior surfaces, including windows and doors, shall be maintained in good, clean and sanitary condition. Peeling, chipping, flaking, or abraded paint shall be repaired, removed, or covered. Cracked or loose plaster, decayed wood, and other defective surface conditions shall be corrected. {C-1} The owner must comply with federal and state statues and standards and local statutes and standards for the abatement of existing lead base paint and the application of lead base paint.",
+        "M23 - FURNACE [156.182-A,B,C,D,F] ? {A] fireplaces, solid fuel-burning appliances,...shall be properly installed and maintained in a safe working condition, and shall be capable of performing the intended function? {B] All fuel-burning equipment ... shall be connected to an approved chimney or vent ... {C} All required clearances to combustible materials shall be maintained... {D} All safety controls for fuel-burning equipment shall be maintained in effective operation... {F} Energy conservation devices. Devices intended to reduce fuel consumption by attachment to a fuel burning appliance, to the fuel supply line thereto, or to the vent outlet or vent piping therefrom, shall not be installed unless labeled for such purpose and the installation is specifically approved."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-008067",
+      "property_address": "10100 BLACK IRON RD LOUISVILLE KY 40291",
+      "description_raw": "Black Iron Rd at Glenmary, property is unkept, old fence post, fencing has been dropped and left since last year and property needs cutting. Property on Glenmary Farm Drive that rear of homes back up to Club House is not being maintained weeds are getting high. The property across from club house where perfectly good trees were destroyed and left laying on property along with trees half cut. All of these things are destroying the views from our homes and reducing the interest of people who would have considered buying in the subdivision.",
+      "inspector_comments": [
+        "Exact 50 ft buffer must be maintained around public right of ways and occupied homes/businesses. (It is only about 20 ft buffer at this moment) All tall grass and weeds must be maintained and kept below 10 inches at all times. This includes all flowerbeds, around yard furniture, easements along side or rear by alleys, next to foundation, etc. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-013944",
+      "property_address": "3219 VIRGINIA AVE LOUISVILLE KY 40211",
+      "description_raw": "Occupants discarding huge trash and trash bags in rear alley",
+      "inspector_comments": [
+        "All building materials and debris must be in an approved container and not place on ground. All properties must be clean and maintained. This includes easements midway in alley and street into the property. Any overgrowth must be removed. You have 7 days to be compliant.",
+        "All vehicles must be parked on a hard durable surface, be operable and have current tags on vehicle. The Ribbon the backyard must be removed or brought into compliance."
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "05A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
+        "05A - ILLEGALLY PARKED/ABANDONED VEH [156.052-I, J] (156.052-I, J).... All motor vehicles must be parked on a hard and durable surface and no inoperative or unlicensed motor vehicle shall be parked, kept or stored on any premises, and no vehicle shall at any time be in a state of major disassembly, disrepair, or in the process of being stripped or dismantled. Vehicles may only be parked on those portions of the premises, which the Land Development Code allows as permissible parking areas, also all vehicles must be parked on a hard durable surface. Painting of vehicles is prohibited on residentially zoned or used property, except as provided for in other regulations. (156.052-J) Removal by Metro Government. In the event that any person fails to comply with an order issued pursuant to this section, the Code Official may have the vehicle parked or stored in violation of this section, removed and disposed of and may impose on the person violating the order a reasonable charge to cover the direct and indirect costs, if any, for the removal and disposition of the motor vehicle or major parts thereof."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-019259",
+      "property_address": "638 VILLAGE WEST DR LOUISVILLE KY 40203",
+      "description_raw": "Property is not secure. Back patio window is broken out",
+      "inspector_comments": [
+        "Structure must be secured at all time. Please secure the back window / broken out glass door Subject property needs to be in compliance immediately. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount.",
+        "All windows must be maintained in good condition and function as intended. Replace glazing in the 2nd floor back bedroom"
+      ],
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X72"
+      ],
+      "violation_descriptions": [
+        "01A - BOARDING [156.805-B] If the structure or part thereof is vacant and open to unauthorized entry, the Code Official shall issue a notice to the owner to secure each door, window or other openings with 1/2 inch or thicker pressboard, attached to the structure with 2 1/2 inch or 3 inch screws",
+        "X72 - WINDOW [156.053-N,1,2] Every window, skylight,...shall be kept in sound condition, good repair and weather tight. Every window other than a fixed window shall be easily openable and capable of being held in position by window hardware. All glazing materials shall be maintained free from cracks and holes."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-018575",
+      "property_address": "5817 BARDSTOWN RD LOUISVILLE KY 40291",
+      "description_raw": "CALLER REPORTS THAT THERE IS MOLD IN THE BASEMENT AND ATTIC, AND OTHER SPOTS THROUGHOUT THE HOUSE. CALLER STATES THAT THE FOUNDATION HAS WATER LEAKING THROUGH IT FROM THE CISTERN. CALLER REPORTS THAT THERE ARE CRACKS IN THE FOUNDATION. CALLER REPORTS THAT THE AIRWAY HAS BEEN SHUT OFF FROM THE CISTERN AREA. CALLER STATES THAT THE BACK PORCH IS CRACKED, TOO. ADVISED CALLER THAT ANY INFO PROVIDED WOULD BE PART OF THE PUBLIC RECORD. THANK YOU.",
+      "inspector_comments": [],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [],
+      "violation_descriptions": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-24-016884",
+      "property_address": "727 E KENTUCKY ST LOUISVILLE KY 40203",
+      "description_raw": "Vacant - open - high grass and weeds front and back yard - broken out windows - down tree in the back yard and the states the owner",
+      "inspector_comments": [
+        "Maintain overgrowth below 10\" mow yards and easements",
+        "Restore water services to continue occupancy."
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "U01"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
+        "U01 - TERMINATED UTILITIES SERVICE [156.183-A, 156.182-A, 156.154-A]... [156.183-A] Every occupied building shall be provided with an electrical system in compliance with the requirements of this section and 156.184? [156.182-A] (Terminated fuel service gas/fuel/oil/etc.) All mechanical appliances shall be properly installed and maintained in a safe working condition, and shall be capable of performing the intended function... [156.154-A] Every sink, lavatory, bathtub or shower, drinking fountain, water closet or other plumbing fixture shall be properly connected to either a public water system or to an approved private water system."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    }
+  ]
+}

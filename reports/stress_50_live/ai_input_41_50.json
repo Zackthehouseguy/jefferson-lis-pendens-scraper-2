@@ -1,0 +1,255 @@
+{
+  "source_status": "PASS",
+  "generated_at_et": "2026-08-22T23:09:17.750538-04:00",
+  "range": [
+    41,
+    50
+  ],
+  "records": [
+    {
+      "case_number": "ENF-PMNT-26-019053",
+      "property_address": "418 LOUIS COLEMAN JR DR LOUISVILLE KY 40212",
+      "description_raw": "Non operational vehicle parked in backyard",
+      "inspector_comments": [
+        "All vehicles must be currently licensed and in operable condition. All vehicles must be parked on a hard durable surface."
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "05A"
+      ],
+      "violation_descriptions": [
+        "05A - ILLEGALLY PARKED/ABANDONED VEH [156.052-I, J] (156.052-I, J).... All motor vehicles must be parked on a hard and durable surface and no inoperative or unlicensed motor vehicle shall be parked, kept or stored on any premises, and no vehicle shall at any time be in a state of major disassembly, disrepair, or in the process of being stripped or dismantled. Vehicles may only be parked on those portions of the premises, which the Land Development Code allows as permissible parking areas, also all vehicles must be parked on a hard durable surface. Painting of vehicles is prohibited on residentially zoned or used property, except as provided for in other regulations. (156.052-J) Removal by Metro Government. In the event that any person fails to comply with an order issued pursuant to this section, the Code Official may have the vehicle parked or stored in violation of this section, removed and disposed of and may impose on the person violating the order a reasonable charge to cover the direct and indirect costs, if any, for the removal and disposition of the motor vehicle or major parts thereof."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-011596",
+      "property_address": "1137 S 32ND ST LOUISVILLE KY 40211",
+      "description_raw": "air conditioning not functioning, tenant has asthma; mold in basement; holes in floor",
+      "inspector_comments": [
+        "Repair electrical outlets that aren't working in the first floor hall by the kitchen",
+        "Remove all deadbolts from all bedroom doors. Can only have turn knobs and can only lock from the inside.",
+        "Repair all holes in ceilings, floors, and walls throughout structure. Repair vents where falling from ceilings and walls through the entire structure",
+        "Repair shower handle 2nd floor bathroom across from stairs 1st stall Repair or replace all toilets that are not secured to the floor properly Install shut off valve for hot water 2nd floor bathroom sink Install doors to all batrooms",
+        "All exterior doors must be maintained in good working condition, and work as intended. Repair or replace weather stripping around doors to keep elements out. Repair or replace all locking mechanisms that do not work as intended. Front right side door and left side door of building. Repair door knob on exterior front right side.",
+        "Repair exposed wood to protect from the elements",
+        "Shelter/transitional house without licenses or permits"
+      ],
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "E03",
+        "I03",
+        "I13",
+        "X07",
+        "X19",
+        "K14",
+        "Z01"
+      ],
+      "violation_descriptions": [
+        "E03 - ELECT. RECEPTACLE OUTLET(S) [156.184-B] Every habitable space in a dwelling shall contain at least two separate and remote receptacle outlets. Every laundry area shall contain at least one grounded-type receptacle or receptacle with a ground fault circuit interrupter. Every bathroom shall contain at lest one receptacle. Any new or replaced bathroom receptacle outlet shall have ground fault circuit interrupter protection.",
+        "I03 - DOOR (INTERIOR) [156.054-F] Every interior door shall fit reasonably well within its frame and shall be capable of being opened and closed by being properly and securely attached to jambs, headers or tracks as intended by the manufacturer of the attachment hardware.",
+        "I13 - INTERIOR SURFACE(S)/ CEILINGS/ WALLS/ FLOORS [156.054-C/156.054-C-1] {C} All interior surfaces, including windows and doors, shall be maintained in good, clean and sanitary condition. Peeling, chipping, flaking, or abraded paint shall be repaired, removed, or covered. Cracked or loose plaster, decayed wood, and other defective surface conditions shall be corrected. {C-1} The owner must comply with federal and state statues and standards and local statutes and standards for the abatement of existing lead base paint and the application of lead base paint.",
+        "X07 - DOOR (EXTERIOR) [156.053-O-1, 156.053-O-2] All exterior doors, door assemblies and hardware shall be maintained in good condition? [156.053-O-2] (Door lock provision for principle entry) Double cylinder dead bolts requiring a key operation on both sides are prohibited on required means of egress.",
+        "X19 - EXTERIOR SURFACE(S)/SUPPORT MEMBERS/ FOUNDATION WALLS [156.053-B, D, E, F, K, L]... {B] All exterior surfaces, ...shall be maintained in good condition. ... shall be protected from the elements and decay by painting or other protective covering or treatment...and shall be free of peeling and chipping paint... {E] All foundation walls shall be maintained plumb and free from open cracks and breaks... {F} All exterior walls shall be free from holes, breaks, and loose or rotting materials; and maintained weatherproof and properly surface coated where required to prevent deterioration... {K] chimneys, cooling towers, smoke stacks, and similar appurtenances shall be maintained structurally safe and sound, and in good repair. ? {L] All chimneys, cooling towers, smoke stacks, and similar appurtenances shall be maintained structurally safe and sound, and in good repair. ... {D] All structural members shall be maintained free from deterioration, and shall be capable of safely supporting the imposed dead and live loads.",
+        "K14 - KITCHEN SINK WATER SUPPLY [156.154-A-C-D]? {A] Every sink, lavatory, bathtub or shower, drinking fountain, water closet or other plumbing fixture shall be properly connected to either a public water system or to an approved private water system? {C] The water supply system shall be installed and maintained to provide a supply of water to plumbing fixtures, ... in sufficient volume and at pressures adequate to enable the fixtures to function properly... {D] Water heating facilities shall be properly installed, maintained and capable of providing an adequate amount of water to be drawn at every required sink, lavatory, bathtub, shower and laundry facility at a temperature of not less than 120 degrees F (49C)",
+        "Z01 - NON-PERMITTED USE RESIDENTIAL [156.052 M] - In addition to those specific instances referenced elsewhere in this chapter, all Exterior Property Areas must be used and kept in compliance with the Land Development Code."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-017755",
+      "property_address": "2327 W KENTUCKY ST LOUISVILLE KY 40210",
+      "description_raw": "CALLER REPORTING HIGH GRASS AT THIS VACANT LOT. THANK YOU.",
+      "inspector_comments": [
+        "Remove all trash, rubbish and debris from rear lot. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 100.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-019206",
+      "property_address": "1808 EDENSIDE AVE LOUISVILLE KY 40204",
+      "description_raw": "Citizen is reporting that there is a tree branch that is potentially going to fall in the front yard of this property. Also, the grass, weeds, bushes, and trees are extremely overgrown. There is garbage on the front porch. The property is next to the St. James School and looks to be abandoned/vacant.",
+      "inspector_comments": [
+        "Remove items such as boxes from front porch",
+        "Remove dead limbs along sidewalk in front of house"
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X90"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
+        "X90 - DEAD/DANGEROUS TREE [156.005 (Definitions) (Public Nuisance) #7] You have a tree which is in danger of collapse of which poses a danger of contamination because of disease, decay, injury, infestation or damage is prohibited or creates a public nuisance and must be corrected or removed."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-004622",
+      "property_address": "3908 JEWELL AVE LOUISVILLE KY 40212",
+      "description_raw": "Stove does not work and the refrigerator is going out. Floor is soft in the bathroom. No faucet on the kitchen sink. No pipes underneath the kitchen sink. \"The caller was informed that their contact information is part of this public record\".",
+      "inspector_comments": [
+        "Remove and properly dispose of all junk, trash and rubbish throughout the property, as well as the pile of tree debris in the backyard. You can call 311 or go to www.louisvilleky.gov to schedule a large item pickup. All grass, weeds and overgrowth must be cut below 10\". Property owner is responsible for all easements halfway out into the middle of the street or alley. Property must be kept maintained at all times. Remove and properly dispose of the framed mirror on the left side of the house.",
+        "Properly install an overhead light fixture in the rear bedroom. Properly install a safety cover on the hallway light.",
+        "Ensure all electrical outlets are wired correctly, have plug covers and are functioning as intended. Upstairs there are two nonfunctional outlets and another wired incorrectly. The GFI outlet in the kitchen doesn't reset. The GFI outlet in the bathroom is wired incorrectly. All outlets must be in good working order.",
+        "Ensure there is a working smoke detector on each habitable level. Smoke detector must be a hardwired or 10 year tamper proof lithium model. Any non working smoke detector and brackets must be removed. Install the required smoke detector in the upstairs room. Remove the nonworking smoke detector in the downstairs hallway.",
+        "Properly install a safety cover on the exterior light fixture on the front porch.",
+        "Remove all vegetation from the gutters so they work as intended."
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "E02",
+        "E03",
+        "X50",
+        "X15",
+        "I22"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
+        "E02 - ELECT. LIGHTING FIXTURE [156.184-C] Every public hall, interior stairway, toilet room, kitchen, bathroom, laundry room, boiler room and furnace room shall contain at least one electric lighting fixture.",
+        "E03 - ELECT. RECEPTACLE OUTLET(S) [156.184-B] Every habitable space in a dwelling shall contain at least two separate and remote receptacle outlets. Every laundry area shall contain at least one grounded-type receptacle or receptacle with a ground fault circuit interrupter. Every bathroom shall contain at lest one receptacle. Any new or replaced bathroom receptacle outlet shall have ground fault circuit interrupter protection.",
+        "X50 - ROOF/ROOFING MATERIAL(S)/ DOWN SPOUTS/ GUTTERS [156.053-G] The roof and flashing shall be sound, tight and not have defects that admit water/moisture. ...Roof water shall not be discharged in a manner that creates a public nuisance.",
+        "X15 - ELECTRICAL LIGHT FIXT EXTERIOR [156.101-B,C] (Electrical lighting fixture exterior) Every common hall and stairway..., shall be lighted at all times with at least a 60-watt standard incandescent light bulb for each 200 square feet... means of egress, including exterior means of egress stairways shall be illuminated at all times the building space served by the means of egress is occupied with a minimum of 1 foot-candle (11 lux) at floors, landings and treads. {C} All other spaces shall be provided with natural or artificial light ...",
+        "I22 - SMOKE DETECTOR (INT. OF DWELLING) [156.203-B-1, 3, 4 - C-1,2,4,6] (Smoke Detector Interior of Dwelling Unit) {1} In all dwelling units, smoke detectors powered by a hard wire AC primary power source or a self-monitored, non-removal ten-year lithium battery shall be installed and maintained ... Single station detectors presently installed utilizing standard batteries may continue to be used as long as the units remain operational. ...{3} Smoke detectors shall be installed in accordance with applicable NFPA Standards and the manufacturer's recommendations. Detectors may be ceiling or wall mounted, provided that they shall be mounted at a minimum of four inches and a maximum of 12 inches from the ceiling {4} In a dwelling unit the detector shall be located in the corridor within the unit or interior area giving access to the rooms used for sleeping purposes. Where sleeping areas are separated and/or where a single smoke detector will not adequately service all sleeping areas, there shall be a smoke detector installed adjacent to each sleeping area... {C1} The owner of a dwelling shall be responsible for supplying and installing ... detectors ... {C2} The owner of a dwelling shall be responsible for maintenance and testing of detectors, in accordance with the manufacturer's instructions which are located in common areas...{C4} At every change of tenancy in all multi-family residential units and dormitories, it shall be the duty of the owner to test and ascertain that those detectors contained in the unit are in operable condition, and if not, the owner shall be responsible for placing them in operable condition. {C6} It shall be the responsibility of the property owner to install at least smoke detectors powered by a hardwire AC primary source or a self-monitored, non-removal ten year lithium battery before transfer of the property to a new party..."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 700.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-008075",
+      "property_address": "1837 LYTLE ST LOUISVILLE KY 40203",
+      "description_raw": "Open",
+      "inspector_comments": [
+        "Overgrown grass on property. All grass/weeds must be maintained to a height below 10\". Discarded household items on side of structure. Remove all discarded furniture and items and dispose of properly.",
+        "Porch light has no cover for light bulb. Install appropriate cover for porch light.",
+        "Uncovered crawl space opening. Cover opening on foundation.",
+        "Gutters detached from side of structure. Repair or replace damaged gutters."
+      ],
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X50",
+        "X15",
+        "X19"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
+        "X50 - ROOF/ROOFING MATERIAL(S)/ DOWN SPOUTS/ GUTTERS [156.053-G] The roof and flashing shall be sound, tight and not have defects that admit water/moisture. ...Roof water shall not be discharged in a manner that creates a public nuisance.",
+        "X15 - ELECTRICAL LIGHT FIXT EXTERIOR [156.101-B,C] (Electrical lighting fixture exterior) Every common hall and stairway..., shall be lighted at all times with at least a 60-watt standard incandescent light bulb for each 200 square feet... means of egress, including exterior means of egress stairways shall be illuminated at all times the building space served by the means of egress is occupied with a minimum of 1 foot-candle (11 lux) at floors, landings and treads. {C} All other spaces shall be provided with natural or artificial light ...",
+        "X19 - EXTERIOR SURFACE(S)/SUPPORT MEMBERS/ FOUNDATION WALLS [156.053-B, D, E, F, K, L]... {B] All exterior surfaces, ...shall be maintained in good condition. ... shall be protected from the elements and decay by painting or other protective covering or treatment...and shall be free of peeling and chipping paint... {E] All foundation walls shall be maintained plumb and free from open cracks and breaks... {F} All exterior walls shall be free from holes, breaks, and loose or rotting materials; and maintained weatherproof and properly surface coated where required to prevent deterioration... {K] chimneys, cooling towers, smoke stacks, and similar appurtenances shall be maintained structurally safe and sound, and in good repair. ? {L] All chimneys, cooling towers, smoke stacks, and similar appurtenances shall be maintained structurally safe and sound, and in good repair. ... {D] All structural members shall be maintained free from deterioration, and shall be capable of safely supporting the imposed dead and live loads."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 700.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-015658",
+      "property_address": "1838 GREENWOOD AVE LOUISVILLE KY 40210",
+      "description_raw": "The citizen been here since Oct 2026. The citizen states she followed up with Landlord and she had no idea that the AC was not working. The citizen states she was told to buy a small AC unit. The citizen states that she works from home and is dealing with asthma. The citizen had to go to the hospital.",
+      "inspector_comments": [
+        "All grass/weeds must be cut and maintained below 10\". All overgrowth must be cut back and maintained. This includes front, rear and any easements attached to property.",
+        "All surfaces must be in good repair at all times, no chipping/peeling paint, etc. Exposed wood must be sealed/painted to protect from elements.",
+        "All porches must be secure and in good repair and all hardware properly installed. All handrails must be in good repair with no missing spindles.",
+        "All roofing materials must be properly installed and in good repair at all times. Several areas of soffit in disrepair and gutters not properly connected, not functioning as intended. Gutters must also be clean and flowing freely.",
+        "Property is not owner occupied and must be registered as a rental property via the Louisville Metro Government Rental Registry. www.louisvilleky.gov or call 502-574-2508 for assistance."
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X50",
+        "R01",
+        "X40",
+        "X19"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
+        "X50 - ROOF/ROOFING MATERIAL(S)/ DOWN SPOUTS/ GUTTERS [156.053-G] The roof and flashing shall be sound, tight and not have defects that admit water/moisture. ...Roof water shall not be discharged in a manner that creates a public nuisance.",
+        "R01 - RENTAL REGISTRATION - RES. [119-LMCO] The failure to register a rental housing unit or apartment complex in accordance with LMCO 119.03 shall be classified as a civil offense with a penalty of up to $100 per rental housing unit or apartment complex. The owner or managing operator will be sent a ten day notice of violation with a warning of the failure to comply with the rental registry. Failure to comply at the end of ten days will result in a fine of up to $100 per rental housing unit or apartment complex. Thereafter, each day of such violation(s) shall constitute a separate offense.",
+        "X40 - PORCH/BALCONY [156.053-B,K, 156.053-M] {B} All exterior surfaces,...porches...balconies,...shall be maintained in good condition. ... {K} Every exterior... porch and balcony, and all appurtenances attached thereto, shall be maintained structurally sound, in good repair, with proper anchorage and capable of supporting the imposed loads... {156.053-M] Every handrail and guard shall be firmly fastened... and shall be maintained in good condition. Every exterior flight of stairs having more than four risers, and every open portion of a stair, landing or balcony, which is more than 30 inches (762 mm) above the floor or grade below shall have guards. ...Guards shall not be less than 30 inches (762 mm) high above the floor of the landing, balcony or grade. Any alteration, modification, addition or replacement of a handrail or guard shall be in conformity with the applicable state building code requirements.",
+        "X19 - EXTERIOR SURFACE(S)/SUPPORT MEMBERS/ FOUNDATION WALLS [156.053-B, D, E, F, K, L]... {B] All exterior surfaces, ...shall be maintained in good condition. ... shall be protected from the elements and decay by painting or other protective covering or treatment...and shall be free of peeling and chipping paint... {E] All foundation walls shall be maintained plumb and free from open cracks and breaks... {F} All exterior walls shall be free from holes, breaks, and loose or rotting materials; and maintained weatherproof and properly surface coated where required to prevent deterioration... {K] chimneys, cooling towers, smoke stacks, and similar appurtenances shall be maintained structurally safe and sound, and in good repair. ? {L] All chimneys, cooling towers, smoke stacks, and similar appurtenances shall be maintained structurally safe and sound, and in good repair. ... {D] All structural members shall be maintained free from deterioration, and shall be capable of safely supporting the imposed dead and live loads."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 100.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-018287",
+      "property_address": "5511 HUNT CLUB LN 12 LOUISVILLE KY 40214",
+      "description_raw": "Citizen reports there are issues with cockroaches and mice in the apartment that they have reported to the property owner for correction. Citizen wanted to remain anonymous.",
+      "inspector_comments": [],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [],
+      "violation_descriptions": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-015492",
+      "property_address": "2315 W KENTUCKY ST LOUISVILLE KY 40210",
+      "description_raw": "Caller reports that this is a vacant house. There is tall grass on the property and a growing pile of stuff in the backyard and along the alley. Couches, junk, mattresses, etc. Said they believe people are illegally dumping on the property. Reporting dumping to SWMS.",
+      "inspector_comments": [
+        "Cut and maintain grass No taller than 10 inches tall throughout entire property grounds. Remove and probably dispose of all furniture and trash at rear portion of property grounds Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount.",
+        "Secure all openings, special attention rear basement door."
+      ],
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A"
+      ],
+      "violation_descriptions": [
+        "01A - BOARDING [156.805-B] If the structure or part thereof is vacant and open to unauthorized entry, the Code Official shall issue a notice to the owner to secure each door, window or other openings with 1/2 inch or thicker pressboard, attached to the structure with 2 1/2 inch or 3 inch screws"
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-016599",
+      "property_address": "9723 COLLIER LN LOUISVILLE KY 40291",
+      "description_raw": "rats seen in high bushes and weeds at end of driveway, seen on front walk and side of house",
+      "inspector_comments": [
+        "All tall grass and weeds must be maintained and kept below 10 inches at all times. This includes all flowerbeds, around yard furniture, easements along side or rear by alleys, next to foundation, etc.",
+        "Property is not owner occupied and must be registered as a rental property via the Louisville Metro Government Rental Registry. www.louisvilleky.gov or call 502-574-2508 for assistance."
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "R01"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
+        "R01 - RENTAL REGISTRATION - RES. [119-LMCO] The failure to register a rental housing unit or apartment complex in accordance with LMCO 119.03 shall be classified as a civil offense with a penalty of up to $100 per rental housing unit or apartment complex. The owner or managing operator will be sent a ten day notice of violation with a warning of the failure to comply with the rental registry. Failure to comply at the end of ten days will result in a fine of up to $100 per rental housing unit or apartment complex. Thereafter, each day of such violation(s) shall constitute a separate offense."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 300.0
+    }
+  ]
+}

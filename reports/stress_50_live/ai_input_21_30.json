@@ -1,0 +1,200 @@
+{
+  "source_status": "PASS",
+  "generated_at_et": "2026-08-22T23:09:17.750538-04:00",
+  "range": [
+    21,
+    30
+  ],
+  "records": [
+    {
+      "case_number": "ENF-PMNT-26-019179",
+      "property_address": "316 LOUIS COLEMAN JR DR LOUISVILLE KY 40212",
+      "description_raw": "High weeds and grass front and alley side of property. Homeless breaking into property.",
+      "inspector_comments": [],
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [],
+      "violation_descriptions": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-018578",
+      "property_address": "10502 VISTA VIEW DR LOUISVILLE KY 40291",
+      "description_raw": "High weeds in the back yard",
+      "inspector_comments": [
+        "Entire property must be kept cut, clean and maintained at all times, Grass and weeds cut at 10 inches or below. Rear yard needs cutting."
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-011029",
+      "property_address": "5846 NEW CUT RD LOUISVILLE KY 40214",
+      "description_raw": "This house has continued to be a problem with trash and overgrown lawn. Seems to be a hoarding case as there is trash piled in the driveway and all around. The garage is so full that the door will not close. Very concerned for the young child that lives in the home as well.",
+      "inspector_comments": [
+        "7 days on cleaning and cutting. Grass is over 10 inches. Sidewalk leading to the porch and the porch must be clean. Remove all trash, rubbish from the truck in the rear. Trash, rubbish, etc. The entire property must remain cut, clean, organized and maintained at all times. Cut grass to the street and midway into the alley if applicable. Keep the alley clean midway to the middle if applicable. Grass/weeds must stay at or under 10 inches at all times. Including the flower bed and easements.",
+        "The pool in the rear must be drained, maintained or covered. Green, stagnant water."
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X81"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
+        "X81 - SWIMMING POOLS [156.052-H-2] Swimming pools shall be maintained in a clean and sanitary condition, and in good repair."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 600.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-018973",
+      "property_address": "3907 VALLEY STATION RD LOUISVILLE KY 40272",
+      "description_raw": "Diseased tree in the south corner of the back yard. Tree is losing large limbs and leaning towards the neighboring houses. Caller lives at 10201 Hearthstone Court and is very concerned about this tree. He reports it is leaning a little more every day and is concerned it will fall on his house. He reports the tree can be viewed from his property and has left his contact information. \"Caller was informed that their contact information is part of this public record\".",
+      "inspector_comments": [
+        "Remove and properly dispose of all noxious vines and weeds throughout entire property grounds and maintain it all times",
+        "Dangerous tree must be cut to height that, when falling, does not hit occupied structure"
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X90"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
+        "X90 - DEAD/DANGEROUS TREE [156.005 (Definitions) (Public Nuisance) #7] You have a tree which is in danger of collapse of which poses a danger of contamination because of disease, decay, injury, infestation or damage is prohibited or creates a public nuisance and must be corrected or removed."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-019027",
+      "property_address": "1029 MAYER AVE LOUISVILLE KY 40217",
+      "description_raw": "Large tree at the property that is completely dead with ivy growing up the side. Citizen reports over the years several limbs have fallen and damaged neighboring property.",
+      "inspector_comments": [
+        "All dead, dangerous trees must be cut back all limbs disposed of and debris alternatively Tree must be tested by a licensed arborist to determine life expectancy or failure. You may go to our website at Louisville ky.gov and look for Urban Forestry and their tree assistance program to assist"
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "X90"
+      ],
+      "violation_descriptions": [
+        "X90 - DEAD/DANGEROUS TREE [156.005 (Definitions) (Public Nuisance) #7] You have a tree which is in danger of collapse of which poses a danger of contamination because of disease, decay, injury, infestation or damage is prohibited or creates a public nuisance and must be corrected or removed."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-011727",
+      "property_address": "543 S 20TH ST LOUISVILLE KY 40203",
+      "description_raw": "CITIZEN REPORTS HIGH GRASS & WEEDS, ALONG WITH OVERGROWN BUSHES. THANK YOU.",
+      "inspector_comments": [
+        "Vacant lot must be cut/clean throughout INCLUDING REAR EASEMENT OF LOT FULL OF TREE DEBRIS AND OVERGROWN GRASS"
+      ],
+      "occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-019136",
+      "property_address": "413 REVOLUTIONARY RD LOUISVILLE KY 40214",
+      "description_raw": "High grass and weeds throughout the property.",
+      "inspector_comments": [
+        "The entire property must be cut within 7 days of this notice. The entire property must remain cut, clean, organized, and maintained at all times. Grass/weeds must stay under 10 inches: including easements and flower beds."
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 100.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-019218",
+      "property_address": "8922 MAPLECREEK DR LOUISVILLE KY 40219",
+      "description_raw": "The grass has not been cut since before July 4th. I believe there is an issue in the relationship and the woman and kids have moved out leaving the man.",
+      "inspector_comments": [
+        "High grass and weeds throughout are in need of immediate attention."
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-013703",
+      "property_address": "2929 PRESTON HWY LOUISVILLE KY 40217",
+      "description_raw": "There is large amounts of trash/debris near the dumpster area behind the Dollar Tree store located at 2929 Poplar Level Rd, Louisville, KY, 40217. It is spilling out into their parking lot AND the adjacent alleyway. This has been an ongoing issue that will not be tolerated by the surrounding community. Please remedy as quicky as possible. Thank you.",
+      "inspector_comments": [
+        "Clean and maintain the entire property"
+      ],
+      "occupancies": [
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 300.0
+    },
+    {
+      "case_number": "ENF-PMNT-26-015601",
+      "property_address": "2717 ELLIOTT AVE LOUISVILLE KY 40211",
+      "description_raw": "CITIZEN REPORTS HIGH GRASS & WEEDS. THANK YOU.",
+      "inspector_comments": [
+        "Grass must be cut at or below 10 inches tall throughout entire property grounds and maintained at all times. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0
+    }
+  ]
+}
