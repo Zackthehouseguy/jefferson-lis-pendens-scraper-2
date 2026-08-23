@@ -1,4 +1,4 @@
-name: Prepare Stress50 AI Packet
+name: Stress50 AI + Ranking Acceptance
 
 on:
   push:
@@ -6,13 +6,15 @@ on:
     paths:
       - ".github/workflows/prepare-stress50-ai.yml"
       - "scrapers/probe/prepare_stress50_ai_input.py"
+      - "scrapers/probe/stress_50_rank.py"
+      - "reports/stress_50_live/ai_classifications.json"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  prepare:
+  rank:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -22,13 +24,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Build compact AI packet
+      - name: Rebuild compact AI packet
         run: python -m scrapers.probe.prepare_stress50_ai_input
-      - name: Persist AI packet
+      - name: Run 50-record ranking acceptance
+        run: python -m scrapers.probe.stress_50_rank
+      - name: Persist ranked report
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase origin main || true
-          git add reports/stress_50_live/ai_input.json
-          git diff --cached --quiet || git commit -m "Update stress50 AI review packet [skip ci]"
+          git add reports/stress_50_live/ai_input.json reports/stress_50_live/final_ranked_report.json reports/stress_50_live/final_ranked_report.md
+          git diff --cached --quiet || git commit -m "Update stress50 ranked acceptance [skip ci]"
           git push origin HEAD:main || true
