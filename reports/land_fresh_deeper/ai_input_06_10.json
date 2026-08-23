@@ -1,0 +1,174 @@
+{
+  "records": [
+    {
+      "index": 6,
+      "case_number": "ENF-PMNT-26-018851",
+      "parcel_id": "046D00130000",
+      "property_address": "1030 S 28TH ST LOUISVILLE KY 40211",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40211",
+      "owner_name": "THOMPSON DONNA RUSSELL & MONTGOMERY",
+      "owner_mailing_address": "11402 UPSHUR PL LOUISVILLE KY 40241-1856",
+      "owner_mailing_differs": true,
+      "event_date": "2026-08-18",
+      "description_raw": null,
+      "inspector_comments": [
+        "Cut and maintain grass no higher than 10 inches tall throughout entire property grounds"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "open_case_count": 1,
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "outstanding_balance": null,
+      "lot_sqft": 3725.4,
+      "lot_acres": 0.0855,
+      "zoning_code": "C1",
+      "zoning_name": "COMMERCIAL",
+      "zoning_type": "COMMERCIAL-INDUSTRIAL",
+      "landuse_name": "INDUSTRY",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "tax_delinquent_verified": null,
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D9449&agencyCode=LJCMG"
+    },
+    {
+      "index": 7,
+      "case_number": "ENF-PMNT-25-003850",
+      "parcel_id": "007B01250000",
+      "property_address": "4205 VERMONT AVE LOUISVILLE KY 40211",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40211",
+      "owner_name": "AUSTIN HERBERT C",
+      "owner_mailing_address": "4205 VERMONT AVE LOUISVILLE KY 40211-3112",
+      "owner_mailing_differs": false,
+      "event_date": "2026-08-18",
+      "description_raw": "VACANT PROPERTY CAUGHT AND TRASH IN THE REAR - 20 BUS DAYS",
+      "inspector_comments": [
+        "Please cut and maintain vacant lot."
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "open_case_count": 1,
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0,
+      "outstanding_balance": null,
+      "lot_sqft": 5299.0,
+      "lot_acres": 0.1216,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "tax_delinquent_verified": null,
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=25REC&capID2=00000&capID3=40400&agencyCode=LJCMG"
+    },
+    {
+      "index": 8,
+      "case_number": "ENF-PMNT-26-013283",
+      "parcel_id": "030100290000",
+      "property_address": "1900 N ENGLISH STATION RD LOUISVILLE KY 40223",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40223",
+      "owner_name": "SCUDDER CHARLES D IV",
+      "owner_mailing_address": "1900 1/2 N ENGLISH STATION RD LOUISVILLE KY 40223-2170 1) SCUDDER CHARLES D IV 1900 1/2 N ENGLISH STATION RD LOUISVILLE KY 40223-2170",
+      "owner_mailing_differs": true,
+      "event_date": "2026-08-18",
+      "description_raw": "High weeds and grass",
+      "inspector_comments": [
+        "Grass must be cut and maintained."
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "open_case_count": 1,
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0,
+      "outstanding_balance": null,
+      "lot_sqft": 17267.0,
+      "lot_acres": 0.3964,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "tax_delinquent_verified": null,
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=A4105&agencyCode=LJCMG"
+    },
+    {
+      "index": 9,
+      "case_number": "ENF-PMNT-26-009612",
+      "parcel_id": "045C00030000",
+      "property_address": "1017 LOUIS COLEMAN JR DR LOUISVILLE KY 40211",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40211",
+      "owner_name": "CRENSHAW LARRY",
+      "owner_mailing_address": "1836 BURWELL AVE LOUISVILLE KY 40210-1939",
+      "owner_mailing_differs": true,
+      "event_date": "2026-08-18",
+      "description_raw": null,
+      "inspector_comments": [
+        "Please cut and maintain grass no taller than 10 inches tall throughout entire property"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "open_case_count": 1,
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "outstanding_balance": null,
+      "lot_sqft": 3346.3,
+      "lot_acres": 0.0768,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "VACANT",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "tax_delinquent_verified": null,
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=79319&agencyCode=LJCMG"
+    },
+    {
+      "index": 10,
+      "case_number": "ENF-PMNT-26-018825",
+      "parcel_id": "048E00040000",
+      "property_address": "1363 CATALPA ST LOUISVILLE KY 40211",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40211",
+      "owner_name": "SHILOH BAPTIST CHURCH",
+      "owner_mailing_address": "1349 CATALPA ST LOUISVILLE KY 40211-1730",
+      "owner_mailing_differs": true,
+      "event_date": "2026-08-18",
+      "description_raw": "High grass",
+      "inspector_comments": [
+        "All properties must be clean and maintained. This includes easements midway in alley and street into the property. Any overgrowth must be removed. Overgrowth blocking alley and all easements. The church 1349 needs to easement on the left side of building removed as well. I'm referring the property to be cut so, if it's not cut within 7 days the city will cut it."
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "open_case_count": 1,
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "outstanding_balance": null,
+      "lot_sqft": 5250.0,
+      "lot_acres": 0.1205,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "PUBLIC AND SEMI-PUBLIC",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "tax_delinquent_verified": null,
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D9277&agencyCode=LJCMG"
+    }
+  ]
+}
