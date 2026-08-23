@@ -128,7 +128,7 @@ def parcel_enrichment(parcel_id: str) -> tuple[dict, list[dict]]:
                         "returnGeometry": "false",
                         "f": "json",
                     }
-                    rr = requests.get(url, params=q, timeout=20)
+                    rr = requests.post(url, data=q, timeout=20)
                     rr.raise_for_status()
                     pp = rr.json()
                     if pp.get("error"):
@@ -204,7 +204,6 @@ def main() -> int:
     land_groups = [g for g in groups if is_vacant_lot_group(g) and g.get("parcel")]
     demo_watch = [g for g in groups if is_demolition_watch(g) and g.get("parcel")]
 
-    # Newest first. build_groups retains first/newest source row as representative.
     def event_key(g):
         r = g.get("representative") or {}
         return r.get("status_date") or r.get("visit_date") or ""
