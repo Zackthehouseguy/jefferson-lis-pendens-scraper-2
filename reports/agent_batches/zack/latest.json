@@ -1,0 +1,4304 @@
+{
+  "status": "PASS",
+  "agent_id": "zack",
+  "generated_at": "2026-08-23T12:31:30.024326+00:00",
+  "houses": [
+    {
+      "rank": 1,
+      "priority_score": 92,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 100,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-018575",
+      "property_address": "5817 BARDSTOWN RD LOUISVILLE KY 40291",
+      "owner_name": "ST STEPHEN EVANGELICAL LUTHERAN CHUR",
+      "owner_mailing_address": "5903 BARDSTOWN RD LOUISVILLE KY 40291-1934",
+      "parcel_id": "005000750000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "mold",
+        "water_damage",
+        "structural_damage",
+        "habitability"
+      ],
+      "ai_summary": "Widespread mold plus foundation water intrusion and cracking indicates serious habitability and structural distress.",
+      "confirmed_facts": [
+        "Complaint reports mold in multiple areas, water leaking through the foundation, and foundation cracking."
+      ],
+      "speculative_claims": [],
+      "description_raw": "CALLER REPORTS THAT THERE IS MOLD IN THE BASEMENT AND ATTIC, AND OTHER SPOTS THROUGHOUT THE HOUSE. CALLER STATES THAT THE FOUNDATION HAS WATER LEAKING THROUGH IT FROM THE CISTERN. CALLER REPORTS THAT THERE ARE CRACKS IN THE FOUNDATION. CALLER REPORTS THAT THE AIRWAY HAS BEEN SHUT OFF FROM THE CISTERN AREA. CALLER STATES THAT THE BACK PORCH IS CRACKED, TOO. ADVISED CALLER THAT ANY INFO PROVIDED WOULD BE PART OF THE PUBLIC RECORD. THANK YOU.",
+      "inspector_comments": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D7836&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 23622.7,
+      "lot_acres": 0.5423,
+      "pin": null,
+      "zoning_code": "R4",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Occupied",
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "b28b7ab7ba7c63d49b1aecd2d765dbbe879e4abacb952d8ae01fc6a609914554",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::005000750000",
+      "material_revision": "d0ddb70115435178901ee428",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 2,
+      "priority_score": 92,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 100,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-016335",
+      "property_address": "329 E OAK ST LOUISVILLE KY 40203",
+      "owner_name": "BUFFINGTON EDWARD",
+      "owner_mailing_address": "4100 GALT OCEAN DR APT 1211 FORT LAUDERDALE FL 33308-6039",
+      "parcel_id": "030K00850000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "unsafe_structure",
+        "habitability",
+        "utility_issue",
+        "water_damage",
+        "structural_damage",
+        "severe_exterior_deterioration",
+        "trash_or_debris"
+      ],
+      "ai_summary": "Condemnation plus sewage, utility and building-envelope failures is extreme active property distress.",
+      "confirmed_facts": [
+        "Inspector documented apparent raw sewage/stagnant water, utility service requirements, roof/window/door defects and extensive cleanup needs.",
+        "Inspector explicitly states the property is being condemned."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Raw sewage leak on property",
+      "inspector_comments": [
+        "Front and rear of property must be cleaned and remove all trash, rubbish, and debris and ensure is disposed of properly. Yard must be cut. Entire property must be kept clean, cut, and maintained at all times. This is to include all easement and right of ways such as alley and sidewalks. Each property owner is responsible for entire property such as fence lines, flowerbeds and to include cleaning and maintaining upto the center of the street or alley.",
+        "Utility must be restored to occupied property or property must be vacated.",
+        "Front common door is missing door knob and must be repaired or replaced.",
+        "Front yard is a large standing body of water that appears to be raw sewage that must be immediately repaired and area affected cleaned and sanitized.",
+        "Ensure trash receptacles are not blocking public right of way such as sidewalk. Stagnant water between the 329 and 327 must be abated immediately.",
+        "Ensure front section on roof tiles are secured and in place. Right side of property soffit is damaged and must be repaired or replaced.",
+        "Window missing or damaged in several areas and need to be repaired or replaced.",
+        "Property is being condemned."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C2963&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 9873.6,
+      "lot_acres": 0.2267,
+      "pin": null,
+      "zoning_code": "OR2",
+      "zoning_name": "OFFICE/RES",
+      "zoning_type": "OFFICE",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Occupied",
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "d34823f97e00831b8d166cd82f0e3246a85ce2bee3a15b2e3d119162ce11542d",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::030K00850000",
+      "material_revision": "d8ff5f7dfdeeadf6861b36fc",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 3,
+      "priority_score": 92,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 100,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-004622",
+      "property_address": "3908 JEWELL AVE LOUISVILLE KY 40212",
+      "owner_name": "3908 JEWELL AVE REVOCABLE LAND TRUST",
+      "owner_mailing_address": "6844 BARDSTOWN RD PMB 569 LOUISVILLE KY 40291-3050",
+      "parcel_id": "009D01050000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "habitability",
+        "electrical",
+        "structural_damage",
+        "utility_issue",
+        "trash_or_debris",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Major habitability, electrical, plumbing and floor defects plus a $700 citation create very strong distress.",
+      "confirmed_facts": [
+        "Complaint reports broken appliances, a soft bathroom floor, and missing kitchen-sink plumbing.",
+        "Inspector documented multiple electrical outlet/fixture defects, smoke-detector issues and broad cleanup needs.",
+        "A $700 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Stove does not work and the refrigerator is going out. Floor is soft in the bathroom. No faucet on the kitchen sink. No pipes underneath the kitchen sink. \"The caller was informed that their contact information is part of this public record\".",
+      "inspector_comments": [
+        "Remove and properly dispose of all junk, trash and rubbish throughout the property, as well as the pile of tree debris in the backyard. You can call 311 or go to www.louisvilleky.gov to schedule a large item pickup. All grass, weeds and overgrowth must be cut below 10\". Property owner is responsible for all easements halfway out into the middle of the street or alley. Property must be kept maintained at all times. Remove and properly dispose of the framed mirror on the left side of the house.",
+        "Properly install an overhead light fixture in the rear bedroom. Properly install a safety cover on the hallway light.",
+        "Ensure all electrical outlets are wired correctly, have plug covers and are functioning as intended. Upstairs there are two nonfunctional outlets and another wired incorrectly. The GFI outlet in the kitchen doesn't reset. The GFI outlet in the bathroom is wired incorrectly. All outlets must be in good working order.",
+        "Ensure there is a working smoke detector on each habitable level. Smoke detector must be a hardwired or 10 year tamper proof lithium model. Any non working smoke detector and brackets must be removed. Install the required smoke detector in the upstairs room. Remove the nonworking smoke detector in the downstairs hallway.",
+        "Properly install a safety cover on the exterior light fixture on the front porch.",
+        "Remove all vegetation from the gutters so they work as intended."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 700.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=44971&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 4987.6,
+      "lot_acres": 0.1145,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Occupied",
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "ad72e88e6fa9696a6c0ecb1b35104825dc4341e41b51857c931bc943ef8f0a93",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::009D01050000",
+      "material_revision": "4a8e4daf9f0faeb9a92d8a9a",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 4,
+      "priority_score": 92,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 100,
+      "saturation_score": 24,
+      "saturation_interpretation": "LOWER ESTIMATED COMPETITION",
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "freshness_age_hours": null,
+      "case_number": "ENF-PMNT-26-005440",
+      "record_status": "Open",
+      "property_address": "2230 GRAND AVE LOUISVILLE KY 40210",
+      "owner_name": "HENEGAR ALMA",
+      "owner_mailing_address": "2230 GRAND AVE LOUISVILLE KY 40210-1144",
+      "possible_absentee_indicator": false,
+      "parcel_id": "038E00610000",
+      "verified_open_cases_in_acceptance_set_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "abandonment",
+        "utility_issue",
+        "habitability"
+      ],
+      "ai_summary": "An abandoned-structure designation combined with reported prolonged vacancy and no electricity is a strong distress signal.",
+      "confirmed_facts": [
+        "The structured enforcement feed identifies the property as an abandoned structure.",
+        "The complaint reports that the residence has been empty for some time and has no electricity.",
+        "The complaint reports a person seen inside and dogs tied in the backyard."
+      ],
+      "speculative_claims": [
+        "Whether the person seen inside is an unauthorized occupant is not established by the extracted record."
+      ],
+      "acquisition_relevant": true,
+      "description_raw": "CALLER REPORTING SOMEONE IS INSIDE OF THIS VACANT PROPERTY. CALLER NOTICED A COUPLE OF DAYS AGO THAT THERE WERE DOGS TIED UP IN THE BACK YARD. CALLER SAYS RESIDENCE HAS NO ELECTRICITY AND HAS BEEN EMPTY FOR SOME TIME. THANK YOU.",
+      "inspector_comments": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=51444&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B5191&agencyCode=LJCMG&IsToShowInspection=",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 5286.4,
+      "lot_acres": 0.1214,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "occupancy": "Vacant",
+      "recent_window_occupancies": [],
+      "property_type": "SFR",
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "393d9c2439e1a43b3f471ec1e0f9fdd521efa314d5949b4bf654f87e1bd4222b",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::038E00610000",
+      "material_revision": "668b1f20a17dcfd09aa95dae",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 5,
+      "priority_score": 88,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 94,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-016900",
+      "property_address": "517 S 20TH ST LOUISVILLE KY 40203",
+      "owner_name": "WOOD BRICKS & MORTAR LLC",
+      "owner_mailing_address": "11700 GOLDEN LIGHT CT LOUISVILLE KY 40272-3889",
+      "parcel_id": "002L00030000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "infestation",
+        "overgrown_vegetation",
+        "repeated_noncompliance",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Long-running vacancy and neglect with pest activity and an assessed citation is a strong acquisition signal.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant structure.",
+        "Complaint says grass has not been cut for five to six months and reports rodents/groundhogs.",
+        "A $300 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Caller reports home is vacant and the grass hasn't been cut for 5-6 months. Said they've seen rodents and groundhogs coming from underneath the house.",
+      "inspector_comments": [
+        "Vacant property must be cut/clean throughout, INCLUDING REAR EASEMENT AND OVERGROWN GRASS"
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 300.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C6245&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 4107.3,
+      "lot_acres": 0.0943,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Vacant",
+      "recent_window_occupancies": [
+        "Vacant Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "95a913ed7dc53b9899ac1d5c6208164e1315e0bb74a6bc3c7d3deec617691b16",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::002L00030000",
+      "material_revision": "99046321277dd99f079baf17",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 6,
+      "priority_score": 88,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 94,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-001287",
+      "property_address": "821 S 39TH ST LOUISVILLE KY 40211",
+      "owner_name": "MUCKER LEWIS E & ANNA L",
+      "owner_mailing_address": "821 S 39TH ST LOUISVILLE KY 40211-2819",
+      "parcel_id": "043E01760000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "structural_damage",
+        "severe_exterior_deterioration",
+        "estate_or_deceased"
+      ],
+      "ai_summary": "Probate-related absentee circumstances combined with visible structural/exterior deterioration create strong acquisition distress.",
+      "confirmed_facts": [
+        "Complaint reports the owner is living elsewhere in connection with probate/inheritance and describes the home as empty/falling apart.",
+        "Inspector documented a sagging porch/gutter area, exposed wood, furniture/debris and dead/downed trees."
+      ],
+      "speculative_claims": [
+        "The exact probate ownership posture and whether the property is legally vacant are not independently established here."
+      ],
+      "description_raw": "Email received: The owner of the subject property is not living there, instead is living in his sister's home in south Louisville, in order to establish residency for probate (inheritance) purposes. His empty home is falling apart. Pease remind him that he remains responsible for maintaining his original home in Chickasaw,",
+      "inspector_comments": [
+        "Remove portions of downed tree in rear yard. Remove furniture from rear of yard",
+        "Front porch and gutter board appear to be sagging, make repairs to this area so that it is structure is sound. Trim on both sides of property has exposed wood, Replace any rotten wood, and ensure all wood is sealed to be protected from the elements.",
+        "Remove dead tree from rear yard"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=13269&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 6654.6,
+      "lot_acres": 0.1528,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Occupied",
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "4438df94500cf1d8c4270b1a76db175f72d22c9c642696023146fa47f6f3f625",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::043E01760000",
+      "material_revision": "88a092de45a58858fdf7c0e4",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 7,
+      "priority_score": 88,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 93,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-018175",
+      "property_address": "843 S 26TH ST LOUISVILLE KY 40211",
+      "owner_name": "GOSPEL MISSIONARY BAPTIST CHURCH INC",
+      "owner_mailing_address": "PO BOX 11437 LOUISVILLE KY 40251-0437",
+      "parcel_id": "036F02460000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "boarded_or_unsecured",
+        "trash_or_debris",
+        "nuisance",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Vacancy, unsecured openings, dumping and an assessed citation create a strong distress signal.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant structure.",
+        "Complaint reports people entering from the rear and dumping trash.",
+        "Inspector ordered openings secured and debris removed; a $200 citation was assessed."
+      ],
+      "speculative_claims": [
+        "Whether reported entrants are legally unauthorized occupants is not independently established."
+      ],
+      "description_raw": "CALLER IS REPORT SQUATTERS ARE GOING IN AND OUT FROM REAR OF PROPERTY - SOMEONE IS DUMPING TRASH IN REAR OF VACANT PROPERTY - 20 BUS DAYS",
+      "inspector_comments": [
+        "Secure all openings. Special attention at Right side basement door and basement window.",
+        "Remove them properly dispose of all junk debris, trash and garbage from property grounds. If property has been dumped on, please report It to SWMS through311. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D4057&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 4185.9,
+      "lot_acres": 0.0961,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Vacant",
+      "recent_window_occupancies": [
+        "Vacant Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "e8e55ca13b7dc0e42fcc379d37b8dfed647d3de476778300c84f3112d311897b",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::036F02460000",
+      "material_revision": "50b7cb393426ef2e42968490",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 8,
+      "priority_score": 88,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 93,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-25-010477",
+      "property_address": "10210 MORRISON RD LOUISVILLE KY 40229",
+      "owner_name": "ALMEIDA LEXIS R NAPOLES",
+      "owner_mailing_address": "10210 MORRISON RD LOUISVILLE KY 40229-2245",
+      "parcel_id": "008501770000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "electrical",
+        "trash_or_debris",
+        "water_damage",
+        "nuisance",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Electrical safety issues, broad property neglect and a $700 assessed citation create strong distress.",
+      "confirmed_facts": [
+        "Inspector documented extensive outdoor junk/vehicle storage, a missing electrical service-panel dead front, and standing-water conditions.",
+        "A $700 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "description_raw": "CALLER REPORTS THAT THEY HAVE A LOT OF MISCELLANEOUS JUNK ON THE PROPERTY. (VEHICLES & TRAILERS HAVE ALREADY BEEN REPORTED TO ZONING.) THANK YOU.",
+      "inspector_comments": [
+        "All vehicles stored outdoors must be licensed, operable, have properly inflated tires, not in a state of disrepair or wrecked, and parked on a hard durable surface, such as concrete or gravel. This includes vehicles in the rear.",
+        "Entire property must be kept cut, clean and maintained at all times, Grass and weeds cut at 10 inches or below. Remove any rubbish, debris, trash, etc. Property, including the rear yard, cannot be used for outdoor storage of car parts, tires, appliances, and other related items.",
+        "Install the dead front panel on service panel/circuit breaker box.",
+        "Fill in any ruts where present, allowing standing/stagnant water to accumulate."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 700.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=25REC&capID2=00000&capID3=92726&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 40922.7,
+      "lot_acres": 0.9395,
+      "pin": null,
+      "zoning_code": "R4",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Occupied",
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "ef202de401fb8c827ded4bbfe30e57b27a45c8fc7ff1875e0c6b96d63700287f",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::008501770000",
+      "material_revision": "1b3ea7efa659d89ee2dace2a",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 9,
+      "priority_score": 86,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 91,
+      "saturation_score": 24,
+      "saturation_interpretation": "LOWER ESTIMATED COMPETITION",
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "freshness_age_hours": null,
+      "case_number": "ENF-PMNT-26-014897",
+      "record_status": "Open",
+      "property_address": "1529 S 31ST ST LOUISVILLE KY 40211",
+      "owner_name": "KIDANE AMHARE G",
+      "owner_mailing_address": "4315 SPRINGDALE AVE LAS VEGAS NV 89121-2742",
+      "possible_absentee_indicator": true,
+      "parcel_id": "049C01030000",
+      "verified_open_cases_in_acceptance_set_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "overgrown_vegetation",
+        "trash_or_debris",
+        "infestation",
+        "nuisance"
+      ],
+      "ai_summary": "Vacancy, severe reported overgrowth, dumping, and a reported pest condition create a strong acquisition-distress signal.",
+      "confirmed_facts": [
+        "The complaint reports extremely high grass and dumping behind the property.",
+        "The structured enforcement feed identifies the occupancy as a vacant structure.",
+        "Inspector comments direct cleanup and removal of overgrowth within seven days."
+      ],
+      "speculative_claims": [
+        "The reported presence of groundhogs, rats, and other critters is complainant-reported and is not independently confirmed by the inspector comment."
+      ],
+      "acquisition_relevant": true,
+      "description_raw": "Gras is extremely high also dumping in the back fritter have set up a home groundhogs / rats ect . Looks like a Madagascar over. There",
+      "inspector_comments": [
+        "All properties must be clean and maintained. This includes easements midway in alley and street into the property. Any overgrowth must be removed. You have 7 days to be compliant."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B4376&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B5027&agencyCode=LJCMG&IsToShowInspection=",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 3464.2,
+      "lot_acres": 0.0795,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "occupancy": "Unknown",
+      "recent_window_occupancies": [],
+      "property_type": "SFR",
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "1e78871343bd2a73cddc3b347bc3d6752618a24fea84890d6af951c2bf35c663",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::049C01030000",
+      "material_revision": "a4941cd1b3876e89381c104f",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 10,
+      "priority_score": 85,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 89,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-011029",
+      "property_address": "5846 NEW CUT RD LOUISVILLE KY 40214",
+      "owner_name": "CHITWOOD ROBERT L & JUDY I CO TRUST",
+      "owner_mailing_address": "5846 NEW CUT RD LOUISVILLE KY 40214-5660",
+      "parcel_id": "134701090000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "trash_or_debris",
+        "repeated_noncompliance",
+        "habitability",
+        "nuisance",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Recurring heavy accumulation, stagnant water and a substantial assessed citation create strong distress.",
+      "confirmed_facts": [
+        "Complaint describes a continuing trash/overgrowth problem and a garage packed so full the door will not close.",
+        "Inspector documented extensive cleanup needs and stagnant pool water.",
+        "A $600 citation was assessed."
+      ],
+      "speculative_claims": [
+        "The complaint's characterization of the condition as hoarding is not independently established."
+      ],
+      "description_raw": "This house has continued to be a problem with trash and overgrown lawn. Seems to be a hoarding case as there is trash piled in the driveway and all around. The garage is so full that the door will not close. Very concerned for the young child that lives in the home as well.",
+      "inspector_comments": [
+        "7 days on cleaning and cutting. Grass is over 10 inches. Sidewalk leading to the porch and the porch must be clean. Remove all trash, rubbish from the truck in the rear. Trash, rubbish, etc. The entire property must remain cut, clean, organized and maintained at all times. Cut grass to the street and midway into the alley if applicable. Keep the alley clean midway to the middle if applicable. Grass/weeds must stay at or under 10 inches at all times. Including the flower bed and easements.",
+        "The pool in the rear must be drained, maintained or covered. Green, stagnant water."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 600.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=88881&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 17375.0,
+      "lot_acres": 0.3989,
+      "pin": null,
+      "zoning_code": "R4",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Occupied",
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "acee1ea1100f62db11b179ae46e733c3263fa67f46b5e49b1f6b9e0cb0524585",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::134701090000",
+      "material_revision": "a0cb52c3fe6cb89db12388a3",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 11,
+      "priority_score": 84,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 87,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-015492",
+      "property_address": "2315 W KENTUCKY ST LOUISVILLE KY 40210",
+      "owner_name": "SIMS COACHING LLC",
+      "owner_mailing_address": "2415 STEEPLECHASE DR LOUISVILLE KY 40299-2636",
+      "parcel_id": "038A00720000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "trash_or_debris",
+        "overgrown_vegetation",
+        "nuisance",
+        "accumulated_fines"
+      ],
+      "ai_summary": "A vacant house with large junk accumulation, overgrowth and an assessed citation is strong distress.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant structure.",
+        "Complaint reports tall grass and growing piles of couches, mattresses and other junk.",
+        "A $200 citation was assessed."
+      ],
+      "speculative_claims": [
+        "The complaint's belief that people are illegally dumping is not independently established."
+      ],
+      "description_raw": "Caller reports that this is a vacant house. There is tall grass on the property and a growing pile of stuff in the backyard and along the alley. Couches, junk, mattresses, etc. Said they believe people are illegally dumping on the property. Reporting dumping to SWMS.",
+      "inspector_comments": [
+        "Cut and maintain grass No taller than 10 inches tall throughout entire property grounds. Remove and probably dispose of all furniture and trash at rear portion of property grounds Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount.",
+        "Secure all openings, special attention rear basement door."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B7977&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 3656.5,
+      "lot_acres": 0.0839,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Vacant",
+      "recent_window_occupancies": [
+        "Vacant Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "681dd48b319c42772fee579a14a15ffc42f7352677d01f35c4f454037c9e1bb1",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::038A00720000",
+      "material_revision": "9d5332717380e73f986fc9c8",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 12,
+      "priority_score": 83,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 85,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-24-016884",
+      "property_address": "727 E KENTUCKY ST LOUISVILLE KY 40203",
+      "owner_name": "MARTINEZ JUAN M JR",
+      "owner_mailing_address": "347 SIMMS ST AURORA IL 60505-5181",
+      "parcel_id": "022B00460000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "utility_issue",
+        "boarded_or_unsecured",
+        "severe_exterior_deterioration",
+        "overgrown_vegetation"
+      ],
+      "ai_summary": "Broken openings, utility-service issues and severe exterior neglect create strong distress even with conflicting occupancy evidence.",
+      "confirmed_facts": [
+        "Complaint describes broken-out windows, high grass/weeds and a downed tree.",
+        "Inspector directed restoration of water service for continued occupancy."
+      ],
+      "speculative_claims": [
+        "The complaint characterizes the property as vacant/open, while the structured occupancy field in this extract is not vacant."
+      ],
+      "description_raw": "Vacant - open - high grass and weeds front and back yard - broken out windows - down tree in the back yard and the states the owner",
+      "inspector_comments": [
+        "Maintain overgrowth below 10\" mow yards and easements",
+        "Restore water services to continue occupancy."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=24REC&capID2=00000&capID3=K5207&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 3128.0,
+      "lot_acres": 0.0718,
+      "pin": null,
+      "zoning_code": "UN",
+      "zoning_name": "URBAN NEIGHBORHOOD",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Occupied",
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "f6fc5a8802f449c2eb0ca1f977b4d7731d282bac4f3384265345181df97b6a44",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::022B00460000",
+      "material_revision": "191f154fb11c889a407eb728",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 13,
+      "priority_score": 82,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 83,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-008075",
+      "property_address": "1837 LYTLE ST LOUISVILLE KY 40203",
+      "owner_name": "APWC LLC",
+      "owner_mailing_address": "1700 MARINAS EDGE WAY APT 210 LOUISVILLE KY 40206-1383",
+      "parcel_id": "015G00640000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "trash_or_debris",
+        "overgrown_vegetation",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Vacancy plus significant exterior neglect and a $700 assessed citation create strong distress.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant structure.",
+        "Inspector documented overgrowth and discarded household items; a $700 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Open",
+      "inspector_comments": [
+        "Overgrown grass on property. All grass/weeds must be maintained to a height below 10\". Discarded household items on side of structure. Remove all discarded furniture and items and dispose of properly.",
+        "Porch light has no cover for light bulb. Install appropriate cover for porch light.",
+        "Uncovered crawl space opening. Cover opening on foundation.",
+        "Gutters detached from side of structure. Repair or replace damaged gutters."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 700.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=68256&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 2265.4,
+      "lot_acres": 0.052,
+      "pin": null,
+      "zoning_code": "UN",
+      "zoning_name": "URBAN NEIGHBORHOOD",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Vacant",
+      "recent_window_occupancies": [
+        "Vacant Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "98a89c1e8214d13a7c8f70ffa7c25c1d1b5414c2b2adbb99387a7ca42dd87579",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::015G00640000",
+      "material_revision": "cd21665412db0b523e6e5297",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 14,
+      "priority_score": 81,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 82,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-019179",
+      "property_address": "316 LOUIS COLEMAN JR DR LOUISVILLE KY 40212",
+      "owner_name": "CURRY BURNS ABOITE LIVING TRUST",
+      "owner_mailing_address": "1870 NE 181ST ST NORTH MIAMI BEACH FL 33162-1523",
+      "parcel_id": "008G01350000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "boarded_or_unsecured",
+        "nuisance"
+      ],
+      "ai_summary": "A vacant property with reported break-ins is a high-priority security and distress signal.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant structure.",
+        "Complaint reports people breaking into the property and high weeds around it."
+      ],
+      "speculative_claims": [
+        "The legal status of the reported entrants is not established."
+      ],
+      "description_raw": "High weeds and grass front and alley side of property. Homeless breaking into property.",
+      "inspector_comments": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1503&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 5432.5,
+      "lot_acres": 0.1247,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Vacant",
+      "recent_window_occupancies": [
+        "Vacant Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "b01076f506cb78a342ed1f6bedb82fac48224b389f9194c589872c9def2dafe5",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::008G01350000",
+      "material_revision": "663706295cf77852e198b84c",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 15,
+      "priority_score": 79,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 79,
+      "saturation_score": 24,
+      "saturation_interpretation": "LOWER ESTIMATED COMPETITION",
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "freshness_age_hours": null,
+      "case_number": "ENF-PMNT-26-018540",
+      "record_status": "Open",
+      "property_address": "8200 FERNDALE RD LOUISVILLE KY 40291",
+      "owner_name": "JAMES WESLEY CARY LIVING TRUST",
+      "owner_mailing_address": "8208 COOPER CHAPEL RD LOUISVILLE KY 40229-1756",
+      "possible_absentee_indicator": true,
+      "parcel_id": "063700520000",
+      "verified_open_cases_in_acceptance_set_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "overgrown_vegetation",
+        "repeated_noncompliance",
+        "severe_exterior_deterioration",
+        "nuisance",
+        "other"
+      ],
+      "ai_summary": "Long-running recurring overgrowth combined with inspector-directed roof/gutter work and dead-tree removal creates a strong repeated-neglect signal.",
+      "confirmed_facts": [
+        "The complaint describes recurring overgrowth over a period of years and says the condition returned after an earlier cleanup.",
+        "Inspector comments direct correction of overgrowth at the fence line, roof/gutter repairs, and removal of a dead tree."
+      ],
+      "speculative_claims": [
+        "The complainant's statements that vegetation is damaging the fence and that the large tree may threaten nearby homes are allegations beyond the inspector comments themselves."
+      ],
+      "acquisition_relevant": true,
+      "description_raw": "Email was received: Dear Louisville Metro311 / Code Enforcement, I am submitting this as an addendum to my previous complaints regarding the severely overgrown property directly behind my home at 6415 Tradesmill Drive, Louisville, KY 40291. This has been an ongoing problem for several years, and it has been reported to the city by both phone and email in the past. Several years ago, after previous complaints, the property was cleaned up one time, but it was not maintained and the overgrowth has returned. Trees, vines, brush, and other vegetation from this property are growing over, through, and against my privately owned fence. The vegetation is putting pressure on the fence and causing it to bend. Dense brush and vegetation remaining against the wood can also trap moisture and contribute to deterioration and rot. The overgrowth has interfered with access around my fence and gate as well. There is also a large mature tree immediately outside our fence that has continued to grow without apparent maintenance, with large limbs extending over the adjoining yards and toward our homes. Because of its size and proximity to the residences, I am requesting that the tree also be inspected to determine whether it presents a safety or property-damage hazard. I am attaching a photograph showing the current condition and the proximity of the large tree to the fence and surrounding homes. The property owner is associated with 8200 Ferndale Road, Louisville, KY. Because this is a recurring problem that has already been reported multiple times over a period of years, I am asking Louisville Metro Code Enforcement to inspect the property and take whatever enforcement action is necessary to require the owner to clear the overgrowth and properly maintain the property going forward. Please provide me with the service request or case number for this complaint and let me know what action will be taken. I would also appreciate confirmation once the property has been inspected. Thank you for your attention to this ongoing issue.",
+      "inspector_comments": [
+        "Please cut back overgrowth growing into and causing damage to fence line running from 6409 to 6419 TradesMill Dr.",
+        "Roof and gutter components must be properly installed and kept in good repair, functioning as intended. Clean out gutters where needed. Repair or replace downturned gutter on right side of house.",
+        "Remove dead tree, cut to the stump, located behind 6415 tradesmill rd"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D7596&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7597&agencyCode=LJCMG&IsToShowInspection=",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 39607.7,
+      "lot_acres": 0.9093,
+      "pin": null,
+      "zoning_code": "R4",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "occupancy": "Unknown",
+      "recent_window_occupancies": [],
+      "property_type": "SFR",
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "dc461669d3c3490f3a57926f6e8ea14fc45051c6baf77c54a1b07f39cd382b84",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::063700520000",
+      "material_revision": "35f8512996f08dd126c44844",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 16,
+      "priority_score": 70,
+      "priority_tier": "STRONG",
+      "distress_score": 64,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-013375",
+      "property_address": "3606 GARLAND AVE LOUISVILLE KY 40211",
+      "owner_name": "BERRY ROBERT QUINN SR",
+      "owner_mailing_address": "9005 GRAND POINTE CT LOUISVILLE KY 40214-5957",
+      "parcel_id": "045A00750000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "vacancy",
+        "trash_or_debris",
+        "nuisance",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Vacancy combined with substantial debris and an assessed citation creates moderate distress.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant structure.",
+        "Complaint and inspector records document significant junk/trash/debris; a $200 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Citizen is reporting that this property has a lot of junk, trash, and debris in the back of the property that is cluttering the alley.",
+      "inspector_comments": [
+        "Remove all items from the backyard that are not meant to be stored outdoors. This does not include children's toys"
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=A4676&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 6847.5,
+      "lot_acres": 0.1572,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Vacant",
+      "recent_window_occupancies": [
+        "Vacant Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "eef47c09f120939280e2b953cd8a1130bd4861caef87445049ec9cd1959d339b",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::045A00750000",
+      "material_revision": "5b27abed78537116d5a5f572",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 17,
+      "priority_score": 70,
+      "priority_tier": "STRONG",
+      "distress_score": 63,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-011727",
+      "property_address": "543 S 20TH ST LOUISVILLE KY 40203",
+      "owner_name": "LT & JT III INVESTORS LLC",
+      "owner_mailing_address": "PO BOX 206654 LOUISVILLE KY 40250-6654",
+      "parcel_id": "001E00940000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "vacancy",
+        "overgrown_vegetation",
+        "trash_or_debris",
+        "accumulated_fines"
+      ],
+      "ai_summary": "A vacant lot with debris, overgrowth and an assessed citation shows moderate distress.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant lot.",
+        "Inspector documented overgrown grass and tree debris; a $200 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "description_raw": "CITIZEN REPORTS HIGH GRASS & WEEDS, ALONG WITH OVERGROWN BUSHES. THANK YOU.",
+      "inspector_comments": [
+        "Vacant lot must be cut/clean throughout INCLUDING REAR EASEMENT OF LOT FULL OF TREE DEBRIS AND OVERGROWN GRASS"
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=93485&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 4267.7,
+      "lot_acres": 0.098,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Unknown",
+      "recent_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "65a0f981557256cc3bffd2a98c38463ab06b81453e82ad4341b18359b27b3c4e",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::001E00940000",
+      "material_revision": "e1cec48d0ae670d37a2a8d02",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 18,
+      "priority_score": 68,
+      "priority_tier": "STRONG",
+      "distress_score": 61,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-015658",
+      "property_address": "1838 GREENWOOD AVE LOUISVILLE KY 40210",
+      "owner_name": "CARDINE BRITTANY",
+      "owner_mailing_address": "741 S 32ND ST LOUISVILLE KY 40211-1414",
+      "parcel_id": "038F01540000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "habitability",
+        "tenant_issue",
+        "owner_unresponsive",
+        "accumulated_fines"
+      ],
+      "ai_summary": "An unresolved tenant AC issue with enforcement and an assessed citation indicates moderate landlord distress.",
+      "confirmed_facts": [
+        "Complaint reports an unresolved AC problem and communication with the landlord.",
+        "A $100 citation was assessed."
+      ],
+      "speculative_claims": [
+        "The exact duration/details of the landlord response are based on the tenant complaint."
+      ],
+      "description_raw": "The citizen been here since Oct 2026. The citizen states she followed up with Landlord and she had no idea that the AC was not working. The citizen states she was told to buy a small AC unit. The citizen states that she works from home and is dealing with asthma. The citizen had to go to the hospital.",
+      "inspector_comments": [
+        "All grass/weeds must be cut and maintained below 10\". All overgrowth must be cut back and maintained. This includes front, rear and any easements attached to property.",
+        "All surfaces must be in good repair at all times, no chipping/peeling paint, etc. Exposed wood must be sealed/painted to protect from elements.",
+        "All porches must be secure and in good repair and all hardware properly installed. All handrails must be in good repair with no missing spindles.",
+        "All roofing materials must be properly installed and in good repair at all times. Several areas of soffit in disrepair and gutters not properly connected, not functioning as intended. Gutters must also be clean and flowing freely.",
+        "Property is not owner occupied and must be registered as a rental property via the Louisville Metro Government Rental Registry. www.louisvilleky.gov or call 502-574-2508 for assistance."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 100.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B8919&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 3998.1,
+      "lot_acres": 0.0918,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Occupied",
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "2ff0f77e24b73830447fe86c531260c63dcbe9551b1e3320bc2bfd2271916307",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::038F01540000",
+      "material_revision": "85ff2562f77c02d149ec771f",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 19,
+      "priority_score": 68,
+      "priority_tier": "STRONG",
+      "distress_score": 60,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-019225",
+      "property_address": "3637 RIVER PARK DR LOUISVILLE KY 40211",
+      "owner_name": "MCATEE TIMA SCOTT",
+      "owner_mailing_address": "3816 MELDA LN LOUISVILLE KY 40219-1400",
+      "parcel_id": "007H00780000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "vacancy",
+        "overgrown_vegetation",
+        "repeated_noncompliance"
+      ],
+      "ai_summary": "A vacant structure with recurring maintenance complaints shows persistent but moderate neglect.",
+      "confirmed_facts": [
+        "The structured feed identifies a vacant structure.",
+        "Complaint describes recurring fence-line overgrowth, and the inspector ordered vegetation control."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Citizen is reporting that the owner of this vacant property fails to clean their side of the fence line and it continuously grows over into the neighboring fence line and property. The owner has someone cut the grass but they do not weed eat. Citizen is doing their part by maintaining their side of the fence. The best view is in the alley. 1-20 business days",
+      "inspector_comments": [
+        "Grass must be kept and maintained at 10\" or below Remove noxious vine from rear of house"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1808&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 4832.9,
+      "lot_acres": 0.1109,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Vacant",
+      "recent_window_occupancies": [
+        "Vacant Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "302321989379285e3fcc41fd7da5dba883c6101a55116f021cd24a7a02b83c18",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::007H00780000",
+      "material_revision": "2c35f09b10786ccca1f0de92",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 20,
+      "priority_score": 66,
+      "priority_tier": "STRONG",
+      "distress_score": 56,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-016599",
+      "property_address": "9723 COLLIER LN LOUISVILLE KY 40291",
+      "owner_name": "KTC INVESTMENTS LLC",
+      "owner_mailing_address": "104 MUIRS LN PEWEE VALLEY KY 40056-9019",
+      "parcel_id": "379800060000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "infestation",
+        "overgrown_vegetation",
+        "nuisance",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Pest activity combined with overgrowth and a $300 assessed citation creates moderate distress.",
+      "confirmed_facts": [
+        "Complaint reports rats around high bushes/weeds.",
+        "Inspector ordered vegetation maintained below ten inches; a $300 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "description_raw": "rats seen in high bushes and weeds at end of driveway, seen on front walk and side of house",
+      "inspector_comments": [
+        "All tall grass and weeds must be maintained and kept below 10 inches at all times. This includes all flowerbeds, around yard furniture, easements along side or rear by alleys, next to foundation, etc.",
+        "Property is not owner occupied and must be registered as a rental property via the Louisville Metro Government Rental Registry. www.louisvilleky.gov or call 502-574-2508 for assistance."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 300.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "CITATION ASSESSED — NOT VERIFIED CURRENT BALANCE",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C4417&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 7896.4,
+      "lot_acres": 0.1813,
+      "pin": null,
+      "zoning_code": "R4",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Occupied",
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "e00ebbb656ae4767262cc106b91d0ac2bbaed87719a8948b99ff867596911217",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::379800060000",
+      "material_revision": "c2c2555d780563d5a88d7513",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 21,
+      "priority_score": 65,
+      "priority_tier": "STRONG",
+      "distress_score": 55,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-019027",
+      "property_address": "1029 MAYER AVE LOUISVILLE KY 40217",
+      "owner_name": "DUNLAP BNB LLC",
+      "owner_mailing_address": "25 ANDREW PKWY FISHERVILLE KY 40023-7504",
+      "parcel_id": "026E00450000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "severe_exterior_deterioration",
+        "nuisance",
+        "repeated_noncompliance"
+      ],
+      "ai_summary": "A long-running dangerous-tree condition with reported prior damage creates moderate distress.",
+      "confirmed_facts": [
+        "Inspector identified a dead/dangerous tree requiring corrective work.",
+        "Complaint reports limbs have fallen and damaged neighboring property over the years."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Large tree at the property that is completely dead with ivy growing up the side. Citizen reports over the years several limbs have fallen and damaged neighboring property.",
+      "inspector_comments": [
+        "All dead, dangerous trees must be cut back all limbs disposed of and debris alternatively Tree must be tested by a licensed arborist to determine life expectancy or failure. You may go to our website at Louisville ky.gov and look for Urban Forestry and their tree assistance program to assist"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0416&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 7599.9,
+      "lot_acres": 0.1745,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Occupied",
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "4a1a188bfbaba54977db278a25c8c935b898e82fea8fef0755ec0a54127cae03",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::026E00450000",
+      "material_revision": "8409c41f54e9e157814cbbae",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 22,
+      "priority_score": 65,
+      "priority_tier": "STRONG",
+      "distress_score": 55,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-018474",
+      "property_address": "230 ROCHESTER DR LOUISVILLE KY 40214",
+      "owner_name": "TAYLOR RACAZIA S",
+      "owner_mailing_address": "230 ROCHESTER DR LOUISVILLE KY 40214-2649",
+      "parcel_id": "060D00040000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "vacancy",
+        "overgrown_vegetation",
+        "trash_or_debris"
+      ],
+      "ai_summary": "Reported vacancy/turnover plus exterior neglect creates moderate acquisition relevance.",
+      "confirmed_facts": [
+        "Complaint describes a property advertised for rent as vacant with overgrown grass and weeds.",
+        "Inspector ordered the property kept cut, clean and free of rubbish."
+      ],
+      "speculative_claims": [
+        "The structured occupancy field says occupied, so the complaint's vacancy description is not independently confirmed."
+      ],
+      "description_raw": "Vacant property with a For Rent sign in frony yard. Overgrown grass & weeds.",
+      "inspector_comments": [
+        "Entire property must remain cut and clean and free of all rubbish"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D6311&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 5712.7,
+      "lot_acres": 0.1311,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Occupied",
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "ab894f77cdfe849e0e165b94b72a0f6ae70e1894178cbcbf28b6a9fcaf2b362d",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::060D00040000",
+      "material_revision": "34003721e487c77f562bd623",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 23,
+      "priority_score": 64,
+      "priority_tier": "STRONG",
+      "distress_score": 53,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-018991",
+      "property_address": "6526 MILES AVE LOUISVILLE KY 40214",
+      "owner_name": "KF PROPERTIES LLC",
+      "owner_mailing_address": "9009 LINN STATION RD LOUISVILLE KY 40222-5722",
+      "parcel_id": "059F00960114",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "trash_or_debris",
+        "nuisance",
+        "repeated_noncompliance"
+      ],
+      "ai_summary": "Broad property-wide debris accumulation indicates active neglect beyond a minor yard issue.",
+      "confirmed_facts": [
+        "Complaint and inspector records document scrap metal, clothing, wood, tires, trash and rubbish across the property.",
+        "Inspector ordered cleanup within seven days."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Scrap metal, clothing, wood and trash throughout the front yard of this property.",
+      "inspector_comments": [
+        "Tires, trash, rubbish in the rear. The entire property must be clean within 7 days of this notice. The entire property must remain cut, clean, organized, and maintained at all times. Grass/weeds must stay under 10 inches: including easements and flower beds."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0192&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 8149.8,
+      "lot_acres": 0.1871,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Occupied",
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "a04786515d1a87420746b254e945a07ec8bce1ad33a286eedb46a9960e7c2cb0",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::059F00960114",
+      "material_revision": "899d6086600670e04911f760",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 24,
+      "priority_score": 64,
+      "priority_tier": "STRONG",
+      "distress_score": 53,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-014799",
+      "property_address": "1134 GOSS AVE LOUISVILLE KY 40217",
+      "owner_name": "CUNNINGHAM DENNIS RYAN",
+      "owner_mailing_address": "1134 GOSS AVE LOUISVILLE KY 40217-1238",
+      "parcel_id": "026C02110000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "severe_exterior_deterioration",
+        "trash_or_debris",
+        "overgrown_vegetation",
+        "nuisance"
+      ],
+      "ai_summary": "Exterior deterioration combined with overgrowth and junk indicates meaningful deferred maintenance.",
+      "confirmed_facts": [
+        "Complaint reports siding falling off, tall grass/weeds and junk in the yard."
+      ],
+      "speculative_claims": [],
+      "description_raw": "Caller reports the siding is falling off the house, the grass is very tall, there's tall weeds all over, there's junk laying in the front yard, the backyard looks \"horrendous\" and the grass by the street is very tall.",
+      "inspector_comments": [
+        "Repair or replace siding on the left side of the house where needed"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B3754&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 4224.7,
+      "lot_acres": 0.097,
+      "pin": null,
+      "zoning_code": "C1",
+      "zoning_name": "COMMERCIAL",
+      "zoning_type": "COMMERCIAL-INDUSTRIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Occupied",
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "277a8a8bf0b4445c60be5f2e0af3d0d040e051fd15e87118045d6e206ab050cd",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::026C02110000",
+      "material_revision": "81a196ff214bbd78ab350d58",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "rank": 25,
+      "priority_score": 64,
+      "priority_tier": "STRONG",
+      "distress_score": 53,
+      "saturation_score": 24,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "case_number": "ENF-PMNT-26-019206",
+      "property_address": "1808 EDENSIDE AVE LOUISVILLE KY 40204",
+      "owner_name": "LAMBERT SAMMIE S",
+      "owner_mailing_address": "1808 EDENSIDE AVE LOUISVILLE KY 40204-1522",
+      "parcel_id": "076F00040000",
+      "open_cases_in_50_sample_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "MEDIUM",
+      "ai_signals": [
+        "severe_exterior_deterioration",
+        "overgrown_vegetation",
+        "trash_or_debris",
+        "nuisance"
+      ],
+      "ai_summary": "Severe exterior neglect and a tree hazard create meaningful distress despite uncertain vacancy.",
+      "confirmed_facts": [
+        "Complaint reports extreme overgrowth, porch garbage and a potentially dangerous tree branch.",
+        "Inspector ordered boxes and dead limbs removed."
+      ],
+      "speculative_claims": [
+        "The complaint says the property looks abandoned/vacant, but the structured occupancy field says occupied."
+      ],
+      "description_raw": "Citizen is reporting that there is a tree branch that is potentially going to fall in the front yard of this property. Also, the grass, weeds, bushes, and trees are extremely overgrown. There is garbage on the front porch. The property is next to the St. James School and looks to be abandoned/vacant.",
+      "inspector_comments": [
+        "Remove items such as boxes from front porch",
+        "Remove dead limbs along sidewalk in front of house"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1653&agencyCode=LJCMG",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 5744.3,
+      "lot_acres": 0.1319,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "property_type": "SFR",
+      "occupancy": "Occupied",
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "a191711d726e655619ca7ff7872f020452474bb26b04c5a8d436cf5373be60c1",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::076F00040000",
+      "material_revision": "c4a563b3b59a74bc8b38be49",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    }
+  ],
+  "land": [
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-19-012574",
+      "record_status": "Open",
+      "property_address": "2509 WOODLAND AVE LOUISVILLE KY 40210",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40210",
+      "description_raw": "Email received: 2509 Woodland – Property Maintenance",
+      "inspector_comments": [
+        "Cut All high grass and overgrowth. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "owner_name": "GRIFFIN MILDRED ESTATE OF",
+      "owner_mailing_address": "2806 THISTLEWOOD DR LOUISVILLE KY 40206-1336",
+      "owner_mailing_differs": true,
+      "parcel_id": "040J00300000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=19REC&capID2=00000&capID3=77171&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D6145&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-20",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Abandoned Lot",
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 100.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "parcel_type": 0,
+      "lot_sqft": 4972.3,
+      "lot_acres": 0.1141,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 93,
+      "builder_fit_score": 100,
+      "saturation_score": 27,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 91,
+      "priority_tier": "CALL FIRST",
+      "ai_motivation_level": "HIGH",
+      "ai_signals": [
+        "vacant_lot",
+        "overgrown_vegetation",
+        "estate_or_deceased",
+        "absentee_owner",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Estate ownership, off-site mailing and an active assessed enforcement event make this a strong motivated-land lead.",
+      "confirmed_facts": [
+        "Vacant lot is under current overgrowth enforcement; owner is labeled ESTATE OF with different mailing; a $100 citation was assessed."
+      ],
+      "speculative_claims": [
+        "Estate ownership does not prove an active probate."
+      ],
+      "verified_current_outstanding_balance": null,
+      "money_label": "$100 citation assessed; current balance unverified",
+      "rank": 1,
+      "event_fingerprint": "067ff0be8af3fd367528d99ed6af6c36fa4411fa8da7edc9eba35eb9d5975856",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::040J00300000",
+      "material_revision": "1180f30982b12361b69495cd",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-017562",
+      "record_status": "Open",
+      "property_address": "3939 CENTRAL AVE LOUISVILLE KY 40218",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40218",
+      "description_raw": null,
+      "inspector_comments": [
+        "Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount. ** Property must be free at all large furniture items, trash/junk and other miscellaneous debris, if present. Debris to include dead tree limbs. Grass/weeds must also be cut to unacceptable height throughout the entire property when in season.",
+        "All vehicles must be parked on a hard surface. Vehicles cannot be parked on grass. All vehicles must not be in a state of repair and licensed.",
+        "Lot is not zoned for a junkyard all vehicles need to be remove"
+      ],
+      "owner_name": "HRA PROPERTIES CORP",
+      "owner_mailing_address": "2302 HURSTBOURNE VILLAGE DR STE 600 LOUISVILLE KY 40299-1877",
+      "owner_mailing_differs": true,
+      "parcel_id": "012101790000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D0257&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5264&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-20",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A",
+        "05A",
+        "Z004"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
+        "05A - ILLEGALLY PARKED/ABANDONED VEH [156.052-I, J] (156.052-I, J).... All motor vehicles must be parked on a hard and durable surface and no inoperative or unlicensed motor vehicle shall be parked, kept or stored on any premises, and no vehicle shall at any time be in a state of major disassembly, disrepair, or in the process of being stripped or dismantled. Vehicles may only be parked on those portions of the premises, which the Land Development Code allows as permissible parking areas, also all vehicles must be parked on a hard durable surface. Painting of vehicles is prohibited on residentially zoned or used property, except as provided for in other regulations. (156.052-J) Removal by Metro Government. In the event that any person fails to comply with an order issued pursuant to this section, the Code Official may have the vehicle parked or stored in violation of this section, removed and disposed of and may impose on the person violating the order a reasonable charge to cover the direct and indirect costs, if any, for the removal and disposition of the motor vehicle or major parts thereof.",
+        "Z004- -Auto repair is not allowed on residential Zoned Properties [156.052 M] - -No land may be used except for a purpose permitted in the zoning and form districts in which it is located. The use of the property is not a permitted use in the residential zoning district in which it is located. (Louisville Metro Land Development Code Chapter 2 Part 2)"
+      ],
+      "citation_event_count": 2,
+      "citation_assessed_total": 600.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "parcel_type": 0,
+      "lot_sqft": 32707.5,
+      "lot_acres": 0.7509,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 93,
+      "builder_fit_score": 100,
+      "saturation_score": 27,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 91,
+      "priority_tier": "CALL FIRST",
+      "ai_motivation_level": "HIGH",
+      "ai_signals": [
+        "vacant_lot",
+        "trash_or_dumping",
+        "overgrown_vegetation",
+        "absentee_owner",
+        "accumulated_fines",
+        "other"
+      ],
+      "ai_summary": "Multiple junk/debris/vehicle violations plus two assessed citation events and off-site ownership create a strong motivation stack.",
+      "confirmed_facts": [
+        "Inspector documented furniture/trash/debris, vehicle violations and junkyard-type use; owner mailing differs; two citation events totaling $600 were assessed."
+      ],
+      "speculative_claims": [
+        "Assessed citations are not a verified current unpaid balance."
+      ],
+      "verified_current_outstanding_balance": null,
+      "money_label": "$600 citation assessed; current balance unverified",
+      "rank": 2,
+      "event_fingerprint": "88a4434da5e62d1645c63ad381a47bb9d58bc16a12a3cdfc3d8213e97eaf7500",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::012101790000",
+      "material_revision": "d1b6c8d5bb6f7672c8e0664e",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-004374",
+      "record_status": "Open",
+      "property_address": "2215 W MADISON ST LOUISVILLE KY 40211",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40211",
+      "description_raw": null,
+      "inspector_comments": [
+        "Maintain entire yard at all times. Abate overgrowth throughout."
+      ],
+      "owner_name": "SMITH WILLIAM D HEIRS OR DEVISEES OF",
+      "owner_mailing_address": "1731 BACHMANN DR LOUISVILLE KY 40216-5001",
+      "owner_mailing_differs": true,
+      "parcel_id": "002J00360000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=43183&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C3268&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-18",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "parcel_type": 0,
+      "lot_sqft": 4647.0,
+      "lot_acres": 0.1067,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "motivation_score": 93,
+      "builder_fit_score": 100,
+      "saturation_score": 27,
+      "freshness_score": 65,
+      "freshness_label": "4-7 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 89,
+      "priority_tier": "CALL FIRST",
+      "ai_motivation_level": "HIGH",
+      "ai_signals": [
+        "vacant_lot",
+        "overgrown_vegetation",
+        "estate_or_deceased",
+        "absentee_owner",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Heirs/devises ownership, off-site mailing, active overgrowth and an assessed citation create a strong motivated-land stack.",
+      "confirmed_facts": [
+        "Owner label includes HEIRS OR DEVISEES; mailing differs; inspector ordered overgrowth abatement; a $200 citation was assessed."
+      ],
+      "speculative_claims": [
+        "Heirs/devises does not prove an active probate case."
+      ],
+      "verified_current_outstanding_balance": null,
+      "money_label": "$200 citation assessed; current balance unverified",
+      "rank": 3,
+      "event_fingerprint": "07b9ba15e55926d6c00e32584ee9e644df5b5cd288d42bc241fbe27fcb30c8f8",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::002J00360000",
+      "material_revision": "2b7330b5a27a12ee83df1adb",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-007727",
+      "record_status": "Open",
+      "property_address": "4209 LA SALLE AVE LOUISVILLE KY 40215",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40215",
+      "description_raw": null,
+      "inspector_comments": [
+        "Remove all trash, tree debris, rubbish from the entire property. The entire property must remain cut, clean, organized and maintained at all times. Cut grass to the street and midway into the alley if applicable. Keep the alley clean midway to the middle if applicable. Grass/weeds must stay at or under 10 inches at all times. Including the flower bed and easements."
+      ],
+      "owner_name": "DURBIN CHARLES HEIRS OR DEVISEES OF",
+      "owner_mailing_address": "4209 LA SALLE AVE LOUISVILLE KY 40215",
+      "owner_mailing_differs": false,
+      "parcel_id": "067G00590000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=65934&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D2380&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-20",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 600.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "parcel_type": 0,
+      "lot_sqft": 2954.1,
+      "lot_acres": 0.0678,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 88,
+      "builder_fit_score": 100,
+      "saturation_score": 27,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 89,
+      "priority_tier": "CALL FIRST",
+      "ai_motivation_level": "HIGH",
+      "ai_signals": [
+        "vacant_lot",
+        "trash_or_dumping",
+        "overgrown_vegetation",
+        "estate_or_deceased",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Heirs/devises ownership combined with cleanup distress and a $600 assessed citation creates a strong motivated-land signal.",
+      "confirmed_facts": [
+        "Vacant lot has trash/tree debris and overgrowth; owner label includes HEIRS OR DEVISEES OF; a $600 citation was assessed."
+      ],
+      "speculative_claims": [
+        "Heirs/devises is an estate/deceased-owner indicator, not proof of an active probate."
+      ],
+      "verified_current_outstanding_balance": null,
+      "money_label": "$600 citation assessed; current balance unverified",
+      "rank": 4,
+      "event_fingerprint": "37dcb6330595e8b5c13e191e210ed3524c4b1d42846e773711d85556db035a2d",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::067G00590000",
+      "material_revision": "e6c57a4f73e3e6a7a7a0301c",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-014496",
+      "record_status": "Open",
+      "property_address": "2417 PORTLAND AVE LOUISVILLE KY 40212",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40212",
+      "description_raw": "knee high weeds. Never is mowed",
+      "inspector_comments": [
+        "Please cut all grass/weeds/non-cultivated overgrowth"
+      ],
+      "owner_name": "G D LLC",
+      "owner_mailing_address": "4410 TAYLOR BLVD LOUISVILLE KY 40215-2304",
+      "owner_mailing_differs": true,
+      "parcel_id": "005F00660000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B1751&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B2312&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-20",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 200.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "parcel_type": 0,
+      "lot_sqft": 5950.2,
+      "lot_acres": 0.1366,
+      "pin": null,
+      "zoning_code": "UN",
+      "zoning_name": "URBAN NEIGHBORHOOD",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 70,
+      "builder_fit_score": 100,
+      "saturation_score": 27,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 81,
+      "priority_tier": "CALL FIRST",
+      "ai_motivation_level": "MEDIUM",
+      "ai_signals": [
+        "vacant_lot",
+        "overgrown_vegetation",
+        "absentee_owner",
+        "accumulated_fines",
+        "long_term_neglect"
+      ],
+      "ai_summary": "Persistent-looking vegetation neglect, off-site ownership and a $200 assessed citation create moderate motivation.",
+      "confirmed_facts": [
+        "Complaint reports knee-high weeds and says the lot is never mowed; owner mailing differs; a $200 citation was assessed."
+      ],
+      "speculative_claims": [
+        "Exact duration of neglect is not independently established."
+      ],
+      "verified_current_outstanding_balance": null,
+      "money_label": "$200 citation assessed; current balance unverified",
+      "rank": 5,
+      "event_fingerprint": "e9bacbd9f537ecab8991498ba362e56524a1922484b94757a5a78567bc89fab8",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::005F00660000",
+      "material_revision": "14b831d90b6133e0d05c57d2",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-25-005787",
+      "record_status": "Open",
+      "property_address": "4208 TAYLOR BLVD LOUISVILLE KY 40215",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40215",
+      "description_raw": "abandoned vehicles on property. no tags",
+      "inspector_comments": [
+        "Entire property must be kept cut, clean and maintained at all times, Grass and weeds cut at 10 inches or below. Remove any rubbish, debris, trash, etc."
+      ],
+      "owner_name": "R & A INVESTMENTS LLC",
+      "owner_mailing_address": "4965 US HWY 42 STE 1000 PMB 38 LOUISVILLE KY 40222-6375",
+      "owner_mailing_differs": true,
+      "parcel_id": "067A00850000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=25REC&capID2=00000&capID3=59234&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B1248&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-20",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 300.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "parcel_type": 0,
+      "lot_sqft": 7276.3,
+      "lot_acres": 0.167,
+      "pin": null,
+      "zoning_code": "R7",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "MULTI-FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 69,
+      "builder_fit_score": 93,
+      "saturation_score": 27,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 78,
+      "priority_tier": "CALL FIRST",
+      "ai_motivation_level": "MEDIUM",
+      "ai_signals": [
+        "vacant_lot",
+        "trash_or_dumping",
+        "overgrown_vegetation",
+        "absentee_owner",
+        "accumulated_fines",
+        "other"
+      ],
+      "ai_summary": "Vehicle/storage problems, cleanup distress, off-site ownership and a $300 citation create moderate motivation.",
+      "confirmed_facts": [
+        "Complaint reports abandoned/unregistered vehicles; inspector ordered cleanup/vegetation maintenance; owner mailing differs; a $300 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "verified_current_outstanding_balance": null,
+      "money_label": "$300 citation assessed; current balance unverified",
+      "rank": 6,
+      "event_fingerprint": "5835a33c292d011f2c4ecf81ff6682b3bd73b1f02718c2f0a0e3a055c01ffbfa",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::067A00850000",
+      "material_revision": "0a8adf7c3ae9822a8734868c",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-006439",
+      "record_status": "Open",
+      "property_address": "1708 W ST CATHERINE ST LOUISVILLE KY 40210",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40210",
+      "description_raw": "CALLER REPORTING TALL GRASS AT THIS VACANT LOT.",
+      "inspector_comments": [
+        "Grass needs to be cut and maintained below 10 inches at all times. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "owner_name": "YARBROUGH LIFFORD JR",
+      "owner_mailing_address": "1603 OLIVE ST LOUISVILLE KY 40210-1933",
+      "owner_mailing_differs": true,
+      "parcel_id": "037D00350000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=58002&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5853&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-20",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 100.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "parcel_type": 0,
+      "lot_sqft": 3910.8,
+      "lot_acres": 0.0898,
+      "pin": null,
+      "zoning_code": "R7",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 61,
+      "builder_fit_score": 100,
+      "saturation_score": 27,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 77,
+      "priority_tier": "CALL FIRST",
+      "ai_motivation_level": "MEDIUM",
+      "ai_signals": [
+        "vacant_lot",
+        "overgrown_vegetation",
+        "absentee_owner",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Vacancy, off-site ownership and an assessed citation create moderate pressure despite a minor condition.",
+      "confirmed_facts": [
+        "Vacant lot has tall-grass enforcement; owner mailing differs; a $100 citation was assessed."
+      ],
+      "speculative_claims": [
+        "Generic Metro correction/lien language does not prove completed cleanup or a current lien."
+      ],
+      "verified_current_outstanding_balance": null,
+      "money_label": "$100 citation assessed; current balance unverified",
+      "rank": 7,
+      "event_fingerprint": "ce0fdf9e773d481d17dba2a77c91ad5410e5ef9351ef551097b18bef43855f17",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::037D00350000",
+      "material_revision": "68bb8001b285e8f512e4e36c",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-009105",
+      "record_status": "Open",
+      "property_address": "2703 W KENTUCKY ST LOUISVILLE KY 40211",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40211",
+      "description_raw": "High grass",
+      "inspector_comments": [
+        "Cut all high grass and overgrowth. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "owner_name": "MONTUFAR CARLOS MANUEL",
+      "owner_mailing_address": "129 LISA DR SHEPHERDSVILLE KY 40165-9164",
+      "owner_mailing_differs": true,
+      "parcel_id": "046D01620000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=75985&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5375&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-20",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 100.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "parcel_type": 0,
+      "lot_sqft": 10004.2,
+      "lot_acres": 0.2297,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 61,
+      "builder_fit_score": 100,
+      "saturation_score": 27,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 77,
+      "priority_tier": "CALL FIRST",
+      "ai_motivation_level": "MEDIUM",
+      "ai_signals": [
+        "vacant_lot",
+        "overgrown_vegetation",
+        "absentee_owner",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Off-site ownership and an active assessed citation raise this above a simple grass lead.",
+      "confirmed_facts": [
+        "Vacant lot has high-grass enforcement; owner mailing is in Shepherdsville; a $100 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "verified_current_outstanding_balance": null,
+      "money_label": "$100 citation assessed; current balance unverified",
+      "rank": 8,
+      "event_fingerprint": "ffad49a7298ddedbe7c118dd682b92f7206ab1cd56b372e13b796e1fb8a8d733",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::046D01620000",
+      "material_revision": "2cd515ea4e179257f2016fcb",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-016826",
+      "record_status": "Open",
+      "property_address": "1740 DIXIE HWY LOUISVILLE KY 40210",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40210",
+      "description_raw": null,
+      "inspector_comments": [
+        "Tree debris on lot. Entire property must be clean and cut at all times, including all easements.",
+        "Trailer parked in grass. All trailers and vehicles must be licensed, operable and parked on a hard soundly surface at all times.",
+        "Tree on lot is dead. Have dead tree removed."
+      ],
+      "owner_name": "EURO TECH INC",
+      "owner_mailing_address": "PO BOX 6452 LOUISVILLE KY 40206-0452",
+      "owner_mailing_differs": true,
+      "parcel_id": "041E00880000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C5766&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C5787&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-20",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A",
+        "X90",
+        "05A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
+        "X90 - DEAD/DANGEROUS TREE [156.005 (Definitions) (Public Nuisance) #7] You have a tree which is in danger of collapse of which poses a danger of contamination because of disease, decay, injury, infestation or damage is prohibited or creates a public nuisance and must be corrected or removed.",
+        "05A - ILLEGALLY PARKED/ABANDONED VEH [156.052-I, J] (156.052-I, J).... All motor vehicles must be parked on a hard and durable surface and no inoperative or unlicensed motor vehicle shall be parked, kept or stored on any premises, and no vehicle shall at any time be in a state of major disassembly, disrepair, or in the process of being stripped or dismantled. Vehicles may only be parked on those portions of the premises, which the Land Development Code allows as permissible parking areas, also all vehicles must be parked on a hard durable surface. Painting of vehicles is prohibited on residentially zoned or used property, except as provided for in other regulations. (156.052-J) Removal by Metro Government. In the event that any person fails to comply with an order issued pursuant to this section, the Code Official may have the vehicle parked or stored in violation of this section, removed and disposed of and may impose on the person violating the order a reasonable charge to cover the direct and indirect costs, if any, for the removal and disposition of the motor vehicle or major parts thereof."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 4363.6,
+      "lot_acres": 0.1002,
+      "pin": null,
+      "zoning_code": "R7",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 60,
+      "builder_fit_score": 100,
+      "saturation_score": 27,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 76,
+      "priority_tier": "CALL FIRST",
+      "ai_motivation_level": "MEDIUM",
+      "ai_signals": [
+        "vacant_lot",
+        "trash_or_dumping",
+        "dangerous_tree",
+        "absentee_owner",
+        "other"
+      ],
+      "ai_summary": "Multiple maintenance issues including a dead tree and debris, plus off-site ownership, create moderate land distress.",
+      "confirmed_facts": [
+        "Inspector documented tree debris, a trailer in grass and a dead tree requiring removal; owner mailing differs."
+      ],
+      "speculative_claims": [],
+      "verified_current_outstanding_balance": null,
+      "money_label": "No assessed citation in current extract",
+      "rank": 9,
+      "event_fingerprint": "2073805033fd0eb8545559dc11d2664694077af5acaf16916ceb627a7ccd1d6b",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::041E00880000",
+      "material_revision": "e7599f08c4be803c78b68f4c",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-24-020140",
+      "record_status": "Open",
+      "property_address": "2044 S PRESTON ST LOUISVILLE KY 40217",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40217",
+      "description_raw": "Caller reports that he has heard people banging and hammering on things inside this vacant, boarded up building, and two nights ago smelled smoke either from a fire or from cooking. The building is boarded up but the boards on the back have been removed, and the windows on the 2nd floor are broken out. Caller is concerned that whoever is living inside may start a fire. Caller was not sure how many people may be occupying the building.",
+      "inspector_comments": [
+        "Property must be cleaned and maintained at all times and trash, rubbish and debris tree limbs, or cuttings must be properly disposed of high grass and weeds. Must be cut below 10 inches."
+      ],
+      "owner_name": "SV REHAB LLC",
+      "owner_mailing_address": "925 HOBBS LN FISHERVILLE KY 40023-8725",
+      "owner_mailing_differs": true,
+      "parcel_id": "035L01740000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=24REC&capID2=00000&capID3=O8440&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A1714&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-21",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 5830.5,
+      "lot_acres": 0.1338,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 59,
+      "builder_fit_score": 100,
+      "saturation_score": 27,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 76,
+      "priority_tier": "CALL FIRST",
+      "ai_motivation_level": "MEDIUM",
+      "ai_signals": [
+        "vacant_lot",
+        "boarded_or_unsecured",
+        "absentee_owner",
+        "overgrown_vegetation"
+      ],
+      "ai_summary": "Off-site ownership plus a reported unsecured/boarded condition and active maintenance enforcement creates meaningful motivation, but the parcel/structure-status conflict needs review.",
+      "confirmed_facts": [
+        "Structured source classifies the parcel as a vacant lot; complaint reports a boarded building with rear boards removed and broken windows; owner mailing differs; inspector ordered cleanup/vegetation maintenance."
+      ],
+      "speculative_claims": [
+        "Possible occupants and smoke/fire are caller-reported, and the vacant-lot versus boarded-building source conflict means a structure-to-land transition is not verified."
+      ],
+      "verified_current_outstanding_balance": null,
+      "money_label": "No assessed citation in current extract",
+      "rank": 10,
+      "event_fingerprint": "b966992b5a42659eb96d35de419c2470352ea58f6c0593f6a1bdae0b8ff46163",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::035L01740000",
+      "material_revision": "d6261db28c3915ff4c87aeb9",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-017977",
+      "record_status": "Open",
+      "property_address": "13421 RIGGS LAKE LN LOUISVILLE KY 40299",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40299",
+      "description_raw": "Vacant residential lot",
+      "inspector_comments": [
+        "Grass must be cut and maintained."
+      ],
+      "owner_name": "VORST JORDAN SCOTT",
+      "owner_mailing_address": "4110 SARATOGA WOODS DR LOUISVILLE KY 40299-4358",
+      "owner_mailing_differs": true,
+      "parcel_id": "382301220000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D2888&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D5646&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-20",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 2,
+      "citation_assessed_total": 300.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "parcel_type": 0,
+      "lot_sqft": 17585.7,
+      "lot_acres": 0.4037,
+      "pin": null,
+      "zoning_code": "R4",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "VACANT",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 65,
+      "builder_fit_score": 88,
+      "saturation_score": 27,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 75,
+      "priority_tier": "CALL FIRST",
+      "ai_motivation_level": "MEDIUM",
+      "ai_signals": [
+        "vacant_lot",
+        "overgrown_vegetation",
+        "absentee_owner",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Vacancy, off-site ownership and repeated assessed citation events create useful motivation beyond a simple mowing lead.",
+      "confirmed_facts": [
+        "Vacant residential lot has grass enforcement, owner mailing differs, and two citation events totaling $300 were assessed."
+      ],
+      "speculative_claims": [],
+      "verified_current_outstanding_balance": null,
+      "money_label": "$300 citation assessed; current balance unverified",
+      "rank": 11,
+      "event_fingerprint": "8b31a72be62dae32a91ef48adb542a6d6577f482b1eb4e2f9c1894234af96244",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::382301220000",
+      "material_revision": "644c9744c3c3fc4e6f513198",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-25-022750",
+      "record_status": "Open",
+      "property_address": "2244 OSAGE AVE LOUISVILLE KY 40210",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40210",
+      "description_raw": null,
+      "inspector_comments": [
+        "Grass is high throughout and needs to be cut. Property should be cut and clean at all times."
+      ],
+      "owner_name": "ZIRACO LLC",
+      "owner_mailing_address": "1603 CAPITOL AVE STE 415 CHEYENNE WY 82001-4562",
+      "owner_mailing_differs": true,
+      "parcel_id": "038E00210000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=25REC&capID2=00000&capID3=I4518&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A1942&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-19",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 100.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "parcel_type": 0,
+      "lot_sqft": 4061.5,
+      "lot_acres": 0.0932,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 61,
+      "builder_fit_score": 100,
+      "saturation_score": 27,
+      "freshness_score": 65,
+      "freshness_label": "4-7 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 74,
+      "priority_tier": "STRONG",
+      "ai_motivation_level": "MEDIUM",
+      "ai_signals": [
+        "vacant_lot",
+        "overgrown_vegetation",
+        "absentee_owner",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Out-of-state LLC ownership plus an assessed citation creates moderate motivation despite minor physical distress.",
+      "confirmed_facts": [
+        "Inspector documented high grass; owner mailing is in Wyoming; a $100 citation was assessed."
+      ],
+      "speculative_claims": [],
+      "verified_current_outstanding_balance": null,
+      "money_label": "$100 citation assessed; current balance unverified",
+      "rank": 12,
+      "event_fingerprint": "355e7b241f87470ec29f2d0a7fe3f2b44982fe447d67768f2a18a178db71b075",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::038E00210000",
+      "material_revision": "e7ddcec6244fa7197b8a7dda",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-017197",
+      "record_status": "Open",
+      "property_address": "1765 W GAULBERT AVE LOUISVILLE KY 40210",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40210",
+      "description_raw": null,
+      "inspector_comments": [],
+      "owner_name": "WHITE JAMELL",
+      "owner_mailing_address": "5625 CHEW AVE PHILADELPHIA PA 19138-1738",
+      "owner_mailing_differs": true,
+      "parcel_id": "041F00760000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C7994&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D3447&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-19",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 100.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "parcel_type": 0,
+      "lot_sqft": 3071.9,
+      "lot_acres": 0.0705,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 58,
+      "builder_fit_score": 100,
+      "saturation_score": 27,
+      "freshness_score": 65,
+      "freshness_label": "4-7 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 73,
+      "priority_tier": "STRONG",
+      "ai_motivation_level": "MEDIUM",
+      "ai_signals": [
+        "vacant_lot",
+        "absentee_owner",
+        "accumulated_fines"
+      ],
+      "ai_summary": "Out-of-state ownership and an assessed citation create moderate pressure potential even with sparse condition detail.",
+      "confirmed_facts": [
+        "Source identifies a vacant lot; owner mailing is in Philadelphia; a $100 citation was assessed."
+      ],
+      "speculative_claims": [
+        "Current extract contains little narrative physical-condition detail."
+      ],
+      "verified_current_outstanding_balance": null,
+      "money_label": "$100 citation assessed; current balance unverified",
+      "rank": 13,
+      "event_fingerprint": "b617446eca4faf1a1bee4f1685d16ebc49e76b4b4dec1f8191cfbf5cf2b68396",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::041F00760000",
+      "material_revision": "c8aa14eea2ef024148ceb36f",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-019022",
+      "record_status": "Open",
+      "property_address": "2516 S 4TH ST LOUISVILLE KY 40208",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40208",
+      "description_raw": null,
+      "inspector_comments": [
+        "All high grass and weeds must be cut and maintained, including within the alley easement area. Remove any trash, debris, or other miscellaneous items before mowing. Grass and weeds must be kept below 10 inches in height at all times. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "owner_name": "FARK LAND TRUST",
+      "owner_mailing_address": "2310 DOROTHY AVE LOUISVILLE KY 40205-2162",
+      "owner_mailing_differs": true,
+      "parcel_id": "050D01450000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0365&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0366&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-19",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 5630.5,
+      "lot_acres": 0.1293,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 58,
+      "builder_fit_score": 100,
+      "saturation_score": 27,
+      "freshness_score": 65,
+      "freshness_label": "4-7 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 73,
+      "priority_tier": "STRONG",
+      "ai_motivation_level": "MEDIUM",
+      "ai_signals": [
+        "vacant_lot",
+        "trash_or_dumping",
+        "overgrown_vegetation",
+        "absentee_owner"
+      ],
+      "ai_summary": "Cleanup and vegetation issues with off-site land-trust ownership create moderate motivation.",
+      "confirmed_facts": [
+        "Inspector ordered grass/weeds cut and trash/debris removed; owner mailing differs."
+      ],
+      "speculative_claims": [
+        "Requested Metro correction does not prove completed cleanup or an added lien."
+      ],
+      "verified_current_outstanding_balance": null,
+      "money_label": "No assessed citation in current extract",
+      "rank": 14,
+      "event_fingerprint": "01d0af24a2e0233086df51724f31e2cb4a8868aaa11a77a01a0fc7ca4cdfacd6",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::050D01450000",
+      "material_revision": "544f7cad2092aa70dfbc7a96",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-019019",
+      "record_status": "Open",
+      "property_address": "2520 S 4TH ST LOUISVILLE KY 40208",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40208",
+      "description_raw": null,
+      "inspector_comments": [
+        "All high grass and weeds must be cut and maintained, including within the alley easement area. Remove any trash, debris, or other miscellaneous items before mowing. Grass and weeds must be kept below 10 inches in height at all times. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "owner_name": "ARK LAND TRUST",
+      "owner_mailing_address": "2310 DOROTHY AVE LOUISVILLE KY 40205-2162",
+      "owner_mailing_differs": true,
+      "parcel_id": "050D01470000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0354&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0355&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-19",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 3510.2,
+      "lot_acres": 0.0806,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 58,
+      "builder_fit_score": 100,
+      "saturation_score": 27,
+      "freshness_score": 65,
+      "freshness_label": "4-7 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 73,
+      "priority_tier": "STRONG",
+      "ai_motivation_level": "MEDIUM",
+      "ai_signals": [
+        "vacant_lot",
+        "trash_or_dumping",
+        "overgrown_vegetation",
+        "absentee_owner"
+      ],
+      "ai_summary": "Active cleanup/vegetation enforcement and off-site land-trust ownership create moderate motivation.",
+      "confirmed_facts": [
+        "Inspector ordered grass/weeds cut and trash/debris removed; owner mailing differs."
+      ],
+      "speculative_claims": [
+        "Requested Metro correction does not prove completed cleanup or an added lien."
+      ],
+      "verified_current_outstanding_balance": null,
+      "money_label": "No assessed citation in current extract",
+      "rank": 15,
+      "event_fingerprint": "93e58e2addd5b73c94c408fd7f924e098e6c2e7d87b5bf7805accb9bb4740eda",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::050D01470000",
+      "material_revision": "90d5a5c65ee0f90550e5ea23",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-018993",
+      "record_status": "Open",
+      "property_address": "2237 W KENTUCKY ST LOUISVILLE KY 40210",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40210",
+      "description_raw": "Caller reports a tree fell at this property and is still leaning/hanging. Could fall all the way over at any time. Said they've seen kids playing on it and are concerned they could be hurt.",
+      "inspector_comments": [
+        "Remove collapsed tree from lot."
+      ],
+      "owner_name": "DRABO JAMES",
+      "owner_mailing_address": "8502 MOODY RD LOUISVILLE KY 40219-4847",
+      "owner_mailing_differs": true,
+      "parcel_id": "038B00350000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0212&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0213&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-20",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "X90"
+      ],
+      "violation_descriptions": [
+        "X90 - DEAD/DANGEROUS TREE [156.005 (Definitions) (Public Nuisance) #7] You have a tree which is in danger of collapse of which poses a danger of contamination because of disease, decay, injury, infestation or damage is prohibited or creates a public nuisance and must be corrected or removed."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 3996.1,
+      "lot_acres": 0.0917,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 52,
+      "builder_fit_score": 100,
+      "saturation_score": 27,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 73,
+      "priority_tier": "STRONG",
+      "ai_motivation_level": "MEDIUM",
+      "ai_signals": [
+        "vacant_lot",
+        "dangerous_tree",
+        "absentee_owner"
+      ],
+      "ai_summary": "A vacant residential parcel with an active hazardous-tree condition and off-site ownership shows moderate motivation.",
+      "confirmed_facts": [
+        "Vacant lot has a collapsed/leaning tree the inspector ordered removed; owner mailing differs."
+      ],
+      "speculative_claims": [
+        "Possible injury risk is complaint-reported; no injury is confirmed."
+      ],
+      "verified_current_outstanding_balance": null,
+      "money_label": "No assessed citation in current extract",
+      "rank": 16,
+      "event_fingerprint": "c29c9b72bbc9d288938a629f1e65566cc322c57037657f3e9f5298e7886624d6",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::038B00350000",
+      "material_revision": "14b47e439a9feebe783a1ed3",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-019127",
+      "record_status": "Open",
+      "property_address": "6204 PRESTON HWY LOUISVILLE KY 40219",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40219",
+      "description_raw": null,
+      "inspector_comments": [
+        "Tall grass and mattresses. Entire property must be clean and cut at all times, including all easements. Subject property needs to be in compliance immediately. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+      ],
+      "owner_name": "EXPANDED REALTY CO",
+      "owner_mailing_address": "4604 JENNINGS LN LOUISVILLE KY 40218-2924",
+      "owner_mailing_differs": true,
+      "parcel_id": "063204560000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1136&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1137&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-20",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 20946.4,
+      "lot_acres": 0.4809,
+      "pin": null,
+      "zoning_code": "R7",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "COMMERCIAL",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 58,
+      "builder_fit_score": 82,
+      "saturation_score": 27,
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 70,
+      "priority_tier": "STRONG",
+      "ai_motivation_level": "MEDIUM",
+      "ai_signals": [
+        "vacant_lot",
+        "trash_or_dumping",
+        "overgrown_vegetation",
+        "absentee_owner"
+      ],
+      "ai_summary": "Mattress dumping, overgrowth and off-site ownership create moderate motivation.",
+      "confirmed_facts": [
+        "Inspector documented tall grass and mattresses; owner mailing differs."
+      ],
+      "speculative_claims": [
+        "Potential correction costs/liens are enforcement warnings, not verified completed cleanup or current liens."
+      ],
+      "verified_current_outstanding_balance": null,
+      "money_label": "No assessed citation in current extract",
+      "rank": 17,
+      "event_fingerprint": "06dd5a8eae9e8d3539490e50062f4be50815b9200bdf3ea3b4b4eafe247f2323",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::063204560000",
+      "material_revision": "76d9c0e75ff76e3cf4401861",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-014657",
+      "record_status": "Open",
+      "property_address": "7001 E MANSLICK RD LOUISVILLE KY 40228",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40228",
+      "description_raw": "7001 and 7009 E Manslick Road are owned by the same developer. Weeds are out of control",
+      "inspector_comments": [
+        "Grass needs to be cut below 10 inches and remain maintained"
+      ],
+      "owner_name": "RED BUD HILL DEVELOPMENT INC",
+      "owner_mailing_address": "5427 BARDSTOWN RD LOUISVILLE KY 40291-1968",
+      "owner_mailing_differs": true,
+      "parcel_id": "065402830000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B2848&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C4929&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-19",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 13607.8,
+      "lot_acres": 0.3124,
+      "pin": null,
+      "zoning_code": "R4",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "VACANT",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 56,
+      "builder_fit_score": 93,
+      "saturation_score": 27,
+      "freshness_score": 65,
+      "freshness_label": "4-7 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 70,
+      "priority_tier": "STRONG",
+      "ai_motivation_level": "MEDIUM",
+      "ai_signals": [
+        "vacant_lot",
+        "overgrown_vegetation",
+        "absentee_owner",
+        "adjacent_same_owner",
+        "assemblage_opportunity"
+      ],
+      "ai_summary": "Off-site developer ownership and a reported neighboring same-owner parcel create a useful assemblage/motivation signal.",
+      "confirmed_facts": [
+        "Complaint states 7001 and 7009 E Manslick are owned by the same developer and have uncontrolled weeds; owner mailing differs."
+      ],
+      "speculative_claims": [
+        "Adjacent same ownership is complaint-reported and not yet independently parcel-verified in this record."
+      ],
+      "verified_current_outstanding_balance": null,
+      "money_label": "No assessed citation in current extract",
+      "rank": 18,
+      "event_fingerprint": "9e810bd599db1b69ebbf8b6dd9a641595d80b9249cdc20cfa6540ddac4fcda0e",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::065402830000",
+      "material_revision": "cd8019aa2ca0cf9711755e4c",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-018846",
+      "record_status": "Open",
+      "property_address": "540 S 18TH ST LOUISVILLE KY 40203",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40203",
+      "description_raw": "vacant lot - high grass and weed overgrown trees/bushes that obstruct the view of on coming traffic at the alley",
+      "inspector_comments": [
+        "Vacant lot must be cut/clean at all times, INCLUDING ALONG ALLEY EASEMENT AND FENCE LINES"
+      ],
+      "owner_name": "LT & JT III INVESTORS LLC",
+      "owner_mailing_address": "PO BOX 206654 LOUISVILLE KY 40250-6654",
+      "owner_mailing_differs": true,
+      "parcel_id": "001E01280000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D9422&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9423&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-19",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 3559.3,
+      "lot_acres": 0.0817,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 52,
+      "builder_fit_score": 100,
+      "saturation_score": 27,
+      "freshness_score": 65,
+      "freshness_label": "4-7 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 70,
+      "priority_tier": "STRONG",
+      "ai_motivation_level": "MEDIUM",
+      "ai_signals": [
+        "vacant_lot",
+        "overgrown_vegetation",
+        "absentee_owner",
+        "other"
+      ],
+      "ai_summary": "Overgrowth creating a reported visibility problem plus off-site ownership is more relevant than a basic mowing case.",
+      "confirmed_facts": [
+        "Complaint reports overgrown vegetation obstructing alley traffic visibility; owner mailing differs."
+      ],
+      "speculative_claims": [
+        "The degree of traffic hazard is complaint-reported rather than independently measured."
+      ],
+      "verified_current_outstanding_balance": null,
+      "money_label": "No assessed citation in current extract",
+      "rank": 19,
+      "event_fingerprint": "8df1949dfe1e9c0548583d7a39598c487053c24c26636aea8687206b6901d3e6",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::001E01280000",
+      "material_revision": "57e2e869917ee5064b677143",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-009265",
+      "record_status": "Open",
+      "property_address": "1704 PRENTICE ST LOUISVILLE KY 40210",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40210",
+      "description_raw": null,
+      "inspector_comments": [
+        "Entire property must be cut, clean and free of trash, rubbish and debris at all times. Properly store or dispose of all items. This includes any easements attached to property. Cannot store random construction debris, old tires, wooden pallets, etc. unless in an enclosed structure. Everything except the smoker and trailer must be removed. The grass is over 24\" and must be cut and maintained."
+      ],
+      "owner_name": "REFUGE COMMUNITY DEVELOPMENT INC",
+      "owner_mailing_address": "1716 PRENTICE ST LOUISVILLE KY 40210-1237",
+      "owner_mailing_differs": true,
+      "parcel_id": "037D01140000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=77179&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D4148&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-19",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 4674.3,
+      "lot_acres": 0.1073,
+      "pin": null,
+      "zoning_code": "R7",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "COMMERCIAL",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "motivation_score": 58,
+      "builder_fit_score": 87,
+      "saturation_score": 27,
+      "freshness_score": 65,
+      "freshness_label": "4-7 DAYS",
+      "freshness_precision": "date",
+      "priority_score": 69,
+      "priority_tier": "STRONG",
+      "ai_motivation_level": "MEDIUM",
+      "ai_signals": [
+        "vacant_lot",
+        "trash_or_dumping",
+        "overgrown_vegetation",
+        "absentee_owner"
+      ],
+      "ai_summary": "Substantial debris plus very high grass and off-site ownership create a meaningful neglect signal.",
+      "confirmed_facts": [
+        "Inspector documented construction debris, old tires, pallets and grass over 24 inches; owner mailing differs."
+      ],
+      "speculative_claims": [],
+      "verified_current_outstanding_balance": null,
+      "money_label": "No assessed citation in current extract",
+      "rank": 20,
+      "event_fingerprint": "b6c546aa73817ea6036971fd2d48d72f6509a54beaffc061fae29ca05d255969",
+      "agent_id": "zack",
+      "property_key": "JEFFERSON_KY::PARCEL::037D01140000",
+      "material_revision": "a3e79d2a2b851a6a2759a474",
+      "property_event_rows_in_pool": 1,
+      "assignment_status": "NEW"
+    }
+  ],
+  "summary": {
+    "houses_delivered": 25,
+    "land_delivered": 20,
+    "total_delivered": 45,
+    "house_stats": {
+      "seen": 25,
+      "failed_quality": 0,
+      "duplicate_property_rows_collapsed": 0,
+      "qualified_unique_properties": 25,
+      "assigned_other": 0,
+      "unchanged_self": 0,
+      "dnc_or_closed": 0,
+      "new_assignments": 25,
+      "reactivations": 0
+    },
+    "land_stats": {
+      "seen": 20,
+      "failed_quality": 0,
+      "duplicate_property_rows_collapsed": 0,
+      "qualified_unique_properties": 20,
+      "assigned_other": 0,
+      "unchanged_self": 0,
+      "dnc_or_closed": 0,
+      "new_assignments": 20,
+      "reactivations": 0
+    }
+  }
+}
