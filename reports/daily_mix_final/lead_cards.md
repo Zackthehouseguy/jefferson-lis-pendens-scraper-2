@@ -1,6 +1,6 @@
 # TheReaper Lead Cards
 
-Records: **47**
+Records: **50**
 
 # SINGLE-FAMILY HOMES
 
@@ -49,7 +49,22 @@ Distress **100/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=44971&agencyCode=LJCMG
 
-## #4 — 517 S 20TH ST LOUISVILLE KY 40203
+## #4 — 2230 GRAND AVE LOUISVILLE KY 40210
+**SINGLE-FAMILY | CALL FIRST | Priority 92/100**
+Distress **100/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
+**Occupancy:** Vacant
+**Why:** An abandoned-structure designation combined with reported prolonged vacancy and no electricity is a strong distress signal.
+**Complaint / distress:** CALLER REPORTING SOMEONE IS INSIDE OF THIS VACANT PROPERTY. CALLER NOTICED A COUPLE OF DAYS AGO THAT THERE WERE DOGS TIED UP IN THE BACK YARD. CALLER SAYS RESIDENCE HAS NO ELECTRICITY AND HAS BEEN EMPTY FOR SOME TIME. THANK YOU.
+**Owner:** HENEGAR ALMA
+**Owner mailing:** 2230 GRAND AVE LOUISVILLE KY 40210-1144
+**Parcel:** 038E00610000
+**PVA parcel search:** https://jeffersonpva.ky.gov/property-search/  ·  Search Parcel ID: `038E00610000`
+**SFR screen:** LOJIC land use = SINGLE FAMILY
+**Citation:** No assessed citation in current extract
+**Tax delinquent:** Not verified in this run
+**Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=51444&agencyCode=LJCMG
+
+## #5 — 517 S 20TH ST LOUISVILLE KY 40203
 **SINGLE-FAMILY | CALL FIRST | Priority 88/100**
 Distress **94/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant
@@ -64,7 +79,7 @@ Distress **94/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C6245&agencyCode=LJCMG
 
-## #5 — 821 S 39TH ST LOUISVILLE KY 40211
+## #6 — 821 S 39TH ST LOUISVILLE KY 40211
 **SINGLE-FAMILY | CALL FIRST | Priority 88/100**
 Distress **94/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Occupied
@@ -79,7 +94,7 @@ Distress **94/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=13269&agencyCode=LJCMG
 
-## #6 — 843 S 26TH ST LOUISVILLE KY 40211
+## #7 — 843 S 26TH ST LOUISVILLE KY 40211
 **SINGLE-FAMILY | CALL FIRST | Priority 88/100**
 Distress **93/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant
@@ -94,7 +109,7 @@ Distress **93/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D4057&agencyCode=LJCMG
 
-## #7 — 10210 MORRISON RD LOUISVILLE KY 40229
+## #8 — 10210 MORRISON RD LOUISVILLE KY 40229
 **SINGLE-FAMILY | CALL FIRST | Priority 88/100**
 Distress **93/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Occupied
@@ -109,7 +124,22 @@ Distress **93/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=25REC&capID2=00000&capID3=92726&agencyCode=LJCMG
 
-## #8 — 5846 NEW CUT RD LOUISVILLE KY 40214
+## #9 — 1529 S 31ST ST LOUISVILLE KY 40211
+**SINGLE-FAMILY | CALL FIRST | Priority 86/100**
+Distress **91/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
+**Occupancy:** Unknown
+**Why:** Vacancy, severe reported overgrowth, dumping, and a reported pest condition create a strong acquisition-distress signal.
+**Complaint / distress:** Gras is extremely high also dumping in the back fritter have set up a home groundhogs / rats ect . Looks like a Madagascar over. There
+**Owner:** KIDANE AMHARE G
+**Owner mailing:** 4315 SPRINGDALE AVE LAS VEGAS NV 89121-2742
+**Parcel:** 049C01030000
+**PVA parcel search:** https://jeffersonpva.ky.gov/property-search/  ·  Search Parcel ID: `049C01030000`
+**SFR screen:** LOJIC land use = SINGLE FAMILY
+**Citation:** No assessed citation in current extract
+**Tax delinquent:** Not verified in this run
+**Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B4376&agencyCode=LJCMG
+
+## #10 — 5846 NEW CUT RD LOUISVILLE KY 40214
 **SINGLE-FAMILY | CALL FIRST | Priority 85/100**
 Distress **89/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Occupied
@@ -124,7 +154,7 @@ Distress **89/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=88881&agencyCode=LJCMG
 
-## #9 — 2315 W KENTUCKY ST LOUISVILLE KY 40210
+## #11 — 2315 W KENTUCKY ST LOUISVILLE KY 40210
 **SINGLE-FAMILY | CALL FIRST | Priority 84/100**
 Distress **87/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant
@@ -139,7 +169,7 @@ Distress **87/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B7977&agencyCode=LJCMG
 
-## #10 — 727 E KENTUCKY ST LOUISVILLE KY 40203
+## #12 — 727 E KENTUCKY ST LOUISVILLE KY 40203
 **SINGLE-FAMILY | CALL FIRST | Priority 83/100**
 Distress **85/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Conflicting — structured source says occupied; narrative reports vacant/abandoned; verify
@@ -154,7 +184,7 @@ Distress **85/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=24REC&capID2=00000&capID3=K5207&agencyCode=LJCMG
 
-## #11 — 1837 LYTLE ST LOUISVILLE KY 40203
+## #13 — 1837 LYTLE ST LOUISVILLE KY 40203
 **SINGLE-FAMILY | CALL FIRST | Priority 82/100**
 Distress **83/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant
@@ -169,7 +199,7 @@ Distress **83/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=68256&agencyCode=LJCMG
 
-## #12 — 316 LOUIS COLEMAN JR DR LOUISVILLE KY 40212
+## #14 — 316 LOUIS COLEMAN JR DR LOUISVILLE KY 40212
 **SINGLE-FAMILY | CALL FIRST | Priority 81/100**
 Distress **82/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant
@@ -184,7 +214,22 @@ Distress **82/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1503&agencyCode=LJCMG
 
-## #13 — 3606 GARLAND AVE LOUISVILLE KY 40211
+## #15 — 8200 FERNDALE RD LOUISVILLE KY 40291
+**SINGLE-FAMILY | CALL FIRST | Priority 79/100**
+Distress **79/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
+**Occupancy:** Unknown
+**Why:** Long-running recurring overgrowth combined with inspector-directed roof/gutter work and dead-tree removal creates a strong repeated-neglect signal.
+**Complaint / distress:** Email was received: Dear Louisville Metro311 / Code Enforcement, I am submitting this as an addendum to my previous complaints regarding the severely overgrown property directly behind my home at 6415 Tradesmill Drive, Louisville, KY 40291. This has been an ongoing problem for several years, and it has been reported t…
+**Owner:** JAMES WESLEY CARY LIVING TRUST
+**Owner mailing:** 8208 COOPER CHAPEL RD LOUISVILLE KY 40229-1756
+**Parcel:** 063700520000
+**PVA parcel search:** https://jeffersonpva.ky.gov/property-search/  ·  Search Parcel ID: `063700520000`
+**SFR screen:** LOJIC land use = SINGLE FAMILY
+**Citation:** No assessed citation in current extract
+**Tax delinquent:** Not verified in this run
+**Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D7596&agencyCode=LJCMG
+
+## #16 — 3606 GARLAND AVE LOUISVILLE KY 40211
 **SINGLE-FAMILY | STRONG | Priority 70/100**
 Distress **64/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant
@@ -199,7 +244,7 @@ Distress **64/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=A4676&agencyCode=LJCMG
 
-## #14 — 543 S 20TH ST LOUISVILLE KY 40203
+## #17 — 543 S 20TH ST LOUISVILLE KY 40203
 **SINGLE-FAMILY | STRONG | Priority 70/100**
 Distress **63/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Unknown
@@ -214,7 +259,7 @@ Distress **63/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=93485&agencyCode=LJCMG
 
-## #15 — 1838 GREENWOOD AVE LOUISVILLE KY 40210
+## #18 — 1838 GREENWOOD AVE LOUISVILLE KY 40210
 **SINGLE-FAMILY | STRONG | Priority 68/100**
 Distress **61/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Occupied
@@ -229,7 +274,7 @@ Distress **61/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B8919&agencyCode=LJCMG
 
-## #16 — 3637 RIVER PARK DR LOUISVILLE KY 40211
+## #19 — 3637 RIVER PARK DR LOUISVILLE KY 40211
 **SINGLE-FAMILY | STRONG | Priority 68/100**
 Distress **60/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Vacant
@@ -244,7 +289,7 @@ Distress **60/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1808&agencyCode=LJCMG
 
-## #17 — 9723 COLLIER LN LOUISVILLE KY 40291
+## #20 — 9723 COLLIER LN LOUISVILLE KY 40291
 **SINGLE-FAMILY | STRONG | Priority 66/100**
 Distress **56/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Occupied
@@ -259,7 +304,7 @@ Distress **56/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C4417&agencyCode=LJCMG
 
-## #18 — 1029 MAYER AVE LOUISVILLE KY 40217
+## #21 — 1029 MAYER AVE LOUISVILLE KY 40217
 **SINGLE-FAMILY | STRONG | Priority 65/100**
 Distress **55/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Occupied
@@ -274,7 +319,7 @@ Distress **55/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0416&agencyCode=LJCMG
 
-## #19 — 230 ROCHESTER DR LOUISVILLE KY 40214
+## #22 — 230 ROCHESTER DR LOUISVILLE KY 40214
 **SINGLE-FAMILY | STRONG | Priority 65/100**
 Distress **55/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Conflicting — structured source says occupied; narrative reports vacant/abandoned; verify
@@ -289,7 +334,7 @@ Distress **55/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D6311&agencyCode=LJCMG
 
-## #20 — 6526 MILES AVE LOUISVILLE KY 40214
+## #23 — 6526 MILES AVE LOUISVILLE KY 40214
 **SINGLE-FAMILY | STRONG | Priority 64/100**
 Distress **53/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Occupied
@@ -304,7 +349,7 @@ Distress **53/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0192&agencyCode=LJCMG
 
-## #21 — 1134 GOSS AVE LOUISVILLE KY 40217
+## #24 — 1134 GOSS AVE LOUISVILLE KY 40217
 **SINGLE-FAMILY | STRONG | Priority 64/100**
 Distress **53/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Occupied
@@ -319,7 +364,7 @@ Distress **53/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Tax delinquent:** Not verified in this run
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B3754&agencyCode=LJCMG
 
-## #22 — 1808 EDENSIDE AVE LOUISVILLE KY 40204
+## #25 — 1808 EDENSIDE AVE LOUISVILLE KY 40204
 **SINGLE-FAMILY | STRONG | Priority 64/100**
 Distress **53/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 **Occupancy:** Conflicting — structured source says occupied; narrative reports vacant/abandoned; verify

@@ -1,9 +1,9 @@
 {
-  "status": "PARTIAL",
-  "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-21",
+  "status": "PASS",
+  "batch_id": "2026-08-22T23:09:17.750538-04:00||2026-08-22T21:09:52.630114-04:00|2026-08-21",
   "minimum_priority": 60,
   "target_each": 25,
-  "houses_count": 22,
+  "houses_count": 25,
   "land_count": 25,
   "houses": [
     {
@@ -278,6 +278,96 @@
     },
     {
       "rank": 4,
+      "priority_score": 92,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 100,
+      "saturation_score": 24,
+      "saturation_interpretation": "LOWER ESTIMATED COMPETITION",
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "freshness_age_hours": null,
+      "case_number": "ENF-PMNT-26-005440",
+      "record_status": "Open",
+      "property_address": "2230 GRAND AVE LOUISVILLE KY 40210",
+      "owner_name": "HENEGAR ALMA",
+      "owner_mailing_address": "2230 GRAND AVE LOUISVILLE KY 40210-1144",
+      "possible_absentee_indicator": false,
+      "parcel_id": "038E00610000",
+      "verified_open_cases_in_acceptance_set_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "abandonment",
+        "utility_issue",
+        "habitability"
+      ],
+      "ai_summary": "An abandoned-structure designation combined with reported prolonged vacancy and no electricity is a strong distress signal.",
+      "confirmed_facts": [
+        "The structured enforcement feed identifies the property as an abandoned structure.",
+        "The complaint reports that the residence has been empty for some time and has no electricity.",
+        "The complaint reports a person seen inside and dogs tied in the backyard."
+      ],
+      "speculative_claims": [
+        "Whether the person seen inside is an unauthorized occupant is not established by the extracted record."
+      ],
+      "acquisition_relevant": true,
+      "description_raw": "CALLER REPORTING SOMEONE IS INSIDE OF THIS VACANT PROPERTY. CALLER NOTICED A COUPLE OF DAYS AGO THAT THERE WERE DOGS TIED UP IN THE BACK YARD. CALLER SAYS RESIDENCE HAS NO ELECTRICITY AND HAS BEEN EMPTY FOR SOME TIME. THANK YOU.",
+      "inspector_comments": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=51444&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B5191&agencyCode=LJCMG&IsToShowInspection=",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 5286.4,
+      "lot_acres": 0.1214,
+      "pin": null,
+      "zoning_code": "R5",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "occupancy": "Vacant",
+      "recent_window_occupancies": [],
+      "property_type": "SFR",
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "393d9c2439e1a43b3f471ec1e0f9fdd521efa314d5949b4bf654f87e1bd4222b"
+    },
+    {
+      "rank": 5,
       "priority_score": 88,
       "priority_tier": "CALL FIRST",
       "distress_score": 94,
@@ -364,7 +454,7 @@
       "event_fingerprint": "95a913ed7dc53b9899ac1d5c6208164e1315e0bb74a6bc3c7d3deec617691b16"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "priority_score": 88,
       "priority_tier": "CALL FIRST",
       "distress_score": 94,
@@ -453,7 +543,7 @@
       "event_fingerprint": "4438df94500cf1d8c4270b1a76db175f72d22c9c642696023146fa47f6f3f625"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "priority_score": 88,
       "priority_tier": "CALL FIRST",
       "distress_score": 93,
@@ -543,7 +633,7 @@
       "event_fingerprint": "e8e55ca13b7dc0e42fcc379d37b8dfed647d3de476778300c84f3112d311897b"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "priority_score": 88,
       "priority_tier": "CALL FIRST",
       "distress_score": 93,
@@ -632,7 +722,100 @@
       "event_fingerprint": "ef202de401fb8c827ded4bbfe30e57b27a45c8fc7ff1875e0c6b96d63700287f"
     },
     {
-      "rank": 8,
+      "rank": 9,
+      "priority_score": 86,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 91,
+      "saturation_score": 24,
+      "saturation_interpretation": "LOWER ESTIMATED COMPETITION",
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "freshness_age_hours": null,
+      "case_number": "ENF-PMNT-26-014897",
+      "record_status": "Open",
+      "property_address": "1529 S 31ST ST LOUISVILLE KY 40211",
+      "owner_name": "KIDANE AMHARE G",
+      "owner_mailing_address": "4315 SPRINGDALE AVE LAS VEGAS NV 89121-2742",
+      "possible_absentee_indicator": true,
+      "parcel_id": "049C01030000",
+      "verified_open_cases_in_acceptance_set_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "vacancy",
+        "overgrown_vegetation",
+        "trash_or_debris",
+        "infestation",
+        "nuisance"
+      ],
+      "ai_summary": "Vacancy, severe reported overgrowth, dumping, and a reported pest condition create a strong acquisition-distress signal.",
+      "confirmed_facts": [
+        "The complaint reports extremely high grass and dumping behind the property.",
+        "The structured enforcement feed identifies the occupancy as a vacant structure.",
+        "Inspector comments direct cleanup and removal of overgrowth within seven days."
+      ],
+      "speculative_claims": [
+        "The reported presence of groundhogs, rats, and other critters is complainant-reported and is not independently confirmed by the inspector comment."
+      ],
+      "acquisition_relevant": true,
+      "description_raw": "Gras is extremely high also dumping in the back fritter have set up a home groundhogs / rats ect . Looks like a Madagascar over. There",
+      "inspector_comments": [
+        "All properties must be clean and maintained. This includes easements midway in alley and street into the property. Any overgrowth must be removed. You have 7 days to be compliant."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B4376&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B5027&agencyCode=LJCMG&IsToShowInspection=",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 3464.2,
+      "lot_acres": 0.0795,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "occupancy": "Unknown",
+      "recent_window_occupancies": [],
+      "property_type": "SFR",
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "1e78871343bd2a73cddc3b347bc3d6752618a24fea84890d6af951c2bf35c663"
+    },
+    {
+      "rank": 10,
       "priority_score": 85,
       "priority_tier": "CALL FIRST",
       "distress_score": 89,
@@ -722,7 +905,7 @@
       "event_fingerprint": "acee1ea1100f62db11b179ae46e733c3263fa67f46b5e49b1f6b9e0cb0524585"
     },
     {
-      "rank": 9,
+      "rank": 11,
       "priority_score": 84,
       "priority_tier": "CALL FIRST",
       "distress_score": 87,
@@ -812,7 +995,7 @@
       "event_fingerprint": "681dd48b319c42772fee579a14a15ffc42f7352677d01f35c4f454037c9e1bb1"
     },
     {
-      "rank": 10,
+      "rank": 12,
       "priority_score": 83,
       "priority_tier": "CALL FIRST",
       "distress_score": 85,
@@ -900,7 +1083,7 @@
       "event_fingerprint": "f6fc5a8802f449c2eb0ca1f977b4d7731d282bac4f3384265345181df97b6a44"
     },
     {
-      "rank": 11,
+      "rank": 13,
       "priority_score": 82,
       "priority_tier": "CALL FIRST",
       "distress_score": 83,
@@ -988,7 +1171,7 @@
       "event_fingerprint": "98a89c1e8214d13a7c8f70ffa7c25c1d1b5414c2b2adbb99387a7ca42dd87579"
     },
     {
-      "rank": 12,
+      "rank": 14,
       "priority_score": 81,
       "priority_tier": "CALL FIRST",
       "distress_score": 82,
@@ -1072,7 +1255,101 @@
       "event_fingerprint": "b01076f506cb78a342ed1f6bedb82fac48224b389f9194c589872c9def2dafe5"
     },
     {
-      "rank": 13,
+      "rank": 15,
+      "priority_score": 79,
+      "priority_tier": "CALL FIRST",
+      "distress_score": 79,
+      "saturation_score": 24,
+      "saturation_interpretation": "LOWER ESTIMATED COMPETITION",
+      "freshness_score": 82,
+      "freshness_label": "1-3 DAYS",
+      "freshness_precision": "date",
+      "freshness_age_hours": null,
+      "case_number": "ENF-PMNT-26-018540",
+      "record_status": "Open",
+      "property_address": "8200 FERNDALE RD LOUISVILLE KY 40291",
+      "owner_name": "JAMES WESLEY CARY LIVING TRUST",
+      "owner_mailing_address": "8208 COOPER CHAPEL RD LOUISVILLE KY 40229-1756",
+      "possible_absentee_indicator": true,
+      "parcel_id": "063700520000",
+      "verified_open_cases_in_acceptance_set_same_parcel": 1,
+      "event_date": "2026-08-21",
+      "ai_distress_level": "HIGH",
+      "ai_signals": [
+        "overgrown_vegetation",
+        "repeated_noncompliance",
+        "severe_exterior_deterioration",
+        "nuisance",
+        "other"
+      ],
+      "ai_summary": "Long-running recurring overgrowth combined with inspector-directed roof/gutter work and dead-tree removal creates a strong repeated-neglect signal.",
+      "confirmed_facts": [
+        "The complaint describes recurring overgrowth over a period of years and says the condition returned after an earlier cleanup.",
+        "Inspector comments direct correction of overgrowth at the fence line, roof/gutter repairs, and removal of a dead tree."
+      ],
+      "speculative_claims": [
+        "The complainant's statements that vegetation is damaging the fence and that the large tree may threaten nearby homes are allegations beyond the inspector comments themselves."
+      ],
+      "acquisition_relevant": true,
+      "description_raw": "Email was received: Dear Louisville Metro311 / Code Enforcement, I am submitting this as an addendum to my previous complaints regarding the severely overgrown property directly behind my home at 6415 Tradesmill Drive, Louisville, KY 40291. This has been an ongoing problem for several years, and it has been reported to the city by both phone and email in the past. Several years ago, after previous complaints, the property was cleaned up one time, but it was not maintained and the overgrowth has returned. Trees, vines, brush, and other vegetation from this property are growing over, through, and against my privately owned fence. The vegetation is putting pressure on the fence and causing it to bend. Dense brush and vegetation remaining against the wood can also trap moisture and contribute to deterioration and rot. The overgrowth has interfered with access around my fence and gate as well. There is also a large mature tree immediately outside our fence that has continued to grow without apparent maintenance, with large limbs extending over the adjoining yards and toward our homes. Because of its size and proximity to the residences, I am requesting that the tree also be inspected to determine whether it presents a safety or property-damage hazard. I am attaching a photograph showing the current condition and the proximity of the large tree to the fence and surrounding homes. The property owner is associated with 8200 Ferndale Road, Louisville, KY. Because this is a recurring problem that has already been reported multiple times over a period of years, I am asking Louisville Metro Code Enforcement to inspect the property and take whatever enforcement action is necessary to require the owner to clear the overgrowth and properly maintain the property going forward. Please provide me with the service request or case number for this complaint and let me know what action will be taken. I would also appreciate confirmation once the property has been inspected. Thank you for your attention to this ongoing issue.",
+      "inspector_comments": [
+        "Please cut back overgrowth growing into and causing damage to fence line running from 6409 to 6419 TradesMill Dr.",
+        "Roof and gutter components must be properly installed and kept in good repair, functioning as intended. Clean out gutters where needed. Repair or replace downturned gutter on right side of house.",
+        "Remove dead tree, cut to the stump, located behind 6415 tradesmill rd"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "verified_current_outstanding_balance": null,
+      "money_label": "NO ASSESSED CITATION IN CURRENT EXTRACT",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D7596&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7597&agencyCode=LJCMG&IsToShowInspection=",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "parcel_type": 0,
+      "lot_sqft": 39607.7,
+      "lot_acres": 0.9093,
+      "pin": null,
+      "zoning_code": "R4",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "lojic_cache_hit": false,
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      },
+      "occupancy": "Unknown",
+      "recent_window_occupancies": [],
+      "property_type": "SFR",
+      "tax_delinquent_verified": null,
+      "event_fingerprint": "dc461669d3c3490f3a57926f6e8ea14fc45051c6baf77c54a1b07f39cd382b84"
+    },
+    {
+      "rank": 16,
       "priority_score": 70,
       "priority_tier": "STRONG",
       "distress_score": 64,
@@ -1157,7 +1434,7 @@
       "event_fingerprint": "eef47c09f120939280e2b953cd8a1130bd4861caef87445049ec9cd1959d339b"
     },
     {
-      "rank": 14,
+      "rank": 17,
       "priority_score": 70,
       "priority_tier": "STRONG",
       "distress_score": 63,
@@ -1242,7 +1519,7 @@
       "event_fingerprint": "65a0f981557256cc3bffd2a98c38463ab06b81453e82ad4341b18359b27b3c4e"
     },
     {
-      "rank": 15,
+      "rank": 18,
       "priority_score": 68,
       "priority_tier": "STRONG",
       "distress_score": 61,
@@ -1333,7 +1610,7 @@
       "event_fingerprint": "2ff0f77e24b73830447fe86c531260c63dcbe9551b1e3320bc2bfd2271916307"
     },
     {
-      "rank": 16,
+      "rank": 19,
       "priority_score": 68,
       "priority_tier": "STRONG",
       "distress_score": 60,
@@ -1417,7 +1694,7 @@
       "event_fingerprint": "302321989379285e3fcc41fd7da5dba883c6101a55116f021cd24a7a02b83c18"
     },
     {
-      "rank": 17,
+      "rank": 20,
       "priority_score": 66,
       "priority_tier": "STRONG",
       "distress_score": 56,
@@ -1503,7 +1780,7 @@
       "event_fingerprint": "e00ebbb656ae4767262cc106b91d0ac2bbaed87719a8948b99ff867596911217"
     },
     {
-      "rank": 18,
+      "rank": 21,
       "priority_score": 65,
       "priority_tier": "STRONG",
       "distress_score": 55,
@@ -1587,7 +1864,7 @@
       "event_fingerprint": "4a1a188bfbaba54977db278a25c8c935b898e82fea8fef0755ec0a54127cae03"
     },
     {
-      "rank": 19,
+      "rank": 22,
       "priority_score": 65,
       "priority_tier": "STRONG",
       "distress_score": 55,
@@ -1673,7 +1950,7 @@
       "event_fingerprint": "ab894f77cdfe849e0e165b94b72a0f6ae70e1894178cbcbf28b6a9fcaf2b362d"
     },
     {
-      "rank": 20,
+      "rank": 23,
       "priority_score": 64,
       "priority_tier": "STRONG",
       "distress_score": 53,
@@ -1757,7 +2034,7 @@
       "event_fingerprint": "a04786515d1a87420746b254e945a07ec8bce1ad33a286eedb46a9960e7c2cb0"
     },
     {
-      "rank": 21,
+      "rank": 24,
       "priority_score": 64,
       "priority_tier": "STRONG",
       "distress_score": 53,
@@ -1841,7 +2118,7 @@
       "event_fingerprint": "277a8a8bf0b4445c60be5f2e0af3d0d040e051fd15e87118045d6e206ab050cd"
     },
     {
-      "rank": 22,
+      "rank": 25,
       "priority_score": 64,
       "priority_tier": "STRONG",
       "distress_score": 53,
@@ -4254,12 +4531,15 @@
     "houses": [],
     "land": []
   },
-  "ledger_acknowledged": false,
+  "fresh_sfr_fill_available": false,
+  "prior_sfr_fallback_available": true,
+  "ledger_acknowledged": true,
   "guardrails": {
     "fresh_event_fingerprint_required": true,
     "unchanged_repeat_suppressed_across_new_batches": true,
     "same_batch_rerender_idempotent": true,
     "priority_floor_60": true,
-    "partial_batches_do_not_mutate_delivery_ledger": true
+    "partial_batches_do_not_mutate_delivery_ledger": true,
+    "fallback_requires_prevalidated_ai_rank_and_lojic_single_family": true
   }
 }
