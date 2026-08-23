@@ -1,0 +1,53 @@
+name: Land Live Bench
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/land-live-bench.yml"
+      - "scrapers/land_decision_layer.py"
+      - "scrapers/probe/land_live_extract.py"
+      - "scrapers/probe/accela_engine_probe_v2.py"
+      - "scrapers/probe/accela_engine_probe_v3.py"
+      - "scrapers/failure_recovery.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  land-bench:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 playwright
+          playwright install --with-deps chromium
+      - name: Run live land extraction
+        run: python -m scrapers.probe.land_live_extract --target 10 --pm-limit 4000 --max-attempts 80 --out reports/land_live
+      - name: Persist report
+        if: always()
+        run: |
+          if [ -f reports/land_live/extract_report.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git pull --rebase origin main || true
+            git add reports/land_live/extract_report.json
+            git diff --cached --quiet || git commit -m "Update land live extraction report [skip ci]"
+            git push origin HEAD:main || true
+          fi
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: land-live-bench
+          path: reports/land_live/
+          if-no-files-found: error
+          retention-days: 14
