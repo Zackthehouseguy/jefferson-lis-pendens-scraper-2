@@ -1,0 +1,53 @@
+name: Stress 50 Live
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/stress-50-live.yml"
+      - "scrapers/probe/stress_50_extract.py"
+      - "scrapers/probe/full_system_live_extract.py"
+      - "scrapers/probe/accela_engine_probe_v2.py"
+      - "scrapers/probe/accela_engine_probe_v3.py"
+      - "scrapers/failure_recovery.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  stress50:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 playwright
+          playwright install --with-deps chromium
+      - name: Run 50-record unseen live extraction
+        run: python -m scrapers.probe.stress_50_extract
+      - name: Persist stress report
+        if: always()
+        run: |
+          if [ -f reports/stress_50_live/extract_report.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git pull --rebase origin main || true
+            git add reports/stress_50_live/extract_report.json
+            git diff --cached --quiet || git commit -m "Update 50-record stress extraction report [skip ci]"
+            git push origin HEAD:main || true
+          fi
+      - name: Upload stress report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stress-50-live
+          path: reports/stress_50_live/
+          if-no-files-found: error
+          retention-days: 14
