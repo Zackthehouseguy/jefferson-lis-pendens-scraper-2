@@ -1,0 +1,46 @@
+name: GPT Land Batch 50
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'triggers/land_batch.txt'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          pip install requests beautifulsoup4 playwright
+          playwright install --with-deps chromium
+      - name: Extract 50 private unseen land leads
+        run: python -m scrapers.probe.land_stress_50_extract --target 50 --raw-target 85 --pm-limit 12000 --max-attempts 500
+      - name: Prepare GPT AI packets
+        if: always()
+        run: |
+          if [ -f reports/land_stress_50/extract_report.json ]; then
+            python -m scrapers.probe.prepare_land_stress50_ai || true
+          fi
+      - name: Persist latest batch
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || true
+          git add reports/land_stress_50/ || true
+          git diff --cached --quiet || git commit -m "Update GPT land batch extraction [skip ci]"
+          git push origin HEAD:main || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gpt-land-batch-50
+          path: reports/land_stress_50/
+          retention-days: 14
