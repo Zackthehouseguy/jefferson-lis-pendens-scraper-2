@@ -1,0 +1,32 @@
+name: Land External Sources Probe
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/land-external-sources-probe.yml'
+      - 'scrapers/probe/land_external_sources_probe.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests beautifulsoup4 pandas openpyxl xlrd
+      - run: python -m scrapers.probe.land_external_sources_probe
+      - name: Persist
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || true
+          git add reports/land_external_sources/ || true
+          git diff --cached --quiet || git commit -m "Update land external source probe [skip ci]"
+          git push origin HEAD:main || true
