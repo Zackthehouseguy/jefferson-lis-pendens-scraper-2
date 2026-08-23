@@ -5,6 +5,7 @@ import argparse, json, sys
 from pathlib import Path
 from scrapers.probe import land_live_extract as live
 from scrapers.land_filters import private_owner_screen
+from scrapers.lojic_land import enrich_parcel
 
 
 def main()->int:
@@ -20,16 +21,26 @@ def main()->int:
     old=list(sys.argv)
     try:
         sys.argv=['land_live_extract','--target',str(raw_target),'--pm-limit',str(args.pm_limit),'--max-attempts',str(args.max_attempts),'--out',str(raw)]
-        live_code=live.main()
-    finally:
-        sys.argv=old
+        live.main()
+    finally: sys.argv=old
     raw_report=json.loads((raw/'extract_report.json').read_text(encoding='utf-8'))
-    accepted=[]; excluded=[]
-    for r in raw_report.get('verified_land_records') or []:
-        screen=private_owner_screen(r.get('owner_name'))
-        r={**r,**screen}
+    accepted=[]; excluded=[]; enrichment_failures=[]
+    seen=set()
+    for r0 in raw_report.get('verified_land_records') or []:
+        r=dict(r0); pid=r.get('parcel_id')
+        if not pid or pid in seen: continue
+        seen.add(pid)
+        screen=private_owner_screen(r.get('owner_name')); r.update(screen)
         if not screen['private_owner_screen_passed']:
-            excluded.append({'parcel_id':r.get('parcel_id'),'owner_name':r.get('owner_name'),'property_address':r.get('property_address'),'reason':'obvious_public_owner'})
+            excluded.append({'parcel_id':pid,'owner_name':r.get('owner_name'),'property_address':r.get('property_address'),'reason':'obvious_public_owner'})
+            continue
+        enrich,fail=enrich_parcel(pid); r.update(enrich)
+        if fail: enrichment_failures.append({'parcel_id':pid,'property_address':r.get('property_address'),'failures':fail})
+        # Parcel identity + area are mandatory. Zoning/land-use may be unknown if
+        # no overlay intersects, but a network failure cannot masquerade as valid.
+        transport_failure=any('ConnectionError' in x.get('reason','') or 'Timeout' in x.get('reason','') or 'HTTPError' in x.get('reason','') for x in fail)
+        if not r.get('lojic_parcel_verified') or r.get('lot_sqft') is None or transport_failure:
+            excluded.append({'parcel_id':pid,'owner_name':r.get('owner_name'),'property_address':r.get('property_address'),'reason':'required_lojic_enrichment_failed','detail':fail})
             continue
         accepted.append(r)
         if len(accepted)>=args.target: break
@@ -40,9 +51,9 @@ def main()->int:
       'pm_features_fetched':raw_report.get('pm_features_fetched'),'parent_groups_discovered':raw_report.get('parent_groups_discovered'),
       'vacant_lot_parent_groups':raw_report.get('vacant_lot_parent_groups'),
       'demolition_transition_watch_groups':raw_report.get('demolition_transition_watch_groups'),
-      'private_land_records':accepted,'public_owner_exclusions':excluded,
+      'private_land_records':accepted,'exclusions':excluded,'enrichment_failures':enrichment_failures,
       'raw_failures':raw_report.get('failures') or [],'demolition_watch_preview':raw_report.get('demolition_watch_preview') or [],
-      'guardrails':{**(raw_report.get('guardrails') or {}),'private_owner_queue_only':True},
+      'guardrails':{**(raw_report.get('guardrails') or {}),'private_owner_queue_only':True,'required_parcel_area_enrichment':True},
     }
     out.mkdir(parents=True,exist_ok=True)
     (out/'extract_report.json').write_text(json.dumps(report,indent=2,ensure_ascii=False),encoding='utf-8')
