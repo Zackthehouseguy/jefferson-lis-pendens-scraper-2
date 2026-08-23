@@ -6,7 +6,7 @@ numeric math so a model can never invent or silently change scores.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from typing import Any
 
 ALLOWED_LEVELS = {"HIGH", "MEDIUM", "LOW", "NONE"}
@@ -105,8 +105,6 @@ def freshness(event_at: datetime | None, now: datetime | None = None, *, same_ca
     if event_at.tzinfo is None:
         event_at = event_at.replace(tzinfo=timezone.utc)
     age_h = max(0.0, (now - event_at).total_seconds() / 3600.0)
-    # Some municipal feeds only expose a date. When the source date equals the
-    # current local calendar day, preserve that fact rather than inventing an hour.
     if same_calendar_day:
         return Freshness(100, "SAME DAY", None, "date")
     if age_h < 24:
@@ -123,6 +121,33 @@ def freshness(event_at: datetime | None, now: datetime | None = None, *, same_ca
     return Freshness(5, ">90 DAYS", round(age_h, 2), "timestamp")
 
 
+def freshness_date(event_date: date | str | None, today: date | str | None = None) -> Freshness:
+    """Score a source that exposes only calendar-date precision.
+
+    Never invent an hour. age_hours stays None and precision stays `date`.
+    """
+    if event_date is None:
+        return Freshness(0, "UNKNOWN", None, "unknown")
+    if isinstance(event_date, str):
+        event_date = date.fromisoformat(event_date)
+    if today is None:
+        today = datetime.now(timezone.utc).date()
+    elif isinstance(today, str):
+        today = date.fromisoformat(today)
+    days = max(0, (today - event_date).days)
+    if days == 0:
+        return Freshness(100, "SAME DAY", None, "date")
+    if days <= 3:
+        return Freshness(82, "1-3 DAYS", None, "date")
+    if days <= 7:
+        return Freshness(65, "4-7 DAYS", None, "date")
+    if days <= 30:
+        return Freshness(42, "8-30 DAYS", None, "date")
+    if days <= 90:
+        return Freshness(20, "31-90 DAYS", None, "date")
+    return Freshness(5, ">90 DAYS", None, "date")
+
+
 def distress_score(ai: dict[str, Any], *, open_case_count: int = 1,
                    citation_event_count: int = 0, owner_mailing_differs: bool = False) -> int:
     ai = validate_ai_classification(ai)
@@ -135,7 +160,6 @@ def distress_score(ai: dict[str, Any], *, open_case_count: int = 1,
         score += 7
     if citation_event_count:
         score += min(8, citation_event_count * 3)
-    # Weak supporting indicator only; never proof of absentee ownership.
     if owner_mailing_differs:
         score += 3
     if not ai["acquisition_relevant"]:
@@ -147,8 +171,7 @@ def saturation_score(*, source_type: str, freshness_score: int,
                      has_free_text_description: bool, open_case_count: int = 1,
                      new_transition_event: bool = False) -> int:
     # Bench calibration, not empirical truth. Higher = likely more investor competition.
-    # A floor of 5 prevents "low competition" from ever being presented as proof
-    # that no other investor has the same public record.
+    # A floor of 5 prevents "low competition" from being presented as proof no one else has it.
     source_base = {
         "code_enforcement": 30,
         "lis_pendens": 68,
@@ -173,7 +196,6 @@ def saturation_score(*, source_type: str, freshness_score: int,
 
 
 def priority_score(*, distress: int, freshness_score: int, saturation: int) -> int:
-    # Strong distress is primary; freshness and low competition break ties.
     return clamp(0.60 * distress + 0.25 * freshness_score + 0.15 * (100 - saturation))
 
 
