@@ -33,12 +33,12 @@ jobs:
 
       - name: Mark workflow startup
         run: |
-          mkdir -p reports/accela_engine_v3
-          printf 'started_utc=%s\nrun_id=%s\nsha=%s\n' "$(date -u +%FT%TZ)" "${{ github.run_id }}" "${{ github.sha }}" > reports/accela_engine_v3/workflow_started.txt
+          mkdir -p reports/accela_engine_v4
+          printf 'started_utc=%s\nrun_id=%s\nsha=%s\n' "$(date -u +%FT%TZ)" "${{ github.run_id }}" "${{ github.sha }}" > reports/accela_engine_v4/workflow_started.txt
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reports/accela_engine_v3/workflow_started.txt
-          git commit -m "Mark Accela v3 probe workflow start [skip ci]"
+          git add reports/accela_engine_v4/workflow_started.txt
+          git commit -m "Mark Accela v4 probe workflow start [skip ci]"
           git push origin HEAD:main
 
       - uses: actions/setup-python@v5
@@ -51,7 +51,7 @@ jobs:
           pip install requests beautifulsoup4 playwright
           python -m playwright install --with-deps chromium
 
-      - name: Run corrected parent-case probe
+      - name: Run Chromium child-to-parent probe
         env:
           TARGET_OPEN: ${{ github.event.inputs.target_open || '5' }}
           MAX_PARENT_ATTEMPTS: ${{ github.event.inputs.max_parent_attempts || '15' }}
@@ -59,20 +59,20 @@ jobs:
           python -m scrapers.probe.accela_engine_probe_v3 \
             --target-open "$TARGET_OPEN" \
             --max-parent-attempts "$MAX_PARENT_ATTEMPTS" \
-            --out reports/accela_engine_v3
+            --out reports/accela_engine_v4
 
       - name: Print readable report
         if: always()
         run: |
-          echo "===== ACCELA ENGINE V3 REPORT ====="
-          cat reports/accela_engine_v3/report.md 2>/dev/null || true
+          echo "===== ACCELA ENGINE V4 REPORT ====="
+          cat reports/accela_engine_v4/report.md 2>/dev/null || true
 
       - name: Persist report to main
         if: always()
         run: |
-          if [ -f reports/accela_engine_v3/report.json ]; then
-            git add reports/accela_engine_v3/report.json reports/accela_engine_v3/report.md
-            git diff --cached --quiet || git commit -m "Update Accela engine v3 report [skip ci]"
+          if [ -f reports/accela_engine_v4/report.json ]; then
+            git add reports/accela_engine_v4/report.json reports/accela_engine_v4/report.md
+            git diff --cached --quiet || git commit -m "Update Accela engine v4 report [skip ci]"
             git push origin HEAD:main
           fi
 
@@ -80,7 +80,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: accela-engine-probe-v3-report
-          path: reports/accela_engine_v3/**
+          name: accela-engine-probe-v4-report
+          path: reports/accela_engine_v4/**
           if-no-files-found: warn
           retention-days: 14
