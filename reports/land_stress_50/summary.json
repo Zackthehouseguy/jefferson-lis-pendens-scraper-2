@@ -1,0 +1,217 @@
+{
+  "status": "FAIL",
+  "target": 50,
+  "accepted": 5,
+  "raw_target": 85,
+  "raw_runtime_seconds": 1001.53,
+  "pm_features_fetched": 12000,
+  "parent_groups_discovered": 5093,
+  "vacant_lot_parent_groups": 414,
+  "demolition_transition_watch_groups": 87,
+  "excluded_total": 80,
+  "excluded_reasons": {
+    "benchmark_fixture_excluded": 10,
+    "obvious_public_owner": 5,
+    "required_lojic_enrichment_failed": 65
+  },
+  "enrichment_failure_records": 65,
+  "raw_failure_records": 52,
+  "raw_failure_stages": {
+    "acceptance": 26,
+    "enrichment": 26
+  },
+  "sample_excluded": [
+    {
+      "case_number": "ENF-PMNT-26-002254",
+      "parcel_id": "048E00960000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-26-013625",
+      "parcel_id": "046K00380000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-26-008067",
+      "parcel_id": "2527000D0000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-26-013626",
+      "parcel_id": "046K00390000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-26-018477",
+      "parcel_id": "307700730000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-26-011727",
+      "parcel_id": "001E00940000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-26-015601",
+      "parcel_id": "001F00480000",
+      "reason": "obvious_public_owner",
+      "owner": "LOUISVILLE"
+    },
+    {
+      "case_number": "ENF-PMNT-26-017755",
+      "parcel_id": "038A00670000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-26-011115",
+      "parcel_id": "037D02110000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-26-018052",
+      "parcel_id": "024B00930000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-26-018115",
+      "parcel_id": "039B01220000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-24-020140",
+      "parcel_id": "035L01740000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-008499",
+      "parcel_id": "015J01650000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019144",
+      "parcel_id": "063601650000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-007727",
+      "parcel_id": "067G00590000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    }
+  ],
+  "sample_raw_failures": [
+    {
+      "stage": "acceptance",
+      "parcel_id": "233400800000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "008G00500000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "037A00680000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "046E00850000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "042A00070000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "2527000C0000",
+      "reason": "parent_not_open",
+      "status": "Hearing"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "105100110000",
+      "reason": "parent_not_open",
+      "status": "Hearing"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "334800150000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "063601350000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "104803620000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "037D00930000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "040F00340000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "001B00570000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "002H01010000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "002D00710000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    }
+  ]
+}
