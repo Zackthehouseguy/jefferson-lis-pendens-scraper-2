@@ -29,7 +29,7 @@ def property_key(row: dict[str, Any]) -> str:
 
 
 def material_revision(row: dict[str, Any]) -> str:
-    """Fingerprint the latest material state, not presentation-only fields."""
+    """Fingerprint one material source/event row, excluding presentation-only fields."""
     material = {
         "case_number": row.get("case_number"),
         "event_date": row.get("event_date") or row.get("latest_activity_date"),
@@ -44,6 +44,18 @@ def material_revision(row: dict[str, Any]) -> str:
         "source_url": clean(row.get("source_url")),
     }
     raw = json.dumps(material, sort_keys=True, ensure_ascii=False, separators=(",", ":"))
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:24]
+
+
+def property_material_revision(rows: list[dict[str, Any]]) -> str:
+    """Fingerprint the complete material event set known for one property.
+
+    This prevents two cases already present on the same parcel from consuming two
+    agent slots or falsely looking like a same-run reactivation. A genuinely new
+    case/event changes the set and therefore changes the property revision.
+    """
+    revisions = sorted(set(material_revision(row) for row in rows))
+    raw = json.dumps(revisions, separators=(",", ":"))
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:24]
 
 
@@ -62,7 +74,11 @@ def qualify_house(row: dict[str, Any]) -> bool:
 def qualify_land(row: dict[str, Any]) -> bool:
     try:
         site = clean(row.get("occupancy") or row.get("site_status") or "vacant lot").upper()
-        land_context = "VACANT" in site or "VACANT LOT" in clean(row.get("recent_window_occupancies")).upper() or clean(row.get("property_type")).upper() == "LAND"
+        land_context = (
+            "VACANT" in site
+            or "VACANT LOT" in clean(row.get("recent_window_occupancies")).upper()
+            or clean(row.get("property_type")).upper() == "LAND"
+        )
         return (
             int(row.get("priority_score") or 0) >= 60
             and int(row.get("motivation_score") or 0) >= 50
@@ -87,16 +103,47 @@ def load_rows(path: Path, kind: str) -> list[dict[str, Any]]:
     return [r for r in rows if isinstance(r, dict)]
 
 
-def sort_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    return sorted(
-        rows,
-        key=lambda r: (
-            int(r.get("priority_score") or 0),
-            int(r.get("distress_score") or r.get("motivation_score") or 0),
-            -int(r.get("saturation_score") or 100),
-        ),
-        reverse=True,
+def row_sort_key(r: dict[str, Any]) -> tuple[int, int, int]:
+    return (
+        int(r.get("priority_score") or 0),
+        int(r.get("distress_score") or r.get("motivation_score") or 0),
+        -int(r.get("saturation_score") or 100),
     )
+
+
+def sort_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return sorted(rows, key=row_sort_key, reverse=True)
+
+
+def grouped_candidates(
+    rows: list[dict[str, Any]], kind: str
+) -> tuple[list[tuple[dict[str, Any], str, str, int]], dict[str, int]]:
+    """Return one best representative per property plus a parcel-level revision."""
+    qualifier = qualify_house if kind == "house" else qualify_land
+    groups: dict[str, list[dict[str, Any]]] = {}
+    stats = {"seen": 0, "failed_quality": 0, "duplicate_property_rows_collapsed": 0}
+
+    for row in sort_rows(rows):
+        stats["seen"] += 1
+        if not qualifier(row):
+            stats["failed_quality"] += 1
+            continue
+        try:
+            pkey = property_key(row)
+        except ValueError:
+            stats["failed_quality"] += 1
+            continue
+        groups.setdefault(pkey, []).append(row)
+
+    candidates: list[tuple[dict[str, Any], str, str, int]] = []
+    for pkey, event_rows in groups.items():
+        representative = sort_rows(event_rows)[0]
+        revision = property_material_revision(event_rows)
+        candidates.append((representative, pkey, revision, len(event_rows)))
+        stats["duplicate_property_rows_collapsed"] += max(0, len(event_rows) - 1)
+
+    candidates.sort(key=lambda item: row_sort_key(item[0]), reverse=True)
+    return candidates, stats
 
 
 def allocate_kind(
@@ -109,9 +156,10 @@ def allocate_kind(
     now: str,
 ) -> tuple[list[dict[str, Any]], dict[str, int]]:
     selected: list[dict[str, Any]] = []
+    candidates, prep_stats = grouped_candidates(rows, kind)
     stats = {
-        "seen": 0,
-        "failed_quality": 0,
+        **prep_stats,
+        "qualified_unique_properties": len(candidates),
         "assigned_other": 0,
         "unchanged_self": 0,
         "dnc_or_closed": 0,
@@ -119,21 +167,10 @@ def allocate_kind(
         "reactivations": 0,
     }
     properties = state.setdefault("properties", {})
-    qualifier = qualify_house if kind == "house" else qualify_land
 
-    for row in sort_rows(rows):
+    for row, pkey, revision, event_count in candidates:
         if len(selected) >= limit:
             break
-        stats["seen"] += 1
-        if not qualifier(row):
-            stats["failed_quality"] += 1
-            continue
-        try:
-            pkey = property_key(row)
-        except ValueError:
-            stats["failed_quality"] += 1
-            continue
-        revision = material_revision(row)
         existing = properties.get(pkey)
 
         if existing:
@@ -145,11 +182,20 @@ def allocate_kind(
             if status != "released" and assigned_to and assigned_to != agent_id:
                 stats["assigned_other"] += 1
                 continue
-            if status != "released" and assigned_to == agent_id and existing.get("last_material_revision") == revision:
+            if (
+                status != "released"
+                and assigned_to == agent_id
+                and existing.get("last_material_revision") == revision
+            ):
                 stats["unchanged_self"] += 1
                 continue
 
-        is_reactivation = bool(existing and existing.get("assigned_to") == agent_id and existing.get("last_material_revision") != revision and clean(existing.get("status") or "active").lower() != "released")
+        is_reactivation = bool(
+            existing
+            and existing.get("assigned_to") == agent_id
+            and existing.get("last_material_revision") != revision
+            and clean(existing.get("status") or "active").lower() != "released"
+        )
         if existing and clean(existing.get("status") or "active").lower() == "released":
             first_assigned_at = now
             react_count = 0
@@ -173,6 +219,7 @@ def allocate_kind(
         delivered["agent_id"] = agent_id
         delivered["property_key"] = pkey
         delivered["material_revision"] = revision
+        delivered["property_event_rows_in_pool"] = event_count
         delivered["assignment_status"] = "REACTIVATED" if is_reactivation else "NEW"
         selected.append(delivered)
         if is_reactivation:
@@ -195,16 +242,28 @@ def main() -> int:
     args = ap.parse_args()
 
     state_path = Path(args.state_file)
-    state = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {"schema_version": 1, "properties": {}}
+    state = (
+        json.loads(state_path.read_text(encoding="utf-8"))
+        if state_path.exists()
+        else {"schema_version": 1, "properties": {}}
+    )
     now = datetime.now(timezone.utc).isoformat()
 
     houses, house_stats = allocate_kind(
-        rows=load_rows(Path(args.houses_file), "house"), kind="house", agent_id=args.agent_id,
-        limit=max(0, args.house_limit), state=state, now=now,
+        rows=load_rows(Path(args.houses_file), "house"),
+        kind="house",
+        agent_id=args.agent_id,
+        limit=max(0, args.house_limit),
+        state=state,
+        now=now,
     )
     land, land_stats = allocate_kind(
-        rows=load_rows(Path(args.land_file), "land"), kind="land", agent_id=args.agent_id,
-        limit=max(0, args.land_limit), state=state, now=now,
+        rows=load_rows(Path(args.land_file), "land"),
+        kind="land",
+        agent_id=args.agent_id,
+        limit=max(0, args.land_limit),
+        state=state,
+        now=now,
     )
 
     state_path.parent.mkdir(parents=True, exist_ok=True)
