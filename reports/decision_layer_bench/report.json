@@ -106,8 +106,8 @@
     {
       "name": "fresh_code_lower_saturation_than_lis",
       "passed": true,
-      "code": 0,
-      "lis": 56
+      "code": 8,
+      "lis": 60
     },
     {
       "name": "electrical_fire_case_ranks_above_grass_case",
@@ -166,12 +166,12 @@
         "acquisition_relevant": true
       },
       "distress_score": 100,
-      "saturation_score": 0,
+      "saturation_score": 8,
       "freshness_score": 100,
       "freshness_label": "SAME DAY",
       "freshness_age_hours": null,
       "freshness_precision": "date",
-      "priority_score": 100
+      "priority_score": 99
     },
     {
       "case": "ENF-PMNT-26-013339",
@@ -194,12 +194,12 @@
         "acquisition_relevant": true
       },
       "distress_score": 74,
-      "saturation_score": 0,
+      "saturation_score": 8,
       "freshness_score": 100,
       "freshness_label": "SAME DAY",
       "freshness_age_hours": null,
       "freshness_precision": "date",
-      "priority_score": 84
+      "priority_score": 83
     },
     {
       "case": "ENF-PMNT-26-016665",
@@ -219,12 +219,12 @@
         "acquisition_relevant": true
       },
       "distress_score": 48,
-      "saturation_score": 0,
+      "saturation_score": 8,
       "freshness_score": 100,
       "freshness_label": "SAME DAY",
       "freshness_age_hours": null,
       "freshness_precision": "date",
-      "priority_score": 69
+      "priority_score": 68
     },
     {
       "case": "ENF-PMNT-26-019301",
@@ -245,12 +245,12 @@
         "acquisition_relevant": true
       },
       "distress_score": 42,
-      "saturation_score": 0,
+      "saturation_score": 8,
       "freshness_score": 100,
       "freshness_label": "SAME DAY",
       "freshness_age_hours": null,
       "freshness_precision": "date",
-      "priority_score": 65
+      "priority_score": 64
     },
     {
       "case": "ENF-PMNT-26-016300",
@@ -271,12 +271,12 @@
         "acquisition_relevant": true
       },
       "distress_score": 39,
-      "saturation_score": 0,
+      "saturation_score": 8,
       "freshness_score": 100,
       "freshness_label": "SAME DAY",
       "freshness_age_hours": null,
       "freshness_precision": "date",
-      "priority_score": 63
+      "priority_score": 62
     }
   ]
 }
