@@ -1,16 +1,29 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import argparse,json
+import argparse,json,re
 from pathlib import Path
 
-def clean(v): return str(v or '').strip()
+def clean(v): return ' '.join(str(v or '').split()).strip()
 def money(x): return f"${float(x):,.0f}" if x is not None else '—'
+def full_address(x):
+    raw=clean(x.get('property_address')); city=clean(x.get('city')); state=clean(x.get('state')); zipcode=clean(x.get('zip'))
+    # Accela currently often returns a full situs string in property_address.
+    # Do not duplicate city/state/ZIP if already embedded.
+    up=raw.upper()
+    if zipcode and zipcode in raw and state and state.upper() in up and city and city.upper() in up:
+        return raw
+    parts=[raw]
+    if city and city.upper() not in up: parts.append(city)
+    tail=' '.join(v for v in (state,zipcode) if v)
+    if tail and tail.upper() not in up: parts.append(tail)
+    return ', '.join(p for p in parts if p)
 
 def land_card(x:dict)->str:
-    address=', '.join([clean(x.get('property_address')), clean(x.get('city')), f"{clean(x.get('state'))} {clean(x.get('zip'))}".strip()])
+    address=full_address(x)
     assessed=float(x.get('citation_assessed_total') or 0)
     balance=x.get('verified_current_outstanding_balance')
     money_line=(f"{money(assessed)} citation assessed; current balance {'verified '+money(balance) if balance is not None else 'unverified'}" if assessed else 'No assessed citation in current extract')
+    tax=(f"VERIFIED — {money(x.get('tax_bill_total'))}" if x.get('tax_delinquent_verified') is True and x.get('tax_bill_total') is not None else ('VERIFIED' if x.get('tax_delinquent_verified') is True else ('No delinquent bill returned for tested search' if x.get('tax_delinquent_verified') is False else 'Not verified in this run')))
     return '\n'.join([
       f"## #{x.get('rank')} — {address}",
       f"**LAND | {x.get('priority_tier')} | Priority {x.get('priority_score')}/100**",
@@ -21,8 +34,8 @@ def land_card(x:dict)->str:
       f"**Parcel:** {clean(x.get('parcel_id')) or '—'} · **Lot:** {x.get('lot_sqft') or '—'} SF / {x.get('lot_acres') or '—'} ac",
       f"**Zoning:** {clean(x.get('zoning_code')) or '—'} {clean(x.get('zoning_name'))} · **Land use:** {clean(x.get('landuse_name')) or '—'}",
       f"**Citation:** {money_line}",
-      f"**Tax delinquent:** {'VERIFIED' if x.get('tax_delinquent_verified') is True else 'Not verified in this run'}",
-      f"**Demolition:** {'VERIFIED' if x.get('demolition_verified') is True else 'Not verified'}",
+      f"**Tax delinquent:** {tax}",
+      f"**Demolition:** {'VERIFIED COMPLETED' if x.get('demolition_verified') is True else ('Transition/watch signal' if x.get('possible_structure_to_lot_transition') else 'Not verified')}",
       f"**Source:** {clean(x.get('source_url')) or '—'}",
       ''
     ])
