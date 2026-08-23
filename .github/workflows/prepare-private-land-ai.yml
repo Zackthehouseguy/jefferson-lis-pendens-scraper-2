@@ -1,0 +1,29 @@
+name: Prepare Private Land AI
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/prepare-private-land-ai.yml'
+      - 'scrapers/probe/prepare_private_land_ai.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m scrapers.probe.prepare_private_land_ai
+      - name: Persist
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || true
+          git add reports/land_private_live/ai_input.json reports/land_private_live/ai_input.md
+          git diff --cached --quiet || git commit -m "Update private land AI packet [skip ci]"
+          git push origin HEAD:main || true
