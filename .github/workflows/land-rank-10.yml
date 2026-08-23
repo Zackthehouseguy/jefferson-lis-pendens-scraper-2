@@ -31,3 +31,4 @@ jobs:
           git add reports/land_private_live/ranked_report.json reports/land_private_live/ranked_report.md || true
           git diff --cached --quiet || git commit -m "Update private land10 ranking [skip ci]"
           git push origin HEAD:main || true
+# trigger
