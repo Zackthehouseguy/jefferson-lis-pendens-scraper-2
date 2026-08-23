@@ -30,3 +30,4 @@ jobs:
           git add reports/land_decision_bench/ || true
           git diff --cached --quiet || git commit -m "Update land decision bench [skip ci]"
           git push origin HEAD:main || true
+# trigger
