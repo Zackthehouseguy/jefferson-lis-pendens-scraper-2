@@ -10,12 +10,14 @@ def money(r):
     return f'${assessed:,.0f} assessed' if assessed else 'none assessed'
 
 def main()->int:
-    p=ROOT/'extract_report.json'
-    if not p.exists():
-        raise SystemExit('missing extract_report.json')
+    candidates=[ROOT/'reprocessed_report.json',ROOT/'extract_report.json']
+    p=next((x for x in candidates if x.exists() and json.loads(x.read_text(encoding='utf-8')).get('status')=='PASS'),None)
+    if p is None:
+        p=next((x for x in candidates if x.exists()),None)
+    if p is None: raise SystemExit('missing land stress source report')
     d=json.loads(p.read_text(encoding='utf-8'))
     rows=d.get('private_unseen_land_records') or []
-    lines=['# Land Stress50 AI Review Packet','',f"Extraction status: **{d.get('status')}**",f"Records: **{len(rows)}**",'']
+    lines=['# Land Stress50 AI Review Packet','',f"Source: **{p.name}**",f"Extraction status: **{d.get('status')}**",f"Records: **{len(rows)}**",'']
     compact=[]
     for i,r in enumerate(rows,1):
         item={
@@ -41,13 +43,12 @@ def main()->int:
             f"Citation: {money(r)} | Current balance: {'verified '+str(r.get('outstanding_balance')) if r.get('outstanding_balance') is not None else 'unverified'} | Tax delinquent verified: {r.get('tax_delinquent_verified')} | Demolition verified: {r.get('demolition_verified')}",
             ''
         ]
-    (ROOT/'ai_input.json').write_text(json.dumps({'records':compact},indent=2,ensure_ascii=False),encoding='utf-8')
+    (ROOT/'ai_input.json').write_text(json.dumps({'source_report':p.name,'records':compact},indent=2,ensure_ascii=False),encoding='utf-8')
     (ROOT/'ai_input.md').write_text('\n'.join(lines),encoding='utf-8')
-    # five compact chunks of ten for GPT/tool retrieval
     for start in range(0,len(compact),10):
         chunk=compact[start:start+10]
         (ROOT/f'ai_input_{start+1:02d}_{start+len(chunk):02d}.json').write_text(json.dumps({'records':chunk},indent=2,ensure_ascii=False),encoding='utf-8')
-    print(json.dumps({'status':'PASS' if len(rows)==50 else 'PARTIAL','records':len(rows),'chunks':(len(rows)+9)//10},indent=2))
+    print(json.dumps({'status':'PASS' if len(rows)==50 else 'PARTIAL','source':p.name,'records':len(rows),'chunks':(len(rows)+9)//10},indent=2))
     return 0 if len(rows)==50 else 2
 
 if __name__=='__main__':raise SystemExit(main())
