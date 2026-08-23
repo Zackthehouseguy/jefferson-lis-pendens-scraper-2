@@ -1,0 +1,37 @@
+name: Live Parcel Stacking Probe
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scrapers/probe/stacking_probe.py"
+      - ".github/workflows/stacking-probe.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: pip install requests beautifulsoup4 playwright
+      - name: Run stacking probe
+        run: python -m scrapers.probe.stacking_probe
+      - name: Persist report
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+          git add reports/stacking_probe/report.json reports/stacking_probe/report.md
+          git diff --cached --quiet || git commit -m "Update live stacking probe report [skip ci]"
+          git push origin HEAD:main
