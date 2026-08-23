@@ -1,4 +1,4 @@
-name: Land Stress 50
+name: BENCH — Land Stress 50
 on:
   push:
     branches: [main]
