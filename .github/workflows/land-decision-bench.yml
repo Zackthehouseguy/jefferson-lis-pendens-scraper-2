@@ -1,0 +1,32 @@
+name: Land Decision Bench
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/land-decision-bench.yml'
+      - 'scrapers/land_decision_layer.py'
+      - 'scrapers/land_filters.py'
+      - 'scrapers/probe/land_decision_bench.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  bench:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m scrapers.probe.land_decision_bench
+      - name: Persist
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || true
+          git add reports/land_decision_bench/ || true
+          git diff --cached --quiet || git commit -m "Update land decision bench [skip ci]"
+          git push origin HEAD:main || true
