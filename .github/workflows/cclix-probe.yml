@@ -30,3 +30,4 @@ jobs:
           git add reports/cclix_probe/ || true
           git diff --cached --quiet || git commit -m "Update CCLIX probe [skip ci]"
           git push origin HEAD:main || true
+# trigger
