@@ -1,0 +1,31 @@
+name: Land Fill From Raw
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/land-fill-from-raw.yml'
+      - 'scrapers/probe/land_fill_from_raw.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  fill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m scrapers.probe.land_fill_from_raw
+      - name: Persist
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || true
+          git add reports/land_fill_live/ || true
+          git diff --cached --quiet || git commit -m "Update untouched land fill [skip ci]"
+          git push origin HEAD:main || true
+# trigger-20260823-0301
