@@ -28,4 +28,4 @@ jobs:
           git add reports/sfr_prior_fallback/report.json
           git diff --cached --quiet || git commit -m "Update prior SFR fallback [skip ci]"
           git push origin HEAD:main || true
-# trigger-20260823-0250
+# trigger-20260823-0251-explicit
