@@ -1,0 +1,35 @@
+name: CCLIX MapId Probe
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cclix-mapid-probe.yml'
+      - 'scrapers/probe/cclix_mapid_search_probe.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          pip install playwright
+          playwright install --with-deps chromium
+      - run: python -m scrapers.probe.cclix_mapid_search_probe
+      - name: Persist
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || true
+          git add reports/cclix_mapid_search_probe/report.json || true
+          git diff --cached --quiet || git commit -m "Update CCLIX map-id probe [skip ci]"
+          git push origin HEAD:main || true
+# trigger
