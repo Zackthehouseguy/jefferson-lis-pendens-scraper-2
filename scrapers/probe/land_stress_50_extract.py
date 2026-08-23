@@ -20,7 +20,7 @@ def main()->int:
   live.main()
  finally:sys.argv=old
  rr=json.loads((raw/'extract_report.json').read_text(encoding='utf-8'))
- accepted=[];excluded=[];seen=set();enrich_fail=[]
+ accepted=[];excluded=[];seen=set();enrich_fail=[];reused_enrichment=0;retry_enrichment=0
  for r0 in rr.get('verified_land_records') or []:
   r=dict(r0);case=r.get('case_number');pid=r.get('parcel_id')
   if case in excluded_cases:excluded.append({'case_number':case,'parcel_id':pid,'reason':'benchmark_fixture_excluded'});continue
@@ -28,11 +28,21 @@ def main()->int:
   seen.add(pid)
   screen=private_owner_screen(r.get('owner_name'));r.update(screen)
   if not screen['private_owner_screen_passed']:excluded.append({'case_number':case,'parcel_id':pid,'reason':'obvious_public_owner','owner':r.get('owner_name')});continue
-  enrich,fail=enrich_parcel(pid);r.update(enrich)
-  if fail:enrich_fail.append({'case_number':case,'parcel_id':pid,'failures':fail})
-  transport=any(any(t in (x.get('reason') or '') for t in ('ConnectionError','HTTPError','Timeout')) for x in fail)
-  if not r.get('lojic_parcel_verified') or r.get('lot_sqft') is None or transport:
-   excluded.append({'case_number':case,'parcel_id':pid,'reason':'required_lojic_enrichment_failed','detail':fail});continue
+
+  # The raw extractor already performs LOJIC enrichment. Reuse it. Re-querying
+  # every accepted row here caused unnecessary load and transient LOJIC failures.
+  if r.get('lojic_parcel_verified') and r.get('lot_sqft') is not None:
+   reused_enrichment+=1
+  else:
+   retry_enrichment+=1
+   enrich,fail=enrich_parcel(pid);r.update(enrich)
+   if fail:enrich_fail.append({'case_number':case,'parcel_id':pid,'failures':fail})
+
+  # Parcel verification + area are the hard builder-data gate. Zoning/land-use
+  # may remain unknown and will naturally lower Builder Fit rather than deleting
+  # a potentially motivated parcel.
+  if not r.get('lojic_parcel_verified') or r.get('lot_sqft') is None:
+   excluded.append({'case_number':case,'parcel_id':pid,'reason':'required_lojic_enrichment_failed'});continue
   accepted.append(r)
   if len(accepted)>=args.target:break
  status='PASS' if len(accepted)==args.target else 'FAIL'
@@ -41,7 +51,8 @@ def main()->int:
    'vacant_lot_parent_groups':rr.get('vacant_lot_parent_groups'),'demolition_transition_watch_groups':rr.get('demolition_transition_watch_groups'),
    'raw_runtime_seconds':rr.get('runtime_seconds'),'private_unseen_land_records':accepted,'excluded':excluded,'enrichment_failures':enrich_fail,
    'raw_failures':rr.get('failures') or [],'demolition_watch_preview':rr.get('demolition_watch_preview') or [],
-   'guardrails':{'landbank_excluded':True,'private_owner_queue_only':True,'benchmark_cases_excluded':True,'required_parcel_area_enrichment':True,'demolition_not_inferred':True}}
- (ROOT/'extract_report.json').write_text(json.dumps(report,indent=2,ensure_ascii=False),encoding='utf-8');print(json.dumps({'status':status,'accepted':len(accepted),'raw_runtime':rr.get('runtime_seconds'),'excluded':len(excluded),'enrich_failures':len(enrich_fail)},indent=2))
+   'enrichment_efficiency':{'raw_enrichment_reused':reused_enrichment,'fallback_requeries':retry_enrichment},
+   'guardrails':{'landbank_excluded':True,'private_owner_queue_only':True,'benchmark_cases_excluded':True,'required_parcel_area_enrichment':True,'zoning_unknown_allowed_but_not_invented':True,'demolition_not_inferred':True}}
+ (ROOT/'extract_report.json').write_text(json.dumps(report,indent=2,ensure_ascii=False),encoding='utf-8');print(json.dumps({'status':status,'accepted':len(accepted),'raw_runtime':rr.get('runtime_seconds'),'excluded':len(excluded),'enrich_failures':len(enrich_fail),'reused_enrichment':reused_enrichment,'fallback_requeries':retry_enrichment},indent=2))
  return 0 if status=='PASS' else 2
 if __name__=='__main__':raise SystemExit(main())
