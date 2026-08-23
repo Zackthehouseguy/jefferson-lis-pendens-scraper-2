@@ -1,0 +1,67 @@
+name: Targeted Parent Acceptance
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "scrapers/probe/targeted_parent_acceptance.py"
+      - ".github/workflows/targeted-parent-acceptance.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Mark startup
+        run: |
+          mkdir -p reports/targeted_parent_acceptance
+          printf 'started_utc=%s\nrun_id=%s\nsha=%s\n' "$(date -u +%FT%TZ)" "${{ github.run_id }}" "${{ github.sha }}" > reports/targeted_parent_acceptance/workflow_started.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/targeted_parent_acceptance/workflow_started.txt
+          git commit -m "Mark targeted parent test start [skip ci]"
+          git push origin HEAD:main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install browser
+        run: |
+          pip install beautifulsoup4 playwright requests
+          python -m playwright install --with-deps chromium
+
+      - name: Run five-parent acceptance
+        run: |
+          python -m scrapers.probe.targeted_parent_acceptance --target-open 5 --out reports/targeted_parent_acceptance
+
+      - name: Print report
+        if: always()
+        run: cat reports/targeted_parent_acceptance/report.md 2>/dev/null || true
+
+      - name: Persist report
+        if: always()
+        run: |
+          if [ -f reports/targeted_parent_acceptance/report.json ]; then
+            git add reports/targeted_parent_acceptance/report.json reports/targeted_parent_acceptance/report.md
+            git diff --cached --quiet || git commit -m "Update targeted parent acceptance report [skip ci]"
+            git push origin HEAD:main
+          fi
+
+      - name: Upload artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: targeted-parent-acceptance
+          path: reports/targeted_parent_acceptance/**
+          if-no-files-found: warn
+          retention-days: 14
