@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main
-      - accela-engine-probe
     paths:
       - "scrapers/probe/accela_engine_probe.py"
       - ".github/workflows/accela-engine-probe.yml"
@@ -30,7 +29,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref_name }}
+          ref: main
+
+      - name: Mark workflow startup
+        run: |
+          mkdir -p reports/accela_engine
+          printf 'started_utc=%s\nrun_id=%s\nsha=%s\n' "$(date -u +%FT%TZ)" "${{ github.run_id }}" "${{ github.sha }}" > reports/accela_engine/workflow_started.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/accela_engine/workflow_started.txt
+          git commit -m "Mark Accela probe workflow start [skip ci]"
+          git push origin HEAD:main
 
       - uses: actions/setup-python@v5
         with:
@@ -58,15 +67,13 @@ jobs:
           echo "===== ACCELA ENGINE REPORT ====="
           cat reports/accela_engine/report.md 2>/dev/null || true
 
-      - name: Persist report to triggering branch
+      - name: Persist report to main
         if: always()
         run: |
           if [ -f reports/accela_engine/report.json ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add reports/accela_engine/report.json reports/accela_engine/report.md
             git diff --cached --quiet || git commit -m "Update Accela engine probe report [skip ci]"
-            git push origin "HEAD:${{ github.ref_name }}"
+            git push origin HEAD:main
           fi
 
       - name: Upload probe report and failure diagnostics
