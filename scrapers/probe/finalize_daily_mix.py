@@ -5,6 +5,7 @@ from pathlib import Path
 
 BASE=Path('reports/mixed_daily_current/mixed_qualification.json')
 FILL=Path('reports/sfr_fill_live/ranked_report.json')
+FALLBACK=Path('reports/sfr_prior_fallback/report.json')
 OUT=Path('reports/daily_mix_final')
 LEDGER=Path('data/reaper_delivery_ledger.json')
 TARGET=25; MIN_PRIORITY=60
@@ -18,14 +19,15 @@ def key(r): return 'JEFFERSON|'+clean(r.get('parcel_id') or r.get('property_addr
 
 def main()->int:
     OUT.mkdir(parents=True,exist_ok=True)
-    b=load(BASE); f=load(FILL) if FILL.exists() else {'ranked_live_leads':[]}
+    b=load(BASE); f=load(FILL) if FILL.exists() else {'ranked_live_leads':[]}; fb=load(FALLBACK) if FALLBACK.exists() else {'accepted':[]}
     houses=list(b.get('houses') or [])
     existing={(r.get('parcel_id'),r.get('case_number')) for r in houses}
-    for r in f.get('ranked_live_leads') or []:
-        if int(r.get('priority_score') or 0)<MIN_PRIORITY: continue
-        ident=(r.get('parcel_id'),r.get('case_number'))
-        if ident in existing: continue
-        houses.append(r); existing.add(ident)
+    for source_rows in ((f.get('ranked_live_leads') or []),(fb.get('accepted') or [])):
+        for r in source_rows:
+            if int(r.get('priority_score') or 0)<MIN_PRIORITY: continue
+            ident=(r.get('parcel_id'),r.get('case_number'))
+            if ident in existing: continue
+            houses.append(r); existing.add(ident)
     houses=[r for r in houses if int(r.get('priority_score') or 0)>=MIN_PRIORITY]
     houses.sort(key=lambda r:(int(r.get('priority_score') or 0),int(r.get('distress_score') or 0)),reverse=True)
     land=[r for r in (b.get('land') or []) if int(r.get('priority_score') or 0)>=MIN_PRIORITY]
@@ -33,8 +35,8 @@ def main()->int:
 
     ledger=load(LEDGER) if LEDGER.exists() else {'version':1,'market':'Jefferson County, Kentucky','properties':{}}
     props=ledger.setdefault('properties',{})
-    fill_stamp=f.get('source_generated_at_et') or ''
-    batch_id='|'.join([clean(b.get('house_source_generated_at_et')),clean(fill_stamp),max([clean(r.get('event_date')) for r in land] or [''])])
+    fill_stamp=f.get('source_generated_at_et') or ''; fallback_stamp=fb.get('source_generated_at_et') or ''
+    batch_id='|'.join([clean(b.get('house_source_generated_at_et')),clean(fill_stamp),clean(fallback_stamp),max([clean(r.get('event_date')) for r in land] or [''])])
 
     def fresh(rows):
         out=[]; skipped=[]
@@ -51,8 +53,6 @@ def main()->int:
     for i,r in enumerate(fresh_l,1):r['rank']=i
     status='PASS' if len(fresh_h)==TARGET and len(fresh_l)==TARGET else 'PARTIAL'
 
-    # A partial/failed qualification run is not a delivery. Only acknowledge a
-    # complete 25+25 batch so retries cannot accidentally burn valid leads.
     if status=='PASS':
         for r in fresh_h+fresh_l:
             props[key(r)]={'fingerprint':r['event_fingerprint'],'batch_id':batch_id,'last_case_number':r.get('case_number'),'last_event_date':r.get('event_date'),'property_type':r.get('property_type')}
@@ -60,9 +60,10 @@ def main()->int:
         LEDGER.write_text(json.dumps(ledger,indent=2,ensure_ascii=False),encoding='utf-8')
 
     report={'status':status,'batch_id':batch_id,'minimum_priority':MIN_PRIORITY,'target_each':TARGET,'houses_count':len(fresh_h),'land_count':len(fresh_l),
-            'houses':fresh_h,'land':fresh_l,'unchanged_skipped':{'houses':skip_h,'land':skip_l},
-            'ledger_acknowledged':status=='PASS','guardrails':{'fresh_event_fingerprint_required':True,'unchanged_repeat_suppressed_across_new_batches':True,
-            'same_batch_rerender_idempotent':True,'priority_floor_60':True,'partial_batches_do_not_mutate_delivery_ledger':True}}
+            'houses':fresh_h,'land':fresh_l,'unchanged_skipped':{'houses':skip_h,'land':skip_l},'fresh_sfr_fill_available':bool(f.get('ranked_live_leads')),
+            'prior_sfr_fallback_available':bool(fb.get('accepted')),'ledger_acknowledged':status=='PASS',
+            'guardrails':{'fresh_event_fingerprint_required':True,'unchanged_repeat_suppressed_across_new_batches':True,'same_batch_rerender_idempotent':True,
+            'priority_floor_60':True,'partial_batches_do_not_mutate_delivery_ledger':True,'fallback_requires_prevalidated_ai_rank_and_lojic_single_family':True}}
     (OUT/'current.json').write_text(json.dumps(report,indent=2,ensure_ascii=False),encoding='utf-8')
     print(json.dumps({'status':status,'houses':len(fresh_h),'land':len(fresh_l),'skipped_unchanged':len(skip_h)+len(skip_l),'ledger_acknowledged':status=='PASS'},indent=2))
     return 0 if status=='PASS' else 2
