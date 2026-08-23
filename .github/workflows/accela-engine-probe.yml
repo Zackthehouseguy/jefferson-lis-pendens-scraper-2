@@ -3,6 +3,7 @@ name: Accela Engine Probe
 on:
   push:
     branches:
+      - main
       - accela-engine-probe
     paths:
       - "scrapers/probe/accela_engine_probe.py"
@@ -28,7 +29,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: accela-engine-probe
+          ref: ${{ github.ref_name }}
 
       - uses: actions/setup-python@v5
         with:
@@ -56,7 +57,7 @@ jobs:
           echo "===== ACCELA ENGINE REPORT ====="
           cat reports/accela_engine/report.md 2>/dev/null || true
 
-      - name: Persist report to isolated branch
+      - name: Persist report to triggering branch
         if: always()
         run: |
           if [ -f reports/accela_engine/report.json ]; then
@@ -64,7 +65,7 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add reports/accela_engine/report.json reports/accela_engine/report.md
             git diff --cached --quiet || git commit -m "Update Accela engine probe report [skip ci]"
-            git push origin HEAD:accela-engine-probe
+            git push origin "HEAD:${{ github.ref_name }}"
           fi
 
       - name: Upload probe report and failure diagnostics
