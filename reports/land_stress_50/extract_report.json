@@ -1,0 +1,2956 @@
+{
+  "status": "FAIL",
+  "generated_at_utc": "2026-08-23T05:48:49.332639+00:00",
+  "generated_at_et": "2026-08-23T01:48:49.332639-04:00",
+  "target": 50,
+  "raw_target": 85,
+  "benchmark_cases_excluded": [
+    "ENF-PMNT-26-002254",
+    "ENF-PMNT-26-008067",
+    "ENF-PMNT-26-011115",
+    "ENF-PMNT-26-011727",
+    "ENF-PMNT-26-013625",
+    "ENF-PMNT-26-013626",
+    "ENF-PMNT-26-017755",
+    "ENF-PMNT-26-018052",
+    "ENF-PMNT-26-018115",
+    "ENF-PMNT-26-018477"
+  ],
+  "pm_features_fetched": 12000,
+  "parent_groups_discovered": 5093,
+  "vacant_lot_parent_groups": 414,
+  "demolition_transition_watch_groups": 87,
+  "raw_runtime_seconds": 1001.53,
+  "private_unseen_land_records": [
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-016456",
+      "record_status": "Open",
+      "property_address": "1454 S 12TH ST LOUISVILLE KY 40210",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40210",
+      "description_raw": "Tall grass",
+      "inspector_comments": [],
+      "owner_name": "SUMMERS HORACE & CHICOBY",
+      "owner_mailing_address": "13004 OBSERVATION CIR UNIT 102 LOUISVILLE KY 40243-1684",
+      "owner_mailing_differs": true,
+      "parcel_id": "042A00680000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C3626&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C3639&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-17",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [],
+      "violation_descriptions": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 2953.1,
+      "lot_acres": 0.0678,
+      "pin": null,
+      "zoning_code": "EZ1",
+      "zoning_name": "ENTERPRISE ZONE",
+      "zoning_type": "COMMERCIAL-INDUSTRIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 4,
+          "recovered": true,
+          "errors": [
+            "500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27042A00680000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+          ]
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      }
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-016454",
+      "record_status": "Open",
+      "property_address": "1452 S 12TH ST LOUISVILLE KY 40210",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40210",
+      "description_raw": "Tall grass",
+      "inspector_comments": [],
+      "owner_name": "SMITH TONY NATHANIEL",
+      "owner_mailing_address": "223 GRESHAM RD GRESHAM SC 29546-5173",
+      "owner_mailing_differs": true,
+      "parcel_id": "042A00690000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C3621&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C3635&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-17",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [],
+      "violation_descriptions": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 2528.3,
+      "lot_acres": 0.058,
+      "pin": null,
+      "zoning_code": "EZ1",
+      "zoning_name": "ENTERPRISE ZONE",
+      "zoning_type": "COMMERCIAL-INDUSTRIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      }
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-017934",
+      "record_status": "Open",
+      "property_address": "4410 STONE WYNDE DR LOUISVILLE KY 40272",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40272",
+      "description_raw": "Citizen reports the grass is 2ft tall.",
+      "inspector_comments": [
+        "Entire property must remain cut and clean and free of all rubbish"
+      ],
+      "owner_name": "KOPPEL BUILDING & CONSTRUCTION CO IN",
+      "owner_mailing_address": "PO BOX 161836 LOUISVILLE KY 40256-1836",
+      "owner_mailing_differs": true,
+      "parcel_id": "311702120000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D2637&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D2638&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-17",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 14695.6,
+      "lot_acres": 0.3374,
+      "pin": null,
+      "zoning_code": "R4",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "VACANT",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      }
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-017933",
+      "record_status": "Open",
+      "property_address": "4430 STONE WYNDE DR LOUISVILLE KY 40272",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40272",
+      "description_raw": "Citizen reports the grass is 2ft tall.",
+      "inspector_comments": [
+        "Entire property must remain cut and clean and free of all rubbish"
+      ],
+      "owner_name": "KOPPEL BUILDING & CONSTRUCTION CO IN",
+      "owner_mailing_address": "PO BOX 161836 LOUISVILLE KY 40256-1836",
+      "owner_mailing_differs": true,
+      "parcel_id": "311701980000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D2635&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D2636&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-17",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [
+        "02A"
+      ],
+      "violation_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 16037.3,
+      "lot_acres": 0.3682,
+      "pin": null,
+      "zoning_code": "R4",
+      "zoning_name": "RES SINGLE FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "VACANT",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      }
+    },
+    {
+      "property_type": "LAND",
+      "confirmed_vacant_lot": true,
+      "demolition_verified": false,
+      "possible_structure_to_lot_transition": false,
+      "transition_note": null,
+      "case_number": "ENF-PMNT-26-013535",
+      "record_status": "Open",
+      "property_address": "2348 W MADISON ST LOUISVILLE KY 40211",
+      "city": "LOUISVILLE",
+      "state": "KY",
+      "zip": "40211",
+      "description_raw": null,
+      "inspector_comments": [
+        "Vacant lot must be cut/clean throughout, INCLUDING REAR EASEMENT & FENCE LINES"
+      ],
+      "owner_name": "LAIN SUBRENIA R",
+      "owner_mailing_address": "2526 W MADISON ST APT 203 LOUISVILLE KY 40211-3387",
+      "owner_mailing_differs": true,
+      "parcel_id": "001C01150000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=A5706&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D1035&agencyCode=LJCMG&IsToShowInspection=",
+      "event_date": "2026-08-17",
+      "open_case_groups_in_source_window_same_parcel": 1,
+      "source_window_occupancies": [
+        "Vacant Lot"
+      ],
+      "violation_codes": [],
+      "violation_descriptions": [],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "parcel_type": 0,
+      "lot_sqft": 6360.6,
+      "lot_acres": 0.146,
+      "pin": null,
+      "zoning_code": "R6",
+      "zoning_name": "RES MULTI-FAMILY",
+      "zoning_type": "RESIDENTIAL",
+      "landuse_name": "SINGLE FAMILY",
+      "lojic_parcel_verified": true,
+      "tax_delinquent_verified": null,
+      "tax_note": "Tax adapter not used in this extraction run; do not infer tax delinquency.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      },
+      "private_owner_screen_passed": true,
+      "public_owner_detected": false,
+      "owner_screen_basis": "no_obvious_public_owner_name",
+      "lojic_recovery": {
+        "parcel": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "zoning": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        },
+        "landuse": {
+          "attempts": 1,
+          "recovered": false,
+          "errors": []
+        }
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "case_number": "ENF-PMNT-26-002254",
+      "parcel_id": "048E00960000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-26-013625",
+      "parcel_id": "046K00380000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-26-008067",
+      "parcel_id": "2527000D0000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-26-013626",
+      "parcel_id": "046K00390000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-26-018477",
+      "parcel_id": "307700730000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-26-011727",
+      "parcel_id": "001E00940000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-26-015601",
+      "parcel_id": "001F00480000",
+      "reason": "obvious_public_owner",
+      "owner": "LOUISVILLE"
+    },
+    {
+      "case_number": "ENF-PMNT-26-017755",
+      "parcel_id": "038A00670000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-26-011115",
+      "parcel_id": "037D02110000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-26-018052",
+      "parcel_id": "024B00930000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-26-018115",
+      "parcel_id": "039B01220000",
+      "reason": "benchmark_fixture_excluded"
+    },
+    {
+      "case_number": "ENF-PMNT-24-020140",
+      "parcel_id": "035L01740000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-008499",
+      "parcel_id": "015J01650000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019144",
+      "parcel_id": "063601650000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-007727",
+      "parcel_id": "067G00590000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018993",
+      "parcel_id": "038B00350000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-017977",
+      "parcel_id": "382301220000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018919",
+      "parcel_id": "031J00700000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-015703",
+      "parcel_id": "092601880000",
+      "reason": "obvious_public_owner",
+      "owner": "LOUISVILLE & JEFFERSON COUNTY MET"
+    },
+    {
+      "case_number": "ENF-PMNT-26-019026",
+      "parcel_id": "068L00110000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-008022",
+      "parcel_id": "040F00200000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-19-012574",
+      "parcel_id": "040J00300000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-016826",
+      "parcel_id": "041E00880000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019127",
+      "parcel_id": "063204560000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019035",
+      "parcel_id": "208201840000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018974",
+      "parcel_id": "023D00840000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-012365",
+      "parcel_id": "104806850000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-23-007551",
+      "parcel_id": "105402490000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019108",
+      "parcel_id": "002J00680000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-25-005787",
+      "parcel_id": "067A00850000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-017562",
+      "parcel_id": "012101790000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-017582",
+      "parcel_id": "040B00060000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019098",
+      "parcel_id": "002D00120000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-006439",
+      "parcel_id": "037D00350000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019073",
+      "parcel_id": "083A01010000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-014496",
+      "parcel_id": "005F00660000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-009105",
+      "parcel_id": "046D01620000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018042",
+      "parcel_id": "001F00510000",
+      "reason": "obvious_public_owner",
+      "owner": "LOUISVILLE"
+    },
+    {
+      "case_number": "ENF-PMNT-26-003412",
+      "parcel_id": "015J01030000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018133",
+      "parcel_id": "005100780000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-25-004260",
+      "parcel_id": "011500750000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-014657",
+      "parcel_id": "065402830000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-017084",
+      "parcel_id": "039F00950000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-21-013976",
+      "parcel_id": "001G00610000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-017197",
+      "parcel_id": "041F00760000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-017086",
+      "parcel_id": "002H00620000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-25-022750",
+      "parcel_id": "038E00210000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019022",
+      "parcel_id": "050D01450000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019020",
+      "parcel_id": "050D01460000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019019",
+      "parcel_id": "050D01470000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018846",
+      "parcel_id": "001E01280000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-009265",
+      "parcel_id": "037D01140000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018848",
+      "parcel_id": "003M01820000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-009163",
+      "parcel_id": "063C01510000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018987",
+      "parcel_id": "102504920000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-017259",
+      "parcel_id": "210900090000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-017439",
+      "parcel_id": "297800130000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018797",
+      "parcel_id": "036D00360000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-009613",
+      "parcel_id": "102501890000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-004374",
+      "parcel_id": "002J00360000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018579",
+      "parcel_id": "334800170000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-24-019244",
+      "parcel_id": "059F01910000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-25-011294",
+      "parcel_id": "019F00010000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-005152",
+      "parcel_id": "086000410029",
+      "reason": "obvious_public_owner",
+      "owner": "LOUISVILLE & JEFFERSON COUNTY MSD"
+    },
+    {
+      "case_number": "ENF-PMNT-26-018856",
+      "parcel_id": "046D00150000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-014706",
+      "parcel_id": "046H00360000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-014610",
+      "parcel_id": "064203160000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-010499",
+      "parcel_id": "201308280000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27201308280000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018854",
+      "parcel_id": "046D00140000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27046D00140000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018851",
+      "parcel_id": "046D00130000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27046D00130000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-25-003850",
+      "parcel_id": "007B01250000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27007B01250000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-013283",
+      "parcel_id": "030100290000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27030100290000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-009612",
+      "parcel_id": "045C00030000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27045C00030000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-014277",
+      "parcel_id": "004E00530000",
+      "reason": "obvious_public_owner",
+      "owner": "LOUISVILLE & JEFFERSON COUNTY LANDBA"
+    },
+    {
+      "case_number": "ENF-PMNT-26-018825",
+      "parcel_id": "048E00040000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27048E00040000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-017239",
+      "parcel_id": "024A00190000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27024A00190000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-009738",
+      "parcel_id": "046C00760000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27046C00760000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018801",
+      "parcel_id": "015J01080000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27015J01080000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-016499",
+      "parcel_id": "042A00770000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27042A00770000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-016457",
+      "parcel_id": "042A00660000",
+      "reason": "required_lojic_enrichment_failed",
+      "detail": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27042A00660000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    }
+  ],
+  "enrichment_failures": [
+    {
+      "case_number": "ENF-PMNT-24-020140",
+      "parcel_id": "035L01740000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-008499",
+      "parcel_id": "015J01650000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019144",
+      "parcel_id": "063601650000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-007727",
+      "parcel_id": "067G00590000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018993",
+      "parcel_id": "038B00350000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-017977",
+      "parcel_id": "382301220000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018919",
+      "parcel_id": "031J00700000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019026",
+      "parcel_id": "068L00110000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-008022",
+      "parcel_id": "040F00200000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-19-012574",
+      "parcel_id": "040J00300000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-016826",
+      "parcel_id": "041E00880000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019127",
+      "parcel_id": "063204560000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019035",
+      "parcel_id": "208201840000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018974",
+      "parcel_id": "023D00840000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-012365",
+      "parcel_id": "104806850000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-23-007551",
+      "parcel_id": "105402490000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019108",
+      "parcel_id": "002J00680000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-25-005787",
+      "parcel_id": "067A00850000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-017562",
+      "parcel_id": "012101790000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-017582",
+      "parcel_id": "040B00060000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019098",
+      "parcel_id": "002D00120000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-006439",
+      "parcel_id": "037D00350000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019073",
+      "parcel_id": "083A01010000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-014496",
+      "parcel_id": "005F00660000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-009105",
+      "parcel_id": "046D01620000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-003412",
+      "parcel_id": "015J01030000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018133",
+      "parcel_id": "005100780000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-25-004260",
+      "parcel_id": "011500750000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-014657",
+      "parcel_id": "065402830000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-017084",
+      "parcel_id": "039F00950000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-21-013976",
+      "parcel_id": "001G00610000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-017197",
+      "parcel_id": "041F00760000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-017086",
+      "parcel_id": "002H00620000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-25-022750",
+      "parcel_id": "038E00210000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019022",
+      "parcel_id": "050D01450000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019020",
+      "parcel_id": "050D01460000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-019019",
+      "parcel_id": "050D01470000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018846",
+      "parcel_id": "001E01280000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-009265",
+      "parcel_id": "037D01140000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018848",
+      "parcel_id": "003M01820000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-009163",
+      "parcel_id": "063C01510000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018987",
+      "parcel_id": "102504920000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-017259",
+      "parcel_id": "210900090000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-017439",
+      "parcel_id": "297800130000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018797",
+      "parcel_id": "036D00360000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-009613",
+      "parcel_id": "102501890000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-004374",
+      "parcel_id": "002J00360000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018579",
+      "parcel_id": "334800170000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-24-019244",
+      "parcel_id": "059F01910000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-25-011294",
+      "parcel_id": "019F00010000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018856",
+      "parcel_id": "046D00150000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-014706",
+      "parcel_id": "046H00360000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-014610",
+      "parcel_id": "064203160000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-010499",
+      "parcel_id": "201308280000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27201308280000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018854",
+      "parcel_id": "046D00140000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27046D00140000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018851",
+      "parcel_id": "046D00130000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27046D00130000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-25-003850",
+      "parcel_id": "007B01250000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27007B01250000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-013283",
+      "parcel_id": "030100290000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27030100290000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-009612",
+      "parcel_id": "045C00030000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27045C00030000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018825",
+      "parcel_id": "048E00040000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27048E00040000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-017239",
+      "parcel_id": "024A00190000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27024A00190000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-009738",
+      "parcel_id": "046C00760000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27046C00760000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-018801",
+      "parcel_id": "015J01080000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27015J01080000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-016499",
+      "parcel_id": "042A00770000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27042A00770000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    },
+    {
+      "case_number": "ENF-PMNT-26-016457",
+      "parcel_id": "042A00660000",
+      "failures": [
+        {
+          "source": "lojic_parcel",
+          "reason": "HTTPError:500 Server Error: Internal Server Error for url: https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPVA/MapServer/1/query?where=PARCELID%3D%27042A00660000%27&outFields=PARCELID%2CPARCEL_TYPE%2CPIN%2CSHAPE.AREA&returnGeometry=true&returnCentroid=true&outSR=2246&f=json"
+        }
+      ]
+    }
+  ],
+  "raw_failures": [
+    {
+      "stage": "acceptance",
+      "parcel_id": "233400800000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "008G00500000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "037A00680000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "046E00850000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "042A00070000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "2527000C0000",
+      "reason": "parent_not_open",
+      "status": "Hearing"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "105100110000",
+      "reason": "parent_not_open",
+      "status": "Hearing"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "334800150000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "063601350000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "104803620000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "037D00930000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "040F00340000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "001B00570000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "002H01010000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "002D00710000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "376700350000",
+      "reason": "parent_not_open",
+      "status": "Hearing"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "002J00360000",
+      "source": "lojic_parcel",
+      "reason": "RuntimeError:{'code': 400, 'message': 'Failed to execute query.', 'details': []}"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "334800170000",
+      "source": "lojic_parcel",
+      "reason": "RuntimeError:{'code': 400, 'message': 'Failed to execute query.', 'details': []}"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "059F01910000",
+      "source": "lojic_parcel",
+      "reason": "RuntimeError:{'code': 400, 'message': 'Failed to execute query.', 'details': []}"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "019F00010000",
+      "source": "lojic_parcel",
+      "reason": "RuntimeError:{'code': 400, 'message': 'Failed to execute query.', 'details': []}"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "086000410029",
+      "source": "lojic_parcel",
+      "reason": "RuntimeError:{'code': 400, 'message': 'Failed to execute query.', 'details': []}"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "046D00150000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "046H00360000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "064203160000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "201308280000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "008401960000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "046D00140000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "046D00130000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "007B01250000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "030100290000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "162000030000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "162000030000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "045C00030000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "004E00530000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "W00201530000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "037A01210000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "004E00540000",
+      "reason": "parent_not_open",
+      "status": "Hearing"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "048E00040000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "024A00190000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "002K00800000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "004402500000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "046C00760000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "015J01080000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "031C00400000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parcel_id": "036D01060000",
+      "reason": "parent_not_open",
+      "status": "Closed"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "042A00770000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "042A00660000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "042A00680000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "042A00690000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "311702120000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "311701980000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "stage": "enrichment",
+      "parcel_id": "001C01150000",
+      "source": "lojic_parcel",
+      "reason": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)"
+    }
+  ],
+  "demolition_watch_preview": [
+    {
+      "parent_case": "ENF-PMNT-26-019259",
+      "parcel_id": "013H02150000",
+      "address": "638 VILLAGE WEST DR, LOUISVILLE, KY 40203",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X72"
+      ],
+      "event_date": "2026-08-21",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-018175",
+      "parcel_id": "036F02460000",
+      "address": "843 S 26TH ST, LOUISVILLE, KY 40211",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "02A"
+      ],
+      "event_date": "2026-08-21",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-015492",
+      "parcel_id": "038A00720000",
+      "address": "2315 W KENTUCKY ST, LOUISVILLE, KY 40210",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "02A"
+      ],
+      "event_date": "2026-08-21",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-006173",
+      "parcel_id": "039C01810000",
+      "address": "1740 W ORMSBY AVE, LOUISVILLE, KY 40210",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "X94",
+        "02A"
+      ],
+      "event_date": "2026-08-21",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-018498",
+      "parcel_id": "014F01680000",
+      "address": "1601 W MUHAMMAD ALI BLVD 7, LOUISVILLE, KY 40203",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A"
+      ],
+      "event_date": "2026-08-21",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-018478",
+      "parcel_id": "055H00480000",
+      "address": "114 E EVELYN AVE, LOUISVILLE, KY 40214",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A"
+      ],
+      "event_date": "2026-08-20",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-018232",
+      "parcel_id": "236201300000",
+      "address": "4519 BRAMERS LN, LOUISVILLE, KY 40216",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X50",
+        "X78",
+        "X40",
+        "X19",
+        "01A"
+      ],
+      "event_date": "2026-08-20",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-016776",
+      "parcel_id": "004B01420000",
+      "address": "2817 LYTLE ST, LOUISVILLE, KY 40212",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A",
+        "X40"
+      ],
+      "event_date": "2026-08-20",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-20-004378",
+      "parcel_id": "008502760000",
+      "address": "5409 MOUNT WASHINGTON RD, LOUISVILLE, KY 40229",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "X40",
+        "02A",
+        "01A",
+        "05A"
+      ],
+      "event_date": "2026-08-20",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-24-018407",
+      "parcel_id": "046J00890000",
+      "address": "2816 HALE AVE, LOUISVILLE, KY 40211",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "X50",
+        "X69",
+        "02A",
+        "01A"
+      ],
+      "event_date": "2026-08-20",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-006688",
+      "parcel_id": "339904330000",
+      "address": "205 LOCUST PARK PL, LOUISVILLE, KY 40245",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A"
+      ],
+      "event_date": "2026-08-20",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-023635",
+      "parcel_id": "105501610000",
+      "address": "11006 JEFFERSON HILL RD, LOUISVILLE, KY 40118",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "X94"
+      ],
+      "event_date": "2026-08-20",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-001189",
+      "parcel_id": "102800720000",
+      "address": "6912 TRIANGLE DR, LOUISVILLE, KY 40214",
+      "occupancies": [
+        "Vacant Structure",
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A",
+        "X50",
+        "X72",
+        "X15",
+        "U01"
+      ],
+      "event_date": "2026-08-20",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-012105",
+      "parcel_id": "003F00910000",
+      "address": "2315 DUNCAN ST, LOUISVILLE, KY 40212",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X94"
+      ],
+      "event_date": "2026-08-19",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-007793",
+      "parcel_id": "001E01350000",
+      "address": "1934 W MADISON ST, LOUISVILLE, KY 40203",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A",
+        "X50",
+        "X78",
+        "X90",
+        "X19"
+      ],
+      "event_date": "2026-08-19",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-007005",
+      "parcel_id": "049D00400000",
+      "address": "1631 S 30TH ST, LOUISVILLE, KY 40211",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A"
+      ],
+      "event_date": "2026-08-19",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-007789",
+      "parcel_id": "067D02640000",
+      "address": "1440 ARLING AVE, LOUISVILLE, KY 40215",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X94"
+      ],
+      "event_date": "2026-08-19",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-011476",
+      "parcel_id": "039C00900000",
+      "address": "1313 DIXIE HWY, LOUISVILLE, KY 40210",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X156",
+        "02A"
+      ],
+      "event_date": "2026-08-19",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-001373",
+      "parcel_id": "122300110065",
+      "address": "6016 MIDDLEROSE CIR, LOUISVILLE, KY 40272",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "X94"
+      ],
+      "event_date": "2026-08-19",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-21-004680",
+      "parcel_id": "038D00390000",
+      "address": "2303 HALE AVE, LOUISVILLE, KY 40210",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A"
+      ],
+      "event_date": "2026-08-19",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-017622",
+      "parcel_id": "119300030121",
+      "address": "6005 HALMA DR, LOUISVILLE, KY 40272",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A"
+      ],
+      "event_date": "2026-08-19",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-009565",
+      "parcel_id": "160600800000",
+      "address": "3910 BENJE WAY, LOUISVILLE, KY 40241",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A",
+        "X50",
+        "X67",
+        "X72"
+      ],
+      "event_date": "2026-08-18",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-018875",
+      "parcel_id": "004G01260000",
+      "address": "461 N 28TH ST, LOUISVILLE, KY 40212",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A",
+        "X19"
+      ],
+      "event_date": "2026-08-18",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-24-019861",
+      "parcel_id": "001G00930000",
+      "address": "2408 ELLIOTT AVE, LOUISVILLE, KY 40211",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "E05",
+        "X50",
+        "X69",
+        "X19",
+        "01A"
+      ],
+      "event_date": "2026-08-18",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-010697",
+      "parcel_id": "207400050000",
+      "address": "5102 QUEENS CASTLE RD, LOUISVILLE, KY 40229",
+      "occupancies": [
+        "Vacant Structure",
+        "Occupied Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X50",
+        "X40",
+        "01A",
+        "X81",
+        "I21",
+        "U01"
+      ],
+      "event_date": "2026-08-18",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-008453",
+      "parcel_id": "007D00210000",
+      "address": "3920 VERMONT AVE, LOUISVILLE, KY 40211",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "X72",
+        "05A",
+        "02A",
+        "01A"
+      ],
+      "event_date": "2026-08-18",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-010802",
+      "parcel_id": "048E00010000",
+      "address": "1371 CATALPA ST, LOUISVILLE, KY 40211",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X94"
+      ],
+      "event_date": "2026-08-18",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-007775",
+      "parcel_id": "039C00870000",
+      "address": "1321 DIXIE HWY, LOUISVILLE, KY 40210",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X69",
+        "R01",
+        "02A"
+      ],
+      "event_date": "2026-08-18",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-018806",
+      "parcel_id": "048K00040000",
+      "address": "1429 CATALPA ST, LOUISVILLE, KY 40211",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X94"
+      ],
+      "event_date": "2026-08-18",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-009874",
+      "parcel_id": "041C01420000",
+      "address": "2213 W BURNETT AVE, LOUISVILLE, KY 40210",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X78",
+        "X94",
+        "X19"
+      ],
+      "event_date": "2026-08-17",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-018333",
+      "parcel_id": "039D00650000",
+      "address": "1635 WILSON AVE, LOUISVILLE, KY 40210",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A"
+      ],
+      "event_date": "2026-08-17",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-007786",
+      "parcel_id": "064D01780000",
+      "address": "1407 SALE AVE, LOUISVILLE, KY 40215",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "E05",
+        "U01",
+        "02A"
+      ],
+      "event_date": "2026-08-17",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-000439",
+      "parcel_id": "063D01240000",
+      "address": "816 WINKLER AVE, LOUISVILLE, KY 40208",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A"
+      ],
+      "event_date": "2026-08-17",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-006894",
+      "parcel_id": "053D00390000",
+      "address": "715 W ASHLAND AVE, LOUISVILLE, KY 40215",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X69",
+        "X15",
+        "X19",
+        "02A"
+      ],
+      "event_date": "2026-08-17",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-019298",
+      "parcel_id": "117200790004",
+      "address": "5007 AXTELL AVE, LOUISVILLE, KY 40258",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "X16",
+        "X50",
+        "05A",
+        "01A"
+      ],
+      "event_date": "2026-08-17",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-016675",
+      "parcel_id": "063300470000",
+      "address": "4310 NAOMI DR, LOUISVILLE, KY 40219",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A",
+        "05A",
+        "080A",
+        "X19",
+        "Z006"
+      ],
+      "event_date": "2026-08-17",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-018563",
+      "parcel_id": "045C00190000",
+      "address": "3201 GREENWOOD AVE, LOUISVILLE, KY 40211",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A"
+      ],
+      "event_date": "2026-08-14",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-21-007813",
+      "parcel_id": "009D00840000",
+      "address": "3821 ALFORD AVE, LOUISVILLE, KY 40212",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A",
+        "X50",
+        "X19"
+      ],
+      "event_date": "2026-08-14",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-011491",
+      "parcel_id": "002H01000000",
+      "address": "403 S 27TH ST, LOUISVILLE, KY 40212",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A",
+        "E05",
+        "X50",
+        "X69",
+        "X40",
+        "X19",
+        "HO1"
+      ],
+      "event_date": "2026-08-14",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-24-019569",
+      "parcel_id": "004G02000000",
+      "address": "2708 GILLIGAN ST, LOUISVILLE, KY 40212",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "X94"
+      ],
+      "event_date": "2026-08-14",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-015240",
+      "parcel_id": "037F01460000",
+      "address": "1647 HALE AVE, LOUISVILLE, KY 40210",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A"
+      ],
+      "event_date": "2026-08-14",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-24-018677",
+      "parcel_id": "057A00020000",
+      "address": "4443 SOUTHERN PKY, LOUISVILLE, KY 40214",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X50",
+        "X72",
+        "X78",
+        "X40",
+        "X15",
+        "X19"
+      ],
+      "event_date": "2026-08-14",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-010547",
+      "parcel_id": "236200480000",
+      "address": "4503 LAKE DREAMLAND RD, LOUISVILLE, KY 40216",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X72",
+        "X78",
+        "X911",
+        "05A",
+        "U01",
+        "02A"
+      ],
+      "event_date": "2026-08-13",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-008064",
+      "parcel_id": "003J02250000",
+      "address": "2640 ROWAN ST, LOUISVILLE, KY 40212",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "X69",
+        "X94",
+        "02A"
+      ],
+      "event_date": "2026-08-13",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-24-002661",
+      "parcel_id": "006B00430000",
+      "address": "635 CECIL AVE, LOUISVILLE, KY 40211",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X156"
+      ],
+      "event_date": "2026-08-13",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-003190",
+      "parcel_id": "032E01000000",
+      "address": "1382 S 2ND ST, LOUISVILLE, KY 40208",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "X69"
+      ],
+      "event_date": "2026-08-13",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-004159",
+      "parcel_id": "009000090000",
+      "address": "4613 MUD LN, LOUISVILLE, KY 40229",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "02A",
+        "01A",
+        "X78"
+      ],
+      "event_date": "2026-08-13",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-24-012094",
+      "parcel_id": "003K00820000",
+      "address": "2515 W MAIN ST, LOUISVILLE, KY 40212",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "X94"
+      ],
+      "event_date": "2026-08-13",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-26-015904",
+      "parcel_id": "115100320000",
+      "address": "5119 EUCLID AVE 2, LOUISVILLE, KY 40272",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A"
+      ],
+      "event_date": "2026-08-12",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    },
+    {
+      "parent_case": "ENF-PMNT-25-023331",
+      "parcel_id": "105801450000",
+      "address": "6800 WATSON LN, LOUISVILLE, KY 40272",
+      "occupancies": [
+        "Vacant Structure"
+      ],
+      "violation_codes": [
+        "01A",
+        "02A"
+      ],
+      "event_date": "2026-08-12",
+      "status": "WATCH_ONLY_NOT_VERIFIED_LAND"
+    }
+  ],
+  "guardrails": {
+    "landbank_excluded": true,
+    "private_owner_queue_only": true,
+    "benchmark_cases_excluded": true,
+    "required_parcel_area_enrichment": true,
+    "demolition_not_inferred": true
+  }
+}
