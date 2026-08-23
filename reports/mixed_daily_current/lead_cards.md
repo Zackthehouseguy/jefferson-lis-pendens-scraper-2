@@ -1,6 +1,6 @@
 # TheReaper Lead Cards
 
-Records: **47**
+Records: **42**
 
 # SINGLE-FAMILY HOMES
 
@@ -142,7 +142,7 @@ Distress **87/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 ## #10 — 727 E KENTUCKY ST LOUISVILLE KY 40203
 **SINGLE-FAMILY | CALL FIRST | Priority 83/100**
 Distress **85/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
-**Occupancy:** Occupied
+**Occupancy:** Conflicting — structured source says occupied; narrative reports vacant/abandoned; verify
 **Why:** Broken openings, utility-service issues and severe exterior neglect create strong distress even with conflicting occupancy evidence.
 **Complaint / distress:** Vacant - open - high grass and weeds front and back yard - broken out windows - down tree in the back yard and the states the owner
 **Owner:** MARTINEZ JUAN M JR
@@ -277,7 +277,7 @@ Distress **55/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 ## #19 — 230 ROCHESTER DR LOUISVILLE KY 40214
 **SINGLE-FAMILY | STRONG | Priority 65/100**
 Distress **55/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
-**Occupancy:** Occupied
+**Occupancy:** Conflicting — structured source says occupied; narrative reports vacant/abandoned; verify
 **Why:** Reported vacancy/turnover plus exterior neglect creates moderate acquisition relevance.
 **Complaint / distress:** Vacant property with a For Rent sign in frony yard. Overgrown grass & weeds.
 **Owner:** TAYLOR RACAZIA S
@@ -322,7 +322,7 @@ Distress **53/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 ## #22 — 1808 EDENSIDE AVE LOUISVILLE KY 40204
 **SINGLE-FAMILY | STRONG | Priority 64/100**
 Distress **53/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
-**Occupancy:** Occupied
+**Occupancy:** Conflicting — structured source says occupied; narrative reports vacant/abandoned; verify
 **Why:** Severe exterior neglect and a tree hazard create meaningful distress despite uncertain vacancy.
 **Complaint / distress:** Citizen is reporting that there is a tree branch that is potentially going to fall in the front yard of this property. Also, the grass, weeds, bushes, and trees are extremely overgrown. There is garbage on the front porch. The property is next to the St. James School and looks to be abandoned/vacant.
 **Owner:** LAMBERT SAMMIE S
@@ -339,7 +339,7 @@ Distress **53/100** · Saturation **24/100** · Freshness **82/100 (1-3 DAYS)**
 ## #1 — 2509 WOODLAND AVE LOUISVILLE KY 40210
 **LAND | CALL FIRST | Priority 91/100**
 Motivation **93/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot
 **Why:** Estate ownership, off-site mailing and an active assessed enforcement event make this a strong motivated-land lead.
 **Complaint / distress:** Email received: 2509 Woodland – Property Maintenance
 **Owner:** GRIFFIN MILDRED ESTATE OF
@@ -356,7 +356,7 @@ Motivation **93/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 ## #2 — 3939 CENTRAL AVE LOUISVILLE KY 40218
 **LAND | CALL FIRST | Priority 91/100**
 Motivation **93/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot
 **Why:** Multiple junk/debris/vehicle violations plus two assessed citation events and off-site ownership create a strong motivation stack.
 **Complaint / distress:** Inspector documented furniture/trash/debris, vehicle violations and junkyard-type use; owner mailing differs; two citation events totaling $600 were assessed.
 **Owner:** HRA PROPERTIES CORP
@@ -373,7 +373,7 @@ Motivation **93/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 ## #3 — 2215 W MADISON ST LOUISVILLE KY 40211
 **LAND | CALL FIRST | Priority 89/100**
 Motivation **93/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot
 **Why:** Heirs/devises ownership, off-site mailing, active overgrowth and an assessed citation create a strong motivated-land stack.
 **Complaint / distress:** Owner label includes HEIRS OR DEVISEES; mailing differs; inspector ordered overgrowth abatement; a $200 citation was assessed.
 **Owner:** SMITH WILLIAM D HEIRS OR DEVISEES OF
@@ -390,7 +390,7 @@ Motivation **93/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 ## #4 — 4209 LA SALLE AVE LOUISVILLE KY 40215
 **LAND | CALL FIRST | Priority 89/100**
 Motivation **88/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot
 **Why:** Heirs/devises ownership combined with cleanup distress and a $600 assessed citation creates a strong motivated-land signal.
 **Complaint / distress:** Vacant lot has trash/tree debris and overgrowth; owner label includes HEIRS OR DEVISEES OF; a $600 citation was assessed.
 **Owner:** DURBIN CHARLES HEIRS OR DEVISEES OF
@@ -407,7 +407,7 @@ Motivation **88/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 ## #5 — 2417 PORTLAND AVE LOUISVILLE KY 40212
 **LAND | CALL FIRST | Priority 81/100**
 Motivation **70/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot
 **Why:** Persistent-looking vegetation neglect, off-site ownership and a $200 assessed citation create moderate motivation.
 **Complaint / distress:** knee high weeds. Never is mowed
 **Owner:** G D LLC
@@ -424,7 +424,7 @@ Motivation **70/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 ## #6 — 4208 TAYLOR BLVD LOUISVILLE KY 40215
 **LAND | CALL FIRST | Priority 78/100**
 Motivation **69/100** · Builder Fit **93/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot
 **Why:** Vehicle/storage problems, cleanup distress, off-site ownership and a $300 citation create moderate motivation.
 **Complaint / distress:** abandoned vehicles on property. no tags
 **Owner:** R & A INVESTMENTS LLC
@@ -441,7 +441,7 @@ Motivation **69/100** · Builder Fit **93/100** · Saturation **27/100** · Fres
 ## #7 — 1708 W ST CATHERINE ST LOUISVILLE KY 40210
 **LAND | CALL FIRST | Priority 77/100**
 Motivation **61/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot
 **Why:** Vacancy, off-site ownership and an assessed citation create moderate pressure despite a minor condition.
 **Complaint / distress:** CALLER REPORTING TALL GRASS AT THIS VACANT LOT.
 **Owner:** YARBROUGH LIFFORD JR
@@ -458,7 +458,7 @@ Motivation **61/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 ## #8 — 2703 W KENTUCKY ST LOUISVILLE KY 40211
 **LAND | CALL FIRST | Priority 77/100**
 Motivation **61/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot
 **Why:** Off-site ownership and an active assessed citation raise this above a simple grass lead.
 **Complaint / distress:** High grass
 **Owner:** MONTUFAR CARLOS MANUEL
@@ -475,7 +475,7 @@ Motivation **61/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 ## #9 — 1740 DIXIE HWY LOUISVILLE KY 40210
 **LAND | CALL FIRST | Priority 76/100**
 Motivation **60/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot
 **Why:** Multiple maintenance issues including a dead tree and debris, plus off-site ownership, create moderate land distress.
 **Complaint / distress:** Inspector documented tree debris, a trailer in grass and a dead tree requiring removal; owner mailing differs.
 **Owner:** EURO TECH INC
@@ -492,7 +492,7 @@ Motivation **60/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 ## #10 — 2044 S PRESTON ST LOUISVILLE KY 40217
 **LAND | CALL FIRST | Priority 76/100**
 Motivation **59/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot per structured source — narrative references a structure; verify parcel/structure status
 **Why:** Off-site ownership plus a reported unsecured/boarded condition and active maintenance enforcement creates meaningful motivation, but the parcel/structure-status conflict needs review.
 **Complaint / distress:** Caller reports that he has heard people banging and hammering on things inside this vacant, boarded up building, and two nights ago smelled smoke either from a fire or from cooking. The building is boarded up but the boards on the back have been removed, and the windows on the 2nd floor are broken out. Caller is conce…
 **Owner:** SV REHAB LLC
@@ -509,7 +509,7 @@ Motivation **59/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 ## #11 — 13421 RIGGS LAKE LN LOUISVILLE KY 40299
 **LAND | CALL FIRST | Priority 75/100**
 Motivation **65/100** · Builder Fit **88/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot
 **Why:** Vacancy, off-site ownership and repeated assessed citation events create useful motivation beyond a simple mowing lead.
 **Complaint / distress:** Vacant residential lot
 **Owner:** VORST JORDAN SCOTT
@@ -526,7 +526,7 @@ Motivation **65/100** · Builder Fit **88/100** · Saturation **27/100** · Fres
 ## #12 — 2244 OSAGE AVE LOUISVILLE KY 40210
 **LAND | STRONG | Priority 74/100**
 Motivation **61/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot
 **Why:** Out-of-state LLC ownership plus an assessed citation creates moderate motivation despite minor physical distress.
 **Complaint / distress:** Inspector documented high grass; owner mailing is in Wyoming; a $100 citation was assessed.
 **Owner:** ZIRACO LLC
@@ -543,7 +543,7 @@ Motivation **61/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 ## #13 — 1765 W GAULBERT AVE LOUISVILLE KY 40210
 **LAND | STRONG | Priority 73/100**
 Motivation **58/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot
 **Why:** Out-of-state ownership and an assessed citation create moderate pressure potential even with sparse condition detail.
 **Complaint / distress:** Source identifies a vacant lot; owner mailing is in Philadelphia; a $100 citation was assessed.
 **Owner:** WHITE JAMELL
@@ -560,7 +560,7 @@ Motivation **58/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 ## #14 — 2516 S 4TH ST LOUISVILLE KY 40208
 **LAND | STRONG | Priority 73/100**
 Motivation **58/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot
 **Why:** Cleanup and vegetation issues with off-site land-trust ownership create moderate motivation.
 **Complaint / distress:** Inspector ordered grass/weeds cut and trash/debris removed; owner mailing differs.
 **Owner:** FARK LAND TRUST
@@ -577,7 +577,7 @@ Motivation **58/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 ## #15 — 2520 S 4TH ST LOUISVILLE KY 40208
 **LAND | STRONG | Priority 73/100**
 Motivation **58/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot
 **Why:** Active cleanup/vegetation enforcement and off-site land-trust ownership create moderate motivation.
 **Complaint / distress:** Inspector ordered grass/weeds cut and trash/debris removed; owner mailing differs.
 **Owner:** ARK LAND TRUST
@@ -594,7 +594,7 @@ Motivation **58/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 ## #16 — 2237 W KENTUCKY ST LOUISVILLE KY 40210
 **LAND | STRONG | Priority 73/100**
 Motivation **52/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot
 **Why:** A vacant residential parcel with an active hazardous-tree condition and off-site ownership shows moderate motivation.
 **Complaint / distress:** Caller reports a tree fell at this property and is still leaning/hanging. Could fall all the way over at any time. Said they've seen kids playing on it and are concerned they could be hurt.
 **Owner:** DRABO JAMES
@@ -611,7 +611,7 @@ Motivation **52/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 ## #17 — 6204 PRESTON HWY LOUISVILLE KY 40219
 **LAND | STRONG | Priority 70/100**
 Motivation **58/100** · Builder Fit **82/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot
 **Why:** Mattress dumping, overgrowth and off-site ownership create moderate motivation.
 **Complaint / distress:** Inspector documented tall grass and mattresses; owner mailing differs.
 **Owner:** EXPANDED REALTY CO
@@ -628,7 +628,7 @@ Motivation **58/100** · Builder Fit **82/100** · Saturation **27/100** · Fres
 ## #18 — 7001 E MANSLICK RD LOUISVILLE KY 40228
 **LAND | STRONG | Priority 70/100**
 Motivation **56/100** · Builder Fit **93/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot
 **Why:** Off-site developer ownership and a reported neighboring same-owner parcel create a useful assemblage/motivation signal.
 **Complaint / distress:** 7001 and 7009 E Manslick Road are owned by the same developer. Weeds are out of control
 **Owner:** RED BUD HILL DEVELOPMENT INC
@@ -645,7 +645,7 @@ Motivation **56/100** · Builder Fit **93/100** · Saturation **27/100** · Fres
 ## #19 — 540 S 18TH ST LOUISVILLE KY 40203
 **LAND | STRONG | Priority 70/100**
 Motivation **52/100** · Builder Fit **100/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot
 **Why:** Overgrowth creating a reported visibility problem plus off-site ownership is more relevant than a basic mowing case.
 **Complaint / distress:** vacant lot - high grass and weed overgrown trees/bushes that obstruct the view of on coming traffic at the alley
 **Owner:** LT & JT III INVESTORS LLC
@@ -662,7 +662,7 @@ Motivation **52/100** · Builder Fit **100/100** · Saturation **27/100** · Fre
 ## #20 — 1704 PRENTICE ST LOUISVILLE KY 40210
 **LAND | STRONG | Priority 69/100**
 Motivation **58/100** · Builder Fit **87/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
-**Occupancy:** Vacant lot
+**Occupancy / site status:** Vacant lot per structured source — narrative references a structure; verify parcel/structure status
 **Why:** Substantial debris plus very high grass and off-site ownership create a meaningful neglect signal.
 **Complaint / distress:** Inspector documented construction debris, old tires, pallets and grass over 24 inches; owner mailing differs.
 **Owner:** REFUGE COMMUNITY DEVELOPMENT INC
@@ -675,88 +675,3 @@ Motivation **58/100** · Builder Fit **87/100** · Saturation **27/100** · Fres
 **Tax delinquent:** Not verified in this run
 **Demolition:** Not verified
 **Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=77179&agencyCode=LJCMG
-
-## #21 — 8607 RUNNING FOX CIR LOUISVILLE KY 40291
-**LAND | STRONG | Priority 67/100**
-Motivation **43/100** · Builder Fit **94/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
-**Occupancy:** Vacant lot
-**Why:** Vacancy, off-site ownership and a small assessed citation add pressure, but the condition is only mowing.
-**Complaint / distress:** needs to be mowed
-**Owner:** RYAN HOMES INC
-**Owner mailing:** 2210 GOLDSMITH LN LOUISVILLE KY 40218-1038
-**Parcel:** 208201840000
-**PVA parcel search:** https://jeffersonpva.ky.gov/property-search/  ·  Search Parcel ID: `208201840000`
-**Lot:** 45393.9 SF / 1.0421 ac
-**Zoning:** R5A RES MULTI FAMILY · **Land use:** SINGLE FAMILY
-**Citation:** $100 citation assessed; current balance unverified
-**Tax delinquent:** Not verified in this run
-**Demolition:** Not verified
-**Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0473&agencyCode=LJCMG
-
-## #22 — 7299 DIXIE HWY LOUISVILLE KY 40258
-**LAND | STRONG | Priority 62/100**
-Motivation **88/100** · Builder Fit **17/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
-**Occupancy:** Vacant lot
-**Why:** Out-of-state ownership, significant cleanup issues and a $600 assessed citation create strong motivation.
-**Complaint / distress:** Inspector documented trash, tires, tree debris and bushes full of rubbish; owner mailing is in Nebraska; a $600 citation was assessed.
-**Owner:** BLUE JAY INVESTMENTS LLC
-**Owner mailing:** 8508 N 173RD ST BENNINGTON NE 68007-5777
-**Parcel:** 011500750000
-**PVA parcel search:** https://jeffersonpva.ky.gov/property-search/  ·  Search Parcel ID: `011500750000`
-**Lot:** 41046.1 SF / 0.9423 ac
-**Zoning:** C2 COMMERCIAL · **Land use:** COMMERCIAL
-**Citation:** $600 citation assessed; current balance unverified
-**Tax delinquent:** Not verified in this run
-**Demolition:** Not verified
-**Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=25REC&capID2=00000&capID3=44483&agencyCode=LJCMG
-
-## #23 — 701 E MAIN ST LOUISVILLE KY 40202
-**LAND | STRONG | Priority 62/100**
-Motivation **88/100** · Builder Fit **17/100** · Saturation **27/100** · Freshness **65/100 (4-7 DAYS)**
-**Occupancy:** Vacant lot
-**Why:** Active dumping/nuisance conditions, overgrowth, off-site ownership and an assessed citation create a strong motivation signal.
-**Complaint / distress:** dumping and exceptionally high weeds. what's up? hold the property owner accountable and secure the property - our business across the street is being adversely affected by dust and trash. It is becoming a nuisances property.
-**Owner:** MAIN MACHINE LLC
-**Owner mailing:** 10602 TIMBERWOOD CIR STE 9 LOUISVILLE KY 40223-5367
-**Parcel:** 019F00010000
-**PVA parcel search:** https://jeffersonpva.ky.gov/property-search/  ·  Search Parcel ID: `019F00010000`
-**Lot:** 32387.4 SF / 0.7435 ac
-**Zoning:** EZ1 ENTERPRISE ZONE · **Land use:** COMMERCIAL
-**Citation:** $200 citation assessed; current balance unverified
-**Tax delinquent:** Not verified in this run
-**Demolition:** Not verified
-**Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=25REC&capID2=00000&capID3=98240&agencyCode=LJCMG
-
-## #24 — 2232 W MUHAMMAD ALI BLVD LOUISVILLE KY 40212
-**LAND | STRONG | Priority 62/100**
-Motivation **33/100** · Builder Fit **93/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
-**Occupancy:** Vacant lot
-**Why:** Vacancy and enforcement provide a baseline signal, but little verified financial or ownership distress is present.
-**Complaint / distress:** Vacant lot is under maintenance enforcement and owner mailing differs.
-**Owner:** ZION BAPTIST CHURCH INC
-**Owner mailing:** 2200 W MUHAMMAD ALI BLVD LOUISVILLE KY 40212-1764
-**Parcel:** 002J00680000
-**PVA parcel search:** https://jeffersonpva.ky.gov/property-search/  ·  Search Parcel ID: `002J00680000`
-**Lot:** 6416.8 SF / 0.1473 ac
-**Zoning:** R6 RES MULTI-FAMILY · **Land use:** VACANT
-**Citation:** No assessed citation in current extract
-**Tax delinquent:** Not verified in this run
-**Demolition:** Not verified
-**Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1021&agencyCode=LJCMG
-
-## #25 — 612 N 17TH ST LOUISVILLE KY 40203
-**LAND | STRONG | Priority 61/100**
-Motivation **89/100** · Builder Fit **0/100** · Saturation **27/100** · Freshness **82/100 (1-3 DAYS)**
-**Occupancy:** Vacant lot
-**Why:** Encampment, sanitation/debris issues, off-site ownership and $1,200 in assessed citations form a strong motivation stack.
-**Complaint / distress:** Vacant lot has a large tent encampment, substantial garbage/debris and no visible sanitation; owner mailing differs; two citation events totaling $1,200 were assessed.
-**Owner:** DIEHLMAN LOREN
-**Owner mailing:** 170 WOODLAND RD LOT 24 VINE GROVE KY 40175-6047
-**Parcel:** 015J01650000
-**PVA parcel search:** https://jeffersonpva.ky.gov/property-search/  ·  Search Parcel ID: `015J01650000`
-**Lot:** 1388.2 SF / 0.0319 ac
-**Zoning:** EZ1 ENTERPRISE ZONE · **Land use:** RIGHT-OF-WAY
-**Citation:** $1,200 citation assessed; current balance unverified
-**Tax delinquent:** Not verified in this run
-**Demolition:** Not verified
-**Official enforcement source:** https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=71351&agencyCode=LJCMG
