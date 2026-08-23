@@ -1,0 +1,152 @@
+{
+  "records": [
+    {
+      "index": 1,
+      "case_number": "ENF-PMNT-26-018540",
+      "parcel_id": "063700520000",
+      "property_address": "8200 FERNDALE RD LOUISVILLE KY 40291",
+      "owner_name": "JAMES WESLEY CARY LIVING TRUST",
+      "owner_mailing_address": "8208 COOPER CHAPEL RD LOUISVILLE KY 40229-1756",
+      "owner_mailing_differs": true,
+      "occupancy": "Occupied",
+      "event_date": "2026-08-21",
+      "description_raw": "Email was received: Dear Louisville Metro311 / Code Enforcement, I am submitting this as an addendum to my previous complaints regarding the severely overgrown property directly behind my home at 6415 Tradesmill Drive, Louisville, KY 40291. This has been an ongoing problem for several years, and it has been reported to the city by both phone and email in the past. Several years ago, after previous complaints, the property was cleaned up one time, but it was not maintained and the overgrowth has returned. Trees, vines, brush, and other vegetation from this property are growing over, through, and against my privately owned fence. The vegetation is putting pressure on the fence and causing it to bend. Dense brush and vegetation remaining against the wood can also trap moisture and contribute to deterioration and rot. The overgrowth has interfered with access around my fence and gate as well. There is also a large mature tree immediately outside our fence that has continued to grow without apparent maintenance, with large limbs extending over the adjoining yards and toward our homes. Because of its size and proximity to the residences, I am requesting that the tree also be inspected to determine whether it presents a safety or property-damage hazard. I am attaching a photograph showing the current condition and the proximity of the large tree to the fence and surrounding homes. The property owner is associated with 8200 Ferndale Road, Louisville, KY. Because this is a recurring problem that has already been reported multiple times over a period of years, I am asking Louisville Metro Code Enforcement to inspect the property and take whatever enforcement action is necessary to require the owner to clear the overgrowth and properly maintain the property going forward. Please provide me with the service request or case number for this complaint and let me know what action will be taken. I would also appreciate confirmation once the property has been inspected. Thank you for your attention to this ongoing issue.",
+      "inspector_comments": [
+        "Please cut back overgrowth growing into and causing damage to fence line running from 6409 to 6419 TradesMill Dr.",
+        "Roof and gutter components must be properly installed and kept in good repair, functioning as intended. Clean out gutters where needed. Repair or replace downturned gutter on right side of house.",
+        "Remove dead tree, cut to the stump, located behind 6415 tradesmill rd"
+      ],
+      "open_case_count": 1,
+      "citation_event_count": 0,
+      "citation_assessed_total": 0,
+      "landuse_name": "SINGLE FAMILY",
+      "zoning_code": "R4",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D7596&agencyCode=LJCMG"
+    },
+    {
+      "index": 2,
+      "case_number": "ENF-PMNT-26-008705",
+      "parcel_id": "046F00610000",
+      "property_address": "2900 GREENWOOD AVE 100 LOUISVILLE KY 40211",
+      "owner_name": "SUPREME REAL ESTATE LLC",
+      "owner_mailing_address": "1822 SAN JOSE AVE APT 152 LOUISVILLE KY 40216-2852",
+      "owner_mailing_differs": true,
+      "occupancy": "Occupied",
+      "event_date": "2026-08-21",
+      "description_raw": "Knee high grass",
+      "inspector_comments": [
+        "Property is not owner occupied and must be registered as a rental property via the Louisville Metro Government Rental Registry. www.louisvilleky.gov or call 502-574-2508 for assistance."
+      ],
+      "open_case_count": 1,
+      "citation_event_count": 1,
+      "citation_assessed_total": 250.0,
+      "landuse_name": "SINGLE FAMILY",
+      "zoning_code": "EZ1",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=72798&agencyCode=LJCMG"
+    },
+    {
+      "index": 3,
+      "case_number": "ENF-PMNT-26-014897",
+      "parcel_id": "049C01030000",
+      "property_address": "1529 S 31ST ST LOUISVILLE KY 40211",
+      "owner_name": "KIDANE AMHARE G",
+      "owner_mailing_address": "4315 SPRINGDALE AVE LAS VEGAS NV 89121-2742",
+      "owner_mailing_differs": true,
+      "occupancy": "Vacant",
+      "event_date": "2026-08-21",
+      "description_raw": "Gras is extremely high also dumping in the back fritter have set up a home groundhogs / rats ect . Looks like a Madagascar over. There",
+      "inspector_comments": [
+        "All properties must be clean and maintained. This includes easements midway in alley and street into the property. Any overgrowth must be removed. You have 7 days to be compliant."
+      ],
+      "open_case_count": 1,
+      "citation_event_count": 0,
+      "citation_assessed_total": 0,
+      "landuse_name": "SINGLE FAMILY",
+      "zoning_code": "R6",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B4376&agencyCode=LJCMG"
+    },
+    {
+      "index": 4,
+      "case_number": "ENF-PMNT-26-019037",
+      "parcel_id": "026C02100000",
+      "property_address": "1132 GOSS AVE LOUISVILLE KY 40217",
+      "owner_name": "BUCHANAN MICHAEL",
+      "owner_mailing_address": "1132 GOSS AVE LOUISVILLE KY 40217-1238",
+      "owner_mailing_differs": false,
+      "occupancy": "Occupied",
+      "event_date": "2026-08-21",
+      "description_raw": "CALLER CHECKING STATUS. CALLER SAYS THE GRASS IS OUT COMPLIANCE WITH ORDINANCE AT THIS PROPERTY. THANK YOU.",
+      "inspector_comments": [
+        "Property must be cleaned and maintained at all times and trash, rubbish and debris tree limbs, or cuttings must be properly disposed of high grass and weeds. Must be cut below 10 inches."
+      ],
+      "open_case_count": 1,
+      "citation_event_count": 0,
+      "citation_assessed_total": 0,
+      "landuse_name": "SINGLE FAMILY",
+      "zoning_code": "R5",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0504&agencyCode=LJCMG"
+    },
+    {
+      "index": 5,
+      "case_number": "ENF-PMNT-26-005440",
+      "parcel_id": "038E00610000",
+      "property_address": "2230 GRAND AVE LOUISVILLE KY 40210",
+      "owner_name": "HENEGAR ALMA",
+      "owner_mailing_address": "2230 GRAND AVE LOUISVILLE KY 40210-1144",
+      "owner_mailing_differs": false,
+      "occupancy": "Unknown",
+      "event_date": "2026-08-21",
+      "description_raw": "CALLER REPORTING SOMEONE IS INSIDE OF THIS VACANT PROPERTY. CALLER NOTICED A COUPLE OF DAYS AGO THAT THERE WERE DOGS TIED UP IN THE BACK YARD. CALLER SAYS RESIDENCE HAS NO ELECTRICITY AND HAS BEEN EMPTY FOR SOME TIME. THANK YOU.",
+      "inspector_comments": [],
+      "open_case_count": 1,
+      "citation_event_count": 0,
+      "citation_assessed_total": 0,
+      "landuse_name": "SINGLE FAMILY",
+      "zoning_code": "R5",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=51444&agencyCode=LJCMG"
+    },
+    {
+      "index": 6,
+      "case_number": "ENF-PMNT-25-006543",
+      "parcel_id": "208900190000",
+      "property_address": "7202 APPLEGATE LN LOUISVILLE KY 40228",
+      "owner_name": "ROBERTS JONATHAN B",
+      "owner_mailing_address": "7202 APPLEGATE LN LOUISVILLE KY 40228-2147",
+      "owner_mailing_differs": false,
+      "occupancy": "Vacant",
+      "event_date": "2026-08-21",
+      "description_raw": "It looks like this house is abandoned. The grass has not been touched and the outside of the house is covered in mold and mildew.",
+      "inspector_comments": [
+        "Pool has major leak, all of the dirty/stagnant water has leaked out, causing water to pool on this property and surrounding properties. Abate immediately",
+        "Pool must be kept in good repair, clean and sanitary condition with no standing/stagnant water."
+      ],
+      "open_case_count": 1,
+      "citation_event_count": 1,
+      "citation_assessed_total": 700.0,
+      "landuse_name": "SINGLE FAMILY",
+      "zoning_code": "R4",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=25REC&capID2=00000&capID3=64903&agencyCode=LJCMG"
+    },
+    {
+      "index": 7,
+      "case_number": "ENF-PMNT-26-012558",
+      "parcel_id": "062J00910000",
+      "property_address": "5405 WINDING RD LOUISVILLE KY 40214",
+      "owner_name": "MEADORS DOUGLAS A",
+      "owner_mailing_address": "113 WOODMORE AVE LOUISVILLE KY 40214-3655",
+      "owner_mailing_differs": true,
+      "occupancy": "Vacant",
+      "event_date": "2026-08-21",
+      "description_raw": "Vacant home (possibly abandoned) has large amount of overgrowth and trash piled at the street. Possibly left by residents of 5407 Winding Rd.",
+      "inspector_comments": [
+        "7 days to remove the trash, rubbish. Cut all overgrowth and maintain. The entire property must remain cut, clean, organized and maintained at all times. Cut grass to the street and midway into the alley if applicable. Keep the alley clean midway to the middle if applicable. Grass/weeds must stay at or under 10 inches at all times. Including the flower bed and easements."
+      ],
+      "open_case_count": 1,
+      "citation_event_count": 0,
+      "citation_assessed_total": 0,
+      "landuse_name": "SINGLE FAMILY",
+      "zoning_code": "R5",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=99487&agencyCode=LJCMG"
+    }
+  ]
+}

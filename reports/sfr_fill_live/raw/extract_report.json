@@ -1,0 +1,1200 @@
+{
+  "status": "PARTIAL",
+  "generated_at_utc": "2026-08-23T06:49:04.277229+00:00",
+  "generated_at_et": "2026-08-23T02:49:04.277229-04:00",
+  "runtime_seconds": 1122.96,
+  "target_open": 24,
+  "arcgis_features_fetched": 1000,
+  "unique_parent_groups_discovered": 514,
+  "parent_groups_inspected": 100,
+  "verified_open_unseen_records": [
+    {
+      "case_number": "ENF-PMNT-26-018885",
+      "record_status": "Open",
+      "property_address": "1606 W MADISON ST LOUISVILLE KY 40203",
+      "description_raw": "floor boards in kitchen are peeling off, mold in a lot of places, ADA noncompliance, smoke detector without batteries",
+      "owner_name": "HAMPTON PLACE HOUSING LLC",
+      "owner_mailing_address": "PO BOX 40177 INDIANAPOLIS IN 46240-0177",
+      "owner_mailing_differs": true,
+      "parcel_id": "013A00500000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D9638&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0159&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-018885-2",
+      "inspector_comments": [
+        "Interior wall at areas around VENTS, and kitchen floor (split in floor tiles and along entrance at bathroom",
+        "Smoke detectors must be installed properly and working correctly",
+        "Exterior Door must unlock/locked at front door buzzer must work properly"
+      ],
+      "event_date": "2026-08-21",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [
+        "I13",
+        "I22",
+        "X07"
+      ],
+      "recent_window_descriptions": [
+        "I13 - INTERIOR SURFACE(S)/ CEILINGS/ WALLS/ FLOORS [156.054-C/156.054-C-1] {C} All interior surfaces, including windows and doors, shall be maintained in good, clean and sanitary condition. Peeling, chipping, flaking, or abraded paint shall be repaired, removed, or covered. Cracked or loose plaster, decayed wood, and other defective surface conditions shall be corrected. {C-1} The owner must comply with federal and state statues and standards and local statutes and standards for the abatement of existing lead base paint and the application of lead base paint.",
+        "I22 - SMOKE DETECTOR (INT. OF DWELLING) [156.203-B-1, 3, 4 - C-1,2,4,6] (Smoke Detector Interior of Dwelling Unit) {1} In all dwelling units, smoke detectors powered by a hard wire AC primary power source or a self-monitored, non-removal ten-year lithium battery shall be installed and maintained ... Single station detectors presently installed utilizing standard batteries may continue to be used as long as the units remain operational. ...{3} Smoke detectors shall be installed in accordance with applicable NFPA Standards and the manufacturer's recommendations. Detectors may be ceiling or wall mounted, provided that they shall be mounted at a minimum of four inches and a maximum of 12 inches from the ceiling {4} In a dwelling unit the detector shall be located in the corridor within the unit or interior area giving access to the rooms used for sleeping purposes. Where sleeping areas are separated and/or where a single smoke detector will not adequately service all sleeping areas, there shall be a smoke detector installed adjacent to each sleeping area... {C1} The owner of a dwelling shall be responsible for supplying and installing ... detectors ... {C2} The owner of a dwelling shall be responsible for maintenance and testing of detectors, in accordance with the manufacturer's instructions which are located in common areas...{C4} At every change of tenancy in all multi-family residential units and dormitories, it shall be the duty of the owner to test and ascertain that those detectors contained in the unit are in operable condition, and if not, the owner shall be responsible for placing them in operable condition. {C6} It shall be the responsibility of the property owner to install at least smoke detectors powered by a hardwire AC primary source or a self-monitored, non-removal ten year lithium battery before transfer of the property to a new party...",
+        "X07 - DOOR (EXTERIOR) [156.053-O-1, 156.053-O-2] All exterior doors, door assemblies and hardware shall be maintained in good condition? [156.053-O-2] (Door lock provision for principle entry) Double cylinder dead bolts requiring a key operation on both sides are prohibited on required means of egress."
+      ],
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-26-018540",
+      "record_status": "Open",
+      "property_address": "8200 FERNDALE RD LOUISVILLE KY 40291",
+      "description_raw": "Email was received: Dear Louisville Metro311 / Code Enforcement, I am submitting this as an addendum to my previous complaints regarding the severely overgrown property directly behind my home at 6415 Tradesmill Drive, Louisville, KY 40291. This has been an ongoing problem for several years, and it has been reported to the city by both phone and email in the past. Several years ago, after previous complaints, the property was cleaned up one time, but it was not maintained and the overgrowth has returned. Trees, vines, brush, and other vegetation from this property are growing over, through, and against my privately owned fence. The vegetation is putting pressure on the fence and causing it to bend. Dense brush and vegetation remaining against the wood can also trap moisture and contribute to deterioration and rot. The overgrowth has interfered with access around my fence and gate as well. There is also a large mature tree immediately outside our fence that has continued to grow without apparent maintenance, with large limbs extending over the adjoining yards and toward our homes. Because of its size and proximity to the residences, I am requesting that the tree also be inspected to determine whether it presents a safety or property-damage hazard. I am attaching a photograph showing the current condition and the proximity of the large tree to the fence and surrounding homes. The property owner is associated with 8200 Ferndale Road, Louisville, KY. Because this is a recurring problem that has already been reported multiple times over a period of years, I am asking Louisville Metro Code Enforcement to inspect the property and take whatever enforcement action is necessary to require the owner to clear the overgrowth and properly maintain the property going forward. Please provide me with the service request or case number for this complaint and let me know what action will be taken. I would also appreciate confirmation once the property has been inspected. Thank you for your attention to this ongoing issue.",
+      "owner_name": "JAMES WESLEY CARY LIVING TRUST",
+      "owner_mailing_address": "8208 COOPER CHAPEL RD LOUISVILLE KY 40229-1756",
+      "owner_mailing_differs": true,
+      "parcel_id": "063700520000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D7596&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D7597&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-018540-1",
+      "inspector_comments": [
+        "Please cut back overgrowth growing into and causing damage to fence line running from 6409 to 6419 TradesMill Dr.",
+        "Roof and gutter components must be properly installed and kept in good repair, functioning as intended. Clean out gutters where needed. Repair or replace downturned gutter on right side of house.",
+        "Remove dead tree, cut to the stump, located behind 6415 tradesmill rd"
+      ],
+      "event_date": "2026-08-21",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [
+        "02A",
+        "X50",
+        "X90"
+      ],
+      "recent_window_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
+        "X50 - ROOF/ROOFING MATERIAL(S)/ DOWN SPOUTS/ GUTTERS [156.053-G] The roof and flashing shall be sound, tight and not have defects that admit water/moisture. ...Roof water shall not be discharged in a manner that creates a public nuisance.",
+        "X90 - DEAD/DANGEROUS TREE [156.005 (Definitions) (Public Nuisance) #7] You have a tree which is in danger of collapse of which poses a danger of contamination because of disease, decay, injury, infestation or damage is prohibited or creates a public nuisance and must be corrected or removed."
+      ],
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-26-018701",
+      "record_status": "Open",
+      "property_address": "227 OLDE ENGLISH CT LOUISVILLE KY 40272",
+      "description_raw": "I have report to my complex that our washer and dryer due has been burning our clothes catching them on fire and putting burn holes in multiple clothing items. We have reported it being a fire hazard and they aren’t taking the situation serious. It’s been almost 5 months and they refused to take it out of the apartment.",
+      "owner_name": "DURHAM HILL PROPERTIES III LLC",
+      "owner_mailing_address": "511 16TH ST STE 200 DENVER CO 80202-4260",
+      "owner_mailing_differs": true,
+      "parcel_id": "104906620000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D8557&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D8558&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-018701-1",
+      "inspector_comments": [
+        "Replace battery in chirping smoke detector",
+        "Repair or replace dryer that is burning clothing"
+      ],
+      "event_date": "2026-08-21",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [
+        "M100",
+        "I22"
+      ],
+      "recent_window_descriptions": [
+        "M100 - INOPERABLE MECHANICAL EQUIP. [156.182-A] All mechanical appliances, ... shall be properly installed and maintained in a safe working condition, and shall be capable of performing the intended function.",
+        "I22 - SMOKE DETECTOR (INT. OF DWELLING) [156.203-B-1, 3, 4 - C-1,2,4,6] (Smoke Detector Interior of Dwelling Unit) {1} In all dwelling units, smoke detectors powered by a hard wire AC primary power source or a self-monitored, non-removal ten-year lithium battery shall be installed and maintained ... Single station detectors presently installed utilizing standard batteries may continue to be used as long as the units remain operational. ...{3} Smoke detectors shall be installed in accordance with applicable NFPA Standards and the manufacturer's recommendations. Detectors may be ceiling or wall mounted, provided that they shall be mounted at a minimum of four inches and a maximum of 12 inches from the ceiling {4} In a dwelling unit the detector shall be located in the corridor within the unit or interior area giving access to the rooms used for sleeping purposes. Where sleeping areas are separated and/or where a single smoke detector will not adequately service all sleeping areas, there shall be a smoke detector installed adjacent to each sleeping area... {C1} The owner of a dwelling shall be responsible for supplying and installing ... detectors ... {C2} The owner of a dwelling shall be responsible for maintenance and testing of detectors, in accordance with the manufacturer's instructions which are located in common areas...{C4} At every change of tenancy in all multi-family residential units and dormitories, it shall be the duty of the owner to test and ascertain that those detectors contained in the unit are in operable condition, and if not, the owner shall be responsible for placing them in operable condition. {C6} It shall be the responsibility of the property owner to install at least smoke detectors powered by a hardwire AC primary source or a self-monitored, non-removal ten year lithium battery before transfer of the property to a new party..."
+      ],
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-26-016289",
+      "record_status": "Open",
+      "property_address": "319 E MARKET ST LOUISVILLE KY 40202",
+      "description_raw": "Garbage and high weeds in back of building",
+      "owner_name": "NICHOLS ROBERT L & F",
+      "owner_mailing_address": "PO BOX 22164 LOUISVILLE KY 40252-0164",
+      "owner_mailing_differs": true,
+      "parcel_id": "017B01220000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=C2672&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C3242&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-016289-2",
+      "inspector_comments": [],
+      "event_date": "2026-08-21",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [],
+      "recent_window_descriptions": [],
+      "recent_window_occupancies": [
+        "Vacant Structure"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-26-008705",
+      "record_status": "Open",
+      "property_address": "2900 GREENWOOD AVE 100 LOUISVILLE KY 40211",
+      "description_raw": "Knee high grass",
+      "owner_name": "SUPREME REAL ESTATE LLC",
+      "owner_mailing_address": "1822 SAN JOSE AVE APT 152 LOUISVILLE KY 40216-2852",
+      "owner_mailing_differs": true,
+      "parcel_id": "046F00610000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=72798&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A2172&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-008705-4",
+      "inspector_comments": [
+        "Property is not owner occupied and must be registered as a rental property via the Louisville Metro Government Rental Registry. www.louisvilleky.gov or call 502-574-2508 for assistance."
+      ],
+      "event_date": "2026-08-21",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [
+        "R01"
+      ],
+      "recent_window_descriptions": [
+        "R01 - RENTAL REGISTRATION - RES. [119-LMCO] The failure to register a rental housing unit or apartment complex in accordance with LMCO 119.03 shall be classified as a civil offense with a penalty of up to $100 per rental housing unit or apartment complex. The owner or managing operator will be sent a ten day notice of violation with a warning of the failure to comply with the rental registry. Failure to comply at the end of ten days will result in a fine of up to $100 per rental housing unit or apartment complex. Thereafter, each day of such violation(s) shall constitute a separate offense."
+      ],
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 250.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-26-014897",
+      "record_status": "Open",
+      "property_address": "1529 S 31ST ST LOUISVILLE KY 40211",
+      "description_raw": "Gras is extremely high also dumping in the back fritter have set up a home groundhogs / rats ect . Looks like a Madagascar over. There",
+      "owner_name": "KIDANE AMHARE G",
+      "owner_mailing_address": "4315 SPRINGDALE AVE LAS VEGAS NV 89121-2742",
+      "owner_mailing_differs": true,
+      "parcel_id": "049C01030000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B4376&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B5027&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-014897-2",
+      "inspector_comments": [
+        "All properties must be clean and maintained. This includes easements midway in alley and street into the property. Any overgrowth must be removed. You have 7 days to be compliant."
+      ],
+      "event_date": "2026-08-21",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [],
+      "recent_window_descriptions": [],
+      "recent_window_occupancies": [
+        "Vacant Structure"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-26-019037",
+      "record_status": "Open",
+      "property_address": "1132 GOSS AVE LOUISVILLE KY 40217",
+      "description_raw": "CALLER CHECKING STATUS. CALLER SAYS THE GRASS IS OUT COMPLIANCE WITH ORDINANCE AT THIS PROPERTY. THANK YOU.",
+      "owner_name": "BUCHANAN MICHAEL",
+      "owner_mailing_address": "1132 GOSS AVE LOUISVILLE KY 40217-1238",
+      "owner_mailing_differs": false,
+      "parcel_id": "026C02100000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E0504&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0505&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-019037-1",
+      "inspector_comments": [
+        "Property must be cleaned and maintained at all times and trash, rubbish and debris tree limbs, or cuttings must be properly disposed of high grass and weeds. Must be cut below 10 inches."
+      ],
+      "event_date": "2026-08-21",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [
+        "02A"
+      ],
+      "recent_window_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-26-005440",
+      "record_status": "Open",
+      "property_address": "2230 GRAND AVE LOUISVILLE KY 40210",
+      "description_raw": "CALLER REPORTING SOMEONE IS INSIDE OF THIS VACANT PROPERTY. CALLER NOTICED A COUPLE OF DAYS AGO THAT THERE WERE DOGS TIED UP IN THE BACK YARD. CALLER SAYS RESIDENCE HAS NO ELECTRICITY AND HAS BEEN EMPTY FOR SOME TIME. THANK YOU.",
+      "owner_name": "HENEGAR ALMA",
+      "owner_mailing_address": "2230 GRAND AVE LOUISVILLE KY 40210-1144",
+      "owner_mailing_differs": false,
+      "parcel_id": "038E00610000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=51444&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B5191&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-005440-7",
+      "inspector_comments": [],
+      "event_date": "2026-08-21",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [],
+      "recent_window_descriptions": [],
+      "recent_window_occupancies": [
+        "Abandoned Structure"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-26-004084",
+      "record_status": "Open",
+      "property_address": "4324 MALCOLM AVE LOUISVILLE KY 40215",
+      "description_raw": "Email was received: I would like to ask for help about getting a tree removed. My mother has asked and asked the neighbor to trim it or even better cut it down. Well after the storm last night we were all afraid it would fall. If it was to fall it would go right through her house. The people that live there are renters and they have supposedly talked to their landload. Well it is still there . The address is is 4322 Malcolm Ave. That tree is way to big for that yard. So if you could help it would be highly appreciated. If you could get something done thank you very much.",
+      "owner_name": "ASKIN RONALD M JR",
+      "owner_mailing_address": "10004 DAWSON HILL RD LOUISVILLE KY 40299-5438",
+      "owner_mailing_differs": true,
+      "parcel_id": "067G01920000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=40317&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=83811&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-004084-3",
+      "inspector_comments": [
+        "Property is not owner occupied and must be registered as a rental property via the Louisville Metro Government Rental Registry. www.louisvilleky.gov or call 502-574-2508 for assistance."
+      ],
+      "event_date": "2026-08-21",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [
+        "R01"
+      ],
+      "recent_window_descriptions": [
+        "R01 - RENTAL REGISTRATION - RES. [119-LMCO] The failure to register a rental housing unit or apartment complex in accordance with LMCO 119.03 shall be classified as a civil offense with a penalty of up to $100 per rental housing unit or apartment complex. The owner or managing operator will be sent a ten day notice of violation with a warning of the failure to comply with the rental registry. Failure to comply at the end of ten days will result in a fine of up to $100 per rental housing unit or apartment complex. Thereafter, each day of such violation(s) shall constitute a separate offense."
+      ],
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 250.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-25-006543",
+      "record_status": "Open",
+      "property_address": "7202 APPLEGATE LN LOUISVILLE KY 40228",
+      "description_raw": "It looks like this house is abandoned. The grass has not been touched and the outside of the house is covered in mold and mildew.",
+      "owner_name": "ROBERTS JONATHAN B",
+      "owner_mailing_address": "7202 APPLEGATE LN LOUISVILLE KY 40228-2147",
+      "owner_mailing_differs": false,
+      "parcel_id": "208900190000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=25REC&capID2=00000&capID3=64903&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=C4877&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-25-006543-8",
+      "inspector_comments": [
+        "Pool has major leak, all of the dirty/stagnant water has leaked out, causing water to pool on this property and surrounding properties. Abate immediately",
+        "Pool must be kept in good repair, clean and sanitary condition with no standing/stagnant water."
+      ],
+      "event_date": "2026-08-21",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [
+        "X48",
+        "X81"
+      ],
+      "recent_window_descriptions": [
+        "X48 - PUB. NUISANCE [156.051 A] All premises shall be kept and maintained free of any public nuisance.",
+        "X81 - SWIMMING POOLS [156.052-H-2] Swimming pools shall be maintained in a clean and sanitary condition, and in good repair."
+      ],
+      "recent_window_occupancies": [
+        "Vacant Structure"
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 700.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-26-017670",
+      "record_status": "Open",
+      "property_address": "1027 S 4TH ST 2B LOUISVILLE KY 40203",
+      "description_raw": "Caller reports they have been in their apartment for 4 months and they have reported these issues but nothing has been done so far. There's mold on his son's bedroom wall that is spreading. Mold under the sink in the bathroom. The caulking is coming off from the ceiling around the bathtub and there's a hole by the tub along the floor. Caller also reports issues in the kitchen with missing drawers and stove problems.",
+      "owner_name": "LINCOLN REALTY LLC",
+      "owner_mailing_address": "1220 E BROADWAY LOUISVILLE KY 40204-1714",
+      "owner_mailing_differs": true,
+      "parcel_id": "029H00600000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D0962&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D1635&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-017670-2",
+      "inspector_comments": [
+        "Bedroom wall has water damage and must be repaired in a workmanlike quality. Locate source of leak and repair before addressing interior surfaces.",
+        "Bedroom wall is leaking and must be repaired. Locate source of leaks and repair. Tenant states when it rains the wall is damp.",
+        "Bottom of bathroom cabinet is sagging and damage from water damage and need to be replaced. Ensure caulking in tub is sealing rub and preventing any leaks."
+      ],
+      "event_date": "2026-08-21",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 2,
+      "recent_window_violation_codes": [
+        "T22",
+        "I13",
+        "I18"
+      ],
+      "recent_window_descriptions": [
+        "T22 - LAVATORY BASIN [156.153-A] All plumbing fixtures shall be properly installed and maintained in working order, and shall be kept free from obstructions, leaks and defects and be capable of performing the function for which such plumbing fixtures are designed. All plumbing fixtures shall be maintained in a safe, sanitary and functional condition.",
+        "I13 - INTERIOR SURFACE(S)/ CEILINGS/ WALLS/ FLOORS [156.054-C/156.054-C-1] {C} All interior surfaces, including windows and doors, shall be maintained in good, clean and sanitary condition. Peeling, chipping, flaking, or abraded paint shall be repaired, removed, or covered. Cracked or loose plaster, decayed wood, and other defective surface conditions shall be corrected. {C-1} The owner must comply with federal and state statues and standards and local statutes and standards for the abatement of existing lead base paint and the application of lead base paint.",
+        "I18 - PUBLIC NUISANCE ON INT. PREMIS [156.054-A, 56.055-A/156.050-B] (Public Nuisance on Interior Premises) The interior of a structure and equipment therein shall be maintained in good repair, structurally sound and in a sanitary condition? (Rubbish/Garbage/Unsanitary Interior Conditions) {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage. {156.050-B} ...Occupants of a dwelling unit are responsible for keeping in a clean, sanitary and safe condition that part of the dwelling unit or premises, which they occupy and control."
+      ],
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-26-013950",
+      "record_status": "Open",
+      "property_address": "537 S 3RD ST 202 LOUISVILLE KY 40202",
+      "description_raw": "This is the 2nd time in 2 weeks the air has gone out in our building. We are in the middle of a management change and the current management isn’t very helpful they just want a 3day holiday weekend and pay rent. Right now after contacting emergency maintenance with no answer it’s currently 83 in my apartment with windows open. We have no cold water because we have a chiller system so when one or the other breaks we have no cold air or water. What are our options to get them to actually repair things before it gets super hot this week. Last time they waited 24 hours claiming they couldn’t get someone to fix the unit and it took them 12 hours to fix it.",
+      "owner_name": "THIRD STREET LOUISVILLE MULTIFAMILY",
+      "owner_mailing_address": "1033 DEMONBREUN ST STE 600 NASHVILLE TN 37203-4460",
+      "owner_mailing_differs": true,
+      "parcel_id": "016A00060000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=A8278&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B5168&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-013950-3",
+      "inspector_comments": [
+        "HVAC system needs to be working as intended",
+        "Water needs to be turned back on to entire building"
+      ],
+      "event_date": "2026-08-21",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 2,
+      "recent_window_violation_codes": [
+        "M99",
+        "P03"
+      ],
+      "recent_window_descriptions": [
+        "M99 - AIR CONDITIONING UNITS [156.051-B-7] Supplied Fixtures and Equipment: The owner or occupant of a structure or part thereof shall keep all equipment and fixtures therein clean and sanitary, and shall be responsible for the exercise of reasonable care in their proper use and operation. The owner shall maintain the supplied equipment and fixtures in good and proper operating condition. All air conditioning units must be maintained in a safe and operable condition.",
+        "P03 - PROPERTY WATER SUPPLY LINE/ WASTE PIPES/ SPIGOT [156.153-A & 156.154-A,C] All plumbing fixtures shall be properly installed and maintained in working order...All plumbing fixtures shall be maintained in a safe, sanitary and functional condition. {A} Every sink, lavatory, bathtub or shower, drinking fountain, water closet, or other plumbing fixture shall be properly connected to either a public water system or to an approved private water system. {C} The water supply system shall be installed and maintained to provide a supply of water to plumbing fixtures, devices, and appurtenances in sufficient volume and at pressures adequate to enable the fixtures to function properly, safely, and free from defects and leaks."
+      ],
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-26-012558",
+      "record_status": "Open",
+      "property_address": "5405 WINDING RD LOUISVILLE KY 40214",
+      "description_raw": "Vacant home (possibly abandoned) has large amount of overgrowth and trash piled at the street. Possibly left by residents of 5407 Winding Rd.",
+      "owner_name": "MEADORS DOUGLAS A",
+      "owner_mailing_address": "113 WOODMORE AVE LOUISVILLE KY 40214-3655",
+      "owner_mailing_differs": true,
+      "parcel_id": "062J00910000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=99487&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E0358&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-012558-3",
+      "inspector_comments": [
+        "7 days to remove the trash, rubbish. Cut all overgrowth and maintain. The entire property must remain cut, clean, organized and maintained at all times. Cut grass to the street and midway into the alley if applicable. Keep the alley clean midway to the middle if applicable. Grass/weeds must stay at or under 10 inches at all times. Including the flower bed and easements."
+      ],
+      "event_date": "2026-08-21",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [
+        "02A"
+      ],
+      "recent_window_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "recent_window_occupancies": [
+        "Vacant Structure"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    }
+  ],
+  "failures": [
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-011650",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-017799",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019101",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-014265",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018660",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018242",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-010516",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-008252",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-015369",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018733",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019272",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018716",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-004522",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019262",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-007745",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019186",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-006337",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-001409",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-013625",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-013626",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-014413",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019075",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-25-019726",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-006558",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018557",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-007742",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-012024",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-014194",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018385",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018761",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018754",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018414",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-017984",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019249",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-013319",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-006004",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-004304",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018431",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-014848",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-012842",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-009649",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018888",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019187",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018546",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019054",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018994",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018489",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-008018",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019205",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-014794",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019182",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019227",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-007485",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-25-020442",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-25-021345",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018363",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-012292",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018459",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-25-020984",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Hearing"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019223",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018196",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "child_resolve",
+      "child_case": "ENF-PMNT-26-014569-2",
+      "expected_parent": "ENF-PMNT-26-014569",
+      "reason": "TimeoutError:Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00",
+      "seconds": 30.001,
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B2193&agencyCode=LJCMG&IsToShowInspection=",
+      "recovery": "exhausted_or_permanent"
+    },
+    {
+      "stage": "child_resolve",
+      "child_case": "ENF-PMNT-26-011753-4",
+      "expected_parent": "ENF-PMNT-26-011753",
+      "reason": "TimeoutError:Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00",
+      "seconds": 29.999,
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A6136&agencyCode=LJCMG&IsToShowInspection=",
+      "recovery": "exhausted_or_permanent"
+    },
+    {
+      "stage": "child_resolve",
+      "child_case": "ENF-PMNT-24-012338-36",
+      "expected_parent": "ENF-PMNT-24-012338",
+      "reason": "TimeoutError:Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00",
+      "seconds": 30.001,
+      "child_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B4116&agencyCode=LJCMG&IsToShowInspection=",
+      "recovery": "exhausted_or_permanent"
+    },
+    {
+      "case": "ENF-PMNT-24-017394",
+      "reason": "parent_case_not_verified",
+      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=24REC&capID2=00000&capID3=F0452&agencyCode=LJCMG",
+      "parent_case": "ENF-PMNT-24-017394",
+      "recovery": "exhausted_or_permanent"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-016482",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019220",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-009176",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-25-017300",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019219",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019212",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-25-006569",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Hearing"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-015838",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019193",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019215",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018709",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018889",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-014713",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-22-000179",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-011173",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-013392",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-011115",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-017210",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-016676",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019210",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-25-013252",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-012108",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    }
+  ],
+  "known_tuning_cases_excluded": [
+    "ENF-PMNT-24-016884",
+    "ENF-PMNT-25-006610",
+    "ENF-PMNT-25-010477",
+    "ENF-PMNT-25-020812",
+    "ENF-PMNT-26-001287",
+    "ENF-PMNT-26-002254",
+    "ENF-PMNT-26-004622",
+    "ENF-PMNT-26-006934",
+    "ENF-PMNT-26-008067",
+    "ENF-PMNT-26-008075",
+    "ENF-PMNT-26-011029",
+    "ENF-PMNT-26-011596",
+    "ENF-PMNT-26-011727",
+    "ENF-PMNT-26-013339",
+    "ENF-PMNT-26-013375",
+    "ENF-PMNT-26-013703",
+    "ENF-PMNT-26-013944",
+    "ENF-PMNT-26-014196",
+    "ENF-PMNT-26-014799",
+    "ENF-PMNT-26-015492",
+    "ENF-PMNT-26-015601",
+    "ENF-PMNT-26-015609",
+    "ENF-PMNT-26-015658",
+    "ENF-PMNT-26-016300",
+    "ENF-PMNT-26-016335",
+    "ENF-PMNT-26-016599",
+    "ENF-PMNT-26-016665",
+    "ENF-PMNT-26-016900",
+    "ENF-PMNT-26-017755",
+    "ENF-PMNT-26-018175",
+    "ENF-PMNT-26-018209",
+    "ENF-PMNT-26-018230",
+    "ENF-PMNT-26-018287",
+    "ENF-PMNT-26-018474",
+    "ENF-PMNT-26-018477",
+    "ENF-PMNT-26-018504",
+    "ENF-PMNT-26-018575",
+    "ENF-PMNT-26-018578",
+    "ENF-PMNT-26-018973",
+    "ENF-PMNT-26-018979",
+    "ENF-PMNT-26-018991",
+    "ENF-PMNT-26-019027",
+    "ENF-PMNT-26-019051",
+    "ENF-PMNT-26-019053",
+    "ENF-PMNT-26-019136",
+    "ENF-PMNT-26-019139",
+    "ENF-PMNT-26-019149",
+    "ENF-PMNT-26-019179",
+    "ENF-PMNT-26-019206",
+    "ENF-PMNT-26-019218",
+    "ENF-PMNT-26-019225",
+    "ENF-PMNT-26-019235",
+    "ENF-PMNT-26-019257",
+    "ENF-PMNT-26-019259",
+    "ENF-PMNT-26-019301"
+  ],
+  "next_stage": "Strict AI classification of description_raw, then deterministic distress/saturation/freshness/priority ranking."
+}
