@@ -6,6 +6,7 @@ from scrapers.land_filters import private_owner_screen
 
 RAW=Path('reports/land_stress_50/raw/extract_report.json')
 RANKED=Path('reports/land_stress_50/ranked_report.json')
+BENCH=Path('reports/land_private_live/ai_classifications.json')
 OUT=Path('reports/land_fill_live')
 TARGET=20
 
@@ -16,9 +17,13 @@ def main()->int:
     raw=load(RAW); ranked=load(RANKED)
     used_cases={r.get('case_number') for r in ranked.get('ranked_land') or []}
     used_parcels={r.get('parcel_id') for r in ranked.get('ranked_land') or []}
+    benchmark_cases=set()
+    if BENCH.exists(): benchmark_cases=set((load(BENCH).get('classifications') or {}).keys())
     accepted=[]; rejected=[]; seen=set()
     for r0 in raw.get('verified_land_records') or []:
         r=dict(r0); case=r.get('case_number'); pid=r.get('parcel_id')
+        if case in benchmark_cases:
+            rejected.append({'case_number':case,'parcel_id':pid,'reason':'prior_benchmark_fixture'});continue
         if case in used_cases or pid in used_parcels:
             rejected.append({'case_number':case,'parcel_id':pid,'reason':'already_in_first_50'});continue
         if not pid or pid in seen: continue
@@ -26,16 +31,14 @@ def main()->int:
         screen=private_owner_screen(r.get('owner_name'));r.update(screen)
         if not screen.get('private_owner_screen_passed'):
             rejected.append({'case_number':case,'parcel_id':pid,'reason':'obvious_public_owner','owner':r.get('owner_name')});continue
-        # Raw stress extraction already performed LOJIC enrichment. Reuse it;
-        # do not create another burst of redundant parcel requests.
         if not r.get('lojic_parcel_verified') or r.get('lot_sqft') is None:
             rejected.append({'case_number':case,'parcel_id':pid,'reason':'raw_lojic_not_verified'});continue
         accepted.append(r)
         if len(accepted)>=TARGET: break
     status='PASS' if len(accepted)>=10 else 'PARTIAL'
     report={'status':status,'source_generated_at_et':raw.get('generated_at_et'),'raw_runtime_seconds':raw.get('runtime_seconds'),'target':TARGET,
-            'first_50_cases_excluded':len(used_cases),'records':accepted,'rejected':rejected,
-            'guardrails':{'no_rescrape':True,'reuse_verified_raw_lojic':True,'private_owner_required':True,'first_50_excluded':True}}
+            'first_50_cases_excluded':len(used_cases),'benchmark_cases_excluded':len(benchmark_cases),'records':accepted,'rejected':rejected,
+            'guardrails':{'no_rescrape':True,'reuse_verified_raw_lojic':True,'private_owner_required':True,'first_50_excluded':True,'prior_benchmark_fixtures_excluded':True}}
     (OUT/'extract_report.json').write_text(json.dumps(report,indent=2,ensure_ascii=False),encoding='utf-8')
     compact=[]
     for i,r in enumerate(accepted,1):
@@ -49,5 +52,5 @@ def main()->int:
     for start in range(0,len(compact),10):
         chunk=compact[start:start+10]
         (OUT/f'ai_input_{start+1:02d}_{start+len(chunk):02d}.json').write_text(json.dumps({'records':chunk},indent=2,ensure_ascii=False),encoding='utf-8')
-    print(json.dumps({'status':status,'accepted':len(accepted),'excluded_first50':len(used_cases)},indent=2));return 0 if status=='PASS' else 2
+    print(json.dumps({'status':status,'accepted':len(accepted),'excluded_first50':len(used_cases),'excluded_benchmark':len(benchmark_cases)},indent=2));return 0 if status=='PASS' else 2
 if __name__=='__main__':raise SystemExit(main())
