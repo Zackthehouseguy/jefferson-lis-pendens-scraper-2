@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - 'reports/sfr_fill_live/ranked_report.json'
+      - 'reports/sfr_prior_fallback/report.json'
       - 'scrapers/probe/finalize_daily_mix.py'
       - 'scrapers/probe/render_lead_cards.py'
       - '.github/workflows/finalize-daily-mix.yml'
@@ -33,4 +34,4 @@ jobs:
           git add reports/daily_mix_final/ data/reaper_delivery_ledger.json || true
           git diff --cached --quiet || git commit -m "Update final daily mixed batch [skip ci]"
           git push origin HEAD:main || true
-# waits-for-sfr-rank
+# trigger-20260823-0252-fallback-aware
