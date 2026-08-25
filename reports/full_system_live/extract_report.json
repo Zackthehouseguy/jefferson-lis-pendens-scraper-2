@@ -1,8 +1,8 @@
 {
   "status": "PASS",
-  "generated_at_utc": "2026-08-24T20:59:32.052393+00:00",
-  "generated_at_et": "2026-08-24T16:59:32.052393-04:00",
-  "runtime_seconds": 218.118,
+  "generated_at_utc": "2026-08-25T00:12:08.691750+00:00",
+  "generated_at_et": "2026-08-24T20:12:08.691750-04:00",
+  "runtime_seconds": 218.607,
   "target_open": 8,
   "arcgis_features_fetched": 1000,
   "unique_parent_groups_discovered": 517,
