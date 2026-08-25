@@ -1,0 +1,5 @@
+lis_pendens=0
+wills=0
+louisville_code_violations=0
+tax_delinquent=0
+louisville_landbank=0
