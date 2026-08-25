@@ -13,12 +13,12 @@ permissions:
 
 concurrency:
   group: reaper-multi-source-live-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
         with:
@@ -40,7 +40,7 @@ jobs:
 
       - name: Set live query window
         run: |
-          echo "START_DATE=$(TZ=America/New_York date -d '14 days ago' +%Y-%m-%d)" >> "$GITHUB_ENV"
+          echo "START_DATE=$(TZ=America/New_York date -d '3 days ago' +%Y-%m-%d)" >> "$GITHUB_ENV"
           echo "END_DATE=$(TZ=America/New_York date +%Y-%m-%d)" >> "$GITHUB_ENV"
           echo "RUN_STAMP=$(TZ=America/New_York date +%Y%m%d_%H%M%S)" >> "$GITHUB_ENV"
 
