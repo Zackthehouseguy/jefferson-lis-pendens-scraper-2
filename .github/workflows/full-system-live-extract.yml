@@ -11,6 +11,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: full-system-live-extract-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   extract:
     runs-on: ubuntu-latest
@@ -31,13 +35,51 @@ jobs:
       - name: Persist extraction report
         if: always()
         run: |
-          if [ -f reports/full_system_live/extract_report.json ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add reports/full_system_live/extract_report.json
-            git diff --cached --quiet || git commit -m "Update full system live extraction report [skip ci]"
-            git push origin HEAD:main
+          REPORT="reports/full_system_live/extract_report.json"
+
+          if [ ! -f "$REPORT" ]; then
+            echo "No extraction report was generated; nothing to persist."
+            exit 0
           fi
+
+          # Keep the freshly generated report outside the working tree so it
+          # survives resetting to whatever is newest on origin/main.
+          REPORT_COPY="$(mktemp)"
+          cp "$REPORT" "$REPORT_COPY"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Other workflows also write to main. Rebase/reset against the newest
+          # remote tip before every push attempt so a concurrent commit cannot
+          # turn a successful scrape into a false workflow failure.
+          for attempt in 1 2 3 4 5; do
+            echo "Persist attempt $attempt of 5"
+            git fetch origin main
+            git reset --hard origin/main
+
+            mkdir -p "$(dirname "$REPORT")"
+            cp "$REPORT_COPY" "$REPORT"
+            git add "$REPORT"
+
+            if git diff --cached --quiet; then
+              echo "Extraction report already matches origin/main."
+              exit 0
+            fi
+
+            git commit -m "Update full system live extraction report [skip ci]"
+
+            if git push origin HEAD:main; then
+              echo "Extraction report persisted successfully."
+              exit 0
+            fi
+
+            echo "Push lost a race with another writer; retrying against latest main."
+            sleep $((attempt * 2))
+          done
+
+          echo "Failed to persist extraction report after 5 race-safe attempts."
+          exit 1
       - name: Upload extraction report
         if: always()
         uses: actions/upload-artifact@v4
@@ -46,5 +88,3 @@ jobs:
           path: reports/full_system_live/
           if-no-files-found: error
           retention-days: 14
-
-# Manual refresh trigger: 2026-08-25 10:31 ET
