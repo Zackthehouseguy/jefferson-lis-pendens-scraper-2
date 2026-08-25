@@ -1,0 +1,129 @@
+name: Reaper Multi-Source Live
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/reaper-multi-source-live.yml"
+      - "scrapers/probe/reaper_multi_source_stack.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reaper-multi-source-live-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr libreoffice
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install playwright
+          playwright install --with-deps chromium
+
+      - name: Set live query window
+        run: |
+          echo "START_DATE=$(TZ=America/New_York date -d '14 days ago' +%Y-%m-%d)" >> "$GITHUB_ENV"
+          echo "END_DATE=$(TZ=America/New_York date +%Y-%m-%d)" >> "$GITHUB_ENV"
+          echo "RUN_STAMP=$(TZ=America/New_York date +%Y%m%d_%H%M%S)" >> "$GITHUB_ENV"
+
+      - name: Run all Jefferson/Louisville lead sources
+        shell: bash
+        run: |
+          set +e
+          ROOT="reaper_live_sources"
+          mkdir -p "$ROOT"
+          : > "$ROOT/source_exit_codes.txt"
+
+          run_one() {
+            local src="$1"; shift
+            echo "===== RUNNING $src ====="
+            mkdir -p "$ROOT/$src"
+            python -m scrapers.run_source --source-type "$src" \
+              --start-date "$START_DATE" --end-date "$END_DATE" \
+              --output-dir "$ROOT/$src" "$@"
+            rc=$?
+            echo "$src=$rc" | tee -a "$ROOT/source_exit_codes.txt"
+            return 0
+          }
+
+          run_one lis_pendens --search-mode auto --pva-cross-check
+          run_one wills --search-mode auto
+          run_one louisville_code_violations
+          run_one tax_delinquent
+          run_one louisville_landbank --limit 1000
+
+          echo "===== SOURCE EXIT CODES ====="
+          cat "$ROOT/source_exit_codes.txt"
+
+      - name: Stack, dedupe, freshness-check, and pre-score
+        run: |
+          python -m scrapers.probe.reaper_multi_source_stack \
+            --root reaper_live_sources \
+            --out reports/reaper_multi_source_live/stacked.json \
+            --assignments state/lead_assignments.json \
+            --seen state/full_system_seen.json \
+            --start-date "$START_DATE" \
+            --end-date "$END_DATE" \
+            --top 150
+
+      - name: Add source execution metadata
+        run: |
+          cp reaper_live_sources/source_exit_codes.txt reports/reaper_multi_source_live/source_exit_codes.txt
+          printf '%s\n' "window=$START_DATE..$END_DATE" "run_stamp=$RUN_STAMP" > reports/reaper_multi_source_live/run_meta.txt
+
+      - name: Persist unified report race-safely
+        run: |
+          REPORT="reports/reaper_multi_source_live/stacked.json"
+          EXITCODES="reports/reaper_multi_source_live/source_exit_codes.txt"
+          RUNMETA="reports/reaper_multi_source_live/run_meta.txt"
+          TMP="$(mktemp -d)"
+          cp "$REPORT" "$TMP/stacked.json"
+          cp "$EXITCODES" "$TMP/source_exit_codes.txt"
+          cp "$RUNMETA" "$TMP/run_meta.txt"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            mkdir -p reports/reaper_multi_source_live
+            cp "$TMP/stacked.json" "$REPORT"
+            cp "$TMP/source_exit_codes.txt" "$EXITCODES"
+            cp "$TMP/run_meta.txt" "$RUNMETA"
+            git add "$REPORT" "$EXITCODES" "$RUNMETA"
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m "Update Reaper multi-source live report [skip ci]"
+            if git push origin HEAD:main; then exit 0; fi
+            sleep $((attempt * 2))
+          done
+          exit 1
+
+      - name: Upload full live source bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reaper-multi-source-live-${{ env.RUN_STAMP }}
+          path: |
+            reaper_live_sources/
+            reports/reaper_multi_source_live/
+          if-no-files-found: error
+          retention-days: 14
