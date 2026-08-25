@@ -1,8 +1,8 @@
 {
   "status": "PASS",
-  "generated_at_utc": "2026-08-25T14:41:32.399607+00:00",
-  "generated_at_et": "2026-08-25T10:41:32.399607-04:00",
-  "runtime_seconds": 222.422,
+  "generated_at_utc": "2026-08-25T14:48:21.220514+00:00",
+  "generated_at_et": "2026-08-25T10:48:21.220514-04:00",
+  "runtime_seconds": 209.766,
   "target_open": 8,
   "arcgis_features_fetched": 1000,
   "unique_parent_groups_discovered": 517,
@@ -467,11 +467,10 @@
       "record_status": "Closed"
     },
     {
-      "case": "ENF-PMNT-26-019271",
-      "reason": "parent_browser_RuntimeError:challenge_or_access_block",
-      "url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E2065&agencyCode=LJCMG",
+      "stage": "acceptance",
       "parent_case": "ENF-PMNT-26-019271",
-      "recovery": "exhausted_or_permanent"
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
     },
     {
       "stage": "acceptance",
