@@ -1,8 +1,8 @@
 {
   "status": "PASS",
-  "generated_at_utc": "2026-08-25T00:12:08.691750+00:00",
-  "generated_at_et": "2026-08-24T20:12:08.691750-04:00",
-  "runtime_seconds": 218.607,
+  "generated_at_utc": "2026-08-25T14:32:23.197588+00:00",
+  "generated_at_et": "2026-08-25T10:32:23.197588-04:00",
+  "runtime_seconds": 210.494,
   "target_open": 8,
   "arcgis_features_fetched": 1000,
   "unique_parent_groups_discovered": 517,
@@ -26,7 +26,7 @@
         "Leak in basement needs repair. Floor drain is clogged and needs to function for its intended use."
       ],
       "event_date": "2026-08-24",
-      "same_calendar_day_et": true,
+      "same_calendar_day_et": false,
       "recent_window_distinct_parent_groups_same_parcel": 1,
       "recent_window_violation_codes": [
         "E05",
@@ -75,7 +75,7 @@
         "All tall grass and weeds must be maintained and kept below 10 inches at all times. This includes all flowerbeds, around yard furniture, easements along side or rear by alleys, next to foundation, etc. This includes pile of tree debris by the street. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
       ],
       "event_date": "2026-08-24",
-      "same_calendar_day_et": true,
+      "same_calendar_day_et": false,
       "recent_window_distinct_parent_groups_same_parcel": 1,
       "recent_window_violation_codes": [
         "02A"
@@ -121,7 +121,7 @@
         "Dead tree in the rear yard needs to be cut down to where it does not present a danger of falling"
       ],
       "event_date": "2026-08-24",
-      "same_calendar_day_et": true,
+      "same_calendar_day_et": false,
       "recent_window_distinct_parent_groups_same_parcel": 1,
       "recent_window_violation_codes": [
         "X90",
@@ -170,7 +170,7 @@
         "Install missing hardwired smoke detectors, ensure backup batteries are in good condition."
       ],
       "event_date": "2026-08-24",
-      "same_calendar_day_et": true,
+      "same_calendar_day_et": false,
       "recent_window_distinct_parent_groups_same_parcel": 2,
       "recent_window_violation_codes": [
         "I13",
@@ -224,7 +224,7 @@
         "Garage must be brought into compliance or removed."
       ],
       "event_date": "2026-08-24",
-      "same_calendar_day_et": true,
+      "same_calendar_day_et": false,
       "recent_window_distinct_parent_groups_same_parcel": 1,
       "recent_window_violation_codes": [
         "02A",
@@ -280,7 +280,7 @@
         "Broken glazing, all broken glazing must be repaired/replaced."
       ],
       "event_date": "2026-08-24",
-      "same_calendar_day_et": true,
+      "same_calendar_day_et": false,
       "recent_window_distinct_parent_groups_same_parcel": 2,
       "recent_window_violation_codes": [
         "X72",
@@ -328,7 +328,7 @@
         "All vehicles on property must be licensed with up-to-date tags, fully operational, and always be parked on a hard durable surface. (No flat tires, broken windows, heavily wrecked, or inoperable, state of disrepair, Parked on the grass or half in the street and grass easement area) Maroon vehicle"
       ],
       "event_date": "2026-08-24",
-      "same_calendar_day_et": true,
+      "same_calendar_day_et": false,
       "recent_window_distinct_parent_groups_same_parcel": 2,
       "recent_window_violation_codes": [
         "02A",
@@ -377,7 +377,7 @@
         "Only 1 medium vehicle is permitted on this property. There are currently 2, and all medium vehicles must be parked at all times behind the front facade of the house on a hard durable surface."
       ],
       "event_date": "2026-08-24",
-      "same_calendar_day_et": true,
+      "same_calendar_day_et": false,
       "recent_window_distinct_parent_groups_same_parcel": 1,
       "recent_window_violation_codes": [
         "02A",
