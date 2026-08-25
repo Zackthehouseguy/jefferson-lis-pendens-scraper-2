@@ -6,6 +6,8 @@ on:
     paths:
       - ".github/workflows/full-system-live-extract.yml"
       - "scrapers/probe/full_system_live_extract.py"
+      - "scrapers/probe/full_system_fresh_individual.py"
+      - "state/full_system_seen.json"
   workflow_dispatch:
 
 permissions:
@@ -18,11 +20,12 @@ concurrency:
 jobs:
   extract:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -30,47 +33,55 @@ jobs:
         run: |
           pip install requests beautifulsoup4 playwright
           playwright install --with-deps chromium
-      - name: Run unseen live extraction
-        run: python -m scrapers.probe.full_system_live_extract --target-open 8 --arcgis-limit 1000 --max-parent-attempts 28
-      - name: Persist extraction report
+      - name: Run fresh individual-owner live extraction
+        run: |
+          python -m scrapers.probe.full_system_fresh_individual \
+            --target-individual 8 \
+            --raw-target 20 \
+            --arcgis-limit 1000 \
+            --max-parent-attempts 60
+      - name: Persist extraction report and seen state
         if: always()
         run: |
           REPORT="reports/full_system_live/extract_report.json"
+          SEEN="state/full_system_seen.json"
 
           if [ ! -f "$REPORT" ]; then
             echo "No extraction report was generated; nothing to persist."
             exit 0
           fi
 
-          # Keep the freshly generated report outside the working tree so it
-          # survives resetting to whatever is newest on origin/main.
-          REPORT_COPY="$(mktemp)"
-          cp "$REPORT" "$REPORT_COPY"
+          TMPDIR_SAFE="$(mktemp -d)"
+          cp "$REPORT" "$TMPDIR_SAFE/extract_report.json"
+          if [ -f "$SEEN" ]; then
+            cp "$SEEN" "$TMPDIR_SAFE/full_system_seen.json"
+          fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Other workflows also write to main. Rebase/reset against the newest
-          # remote tip before every push attempt so a concurrent commit cannot
-          # turn a successful scrape into a false workflow failure.
           for attempt in 1 2 3 4 5; do
             echo "Persist attempt $attempt of 5"
             git fetch origin main
             git reset --hard origin/main
 
-            mkdir -p "$(dirname "$REPORT")"
-            cp "$REPORT_COPY" "$REPORT"
-            git add "$REPORT"
+            mkdir -p "$(dirname "$REPORT")" "$(dirname "$SEEN")"
+            cp "$TMPDIR_SAFE/extract_report.json" "$REPORT"
+            if [ -f "$TMPDIR_SAFE/full_system_seen.json" ]; then
+              cp "$TMPDIR_SAFE/full_system_seen.json" "$SEEN"
+            fi
+
+            git add "$REPORT" "$SEEN"
 
             if git diff --cached --quiet; then
-              echo "Extraction report already matches origin/main."
+              echo "Extraction report and seen state already match origin/main."
               exit 0
             fi
 
-            git commit -m "Update full system live extraction report [skip ci]"
+            git commit -m "Update fresh live extraction state [skip ci]"
 
             if git push origin HEAD:main; then
-              echo "Extraction report persisted successfully."
+              echo "Fresh extraction state persisted successfully."
               exit 0
             fi
 
@@ -78,15 +89,15 @@ jobs:
             sleep $((attempt * 2))
           done
 
-          echo "Failed to persist extraction report after 5 race-safe attempts."
+          echo "Failed to persist fresh extraction state after 5 race-safe attempts."
           exit 1
       - name: Upload extraction report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: full-system-live-extract
-          path: reports/full_system_live/
+          path: |
+            reports/full_system_live/
+            state/full_system_seen.json
           if-no-files-found: error
           retention-days: 14
-
-# Manual live refresh trigger: 2026-08-25 10:47 ET
