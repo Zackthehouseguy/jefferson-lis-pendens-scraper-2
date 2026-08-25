@@ -88,3 +88,5 @@ jobs:
           path: reports/full_system_live/
           if-no-files-found: error
           retention-days: 14
+
+# Manual live refresh trigger: 2026-08-25 10:47 ET
