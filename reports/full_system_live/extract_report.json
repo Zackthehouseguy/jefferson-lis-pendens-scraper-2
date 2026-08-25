@@ -1,42 +1,42 @@
 {
   "status": "PASS",
-  "generated_at_utc": "2026-08-25T14:48:21.220514+00:00",
-  "generated_at_et": "2026-08-25T10:48:21.220514-04:00",
-  "runtime_seconds": 209.766,
-  "target_open": 8,
+  "generated_at_utc": "2026-08-25T15:12:38.369003+00:00",
+  "generated_at_et": "2026-08-25T11:12:38.369003-04:00",
+  "runtime_seconds": 539.062,
+  "target_open": 20,
   "arcgis_features_fetched": 1000,
-  "unique_parent_groups_discovered": 517,
-  "parent_groups_inspected": 23,
+  "unique_parent_groups_discovered": 475,
+  "parent_groups_inspected": 59,
   "verified_open_unseen_records": [
     {
-      "case_number": "ENF-PMNT-26-004553",
+      "case_number": "ENF-PMNT-26-019260",
       "record_status": "Open",
-      "property_address": "7402 STONE BLUFF CT LOUISVILLE KY 40291",
-      "description_raw": "raccons in the attic , no insulation in the attic, live wires in the breaker panel, electrical issues",
-      "owner_name": "BAF ASSETS",
-      "owner_mailing_address": "4 LLC * 3903 S CONGRESS AVE UNIT 40298 AUSTIN TX 7804-0213",
-      "owner_mailing_differs": true,
-      "parcel_id": "208400540000",
-      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=44329&agencyCode=LJCMG",
-      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A9766&agencyCode=LJCMG&IsToShowInspection=",
-      "resolved_from_child_case": "ENF-PMNT-26-004553-11",
+      "property_address": "6911 DUNKIRK LN LOUISVILLE KY 40272",
+      "description_raw": "CALLER REPORTS THAT THEY HAVE STAGNANT WATER IN THEIR POOL. CALLER HAS SEEN RATS EXITING THIS HOUSE. CALLER STATES THAT THEY JUST CUT THEIR GRASS A FEW DAYS AGO. THANK YOU.",
+      "owner_name": "MOORE JACKIE B",
+      "owner_mailing_address": "6911 DUNKIRK LN LOUISVILLE KY 40272-1117",
+      "owner_mailing_differs": false,
+      "parcel_id": "120101500184",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1982&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1983&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-019260-1",
       "inspector_comments": [
-        "Wires in downstairs, utility closet need to be made safe and contained behind a barrier.",
-        "Standing water on floor needs to be removed.",
-        "Leak in basement needs repair. Floor drain is clogged and needs to function for its intended use."
+        "Property is required to be kept cut, clean and junk free including high grass and weeds in flowerbeds and around fence lines and structures. Indoor furniture is not permitted to be stored outside.",
+        "Broken glass on side security door must be removed or replaced.",
+        "Pool must be maintained in good use or removed. Stagnant water in pool must be treated, covered or removed."
       ],
       "event_date": "2026-08-24",
       "same_calendar_day_et": false,
       "recent_window_distinct_parent_groups_same_parcel": 1,
       "recent_window_violation_codes": [
-        "E05",
-        "I11",
-        "P03"
+        "02A",
+        "X81",
+        "X07"
       ],
       "recent_window_descriptions": [
-        "E05 - ELECT. SERVICE DIST. PANEL/ SYSTEM AMPERAGE [156.183-B-C] {B} The size and usage of appliances and equipment shall serve as a basis for determining the need for additional facilities in accordance with the ICC Electrical Code. Dwelling units shall be served by a three-wire, 120/240 volt, single-phase electrical service having a rating of not less than 60 amperes. {C} Where it is found that the electrical system in a structure constitutes a hazard to the occupants or the structure by reason of inadequate service, improper/inadequate over-current protection, insufficient receptacle and lighting outlets, improper or unsafe wiring or installation, makeshift wiring or improper/inappropriate use of electrical extension cords, deterioration or damage, or for similar reasons, the Code Official shall require the defects to be corrected to eliminate the hazard.",
-        "I11 - FLOOR (INTERIOR) [156.054-C] All interior surfaces...shall be maintained in good, clean and sanitary condition. ...Cracked or loose plaster, decayed wood, and other defective surface conditions shall be corrected.",
-        "P03 - PROPERTY WATER SUPPLY LINE/ WASTE PIPES/ SPIGOT [156.153-A & 156.154-A,C] All plumbing fixtures shall be properly installed and maintained in working order...All plumbing fixtures shall be maintained in a safe, sanitary and functional condition. {A} Every sink, lavatory, bathtub or shower, drinking fountain, water closet, or other plumbing fixture shall be properly connected to either a public water system or to an approved private water system. {C} The water supply system shall be installed and maintained to provide a supply of water to plumbing fixtures, devices, and appurtenances in sufficient volume and at pressures adequate to enable the fixtures to function properly, safely, and free from defects and leaks."
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
+        "X81 - SWIMMING POOLS [156.052-H-2] Swimming pools shall be maintained in a clean and sanitary condition, and in good repair.",
+        "X07 - DOOR (EXTERIOR) [156.053-O-1, 156.053-O-2] All exterior doors, door assemblies and hardware shall be maintained in good condition? [156.053-O-2] (Door lock provision for principle entry) Double cylinder dead bolts requiring a key operation on both sides are prohibited on required means of egress."
       ],
       "recent_window_occupancies": [
         "Occupied Structure"
@@ -60,19 +60,19 @@
       }
     },
     {
-      "case_number": "ENF-PMNT-26-006224",
+      "case_number": "ENF-PMNT-26-019243",
       "record_status": "Open",
-      "property_address": "1945 MEADOWCREEK DR LOUISVILLE KY 40218",
-      "description_raw": "This property is vacant and tall grass and overgrowth and trash.",
-      "owner_name": "HARGROVE PATRICIA A",
-      "owner_mailing_address": "2212 PIKES PEAK BLVD LOUISVILLE KY 40214-1158",
+      "property_address": "1405 HICKORY ST LOUISVILLE KY 40217",
+      "description_raw": "HIGH GRASS & WEEDS AT LOCATION - 20 BUS DAYS",
+      "owner_name": "OECHSLIN CARL J",
+      "owner_mailing_address": "1216 LYDIA ST LOUISVILLE KY 40217-1535",
       "owner_mailing_differs": true,
-      "parcel_id": "087G00380020",
-      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=57008&agencyCode=LJCMG",
-      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=60637&agencyCode=LJCMG&IsToShowInspection=",
-      "resolved_from_child_case": "ENF-PMNT-26-006224-2",
+      "parcel_id": "026C00530000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1884&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1885&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-019243-1",
       "inspector_comments": [
-        "All tall grass and weeds must be maintained and kept below 10 inches at all times. This includes all flowerbeds, around yard furniture, easements along side or rear by alleys, next to foundation, etc. This includes pile of tree debris by the street. Subject property needs to be in compliance within 7 days of the date of this notice. In addition, I have requested that the responsible Metro Louisville agency correct/remove this violation. The cost of this corrective action by Metro Louisville including all administrative costs will be billed directly to you. These costs are in addition to the above-mentioned citation assessed against you for failing to comply with minimum standards of the Property Maintenance Code. If you fail to pay these costs the Louisville-Jefferson County Metro will file another lien against your property for this amount."
+        "Property must be cleaned and maintained at all times and trash, rubbish and debris tree limbs, or cuttings must be properly disposed of high grass and weeds. Must be cut below 10 inches."
       ],
       "event_date": "2026-08-24",
       "same_calendar_day_et": false,
@@ -84,10 +84,10 @@
         "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
       ],
       "recent_window_occupancies": [
-        "Vacant Structure"
+        "Occupied Structure"
       ],
       "citation_event_count": 1,
-      "citation_assessed_total": 200.0,
+      "citation_assessed_total": 100.0,
       "ambiguous_citation_events": [],
       "outstanding_balance": null,
       "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
@@ -105,40 +105,40 @@
       }
     },
     {
-      "case_number": "ENF-PMNT-26-010319",
+      "case_number": "ENF-PMNT-25-009939",
       "record_status": "Open",
-      "property_address": "802 S 35TH ST LOUISVILLE KY 40211",
-      "description_raw": "Caller reports a dead tree in the back yard of this property. Tree is losing large limbs.",
-      "owner_name": "DAUGHERTY DONNA",
-      "owner_mailing_address": "802 S 35TH ST LOUISVILLE KY 40211-2862",
+      "property_address": "7417 CRAWFORDSHIRE LN LOUISVILLE KY 40220",
+      "description_raw": "Overgrown weeds, landscaping around the house; house appears abandoned and left behind a Honda, squatters in basement at times",
+      "owner_name": "BOSS BRIAN C",
+      "owner_mailing_address": "7417 CRAWFORDSHIRE LN LOUISVILLE KY 40220-2811",
       "owner_mailing_differs": false,
-      "parcel_id": "043G00910000",
-      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=83652&agencyCode=LJCMG",
-      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=A8528&agencyCode=LJCMG&IsToShowInspection=",
-      "resolved_from_child_case": "ENF-PMNT-26-010319-3",
+      "parcel_id": "197600230000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=25REC&capID2=00000&capID3=88695&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=26660&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-25-009939-6",
       "inspector_comments": [
-        "Mae necessary repairs to front porch stairs to ensure there are no trip hazards, loose bricks",
-        "Dead tree in the rear yard needs to be cut down to where it does not present a danger of falling"
+        "All exterior surfaces must be free of any holes or openings. All wood must be properly protected from the elements. *Upper roof fascia boards on left and right side of structure need chipping and peeling paint removed then repaint. *Lower roof fascia board near window on the right side is broken, needs replaced to repair or replace",
+        "Invasive plants have compromised gutters on the front of structure. Need to remove all obstructions and repair or replace detached and blocked gutters."
       ],
       "event_date": "2026-08-24",
       "same_calendar_day_et": false,
       "recent_window_distinct_parent_groups_same_parcel": 1,
       "recent_window_violation_codes": [
-        "X90",
-        "X40"
+        "X50",
+        "X19"
       ],
       "recent_window_descriptions": [
-        "X90 - DEAD/DANGEROUS TREE [156.005 (Definitions) (Public Nuisance) #7] You have a tree which is in danger of collapse of which poses a danger of contamination because of disease, decay, injury, infestation or damage is prohibited or creates a public nuisance and must be corrected or removed.",
-        "X40 - PORCH/BALCONY [156.053-B,K, 156.053-M] {B} All exterior surfaces,...porches...balconies,...shall be maintained in good condition. ... {K} Every exterior... porch and balcony, and all appurtenances attached thereto, shall be maintained structurally sound, in good repair, with proper anchorage and capable of supporting the imposed loads... {156.053-M] Every handrail and guard shall be firmly fastened... and shall be maintained in good condition. Every exterior flight of stairs having more than four risers, and every open portion of a stair, landing or balcony, which is more than 30 inches (762 mm) above the floor or grade below shall have guards. ...Guards shall not be less than 30 inches (762 mm) high above the floor of the landing, balcony or grade. Any alteration, modification, addition or replacement of a handrail or guard shall be in conformity with the applicable state building code requirements."
+        "X50 - ROOF/ROOFING MATERIAL(S)/ DOWN SPOUTS/ GUTTERS [156.053-G] The roof and flashing shall be sound, tight and not have defects that admit water/moisture. ...Roof water shall not be discharged in a manner that creates a public nuisance.",
+        "X19 - EXTERIOR SURFACE(S)/SUPPORT MEMBERS/ FOUNDATION WALLS [156.053-B, D, E, F, K, L]... {B] All exterior surfaces, ...shall be maintained in good condition. ... shall be protected from the elements and decay by painting or other protective covering or treatment...and shall be free of peeling and chipping paint... {E] All foundation walls shall be maintained plumb and free from open cracks and breaks... {F} All exterior walls shall be free from holes, breaks, and loose or rotting materials; and maintained weatherproof and properly surface coated where required to prevent deterioration... {K] chimneys, cooling towers, smoke stacks, and similar appurtenances shall be maintained structurally safe and sound, and in good repair. ? {L] All chimneys, cooling towers, smoke stacks, and similar appurtenances shall be maintained structurally safe and sound, and in good repair. ... {D] All structural members shall be maintained free from deterioration, and shall be capable of safely supporting the imposed dead and live loads."
       ],
       "recent_window_occupancies": [
         "Occupied Structure"
       ],
-      "citation_event_count": 0,
-      "citation_assessed_total": 0.0,
+      "citation_event_count": 1,
+      "citation_assessed_total": 600.0,
       "ambiguous_citation_events": [],
       "outstanding_balance": null,
-      "balance_note": "No current outstanding balance inferred.",
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
       "recovery": {
         "child": {
           "attempts": 1,
@@ -153,75 +153,21 @@
       }
     },
     {
-      "case_number": "ENF-PMNT-26-019357",
+      "case_number": "ENF-PMNT-24-015856",
       "record_status": "Open",
-      "property_address": "139 HARTWELL CT 4 LOUISVILLE KY 40214",
-      "description_raw": "Pests",
-      "owner_name": "HERITAGE GREEN HOLDINGS LLC",
-      "owner_mailing_address": "PO BOX 9315 LOUISVILLE KY 40209-0315",
+      "property_address": "2815 VIRGINIA AVE LOUISVILLE KY 40211",
+      "description_raw": "CALLER REPORTS A LOT OF TRASH ON THE PROPERTY. CALLER ADDS THAT THERE IS WOOD WITH NAILS IN IT IN THE REAR OF THE PROPERTY. THANK YOU.",
+      "owner_name": "A&A INFINITE MANAGEMENT LL",
+      "owner_mailing_address": "227 PARISH PL MOUNT JULIET TN 37122-4541",
       "owner_mailing_differs": true,
-      "parcel_id": "059E02820000",
-      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E2488&agencyCode=LJCMG",
-      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E2489&agencyCode=LJCMG&IsToShowInspection=",
-      "resolved_from_child_case": "ENF-PMNT-26-019357-1",
+      "parcel_id": "046J00670000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=24REC&capID2=00000&capID3=J4654&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=98531&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-24-015856-17",
       "inspector_comments": [
-        "Please repair damaged wall surface behind stove",
-        "Roach and mice infestation, please thoroughly treat for pests Properly clean all rodent droppings Properly seal (use of spray foam is not a proper sealant) any openings allowing entry for rodents, specifically observed at baseboards at corner of bedroom/living room, laundry closet, and behind oven.",
-        "Install missing hardwired smoke detectors, ensure backup batteries are in good condition."
-      ],
-      "event_date": "2026-08-24",
-      "same_calendar_day_et": false,
-      "recent_window_distinct_parent_groups_same_parcel": 2,
-      "recent_window_violation_codes": [
-        "I13",
-        "I17",
-        "I22"
-      ],
-      "recent_window_descriptions": [
-        "I13 - INTERIOR SURFACE(S)/ CEILINGS/ WALLS/ FLOORS [156.054-C/156.054-C-1] {C} All interior surfaces, including windows and doors, shall be maintained in good, clean and sanitary condition. Peeling, chipping, flaking, or abraded paint shall be repaired, removed, or covered. Cracked or loose plaster, decayed wood, and other defective surface conditions shall be corrected. {C-1} The owner must comply with federal and state statues and standards and local statutes and standards for the abatement of existing lead base paint and the application of lead base paint.",
-        "I17 - PEST INFESTATION OF INTERIOR [156.056-A,B,C,D] {A}...All structures in which insects or rodents are found shall be promptly exterminated by approved processes... {B} The owner of any structure shall be responsible for extermination within the structure prior to renting or leasing the structure. {C} The occupant of a one-family dwelling or of a single-tenant nonresidential structure shall be responsible for extermination on the premises ... {D} Multiple occupancy. The owner of a structure containing two or more dwelling units, a multiple occupancy, a rooming house or a nonresidential structure shall be responsible for extermination in the public or shared areas of the structure and exterior property. If infestation is caused by failure of an occupant to prevent such infestation in the area occupied, the occupant shall be responsible for extermination.",
-        "I22 - SMOKE DETECTOR (INT. OF DWELLING) [156.203-B-1, 3, 4 - C-1,2,4,6] (Smoke Detector Interior of Dwelling Unit) {1} In all dwelling units, smoke detectors powered by a hard wire AC primary power source or a self-monitored, non-removal ten-year lithium battery shall be installed and maintained ... Single station detectors presently installed utilizing standard batteries may continue to be used as long as the units remain operational. ...{3} Smoke detectors shall be installed in accordance with applicable NFPA Standards and the manufacturer's recommendations. Detectors may be ceiling or wall mounted, provided that they shall be mounted at a minimum of four inches and a maximum of 12 inches from the ceiling {4} In a dwelling unit the detector shall be located in the corridor within the unit or interior area giving access to the rooms used for sleeping purposes. Where sleeping areas are separated and/or where a single smoke detector will not adequately service all sleeping areas, there shall be a smoke detector installed adjacent to each sleeping area... {C1} The owner of a dwelling shall be responsible for supplying and installing ... detectors ... {C2} The owner of a dwelling shall be responsible for maintenance and testing of detectors, in accordance with the manufacturer's instructions which are located in common areas...{C4} At every change of tenancy in all multi-family residential units and dormitories, it shall be the duty of the owner to test and ascertain that those detectors contained in the unit are in operable condition, and if not, the owner shall be responsible for placing them in operable condition. {C6} It shall be the responsibility of the property owner to install at least smoke detectors powered by a hardwire AC primary source or a self-monitored, non-removal ten year lithium battery before transfer of the property to a new party..."
-      ],
-      "recent_window_occupancies": [
-        "Occupied Structure"
-      ],
-      "citation_event_count": 0,
-      "citation_assessed_total": 0.0,
-      "ambiguous_citation_events": [],
-      "outstanding_balance": null,
-      "balance_note": "No current outstanding balance inferred.",
-      "recovery": {
-        "child": {
-          "attempts": 1,
-          "errors": [],
-          "recovered": false
-        },
-        "parent": {
-          "attempts": 1,
-          "errors": [],
-          "recovered": false
-        }
-      }
-    },
-    {
-      "case_number": "ENF-PMNT-26-019355",
-      "record_status": "Open",
-      "property_address": "2816 VIRGINIA AVE LOUISVILLE KY 40211",
-      "description_raw": "High grass",
-      "owner_name": "ONANUGA OLUMIDE",
-      "owner_mailing_address": "10913 GOLF COURSE TER BOWIE MD 20721-2369",
-      "owner_mailing_differs": true,
-      "parcel_id": "046J00440000",
-      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E2483&agencyCode=LJCMG",
-      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E2484&agencyCode=LJCMG&IsToShowInspection=",
-      "resolved_from_child_case": "ENF-PMNT-26-019355-1",
-      "inspector_comments": [
-        "All properties must be clean and maintained. This includes easements midway in alley and street into the property. Any overgrowth must be removed.",
-        "U-Haul must be removed from back of property.",
-        "All exterior lights should be complete and work as intended and have bulbs. 2 lights to front step need repair. Several fixtures throughout property.",
-        "Roofing and all components there of such as soffits, facia boards and gutters and downspouts must be in good repair. The entire soffit area needs repair. Downspouts missing in several areas.",
-        "All windows must be in good repair with no chipping or peeling paint on trim.",
-        "Garage must be brought into compliance or removed."
+        "All exterior surfaces must be free of chipping/peeling paint, broken or missing pieces must be replaced and properly installed. This includes soffits and any holes that would allow passage of rodents. All surfaces with chipping and peeling paint must be covered and protected from the elements at all times.",
+        "Repair all gutters, fascia and downspouts to maintain sound and work properly, throughout structure. Remove vegetation from gutters so the work as intended",
+        "All overgrowth must be removed form property. Front bushes have weeds growing in them and the left side of property must have overgrowth cutback and removed."
       ],
       "event_date": "2026-08-24",
       "same_calendar_day_et": false,
@@ -229,65 +175,11 @@
       "recent_window_violation_codes": [
         "02A",
         "X50",
-        "X72",
-        "X78",
-        "X15",
-        "05A"
+        "X19"
       ],
       "recent_window_descriptions": [
         "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
         "X50 - ROOF/ROOFING MATERIAL(S)/ DOWN SPOUTS/ GUTTERS [156.053-G] The roof and flashing shall be sound, tight and not have defects that admit water/moisture. ...Roof water shall not be discharged in a manner that creates a public nuisance.",
-        "X72 - WINDOW [156.053-N,1,2] Every window, skylight,...shall be kept in sound condition, good repair and weather tight. Every window other than a fixed window shall be easily openable and capable of being held in position by window hardware. All glazing materials shall be maintained free from cracks and holes.",
-        "X78 - ACCESSORY STRUCTURE/ FENCE/ GATE/ RETAINING WALL [156.052-H] All accessory structures, ... shall be maintained structurally sound and in good repair",
-        "X15 - ELECTRICAL LIGHT FIXT EXTERIOR [156.101-B,C] (Electrical lighting fixture exterior) Every common hall and stairway..., shall be lighted at all times with at least a 60-watt standard incandescent light bulb for each 200 square feet... means of egress, including exterior means of egress stairways shall be illuminated at all times the building space served by the means of egress is occupied with a minimum of 1 foot-candle (11 lux) at floors, landings and treads. {C} All other spaces shall be provided with natural or artificial light ...",
-        "05A - ILLEGALLY PARKED/ABANDONED VEH [156.052-I, J] (156.052-I, J).... All motor vehicles must be parked on a hard and durable surface and no inoperative or unlicensed motor vehicle shall be parked, kept or stored on any premises, and no vehicle shall at any time be in a state of major disassembly, disrepair, or in the process of being stripped or dismantled. Vehicles may only be parked on those portions of the premises, which the Land Development Code allows as permissible parking areas, also all vehicles must be parked on a hard durable surface. Painting of vehicles is prohibited on residentially zoned or used property, except as provided for in other regulations. (156.052-J) Removal by Metro Government. In the event that any person fails to comply with an order issued pursuant to this section, the Code Official may have the vehicle parked or stored in violation of this section, removed and disposed of and may impose on the person violating the order a reasonable charge to cover the direct and indirect costs, if any, for the removal and disposition of the motor vehicle or major parts thereof."
-      ],
-      "recent_window_occupancies": [
-        "Occupied Structure"
-      ],
-      "citation_event_count": 0,
-      "citation_assessed_total": 0.0,
-      "ambiguous_citation_events": [],
-      "outstanding_balance": null,
-      "balance_note": "No current outstanding balance inferred.",
-      "recovery": {
-        "child": {
-          "attempts": 1,
-          "errors": [],
-          "recovered": false
-        },
-        "parent": {
-          "attempts": 1,
-          "errors": [],
-          "recovered": false
-        }
-      }
-    },
-    {
-      "case_number": "ENF-PMNT-26-003300",
-      "record_status": "Open",
-      "property_address": "1038 FRANKLIN ST 1 LOUISVILLE KY 40206",
-      "description_raw": "Landlord haven’t took steps to get water turned back on for our units. This has been off for 2 weeks going on 3",
-      "owner_name": "RENTALS OF HARPE PROPERTIES LLC",
-      "owner_mailing_address": "1022 FRANKLIN ST LOUISVILLE KY 40206-1812",
-      "owner_mailing_differs": true,
-      "parcel_id": "019G01630000",
-      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=33557&agencyCode=LJCMG",
-      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=53414&agencyCode=LJCMG&IsToShowInspection=",
-      "resolved_from_child_case": "ENF-PMNT-26-003300-7",
-      "inspector_comments": [
-        "Various chipping paint, all chipping paint must be scrapped and repaint where needed.",
-        "Broken glazing, all broken glazing must be repaired/replaced."
-      ],
-      "event_date": "2026-08-24",
-      "same_calendar_day_et": false,
-      "recent_window_distinct_parent_groups_same_parcel": 2,
-      "recent_window_violation_codes": [
-        "X72",
-        "X19"
-      ],
-      "recent_window_descriptions": [
-        "X72 - WINDOW [156.053-N,1,2] Every window, skylight,...shall be kept in sound condition, good repair and weather tight. Every window other than a fixed window shall be easily openable and capable of being held in position by window hardware. All glazing materials shall be maintained free from cracks and holes.",
         "X19 - EXTERIOR SURFACE(S)/SUPPORT MEMBERS/ FOUNDATION WALLS [156.053-B, D, E, F, K, L]... {B] All exterior surfaces, ...shall be maintained in good condition. ... shall be protected from the elements and decay by painting or other protective covering or treatment...and shall be free of peeling and chipping paint... {E] All foundation walls shall be maintained plumb and free from open cracks and breaks... {F} All exterior walls shall be free from holes, breaks, and loose or rotting materials; and maintained weatherproof and properly surface coated where required to prevent deterioration... {K] chimneys, cooling towers, smoke stacks, and similar appurtenances shall be maintained structurally safe and sound, and in good repair. ? {L] All chimneys, cooling towers, smoke stacks, and similar appurtenances shall be maintained structurally safe and sound, and in good repair. ... {D] All structural members shall be maintained free from deterioration, and shall be capable of safely supporting the imposed dead and live loads."
       ],
       "recent_window_occupancies": [
@@ -312,40 +204,37 @@
       }
     },
     {
-      "case_number": "ENF-PMNT-26-014854",
+      "case_number": "ENF-PMNT-26-019231",
       "record_status": "Open",
-      "property_address": "1038 FRANKLIN ST LOUISVILLE KY 40206",
-      "description_raw": "CITIZEN IS REPORTING EXCESSIVE YARD WASTE IS STACKED ON PROPERTY WHICH IS CAUSING INFESTATION OF FLYING INSECTS - THANK YOU - 20 BUS DAYS",
-      "owner_name": "RENTALS OF HARPE PROPERTIES LLC",
-      "owner_mailing_address": "1022 FRANKLIN ST LOUISVILLE KY 40206-1812",
-      "owner_mailing_differs": true,
-      "parcel_id": "019G01630000",
-      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=B4133&agencyCode=LJCMG",
-      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=B4503&agencyCode=LJCMG&IsToShowInspection=",
-      "resolved_from_child_case": "ENF-PMNT-26-014854-2",
+      "property_address": "7209 DUNKIRK LN LOUISVILLE KY 40272",
+      "description_raw": "Grass",
+      "owner_name": "BUCHANAN AARON D",
+      "owner_mailing_address": "7209 DUNKIRK LN LOUISVILLE KY 40272-1123",
+      "owner_mailing_differs": false,
+      "parcel_id": "120101490166",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1844&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1845&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-019231-1",
       "inspector_comments": [
-        "Large amount of tree debris on side of house needs to be removed. Tall grass and weeds need to stay below 10 inches at all times.",
-        "All vehicles on property must be licensed with up-to-date tags, fully operational, and always be parked on a hard durable surface. (No flat tires, broken windows, heavily wrecked, or inoperable, state of disrepair, Parked on the grass or half in the street and grass easement area) Maroon vehicle"
+        "Please dispose of yard waste pile. All grass and weeds must be maintained under 10 inches."
       ],
       "event_date": "2026-08-24",
       "same_calendar_day_et": false,
-      "recent_window_distinct_parent_groups_same_parcel": 2,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
       "recent_window_violation_codes": [
-        "02A",
-        "05A"
+        "02A"
       ],
       "recent_window_descriptions": [
-        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
-        "05A - ILLEGALLY PARKED/ABANDONED VEH [156.052-I, J] (156.052-I, J).... All motor vehicles must be parked on a hard and durable surface and no inoperative or unlicensed motor vehicle shall be parked, kept or stored on any premises, and no vehicle shall at any time be in a state of major disassembly, disrepair, or in the process of being stripped or dismantled. Vehicles may only be parked on those portions of the premises, which the Land Development Code allows as permissible parking areas, also all vehicles must be parked on a hard durable surface. Painting of vehicles is prohibited on residentially zoned or used property, except as provided for in other regulations. (156.052-J) Removal by Metro Government. In the event that any person fails to comply with an order issued pursuant to this section, the Code Official may have the vehicle parked or stored in violation of this section, removed and disposed of and may impose on the person violating the order a reasonable charge to cover the direct and indirect costs, if any, for the removal and disposition of the motor vehicle or major parts thereof."
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
       ],
       "recent_window_occupancies": [
         "Occupied Structure"
       ],
-      "citation_event_count": 1,
-      "citation_assessed_total": 300.0,
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
       "ambiguous_citation_events": [],
       "outstanding_balance": null,
-      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "balance_note": "No current outstanding balance inferred.",
       "recovery": {
         "child": {
           "attempts": 1,
@@ -360,37 +249,134 @@
       }
     },
     {
-      "case_number": "ENF-PMNT-26-019324",
+      "case_number": "ENF-PMNT-26-019192",
       "record_status": "Open",
-      "property_address": "2506 WILKERSON AVE LOUISVILLE KY 40216",
-      "description_raw": "Previous referrals, and interventions from authorities. Front yard full of parked cars, never moved old ambulance, and junk.",
-      "owner_name": "OCHOA LUIS SUAREZ",
-      "owner_mailing_address": "2506 WILKERSON AVE LOUISVILLE KY 40216-2308",
-      "owner_mailing_differs": false,
-      "parcel_id": "110200040004",
-      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E2282&agencyCode=LJCMG",
-      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E2283&agencyCode=LJCMG&IsToShowInspection=",
-      "resolved_from_child_case": "ENF-PMNT-26-019324-1",
+      "property_address": "1720 MAGAZINE ST LOUISVILLE KY 40203",
+      "description_raw": "The citizen reports tree has fallen in this alleyway and the alley is blocked.",
+      "owner_name": "JACKSON LAVELL",
+      "owner_mailing_address": "37 HILLSTONE CT RADCLIFF KY 40160-8310",
+      "owner_mailing_differs": true,
+      "parcel_id": "013F01940000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1593&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1595&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-019192-1",
       "inspector_comments": [
-        "Tree debris in front be removed .",
-        "All vehicles must have up to date tags or be stored in an enclosed location. (Ambulance) expired 2025",
-        "Only 1 medium vehicle is permitted on this property. There are currently 2, and all medium vehicles must be parked at all times behind the front facade of the house on a hard durable surface."
+        "Property must be cut/clean throughout, INCLUDING DOWN TREE BRANCH IN FRONT YARD"
       ],
       "event_date": "2026-08-24",
       "same_calendar_day_et": false,
       "recent_window_distinct_parent_groups_same_parcel": 1,
       "recent_window_violation_codes": [
-        "02A",
-        "05A",
-        "Z01"
+        "02A"
       ],
       "recent_window_descriptions": [
-        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
-        "05A - ILLEGALLY PARKED/ABANDONED VEH [156.052-I, J] (156.052-I, J).... All motor vehicles must be parked on a hard and durable surface and no inoperative or unlicensed motor vehicle shall be parked, kept or stored on any premises, and no vehicle shall at any time be in a state of major disassembly, disrepair, or in the process of being stripped or dismantled. Vehicles may only be parked on those portions of the premises, which the Land Development Code allows as permissible parking areas, also all vehicles must be parked on a hard durable surface. Painting of vehicles is prohibited on residentially zoned or used property, except as provided for in other regulations. (156.052-J) Removal by Metro Government. In the event that any person fails to comply with an order issued pursuant to this section, the Code Official may have the vehicle parked or stored in violation of this section, removed and disposed of and may impose on the person violating the order a reasonable charge to cover the direct and indirect costs, if any, for the removal and disposition of the motor vehicle or major parts thereof.",
-        "Z01 - NON-PERMITTED USE RESIDENTIAL [156.052 M] - In addition to those specific instances referenced elsewhere in this chapter, all Exterior Property Areas must be used and kept in compliance with the Land Development Code."
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "recent_window_occupancies": [
+        "Vacant Structure"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-26-018958",
+      "record_status": "Open",
+      "property_address": "2511 FRANKLIN AVE LOUISVILLE KY 40216",
+      "description_raw": "High grass and weeds throughout the property.",
+      "owner_name": "LAWLESS PATRICIA A",
+      "owner_mailing_address": "2511 FRANKLIN AVE LOUISVILLE KY 40216-2923",
+      "owner_mailing_differs": false,
+      "parcel_id": "110101240011",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D9965&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9966&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-018958-1",
+      "inspector_comments": [
+        "Vines growing up house and garage, fence line, and trim all need to be removed/ maintained under 10 inches at all times,"
+      ],
+      "event_date": "2026-08-24",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [
+        "02A"
+      ],
+      "recent_window_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
       ],
       "recent_window_occupancies": [
         "Occupied Structure"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-20-013026",
+      "record_status": "Open",
+      "property_address": "124 N 28TH ST LOUISVILLE KY 40212",
+      "description_raw": "Citizen called to report that there is people is being allowed to live in garage, caller reports that there is no electrical or water in the house, caller reports that there is someone living in the house.",
+      "owner_name": "SIMPSON FRANKLIN W",
+      "owner_mailing_address": "124 N 28TH ST LOUISVILLE KY 40212-1802",
+      "owner_mailing_differs": false,
+      "parcel_id": "003H01490000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=20REC&capID2=00000&capID3=C9960&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9442&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-20-013026-58",
+      "inspector_comments": [
+        "Entire property must remain cut and clean and free of all rubbish",
+        "No sleeping allowed in garage",
+        "All utilities must be on at all times",
+        "No camping in garage allowed",
+        "All structures must be in good and safe condition at all times",
+        "Property was condemned on September 2, 2025, clear boarded October 7, 2025, has been breached and is pending reboarding at this time. Property was clear boarded again today 2-19-26"
+      ],
+      "event_date": "2026-08-24",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [
+        "X48",
+        "X78",
+        "I21",
+        "U01",
+        "C01"
+      ],
+      "recent_window_descriptions": [
+        "X48 - PUB. NUISANCE [156.051 A] All premises shall be kept and maintained free of any public nuisance.",
+        "X78 - ACCESSORY STRUCTURE/ FENCE/ GATE/ RETAINING WALL [156.052-H] All accessory structures, ... shall be maintained structurally sound and in good repair",
+        "I21 - SLEEPING IN NONHABIT. OR PUBLI [156.103-D-4] (Sleeping in Nonhabitable or Public Space) No person shall use any kitchen, nonhabitable or public space for sleeping purposes, nor shall food be prepared or cooked in any room used for sleeping purposes, except in an efficiency apartment. ...",
+        "U01 - TERMINATED UTILITIES SERVICE [156.183-A, 156.182-A, 156.154-A]... [156.183-A] Every occupied building shall be provided with an electrical system in compliance with the requirements of this section and 156.184? [156.182-A] (Terminated fuel service gas/fuel/oil/etc.) All mechanical appliances shall be properly installed and maintained in a safe working condition, and shall be capable of performing the intended function... [156.154-A] Every sink, lavatory, bathtub or shower, drinking fountain, water closet or other plumbing fixture shall be properly connected to either a public water system or to an approved private water system.",
+        "C01 - CONDEMNATION (156.805 A) UNSAFE STRUCTURES AND EQUIPMENT; CONDEMNATION AND CLOSING OF. (A) Condemnation. When a structure or part thereof is found by the Code Official to be unsafe, or when a structure or part thereof is found unfit for human occupancy or use, or is found unlawful, it shall be condemned pursuant to the provisions of this chapter and shall be placarded and vacated."
+      ],
+      "recent_window_occupancies": [
+        "Condemned"
       ],
       "citation_event_count": 0,
       "citation_assessed_total": 0.0,
@@ -468,12 +454,6 @@
     },
     {
       "stage": "acceptance",
-      "parent_case": "ENF-PMNT-26-019271",
-      "reason": "not_open_or_missing_required_fields",
-      "record_status": "Closed"
-    },
-    {
-      "stage": "acceptance",
       "parent_case": "ENF-PMNT-26-019290",
       "reason": "not_open_or_missing_required_fields",
       "record_status": "Closed"
@@ -501,6 +481,156 @@
       "parent_case": "ENF-PMNT-26-014756",
       "reason": "not_open_or_missing_required_fields",
       "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-016366",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019319",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-25-007775",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019351",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-23-016090",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Hearing"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019234",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-014011",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-016787",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-25-018122",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Hearing"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-25-002754",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019221",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-23-009634",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Hearing"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-004993",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-25-012356",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Hearing"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-012917",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018681",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-007133",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-007135",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Open"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019228",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-22-017592",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Hearing"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-005070",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-25-017549",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Hearing"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-019176",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-23-002697",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Hearing"
+    },
+    {
+      "stage": "acceptance",
+      "parent_case": "ENF-PMNT-26-018397",
+      "reason": "not_open_or_missing_required_fields",
+      "record_status": "Closed"
     }
   ],
   "known_tuning_cases_excluded": [
@@ -510,5 +640,408 @@
     "ENF-PMNT-26-016665",
     "ENF-PMNT-26-019301"
   ],
-  "next_stage": "Strict AI classification of description_raw, then deterministic distress/saturation/freshness/priority ranking."
+  "next_stage": "Rank only these fresh individual-owner records. Do not recycle prior surfaced properties.",
+  "raw_fresh_records_examined": 20,
+  "fresh_individual_records": [
+    {
+      "case_number": "ENF-PMNT-26-019260",
+      "record_status": "Open",
+      "property_address": "6911 DUNKIRK LN LOUISVILLE KY 40272",
+      "description_raw": "CALLER REPORTS THAT THEY HAVE STAGNANT WATER IN THEIR POOL. CALLER HAS SEEN RATS EXITING THIS HOUSE. CALLER STATES THAT THEY JUST CUT THEIR GRASS A FEW DAYS AGO. THANK YOU.",
+      "owner_name": "MOORE JACKIE B",
+      "owner_mailing_address": "6911 DUNKIRK LN LOUISVILLE KY 40272-1117",
+      "owner_mailing_differs": false,
+      "parcel_id": "120101500184",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1982&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1983&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-019260-1",
+      "inspector_comments": [
+        "Property is required to be kept cut, clean and junk free including high grass and weeds in flowerbeds and around fence lines and structures. Indoor furniture is not permitted to be stored outside.",
+        "Broken glass on side security door must be removed or replaced.",
+        "Pool must be maintained in good use or removed. Stagnant water in pool must be treated, covered or removed."
+      ],
+      "event_date": "2026-08-24",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [
+        "02A",
+        "X81",
+        "X07"
+      ],
+      "recent_window_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
+        "X81 - SWIMMING POOLS [156.052-H-2] Swimming pools shall be maintained in a clean and sanitary condition, and in good repair.",
+        "X07 - DOOR (EXTERIOR) [156.053-O-1, 156.053-O-2] All exterior doors, door assemblies and hardware shall be maintained in good condition? [156.053-O-2] (Door lock provision for principle entry) Double cylinder dead bolts requiring a key operation on both sides are prohibited on required means of egress."
+      ],
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-26-019243",
+      "record_status": "Open",
+      "property_address": "1405 HICKORY ST LOUISVILLE KY 40217",
+      "description_raw": "HIGH GRASS & WEEDS AT LOCATION - 20 BUS DAYS",
+      "owner_name": "OECHSLIN CARL J",
+      "owner_mailing_address": "1216 LYDIA ST LOUISVILLE KY 40217-1535",
+      "owner_mailing_differs": true,
+      "parcel_id": "026C00530000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1884&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1885&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-019243-1",
+      "inspector_comments": [
+        "Property must be cleaned and maintained at all times and trash, rubbish and debris tree limbs, or cuttings must be properly disposed of high grass and weeds. Must be cut below 10 inches."
+      ],
+      "event_date": "2026-08-24",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [
+        "02A"
+      ],
+      "recent_window_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 100.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-25-009939",
+      "record_status": "Open",
+      "property_address": "7417 CRAWFORDSHIRE LN LOUISVILLE KY 40220",
+      "description_raw": "Overgrown weeds, landscaping around the house; house appears abandoned and left behind a Honda, squatters in basement at times",
+      "owner_name": "BOSS BRIAN C",
+      "owner_mailing_address": "7417 CRAWFORDSHIRE LN LOUISVILLE KY 40220-2811",
+      "owner_mailing_differs": false,
+      "parcel_id": "197600230000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=25REC&capID2=00000&capID3=88695&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=26660&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-25-009939-6",
+      "inspector_comments": [
+        "All exterior surfaces must be free of any holes or openings. All wood must be properly protected from the elements. *Upper roof fascia boards on left and right side of structure need chipping and peeling paint removed then repaint. *Lower roof fascia board near window on the right side is broken, needs replaced to repair or replace",
+        "Invasive plants have compromised gutters on the front of structure. Need to remove all obstructions and repair or replace detached and blocked gutters."
+      ],
+      "event_date": "2026-08-24",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [
+        "X50",
+        "X19"
+      ],
+      "recent_window_descriptions": [
+        "X50 - ROOF/ROOFING MATERIAL(S)/ DOWN SPOUTS/ GUTTERS [156.053-G] The roof and flashing shall be sound, tight and not have defects that admit water/moisture. ...Roof water shall not be discharged in a manner that creates a public nuisance.",
+        "X19 - EXTERIOR SURFACE(S)/SUPPORT MEMBERS/ FOUNDATION WALLS [156.053-B, D, E, F, K, L]... {B] All exterior surfaces, ...shall be maintained in good condition. ... shall be protected from the elements and decay by painting or other protective covering or treatment...and shall be free of peeling and chipping paint... {E] All foundation walls shall be maintained plumb and free from open cracks and breaks... {F} All exterior walls shall be free from holes, breaks, and loose or rotting materials; and maintained weatherproof and properly surface coated where required to prevent deterioration... {K] chimneys, cooling towers, smoke stacks, and similar appurtenances shall be maintained structurally safe and sound, and in good repair. ? {L] All chimneys, cooling towers, smoke stacks, and similar appurtenances shall be maintained structurally safe and sound, and in good repair. ... {D] All structural members shall be maintained free from deterioration, and shall be capable of safely supporting the imposed dead and live loads."
+      ],
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "citation_event_count": 1,
+      "citation_assessed_total": 600.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "Citation assessed is not treated as current amount owed without an authoritative balance source.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-24-015856",
+      "record_status": "Open",
+      "property_address": "2815 VIRGINIA AVE LOUISVILLE KY 40211",
+      "description_raw": "CALLER REPORTS A LOT OF TRASH ON THE PROPERTY. CALLER ADDS THAT THERE IS WOOD WITH NAILS IN IT IN THE REAR OF THE PROPERTY. THANK YOU.",
+      "owner_name": "A&A INFINITE MANAGEMENT LL",
+      "owner_mailing_address": "227 PARISH PL MOUNT JULIET TN 37122-4541",
+      "owner_mailing_differs": true,
+      "parcel_id": "046J00670000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=24REC&capID2=00000&capID3=J4654&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=98531&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-24-015856-17",
+      "inspector_comments": [
+        "All exterior surfaces must be free of chipping/peeling paint, broken or missing pieces must be replaced and properly installed. This includes soffits and any holes that would allow passage of rodents. All surfaces with chipping and peeling paint must be covered and protected from the elements at all times.",
+        "Repair all gutters, fascia and downspouts to maintain sound and work properly, throughout structure. Remove vegetation from gutters so the work as intended",
+        "All overgrowth must be removed form property. Front bushes have weeds growing in them and the left side of property must have overgrowth cutback and removed."
+      ],
+      "event_date": "2026-08-24",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [
+        "02A",
+        "X50",
+        "X19"
+      ],
+      "recent_window_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface.",
+        "X50 - ROOF/ROOFING MATERIAL(S)/ DOWN SPOUTS/ GUTTERS [156.053-G] The roof and flashing shall be sound, tight and not have defects that admit water/moisture. ...Roof water shall not be discharged in a manner that creates a public nuisance.",
+        "X19 - EXTERIOR SURFACE(S)/SUPPORT MEMBERS/ FOUNDATION WALLS [156.053-B, D, E, F, K, L]... {B] All exterior surfaces, ...shall be maintained in good condition. ... shall be protected from the elements and decay by painting or other protective covering or treatment...and shall be free of peeling and chipping paint... {E] All foundation walls shall be maintained plumb and free from open cracks and breaks... {F} All exterior walls shall be free from holes, breaks, and loose or rotting materials; and maintained weatherproof and properly surface coated where required to prevent deterioration... {K] chimneys, cooling towers, smoke stacks, and similar appurtenances shall be maintained structurally safe and sound, and in good repair. ? {L] All chimneys, cooling towers, smoke stacks, and similar appurtenances shall be maintained structurally safe and sound, and in good repair. ... {D] All structural members shall be maintained free from deterioration, and shall be capable of safely supporting the imposed dead and live loads."
+      ],
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-26-019231",
+      "record_status": "Open",
+      "property_address": "7209 DUNKIRK LN LOUISVILLE KY 40272",
+      "description_raw": "Grass",
+      "owner_name": "BUCHANAN AARON D",
+      "owner_mailing_address": "7209 DUNKIRK LN LOUISVILLE KY 40272-1123",
+      "owner_mailing_differs": false,
+      "parcel_id": "120101490166",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1844&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1845&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-019231-1",
+      "inspector_comments": [
+        "Please dispose of yard waste pile. All grass and weeds must be maintained under 10 inches."
+      ],
+      "event_date": "2026-08-24",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [
+        "02A"
+      ],
+      "recent_window_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-26-019192",
+      "record_status": "Open",
+      "property_address": "1720 MAGAZINE ST LOUISVILLE KY 40203",
+      "description_raw": "The citizen reports tree has fallen in this alleyway and the alley is blocked.",
+      "owner_name": "JACKSON LAVELL",
+      "owner_mailing_address": "37 HILLSTONE CT RADCLIFF KY 40160-8310",
+      "owner_mailing_differs": true,
+      "parcel_id": "013F01940000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=E1593&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=E1595&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-019192-1",
+      "inspector_comments": [
+        "Property must be cut/clean throughout, INCLUDING DOWN TREE BRANCH IN FRONT YARD"
+      ],
+      "event_date": "2026-08-24",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [
+        "02A"
+      ],
+      "recent_window_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "recent_window_occupancies": [
+        "Vacant Structure"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-26-018958",
+      "record_status": "Open",
+      "property_address": "2511 FRANKLIN AVE LOUISVILLE KY 40216",
+      "description_raw": "High grass and weeds throughout the property.",
+      "owner_name": "LAWLESS PATRICIA A",
+      "owner_mailing_address": "2511 FRANKLIN AVE LOUISVILLE KY 40216-2923",
+      "owner_mailing_differs": false,
+      "parcel_id": "110101240011",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=26REC&capID2=00000&capID3=D9965&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9966&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-26-018958-1",
+      "inspector_comments": [
+        "Vines growing up house and garage, fence line, and trim all need to be removed/ maintained under 10 inches at all times,"
+      ],
+      "event_date": "2026-08-24",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [
+        "02A"
+      ],
+      "recent_window_descriptions": [
+        "02A - CLEANING [156.052-D/156.055-A/156.052-K] {156.052-D}.....All premises shall be maintained free from weeds or plant growth in excess of ten inches. All noxious weeds shall be prohibited. Any land of more than three acres that abut another parcel which contains a dwelling or commercial building thereon shall be weed free at least 50 feet from the property line or 200 feet from an occupied structure, or {156.055-A} All exterior property and premises, and the interior of every structure, shall be free from any accumulation of rubbish or garbage, or {156.52-I} No person shall willfully or wantonly damage, mutilate or deface any exterior surface by placing thereon any marking, carving or graffiti. It shall be the responsibility of the owner to restore said surface."
+      ],
+      "recent_window_occupancies": [
+        "Occupied Structure"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    },
+    {
+      "case_number": "ENF-PMNT-20-013026",
+      "record_status": "Open",
+      "property_address": "124 N 28TH ST LOUISVILLE KY 40212",
+      "description_raw": "Citizen called to report that there is people is being allowed to live in garage, caller reports that there is no electrical or water in the house, caller reports that there is someone living in the house.",
+      "owner_name": "SIMPSON FRANKLIN W",
+      "owner_mailing_address": "124 N 28TH ST LOUISVILLE KY 40212-1802",
+      "owner_mailing_differs": false,
+      "parcel_id": "003H01490000",
+      "source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&capID1=20REC&capID2=00000&capID3=C9960&agencyCode=LJCMG",
+      "child_source_url": "https://aca-prod.accela.com/LJCMG/Cap/CapDetail.aspx?Module=Enforcement&TabName=Enforcement&capID1=26REC&capID2=00000&capID3=D9442&agencyCode=LJCMG&IsToShowInspection=",
+      "resolved_from_child_case": "ENF-PMNT-20-013026-58",
+      "inspector_comments": [
+        "Entire property must remain cut and clean and free of all rubbish",
+        "No sleeping allowed in garage",
+        "All utilities must be on at all times",
+        "No camping in garage allowed",
+        "All structures must be in good and safe condition at all times",
+        "Property was condemned on September 2, 2025, clear boarded October 7, 2025, has been breached and is pending reboarding at this time. Property was clear boarded again today 2-19-26"
+      ],
+      "event_date": "2026-08-24",
+      "same_calendar_day_et": false,
+      "recent_window_distinct_parent_groups_same_parcel": 1,
+      "recent_window_violation_codes": [
+        "X48",
+        "X78",
+        "I21",
+        "U01",
+        "C01"
+      ],
+      "recent_window_descriptions": [
+        "X48 - PUB. NUISANCE [156.051 A] All premises shall be kept and maintained free of any public nuisance.",
+        "X78 - ACCESSORY STRUCTURE/ FENCE/ GATE/ RETAINING WALL [156.052-H] All accessory structures, ... shall be maintained structurally sound and in good repair",
+        "I21 - SLEEPING IN NONHABIT. OR PUBLI [156.103-D-4] (Sleeping in Nonhabitable or Public Space) No person shall use any kitchen, nonhabitable or public space for sleeping purposes, nor shall food be prepared or cooked in any room used for sleeping purposes, except in an efficiency apartment. ...",
+        "U01 - TERMINATED UTILITIES SERVICE [156.183-A, 156.182-A, 156.154-A]... [156.183-A] Every occupied building shall be provided with an electrical system in compliance with the requirements of this section and 156.184? [156.182-A] (Terminated fuel service gas/fuel/oil/etc.) All mechanical appliances shall be properly installed and maintained in a safe working condition, and shall be capable of performing the intended function... [156.154-A] Every sink, lavatory, bathtub or shower, drinking fountain, water closet or other plumbing fixture shall be properly connected to either a public water system or to an approved private water system.",
+        "C01 - CONDEMNATION (156.805 A) UNSAFE STRUCTURES AND EQUIPMENT; CONDEMNATION AND CLOSING OF. (A) Condemnation. When a structure or part thereof is found by the Code Official to be unsafe, or when a structure or part thereof is found unfit for human occupancy or use, or is found unlawful, it shall be condemned pursuant to the provisions of this chapter and shall be placarded and vacated."
+      ],
+      "recent_window_occupancies": [
+        "Condemned"
+      ],
+      "citation_event_count": 0,
+      "citation_assessed_total": 0.0,
+      "ambiguous_citation_events": [],
+      "outstanding_balance": null,
+      "balance_note": "No current outstanding balance inferred.",
+      "recovery": {
+        "child": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        },
+        "parent": {
+          "attempts": 1,
+          "errors": [],
+          "recovered": false
+        }
+      }
+    }
+  ],
+  "fresh_individual_count": 8,
+  "entity_owner_skipped": 5,
+  "duplicate_property_skipped": 0,
+  "persistent_freshness_filter": {
+    "seen_case_skipped": 8,
+    "seen_parcel_skipped": 1,
+    "assigned_property_skipped": 33,
+    "seen_cases_before_run": 8,
+    "seen_parcels_before_run": 7,
+    "active_assigned_parcels_before_run": 45
+  },
+  "shortfall_note": null
 }
