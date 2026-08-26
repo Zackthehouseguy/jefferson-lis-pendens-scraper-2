@@ -127,3 +127,5 @@ jobs:
             reports/reaper_multi_source_live/
           if-no-files-found: error
           retention-days: 14
+
+# manual-run-anchor: 2026-08-26T12:27:00-04:00
