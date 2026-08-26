@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/reaper-multi-source-live.yml"
       - "scrapers/probe/reaper_multi_source_stack.py"
+      - "scrapers/probe/reaper_bulk_qualify.py"
   workflow_dispatch:
 
 permissions:
@@ -18,7 +19,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
         with:
@@ -82,20 +83,48 @@ jobs:
             --seen state/full_system_seen.json \
             --start-date "$START_DATE" \
             --end-date "$END_DATE" \
-            --top 150
+            --top 1000
+
+      - name: Prepare full fresh individual pool
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          src = Path("reports/reaper_multi_source_live/stacked.json")
+          data = json.loads(src.read_text(encoding="utf-8"))
+          fresh = data.get("top_fresh_individual") or []
+          data["top_all"] = fresh
+          Path("/tmp/reaper_bulk_input.json").write_text(json.dumps(data), encoding="utf-8")
+          print(f"bulk qualification input={len(fresh)}")
+          PY
+
+      - name: Verify every fresh candidate through PVA, LOJIC, freshness, type, and market gates
+        run: |
+          python -m scrapers.probe.reaper_bulk_qualify \
+            --stacked /tmp/reaper_bulk_input.json \
+            --assignments state/lead_assignments.json \
+            --delivery-ledger data/reaper_delivery_ledger.json \
+            --seen state/full_system_seen.json \
+            --out reports/reaper_multi_source_live/bulk_qualified.json \
+            --md reports/reaper_multi_source_live/bulk_qualified.md \
+            --workers 10
 
       - name: Add source execution metadata
         run: |
           cp reaper_live_sources/source_exit_codes.txt reports/reaper_multi_source_live/source_exit_codes.txt
           printf '%s\n' "window=$START_DATE..$END_DATE" "run_stamp=$RUN_STAMP" > reports/reaper_multi_source_live/run_meta.txt
 
-      - name: Persist unified report race-safely
+      - name: Persist unified reports race-safely
         run: |
           REPORT="reports/reaper_multi_source_live/stacked.json"
+          BULKJSON="reports/reaper_multi_source_live/bulk_qualified.json"
+          BULKMD="reports/reaper_multi_source_live/bulk_qualified.md"
           EXITCODES="reports/reaper_multi_source_live/source_exit_codes.txt"
           RUNMETA="reports/reaper_multi_source_live/run_meta.txt"
           TMP="$(mktemp -d)"
           cp "$REPORT" "$TMP/stacked.json"
+          cp "$BULKJSON" "$TMP/bulk_qualified.json"
+          cp "$BULKMD" "$TMP/bulk_qualified.md"
           cp "$EXITCODES" "$TMP/source_exit_codes.txt"
           cp "$RUNMETA" "$TMP/run_meta.txt"
 
@@ -107,11 +136,13 @@ jobs:
             git reset --hard origin/main
             mkdir -p reports/reaper_multi_source_live
             cp "$TMP/stacked.json" "$REPORT"
+            cp "$TMP/bulk_qualified.json" "$BULKJSON"
+            cp "$TMP/bulk_qualified.md" "$BULKMD"
             cp "$TMP/source_exit_codes.txt" "$EXITCODES"
             cp "$TMP/run_meta.txt" "$RUNMETA"
-            git add "$REPORT" "$EXITCODES" "$RUNMETA"
+            git add "$REPORT" "$BULKJSON" "$BULKMD" "$EXITCODES" "$RUNMETA"
             if git diff --cached --quiet; then exit 0; fi
-            git commit -m "Update Reaper multi-source live report [skip ci]"
+            git commit -m "Update full Reaper bulk qualification [skip ci]"
             if git push origin HEAD:main; then exit 0; fi
             sleep $((attempt * 2))
           done
@@ -128,4 +159,4 @@ jobs:
           if-no-files-found: error
           retention-days: 14
 
-# manual-run-anchor: 2026-08-26T12:27:00-04:00
+# manual-run-anchor: 2026-08-26T13:33:00-04:00
