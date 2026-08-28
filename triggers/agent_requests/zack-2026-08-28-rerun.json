@@ -1,0 +1,7 @@
+{
+  "agent_id": "zack",
+  "houses_file": "reports/daily_mix_final/current.json",
+  "land_file": "reports/daily_mix_final/current.json",
+  "house_limit": 25,
+  "land_limit": 25
+}
