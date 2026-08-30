@@ -101,3 +101,5 @@ jobs:
             state/full_system_seen.json
           if-no-files-found: error
           retention-days: 14
+
+# trigger-20260830-zack-daily
