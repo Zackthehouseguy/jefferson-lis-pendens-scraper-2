@@ -1,7 +1,7 @@
 {
   "status": "PASS",
-  "generated_at_et": "2026-08-31T10:13:35.451901-04:00",
-  "source_generated_at_et": "2026-08-31T10:11:51.531195-04:00",
+  "generated_at_et": "2026-08-31T10:28:26.631786-04:00",
+  "source_generated_at_et": "2026-08-31T10:26:46.436259-04:00",
   "query_window": {
     "start_date": "2026-08-28",
     "end_date": "2026-08-31"
@@ -178,73 +178,6 @@
       "qualification_status": "REJECTED"
     },
     {
-      "property_key": "ADDR::7209 VICTORIA DR",
-      "source_property_address": "7209 Victoria Dr, Louisville, KY 40228",
-      "source_parcel_id": null,
-      "sources": [
-        "lis_pendens"
-      ],
-      "signal_count": 1,
-      "evidence": [
-        {
-          "source": "lis_pendens",
-          "signal_date": "08/28/2026",
-          "property_address": "7209 Victoria Dr, Louisville, KY 40228",
-          "normalized_address": "7209 VICTORIA DR",
-          "parcel_id": null,
-          "party_or_owner": "FINNEY RYAN; FINNEY RYAN MITCHELL; FINNEY KATIE; FINNEY KATIE NICOLE",
-          "individual_party_likely": true,
-          "status": null,
-          "amount": null,
-          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=7209+Victoria+Dr&searchType=StreetSearch#results",
-          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wODI4LzIwMjYxMDYzNzQudGlm&type=pdf",
-          "raw_distress_score": null
-        }
-      ],
-      "source_score": 48,
-      "source_score_reasons": [
-        "recent lis pendens filing"
-      ],
-      "qualification_errors": [],
-      "rejection_reasons": [
-        "distress_below_production_threshold"
-      ],
-      "parcel_id": "064502820000",
-      "lojic_parcel_verified": true,
-      "parcel_type": 0,
-      "pin": null,
-      "lot_sqft": 21070.1,
-      "lot_acres": 0.4837,
-      "landuse_name": "SINGLE FAMILY",
-      "pva_verified": true,
-      "pva_owner": "FINNEY RYAN MITCHELL & FINNEY KATIE NICOLE",
-      "pva_parcel_id": "064502820000",
-      "pva_assessed_value": "350,000",
-      "pva_acres": "0.4837",
-      "pva_mailing_address": null,
-      "pva_situs_address": "7209 VICTORIA DR",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=064502820000&propertySearchFormButton=Search&searchType=ParcelSearch",
-      "current_owner_individual": true,
-      "vacant_lot_context": false,
-      "candidate_type": "SFR",
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
-      "reaper_priority_score": 61,
-      "priority_reasons": [
-        "fresh lis pendens",
-        "signal age <=3 days",
-        "current PVA owner verified individual",
-        "LOJIC exact single-family land use"
-      ],
-      "market_status": "UNKNOWN",
-      "market_source": "Zillow exact-address live check",
-      "market_url": "https://www.zillow.com/homes/7209-Victoria-Dr-Louisville-KY-40228_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:00.422400-04:00",
-      "market_reason": "http_403",
-      "qualification_status": "REJECTED",
-      "distress_score": 48.0
-    },
-    {
       "property_key": "ADDR::17300 DRY RIDGE RD",
       "source_property_address": "17300 Dry Ridge Rd, Louisville, KY 40299",
       "source_parcel_id": null,
@@ -306,7 +239,74 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/17300-Dry-Ridge-Rd-Louisville-KY-40299_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:00.505048-04:00",
+      "market_checked_at_et": "2026-08-31T10:26:53.856655-04:00",
+      "market_reason": "http_403",
+      "qualification_status": "REJECTED",
+      "distress_score": 48.0
+    },
+    {
+      "property_key": "ADDR::7209 VICTORIA DR",
+      "source_property_address": "7209 Victoria Dr, Louisville, KY 40228",
+      "source_parcel_id": null,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "08/28/2026",
+          "property_address": "7209 Victoria Dr, Louisville, KY 40228",
+          "normalized_address": "7209 VICTORIA DR",
+          "parcel_id": null,
+          "party_or_owner": "FINNEY RYAN; FINNEY RYAN MITCHELL; FINNEY KATIE; FINNEY KATIE NICOLE",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=7209+Victoria+Dr&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wODI4LzIwMjYxMDYzNzQudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ],
+      "source_score": 48,
+      "source_score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "qualification_errors": [],
+      "rejection_reasons": [
+        "distress_below_production_threshold"
+      ],
+      "parcel_id": "064502820000",
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 21070.1,
+      "lot_acres": 0.4837,
+      "landuse_name": "SINGLE FAMILY",
+      "pva_verified": true,
+      "pva_owner": "FINNEY RYAN MITCHELL & FINNEY KATIE NICOLE",
+      "pva_parcel_id": "064502820000",
+      "pva_assessed_value": "350,000",
+      "pva_acres": "0.4837",
+      "pva_mailing_address": null,
+      "pva_situs_address": "7209 VICTORIA DR",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=064502820000&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "current_owner_individual": true,
+      "vacant_lot_context": false,
+      "candidate_type": "SFR",
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
+      "reaper_priority_score": 61,
+      "priority_reasons": [
+        "fresh lis pendens",
+        "signal age <=3 days",
+        "current PVA owner verified individual",
+        "LOJIC exact single-family land use"
+      ],
+      "market_status": "UNKNOWN",
+      "market_source": "Zillow exact-address live check",
+      "market_url": "https://www.zillow.com/homes/7209-Victoria-Dr-Louisville-KY-40228_rb/",
+      "market_checked_at_et": "2026-08-31T10:26:54.080066-04:00",
       "market_reason": "http_403",
       "qualification_status": "REJECTED",
       "distress_score": 48.0
@@ -440,7 +440,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/406-FREEMAN-AVE-LOUISVILLE-KY-40214_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:00.158816-04:00",
+      "market_checked_at_et": "2026-08-31T10:26:53.213224-04:00",
       "market_reason": "http_403",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -508,7 +508,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/2311-W-MADISON-ST-LOUISVILLE-KY-40211-0000_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:00.808973-04:00",
+      "market_checked_at_et": "2026-08-31T10:26:54.128258-04:00",
       "market_reason": "http_403",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -576,7 +576,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/4222-W-BROADWAY-LOUISVILLE-KY-40211-0000_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:01.494403-04:00",
+      "market_checked_at_et": "2026-08-31T10:26:55.922681-04:00",
       "market_reason": "http_403",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -712,7 +712,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/3320-BARDSTOWN-RD-LOUISVILLE-KY-40218_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:08.696273-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:03.778813-04:00",
       "market_reason": "http_403",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -780,7 +780,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/1772-W-HILL-ST-LOUISVILLE-KY-40210_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:13.192734-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:07.507882-04:00",
       "market_reason": "http_403",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -848,75 +848,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/1200-SCHILLER-AVE-LOUISVILLE-KY-40204_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:13.603241-04:00",
-      "market_reason": "http_403",
-      "qualification_status": "REJECTED",
-      "distress_score": 34.0
-    },
-    {
-      "property_key": "PARCEL::094303080308",
-      "source_property_address": "6003 WHISPERING HILLS BLVD, LOUISVILLE, KY 40219",
-      "source_parcel_id": "094303080308",
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-28",
-          "property_address": "6003 WHISPERING HILLS BLVD, LOUISVILLE, KY 40219",
-          "normalized_address": "6003 WHISPERING HILLS BLVD",
-          "parcel_id": "094303080308",
-          "party_or_owner": "LMG Codes & Regulations - Citation",
-          "individual_party_likely": true,
-          "status": "Citation",
-          "amount": 800.0,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | 02A Cleaning, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 16 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | Violations: 02A Cleaning, 05A Abandoned Vehicle | Citation amount: $800 | Violation rows: 2 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-012378-3 | Parcel: 094303080308 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 16
-        }
-      ],
-      "source_score": 34,
-      "source_score_reasons": [
-        "severe code indicators: abandon, foundation, vacant"
-      ],
-      "qualification_errors": [],
-      "rejection_reasons": [
-        "priority_below_production_threshold",
-        "distress_below_production_threshold"
-      ],
-      "parcel_id": "094303080308",
-      "lojic_parcel_verified": true,
-      "parcel_type": 0,
-      "pin": null,
-      "lot_sqft": 8821.0,
-      "lot_acres": 0.2025,
-      "landuse_name": "SINGLE FAMILY",
-      "pva_verified": true,
-      "pva_owner": "COX MICHAEL W",
-      "pva_parcel_id": "094303080308",
-      "pva_assessed_value": "235,250",
-      "pva_acres": "0.2025",
-      "pva_mailing_address": null,
-      "pva_situs_address": "6003 WHISPERING HILLS BLVD",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=094303080308&propertySearchFormButton=Search&searchType=ParcelSearch",
-      "current_owner_individual": true,
-      "vacant_lot_context": false,
-      "candidate_type": "SFR",
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
-      "reaper_priority_score": 49,
-      "priority_reasons": [
-        "severe code distress",
-        "signal age <=3 days",
-        "current PVA owner verified individual",
-        "LOJIC exact single-family land use"
-      ],
-      "market_status": "UNKNOWN",
-      "market_source": "Zillow exact-address live check",
-      "market_url": "https://www.zillow.com/homes/6003-WHISPERING-HILLS-BLVD-LOUISVILLE-KY-40219_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:14.213599-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:08.244985-04:00",
       "market_reason": "http_403",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -990,6 +922,74 @@
       "qualification_status": "REJECTED"
     },
     {
+      "property_key": "PARCEL::094303080308",
+      "source_property_address": "6003 WHISPERING HILLS BLVD, LOUISVILLE, KY 40219",
+      "source_parcel_id": "094303080308",
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-08-28",
+          "property_address": "6003 WHISPERING HILLS BLVD, LOUISVILLE, KY 40219",
+          "normalized_address": "6003 WHISPERING HILLS BLVD",
+          "parcel_id": "094303080308",
+          "party_or_owner": "LMG Codes & Regulations - Citation",
+          "individual_party_likely": true,
+          "status": "Citation",
+          "amount": 800.0,
+          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | 02A Cleaning, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 16 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | Violations: 02A Cleaning, 05A Abandoned Vehicle | Citation amount: $800 | Violation rows: 2 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-012378-3 | Parcel: 094303080308 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 16
+        }
+      ],
+      "source_score": 34,
+      "source_score_reasons": [
+        "severe code indicators: abandon, foundation, vacant"
+      ],
+      "qualification_errors": [],
+      "rejection_reasons": [
+        "priority_below_production_threshold",
+        "distress_below_production_threshold"
+      ],
+      "parcel_id": "094303080308",
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 8821.0,
+      "lot_acres": 0.2025,
+      "landuse_name": "SINGLE FAMILY",
+      "pva_verified": true,
+      "pva_owner": "COX MICHAEL W",
+      "pva_parcel_id": "094303080308",
+      "pva_assessed_value": "235,250",
+      "pva_acres": "0.2025",
+      "pva_mailing_address": null,
+      "pva_situs_address": "6003 WHISPERING HILLS BLVD",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=094303080308&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "current_owner_individual": true,
+      "vacant_lot_context": false,
+      "candidate_type": "SFR",
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
+      "reaper_priority_score": 49,
+      "priority_reasons": [
+        "severe code distress",
+        "signal age <=3 days",
+        "current PVA owner verified individual",
+        "LOJIC exact single-family land use"
+      ],
+      "market_status": "UNKNOWN",
+      "market_source": "Zillow exact-address live check",
+      "market_url": "https://www.zillow.com/homes/6003-WHISPERING-HILLS-BLVD-LOUISVILLE-KY-40219_rb/",
+      "market_checked_at_et": "2026-08-31T10:27:08.938520-04:00",
+      "market_reason": "http_403",
+      "qualification_status": "REJECTED",
+      "distress_score": 34.0
+    },
+    {
       "property_key": "PARCEL::094303220322",
       "source_property_address": "6916 SANDSTONE BLVD, LOUISVILLE, KY 40219",
       "source_parcel_id": "094303220322",
@@ -1052,75 +1052,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/6916-SANDSTONE-BLVD-LOUISVILLE-KY-40219_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:14.852452-04:00",
-      "market_reason": "http_403",
-      "qualification_status": "REJECTED",
-      "distress_score": 34.0
-    },
-    {
-      "property_key": "PARCEL::055200680009",
-      "source_property_address": "3328 GOLDSMITH LN, LOUISVILLE, KY 40220",
-      "source_parcel_id": "055200680009",
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-28",
-          "property_address": "3328 GOLDSMITH LN, LOUISVILLE, KY 40220",
-          "normalized_address": "3328 GOLDSMITH LN",
-          "parcel_id": "055200680009",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "structural/foundation; electric; public hazard; fence/accessory; sewage/plumbing; heating | E03, E05, K09, R01 Rental Reg., K11, I22 +1 more | Priority: HIGH | Distress score: 15 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; electric; public hazard; fence/accessory; sewage/plumbing; heating | Violations: E03, E05, K09, R01 Rental Reg., K11, I22 +1 more | Violation rows: 7 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019782-1 | Parcel: 055200680009 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 15
-        }
-      ],
-      "source_score": 34,
-      "source_score_reasons": [
-        "severe code indicators: foundation, structural"
-      ],
-      "qualification_errors": [],
-      "rejection_reasons": [
-        "priority_below_production_threshold",
-        "distress_below_production_threshold"
-      ],
-      "parcel_id": "055200680009",
-      "lojic_parcel_verified": true,
-      "parcel_type": 0,
-      "pin": null,
-      "lot_sqft": 9803.6,
-      "lot_acres": 0.2251,
-      "landuse_name": "SINGLE FAMILY",
-      "pva_verified": true,
-      "pva_owner": "HAGAN GARY A II",
-      "pva_parcel_id": "055200680009",
-      "pva_assessed_value": "220,720",
-      "pva_acres": "0.2251",
-      "pva_mailing_address": null,
-      "pva_situs_address": "3328 GOLDSMITH LN",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=055200680009&propertySearchFormButton=Search&searchType=ParcelSearch",
-      "current_owner_individual": true,
-      "vacant_lot_context": false,
-      "candidate_type": "SFR",
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
-      "reaper_priority_score": 49,
-      "priority_reasons": [
-        "severe code distress",
-        "signal age <=3 days",
-        "current PVA owner verified individual",
-        "LOJIC exact single-family land use"
-      ],
-      "market_status": "UNKNOWN",
-      "market_source": "Zillow exact-address live check",
-      "market_url": "https://www.zillow.com/homes/3328-GOLDSMITH-LN-LOUISVILLE-KY-40220_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:20.810810-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:10.637417-04:00",
       "market_reason": "http_403",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -1188,7 +1120,75 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/205-INVERNESS-AVE-LOUISVILLE-KY-40214_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:21.082075-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:13.246498-04:00",
+      "market_reason": "http_403",
+      "qualification_status": "REJECTED",
+      "distress_score": 34.0
+    },
+    {
+      "property_key": "PARCEL::055200680009",
+      "source_property_address": "3328 GOLDSMITH LN, LOUISVILLE, KY 40220",
+      "source_parcel_id": "055200680009",
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-08-28",
+          "property_address": "3328 GOLDSMITH LN, LOUISVILLE, KY 40220",
+          "normalized_address": "3328 GOLDSMITH LN",
+          "parcel_id": "055200680009",
+          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "individual_party_likely": true,
+          "status": "Violation Notice",
+          "amount": null,
+          "details": "structural/foundation; electric; public hazard; fence/accessory; sewage/plumbing; heating | E03, E05, K09, R01 Rental Reg., K11, I22 +1 more | Priority: HIGH | Distress score: 15 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; electric; public hazard; fence/accessory; sewage/plumbing; heating | Violations: E03, E05, K09, R01 Rental Reg., K11, I22 +1 more | Violation rows: 7 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019782-1 | Parcel: 055200680009 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 15
+        }
+      ],
+      "source_score": 34,
+      "source_score_reasons": [
+        "severe code indicators: foundation, structural"
+      ],
+      "qualification_errors": [],
+      "rejection_reasons": [
+        "priority_below_production_threshold",
+        "distress_below_production_threshold"
+      ],
+      "parcel_id": "055200680009",
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9803.6,
+      "lot_acres": 0.2251,
+      "landuse_name": "SINGLE FAMILY",
+      "pva_verified": true,
+      "pva_owner": "HAGAN GARY A II",
+      "pva_parcel_id": "055200680009",
+      "pva_assessed_value": "220,720",
+      "pva_acres": "0.2251",
+      "pva_mailing_address": null,
+      "pva_situs_address": "3328 GOLDSMITH LN",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=055200680009&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "current_owner_individual": true,
+      "vacant_lot_context": false,
+      "candidate_type": "SFR",
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
+      "reaper_priority_score": 49,
+      "priority_reasons": [
+        "severe code distress",
+        "signal age <=3 days",
+        "current PVA owner verified individual",
+        "LOJIC exact single-family land use"
+      ],
+      "market_status": "UNKNOWN",
+      "market_source": "Zillow exact-address live check",
+      "market_url": "https://www.zillow.com/homes/3328-GOLDSMITH-LN-LOUISVILLE-KY-40220_rb/",
+      "market_checked_at_et": "2026-08-31T10:27:15.151565-04:00",
       "market_reason": "http_403",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -1256,7 +1256,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/5814-CROCKETT-DR-LOUISVILLE-KY-40258_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:22.154480-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:14.502694-04:00",
       "market_reason": "http_403",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -1324,75 +1324,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/10788-TARRYTOWNE-DR-LOUISVILLE-KY-40272_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:22.538023-04:00",
-      "market_reason": "http_403",
-      "qualification_status": "REJECTED",
-      "distress_score": 34.0
-    },
-    {
-      "property_key": "PARCEL::095100550000",
-      "source_property_address": "3600 GRISSOM WAY, LOUISVILLE, KY 40229",
-      "source_parcel_id": "095100550000",
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-28",
-          "property_address": "3600 GRISSOM WAY, LOUISVILLE, KY 40229",
-          "normalized_address": "3600 GRISSOM WAY",
-          "parcel_id": "095100550000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | 02A Cleaning, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 13 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | Violations: 02A Cleaning, 05A Abandoned Vehicle | Violation rows: 2 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019301-1 | Parcel: 095100550000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 13
-        }
-      ],
-      "source_score": 34,
-      "source_score_reasons": [
-        "severe code indicators: abandon, foundation, vacant"
-      ],
-      "qualification_errors": [],
-      "rejection_reasons": [
-        "priority_below_production_threshold",
-        "distress_below_production_threshold"
-      ],
-      "parcel_id": "095100550000",
-      "lojic_parcel_verified": true,
-      "parcel_type": 0,
-      "pin": null,
-      "lot_sqft": 9640.2,
-      "lot_acres": 0.2213,
-      "landuse_name": "SINGLE FAMILY",
-      "pva_verified": true,
-      "pva_owner": "ABDELRAZEQ IBRAHEEM A",
-      "pva_parcel_id": "095100550000",
-      "pva_assessed_value": "137,110",
-      "pva_acres": "0.2213",
-      "pva_mailing_address": null,
-      "pva_situs_address": "3600 GRISSOM WAY",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=095100550000&propertySearchFormButton=Search&searchType=ParcelSearch",
-      "current_owner_individual": true,
-      "vacant_lot_context": false,
-      "candidate_type": "SFR",
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
-      "reaper_priority_score": 48,
-      "priority_reasons": [
-        "severe code distress",
-        "signal age <=3 days",
-        "current PVA owner verified individual",
-        "LOJIC exact single-family land use"
-      ],
-      "market_status": "UNKNOWN",
-      "market_source": "Zillow exact-address live check",
-      "market_url": "https://www.zillow.com/homes/3600-GRISSOM-WAY-LOUISVILLE-KY-40229_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:23.243821-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:15.700779-04:00",
       "market_reason": "http_403",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -1460,7 +1392,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/3301-HUNSINGER-LN-LOUISVILLE-KY-40220_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:23.656424-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:15.793308-04:00",
       "market_reason": "http_403",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -1528,15 +1460,15 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/5501-WHISPERING-HILLS-BLVD-LOUISVILLE-KY-40219_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:28.186185-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:15.855625-04:00",
       "market_reason": "http_403",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
     },
     {
-      "property_key": "PARCEL::119401040295",
-      "source_property_address": "10008 PLAUDIT WAY, LOUISVILLE, KY 40272",
-      "source_parcel_id": "119401040295",
+      "property_key": "PARCEL::095100550000",
+      "source_property_address": "3600 GRISSOM WAY, LOUISVILLE, KY 40229",
+      "source_parcel_id": "095100550000",
       "sources": [
         "louisville_code_violations"
       ],
@@ -1545,84 +1477,16 @@
         {
           "source": "louisville_code_violations",
           "signal_date": "2026-08-28",
-          "property_address": "10008 PLAUDIT WAY, LOUISVILLE, KY 40272",
-          "normalized_address": "10008 PLAUDIT WAY",
-          "parcel_id": "119401040295",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "structural/foundation; exterior/foundation; roof/gutters; public hazard | X19 Exterior/Foundation, LEAD | Priority: HIGH | Distress score: 11 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; exterior/foundation; roof/gutters; public hazard | Violations: X19 Exterior/Foundation, LEAD | Violation rows: 2 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-011191-6 | Parcel: 119401040295 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 11
-        }
-      ],
-      "source_score": 34,
-      "source_score_reasons": [
-        "severe code indicators: foundation, roof, structural"
-      ],
-      "qualification_errors": [],
-      "rejection_reasons": [
-        "priority_below_production_threshold",
-        "distress_below_production_threshold"
-      ],
-      "parcel_id": "119401040295",
-      "lojic_parcel_verified": true,
-      "parcel_type": 0,
-      "pin": null,
-      "lot_sqft": 9247.4,
-      "lot_acres": 0.2123,
-      "landuse_name": "SINGLE FAMILY",
-      "pva_verified": true,
-      "pva_owner": "SPALDING WATHEN & SUSAN",
-      "pva_parcel_id": "119401040295",
-      "pva_assessed_value": "87,000",
-      "pva_acres": "0.2123",
-      "pva_mailing_address": null,
-      "pva_situs_address": "10008 PLAUDIT WAY",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=119401040295&propertySearchFormButton=Search&searchType=ParcelSearch",
-      "current_owner_individual": true,
-      "vacant_lot_context": false,
-      "candidate_type": "SFR",
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
-      "reaper_priority_score": 48,
-      "priority_reasons": [
-        "severe code distress",
-        "signal age <=3 days",
-        "current PVA owner verified individual",
-        "LOJIC exact single-family land use"
-      ],
-      "market_status": "UNKNOWN",
-      "market_source": "Zillow exact-address live check",
-      "market_url": "https://www.zillow.com/homes/10008-PLAUDIT-WAY-LOUISVILLE-KY-40272_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:31.236457-04:00",
-      "market_reason": "http_403",
-      "qualification_status": "REJECTED",
-      "distress_score": 34.0
-    },
-    {
-      "property_key": "PARCEL::104702820000",
-      "source_property_address": "10415 LA PLAZA DR, LOUISVILLE, KY 40272",
-      "source_parcel_id": "104702820000",
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-28",
-          "property_address": "10415 LA PLAZA DR, LOUISVILLE, KY 40272",
-          "normalized_address": "10415 LA PLAZA DR",
-          "parcel_id": "104702820000",
+          "property_address": "3600 GRISSOM WAY, LOUISVILLE, KY 40229",
+          "normalized_address": "3600 GRISSOM WAY",
+          "parcel_id": "095100550000",
           "party_or_owner": "LMG Codes & Regulations - Violation Notice",
           "individual_party_likely": true,
           "status": "Violation Notice",
           "amount": null,
-          "details": "vacant/abandoned; abandoned vehicle; exterior/foundation | I21, 05A Abandoned Vehicle, Z01 | Priority: HIGH | Distress score: 11 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: vacant/abandoned; abandoned vehicle; exterior/foundation | Violations: I21, 05A Abandoned Vehicle, Z01 | Violation rows: 3 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019862-1 | Parcel: 104702820000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | 02A Cleaning, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 13 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | Violations: 02A Cleaning, 05A Abandoned Vehicle | Violation rows: 2 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019301-1 | Parcel: 095100550000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 11
+          "raw_distress_score": 13
         }
       ],
       "source_score": 34,
@@ -1634,21 +1498,21 @@
         "priority_below_production_threshold",
         "distress_below_production_threshold"
       ],
-      "parcel_id": "104702820000",
+      "parcel_id": "095100550000",
       "lojic_parcel_verified": true,
       "parcel_type": 0,
       "pin": null,
-      "lot_sqft": 10120.2,
-      "lot_acres": 0.2323,
+      "lot_sqft": 9640.2,
+      "lot_acres": 0.2213,
       "landuse_name": "SINGLE FAMILY",
       "pva_verified": true,
-      "pva_owner": "TRIPLETT MICHAEL G & TRIPLETT KAY E",
-      "pva_parcel_id": "104702820000",
-      "pva_assessed_value": "160,910",
-      "pva_acres": "0.2323",
+      "pva_owner": "ABDELRAZEQ IBRAHEEM A",
+      "pva_parcel_id": "095100550000",
+      "pva_assessed_value": "137,110",
+      "pva_acres": "0.2213",
       "pva_mailing_address": null,
-      "pva_situs_address": "10415 LA PLAZA AVE",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=104702820000&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "pva_situs_address": "3600 GRISSOM WAY",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=095100550000&propertySearchFormButton=Search&searchType=ParcelSearch",
       "current_owner_individual": true,
       "vacant_lot_context": false,
       "candidate_type": "SFR",
@@ -1663,76 +1527,8 @@
       ],
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
-      "market_url": "https://www.zillow.com/homes/10415-LA-PLAZA-DR-LOUISVILLE-KY-40272_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:31.319006-04:00",
-      "market_reason": "http_403",
-      "qualification_status": "REJECTED",
-      "distress_score": 34.0
-    },
-    {
-      "property_key": "PARCEL::116700440059",
-      "source_property_address": "2001 DIXIE GARDEN DR, LOUISVILLE, KY 40272",
-      "source_parcel_id": "116700440059",
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-28",
-          "property_address": "2001 DIXIE GARDEN DR, LOUISVILLE, KY 40272",
-          "normalized_address": "2001 DIXIE GARDEN DR",
-          "parcel_id": "116700440059",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | 02A Cleaning, X50 Roof/Gutters | Priority: HIGH | Distress score: 11 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | Violations: 02A Cleaning, X50 Roof/Gutters | Violation rows: 2 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019780-1 | Parcel: 116700440059 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 11
-        }
-      ],
-      "source_score": 34,
-      "source_score_reasons": [
-        "severe code indicators: foundation, roof"
-      ],
-      "qualification_errors": [],
-      "rejection_reasons": [
-        "priority_below_production_threshold",
-        "distress_below_production_threshold"
-      ],
-      "parcel_id": "116700440059",
-      "lojic_parcel_verified": true,
-      "parcel_type": 0,
-      "pin": null,
-      "lot_sqft": 13637.5,
-      "lot_acres": 0.3131,
-      "landuse_name": "SINGLE FAMILY",
-      "pva_verified": true,
-      "pva_owner": "EASLEY MARIA L",
-      "pva_parcel_id": "116700440059",
-      "pva_assessed_value": "178,500",
-      "pva_acres": "0.3131",
-      "pva_mailing_address": null,
-      "pva_situs_address": "2001 DIXIE GARDEN DR",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=116700440059&propertySearchFormButton=Search&searchType=ParcelSearch",
-      "current_owner_individual": true,
-      "vacant_lot_context": false,
-      "candidate_type": "SFR",
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
-      "reaper_priority_score": 48,
-      "priority_reasons": [
-        "severe code distress",
-        "signal age <=3 days",
-        "current PVA owner verified individual",
-        "LOJIC exact single-family land use"
-      ],
-      "market_status": "UNKNOWN",
-      "market_source": "Zillow exact-address live check",
-      "market_url": "https://www.zillow.com/homes/2001-DIXIE-GARDEN-DR-LOUISVILLE-KY-40272_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:32.063080-04:00",
+      "market_url": "https://www.zillow.com/homes/3600-GRISSOM-WAY-LOUISVILLE-KY-40229_rb/",
+      "market_checked_at_et": "2026-08-31T10:27:15.997484-04:00",
       "market_reason": "http_403",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -1800,8 +1596,212 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/4115-HUNSINGER-LN-LOUISVILLE-KY-40220_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:33.353708-04:00",
-      "market_reason": "http_429",
+      "market_checked_at_et": "2026-08-31T10:27:22.633530-04:00",
+      "market_reason": "http_403",
+      "qualification_status": "REJECTED",
+      "distress_score": 34.0
+    },
+    {
+      "property_key": "PARCEL::104702820000",
+      "source_property_address": "10415 LA PLAZA DR, LOUISVILLE, KY 40272",
+      "source_parcel_id": "104702820000",
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-08-28",
+          "property_address": "10415 LA PLAZA DR, LOUISVILLE, KY 40272",
+          "normalized_address": "10415 LA PLAZA DR",
+          "parcel_id": "104702820000",
+          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "individual_party_likely": true,
+          "status": "Violation Notice",
+          "amount": null,
+          "details": "vacant/abandoned; abandoned vehicle; exterior/foundation | I21, 05A Abandoned Vehicle, Z01 | Priority: HIGH | Distress score: 11 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: vacant/abandoned; abandoned vehicle; exterior/foundation | Violations: I21, 05A Abandoned Vehicle, Z01 | Violation rows: 3 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019862-1 | Parcel: 104702820000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 11
+        }
+      ],
+      "source_score": 34,
+      "source_score_reasons": [
+        "severe code indicators: abandon, foundation, vacant"
+      ],
+      "qualification_errors": [],
+      "rejection_reasons": [
+        "priority_below_production_threshold",
+        "distress_below_production_threshold"
+      ],
+      "parcel_id": "104702820000",
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 10120.2,
+      "lot_acres": 0.2323,
+      "landuse_name": "SINGLE FAMILY",
+      "pva_verified": true,
+      "pva_owner": "TRIPLETT MICHAEL G & TRIPLETT KAY E",
+      "pva_parcel_id": "104702820000",
+      "pva_assessed_value": "160,910",
+      "pva_acres": "0.2323",
+      "pva_mailing_address": null,
+      "pva_situs_address": "10415 LA PLAZA AVE",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=104702820000&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "current_owner_individual": true,
+      "vacant_lot_context": false,
+      "candidate_type": "SFR",
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
+      "reaper_priority_score": 48,
+      "priority_reasons": [
+        "severe code distress",
+        "signal age <=3 days",
+        "current PVA owner verified individual",
+        "LOJIC exact single-family land use"
+      ],
+      "market_status": "UNKNOWN",
+      "market_source": "Zillow exact-address live check",
+      "market_url": "https://www.zillow.com/homes/10415-LA-PLAZA-DR-LOUISVILLE-KY-40272_rb/",
+      "market_checked_at_et": "2026-08-31T10:27:22.960789-04:00",
+      "market_reason": "http_403",
+      "qualification_status": "REJECTED",
+      "distress_score": 34.0
+    },
+    {
+      "property_key": "PARCEL::116700440059",
+      "source_property_address": "2001 DIXIE GARDEN DR, LOUISVILLE, KY 40272",
+      "source_parcel_id": "116700440059",
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-08-28",
+          "property_address": "2001 DIXIE GARDEN DR, LOUISVILLE, KY 40272",
+          "normalized_address": "2001 DIXIE GARDEN DR",
+          "parcel_id": "116700440059",
+          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "individual_party_likely": true,
+          "status": "Violation Notice",
+          "amount": null,
+          "details": "exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | 02A Cleaning, X50 Roof/Gutters | Priority: HIGH | Distress score: 11 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | Violations: 02A Cleaning, X50 Roof/Gutters | Violation rows: 2 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019780-1 | Parcel: 116700440059 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 11
+        }
+      ],
+      "source_score": 34,
+      "source_score_reasons": [
+        "severe code indicators: foundation, roof"
+      ],
+      "qualification_errors": [],
+      "rejection_reasons": [
+        "priority_below_production_threshold",
+        "distress_below_production_threshold"
+      ],
+      "parcel_id": "116700440059",
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 13637.5,
+      "lot_acres": 0.3131,
+      "landuse_name": "SINGLE FAMILY",
+      "pva_verified": true,
+      "pva_owner": "EASLEY MARIA L",
+      "pva_parcel_id": "116700440059",
+      "pva_assessed_value": "178,500",
+      "pva_acres": "0.3131",
+      "pva_mailing_address": null,
+      "pva_situs_address": "2001 DIXIE GARDEN DR",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=116700440059&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "current_owner_individual": true,
+      "vacant_lot_context": false,
+      "candidate_type": "SFR",
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
+      "reaper_priority_score": 48,
+      "priority_reasons": [
+        "severe code distress",
+        "signal age <=3 days",
+        "current PVA owner verified individual",
+        "LOJIC exact single-family land use"
+      ],
+      "market_status": "UNKNOWN",
+      "market_source": "Zillow exact-address live check",
+      "market_url": "https://www.zillow.com/homes/2001-DIXIE-GARDEN-DR-LOUISVILLE-KY-40272_rb/",
+      "market_checked_at_et": "2026-08-31T10:27:24.338703-04:00",
+      "market_reason": "http_403",
+      "qualification_status": "REJECTED",
+      "distress_score": 34.0
+    },
+    {
+      "property_key": "PARCEL::119401040295",
+      "source_property_address": "10008 PLAUDIT WAY, LOUISVILLE, KY 40272",
+      "source_parcel_id": "119401040295",
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-08-28",
+          "property_address": "10008 PLAUDIT WAY, LOUISVILLE, KY 40272",
+          "normalized_address": "10008 PLAUDIT WAY",
+          "parcel_id": "119401040295",
+          "party_or_owner": "LMG Codes & Regulations - Hold",
+          "individual_party_likely": true,
+          "status": "Hold",
+          "amount": null,
+          "details": "structural/foundation; exterior/foundation; roof/gutters; public hazard | X19 Exterior/Foundation, LEAD | Priority: HIGH | Distress score: 11 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; exterior/foundation; roof/gutters; public hazard | Violations: X19 Exterior/Foundation, LEAD | Violation rows: 2 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-011191-6 | Parcel: 119401040295 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 11
+        }
+      ],
+      "source_score": 34,
+      "source_score_reasons": [
+        "severe code indicators: foundation, roof, structural"
+      ],
+      "qualification_errors": [],
+      "rejection_reasons": [
+        "priority_below_production_threshold",
+        "distress_below_production_threshold"
+      ],
+      "parcel_id": "119401040295",
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9247.4,
+      "lot_acres": 0.2123,
+      "landuse_name": "SINGLE FAMILY",
+      "pva_verified": true,
+      "pva_owner": "SPALDING WATHEN & SUSAN",
+      "pva_parcel_id": "119401040295",
+      "pva_assessed_value": "87,000",
+      "pva_acres": "0.2123",
+      "pva_mailing_address": null,
+      "pva_situs_address": "10008 PLAUDIT WAY",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=119401040295&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "current_owner_individual": true,
+      "vacant_lot_context": false,
+      "candidate_type": "SFR",
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
+      "reaper_priority_score": 48,
+      "priority_reasons": [
+        "severe code distress",
+        "signal age <=3 days",
+        "current PVA owner verified individual",
+        "LOJIC exact single-family land use"
+      ],
+      "market_status": "UNKNOWN",
+      "market_source": "Zillow exact-address live check",
+      "market_url": "https://www.zillow.com/homes/10008-PLAUDIT-WAY-LOUISVILLE-KY-40272_rb/",
+      "market_checked_at_et": "2026-08-31T10:27:24.878367-04:00",
+      "market_reason": "http_403",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
     },
@@ -1936,7 +1936,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/816-INVERNESS-AVE-LOUISVILLE-KY-40214_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:38.954074-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:28.973112-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -2004,15 +2004,15 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/1253-SPRINGDALE-DR-LOUISVILLE-KY-40213_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:41.619711-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:32.463455-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
     },
     {
-      "property_key": "PARCEL::009C00290000",
-      "source_property_address": "337 N 42ND ST, LOUISVILLE, KY 40212",
-      "source_parcel_id": "009C00290000",
+      "property_key": "PARCEL::061E00450000",
+      "source_property_address": "811 INVERNESS AVE, LOUISVILLE, KY 40214",
+      "source_parcel_id": "061E00450000",
       "sources": [
         "louisville_code_violations"
       ],
@@ -2021,48 +2021,47 @@
         {
           "source": "louisville_code_violations",
           "signal_date": "2026-08-28",
-          "property_address": "337 N 42ND ST, LOUISVILLE, KY 40212",
-          "normalized_address": "337 N 42ND ST",
-          "parcel_id": "009C00290000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "property_address": "811 INVERNESS AVE, LOUISVILLE, KY 40214",
+          "normalized_address": "811 INVERNESS AVE",
+          "parcel_id": "061E00450000",
+          "party_or_owner": "LMG Codes & Regulations - Hold",
           "individual_party_likely": true,
-          "status": "Violation Notice",
+          "status": "Hold",
           "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; windows/doors | 02A Cleaning, R01 Rental Reg., I13 | Priority: MEDIUM | Distress score: 9 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; windows/doors | Violations: 02A Cleaning, R01 Rental Reg., I13 | Violation rows: 4 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-017677-2 | Parcel: 009C00290000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "details": "structural/foundation; exterior/foundation; roof/gutters | X69 Address Numbers, X19 Exterior/Foundation | Priority: MEDIUM | Distress score: 9 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; exterior/foundation; roof/gutters | Violations: X69 Address Numbers, X19 Exterior/Foundation | Violation rows: 2 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-016371-3 | Parcel: 061E00450000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 9
         }
       ],
       "source_score": 34,
       "source_score_reasons": [
-        "severe code indicators: foundation"
+        "severe code indicators: foundation, roof, structural"
       ],
       "qualification_errors": [],
       "rejection_reasons": [
-        "freshness_seen_code_only"
+        "priority_below_production_threshold",
+        "distress_below_production_threshold"
       ],
-      "parcel_id": "009C00290000",
+      "parcel_id": "061E00450000",
       "lojic_parcel_verified": true,
       "parcel_type": 0,
       "pin": null,
-      "lot_sqft": 4516.1,
-      "lot_acres": 0.1037,
+      "lot_sqft": 7214.1,
+      "lot_acres": 0.1656,
       "landuse_name": "SINGLE FAMILY",
       "pva_verified": true,
-      "pva_owner": "42ND STREET 337 NORTH SMITH FAMILY L",
-      "pva_parcel_id": "009C00290000",
-      "pva_assessed_value": "50,270",
-      "pva_acres": "0.1037",
+      "pva_owner": "JOSEPH L CAMBRON SR & LINDA L DOMECK",
+      "pva_parcel_id": "061E00450000",
+      "pva_assessed_value": "121,500",
+      "pva_acres": "0.1656",
       "pva_mailing_address": null,
-      "pva_situs_address": "337 N 42ND ST",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=009C00290000&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "pva_situs_address": "811 INVERNESS AVE",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=061E00450000&propertySearchFormButton=Search&searchType=ParcelSearch",
       "current_owner_individual": true,
       "vacant_lot_context": false,
       "candidate_type": "SFR",
-      "freshness_state": "SEEN_CODE_ONLY",
-      "freshness_reasons": [
-        "previous_code_queue_seen"
-      ],
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
       "reaper_priority_score": 48,
       "priority_reasons": [
         "severe code distress",
@@ -2070,12 +2069,149 @@
         "current PVA owner verified individual",
         "LOJIC exact single-family land use"
       ],
-      "market_status": "NOT_CHECKED",
-      "market_source": null,
-      "market_url": null,
-      "market_checked_at_et": null,
-      "market_reason": "failed_pre_market_gate",
-      "qualification_status": "REJECTED"
+      "market_status": "UNKNOWN",
+      "market_source": "Zillow exact-address live check",
+      "market_url": "https://www.zillow.com/homes/811-INVERNESS-AVE-LOUISVILLE-KY-40214_rb/",
+      "market_checked_at_et": "2026-08-31T10:27:41.093984-04:00",
+      "market_reason": "http_429",
+      "qualification_status": "REJECTED",
+      "distress_score": 34.0
+    },
+    {
+      "property_key": "PARCEL::091100600000",
+      "source_property_address": "5513 AILANTHUS TRL, LOUISVILLE, KY 40219",
+      "source_parcel_id": "091100600000",
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-08-28",
+          "property_address": "5513 AILANTHUS TRL, LOUISVILLE, KY 40219",
+          "normalized_address": "5513 AILANTHUS TRL",
+          "parcel_id": "091100600000",
+          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "individual_party_likely": true,
+          "status": "Violation Notice",
+          "amount": null,
+          "details": "structural/foundation; dangerous tree; infestation; public hazard | X90 Tree | Priority: MEDIUM | Distress score: 9 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; dangerous tree; infestation; public hazard | Violations: X90 Tree | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019908-1 | Parcel: 091100600000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 9
+        }
+      ],
+      "source_score": 34,
+      "source_score_reasons": [
+        "severe code indicators: foundation, structural"
+      ],
+      "qualification_errors": [],
+      "rejection_reasons": [
+        "priority_below_production_threshold",
+        "distress_below_production_threshold"
+      ],
+      "parcel_id": "091100600000",
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6495.2,
+      "lot_acres": 0.1491,
+      "landuse_name": "SINGLE FAMILY",
+      "pva_verified": true,
+      "pva_owner": "TORRES JUAN GONZALEZ & TORRES JUAN M GONZALEZ",
+      "pva_parcel_id": "091100600000",
+      "pva_assessed_value": "200,000",
+      "pva_acres": "0.1491",
+      "pva_mailing_address": null,
+      "pva_situs_address": "5513 AILANTHUS TRL",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=091100600000&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "current_owner_individual": true,
+      "vacant_lot_context": false,
+      "candidate_type": "SFR",
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
+      "reaper_priority_score": 48,
+      "priority_reasons": [
+        "severe code distress",
+        "signal age <=3 days",
+        "current PVA owner verified individual",
+        "LOJIC exact single-family land use"
+      ],
+      "market_status": "UNKNOWN",
+      "market_source": "Zillow exact-address live check",
+      "market_url": "https://www.zillow.com/homes/5513-AILANTHUS-TRL-LOUISVILLE-KY-40219_rb/",
+      "market_checked_at_et": "2026-08-31T10:27:41.482369-04:00",
+      "market_reason": "http_429",
+      "qualification_status": "REJECTED",
+      "distress_score": 34.0
+    },
+    {
+      "property_key": "PARCEL::052H00010000",
+      "source_property_address": "939 BEECHER ST, LOUISVILLE, KY 40215",
+      "source_parcel_id": "052H00010000",
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-08-28",
+          "property_address": "939 BEECHER ST, LOUISVILLE, KY 40215",
+          "normalized_address": "939 BEECHER ST",
+          "parcel_id": "052H00010000",
+          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "individual_party_likely": true,
+          "status": "Violation Notice",
+          "amount": null,
+          "details": "structural/foundation; dangerous tree; infestation; public hazard | X90 Tree | Priority: MEDIUM | Distress score: 9 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; dangerous tree; infestation; public hazard | Violations: X90 Tree | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019953-1 | Parcel: 052H00010000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 9
+        }
+      ],
+      "source_score": 34,
+      "source_score_reasons": [
+        "severe code indicators: foundation, structural"
+      ],
+      "qualification_errors": [],
+      "rejection_reasons": [
+        "priority_below_production_threshold",
+        "distress_below_production_threshold"
+      ],
+      "parcel_id": "052H00010000",
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5554.0,
+      "lot_acres": 0.1275,
+      "landuse_name": "SINGLE FAMILY",
+      "pva_verified": true,
+      "pva_owner": "CALHOUN TIM W",
+      "pva_parcel_id": "052H00010000",
+      "pva_assessed_value": "69,280",
+      "pva_acres": "0.1275",
+      "pva_mailing_address": null,
+      "pva_situs_address": "939 BEECHER ST",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=052H00010000&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "current_owner_individual": true,
+      "vacant_lot_context": false,
+      "candidate_type": "SFR",
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
+      "reaper_priority_score": 48,
+      "priority_reasons": [
+        "severe code distress",
+        "signal age <=3 days",
+        "current PVA owner verified individual",
+        "LOJIC exact single-family land use"
+      ],
+      "market_status": "UNKNOWN",
+      "market_source": "Zillow exact-address live check",
+      "market_url": "https://www.zillow.com/homes/939-BEECHER-ST-LOUISVILLE-KY-40215_rb/",
+      "market_checked_at_et": "2026-08-31T10:27:41.542865-04:00",
+      "market_reason": "http_429",
+      "qualification_status": "REJECTED",
+      "distress_score": 34.0
     },
     {
       "property_key": "PARCEL::177200390000",
@@ -2146,9 +2282,9 @@
       "qualification_status": "REJECTED"
     },
     {
-      "property_key": "PARCEL::091100600000",
-      "source_property_address": "5513 AILANTHUS TRL, LOUISVILLE, KY 40219",
-      "source_parcel_id": "091100600000",
+      "property_key": "PARCEL::009C00290000",
+      "source_property_address": "337 N 42ND ST, LOUISVILLE, KY 40212",
+      "source_parcel_id": "009C00290000",
       "sources": [
         "louisville_code_violations"
       ],
@@ -2157,47 +2293,48 @@
         {
           "source": "louisville_code_violations",
           "signal_date": "2026-08-28",
-          "property_address": "5513 AILANTHUS TRL, LOUISVILLE, KY 40219",
-          "normalized_address": "5513 AILANTHUS TRL",
-          "parcel_id": "091100600000",
+          "property_address": "337 N 42ND ST, LOUISVILLE, KY 40212",
+          "normalized_address": "337 N 42ND ST",
+          "parcel_id": "009C00290000",
           "party_or_owner": "LMG Codes & Regulations - Violation Notice",
           "individual_party_likely": true,
           "status": "Violation Notice",
           "amount": null,
-          "details": "structural/foundation; dangerous tree; infestation; public hazard | X90 Tree | Priority: MEDIUM | Distress score: 9 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; dangerous tree; infestation; public hazard | Violations: X90 Tree | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019908-1 | Parcel: 091100600000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "details": "exterior/foundation; trash/weeds; graffiti; windows/doors | 02A Cleaning, R01 Rental Reg., I13 | Priority: MEDIUM | Distress score: 9 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; windows/doors | Violations: 02A Cleaning, R01 Rental Reg., I13 | Violation rows: 4 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-017677-2 | Parcel: 009C00290000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 9
         }
       ],
       "source_score": 34,
       "source_score_reasons": [
-        "severe code indicators: foundation, structural"
+        "severe code indicators: foundation"
       ],
       "qualification_errors": [],
       "rejection_reasons": [
-        "priority_below_production_threshold",
-        "distress_below_production_threshold"
+        "freshness_seen_code_only"
       ],
-      "parcel_id": "091100600000",
+      "parcel_id": "009C00290000",
       "lojic_parcel_verified": true,
       "parcel_type": 0,
       "pin": null,
-      "lot_sqft": 6495.2,
-      "lot_acres": 0.1491,
+      "lot_sqft": 4516.1,
+      "lot_acres": 0.1037,
       "landuse_name": "SINGLE FAMILY",
       "pva_verified": true,
-      "pva_owner": "TORRES JUAN GONZALEZ & TORRES JUAN M GONZALEZ",
-      "pva_parcel_id": "091100600000",
-      "pva_assessed_value": "200,000",
-      "pva_acres": "0.1491",
+      "pva_owner": "42ND STREET 337 NORTH SMITH FAMILY L",
+      "pva_parcel_id": "009C00290000",
+      "pva_assessed_value": "50,270",
+      "pva_acres": "0.1037",
       "pva_mailing_address": null,
-      "pva_situs_address": "5513 AILANTHUS TRL",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=091100600000&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "pva_situs_address": "337 N 42ND ST",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=009C00290000&propertySearchFormButton=Search&searchType=ParcelSearch",
       "current_owner_individual": true,
       "vacant_lot_context": false,
       "candidate_type": "SFR",
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
+      "freshness_state": "SEEN_CODE_ONLY",
+      "freshness_reasons": [
+        "previous_code_queue_seen"
+      ],
       "reaper_priority_score": 48,
       "priority_reasons": [
         "severe code distress",
@@ -2205,149 +2342,12 @@
         "current PVA owner verified individual",
         "LOJIC exact single-family land use"
       ],
-      "market_status": "UNKNOWN",
-      "market_source": "Zillow exact-address live check",
-      "market_url": "https://www.zillow.com/homes/5513-AILANTHUS-TRL-LOUISVILLE-KY-40219_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:48.535344-04:00",
-      "market_reason": "http_429",
-      "qualification_status": "REJECTED",
-      "distress_score": 34.0
-    },
-    {
-      "property_key": "PARCEL::061E00450000",
-      "source_property_address": "811 INVERNESS AVE, LOUISVILLE, KY 40214",
-      "source_parcel_id": "061E00450000",
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-28",
-          "property_address": "811 INVERNESS AVE, LOUISVILLE, KY 40214",
-          "normalized_address": "811 INVERNESS AVE",
-          "parcel_id": "061E00450000",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "structural/foundation; exterior/foundation; roof/gutters | X69 Address Numbers, X19 Exterior/Foundation | Priority: MEDIUM | Distress score: 9 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; exterior/foundation; roof/gutters | Violations: X69 Address Numbers, X19 Exterior/Foundation | Violation rows: 2 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-016371-3 | Parcel: 061E00450000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 9
-        }
-      ],
-      "source_score": 34,
-      "source_score_reasons": [
-        "severe code indicators: foundation, roof, structural"
-      ],
-      "qualification_errors": [],
-      "rejection_reasons": [
-        "priority_below_production_threshold",
-        "distress_below_production_threshold"
-      ],
-      "parcel_id": "061E00450000",
-      "lojic_parcel_verified": true,
-      "parcel_type": 0,
-      "pin": null,
-      "lot_sqft": 7214.1,
-      "lot_acres": 0.1656,
-      "landuse_name": "SINGLE FAMILY",
-      "pva_verified": true,
-      "pva_owner": "JOSEPH L CAMBRON SR & LINDA L DOMECK",
-      "pva_parcel_id": "061E00450000",
-      "pva_assessed_value": "121,500",
-      "pva_acres": "0.1656",
-      "pva_mailing_address": null,
-      "pva_situs_address": "811 INVERNESS AVE",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=061E00450000&propertySearchFormButton=Search&searchType=ParcelSearch",
-      "current_owner_individual": true,
-      "vacant_lot_context": false,
-      "candidate_type": "SFR",
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
-      "reaper_priority_score": 48,
-      "priority_reasons": [
-        "severe code distress",
-        "signal age <=3 days",
-        "current PVA owner verified individual",
-        "LOJIC exact single-family land use"
-      ],
-      "market_status": "UNKNOWN",
-      "market_source": "Zillow exact-address live check",
-      "market_url": "https://www.zillow.com/homes/811-INVERNESS-AVE-LOUISVILLE-KY-40214_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:48.614348-04:00",
-      "market_reason": "http_429",
-      "qualification_status": "REJECTED",
-      "distress_score": 34.0
-    },
-    {
-      "property_key": "PARCEL::052H00010000",
-      "source_property_address": "939 BEECHER ST, LOUISVILLE, KY 40215",
-      "source_parcel_id": "052H00010000",
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-28",
-          "property_address": "939 BEECHER ST, LOUISVILLE, KY 40215",
-          "normalized_address": "939 BEECHER ST",
-          "parcel_id": "052H00010000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "structural/foundation; dangerous tree; infestation; public hazard | X90 Tree | Priority: MEDIUM | Distress score: 9 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; dangerous tree; infestation; public hazard | Violations: X90 Tree | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019953-1 | Parcel: 052H00010000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 9
-        }
-      ],
-      "source_score": 34,
-      "source_score_reasons": [
-        "severe code indicators: foundation, structural"
-      ],
-      "qualification_errors": [],
-      "rejection_reasons": [
-        "priority_below_production_threshold",
-        "distress_below_production_threshold"
-      ],
-      "parcel_id": "052H00010000",
-      "lojic_parcel_verified": true,
-      "parcel_type": 0,
-      "pin": null,
-      "lot_sqft": 5554.0,
-      "lot_acres": 0.1275,
-      "landuse_name": "SINGLE FAMILY",
-      "pva_verified": true,
-      "pva_owner": "CALHOUN TIM W",
-      "pva_parcel_id": "052H00010000",
-      "pva_assessed_value": "69,280",
-      "pva_acres": "0.1275",
-      "pva_mailing_address": null,
-      "pva_situs_address": "939 BEECHER ST",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=052H00010000&propertySearchFormButton=Search&searchType=ParcelSearch",
-      "current_owner_individual": true,
-      "vacant_lot_context": false,
-      "candidate_type": "SFR",
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
-      "reaper_priority_score": 48,
-      "priority_reasons": [
-        "severe code distress",
-        "signal age <=3 days",
-        "current PVA owner verified individual",
-        "LOJIC exact single-family land use"
-      ],
-      "market_status": "UNKNOWN",
-      "market_source": "Zillow exact-address live check",
-      "market_url": "https://www.zillow.com/homes/939-BEECHER-ST-LOUISVILLE-KY-40215_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:49.292945-04:00",
-      "market_reason": "http_429",
-      "qualification_status": "REJECTED",
-      "distress_score": 34.0
+      "market_status": "NOT_CHECKED",
+      "market_source": null,
+      "market_url": null,
+      "market_checked_at_et": null,
+      "market_reason": "failed_pre_market_gate",
+      "qualification_status": "REJECTED"
     },
     {
       "property_key": "PARCEL::006G01350000",
@@ -2477,7 +2477,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/1351-DIXIE-HWY-LOUISVILLE-KY-40210_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:46.011831-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:41.108067-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -2545,7 +2545,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/1933-PAYNE-ST-LOUISVILLE-KY-40206_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:50.000938-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:42.627369-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -2613,7 +2613,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/6006-WHISPERING-HILLS-BLVD-LOUISVILLE-KY-40219_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:56.173065-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:47.122765-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -2681,7 +2681,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/1381-DIXIE-HWY-LOUISVILLE-KY-40210_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:56.821445-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:47.836229-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -2749,7 +2749,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/3601-GRISSOM-WAY-LOUISVILLE-KY-40229_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:57.167832-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:47.974270-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -2817,7 +2817,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/3602-GRISSOM-WAY-LOUISVILLE-KY-40229_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:57.875385-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:48.223959-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -2885,143 +2885,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/1303-S-1ST-ST-LOUISVILLE-KY-40208_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:58.878914-04:00",
-      "market_reason": "http_429",
-      "qualification_status": "REJECTED",
-      "distress_score": 34.0
-    },
-    {
-      "property_key": "PARCEL::104703220000",
-      "source_property_address": "10308 LA PLAZA DR, LOUISVILLE, KY 40272",
-      "source_parcel_id": "104703220000",
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-28",
-          "property_address": "10308 LA PLAZA DR, LOUISVILLE, KY 40272",
-          "normalized_address": "10308 LA PLAZA DR",
-          "parcel_id": "104703220000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "vacant/abandoned; abandoned vehicle | 05A Abandoned Vehicle | Priority: MEDIUM | Distress score: 7 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: vacant/abandoned; abandoned vehicle | Violations: 05A Abandoned Vehicle | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019797-1 | Parcel: 104703220000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 7
-        }
-      ],
-      "source_score": 34,
-      "source_score_reasons": [
-        "severe code indicators: abandon, vacant"
-      ],
-      "qualification_errors": [],
-      "rejection_reasons": [
-        "priority_below_production_threshold",
-        "distress_below_production_threshold"
-      ],
-      "parcel_id": "104703220000",
-      "lojic_parcel_verified": true,
-      "parcel_type": 0,
-      "pin": null,
-      "lot_sqft": 9213.3,
-      "lot_acres": 0.2115,
-      "landuse_name": "SINGLE FAMILY",
-      "pva_verified": true,
-      "pva_owner": "GUERRERO LUIS ALBERTO TAMAYO",
-      "pva_parcel_id": "104703220000",
-      "pva_assessed_value": "178,500",
-      "pva_acres": "0.2115",
-      "pva_mailing_address": null,
-      "pva_situs_address": "10308 LA PLAZA AVE",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=104703220000&propertySearchFormButton=Search&searchType=ParcelSearch",
-      "current_owner_individual": true,
-      "vacant_lot_context": false,
-      "candidate_type": "SFR",
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
-      "reaper_priority_score": 47,
-      "priority_reasons": [
-        "severe code distress",
-        "signal age <=3 days",
-        "current PVA owner verified individual",
-        "LOJIC exact single-family land use"
-      ],
-      "market_status": "UNKNOWN",
-      "market_source": "Zillow exact-address live check",
-      "market_url": "https://www.zillow.com/homes/10308-LA-PLAZA-DR-LOUISVILLE-KY-40272_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:01.273098-04:00",
-      "market_reason": "http_429",
-      "qualification_status": "REJECTED",
-      "distress_score": 34.0
-    },
-    {
-      "property_key": "PARCEL::128300060000",
-      "source_property_address": "4720 GOEPPER RD, LOUISVILLE, KY 40258",
-      "source_parcel_id": "128300060000",
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-28",
-          "property_address": "4720 GOEPPER RD, LOUISVILLE, KY 40258",
-          "normalized_address": "4720 GOEPPER RD",
-          "parcel_id": "128300060000",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "vacant/abandoned; abandoned vehicle | 05A Abandoned Vehicle | Priority: MEDIUM | Distress score: 7 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: vacant/abandoned; abandoned vehicle | Violations: 05A Abandoned Vehicle | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-25-007408-10 | Parcel: 128300060000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 7
-        }
-      ],
-      "source_score": 34,
-      "source_score_reasons": [
-        "severe code indicators: abandon, vacant"
-      ],
-      "qualification_errors": [],
-      "rejection_reasons": [
-        "priority_below_production_threshold",
-        "distress_below_production_threshold"
-      ],
-      "parcel_id": "128300060000",
-      "lojic_parcel_verified": true,
-      "parcel_type": 0,
-      "pin": null,
-      "lot_sqft": 12265.8,
-      "lot_acres": 0.2816,
-      "landuse_name": "SINGLE FAMILY",
-      "pva_verified": true,
-      "pva_owner": "COLEMAN DAVID WAYNE",
-      "pva_parcel_id": "128300060000",
-      "pva_assessed_value": "133,750",
-      "pva_acres": "0.2816",
-      "pva_mailing_address": null,
-      "pva_situs_address": "4720 GOEPPER RD",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=128300060000&propertySearchFormButton=Search&searchType=ParcelSearch",
-      "current_owner_individual": true,
-      "vacant_lot_context": false,
-      "candidate_type": "SFR",
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
-      "reaper_priority_score": 47,
-      "priority_reasons": [
-        "severe code distress",
-        "signal age <=3 days",
-        "current PVA owner verified individual",
-        "LOJIC exact single-family land use"
-      ],
-      "market_status": "UNKNOWN",
-      "market_source": "Zillow exact-address live check",
-      "market_url": "https://www.zillow.com/homes/4720-GOEPPER-RD-LOUISVILLE-KY-40258_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:01.757748-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:50.667435-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -3089,7 +2953,143 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/1385-DIXIE-HWY-LOUISVILLE-KY-40210_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:02.745304-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:50.843756-04:00",
+      "market_reason": "http_429",
+      "qualification_status": "REJECTED",
+      "distress_score": 34.0
+    },
+    {
+      "property_key": "PARCEL::104703220000",
+      "source_property_address": "10308 LA PLAZA DR, LOUISVILLE, KY 40272",
+      "source_parcel_id": "104703220000",
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-08-28",
+          "property_address": "10308 LA PLAZA DR, LOUISVILLE, KY 40272",
+          "normalized_address": "10308 LA PLAZA DR",
+          "parcel_id": "104703220000",
+          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "individual_party_likely": true,
+          "status": "Violation Notice",
+          "amount": null,
+          "details": "vacant/abandoned; abandoned vehicle | 05A Abandoned Vehicle | Priority: MEDIUM | Distress score: 7 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: vacant/abandoned; abandoned vehicle | Violations: 05A Abandoned Vehicle | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019797-1 | Parcel: 104703220000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 7
+        }
+      ],
+      "source_score": 34,
+      "source_score_reasons": [
+        "severe code indicators: abandon, vacant"
+      ],
+      "qualification_errors": [],
+      "rejection_reasons": [
+        "priority_below_production_threshold",
+        "distress_below_production_threshold"
+      ],
+      "parcel_id": "104703220000",
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9213.3,
+      "lot_acres": 0.2115,
+      "landuse_name": "SINGLE FAMILY",
+      "pva_verified": true,
+      "pva_owner": "GUERRERO LUIS ALBERTO TAMAYO",
+      "pva_parcel_id": "104703220000",
+      "pva_assessed_value": "178,500",
+      "pva_acres": "0.2115",
+      "pva_mailing_address": null,
+      "pva_situs_address": "10308 LA PLAZA AVE",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=104703220000&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "current_owner_individual": true,
+      "vacant_lot_context": false,
+      "candidate_type": "SFR",
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
+      "reaper_priority_score": 47,
+      "priority_reasons": [
+        "severe code distress",
+        "signal age <=3 days",
+        "current PVA owner verified individual",
+        "LOJIC exact single-family land use"
+      ],
+      "market_status": "UNKNOWN",
+      "market_source": "Zillow exact-address live check",
+      "market_url": "https://www.zillow.com/homes/10308-LA-PLAZA-DR-LOUISVILLE-KY-40272_rb/",
+      "market_checked_at_et": "2026-08-31T10:27:52.916328-04:00",
+      "market_reason": "http_429",
+      "qualification_status": "REJECTED",
+      "distress_score": 34.0
+    },
+    {
+      "property_key": "PARCEL::128300060000",
+      "source_property_address": "4720 GOEPPER RD, LOUISVILLE, KY 40258",
+      "source_parcel_id": "128300060000",
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-08-28",
+          "property_address": "4720 GOEPPER RD, LOUISVILLE, KY 40258",
+          "normalized_address": "4720 GOEPPER RD",
+          "parcel_id": "128300060000",
+          "party_or_owner": "LMG Codes & Regulations - Hold",
+          "individual_party_likely": true,
+          "status": "Hold",
+          "amount": null,
+          "details": "vacant/abandoned; abandoned vehicle | 05A Abandoned Vehicle | Priority: MEDIUM | Distress score: 7 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: vacant/abandoned; abandoned vehicle | Violations: 05A Abandoned Vehicle | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-25-007408-10 | Parcel: 128300060000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 7
+        }
+      ],
+      "source_score": 34,
+      "source_score_reasons": [
+        "severe code indicators: abandon, vacant"
+      ],
+      "qualification_errors": [],
+      "rejection_reasons": [
+        "priority_below_production_threshold",
+        "distress_below_production_threshold"
+      ],
+      "parcel_id": "128300060000",
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 12265.8,
+      "lot_acres": 0.2816,
+      "landuse_name": "SINGLE FAMILY",
+      "pva_verified": true,
+      "pva_owner": "COLEMAN DAVID WAYNE",
+      "pva_parcel_id": "128300060000",
+      "pva_assessed_value": "133,750",
+      "pva_acres": "0.2816",
+      "pva_mailing_address": null,
+      "pva_situs_address": "4720 GOEPPER RD",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=128300060000&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "current_owner_individual": true,
+      "vacant_lot_context": false,
+      "candidate_type": "SFR",
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
+      "reaper_priority_score": 47,
+      "priority_reasons": [
+        "severe code distress",
+        "signal age <=3 days",
+        "current PVA owner verified individual",
+        "LOJIC exact single-family land use"
+      ],
+      "market_status": "UNKNOWN",
+      "market_source": "Zillow exact-address live check",
+      "market_url": "https://www.zillow.com/homes/4720-GOEPPER-RD-LOUISVILLE-KY-40258_rb/",
+      "market_checked_at_et": "2026-08-31T10:27:53.659291-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -3157,7 +3157,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/1767-W-GAULBERT-AVE-LOUISVILLE-KY-40210_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:05.434149-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:54.046045-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -3225,7 +3225,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/708-PARKWAY-DR-LOUISVILLE-KY-40217_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:06.038755-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:55.483701-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -3293,7 +3293,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/4152-HICKMAN-AVE-LOUISVILLE-KY-40213_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:08.437242-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:59.008229-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -3361,7 +3361,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/5706-SOUTHSIDE-DR-LOUISVILLE-KY-40214_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:08.853077-04:00",
+      "market_checked_at_et": "2026-08-31T10:28:00.900332-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -3429,7 +3429,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/1377-DIXIE-HWY-LOUISVILLE-KY-40210_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:09.547807-04:00",
+      "market_checked_at_et": "2026-08-31T10:28:03.349295-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -3497,75 +3497,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/3810-CUTLER-RD-LOUISVILLE-KY-40219_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:11.498502-04:00",
-      "market_reason": "http_429",
-      "qualification_status": "REJECTED",
-      "distress_score": 34.0
-    },
-    {
-      "property_key": "PARCEL::043C00940000",
-      "source_property_address": "4224 W BROADWAY, LOUISVILLE, KY 40211",
-      "source_parcel_id": "043C00940000",
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-28",
-          "property_address": "4224 W BROADWAY, LOUISVILLE, KY 40211",
-          "normalized_address": "4224 W BROADWAY",
-          "parcel_id": "043C00940000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning | Priority: MEDIUM | Distress score: 6 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-009116-6 | Parcel: 043C00940000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 6
-        }
-      ],
-      "source_score": 34,
-      "source_score_reasons": [
-        "severe code indicators: foundation"
-      ],
-      "qualification_errors": [],
-      "rejection_reasons": [
-        "priority_below_production_threshold",
-        "distress_below_production_threshold"
-      ],
-      "parcel_id": "043C00940000",
-      "lojic_parcel_verified": true,
-      "parcel_type": 0,
-      "pin": null,
-      "lot_sqft": 12726.7,
-      "lot_acres": 0.2922,
-      "landuse_name": "SINGLE FAMILY",
-      "pva_verified": true,
-      "pva_owner": "BOYD VICTORIA G",
-      "pva_parcel_id": "043C00940000",
-      "pva_assessed_value": "144,520",
-      "pva_acres": "0.2922",
-      "pva_mailing_address": null,
-      "pva_situs_address": "4224 W BROADWAY",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=043C00940000&propertySearchFormButton=Search&searchType=ParcelSearch",
-      "current_owner_individual": true,
-      "vacant_lot_context": false,
-      "candidate_type": "SFR",
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
-      "reaper_priority_score": 47,
-      "priority_reasons": [
-        "severe code distress",
-        "signal age <=3 days",
-        "current PVA owner verified individual",
-        "LOJIC exact single-family land use"
-      ],
-      "market_status": "UNKNOWN",
-      "market_source": "Zillow exact-address live check",
-      "market_url": "https://www.zillow.com/homes/4224-W-BROADWAY-LOUISVILLE-KY-40211_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:12.679966-04:00",
+      "market_checked_at_et": "2026-08-31T10:28:03.821736-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -3633,15 +3565,15 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/3237-ROSEWEDGE-WAY-LOUISVILLE-KY-40216_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:13.971835-04:00",
+      "market_checked_at_et": "2026-08-31T10:28:05.147235-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
     },
     {
-      "property_key": "PARCEL::061L00090000",
-      "source_property_address": "403 FREEMAN AVE, LOUISVILLE, KY 40214",
-      "source_parcel_id": "061L00090000",
+      "property_key": "PARCEL::043C00940000",
+      "source_property_address": "4224 W BROADWAY, LOUISVILLE, KY 40211",
+      "source_parcel_id": "043C00940000",
       "sources": [
         "louisville_code_violations"
       ],
@@ -3650,14 +3582,14 @@
         {
           "source": "louisville_code_violations",
           "signal_date": "2026-08-28",
-          "property_address": "403 FREEMAN AVE, LOUISVILLE, KY 40214",
-          "normalized_address": "403 FREEMAN AVE",
-          "parcel_id": "061L00090000",
+          "property_address": "4224 W BROADWAY, LOUISVILLE, KY 40211",
+          "normalized_address": "4224 W BROADWAY",
+          "parcel_id": "043C00940000",
           "party_or_owner": "LMG Codes & Regulations - Violation Notice",
           "individual_party_likely": true,
           "status": "Violation Notice",
           "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning | Priority: MEDIUM | Distress score: 6 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019917-1 | Parcel: 061L00090000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning | Priority: MEDIUM | Distress score: 6 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-009116-6 | Parcel: 043C00940000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 6
         }
@@ -3671,21 +3603,21 @@
         "priority_below_production_threshold",
         "distress_below_production_threshold"
       ],
-      "parcel_id": "061L00090000",
+      "parcel_id": "043C00940000",
       "lojic_parcel_verified": true,
       "parcel_type": 0,
       "pin": null,
-      "lot_sqft": 5858.8,
-      "lot_acres": 0.1345,
+      "lot_sqft": 12726.7,
+      "lot_acres": 0.2922,
       "landuse_name": "SINGLE FAMILY",
       "pva_verified": true,
-      "pva_owner": "HO PETER & BUI JULIE MINH",
-      "pva_parcel_id": "061L00090000",
-      "pva_assessed_value": "102,880",
-      "pva_acres": "0.1345",
+      "pva_owner": "BOYD VICTORIA G",
+      "pva_parcel_id": "043C00940000",
+      "pva_assessed_value": "144,520",
+      "pva_acres": "0.2922",
       "pva_mailing_address": null,
-      "pva_situs_address": "403 FREEMAN AVE",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=061L00090000&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "pva_situs_address": "4224 W BROADWAY",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=043C00940000&propertySearchFormButton=Search&searchType=ParcelSearch",
       "current_owner_individual": true,
       "vacant_lot_context": false,
       "candidate_type": "SFR",
@@ -3700,8 +3632,8 @@
       ],
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
-      "market_url": "https://www.zillow.com/homes/403-FREEMAN-AVE-LOUISVILLE-KY-40214_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:15.415374-04:00",
+      "market_url": "https://www.zillow.com/homes/4224-W-BROADWAY-LOUISVILLE-KY-40211_rb/",
+      "market_checked_at_et": "2026-08-31T10:28:06.185275-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -3769,15 +3701,15 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/2512-WINDSOR-FOREST-DR-LOUISVILLE-KY-40272_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:16.052878-04:00",
+      "market_checked_at_et": "2026-08-31T10:28:07.271122-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
     },
     {
-      "property_key": "PARCEL::122300560005",
-      "source_property_address": "6007 MIDDLEROSE CIR, LOUISVILLE, KY 40272",
-      "source_parcel_id": "122300560005",
+      "property_key": "PARCEL::061L00090000",
+      "source_property_address": "403 FREEMAN AVE, LOUISVILLE, KY 40214",
+      "source_parcel_id": "061L00090000",
       "sources": [
         "louisville_code_violations"
       ],
@@ -3786,14 +3718,14 @@
         {
           "source": "louisville_code_violations",
           "signal_date": "2026-08-28",
-          "property_address": "6007 MIDDLEROSE CIR, LOUISVILLE, KY 40272",
-          "normalized_address": "6007 MIDDLEROSE CIR",
-          "parcel_id": "122300560005",
+          "property_address": "403 FREEMAN AVE, LOUISVILLE, KY 40214",
+          "normalized_address": "403 FREEMAN AVE",
+          "parcel_id": "061L00090000",
           "party_or_owner": "LMG Codes & Regulations - Violation Notice",
           "individual_party_likely": true,
           "status": "Violation Notice",
           "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning | Priority: MEDIUM | Distress score: 6 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019713-1 | Parcel: 122300560005 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning | Priority: MEDIUM | Distress score: 6 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019917-1 | Parcel: 061L00090000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 6
         }
@@ -3807,21 +3739,21 @@
         "priority_below_production_threshold",
         "distress_below_production_threshold"
       ],
-      "parcel_id": "122300560005",
+      "parcel_id": "061L00090000",
       "lojic_parcel_verified": true,
       "parcel_type": 0,
       "pin": null,
-      "lot_sqft": 8975.2,
-      "lot_acres": 0.206,
+      "lot_sqft": 5858.8,
+      "lot_acres": 0.1345,
       "landuse_name": "SINGLE FAMILY",
       "pva_verified": true,
-      "pva_owner": "SERRANO BEATRIZ ESCOBAR",
-      "pva_parcel_id": "122300560005",
-      "pva_assessed_value": "245,000",
-      "pva_acres": "0.2060",
+      "pva_owner": "HO PETER & BUI JULIE MINH",
+      "pva_parcel_id": "061L00090000",
+      "pva_assessed_value": "102,880",
+      "pva_acres": "0.1345",
       "pva_mailing_address": null,
-      "pva_situs_address": "6007 MIDDLEROSE CIR",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=122300560005&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "pva_situs_address": "403 FREEMAN AVE",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=061L00090000&propertySearchFormButton=Search&searchType=ParcelSearch",
       "current_owner_individual": true,
       "vacant_lot_context": false,
       "candidate_type": "SFR",
@@ -3836,8 +3768,8 @@
       ],
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
-      "market_url": "https://www.zillow.com/homes/6007-MIDDLEROSE-CIR-LOUISVILLE-KY-40272_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:16.188898-04:00",
+      "market_url": "https://www.zillow.com/homes/403-FREEMAN-AVE-LOUISVILLE-KY-40214_rb/",
+      "market_checked_at_et": "2026-08-31T10:28:08.570065-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -3905,7 +3837,75 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/427-N-25TH-ST-LOUISVILLE-KY-40212_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:16.289069-04:00",
+      "market_checked_at_et": "2026-08-31T10:28:08.758743-04:00",
+      "market_reason": "http_429",
+      "qualification_status": "REJECTED",
+      "distress_score": 34.0
+    },
+    {
+      "property_key": "PARCEL::122300560005",
+      "source_property_address": "6007 MIDDLEROSE CIR, LOUISVILLE, KY 40272",
+      "source_parcel_id": "122300560005",
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-08-28",
+          "property_address": "6007 MIDDLEROSE CIR, LOUISVILLE, KY 40272",
+          "normalized_address": "6007 MIDDLEROSE CIR",
+          "parcel_id": "122300560005",
+          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "individual_party_likely": true,
+          "status": "Violation Notice",
+          "amount": null,
+          "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning | Priority: MEDIUM | Distress score: 6 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019713-1 | Parcel: 122300560005 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 6
+        }
+      ],
+      "source_score": 34,
+      "source_score_reasons": [
+        "severe code indicators: foundation"
+      ],
+      "qualification_errors": [],
+      "rejection_reasons": [
+        "priority_below_production_threshold",
+        "distress_below_production_threshold"
+      ],
+      "parcel_id": "122300560005",
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 8975.2,
+      "lot_acres": 0.206,
+      "landuse_name": "SINGLE FAMILY",
+      "pva_verified": true,
+      "pva_owner": "SERRANO BEATRIZ ESCOBAR",
+      "pva_parcel_id": "122300560005",
+      "pva_assessed_value": "245,000",
+      "pva_acres": "0.2060",
+      "pva_mailing_address": null,
+      "pva_situs_address": "6007 MIDDLEROSE CIR",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=122300560005&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "current_owner_individual": true,
+      "vacant_lot_context": false,
+      "candidate_type": "SFR",
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
+      "reaper_priority_score": 47,
+      "priority_reasons": [
+        "severe code distress",
+        "signal age <=3 days",
+        "current PVA owner verified individual",
+        "LOJIC exact single-family land use"
+      ],
+      "market_status": "UNKNOWN",
+      "market_source": "Zillow exact-address live check",
+      "market_url": "https://www.zillow.com/homes/6007-MIDDLEROSE-CIR-LOUISVILLE-KY-40272_rb/",
+      "market_checked_at_et": "2026-08-31T10:28:09.517054-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -4047,74 +4047,6 @@
       "qualification_status": "REJECTED"
     },
     {
-      "property_key": "PARCEL::272800980000",
-      "source_property_address": "10408 GISELA CT, LOUISVILLE, KY 40118",
-      "source_parcel_id": "272800980000",
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-28",
-          "property_address": "10408 GISELA CT, LOUISVILLE, KY 40118",
-          "normalized_address": "10408 GISELA CT",
-          "parcel_id": "272800980000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning | Priority: MEDIUM | Distress score: 6 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019969-1 | Parcel: 272800980000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 6
-        }
-      ],
-      "source_score": 34,
-      "source_score_reasons": [
-        "severe code indicators: foundation"
-      ],
-      "qualification_errors": [],
-      "rejection_reasons": [
-        "priority_below_production_threshold",
-        "distress_below_production_threshold"
-      ],
-      "parcel_id": "272800980000",
-      "lojic_parcel_verified": true,
-      "parcel_type": 0,
-      "pin": null,
-      "lot_sqft": 9073.8,
-      "lot_acres": 0.2083,
-      "landuse_name": "SINGLE FAMILY",
-      "pva_verified": true,
-      "pva_owner": "WHITNEY LEANNE & WHITNEY BILLY JR",
-      "pva_parcel_id": "272800980000",
-      "pva_assessed_value": "218,220",
-      "pva_acres": "0.2083",
-      "pva_mailing_address": null,
-      "pva_situs_address": "10408 GISELA CT",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=272800980000&propertySearchFormButton=Search&searchType=ParcelSearch",
-      "current_owner_individual": true,
-      "vacant_lot_context": false,
-      "candidate_type": "SFR",
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
-      "reaper_priority_score": 47,
-      "priority_reasons": [
-        "severe code distress",
-        "signal age <=3 days",
-        "current PVA owner verified individual",
-        "LOJIC exact single-family land use"
-      ],
-      "market_status": "UNKNOWN",
-      "market_source": "Zillow exact-address live check",
-      "market_url": "https://www.zillow.com/homes/10408-GISELA-CT-LOUISVILLE-KY-40118_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:24.398760-04:00",
-      "market_reason": "http_429",
-      "qualification_status": "REJECTED",
-      "distress_score": 34.0
-    },
-    {
       "property_key": "PARCEL::073S01390000",
       "source_property_address": "200 LOGANBERRY CT, LOUISVILLE, KY 40207",
       "source_parcel_id": "073S01390000",
@@ -4183,6 +4115,74 @@
       "qualification_status": "REJECTED"
     },
     {
+      "property_key": "PARCEL::272800980000",
+      "source_property_address": "10408 GISELA CT, LOUISVILLE, KY 40118",
+      "source_parcel_id": "272800980000",
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-08-28",
+          "property_address": "10408 GISELA CT, LOUISVILLE, KY 40118",
+          "normalized_address": "10408 GISELA CT",
+          "parcel_id": "272800980000",
+          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "individual_party_likely": true,
+          "status": "Violation Notice",
+          "amount": null,
+          "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning | Priority: MEDIUM | Distress score: 6 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019969-1 | Parcel: 272800980000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 6
+        }
+      ],
+      "source_score": 34,
+      "source_score_reasons": [
+        "severe code indicators: foundation"
+      ],
+      "qualification_errors": [],
+      "rejection_reasons": [
+        "priority_below_production_threshold",
+        "distress_below_production_threshold"
+      ],
+      "parcel_id": "272800980000",
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9073.8,
+      "lot_acres": 0.2083,
+      "landuse_name": "SINGLE FAMILY",
+      "pva_verified": true,
+      "pva_owner": "WHITNEY LEANNE & WHITNEY BILLY JR",
+      "pva_parcel_id": "272800980000",
+      "pva_assessed_value": "218,220",
+      "pva_acres": "0.2083",
+      "pva_mailing_address": null,
+      "pva_situs_address": "10408 GISELA CT",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=272800980000&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "current_owner_individual": true,
+      "vacant_lot_context": false,
+      "candidate_type": "SFR",
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
+      "reaper_priority_score": 47,
+      "priority_reasons": [
+        "severe code distress",
+        "signal age <=3 days",
+        "current PVA owner verified individual",
+        "LOJIC exact single-family land use"
+      ],
+      "market_status": "UNKNOWN",
+      "market_source": "Zillow exact-address live check",
+      "market_url": "https://www.zillow.com/homes/10408-GISELA-CT-LOUISVILLE-KY-40118_rb/",
+      "market_checked_at_et": "2026-08-31T10:28:16.288014-04:00",
+      "market_reason": "http_429",
+      "qualification_status": "REJECTED",
+      "distress_score": 34.0
+    },
+    {
       "property_key": "PARCEL::031J00700000",
       "source_property_address": "1429 S 9TH ST, LOUISVILLE, KY 40208",
       "source_parcel_id": "031J00700000",
@@ -4245,7 +4245,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/1429-S-9TH-ST-LOUISVILLE-KY-40208_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:26.783901-04:00",
+      "market_checked_at_et": "2026-08-31T10:28:19.667679-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -4313,7 +4313,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/1832-W-LEE-ST-LOUISVILLE-KY-40210_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:28.467834-04:00",
+      "market_checked_at_et": "2026-08-31T10:28:23.853201-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -4449,7 +4449,7 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/2012-GARLAND-AVE-LOUISVILLE-KY-40210-0000_rb/",
-      "market_checked_at_et": "2026-08-31T10:13:33.616605-04:00",
+      "market_checked_at_et": "2026-08-31T10:28:25.363784-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "distress_score": 34.0
@@ -4649,11 +4649,76 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/1421-R-LEXINGTON-RD-LOUISVILLE-KY-40206_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:23.279148-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:17.292576-04:00",
       "market_reason": "http_403",
       "qualification_status": "REJECTED",
       "motivation_score": 34.0,
       "builder_fit_score": 50
+    },
+    {
+      "property_key": "PARCEL::033B01330134",
+      "source_property_address": "1427 S 2ND ST 5, LOUISVILLE, KY 40208",
+      "source_parcel_id": "033B01330134",
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-08-28",
+          "property_address": "1427 S 2ND ST 5, LOUISVILLE, KY 40208",
+          "normalized_address": "1427 S 2ND ST 5",
+          "parcel_id": "033B01330134",
+          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "individual_party_likely": true,
+          "status": "Violation Notice",
+          "amount": null,
+          "details": "fence/accessory; structural/foundation; sewage/plumbing; heating; windows/doors | E03, K09, T05, X72, I13 | Priority: HIGH | Distress score: 12 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: fence/accessory; structural/foundation; sewage/plumbing; heating; windows/doors | Violations: E03, K09, T05, X72, I13 | Violation rows: 5 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-014540-4 | Parcel: 033B01330134 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 12
+        }
+      ],
+      "source_score": 34,
+      "source_score_reasons": [
+        "severe code indicators: foundation, structural"
+      ],
+      "qualification_errors": [],
+      "rejection_reasons": [
+        "property_type_not_target"
+      ],
+      "parcel_id": "033B01330134",
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 19017.3,
+      "lot_acres": 0.4366,
+      "landuse_name": "MULTI-FAMILY",
+      "pva_verified": true,
+      "pva_owner": "ROOSA STEVEN A & NAN ELLEN S",
+      "pva_parcel_id": "033B01330134",
+      "pva_assessed_value": "660,410",
+      "pva_acres": "0.4366",
+      "pva_mailing_address": null,
+      "pva_situs_address": "1427 S 2ND ST",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=033B01330134&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "current_owner_individual": true,
+      "vacant_lot_context": false,
+      "candidate_type": null,
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
+      "reaper_priority_score": 45,
+      "priority_reasons": [
+        "severe code distress",
+        "signal age <=3 days",
+        "current PVA owner verified individual"
+      ],
+      "market_status": "NOT_CHECKED",
+      "market_source": null,
+      "market_url": null,
+      "market_checked_at_et": null,
+      "market_reason": "failed_pre_market_gate",
+      "qualification_status": "REJECTED"
     },
     {
       "property_key": "PARCEL::050E00540000",
@@ -4782,76 +4847,11 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/614-N-17TH-ST-LOUISVILLE-KY-40203_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:31.795769-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:24.404866-04:00",
       "market_reason": "http_403",
       "qualification_status": "REJECTED",
       "motivation_score": 34.0,
       "builder_fit_score": 50
-    },
-    {
-      "property_key": "PARCEL::033B01330134",
-      "source_property_address": "1427 S 2ND ST 5, LOUISVILLE, KY 40208",
-      "source_parcel_id": "033B01330134",
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-28",
-          "property_address": "1427 S 2ND ST 5, LOUISVILLE, KY 40208",
-          "normalized_address": "1427 S 2ND ST 5",
-          "parcel_id": "033B01330134",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "fence/accessory; structural/foundation; sewage/plumbing; heating; windows/doors | E03, K09, T05, X72, I13 | Priority: HIGH | Distress score: 12 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: fence/accessory; structural/foundation; sewage/plumbing; heating; windows/doors | Violations: E03, K09, T05, X72, I13 | Violation rows: 5 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-014540-4 | Parcel: 033B01330134 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 12
-        }
-      ],
-      "source_score": 34,
-      "source_score_reasons": [
-        "severe code indicators: foundation, structural"
-      ],
-      "qualification_errors": [],
-      "rejection_reasons": [
-        "property_type_not_target"
-      ],
-      "parcel_id": "033B01330134",
-      "lojic_parcel_verified": true,
-      "parcel_type": 0,
-      "pin": null,
-      "lot_sqft": 19017.3,
-      "lot_acres": 0.4366,
-      "landuse_name": "MULTI-FAMILY",
-      "pva_verified": true,
-      "pva_owner": "ROOSA STEVEN A & NAN ELLEN S",
-      "pva_parcel_id": "033B01330134",
-      "pva_assessed_value": "660,410",
-      "pva_acres": "0.4366",
-      "pva_mailing_address": null,
-      "pva_situs_address": "1427 S 2ND ST",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=033B01330134&propertySearchFormButton=Search&searchType=ParcelSearch",
-      "current_owner_individual": true,
-      "vacant_lot_context": false,
-      "candidate_type": null,
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
-      "reaper_priority_score": 45,
-      "priority_reasons": [
-        "severe code distress",
-        "signal age <=3 days",
-        "current PVA owner verified individual"
-      ],
-      "market_status": "NOT_CHECKED",
-      "market_source": null,
-      "market_url": null,
-      "market_checked_at_et": null,
-      "market_reason": "failed_pre_market_gate",
-      "qualification_status": "REJECTED"
     },
     {
       "property_key": "PARCEL::363300010000",
@@ -4980,76 +4980,11 @@
       "market_status": "UNKNOWN",
       "market_source": "Zillow exact-address live check",
       "market_url": "https://www.zillow.com/homes/1798-W-BURNETT-AVE-LOUISVILLE-KY-40210_rb/",
-      "market_checked_at_et": "2026-08-31T10:12:40.508701-04:00",
+      "market_checked_at_et": "2026-08-31T10:27:32.310943-04:00",
       "market_reason": "http_429",
       "qualification_status": "REJECTED",
       "motivation_score": 34.0,
       "builder_fit_score": 50
-    },
-    {
-      "property_key": "PARCEL::061E00800086",
-      "source_property_address": "600 GHEENS AVE, LOUISVILLE, KY 40214",
-      "source_parcel_id": "061E00800086",
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-28",
-          "property_address": "600 GHEENS AVE, LOUISVILLE, KY 40214",
-          "normalized_address": "600 GHEENS AVE",
-          "parcel_id": "061E00800086",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-011057-3 | Parcel: 061E00800086 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 10
-        }
-      ],
-      "source_score": 34,
-      "source_score_reasons": [
-        "severe code indicators: abandon, foundation, vacant"
-      ],
-      "qualification_errors": [],
-      "rejection_reasons": [
-        "property_type_not_target"
-      ],
-      "parcel_id": "061E00800086",
-      "lojic_parcel_verified": true,
-      "parcel_type": 0,
-      "pin": null,
-      "lot_sqft": 11192.3,
-      "lot_acres": 0.2569,
-      "landuse_name": "RIGHT-OF-WAY",
-      "pva_verified": true,
-      "pva_owner": "PHAM YEN NGOC",
-      "pva_parcel_id": "061E00800086",
-      "pva_assessed_value": "91,480",
-      "pva_acres": "0.2569",
-      "pva_mailing_address": null,
-      "pva_situs_address": "600 GHEENS AVE",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=061E00800086&propertySearchFormButton=Search&searchType=ParcelSearch",
-      "current_owner_individual": true,
-      "vacant_lot_context": false,
-      "candidate_type": null,
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
-      "reaper_priority_score": 45,
-      "priority_reasons": [
-        "severe code distress",
-        "signal age <=3 days",
-        "current PVA owner verified individual"
-      ],
-      "market_status": "NOT_CHECKED",
-      "market_source": null,
-      "market_url": null,
-      "market_checked_at_et": null,
-      "market_reason": "failed_pre_market_gate",
-      "qualification_status": "REJECTED"
     },
     {
       "property_key": "PARCEL::042B00990000",
@@ -5098,6 +5033,71 @@
       "pva_mailing_address": null,
       "pva_situs_address": "1452 S 9TH ST",
       "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=042B00990000&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "current_owner_individual": true,
+      "vacant_lot_context": false,
+      "candidate_type": null,
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
+      "reaper_priority_score": 45,
+      "priority_reasons": [
+        "severe code distress",
+        "signal age <=3 days",
+        "current PVA owner verified individual"
+      ],
+      "market_status": "NOT_CHECKED",
+      "market_source": null,
+      "market_url": null,
+      "market_checked_at_et": null,
+      "market_reason": "failed_pre_market_gate",
+      "qualification_status": "REJECTED"
+    },
+    {
+      "property_key": "PARCEL::061E00800086",
+      "source_property_address": "600 GHEENS AVE, LOUISVILLE, KY 40214",
+      "source_parcel_id": "061E00800086",
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-08-28",
+          "property_address": "600 GHEENS AVE, LOUISVILLE, KY 40214",
+          "normalized_address": "600 GHEENS AVE",
+          "parcel_id": "061E00800086",
+          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "individual_party_likely": true,
+          "status": "Violation Notice",
+          "amount": null,
+          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-011057-3 | Parcel: 061E00800086 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 10
+        }
+      ],
+      "source_score": 34,
+      "source_score_reasons": [
+        "severe code indicators: abandon, foundation, vacant"
+      ],
+      "qualification_errors": [],
+      "rejection_reasons": [
+        "property_type_not_target"
+      ],
+      "parcel_id": "061E00800086",
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 11192.3,
+      "lot_acres": 0.2569,
+      "landuse_name": "RIGHT-OF-WAY",
+      "pva_verified": true,
+      "pva_owner": "PHAM YEN NGOC",
+      "pva_parcel_id": "061E00800086",
+      "pva_assessed_value": "91,480",
+      "pva_acres": "0.2569",
+      "pva_mailing_address": null,
+      "pva_situs_address": "600 GHEENS AVE",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=061E00800086&propertySearchFormButton=Search&searchType=ParcelSearch",
       "current_owner_individual": true,
       "vacant_lot_context": false,
       "candidate_type": null,
@@ -5247,6 +5247,71 @@
       "qualification_status": "REJECTED"
     },
     {
+      "property_key": "PARCEL::061D00010000",
+      "source_property_address": "730 IROQUOIS AVE, LOUISVILLE, KY 40214",
+      "source_parcel_id": "061D00010000",
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-08-28",
+          "property_address": "730 IROQUOIS AVE, LOUISVILLE, KY 40214",
+          "normalized_address": "730 IROQUOIS AVE",
+          "parcel_id": "061D00010000",
+          "party_or_owner": "LMG Codes & Regulations - Emergency Referral",
+          "individual_party_likely": true,
+          "status": "Emergency Referral",
+          "amount": 1800.0,
+          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned; windows/doors | 02A Cleaning, 01A, X69 Address Numbers | Priority: HIGH | Distress score: 18 | Status: Emergency Referral | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; windows/doors | Violations: 02A Cleaning, 01A, X69 Address Numbers | Citation amount: $1800 | Violation rows: 3 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-011806-4 | Parcel: 061D00010000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 18
+        }
+      ],
+      "source_score": 34,
+      "source_score_reasons": [
+        "severe code indicators: abandon, foundation, vacant"
+      ],
+      "qualification_errors": [],
+      "rejection_reasons": [
+        "current_owner_not_verified_individual"
+      ],
+      "parcel_id": "061D00010000",
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 7663.8,
+      "lot_acres": 0.1759,
+      "landuse_name": "SINGLE FAMILY",
+      "pva_verified": true,
+      "pva_owner": "NEST HOLDINGS LLC",
+      "pva_parcel_id": "061D00010000",
+      "pva_assessed_value": "150,220",
+      "pva_acres": "0.1759",
+      "pva_mailing_address": null,
+      "pva_situs_address": "730 IROQUOIS AVE",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=061D00010000&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "current_owner_individual": false,
+      "vacant_lot_context": false,
+      "candidate_type": "SFR",
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
+      "reaper_priority_score": 44,
+      "priority_reasons": [
+        "severe code distress",
+        "signal age <=3 days",
+        "LOJIC exact single-family land use"
+      ],
+      "market_status": "NOT_CHECKED",
+      "market_source": null,
+      "market_url": null,
+      "market_checked_at_et": null,
+      "market_reason": "failed_pre_market_gate",
+      "qualification_status": "REJECTED"
+    },
+    {
       "property_key": "PARCEL::049B01690069",
       "source_property_address": "3408 CHAUNCEY AVE, LOUISVILLE, KY 40211",
       "source_parcel_id": "049B01690069",
@@ -5358,71 +5423,6 @@
       "pva_mailing_address": null,
       "pva_situs_address": "1763 DUMESNIL ST",
       "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=039A01000000&propertySearchFormButton=Search&searchType=ParcelSearch",
-      "current_owner_individual": false,
-      "vacant_lot_context": false,
-      "candidate_type": "SFR",
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
-      "reaper_priority_score": 44,
-      "priority_reasons": [
-        "severe code distress",
-        "signal age <=3 days",
-        "LOJIC exact single-family land use"
-      ],
-      "market_status": "NOT_CHECKED",
-      "market_source": null,
-      "market_url": null,
-      "market_checked_at_et": null,
-      "market_reason": "failed_pre_market_gate",
-      "qualification_status": "REJECTED"
-    },
-    {
-      "property_key": "PARCEL::061D00010000",
-      "source_property_address": "730 IROQUOIS AVE, LOUISVILLE, KY 40214",
-      "source_parcel_id": "061D00010000",
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-28",
-          "property_address": "730 IROQUOIS AVE, LOUISVILLE, KY 40214",
-          "normalized_address": "730 IROQUOIS AVE",
-          "parcel_id": "061D00010000",
-          "party_or_owner": "LMG Codes & Regulations - Emergency Referral",
-          "individual_party_likely": true,
-          "status": "Emergency Referral",
-          "amount": 1800.0,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned; windows/doors | 02A Cleaning, 01A, X69 Address Numbers | Priority: HIGH | Distress score: 18 | Status: Emergency Referral | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; windows/doors | Violations: 02A Cleaning, 01A, X69 Address Numbers | Citation amount: $1800 | Violation rows: 3 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-011806-4 | Parcel: 061D00010000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 18
-        }
-      ],
-      "source_score": 34,
-      "source_score_reasons": [
-        "severe code indicators: abandon, foundation, vacant"
-      ],
-      "qualification_errors": [],
-      "rejection_reasons": [
-        "current_owner_not_verified_individual"
-      ],
-      "parcel_id": "061D00010000",
-      "lojic_parcel_verified": true,
-      "parcel_type": 0,
-      "pin": null,
-      "lot_sqft": 7663.8,
-      "lot_acres": 0.1759,
-      "landuse_name": "SINGLE FAMILY",
-      "pva_verified": true,
-      "pva_owner": "NEST HOLDINGS LLC",
-      "pva_parcel_id": "061D00010000",
-      "pva_assessed_value": "150,220",
-      "pva_acres": "0.1759",
-      "pva_mailing_address": null,
-      "pva_situs_address": "730 IROQUOIS AVE",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=061D00010000&propertySearchFormButton=Search&searchType=ParcelSearch",
       "current_owner_individual": false,
       "vacant_lot_context": false,
       "candidate_type": "SFR",
@@ -6301,9 +6301,9 @@
       "qualification_status": "REJECTED"
     },
     {
-      "property_key": "PARCEL::041F00770000",
-      "source_property_address": "1763 W GAULBERT AVE, LOUISVILLE, KY 40210",
-      "source_parcel_id": "041F00770000",
+      "property_key": "PARCEL::134701070000",
+      "source_property_address": "501 CANDLELIGHT LN, LOUISVILLE, KY 40214",
+      "source_parcel_id": "134701070000",
       "sources": [
         "louisville_code_violations"
       ],
@@ -6312,16 +6312,16 @@
         {
           "source": "louisville_code_violations",
           "signal_date": "2026-08-28",
-          "property_address": "1763 W GAULBERT AVE, LOUISVILLE, KY 40210",
-          "normalized_address": "1763 W GAULBERT AVE",
-          "parcel_id": "041F00770000",
+          "property_address": "501 CANDLELIGHT LN, LOUISVILLE, KY 40214",
+          "normalized_address": "501 CANDLELIGHT LN",
+          "parcel_id": "134701070000",
           "party_or_owner": "LMG Codes & Regulations - Violation Notice",
           "individual_party_likely": true,
           "status": "Violation Notice",
           "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning, R01 Rental Reg. | Priority: MEDIUM | Distress score: 7 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning, R01 Rental Reg. | Violation rows: 2 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019863-1 | Parcel: 041F00770000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "details": "sewage/plumbing; windows/doors; exterior/foundation | E03, P03, I13, X07 | Priority: MEDIUM | Distress score: 8 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: sewage/plumbing; windows/doors; exterior/foundation | Violations: E03, P03, I13, X07 | Violation rows: 5 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019816-2 | Parcel: 134701070000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 7
+          "raw_distress_score": 8
         }
       ],
       "source_score": 34,
@@ -6332,21 +6332,21 @@
       "rejection_reasons": [
         "current_owner_not_verified_individual"
       ],
-      "parcel_id": "041F00770000",
+      "parcel_id": "134701070000",
       "lojic_parcel_verified": true,
       "parcel_type": 0,
       "pin": null,
-      "lot_sqft": 3094.9,
-      "lot_acres": 0.071,
+      "lot_sqft": 15904.1,
+      "lot_acres": 0.3651,
       "landuse_name": "SINGLE FAMILY",
       "pva_verified": true,
-      "pva_owner": "JK HOUSES LLC",
-      "pva_parcel_id": "041F00770000",
-      "pva_assessed_value": "77,890",
-      "pva_acres": "0.0710",
+      "pva_owner": "BAF ASSETS 6 LLC",
+      "pva_parcel_id": "134701070000",
+      "pva_assessed_value": "302,050",
+      "pva_acres": "0.3651",
       "pva_mailing_address": null,
-      "pva_situs_address": "1763 W GAULBERT AVE",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=041F00770000&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "pva_situs_address": "501 CANDLELIGHT LN",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=134701070000&propertySearchFormButton=Search&searchType=ParcelSearch",
       "current_owner_individual": false,
       "vacant_lot_context": false,
       "candidate_type": "SFR",
@@ -6434,6 +6434,71 @@
       "qualification_status": "REJECTED"
     },
     {
+      "property_key": "PARCEL::041F00770000",
+      "source_property_address": "1763 W GAULBERT AVE, LOUISVILLE, KY 40210",
+      "source_parcel_id": "041F00770000",
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-08-28",
+          "property_address": "1763 W GAULBERT AVE, LOUISVILLE, KY 40210",
+          "normalized_address": "1763 W GAULBERT AVE",
+          "parcel_id": "041F00770000",
+          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "individual_party_likely": true,
+          "status": "Violation Notice",
+          "amount": null,
+          "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning, R01 Rental Reg. | Priority: MEDIUM | Distress score: 7 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning, R01 Rental Reg. | Violation rows: 2 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019863-1 | Parcel: 041F00770000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 7
+        }
+      ],
+      "source_score": 34,
+      "source_score_reasons": [
+        "severe code indicators: foundation"
+      ],
+      "qualification_errors": [],
+      "rejection_reasons": [
+        "current_owner_not_verified_individual"
+      ],
+      "parcel_id": "041F00770000",
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3094.9,
+      "lot_acres": 0.071,
+      "landuse_name": "SINGLE FAMILY",
+      "pva_verified": true,
+      "pva_owner": "JK HOUSES LLC",
+      "pva_parcel_id": "041F00770000",
+      "pva_assessed_value": "77,890",
+      "pva_acres": "0.0710",
+      "pva_mailing_address": null,
+      "pva_situs_address": "1763 W GAULBERT AVE",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=041F00770000&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "current_owner_individual": false,
+      "vacant_lot_context": false,
+      "candidate_type": "SFR",
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
+      "reaper_priority_score": 42,
+      "priority_reasons": [
+        "severe code distress",
+        "signal age <=3 days",
+        "LOJIC exact single-family land use"
+      ],
+      "market_status": "NOT_CHECKED",
+      "market_source": null,
+      "market_url": null,
+      "market_checked_at_et": null,
+      "market_reason": "failed_pre_market_gate",
+      "qualification_status": "REJECTED"
+    },
+    {
       "property_key": "PARCEL::070A00060000",
       "source_property_address": "1945 PAYNE ST, LOUISVILLE, KY 40206",
       "source_parcel_id": "070A00060000",
@@ -6480,71 +6545,6 @@
       "pva_mailing_address": null,
       "pva_situs_address": "1945 PAYNE ST",
       "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=070A00060000&propertySearchFormButton=Search&searchType=ParcelSearch",
-      "current_owner_individual": false,
-      "vacant_lot_context": false,
-      "candidate_type": "SFR",
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
-      "reaper_priority_score": 42,
-      "priority_reasons": [
-        "severe code distress",
-        "signal age <=3 days",
-        "LOJIC exact single-family land use"
-      ],
-      "market_status": "NOT_CHECKED",
-      "market_source": null,
-      "market_url": null,
-      "market_checked_at_et": null,
-      "market_reason": "failed_pre_market_gate",
-      "qualification_status": "REJECTED"
-    },
-    {
-      "property_key": "PARCEL::134701070000",
-      "source_property_address": "501 CANDLELIGHT LN, LOUISVILLE, KY 40214",
-      "source_parcel_id": "134701070000",
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-28",
-          "property_address": "501 CANDLELIGHT LN, LOUISVILLE, KY 40214",
-          "normalized_address": "501 CANDLELIGHT LN",
-          "parcel_id": "134701070000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "sewage/plumbing; windows/doors; exterior/foundation | E03, P03, I13, X07 | Priority: MEDIUM | Distress score: 8 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: sewage/plumbing; windows/doors; exterior/foundation | Violations: E03, P03, I13, X07 | Violation rows: 5 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-019816-2 | Parcel: 134701070000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 8
-        }
-      ],
-      "source_score": 34,
-      "source_score_reasons": [
-        "severe code indicators: foundation"
-      ],
-      "qualification_errors": [],
-      "rejection_reasons": [
-        "current_owner_not_verified_individual"
-      ],
-      "parcel_id": "134701070000",
-      "lojic_parcel_verified": true,
-      "parcel_type": 0,
-      "pin": null,
-      "lot_sqft": 15904.1,
-      "lot_acres": 0.3651,
-      "landuse_name": "SINGLE FAMILY",
-      "pva_verified": true,
-      "pva_owner": "BAF ASSETS 6 LLC",
-      "pva_parcel_id": "134701070000",
-      "pva_assessed_value": "302,050",
-      "pva_acres": "0.3651",
-      "pva_mailing_address": null,
-      "pva_situs_address": "501 CANDLELIGHT LN",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=134701070000&propertySearchFormButton=Search&searchType=ParcelSearch",
       "current_owner_individual": false,
       "vacant_lot_context": false,
       "candidate_type": "SFR",
@@ -6759,71 +6759,6 @@
       "qualification_status": "REJECTED"
     },
     {
-      "property_key": "PARCEL::006G01690000",
-      "source_property_address": "651 S 37TH ST, LOUISVILLE, KY 40211",
-      "source_parcel_id": "006G01690000",
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-28",
-          "property_address": "651 S 37TH ST, LOUISVILLE, KY 40211",
-          "normalized_address": "651 S 37TH ST",
-          "parcel_id": "006G01690000",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "windows/doors; vacant/abandoned | I13 | Priority: MEDIUM | Distress score: 6 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: windows/doors; vacant/abandoned | Violations: I13 | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-010913-3 | Parcel: 006G01690000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 6
-        }
-      ],
-      "source_score": 34,
-      "source_score_reasons": [
-        "severe code indicators: abandon, vacant"
-      ],
-      "qualification_errors": [],
-      "rejection_reasons": [
-        "current_owner_not_verified_individual"
-      ],
-      "parcel_id": "006G01690000",
-      "lojic_parcel_verified": true,
-      "parcel_type": 0,
-      "pin": null,
-      "lot_sqft": 5999.2,
-      "lot_acres": 0.1377,
-      "landuse_name": "SINGLE FAMILY",
-      "pva_verified": true,
-      "pva_owner": "SFR WORKFORCE OWNER LLC",
-      "pva_parcel_id": "006G01690000",
-      "pva_assessed_value": "78,070",
-      "pva_acres": "0.1377",
-      "pva_mailing_address": null,
-      "pva_situs_address": "651 S 37TH ST",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=006G01690000&propertySearchFormButton=Search&searchType=ParcelSearch",
-      "current_owner_individual": false,
-      "vacant_lot_context": false,
-      "candidate_type": "SFR",
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
-      "reaper_priority_score": 42,
-      "priority_reasons": [
-        "severe code distress",
-        "signal age <=3 days",
-        "LOJIC exact single-family land use"
-      ],
-      "market_status": "NOT_CHECKED",
-      "market_source": null,
-      "market_url": null,
-      "market_checked_at_et": null,
-      "market_reason": "failed_pre_market_gate",
-      "qualification_status": "REJECTED"
-    },
-    {
       "property_key": "PARCEL::041F01750000",
       "source_property_address": "1775 BOLLING AVE, LOUISVILLE, KY 40210",
       "source_parcel_id": "041F01750000",
@@ -6870,6 +6805,71 @@
       "pva_mailing_address": null,
       "pva_situs_address": "1775 BOLLING AVE",
       "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=041F01750000&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "current_owner_individual": false,
+      "vacant_lot_context": false,
+      "candidate_type": "SFR",
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
+      "reaper_priority_score": 42,
+      "priority_reasons": [
+        "severe code distress",
+        "signal age <=3 days",
+        "LOJIC exact single-family land use"
+      ],
+      "market_status": "NOT_CHECKED",
+      "market_source": null,
+      "market_url": null,
+      "market_checked_at_et": null,
+      "market_reason": "failed_pre_market_gate",
+      "qualification_status": "REJECTED"
+    },
+    {
+      "property_key": "PARCEL::006G01690000",
+      "source_property_address": "651 S 37TH ST, LOUISVILLE, KY 40211",
+      "source_parcel_id": "006G01690000",
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-08-28",
+          "property_address": "651 S 37TH ST, LOUISVILLE, KY 40211",
+          "normalized_address": "651 S 37TH ST",
+          "parcel_id": "006G01690000",
+          "party_or_owner": "LMG Codes & Regulations - Hold",
+          "individual_party_likely": true,
+          "status": "Hold",
+          "amount": null,
+          "details": "windows/doors; vacant/abandoned | I13 | Priority: MEDIUM | Distress score: 6 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: windows/doors; vacant/abandoned | Violations: I13 | Violation rows: 1 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-010913-3 | Parcel: 006G01690000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 6
+        }
+      ],
+      "source_score": 34,
+      "source_score_reasons": [
+        "severe code indicators: abandon, vacant"
+      ],
+      "qualification_errors": [],
+      "rejection_reasons": [
+        "current_owner_not_verified_individual"
+      ],
+      "parcel_id": "006G01690000",
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5999.2,
+      "lot_acres": 0.1377,
+      "landuse_name": "SINGLE FAMILY",
+      "pva_verified": true,
+      "pva_owner": "SFR WORKFORCE OWNER LLC",
+      "pva_parcel_id": "006G01690000",
+      "pva_assessed_value": "78,070",
+      "pva_acres": "0.1377",
+      "pva_mailing_address": null,
+      "pva_situs_address": "651 S 37TH ST",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=006G01690000&propertySearchFormButton=Search&searchType=ParcelSearch",
       "current_owner_individual": false,
       "vacant_lot_context": false,
       "candidate_type": "SFR",
@@ -7415,71 +7415,6 @@
       "qualification_status": "REJECTED"
     },
     {
-      "property_key": "PARCEL::061L00220000",
-      "source_property_address": "6200 S 3RD ST, LOUISVILLE, KY 40214",
-      "source_parcel_id": "061L00220000",
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-28",
-          "property_address": "6200 S 3RD ST, LOUISVILLE, KY 40214",
-          "normalized_address": "6200 S 3RD ST",
-          "parcel_id": "061L00220000",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; structural/foundation; fence/accessory; vacant/abandoned; abandoned vehicle; windows/doors | 02A Cleaning, X78 Fence/Accessory, 05A Abandoned Vehicle, X07, Z01 | Priority: HIGH | Distress score: 19 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; structural/foundation; fence/accessory; vacant/abandoned; abandoned vehicle; windows/doors | Violations: 02A Cleaning, X78 Fence/Accessory, 05A Abandoned Vehicle, X07, Z01 | Violation rows: 5 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-008790-11 | Parcel: 061L00220000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 19
-        }
-      ],
-      "source_score": 34,
-      "source_score_reasons": [
-        "severe code indicators: abandon, foundation, structural, vacant"
-      ],
-      "qualification_errors": [],
-      "rejection_reasons": [
-        "current_owner_not_verified_individual",
-        "property_type_not_target"
-      ],
-      "parcel_id": "061L00220000",
-      "lojic_parcel_verified": true,
-      "parcel_type": 0,
-      "pin": null,
-      "lot_sqft": 5276.4,
-      "lot_acres": 0.1211,
-      "landuse_name": "PUBLIC AND SEMI-PUBLIC",
-      "pva_verified": true,
-      "pva_owner": "MASJID BILAL ISLAMIC CENTER INC",
-      "pva_parcel_id": "061L00220000",
-      "pva_assessed_value": "1,070",
-      "pva_acres": "0.1211",
-      "pva_mailing_address": null,
-      "pva_situs_address": "6200 S 3RD ST",
-      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=061L00220000&propertySearchFormButton=Search&searchType=ParcelSearch",
-      "current_owner_individual": false,
-      "vacant_lot_context": false,
-      "candidate_type": null,
-      "freshness_state": "FRESH",
-      "freshness_reasons": [],
-      "reaper_priority_score": 41,
-      "priority_reasons": [
-        "severe code distress",
-        "signal age <=3 days"
-      ],
-      "market_status": "NOT_CHECKED",
-      "market_source": null,
-      "market_url": null,
-      "market_checked_at_et": null,
-      "market_reason": "failed_pre_market_gate",
-      "qualification_status": "REJECTED"
-    },
-    {
       "property_key": "PARCEL::109101100001",
       "source_property_address": "4713 WALNUT GROVE AVE, LOUISVILLE, KY 40216",
       "source_parcel_id": "109101100001",
@@ -7603,6 +7538,71 @@
       "freshness_reasons": [
         "previous_code_queue_seen"
       ],
+      "reaper_priority_score": 41,
+      "priority_reasons": [
+        "severe code distress",
+        "signal age <=3 days"
+      ],
+      "market_status": "NOT_CHECKED",
+      "market_source": null,
+      "market_url": null,
+      "market_checked_at_et": null,
+      "market_reason": "failed_pre_market_gate",
+      "qualification_status": "REJECTED"
+    },
+    {
+      "property_key": "PARCEL::061L00220000",
+      "source_property_address": "6200 S 3RD ST, LOUISVILLE, KY 40214",
+      "source_parcel_id": "061L00220000",
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-08-28",
+          "property_address": "6200 S 3RD ST, LOUISVILLE, KY 40214",
+          "normalized_address": "6200 S 3RD ST",
+          "parcel_id": "061L00220000",
+          "party_or_owner": "LMG Codes & Regulations - Hold",
+          "individual_party_likely": true,
+          "status": "Hold",
+          "amount": null,
+          "details": "exterior/foundation; trash/weeds; graffiti; structural/foundation; fence/accessory; vacant/abandoned; abandoned vehicle; windows/doors | 02A Cleaning, X78 Fence/Accessory, 05A Abandoned Vehicle, X07, Z01 | Priority: HIGH | Distress score: 19 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; structural/foundation; fence/accessory; vacant/abandoned; abandoned vehicle; windows/doors | Violations: 02A Cleaning, X78 Fence/Accessory, 05A Abandoned Vehicle, X07, Z01 | Violation rows: 5 | Date: 2026-08-28 | Case IDs: ENF-PMNT-26-008790-11 | Parcel: 061L00220000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 19
+        }
+      ],
+      "source_score": 34,
+      "source_score_reasons": [
+        "severe code indicators: abandon, foundation, structural, vacant"
+      ],
+      "qualification_errors": [],
+      "rejection_reasons": [
+        "current_owner_not_verified_individual",
+        "property_type_not_target"
+      ],
+      "parcel_id": "061L00220000",
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5276.4,
+      "lot_acres": 0.1211,
+      "landuse_name": "PUBLIC AND SEMI-PUBLIC",
+      "pva_verified": true,
+      "pva_owner": "MASJID BILAL ISLAMIC CENTER INC",
+      "pva_parcel_id": "061L00220000",
+      "pva_assessed_value": "1,070",
+      "pva_acres": "0.1211",
+      "pva_mailing_address": null,
+      "pva_situs_address": "6200 S 3RD ST",
+      "pva_url": "https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=061L00220000&propertySearchFormButton=Search&searchType=ParcelSearch",
+      "current_owner_individual": false,
+      "vacant_lot_context": false,
+      "candidate_type": null,
+      "freshness_state": "FRESH",
+      "freshness_reasons": [],
       "reaper_priority_score": 41,
       "priority_reasons": [
         "severe code distress",
@@ -8872,5 +8872,5 @@
     "Callable off-market status uses the Reaper multi-source exact-address resolver. Any confirmed active, coming-soon, pending, contingent, FSBO, or auction marketing excludes the property. A blocked portal is recorded as UNKNOWN and is not treated as a negative. OFF_MARKET requires either two independent direct explicit off-market pages, or one direct explicit off-market page plus completed checks across at least three independent market sources with no current public marketing found.",
     "Zillow is retained as one market signal but is not a single point of failure; HTTP 403/429 responses do not by themselves determine market status."
   ],
-  "runtime_seconds": 103.53
+  "runtime_seconds": 99.8
 }
