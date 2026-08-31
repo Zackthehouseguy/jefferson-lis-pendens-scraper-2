@@ -62,8 +62,8 @@ def property_material_revision(rows: list[dict[str, Any]]) -> str:
 def qualify_house(row: dict[str, Any]) -> bool:
     try:
         return (
-            int(row.get("priority_score") or 0) >= 60
-            and int(row.get("distress_score") or 0) >= 50
+            int(row.get("priority_score") or row.get("reaper_priority_score") or 0) >= 60
+            and int(row.get("distress_score") or row.get("source_score") or 0) >= 50
             and clean(row.get("landuse_name")).upper() == "SINGLE FAMILY"
             and bool(row.get("lojic_parcel_verified", True))
         )
@@ -76,12 +76,13 @@ def qualify_land(row: dict[str, Any]) -> bool:
         site = clean(row.get("occupancy") or row.get("site_status") or "vacant lot").upper()
         land_context = (
             "VACANT" in site
+            or bool(row.get("vacant_lot_context"))
             or "VACANT LOT" in clean(row.get("recent_window_occupancies")).upper()
-            or clean(row.get("property_type")).upper() == "LAND"
+            or clean(row.get("property_type") or row.get("candidate_type")).upper() == "LAND"
         )
         return (
-            int(row.get("priority_score") or 0) >= 60
-            and int(row.get("motivation_score") or 0) >= 50
+            int(row.get("priority_score") or row.get("reaper_priority_score") or 0) >= 60
+            and int(row.get("motivation_score") or row.get("source_score") or 0) >= 50
             and int(row.get("builder_fit_score") or 0) >= 50
             and land_context
             and bool(row.get("lojic_parcel_verified", True))
@@ -97,16 +98,16 @@ def load_rows(path: Path, kind: str) -> list[dict[str, Any]]:
     if isinstance(data, list):
         rows = data
     elif kind == "house":
-        rows = data.get("houses") or data.get("ranked_live_leads") or data.get("qualified_houses") or []
+        rows = data.get("houses") or data.get("ranked_live_leads") or data.get("qualified_houses") or data.get("eligible_sfr") or []
     else:
-        rows = data.get("land") or data.get("ranked_land") or data.get("qualified_land") or []
+        rows = data.get("land") or data.get("ranked_land") or data.get("qualified_land") or data.get("eligible_land") or []
     return [r for r in rows if isinstance(r, dict)]
 
 
 def row_sort_key(r: dict[str, Any]) -> tuple[int, int, int]:
     return (
-        int(r.get("priority_score") or 0),
-        int(r.get("distress_score") or r.get("motivation_score") or 0),
+        int(r.get("priority_score") or r.get("reaper_priority_score") or 0),
+        int(r.get("distress_score") or r.get("motivation_score") or r.get("source_score") or 0),
         -int(r.get("saturation_score") or 100),
     )
 
@@ -212,7 +213,7 @@ def allocate_kind(
             "last_material_revision": revision,
             "reactivation_count": react_count + (1 if is_reactivation else 0),
             "parcel_id": clean(row.get("parcel_id")) or None,
-            "property_address": clean(row.get("property_address")) or None,
+            "property_address": clean(row.get("property_address") or row.get("source_property_address")) or None,
         }
 
         delivered = dict(row)
