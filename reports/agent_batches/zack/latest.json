@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "agent_id": "zack",
-  "generated_at": "2026-08-29T12:00:25.767181+00:00",
+  "generated_at": "2026-08-31T12:20:30.567048+00:00",
   "houses": [],
   "land": [],
   "summary": {
@@ -9,23 +9,23 @@
     "land_delivered": 0,
     "total_delivered": 0,
     "house_stats": {
-      "seen": 25,
+      "seen": 0,
       "failed_quality": 0,
       "duplicate_property_rows_collapsed": 0,
-      "qualified_unique_properties": 25,
+      "qualified_unique_properties": 0,
       "assigned_other": 0,
-      "unchanged_self": 25,
+      "unchanged_self": 0,
       "dnc_or_closed": 0,
       "new_assignments": 0,
       "reactivations": 0
     },
     "land_stats": {
-      "seen": 20,
+      "seen": 0,
       "failed_quality": 0,
       "duplicate_property_rows_collapsed": 0,
-      "qualified_unique_properties": 20,
+      "qualified_unique_properties": 0,
       "assigned_other": 0,
-      "unchanged_self": 20,
+      "unchanged_self": 0,
       "dnc_or_closed": 0,
       "new_assignments": 0,
       "reactivations": 0
