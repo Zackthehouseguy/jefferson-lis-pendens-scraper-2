@@ -1,10 +1,10 @@
 # Reaper Bulk Qualification
 
-Generated: 2026-08-27T08:14:55.039625-04:00
-Input candidates: 610
+Generated: 2026-08-31T08:17:58.516904-04:00
+Input candidates: 132
 Eligible SFR: 0
 Eligible land: 0
-Market unknown: 238
+Market unknown: 55
 
 ## Eligible SFR
 
