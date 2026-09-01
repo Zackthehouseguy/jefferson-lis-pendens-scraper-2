@@ -7,7 +7,6 @@ on:
       - ".github/workflows/reaper-multi-source-live.yml"
       - "scrapers/probe/reaper_multi_source_stack.py"
       - "scrapers/probe/reaper_bulk_qualify.py"
-      - "scrapers/probe/reaper_market_resolve.py"
   workflow_dispatch:
 
 permissions:
@@ -39,9 +38,6 @@ jobs:
           pip install -r requirements.txt
           pip install playwright
           playwright install --with-deps chromium
-
-      - name: Validate multi-source market resolver
-        run: python -m py_compile scrapers/probe/reaper_market_resolve.py
 
       - name: Set live query window
         run: |
@@ -102,7 +98,7 @@ jobs:
           print(f"bulk qualification input={len(fresh)}")
           PY
 
-      - name: Verify every fresh candidate through PVA, LOJIC, freshness, type, and initial market gate
+      - name: Verify every fresh candidate through PVA, LOJIC, freshness, type, and quality gates
         run: |
           python -m scrapers.probe.reaper_bulk_qualify \
             --stacked /tmp/reaper_bulk_input.json \
@@ -112,14 +108,6 @@ jobs:
             --out reports/reaper_multi_source_live/bulk_qualified.json \
             --md reports/reaper_multi_source_live/bulk_qualified.md \
             --workers 10
-
-      - name: Resolve current market status across multiple live public sources
-        run: |
-          python -m scrapers.probe.reaper_market_resolve \
-            --input reports/reaper_multi_source_live/bulk_qualified.json \
-            --output reports/reaper_multi_source_live/bulk_qualified.json \
-            --md reports/reaper_multi_source_live/bulk_qualified.md \
-            --workers 4
 
       - name: Add source execution metadata
         run: |
@@ -170,5 +158,3 @@ jobs:
             reports/reaper_multi_source_live/
           if-no-files-found: error
           retention-days: 14
-
-# market-resolver-v2: multi-source exact-address gate

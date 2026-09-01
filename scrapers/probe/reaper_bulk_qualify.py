@@ -288,60 +288,6 @@ def vacant_lot_context(row: dict) -> bool:
     )
 
 
-def market_status_zillow(address: str) -> dict:
-    result = {
-        "market_status": "UNKNOWN",
-        "market_source": "Zillow exact-address live check",
-        "market_url": None,
-        "market_checked_at_et": datetime.now(timezone.utc).astimezone(ET).isoformat(),
-        "market_reason": None,
-    }
-    slug = re.sub(r"[^A-Za-z0-9]+", "-", clean(address)).strip("-")
-    url = f"https://www.zillow.com/homes/{quote(slug)}_rb/"
-    try:
-        r = session().get(url, timeout=20, allow_redirects=True)
-        result["market_url"] = r.url
-        if r.status_code in (403, 429):
-            result["market_reason"] = f"http_{r.status_code}"
-            return result
-        r.raise_for_status()
-        html = r.text or ""
-        low = html.lower()
-        expected = norm_addr(address)
-        title = ""
-        m = re.search(r"<title[^>]*>(.*?)</title>", html, re.I | re.S)
-        if m:
-            title = BeautifulSoup(m.group(1), "html.parser").get_text(" ", strip=True)
-        address_match = bool(expected and expected in norm_addr(title))
-        if not address_match:
-            house, street = addr_parts(address)
-            probe = f"{house} {street}" if house else expected
-            address_match = bool(probe and probe in norm_addr(html[:250000]))
-        if not address_match:
-            result["market_reason"] = "exact_address_not_confirmed"
-            return result
-        statuses = set(re.findall(r'"homeStatus"\s*:\s*"([A-Z_]+)"', html))
-        if statuses & {"FOR_SALE", "COMING_SOON"}:
-            result["market_status"] = "ACTIVE"
-            result["market_reason"] = "zillow_homeStatus_for_sale"
-        elif statuses & {"PENDING", "UNDER_CONTRACT"}:
-            result["market_status"] = "PENDING"
-            result["market_reason"] = "zillow_homeStatus_pending"
-        elif (
-            "currently not for sale" in low
-            or ">off market<" in low
-            or '"homeStatus":"OTHER"' in html
-            or '"homeStatus":"SOLD"' in html
-        ):
-            result["market_status"] = "OFF_MARKET"
-            result["market_reason"] = "zillow_explicit_off_market"
-        else:
-            result["market_reason"] = "status_not_explicit"
-    except Exception as exc:
-        result["market_reason"] = f"zillow:{type(exc).__name__}"
-    return result
-
-
 def assignment_indexes(path: Path) -> tuple[dict[str, dict], dict[str, dict]]:
     pidx, aidx = {}, {}
     try:
@@ -545,21 +491,6 @@ def qualify_one(row: dict, assigned_p: dict, assigned_a: dict, delivered: dict, 
     result["priority_reasons"] = why
 
     if not result["rejection_reasons"]:
-        result.update(market_status_zillow(clean(row.get("property_address"))))
-        if result.get("market_status") in {"ACTIVE", "PENDING"}:
-            result["rejection_reasons"].append(f"market_{result['market_status'].lower()}")
-        elif result.get("market_status") != "OFF_MARKET":
-            result["rejection_reasons"].append("market_status_unverified")
-    else:
-        result.update({
-            "market_status": "NOT_CHECKED",
-            "market_source": None,
-            "market_url": None,
-            "market_checked_at_et": None,
-            "market_reason": "failed_pre_market_gate",
-        })
-
-    if not result["rejection_reasons"]:
         if candidate_type == "SFR":
             eligible = score >= 60
         else:
@@ -582,20 +513,20 @@ def render_md(report: dict) -> str:
         f"Input candidates: {report['summary']['input_candidates']}",
         f"Eligible SFR: {report['summary']['eligible_sfr']}",
         f"Eligible land: {report['summary']['eligible_land']}",
-        f"Market unknown: {report['summary']['market_unknown']}", "",
+        "Market-status screening: disabled (not an eligibility gate)", "",
         "## Eligible SFR", "",
     ]
     for i, r in enumerate(report["eligible_sfr"], 1):
         lines += [
             f"{i}. **{r.get('source_property_address')}** — {r.get('pva_owner')}",
-            f"   - Score: {r.get('reaper_priority_score')} | Parcel: {r.get('parcel_id')} | Land use: {r.get('landuse_name')} | Market: {r.get('market_status')}",
+            f"   - Score: {r.get('reaper_priority_score')} | Parcel: {r.get('parcel_id')} | Land use: {r.get('landuse_name')}",
             f"   - Sources: {', '.join(r.get('sources') or [])}",
         ]
     lines += ["", "## Eligible Land", ""]
     for i, r in enumerate(report["eligible_land"], 1):
         lines += [
             f"{i}. **{r.get('source_property_address')}** — {r.get('pva_owner')}",
-            f"   - Score: {r.get('reaper_priority_score')} | Builder fit: {r.get('builder_fit_score')} | Parcel: {r.get('parcel_id')} | Market: {r.get('market_status')}",
+            f"   - Score: {r.get('reaper_priority_score')} | Builder fit: {r.get('builder_fit_score')} | Parcel: {r.get('parcel_id')}",
             f"   - Sources: {', '.join(r.get('sources') or [])}",
         ]
     return "\n".join(lines) + "\n"
@@ -646,9 +577,7 @@ def main() -> int:
         "current_owner_individual": sum(bool(r.get("current_owner_individual")) for r in results),
         "exact_single_family": sum(r.get("landuse_name") == "SINGLE FAMILY" for r in results),
         "vacant_lot_context": sum(bool(r.get("vacant_lot_context")) for r in results),
-        "off_market_verified": sum(r.get("market_status") == "OFF_MARKET" for r in results),
-        "active_or_pending_rejected": sum(r.get("market_status") in {"ACTIVE", "PENDING"} for r in results),
-        "market_unknown": sum(r.get("market_status") == "UNKNOWN" for r in results),
+        "market_status_screening": "DISABLED",
         "fresh": sum(r.get("freshness_state") == "FRESH" for r in results),
         "reactivated": sum(r.get("freshness_state") == "REACTIVATED" for r in results),
         "previously_assigned_or_delivered": sum(r.get("freshness_state") in {"PREVIOUSLY_ASSIGNED", "PREVIOUSLY_DELIVERED", "OTHER_AGENT"} for r in results),
@@ -670,7 +599,7 @@ def main() -> int:
             "Current ownership is accepted only when the public Jefferson PVA page returns an owner tied to the resolved parcel.",
             "SFR requires LOJIC landuse_name exactly SINGLE FAMILY.",
             "Land requires confirmed vacant-lot/landbank context plus a verified individual current owner.",
-            "Off-market status is accepted only when the live exact-address Zillow response explicitly indicates off-market/not currently for sale; blocked or ambiguous responses remain UNKNOWN and are rejected pending manual review.",
+            "Live market-status screening is disabled and does not affect qualification or delivery. No listing-portal status should be inferred from this report.",
             "Lis pendens is treated as litigation/distress, not automatically as mortgage foreclosure.",
             "Citation amounts are assessed citation events, not claimed current balances.",
         ],

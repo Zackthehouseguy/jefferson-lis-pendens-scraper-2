@@ -16,10 +16,10 @@ Zack should not need to restate the system. Any of these mean "use this entire c
 If Zack wants to permanently change the system, treat: "Change Reaper rule: ..." as a request to update this canonical contract and the Daily Reaper automation before using the new rule.
 
 ## TARGET LANES
-1. Off-market distressed SINGLE-FAMILY residential only.
-2. Off-market distressed PRIVATE vacant land only.
+1. Distressed SINGLE-FAMILY residential only.
+2. Distressed PRIVATE vacant land only.
 
-Exclude apartments, multifamily, commercial/non-SFR, public/landbank-owned parcels, ambiguous property types, and on-market properties.
+Exclude apartments, multifamily, commercial/non-SFR, public/landbank-owned parcels, and ambiguous property types.
 
 ## DISCOVERY / DISTRESS SOURCES
 Use supported live public sources and corroborating records, including:
@@ -50,32 +50,14 @@ Code-enforcement party labels are not owners.
 Lis Pendens party lists are not automatically current owners.
 Use CONFIRMED vs UNCONFIRMED ownership/contact status honestly.
 
-## GATE 3 — MANDATORY CURRENT OFF-MARKET CHECK
-This gate is non-negotiable and must occur before delivery.
-For the exact address, perform a current live listing-status check using major public listing/search sources and open current pages when available.
-Reject if any current status indicates:
-- Active / For Sale
-- Coming Soon
-- Pending
-- Contingent
-- FSBO
-- Auction / publicly marketed sale
-- other active public marketing
-
-Do not trust a stale snippet by itself.
-If current status cannot be verified with reasonable confidence, classify MARKET STATUS UNVERIFIED and DO NOT DELIVER as a callable lead.
-Only deliver CURRENT MARKET STATUS: OFF-MARKET VERIFIED.
-Record checked-at time and sources checked.
-Prior listings that are expired/withdrawn/canceled/sold may pass only if there is no current public marketing.
-
-## GATE 4 — FRESHNESS / STICKY ASSIGNMENT
+## GATE 3 — FRESHNESS / STICKY ASSIGNMENT
 Use state/lead_assignments.json and Reaper seen-state rules.
 - another agent owns it -> do not deliver
 - Zack already received it unchanged -> do not recycle
 - genuinely new material event on Zack-owned property -> REACTIVATED
 - fresh/unworked first
 
-## GATE 5 — QUALITY
+## GATE 4 — QUALITY
 Houses: priority_score >= 60 and distress_score >= 50.
 Land: priority_score >= 60, motivation_score >= 50, builder_fit_score >= 50.
 Never lower thresholds to fill a quota.
@@ -96,8 +78,6 @@ Every delivered lead must be a full Reaper card with:
 - Builder Fit Score for land
 - Saturation Risk
 - Freshness Score
-- CURRENT MARKET STATUS: OFF-MARKET VERIFIED
-- market-status checked-at time + sources checked
 - owner + ownership confidence
 - owner mailing when available + mailing vs property
 - parcel ID
@@ -161,9 +141,6 @@ Before sending any property, silently verify ALL:
 [ ] parcel/property verified
 [ ] ownership confidence labeled correctly
 [ ] sticky/freshness passes
-[ ] CURRENT MARKET STATUS = OFF-MARKET VERIFIED
-[ ] checked-at time + listing sources recorded
-[ ] no active/coming-soon/pending/contingent/FSBO/auction/current marketing
 [ ] facts vs unknowns/inferences separated
 [ ] citation/tax wording accurate
 [ ] full Reaper card present
@@ -177,6 +154,9 @@ Before sending any property, silently verify ALL:
 [ ] universal flow attached
 
 If any box fails: DO NOT SEND THAT PROPERTY AS A CALLABLE LEAD.
+
+## MARKET-STATUS POLICY
+Live market-status screening is disabled. Reaper does not query listing portals and market status does not affect qualification, allocation, or delivery. Do not label a lead on-market, off-market, active, pending, or unlisted unless Zack separately requests a manual current-status check.
 
 ## CHANGE CONTROL
 The only way to change these rules is an explicit permanent-rule instruction from Zack, such as:
