@@ -41,7 +41,7 @@ from scrapers.reaper_saturation import public_source_exposure_score
 ET = ZoneInfo("America/New_York")
 CONTRACT_VERSION = "reaper-live-ai-v1"
 DEFAULT_MODEL = "gpt-5.6"
-DEFAULT_COPILOT_MODEL = "gpt-5.4"
+DEFAULT_COPILOT_MODEL = "auto"
 SCORING_REJECTIONS = {
     "priority_below_production_threshold",
     "distress_below_production_threshold",

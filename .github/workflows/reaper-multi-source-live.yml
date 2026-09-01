@@ -122,7 +122,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           REAPER_AI_MODEL: ${{ vars.REAPER_AI_MODEL || 'gpt-5.6' }}
-          REAPER_COPILOT_MODEL: ${{ vars.REAPER_COPILOT_MODEL || 'gpt-5.4' }}
+          REAPER_COPILOT_MODEL: ${{ vars.REAPER_COPILOT_MODEL || 'auto' }}
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           python -m scrapers.probe.reaper_live_ai_rank \
