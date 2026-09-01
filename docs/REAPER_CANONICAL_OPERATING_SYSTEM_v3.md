@@ -68,6 +68,12 @@ evidence into semantic levels/signals only. Version-controlled deterministic
 code calculates every numeric score. Missing, partial, fixture, or stale AI
 classifications fail closed and may not be allocated.
 
+The production provider order is OpenAI Responses API when `OPENAI_API_KEY` is
+configured, otherwise GitHub Copilot CLI using the workflow's short-lived
+`GITHUB_TOKEN` and `copilot-requests: write`. The Copilot fallback runs in an
+empty temporary directory with shell, file, URL, and memory tools denied; its
+JSON must pass the same exact-key and semantic schema validation before scoring.
+
 Saturation is a deterministic public-source exposure heuristic based on source
 mix, freshness, evidence specificity, absentee-owner context, and repeat public
 cases. It is not observed investor contact volume or proof of competition. Every

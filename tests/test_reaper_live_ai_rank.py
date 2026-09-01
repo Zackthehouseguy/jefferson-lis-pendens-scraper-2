@@ -217,10 +217,11 @@ def test_cli_fixture_path_writes_complete_scored_report(tmp_path, monkeypatch):
     assert "AI scoring status: TEST_FIXTURE" in markdown_path.read_text(encoding="utf-8")
 
 
-def test_cli_fails_closed_without_api_key(tmp_path, monkeypatch):
+def test_cli_fails_closed_without_live_ai_credential(tmp_path, monkeypatch):
     input_path = tmp_path / "input.json"
     input_path.write_text(json.dumps(_report()), encoding="utf-8")
     monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+    monkeypatch.delenv("GITHUB_TOKEN", raising=False)
     monkeypatch.setattr(sys, "argv", [
         "reaper_live_ai_rank",
         "--input", str(input_path),
@@ -228,6 +229,6 @@ def test_cli_fails_closed_without_api_key(tmp_path, monkeypatch):
         "--md", str(tmp_path / "output.md"),
     ])
 
-    with pytest.raises(RuntimeError, match="OPENAI_API_KEY is required"):
+    with pytest.raises(RuntimeError, match="OPENAI_API_KEY or workflow GITHUB_TOKEN"):
         main()
     assert not (tmp_path / "output.json").exists()
