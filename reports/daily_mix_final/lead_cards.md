@@ -12,7 +12,7 @@ Records: **45**
 **Overall Priority Score:** **92/100** — combined call-order score
 **AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Occupied  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -38,7 +38,7 @@ Records: **45**
 **Overall Priority Score:** **92/100** — combined call-order score
 **AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Occupied  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -64,7 +64,7 @@ Records: **45**
 **Overall Priority Score:** **92/100** — combined call-order score
 **AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Occupied  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -90,7 +90,7 @@ Records: **45**
 **Overall Priority Score:** **92/100** — combined call-order score
 **AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Vacant  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -116,7 +116,7 @@ Records: **45**
 **Overall Priority Score:** **88/100** — combined call-order score
 **AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **94/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Vacant  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -142,7 +142,7 @@ Records: **45**
 **Overall Priority Score:** **88/100** — combined call-order score
 **AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **94/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Occupied  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -168,7 +168,7 @@ Records: **45**
 **Overall Priority Score:** **88/100** — combined call-order score
 **AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **93/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Vacant  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -194,7 +194,7 @@ Records: **45**
 **Overall Priority Score:** **88/100** — combined call-order score
 **AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **93/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Occupied  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -220,7 +220,7 @@ Records: **45**
 **Overall Priority Score:** **86/100** — combined call-order score
 **AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **91/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -246,7 +246,7 @@ Records: **45**
 **Overall Priority Score:** **85/100** — combined call-order score
 **AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **89/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Occupied  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -272,7 +272,7 @@ Records: **45**
 **Overall Priority Score:** **84/100** — combined call-order score
 **AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **87/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Vacant  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -298,7 +298,7 @@ Records: **45**
 **Overall Priority Score:** **83/100** — combined call-order score
 **AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **85/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** CONFLICT — structured source says Occupied; narrative reports vacant/abandoned. Verify before relying on occupancy.  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -324,7 +324,7 @@ Records: **45**
 **Overall Priority Score:** **82/100** — combined call-order score
 **AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **83/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Vacant  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -350,7 +350,7 @@ Records: **45**
 **Overall Priority Score:** **81/100** — combined call-order score
 **AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **82/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Vacant  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -376,7 +376,7 @@ Records: **45**
 **Overall Priority Score:** **79/100** — combined call-order score
 **AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **79/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -402,7 +402,7 @@ Records: **45**
 **Overall Priority Score:** **70/100** — combined call-order score
 **AI Distress Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **64/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Vacant  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -428,7 +428,7 @@ Records: **45**
 **Overall Priority Score:** **70/100** — combined call-order score
 **AI Distress Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **63/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -454,7 +454,7 @@ Records: **45**
 **Overall Priority Score:** **68/100** — combined call-order score
 **AI Distress Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **61/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Occupied  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -480,7 +480,7 @@ Records: **45**
 **Overall Priority Score:** **68/100** — combined call-order score
 **AI Distress Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **60/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Vacant  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -506,7 +506,7 @@ Records: **45**
 **Overall Priority Score:** **66/100** — combined call-order score
 **AI Distress Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **56/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Occupied  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -532,7 +532,7 @@ Records: **45**
 **Overall Priority Score:** **65/100** — combined call-order score
 **AI Distress Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **55/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Occupied  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -558,7 +558,7 @@ Records: **45**
 **Overall Priority Score:** **65/100** — combined call-order score
 **AI Distress Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **55/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** CONFLICT — structured source says Occupied; narrative reports vacant/abandoned. Verify before relying on occupancy.  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -584,7 +584,7 @@ Records: **45**
 **Overall Priority Score:** **64/100** — combined call-order score
 **AI Distress Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **53/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Occupied  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -610,7 +610,7 @@ Records: **45**
 **Overall Priority Score:** **64/100** — combined call-order score
 **AI Distress Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **53/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Occupied  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -636,7 +636,7 @@ Records: **45**
 **Overall Priority Score:** **64/100** — combined call-order score
 **AI Distress Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **53/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Saturation Risk:** **24/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **24/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** CONFLICT — structured source says Occupied; narrative reports vacant/abandoned. Verify before relying on occupancy.  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
@@ -665,7 +665,7 @@ Records: **45**
 **AI Motivation Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **93/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **100/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -694,7 +694,7 @@ Records: **45**
 **AI Motivation Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **93/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **100/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -723,7 +723,7 @@ Records: **45**
 **AI Motivation Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **93/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **100/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **65/100** — 4-7 DAYS
 
 **Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -752,7 +752,7 @@ Records: **45**
 **AI Motivation Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **88/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **100/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -781,7 +781,7 @@ Records: **45**
 **AI Motivation Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **70/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **100/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -810,7 +810,7 @@ Records: **45**
 **AI Motivation Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **69/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **93/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -839,7 +839,7 @@ Records: **45**
 **AI Motivation Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **61/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **100/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -868,7 +868,7 @@ Records: **45**
 **AI Motivation Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **61/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **100/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -897,7 +897,7 @@ Records: **45**
 **AI Motivation Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **60/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **100/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -926,7 +926,7 @@ Records: **45**
 **AI Motivation Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **59/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **100/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Site status:** Vacant lot per structured source — narrative references a structure; verify parcel/structure status  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -955,7 +955,7 @@ Records: **45**
 **AI Motivation Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **65/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **88/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -984,7 +984,7 @@ Records: **45**
 **AI Motivation Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **61/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **100/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **65/100** — 4-7 DAYS
 
 **Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -1013,7 +1013,7 @@ Records: **45**
 **AI Motivation Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **58/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **100/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **65/100** — 4-7 DAYS
 
 **Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -1042,7 +1042,7 @@ Records: **45**
 **AI Motivation Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **58/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **100/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **65/100** — 4-7 DAYS
 
 **Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -1071,7 +1071,7 @@ Records: **45**
 **AI Motivation Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **58/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **100/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **65/100** — 4-7 DAYS
 
 **Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -1100,7 +1100,7 @@ Records: **45**
 **AI Motivation Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **52/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **100/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -1129,7 +1129,7 @@ Records: **45**
 **AI Motivation Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **58/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **82/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -1158,7 +1158,7 @@ Records: **45**
 **AI Motivation Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **56/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **93/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **65/100** — 4-7 DAYS
 
 **Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -1187,7 +1187,7 @@ Records: **45**
 **AI Motivation Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **52/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **100/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **65/100** — 4-7 DAYS
 
 **Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
@@ -1216,7 +1216,7 @@ Records: **45**
 **AI Motivation Classification:** **MEDIUM** — GPT evidence classification, not a model-invented numeric score
 **Land Motivation Score:** **58/100** — deterministic score from verified/grounded motivation evidence
 **Builder Fit Score:** **87/100** — estimated parcel usefulness; not a buildability guarantee
-**Saturation Risk:** **27/100** — higher means more likely to be on generic investor lists
+**Public-Source Exposure:** **27/100** — deterministic saturation heuristic; not observed investor competition
 **Freshness Score:** **65/100** — 4-7 DAYS
 
 **Site status:** Vacant lot per structured source — narrative references a structure; verify parcel/structure status  _(according to Louisville Metro Property Maintenance / Accela)_
