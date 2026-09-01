@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "generated_at_et": "2026-09-01T08:06:45.460275-04:00",
+  "generated_at_et": "2026-09-01T11:55:18.278093-04:00",
   "query_window": {
     "start_date": "2026-08-29",
     "end_date": "2026-09-01"
@@ -13,14 +13,14 @@
     "louisville_landbank": "OK"
   },
   "source_record_counts": {
-    "lis_pendens": 11,
-    "wills": 0,
+    "lis_pendens": 17,
+    "wills": 1,
     "louisville_code_violations": 232,
     "tax_delinquent": 0,
     "louisville_landbank": 402
   },
-  "properties_after_stacking": 632,
-  "fresh_individual_candidates": 228,
+  "properties_after_stacking": 639,
+  "fresh_individual_candidates": 235,
   "fresh_individual_high_count": 0,
   "fresh_individual_medium_count": 1,
   "top_fresh_individual": [
@@ -379,6 +379,228 @@
           "amount": null,
           "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=1407+Crosstimbers+Dr&searchType=StreetSearch#results",
           "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wODMxLzIwMjYxMDcwMjkudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::5917 PRESTWOOD CT",
+      "property_address": "5917 Prestwood Ct, Louisville, KY 40219",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "FORD MICHAEL F; WELSH RUPERT E"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/01/2026",
+          "property_address": "5917 Prestwood Ct, Louisville, KY 40219",
+          "normalized_address": "5917 PRESTWOOD CT",
+          "parcel_id": null,
+          "party_or_owner": "FORD MICHAEL F; WELSH RUPERT E",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=5917+Prestwood+Ct&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTAxLzIwMjYxMDczNDcudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::1605 SALE AVE",
+      "property_address": "1605 Sale Ave, Louisville, KY 40215",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "HAMPTON DERRICK R; CURRY DEVORA NICOLE; CENTRAL OHIO CREDIT CORP; TRACIR FINANCIAL SERVICES INC"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/01/2026",
+          "property_address": "1605 Sale Ave, Louisville, KY 40215",
+          "normalized_address": "1605 SALE AVE",
+          "parcel_id": null,
+          "party_or_owner": "HAMPTON DERRICK R; CURRY DEVORA NICOLE; CENTRAL OHIO CREDIT CORP; TRACIR FINANCIAL SERVICES INC",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=1605+Sale+Ave&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTAxLzIwMjYxMDczODAudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::2706 TRIPLETT CT",
+      "property_address": "2706 Triplett Ct, Louisville, KY 40216",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "INGRAM RODNEY; INGRAM RODNEY J; INGRAM PATRICIA A"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/01/2026",
+          "property_address": "2706 Triplett Ct, Louisville, KY 40216",
+          "normalized_address": "2706 TRIPLETT CT",
+          "parcel_id": null,
+          "party_or_owner": "INGRAM RODNEY; INGRAM RODNEY J; INGRAM PATRICIA A",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=2706+Triplett+Ct&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTAxLzIwMjYxMDczMjQudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::14202 BARKIS WAY",
+      "property_address": "14202 Barkis Way Louisville, Jefferson County, KY 40245",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "RAILEY BARBIE; RAILEY BARBIE A; JOHNSON BARBIE A; SPECIALIZED LOAN SERVICING LLC; NEWREZ LLC"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/01/2026",
+          "property_address": "14202 Barkis Way Louisville, Jefferson County, KY 40245",
+          "normalized_address": "14202 BARKIS WAY",
+          "parcel_id": null,
+          "party_or_owner": "RAILEY BARBIE; RAILEY BARBIE A; JOHNSON BARBIE A; SPECIALIZED LOAN SERVICING LLC; NEWREZ LLC",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=14202+Barkis+Way+Louisville%2C+Jefferson+County%2C+KY+40245&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTAxLzIwMjYxMDcyNzkudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::9702 POLARIS DR",
+      "property_address": "9702 Polaris Dr, Louisville, KY 40229",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "WHALEN BRENT A; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT DEPARTMENT OF INSPECTION PERMITS & LICNESES"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/01/2026",
+          "property_address": "9702 Polaris Dr, Louisville, KY 40229",
+          "normalized_address": "9702 POLARIS DR",
+          "parcel_id": null,
+          "party_or_owner": "WHALEN BRENT A; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT DEPARTMENT OF INSPECTION PERMITS & LICNESES",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=9702+Polaris+Dr&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTAxLzIwMjYxMDczNDIudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::1184 LINCOLN AVE",
+      "property_address": "1184 Lincoln Ave, Louisville, KY 40208",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "YATES KENNETH; CAPITAL ONE NA"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/01/2026",
+          "property_address": "1184 Lincoln Ave, Louisville, KY 40208",
+          "normalized_address": "1184 LINCOLN AVE",
+          "parcel_id": null,
+          "party_or_owner": "YATES KENNETH; CAPITAL ONE NA",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=1184+Lincoln+Ave&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTAxLzIwMjYxMDczMjgudGlm&type=pdf",
           "raw_distress_score": null
         }
       ]
@@ -8573,6 +8795,43 @@
       ]
     },
     {
+      "property_key": "ADDR::4511 DIXIE HWY",
+      "property_address": "4511 Dixie Highway Louisville, KY 40216",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "CAROL J. WARDRIP"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "wills"
+      ],
+      "signal_count": 1,
+      "motivation_score": 18,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "will/probate-related filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "wills",
+          "signal_date": "09/01/2026",
+          "property_address": "4511 Dixie Highway Louisville, KY 40216",
+          "normalized_address": "4511 DIXIE HWY",
+          "parcel_id": null,
+          "party_or_owner": "CAROL J. WARDRIP",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Source: WILLS; Property address extracted successfully.; Legal Desc: 26P002826; Legal Desc: 26P002826; Reasons: Trust language detected: in trust, the trust, trustee; Corporate fiduciary referenced (trustee herein nomina) | Avoid - Trust/Complex | Trust language detected: in trust, the trust, trustee; Corporate fiduciary referenced (trustee herein nomina)",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTAxLzIwMjYxMDc1MDAudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
       "property_key": "PARCEL::101304790000",
       "property_address": "4421 CANE RUN RD, LOUISVILLE, KY 40216",
       "parcel_id": "101304790000",
@@ -8966,6 +9225,228 @@
           "amount": null,
           "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=1407+Crosstimbers+Dr&searchType=StreetSearch#results",
           "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wODMxLzIwMjYxMDcwMjkudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::5917 PRESTWOOD CT",
+      "property_address": "5917 Prestwood Ct, Louisville, KY 40219",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "FORD MICHAEL F; WELSH RUPERT E"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/01/2026",
+          "property_address": "5917 Prestwood Ct, Louisville, KY 40219",
+          "normalized_address": "5917 PRESTWOOD CT",
+          "parcel_id": null,
+          "party_or_owner": "FORD MICHAEL F; WELSH RUPERT E",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=5917+Prestwood+Ct&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTAxLzIwMjYxMDczNDcudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::1605 SALE AVE",
+      "property_address": "1605 Sale Ave, Louisville, KY 40215",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "HAMPTON DERRICK R; CURRY DEVORA NICOLE; CENTRAL OHIO CREDIT CORP; TRACIR FINANCIAL SERVICES INC"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/01/2026",
+          "property_address": "1605 Sale Ave, Louisville, KY 40215",
+          "normalized_address": "1605 SALE AVE",
+          "parcel_id": null,
+          "party_or_owner": "HAMPTON DERRICK R; CURRY DEVORA NICOLE; CENTRAL OHIO CREDIT CORP; TRACIR FINANCIAL SERVICES INC",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=1605+Sale+Ave&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTAxLzIwMjYxMDczODAudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::2706 TRIPLETT CT",
+      "property_address": "2706 Triplett Ct, Louisville, KY 40216",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "INGRAM RODNEY; INGRAM RODNEY J; INGRAM PATRICIA A"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/01/2026",
+          "property_address": "2706 Triplett Ct, Louisville, KY 40216",
+          "normalized_address": "2706 TRIPLETT CT",
+          "parcel_id": null,
+          "party_or_owner": "INGRAM RODNEY; INGRAM RODNEY J; INGRAM PATRICIA A",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=2706+Triplett+Ct&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTAxLzIwMjYxMDczMjQudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::14202 BARKIS WAY",
+      "property_address": "14202 Barkis Way Louisville, Jefferson County, KY 40245",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "RAILEY BARBIE; RAILEY BARBIE A; JOHNSON BARBIE A; SPECIALIZED LOAN SERVICING LLC; NEWREZ LLC"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/01/2026",
+          "property_address": "14202 Barkis Way Louisville, Jefferson County, KY 40245",
+          "normalized_address": "14202 BARKIS WAY",
+          "parcel_id": null,
+          "party_or_owner": "RAILEY BARBIE; RAILEY BARBIE A; JOHNSON BARBIE A; SPECIALIZED LOAN SERVICING LLC; NEWREZ LLC",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=14202+Barkis+Way+Louisville%2C+Jefferson+County%2C+KY+40245&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTAxLzIwMjYxMDcyNzkudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::9702 POLARIS DR",
+      "property_address": "9702 Polaris Dr, Louisville, KY 40229",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "WHALEN BRENT A; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT DEPARTMENT OF INSPECTION PERMITS & LICNESES"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/01/2026",
+          "property_address": "9702 Polaris Dr, Louisville, KY 40229",
+          "normalized_address": "9702 POLARIS DR",
+          "parcel_id": null,
+          "party_or_owner": "WHALEN BRENT A; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT DEPARTMENT OF INSPECTION PERMITS & LICNESES",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=9702+Polaris+Dr&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTAxLzIwMjYxMDczNDIudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::1184 LINCOLN AVE",
+      "property_address": "1184 Lincoln Ave, Louisville, KY 40208",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "YATES KENNETH; CAPITAL ONE NA"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/01/2026",
+          "property_address": "1184 Lincoln Ave, Louisville, KY 40208",
+          "normalized_address": "1184 LINCOLN AVE",
+          "parcel_id": null,
+          "party_or_owner": "YATES KENNETH; CAPITAL ONE NA",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=1184+Lincoln+Ave&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTAxLzIwMjYxMDczMjgudGlm&type=pdf",
           "raw_distress_score": null
         }
       ]
@@ -12219,228 +12700,6 @@
           "status": "Violation Notice",
           "amount": null,
           "details": "exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | 02A Cleaning, X50 Roof/Gutters, R01 Rental Reg. | Priority: HIGH | Distress score: 12 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | Violations: 02A Cleaning, X50 Roof/Gutters, R01 Rental Reg. | Violation rows: 3 | Date: 2026-08-31 | Case IDs: ENF-PMNT-26-019365-1 | Parcel: 021K00860000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 12
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::009H01450000",
-      "property_address": "131 N 41ST ST, LOUISVILLE, KY 40212",
-      "parcel_id": "009H01450000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation, roof"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-31",
-          "property_address": "131 N 41ST ST, LOUISVILLE, KY 40212",
-          "normalized_address": "131 N 41ST ST",
-          "parcel_id": "009H01450000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | 02A Cleaning, X50 Roof/Gutters, R01 Rental Reg. | Priority: HIGH | Distress score: 12 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | Violations: 02A Cleaning, X50 Roof/Gutters, R01 Rental Reg. | Violation rows: 3 | Date: 2026-08-31 | Case IDs: ENF-PMNT-26-020055-1 | Parcel: 009H01450000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 12
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::009H01440000",
-      "property_address": "129 N 41ST ST, LOUISVILLE, KY 40212",
-      "parcel_id": "009H01440000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation, roof"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-31",
-          "property_address": "129 N 41ST ST, LOUISVILLE, KY 40212",
-          "normalized_address": "129 N 41ST ST",
-          "parcel_id": "009H01440000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | 02A Cleaning, X50 Roof/Gutters, X69 Address Numbers | Priority: HIGH | Distress score: 12 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | Violations: 02A Cleaning, X50 Roof/Gutters, X69 Address Numbers | Violation rows: 3 | Date: 2026-08-31 | Case IDs: ENF-PMNT-26-020074-1 | Parcel: 009H01440000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 12
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::039B00700000",
-      "property_address": "1528 DUMESNIL ST, LOUISVILLE, KY 40210",
-      "parcel_id": "039B00700000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-31",
-          "property_address": "1528 DUMESNIL ST, LOUISVILLE, KY 40210",
-          "normalized_address": "1528 DUMESNIL ST",
-          "parcel_id": "039B00700000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; structural/foundation; porch/stairs | 02A Cleaning, X40 Porch/Stairs | Priority: HIGH | Distress score: 12 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; structural/foundation; porch/stairs | Violations: 02A Cleaning, X40 Porch/Stairs | Violation rows: 2 | Date: 2026-08-31 | Case IDs: ENF-PMNT-26-018403-2 | Parcel: 039B00700000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 12
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::222700130000",
-      "property_address": "12402 BRIERLY HILL PL, DOUGLASS HILLS, KY 40299",
-      "parcel_id": "222700130000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Citation"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-31",
-          "property_address": "12402 BRIERLY HILL PL, DOUGLASS HILLS, KY 40299",
-          "normalized_address": "12402 BRIERLY HILL PL DOUGLASS HILLS KY 40299",
-          "parcel_id": "222700130000",
-          "party_or_owner": "LMG Codes & Regulations - Citation",
-          "individual_party_likely": true,
-          "status": "Citation",
-          "amount": 200.0,
-          "details": "structural/foundation; dangerous tree; infestation; public hazard | X90 Tree | Priority: HIGH | Distress score: 12 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; dangerous tree; infestation; public hazard | Violations: X90 Tree | Citation amount: $200 | Violation rows: 1 | Date: 2026-08-31 | Case IDs: ENF-PMNT-26-008024-2 | Parcel: 222700130000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 12
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::062M01560000",
-      "property_address": "7409 MANSLICK RD, LOUISVILLE, KY 40214",
-      "parcel_id": "062M01560000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, structural, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-31",
-          "property_address": "7409 MANSLICK RD, LOUISVILLE, KY 40214",
-          "normalized_address": "7409 MANSLICK RD",
-          "parcel_id": "062M01560000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "structural/foundation; fence/accessory; vacant/abandoned; abandoned vehicle | X78 Fence/Accessory, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 12 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; fence/accessory; vacant/abandoned; abandoned vehicle | Violations: X78 Fence/Accessory, 05A Abandoned Vehicle | Violation rows: 2 | Date: 2026-08-31 | Case IDs: ENF-PMNT-26-019898-1 | Parcel: 062M01560000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 12
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::064D01400000",
-      "property_address": "1521 LONGFIELD AVE, LOUISVILLE, KY 40215",
-      "parcel_id": "064D01400000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation, roof, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-31",
-          "property_address": "1521 LONGFIELD AVE, LOUISVILLE, KY 40215",
-          "normalized_address": "1521 LONGFIELD AVE",
-          "parcel_id": "064D01400000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; structural/foundation; roof/gutters | 02A Cleaning, X19 Exterior/Foundation | Priority: HIGH | Distress score: 12 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; structural/foundation; roof/gutters | Violations: 02A Cleaning, X19 Exterior/Foundation | Violation rows: 2 | Date: 2026-08-31 | Case IDs: ENF-PMNT-26-020121-1 | Parcel: 064D01400000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 12
         }
