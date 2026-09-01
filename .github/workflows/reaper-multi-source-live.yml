@@ -7,6 +7,11 @@ on:
       - ".github/workflows/reaper-multi-source-live.yml"
       - "scrapers/probe/reaper_multi_source_stack.py"
       - "scrapers/probe/reaper_bulk_qualify.py"
+      - "scrapers/probe/reaper_live_ai_rank.py"
+      - "scrapers/decision_layer.py"
+      - "scrapers/land_decision_layer.py"
+      - "scrapers/reaper_saturation.py"
+      - "requirements.txt"
   workflow_dispatch:
 
 permissions:
@@ -108,6 +113,18 @@ jobs:
             --out reports/reaper_multi_source_live/bulk_qualified.json \
             --md reports/reaper_multi_source_live/bulk_qualified.md \
             --workers 10
+
+      - name: Classify live evidence and calculate production scores
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          REAPER_AI_MODEL: ${{ vars.REAPER_AI_MODEL || 'gpt-5.6' }}
+        run: |
+          python -m scrapers.probe.reaper_live_ai_rank \
+            --input reports/reaper_multi_source_live/bulk_qualified.json \
+            --output reports/reaper_multi_source_live/bulk_qualified.json \
+            --md reports/reaper_multi_source_live/bulk_qualified.md \
+            --batch-size 8 \
+            --workers 2
 
       - name: Add source execution metadata
         run: |

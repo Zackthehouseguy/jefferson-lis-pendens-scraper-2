@@ -62,6 +62,17 @@ Houses: priority_score >= 60 and distress_score >= 50.
 Land: priority_score >= 60, motivation_score >= 50, builder_fit_score >= 50.
 Never lower thresholds to fill a quota.
 
+Every property that reaches this gate must have `ai_scoring_status=LIVE` and
+`ai_contract_version=reaper-live-ai-v1`. The live model classifies source
+evidence into semantic levels/signals only. Version-controlled deterministic
+code calculates every numeric score. Missing, partial, fixture, or stale AI
+classifications fail closed and may not be allocated.
+
+Saturation is a deterministic public-source exposure heuristic based on source
+mix, freshness, evidence specificity, absentee-owner context, and repeat public
+cases. It is not observed investor contact volume or proof of competition. Every
+record must retain `saturation_method` and `saturation_factors` for auditability.
+
 ## FACT DISCIPLINE
 - assessed citation != verified current balance
 - tax-list hit may be stale/paid; verify before saying currently delinquent
@@ -76,7 +87,7 @@ Every delivered lead must be a full Reaper card with:
 - AI Distress/Motivation Classification
 - Distress Score or Land Motivation Score
 - Builder Fit Score for land
-- Saturation Risk
+- Public-Source Exposure / Saturation Risk, with method and factor audit trail
 - Freshness Score
 - owner + ownership confidence
 - owner mailing when available + mailing vs property

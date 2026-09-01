@@ -62,8 +62,10 @@ def property_material_revision(rows: list[dict[str, Any]]) -> str:
 def qualify_house(row: dict[str, Any]) -> bool:
     try:
         return (
-            int(row.get("priority_score") or row.get("reaper_priority_score") or 0) >= 60
-            and int(row.get("distress_score") or row.get("source_score") or 0) >= 50
+            clean(row.get("ai_scoring_status")).upper() == "LIVE"
+            and clean(row.get("ai_contract_version")) == "reaper-live-ai-v1"
+            and int(row.get("priority_score") or 0) >= 60
+            and int(row.get("distress_score") or 0) >= 50
             and clean(row.get("landuse_name")).upper() == "SINGLE FAMILY"
             and bool(row.get("lojic_parcel_verified", True))
         )
@@ -81,8 +83,10 @@ def qualify_land(row: dict[str, Any]) -> bool:
             or clean(row.get("property_type") or row.get("candidate_type")).upper() == "LAND"
         )
         return (
-            int(row.get("priority_score") or row.get("reaper_priority_score") or 0) >= 60
-            and int(row.get("motivation_score") or row.get("source_score") or 0) >= 50
+            clean(row.get("ai_scoring_status")).upper() == "LIVE"
+            and clean(row.get("ai_contract_version")) == "reaper-live-ai-v1"
+            and int(row.get("priority_score") or 0) >= 60
+            and int(row.get("motivation_score") or 0) >= 50
             and int(row.get("builder_fit_score") or 0) >= 50
             and land_context
             and bool(row.get("lojic_parcel_verified", True))

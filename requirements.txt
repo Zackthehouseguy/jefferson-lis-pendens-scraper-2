@@ -4,5 +4,7 @@ pillow
 pytesseract
 requests
 PyMuPDF
+openai>=2,<3
+pydantic>=2,<3
 # Optional browser fallback:
 # playwright

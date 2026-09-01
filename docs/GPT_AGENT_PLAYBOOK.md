@@ -62,6 +62,8 @@ Never lower these floors just to fill a quota.
 
 ## Data-integrity rules
 - GPT interprets evidence only. Numeric scores are deterministic code outputs.
+- Production records require the live structured-output AI contract; saved bench fixtures and pre-scores are not allocatable.
+- Saturation is a public-source exposure heuristic, not measured investor competition; preserve its method and factor audit trail.
 - Keep source complaint/allegation separate from inspector/confirmed facts.
 - Do not present `citation_assessed_total` as current amount owed.
 - Current tax due must be verified by an authoritative current source; otherwise UNKNOWN.

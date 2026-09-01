@@ -507,28 +507,34 @@ def qualify_one(row: dict, assigned_p: dict, assigned_a: dict, delivered: dict, 
 
 
 def render_md(report: dict) -> str:
+    scoring_status = report.get("summary", {}).get("ai_scoring_status") or "PRE-AI QUALIFICATION ONLY"
     lines = [
         "# Reaper Bulk Qualification", "",
         f"Generated: {report['generated_at_et']}",
         f"Input candidates: {report['summary']['input_candidates']}",
         f"Eligible SFR: {report['summary']['eligible_sfr']}",
         f"Eligible land: {report['summary']['eligible_land']}",
+        f"AI scoring status: {scoring_status}",
         "Market-status screening: disabled (not an eligibility gate)", "",
         "## Eligible SFR", "",
     ]
     for i, r in enumerate(report["eligible_sfr"], 1):
         lines += [
-            f"{i}. **{r.get('source_property_address')}** — {r.get('pva_owner')}",
-            f"   - Score: {r.get('reaper_priority_score')} | Parcel: {r.get('parcel_id')} | Land use: {r.get('landuse_name')}",
+            f"{i}. **{r.get('property_address') or r.get('source_property_address')}** — {r.get('owner_name') or r.get('pva_owner')}",
+            f"   - Priority: {r.get('priority_score', r.get('reaper_priority_score'))} | Distress: {r.get('distress_score', 'PENDING')} | AI: {r.get('ai_distress_level', 'PENDING')}",
+            f"   - Saturation: {r.get('saturation_score', 'PENDING')} | Freshness: {r.get('freshness_score', 'PENDING')} | Parcel: {r.get('parcel_id')} | Land use: {r.get('landuse_name')}",
             f"   - Sources: {', '.join(r.get('sources') or [])}",
         ]
     lines += ["", "## Eligible Land", ""]
     for i, r in enumerate(report["eligible_land"], 1):
         lines += [
-            f"{i}. **{r.get('source_property_address')}** — {r.get('pva_owner')}",
-            f"   - Score: {r.get('reaper_priority_score')} | Builder fit: {r.get('builder_fit_score')} | Parcel: {r.get('parcel_id')}",
+            f"{i}. **{r.get('property_address') or r.get('source_property_address')}** — {r.get('owner_name') or r.get('pva_owner')}",
+            f"   - Priority: {r.get('priority_score', r.get('reaper_priority_score'))} | Motivation: {r.get('motivation_score', 'PENDING')} | AI: {r.get('ai_motivation_level', 'PENDING')}",
+            f"   - Builder fit: {r.get('builder_fit_score', 'PENDING')} | Saturation: {r.get('saturation_score', 'PENDING')} | Freshness: {r.get('freshness_score', 'PENDING')} | Parcel: {r.get('parcel_id')}",
             f"   - Sources: {', '.join(r.get('sources') or [])}",
         ]
+    if report.get("summary", {}).get("saturation_method"):
+        lines += ["", f"Saturation method: {report['summary']['saturation_method']}"]
     return "\n".join(lines) + "\n"
 
 
