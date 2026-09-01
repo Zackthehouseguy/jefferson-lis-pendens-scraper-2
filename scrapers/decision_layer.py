@@ -18,7 +18,7 @@ ALLOWED_SIGNALS = {
     "nuisance", "accumulated_fines", "estate_or_deceased", "tenant_issue",
     "electrical", "infestation", "trash_or_debris", "overgrown_vegetation",
     "mortgage_distress", "tax_delinquent", "probate_or_inherited",
-    "multiple_distress_sources",
+    "multiple_distress_sources", "roof_risk",
     "other",
 }
 
@@ -50,6 +50,7 @@ SIGNAL_WEIGHTS = {
     "tax_delinquent": 18,
     "probate_or_inherited": 12,
     "multiple_distress_sources": 10,
+    "roof_risk": 12,
     "other": 1,
 }
 

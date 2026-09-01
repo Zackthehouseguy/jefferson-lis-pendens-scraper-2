@@ -58,7 +58,7 @@ HouseSignal = Literal[
     "nuisance", "accumulated_fines", "estate_or_deceased", "tenant_issue",
     "electrical", "infestation", "trash_or_debris", "overgrown_vegetation",
     "mortgage_distress", "tax_delinquent", "probate_or_inherited",
-    "multiple_distress_sources", "other",
+    "multiple_distress_sources", "roof_risk", "other",
 ]
 LandSignal = Literal[
     "vacant_lot", "repeat_abatement", "overgrown_vegetation", "trash_or_dumping",
@@ -250,7 +250,7 @@ def _copilot_classify_batch(
         json.dumps(payload, ensure_ascii=False),
     ])
     last_error: Exception | None = None
-    for _attempt in range(2):
+    for attempt in range(2):
         try:
             with tempfile.TemporaryDirectory(prefix="reaper-copilot-") as tmp:
                 env = os.environ.copy()
@@ -261,9 +261,15 @@ def _copilot_classify_batch(
                     "GITHUB_COPILOT_PROMPT_MODE_REPO_HOOKS": "false",
                     "GITHUB_COPILOT_PROMPT_MODE_WORKSPACE_MCP": "false",
                 })
+                attempt_prompt = prompt
+                if attempt and last_error:
+                    attempt_prompt += (
+                        "\n\nYour previous response failed validation. Correct the JSON and use only schema enum values. "
+                        f"Validation error: {str(last_error)[-3500:]}"
+                    )
                 completed = subprocess.run(
                     [
-                        "copilot", "-p", prompt, "-s", "--model", model,
+                        "copilot", "-p", attempt_prompt, "-s", "--model", model,
                         "--no-ask-user",
                         "--deny-tool=shell,write,read,url,memory",
                         "--no-auto-update", "--no-color",
@@ -297,17 +303,29 @@ def classify_live(
             batches.append((lane, lane_rows[start:start + max(1, batch_size)]))
     output: dict[str, dict[str, Any]] = {}
     classify_batch = _api_classify_batch if provider == "OpenAI Responses API" else _copilot_classify_batch
+    errors: list[str] = []
+    completed_batches = 0
     with cf.ThreadPoolExecutor(max_workers=max(1, workers)) as executor:
         futures = {
             executor.submit(classify_batch, batch, lane, model, credential): (lane, batch)
             for lane, batch in batches
         }
         for future in cf.as_completed(futures):
-            result = future.result()
+            lane, batch = futures[future]
+            try:
+                result = future.result()
+            except Exception as exc:
+                errors.append(f"{lane}:{','.join(model_key(row) for row in batch)}:{type(exc).__name__}:{exc}")
+                continue
             overlap = set(output) & set(result)
             if overlap:
-                raise RuntimeError(f"duplicate_ai_results_across_batches:{sorted(overlap)}")
+                errors.append(f"duplicate_ai_results_across_batches:{sorted(overlap)}")
+                continue
             output.update(result)
+            completed_batches += 1
+            print(f"[ai] {provider} batch {completed_batches}/{len(batches)} accepted", flush=True)
+    if errors:
+        raise RuntimeError("ai_batch_failures:" + " | ".join(errors))
     return output
 
 

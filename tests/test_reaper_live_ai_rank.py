@@ -8,6 +8,7 @@ from scrapers.agent_allocator import qualify_house, qualify_land
 from scrapers.probe.reaper_live_ai_rank import (
     CONTRACT_VERSION,
     HouseBatch,
+    _copilot_classify_batch,
     main,
     model_key,
     score_report,
@@ -110,7 +111,7 @@ def _classifications(report):
         model_key(house): {
             "property_key": model_key(house),
             "distress_level": "HIGH",
-            "signals": ["unsafe_structure", "structural_damage", "mold", "vacancy"],
+            "signals": ["unsafe_structure", "structural_damage", "roof_risk", "mold", "vacancy"],
             "confirmed_facts": ["Louisville code evidence reports unsafe structural conditions."],
             "speculative_claims": [],
             "summary": "Current code evidence reports multiple severe property-condition signals.",
@@ -192,6 +193,35 @@ def test_structured_output_schema_forbids_numeric_model_scores():
     assert "distress_score" not in item["properties"]
     assert "priority_score" not in item["properties"]
     assert set(item["required"]) == set(item["properties"])
+
+
+def test_copilot_retries_with_validation_feedback_and_tools_denied(monkeypatch):
+    source = _report()
+    house = source["all_results"][0]
+    valid = _classifications(source)[model_key(house)]
+    invalid = json.loads(json.dumps(valid))
+    invalid["signals"] = ["roof_damage"]
+    calls = []
+
+    class Result:
+        returncode = 0
+        stderr = ""
+
+        def __init__(self, stdout):
+            self.stdout = stdout
+
+    def fake_run(command, **kwargs):
+        calls.append(command)
+        item = invalid if len(calls) == 1 else valid
+        return Result(json.dumps({"classifications": [item]}))
+
+    monkeypatch.setattr("scrapers.probe.reaper_live_ai_rank.subprocess.run", fake_run)
+    output = _copilot_classify_batch([house], "SFR", "auto", "test-token")
+
+    assert list(output) == [model_key(house)]
+    assert len(calls) == 2
+    assert "--deny-tool=shell,write,read,url,memory" in calls[0]
+    assert "previous response failed validation" in calls[1][2]
 
 
 def test_cli_fixture_path_writes_complete_scored_report(tmp_path, monkeypatch):
