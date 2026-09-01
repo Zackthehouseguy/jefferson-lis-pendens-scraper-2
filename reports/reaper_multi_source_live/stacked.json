@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "generated_at_et": "2026-09-01T11:55:18.278093-04:00",
+  "generated_at_et": "2026-09-01T13:07:43.885093-04:00",
   "query_window": {
     "start_date": "2026-08-29",
     "end_date": "2026-09-01"
@@ -8825,7 +8825,7 @@
           "individual_party_likely": true,
           "status": null,
           "amount": null,
-          "details": "Source: WILLS; Property address extracted successfully.; Legal Desc: 26P002826; Legal Desc: 26P002826; Reasons: Trust language detected: in trust, the trust, trustee; Corporate fiduciary referenced (trustee herein nomina) | Avoid - Trust/Complex | Trust language detected: in trust, the trust, trustee; Corporate fiduciary referenced (trustee herein nomina)",
+          "details": "Source: WILLS; Property address extracted successfully.; Legal Desc: 26P002862; Legal Desc: 26P002862; Reasons: Trust language detected: in trust, the trust, trustee; Corporate fiduciary referenced (trustee herein nomina) | Avoid - Trust/Complex | Trust language detected: in trust, the trust, trustee; Corporate fiduciary referenced (trustee herein nomina)",
           "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTAxLzIwMjYxMDc1MDAudGlm&type=pdf",
           "raw_distress_score": null
         }
