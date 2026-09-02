@@ -180,9 +180,30 @@ def test_end_to_end_scoring_populates_allocator_and_card_contracts():
     assert "0.60*distress_score" in house["priority_formula"]
     assert "0.46*motivation_score" in land["priority_formula"]
     assert "not observed competition" in house["saturation_method"]
-    assert "**None/100**" not in house_card(house)
-    assert "**—** — GPT evidence classification" not in house_card(house)
-    assert "**None/100**" not in land_card(land)
+    rendered_house = house_card(house)
+    rendered_land = land_card(land)
+    assert "**None/100**" not in rendered_house
+    assert "**—** — GPT evidence classification" not in rendered_house
+    assert "**None/100**" not in rendered_land
+    required_card_sections = (
+        "**Exposure factors:**",
+        "**Ownership confidence:**",
+        "### Distress/source status",
+        "### Exact official/public sources",
+        "**Recommended action:**",
+        "**GOAL:**",
+        "### Property-specific questions",
+        "**Call opener:**",
+        "**How did you find me?:**",
+        "**Confirmed-owner voicemail:**",
+        "**Unconfirmed-owner voicemail:**",
+        "**Confirmed-owner text:**",
+        "**Unconfirmed-owner text:**",
+        "### Universal seller qualification flow",
+    )
+    for section in required_card_sections:
+        assert section in rendered_house
+        assert section in rendered_land
 
 
 @pytest.mark.parametrize(("row", "signal", "reason"), [
