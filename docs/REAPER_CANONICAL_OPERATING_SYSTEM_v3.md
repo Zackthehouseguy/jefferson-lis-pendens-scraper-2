@@ -75,6 +75,15 @@ empty temporary directory with shell, file, URL, and memory tools denied; its
 model selector defaults to `auto`, and its JSON must pass the same exact-key and
 semantic schema validation before scoring.
 
+Before numeric scoring, deterministic contextual grounding checks every AI
+signal against the verified property record. Source-dependent signals require
+their named source; `multiple_distress_sources` requires at least two distinct
+source types; `roof_risk` requires roof/gutter evidence text; `absentee_owner`
+requires a verified mailing-address difference; and `vacant_lot` requires the
+qualified land context. Unsupported signals are removed before they can add
+points. Each row preserves `ai_raw_signals`, the grounded `ai_signals`, and
+`ai_signal_adjustments` so the change is directly auditable.
+
 Saturation is a deterministic public-source exposure heuristic based on source
 mix, freshness, evidence specificity, absentee-owner context, and repeat public
 cases. It is not observed investor contact volume or proof of competition. Every

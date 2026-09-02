@@ -110,6 +110,10 @@ Treat complaint text as a reported allegation, not as proof the physical conditi
 A lis pendens is legal/property distress, not automatically a foreclosure or a mortgage default.
 A will filing is not automatically an active probate case and does not prove willingness to sell.
 A tax-list appearance is a published tax-delinquency signal only for the stated source/date.
+Use multiple_distress_sources only when the supplied sources array has at least two distinct source types.
+Use tax_delinquent, mortgage_distress, and probate_or_inherited only when the supplied sources include
+tax_delinquent, lis_pendens, and wills respectively. Use roof_risk only when evidence text mentions a roof
+or gutter condition. Use absentee_owner only when the verified situs and mailing addresses differ.
 HIGH means multiple or severe current acquisition-relevant signals; MEDIUM means one material current signal;
 LOW means limited/indirect evidence; NONE means the supplied evidence is not acquisition-relevant.
 Confirmed facts must describe what the source reports or records. Put unsupported inferences in speculative_claims.
@@ -383,6 +387,84 @@ def _citation_event_count(row: dict[str, Any]) -> int:
     )
 
 
+def _ground_ai_signals(
+    row: dict[str, Any], ai: dict[str, Any],
+) -> tuple[dict[str, Any], list[dict[str, str]]]:
+    """Remove model signals that the deterministic property record cannot support.
+
+    The raw classification remains auditable, but only context-grounded signals
+    are allowed to contribute numeric weight.
+    """
+    sources = {
+        str(source).strip()
+        for source in (row.get("sources") or [])
+        if str(source).strip()
+    }
+    evidence = [item for item in (row.get("evidence") or []) if isinstance(item, dict)]
+    sources.update(
+        str(item.get("source") or "").strip()
+        for item in evidence
+        if str(item.get("source") or "").strip()
+    )
+    evidence_text = " ".join(str(item.get("details") or "") for item in evidence)
+    owner_differs = _owner_mailing_differs(row)
+
+    requirements: dict[str, tuple[bool, str]] = {
+        "multiple_distress_sources": (
+            len(sources) >= 2,
+            "requires_at_least_two_source_types",
+        ),
+        "tax_delinquent": (
+            "tax_delinquent" in sources,
+            "requires_tax_delinquent_source",
+        ),
+        "mortgage_distress": (
+            "lis_pendens" in sources,
+            "requires_lis_pendens_source",
+        ),
+        "probate_or_inherited": (
+            "wills" in sources,
+            "requires_wills_source",
+        ),
+        "roof_risk": (
+            bool(re.search(r"\b(?:roof\w*|gutter\w*)\b", evidence_text, re.I)),
+            "requires_roof_or_gutter_evidence_text",
+        ),
+        "absentee_owner": (
+            owner_differs,
+            "requires_verified_different_owner_mailing_address",
+        ),
+        "vacant_lot": (
+            row.get("candidate_type") == "LAND" and bool(row.get("vacant_lot_context")),
+            "requires_land_vacant_lot_context",
+        ),
+    }
+
+    grounded: list[str] = []
+    adjustments: list[dict[str, str]] = []
+    for signal in ai["signals"]:
+        requirement = requirements.get(signal)
+        if requirement and not requirement[0]:
+            adjustments.append({
+                "signal": signal,
+                "action": "REMOVED_BEFORE_SCORING",
+                "reason": requirement[1],
+            })
+            continue
+        if signal in grounded:
+            adjustments.append({
+                "signal": signal,
+                "action": "REMOVED_BEFORE_SCORING",
+                "reason": "duplicate_signal_no_additional_weight",
+            })
+            continue
+        grounded.append(signal)
+
+    result = dict(ai)
+    result["signals"] = grounded
+    return result, adjustments
+
+
 def _priority_tier(score: int) -> str:
     if score >= 75:
         return "CALL FIRST"
@@ -448,6 +530,13 @@ def score_row(
     if key != model_key(row):
         raise ValueError(f"classification_key_drift:{key}:{model_key(row)}")
 
+    if row.get("candidate_type") == "SFR":
+        raw_ai = validate_ai_classification(classification)
+    else:
+        raw_ai = validate_land_ai(classification)
+    raw_ai_signals = list(raw_ai["signals"])
+    ai, signal_adjustments = _ground_ai_signals(row, raw_ai)
+
     owner_differs = _owner_mailing_differs(row)
     open_cases = _open_case_count(row)
     citations = _citation_event_count(row)
@@ -462,7 +551,6 @@ def score_row(
     )
 
     if row.get("candidate_type") == "SFR":
-        ai = validate_ai_classification(classification)
         primary = distress_score(
             ai,
             open_case_count=open_cases,
@@ -485,7 +573,6 @@ def score_row(
         if primary < 50:
             new_rejections.append("distress_below_production_threshold")
     else:
-        ai = validate_land_ai(classification)
         primary = motivation_score(
             ai,
             open_case_count=open_cases,
@@ -532,7 +619,9 @@ def score_row(
     scored.update(score_fields)
     scored.update({
         "property_key": model_key(row),
+        "ai_raw_signals": raw_ai_signals,
         "ai_signals": ai["signals"],
+        "ai_signal_adjustments": signal_adjustments,
         "confirmed_facts": ai["confirmed_facts"],
         "speculative_claims": ai["speculative_claims"],
         "ai_summary": ai["summary"],
@@ -613,6 +702,11 @@ def score_report(
             row["rank"] = rank
 
     summary = dict(report.get("summary") or {})
+    adjustment_reasons = Counter(
+        adjustment["reason"]
+        for row in scored_by_key.values()
+        for adjustment in (row.get("ai_signal_adjustments") or [])
+    )
     summary.update({
         "eligible_sfr": len(eligible_sfr),
         "eligible_land": len(eligible_land),
@@ -621,6 +715,10 @@ def score_report(
         "ai_targets": len(targets),
         "ai_classified": len(scored_by_key),
         "ai_unclassified": len(targets) - len(scored_by_key),
+        "ai_raw_signal_count": sum(len(row.get("ai_raw_signals") or []) for row in scored_by_key.values()),
+        "ai_grounded_signal_count": sum(len(row.get("ai_signals") or []) for row in scored_by_key.values()),
+        "ai_signal_adjustments": sum(adjustment_reasons.values()),
+        "ai_signal_adjustment_reasons": dict(adjustment_reasons),
         "saturation_method": SATURATION_METHOD,
         "saturation_distinct_scores": len({row.get("saturation_score") for row in scored_by_key.values()}),
         "ai_level_distribution": dict(Counter(
@@ -631,6 +729,7 @@ def score_report(
     notes.extend([
         "Every prequalified property was classified through the live validated AI contract before deterministic scoring.",
         "The model returns semantic classifications only; numeric scores are calculated by version-controlled code.",
+        "Context-dependent AI signals that the verified property record cannot support are removed before numeric scoring; raw signals and every adjustment remain in the row audit trail.",
         "Each scored row retains deterministic_score_inputs, priority_components, priority_formula, saturation_factors, and the AI contract/model metadata needed to reproduce the result.",
         f"Saturation uses {SATURATION_METHOD}; it does not claim measured investor contacts or competition.",
         "No prior bench fixture or stale classification is accepted by the production allocator.",

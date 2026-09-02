@@ -9,6 +9,7 @@ from scrapers.probe.reaper_live_ai_rank import (
     CONTRACT_VERSION,
     HouseBatch,
     _copilot_classify_batch,
+    _ground_ai_signals,
     main,
     model_key,
     score_report,
@@ -31,7 +32,7 @@ def _report():
                 "evidence": [{
                     "source": "louisville_code_violations",
                     "signal_date": "09/01/2026",
-                    "details": "Unsafe structural foundation collapse with sewage, mold, and a boarded opening. " * 4,
+                    "details": "Unsafe structural foundation and roof collapse with sewage, mold, and a boarded opening. " * 4,
                     "source_url": "https://example.test/code/101",
                 }],
                 "parcel_id": "HOUSE101",
@@ -111,7 +112,10 @@ def _classifications(report):
         model_key(house): {
             "property_key": model_key(house),
             "distress_level": "HIGH",
-            "signals": ["unsafe_structure", "structural_damage", "roof_risk", "mold", "vacancy"],
+            "signals": [
+                "unsafe_structure", "structural_damage", "roof_risk", "mold", "vacancy",
+                "multiple_distress_sources",
+            ],
             "confirmed_facts": ["Louisville code evidence reports unsafe structural conditions."],
             "speculative_claims": [],
             "summary": "Current code evidence reports multiple severe property-condition signals.",
@@ -152,6 +156,17 @@ def test_end_to_end_scoring_populates_allocator_and_card_contracts():
     assert qualify_house(house)
     assert qualify_land(land)
     assert house["ai_contract_version"] == CONTRACT_VERSION
+    assert "multiple_distress_sources" in house["ai_raw_signals"]
+    assert "multiple_distress_sources" not in house["ai_signals"]
+    assert house["ai_signal_adjustments"] == [{
+        "signal": "multiple_distress_sources",
+        "action": "REMOVED_BEFORE_SCORING",
+        "reason": "requires_at_least_two_source_types",
+    }]
+    assert scored["summary"]["ai_signal_adjustments"] == 1
+    assert scored["summary"]["ai_signal_adjustment_reasons"] == {
+        "requires_at_least_two_source_types": 1,
+    }
     assert house["distress_score"] >= 50 and house["priority_score"] >= 60
     assert land["motivation_score"] >= 50 and land["builder_fit_score"] >= 50
     assert land["priority_score"] >= 60
@@ -168,6 +183,90 @@ def test_end_to_end_scoring_populates_allocator_and_card_contracts():
     assert "**None/100**" not in house_card(house)
     assert "**—** — GPT evidence classification" not in house_card(house)
     assert "**None/100**" not in land_card(land)
+
+
+@pytest.mark.parametrize(("row", "signal", "reason"), [
+    (
+        {"candidate_type": "SFR", "sources": ["louisville_code_violations"]},
+        "multiple_distress_sources",
+        "requires_at_least_two_source_types",
+    ),
+    (
+        {"candidate_type": "SFR", "sources": ["louisville_code_violations"]},
+        "tax_delinquent",
+        "requires_tax_delinquent_source",
+    ),
+    (
+        {"candidate_type": "SFR", "sources": ["louisville_code_violations"]},
+        "mortgage_distress",
+        "requires_lis_pendens_source",
+    ),
+    (
+        {"candidate_type": "SFR", "sources": ["louisville_code_violations"]},
+        "probate_or_inherited",
+        "requires_wills_source",
+    ),
+    (
+        {
+            "candidate_type": "SFR",
+            "sources": ["louisville_code_violations"],
+            "evidence": [{"source": "louisville_code_violations", "details": "Peeling paint."}],
+        },
+        "roof_risk",
+        "requires_roof_or_gutter_evidence_text",
+    ),
+    (
+        {
+            "candidate_type": "LAND",
+            "pva_situs_address": "100 TEST ST",
+            "pva_mailing_address": "100 TEST ST",
+        },
+        "absentee_owner",
+        "requires_verified_different_owner_mailing_address",
+    ),
+    (
+        {"candidate_type": "LAND", "vacant_lot_context": False},
+        "vacant_lot",
+        "requires_land_vacant_lot_context",
+    ),
+])
+def test_context_dependent_ai_signal_is_removed_before_scoring(row, signal, reason):
+    grounded, adjustments = _ground_ai_signals(row, {"signals": [signal]})
+
+    assert grounded["signals"] == []
+    assert adjustments == [{
+        "signal": signal,
+        "action": "REMOVED_BEFORE_SCORING",
+        "reason": reason,
+    }]
+
+
+def test_context_dependent_ai_signals_remain_when_property_record_supports_them():
+    house = {
+        "candidate_type": "SFR",
+        "sources": ["lis_pendens", "tax_delinquent", "wills", "louisville_code_violations"],
+        "evidence": [{"source": "louisville_code_violations", "details": "Roof and gutter failure."}],
+    }
+    house_signals = [
+        "multiple_distress_sources", "tax_delinquent", "mortgage_distress",
+        "probate_or_inherited", "roof_risk",
+    ]
+    grounded_house, house_adjustments = _ground_ai_signals(house, {"signals": house_signals})
+
+    land = {
+        "candidate_type": "LAND",
+        "sources": ["tax_delinquent"],
+        "pva_situs_address": "200 TEST AVE",
+        "pva_mailing_address": "999 ELSEWHERE RD",
+        "vacant_lot_context": True,
+    }
+    land_signals = ["tax_delinquent", "absentee_owner", "vacant_lot"]
+    grounded_land, land_adjustments = _ground_ai_signals(land, {"signals": land_signals})
+
+    assert grounded_house["signals"] == house_signals
+    assert house_adjustments == []
+    assert grounded_land["signals"] == land_signals
+    assert land_adjustments == []
 
 
 def test_allocator_rejects_old_or_fixture_scoring():
