@@ -1,9 +1,9 @@
 {
   "status": "PASS",
-  "generated_at_et": "2026-09-01T13:07:43.885093-04:00",
+  "generated_at_et": "2026-09-02T02:08:48.032634-04:00",
   "query_window": {
-    "start_date": "2026-08-29",
-    "end_date": "2026-09-01"
+    "start_date": "2026-08-30",
+    "end_date": "2026-09-02"
   },
   "source_status": {
     "lis_pendens": "OK",
@@ -13,13 +13,13 @@
     "louisville_landbank": "OK"
   },
   "source_record_counts": {
-    "lis_pendens": 17,
-    "wills": 1,
-    "louisville_code_violations": 232,
+    "lis_pendens": 18,
+    "wills": 2,
+    "louisville_code_violations": 231,
     "tax_delinquent": 0,
     "louisville_landbank": 402
   },
-  "properties_after_stacking": 639,
+  "properties_after_stacking": 640,
   "fresh_individual_candidates": 235,
   "fresh_individual_high_count": 0,
   "fresh_individual_medium_count": 1,
@@ -379,6 +379,43 @@
           "amount": null,
           "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=1407+Crosstimbers+Dr&searchType=StreetSearch#results",
           "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wODMxLzIwMjYxMDcwMjkudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::6703 SHALLOW ROCK DR",
+      "property_address": "6703 Shallow Rock Dr, Louisville, KY 40299",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "CROFT TARA J; BILLTOWN FARM HOMEOWNERS ASSOCIATION INC; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/01/2026",
+          "property_address": "6703 Shallow Rock Dr, Louisville, KY 40299",
+          "normalized_address": "6703 SHALLOW ROCK DR",
+          "parcel_id": null,
+          "party_or_owner": "CROFT TARA J; BILLTOWN FARM HOMEOWNERS ASSOCIATION INC; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=6703+Shallow+Rock+Dr&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTAxLzIwMjYxMDc5NzUudGlm&type=pdf",
           "raw_distress_score": null
         }
       ]
@@ -2559,43 +2596,6 @@
           "status": "Hold",
           "amount": null,
           "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned; roof/gutters; public hazard | 02A Cleaning, X50 Roof/Gutters | Priority: HIGH | Distress score: 15 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; roof/gutters; public hazard | Violations: 02A Cleaning, X50 Roof/Gutters | Violation rows: 2 | Date: 2026-08-31 | Case IDs: ENF-PMNT-22-014638-40 | Parcel: 088600740000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 15
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::007E00660000",
-      "property_address": "3444 LARKWOOD AVE, LOUISVILLE, KY 40212",
-      "parcel_id": "007E00660000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Hold"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, structural, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": true,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-29",
-          "property_address": "3444 LARKWOOD AVE, LOUISVILLE, KY 40212",
-          "normalized_address": "3444 LARKWOOD AVE",
-          "parcel_id": "007E00660000",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned; structural/foundation; fence/accessory | 02A Cleaning, X78 Fence/Accessory | Priority: HIGH | Distress score: 15 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; structural/foundation; fence/accessory | Violations: 02A Cleaning, X78 Fence/Accessory | Violation rows: 2 | Date: 2026-08-29 | Case IDs: ENF-PMNT-23-005527-16 | Parcel: 007E00660000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 15
         }
@@ -9230,6 +9230,43 @@
       ]
     },
     {
+      "property_key": "ADDR::6703 SHALLOW ROCK DR",
+      "property_address": "6703 Shallow Rock Dr, Louisville, KY 40299",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "CROFT TARA J; BILLTOWN FARM HOMEOWNERS ASSOCIATION INC; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/01/2026",
+          "property_address": "6703 Shallow Rock Dr, Louisville, KY 40299",
+          "normalized_address": "6703 SHALLOW ROCK DR",
+          "parcel_id": null,
+          "party_or_owner": "CROFT TARA J; BILLTOWN FARM HOMEOWNERS ASSOCIATION INC; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=6703+Shallow+Rock+Dr&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTAxLzIwMjYxMDc5NzUudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
       "property_key": "ADDR::5917 PRESTWOOD CT",
       "property_address": "5917 Prestwood Ct, Louisville, KY 40219",
       "parcel_id": null,
@@ -11442,43 +11479,6 @@
           "status": "Hold",
           "amount": null,
           "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned; roof/gutters; public hazard | 02A Cleaning, X50 Roof/Gutters | Priority: HIGH | Distress score: 15 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; roof/gutters; public hazard | Violations: 02A Cleaning, X50 Roof/Gutters | Violation rows: 2 | Date: 2026-08-31 | Case IDs: ENF-PMNT-22-014638-40 | Parcel: 088600740000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 15
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::007E00660000",
-      "property_address": "3444 LARKWOOD AVE, LOUISVILLE, KY 40212",
-      "parcel_id": "007E00660000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Hold"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, structural, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": true,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-08-29",
-          "property_address": "3444 LARKWOOD AVE, LOUISVILLE, KY 40212",
-          "normalized_address": "3444 LARKWOOD AVE",
-          "parcel_id": "007E00660000",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned; structural/foundation; fence/accessory | 02A Cleaning, X78 Fence/Accessory | Priority: HIGH | Distress score: 15 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; structural/foundation; fence/accessory | Violations: 02A Cleaning, X78 Fence/Accessory | Violation rows: 2 | Date: 2026-08-29 | Case IDs: ENF-PMNT-23-005527-16 | Parcel: 007E00660000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 15
         }
