@@ -12,6 +12,7 @@ on:
       - "scrapers/land_decision_layer.py"
       - "scrapers/reaper_saturation.py"
       - "requirements.txt"
+      - "triggers/reaper_live/*.json"
   workflow_dispatch:
 
 permissions:
