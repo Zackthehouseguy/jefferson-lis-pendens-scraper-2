@@ -1,0 +1,7 @@
+{
+  "agent_id": "zack",
+  "houses_file": "reports/reaper_multi_source_live/bulk_qualified.json",
+  "land_file": "reports/reaper_multi_source_live/bulk_qualified.json",
+  "house_limit": 25,
+  "land_limit": 25
+}
