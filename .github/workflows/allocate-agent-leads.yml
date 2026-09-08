@@ -49,6 +49,9 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install market verification dependencies
+        run: python -m pip install --disable-pip-version-check requests beautifulsoup4
+
       - name: Resolve request
         id: request
         shell: bash
@@ -116,6 +119,13 @@ jobs:
             --land-limit "$LAND_LIMIT" \
             --state-file state/lead_assignments.json \
             --output "$OUT"
+
+      - name: Verify current public market status
+        env:
+          AGENT_ID: ${{ steps.request.outputs.agent_id }}
+        run: |
+          OUT="reports/agent_batches/${AGENT_ID}/latest.json"
+          python -m scrapers.market_verifier --input "$OUT"
           python -m scrapers.probe.render_lead_cards \
             --input "$OUT" \
             --output "reports/agent_batches/${AGENT_ID}/latest.md" \
@@ -181,7 +191,7 @@ jobs:
                           'property_key': c.get('reaper_property_key'),
                           'parcel_id': c.get('parcel_id'),
                           'address': c.get('address'),
-                          'reason': 'MARKET STATUS UNVERIFIED'
+                          'reason': c.get('market_status') or 'MARKET STATUS UNVERIFIED'
                       })
                       continue
                   leads.append(c)
