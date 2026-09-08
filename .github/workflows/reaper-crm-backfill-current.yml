@@ -1,0 +1,93 @@
+name: Reaper CRM Backfill Current Batch
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'triggers/reaper_crm_backfill_current.json'
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build current Zack batch payload
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          src=pathlib.Path('reports/agent_batches/zack/latest.json')
+          out=pathlib.Path('/tmp/reaper_backfill_payload.json')
+          d=json.loads(src.read_text(encoding='utf-8'))
+          def first(x,*names):
+              for n in names:
+                  v=x.get(n)
+                  if v is not None and v!='': return v
+              return None
+          def canonical(x,lane):
+              owner=first(x,'verified_owner','pva_owner','owner_name','full_owner_name')
+              pva_verified=bool(first(x,'pva_verified'))
+              return {
+                  **x,
+                  'name': first(x,'name','owner_name','pva_owner','verified_owner') or owner,
+                  'address': first(x,'address','property_address','source_property_address'),
+                  'reaper_agent_id': first(x,'reaper_agent_id','agent_id') or 'zack',
+                  'reaper_assignment': first(x,'reaper_assignment','assignment_status'),
+                  'reaper_rank': first(x,'reaper_rank','rank'),
+                  'lead_lane': lane,
+                  'overall_priority_score': first(x,'overall_priority_score','priority_score','reaper_priority_score'),
+                  'ai_classification': first(x,'ai_classification','ai_distress_level','ai_motivation_level'),
+                  'distress_score': first(x,'distress_score'),
+                  'motivation_score': first(x,'motivation_score'),
+                  'builder_fit_score': first(x,'builder_fit_score'),
+                  'saturation_risk': first(x,'saturation_risk','saturation_score'),
+                  'freshness_score': first(x,'freshness_score'),
+                  'market_status': first(x,'market_status') or 'MARKET STATUS UNVERIFIED',
+                  'market_status_checked_at': first(x,'market_status_checked_at'),
+                  'verified_owner': owner,
+                  'ownership_confidence': first(x,'ownership_confidence') or ('PVA VERIFIED' if pva_verified and owner else None),
+                  'owner_mailing': first(x,'owner_mailing','owner_mailing_address','pva_mailing_address'),
+                  'parcel_id': first(x,'parcel_id','source_parcel_id','pva_parcel_id'),
+                  'occupancy_status': first(x,'occupancy_status','occupancy'),
+                  'occupancy_source': first(x,'occupancy_source') or ('TheReaper source stack' if first(x,'occupancy_status','occupancy') else None),
+                  'reaper_property_key': first(x,'reaper_property_key','property_key'),
+                  'reaper_material_revision': first(x,'reaper_material_revision','material_revision','event_fingerprint'),
+              }
+          leads=[]
+          for x in d.get('houses',[]) or []: leads.append(canonical(x,'house'))
+          for x in d.get('land',[]) or []: leads.append(canonical(x,'land'))
+          payload={'source':'thereaper','run_id':f"backfill::{d.get('generated_at') or 'current'}::zack",'agent_id':'zack','leads':leads}
+          out.write_text(json.dumps(payload),encoding='utf-8')
+          print(f'Prepared {len(leads)} current Zack leads')
+          PY
+
+      - name: Import current batch into Zack CRM
+        env:
+          CRM_INGEST_URL: https://real-track-app.lovable.app/api/public/reaper/ingest
+        run: |
+          OIDC_RESPONSE=$(curl --silent --show-error \
+            --header "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=zacks-crm-reaper")
+          OIDC_TOKEN=$(python -c 'import json,sys; print(json.load(sys.stdin)["value"])' <<< "$OIDC_RESPONSE")
+          RESPONSE=$(mktemp)
+          HTTP_CODE=$(curl --silent --show-error \
+            --output "$RESPONSE" \
+            --write-out '%{http_code}' \
+            --request POST "$CRM_INGEST_URL" \
+            --header 'Content-Type: application/json' \
+            --header "Authorization: Bearer $OIDC_TOKEN" \
+            --data-binary '@/tmp/reaper_backfill_payload.json')
+          cat "$RESPONSE"
+          echo
+          test "$HTTP_CODE" -ge 200 -a "$HTTP_CODE" -lt 300
+          python - "$RESPONSE" <<'PY'
+          import json,sys
+          d=json.load(open(sys.argv[1],encoding='utf-8'))
+          if not d.get('ok'): raise SystemExit('CRM response did not report ok=true')
+          if d.get('received') != 25: raise SystemExit(f"Expected 25 received, got {d.get('received')}")
+          print(json.dumps(d,indent=2))
+          PY
