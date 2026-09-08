@@ -121,6 +121,85 @@ jobs:
             --output "reports/agent_batches/${AGENT_ID}/latest.md" \
             --kind mixed
 
+      - name: Build CRM ingest payload
+        id: crm_payload
+        env:
+          AGENT_ID: ${{ steps.request.outputs.agent_id }}
+        run: |
+          python - <<'PY'
+          import json, os, pathlib
+
+          agent = os.environ['AGENT_ID']
+          src = pathlib.Path(f'reports/agent_batches/{agent}/latest.json')
+          out = pathlib.Path(f'reports/agent_batches/{agent}/crm_ingest_payload.json')
+          d = json.loads(src.read_text(encoding='utf-8'))
+
+          def first(x, *names):
+              for n in names:
+                  v = x.get(n)
+                  if v is not None and v != '':
+                      return v
+              return None
+
+          def canonical(x, lane):
+              owner = first(x, 'verified_owner', 'pva_owner', 'owner_name', 'full_owner_name')
+              pva_verified = bool(first(x, 'pva_verified'))
+              return {
+                  **x,
+                  'name': first(x, 'name', 'owner_name', 'pva_owner', 'verified_owner') or owner,
+                  'address': first(x, 'address', 'property_address', 'source_property_address'),
+                  'reaper_agent_id': first(x, 'reaper_agent_id', 'agent_id') or agent,
+                  'reaper_assignment': first(x, 'reaper_assignment', 'assignment_status'),
+                  'reaper_rank': first(x, 'reaper_rank', 'rank'),
+                  'lead_lane': lane,
+                  'overall_priority_score': first(x, 'overall_priority_score', 'priority_score', 'reaper_priority_score'),
+                  'ai_classification': first(x, 'ai_classification', 'ai_distress_level', 'ai_motivation_level'),
+                  'distress_score': first(x, 'distress_score'),
+                  'motivation_score': first(x, 'motivation_score'),
+                  'builder_fit_score': first(x, 'builder_fit_score'),
+                  'saturation_risk': first(x, 'saturation_risk', 'saturation_score'),
+                  'freshness_score': first(x, 'freshness_score'),
+                  'verified_owner': owner,
+                  'ownership_confidence': first(x, 'ownership_confidence') or ('PVA VERIFIED' if pva_verified and owner else None),
+                  'owner_mailing': first(x, 'owner_mailing', 'owner_mailing_address', 'pva_mailing_address'),
+                  'parcel_id': first(x, 'parcel_id', 'source_parcel_id', 'pva_parcel_id'),
+                  'occupancy_status': first(x, 'occupancy_status', 'occupancy'),
+                  'occupancy_source': first(x, 'occupancy_source') or ('TheReaper source stack' if first(x, 'occupancy_status', 'occupancy') else None),
+                  'reaper_property_key': first(x, 'reaper_property_key', 'property_key'),
+                  'reaper_material_revision': first(x, 'reaper_material_revision', 'material_revision', 'event_fingerprint'),
+              }
+
+          leads=[]
+          withheld=[]
+          for lane_key, lane_name in (('houses','house'),('land','land')):
+              for x in d.get(lane_key, []) or []:
+                  c = canonical(x, lane_name)
+                  # Hard stop: never auto-import anything that has not already
+                  # been independently cleared as currently off-market.
+                  if c.get('market_status') != 'OFF-MARKET VERIFIED' or not c.get('market_status_checked_at'):
+                      withheld.append({
+                          'property_key': c.get('reaper_property_key'),
+                          'parcel_id': c.get('parcel_id'),
+                          'address': c.get('address'),
+                          'reason': 'MARKET STATUS UNVERIFIED'
+                      })
+                      continue
+                  leads.append(c)
+
+          payload={
+              'source': 'thereaper',
+              'run_id': f"{d.get('generated_at') or d.get('batch_id') or 'unknown'}::{agent}",
+              'agent_id': agent,
+              'leads': leads,
+              'withheld_before_crm': withheld,
+          }
+          out.write_text(json.dumps(payload, indent=2), encoding='utf-8')
+          print(f'Prepared {len(leads)} callable leads for CRM; withheld {len(withheld)} without OFF-MARKET VERIFIED.')
+          with open(os.environ['GITHUB_OUTPUT'],'a',encoding='utf-8') as f:
+              f.write(f"callable_count={len(leads)}\n")
+              f.write(f"payload_path={out}\n")
+          PY
+
       - name: Persist assignment atomically
         env:
           AGENT_ID: ${{ steps.request.outputs.agent_id }}
@@ -130,6 +209,49 @@ jobs:
           git add state/lead_assignments.json "reports/agent_batches/${AGENT_ID}/latest.json" "reports/agent_batches/${AGENT_ID}/latest.md"
           git diff --cached --quiet || git commit -m "Allocate Reaper leads to ${AGENT_ID} [skip ci]"
           git push origin HEAD:main
+
+      - name: Import callable Reaper leads into Zack CRM
+        if: ${{ steps.crm_payload.outputs.callable_count != '0' }}
+        env:
+          REAPER_CRM_INGEST_TOKEN: ${{ secrets.REAPER_CRM_INGEST_TOKEN }}
+          PAYLOAD_PATH: ${{ steps.crm_payload.outputs.payload_path }}
+          CRM_INGEST_URL: https://real-track-app.lovable.app/api/public/reaper/ingest
+        run: |
+          if [ -z "$REAPER_CRM_INGEST_TOKEN" ]; then
+            echo 'REAPER_CRM_INGEST_TOKEN is not configured in GitHub Actions secrets.' >&2
+            exit 1
+          fi
+
+          RESPONSE=$(mktemp)
+          HTTP_CODE=$(curl --silent --show-error \
+            --output "$RESPONSE" \
+            --write-out '%{http_code}' \
+            --request POST "$CRM_INGEST_URL" \
+            --header 'Content-Type: application/json' \
+            --header "Authorization: Bearer $REAPER_CRM_INGEST_TOKEN" \
+            --data-binary "@$PAYLOAD_PATH")
+
+          cat "$RESPONSE"
+          echo
+          if [ "$HTTP_CODE" -lt 200 ] || [ "$HTTP_CODE" -ge 300 ]; then
+            echo "CRM ingest failed with HTTP $HTTP_CODE" >&2
+            exit 1
+          fi
+
+          python - "$RESPONSE" <<'PY'
+          import json,sys
+          d=json.load(open(sys.argv[1],encoding='utf-8'))
+          if not d.get('ok'):
+              raise SystemExit('CRM response did not report ok=true')
+          print('CRM ingest summary:', json.dumps({
+              'received': d.get('received'),
+              'accepted': d.get('accepted'),
+              'rejected': d.get('rejected'),
+              'duplicates': d.get('duplicates'),
+              'reactivated': d.get('reactivated'),
+              'batch_id': d.get('batch_id'),
+          }))
+          PY
 
       - uses: actions/upload-artifact@v4
         with:
