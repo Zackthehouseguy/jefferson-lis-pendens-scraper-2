@@ -30,6 +30,7 @@ on:
 
 permissions:
   contents: write
+  id-token: write
 
 # Critical: all agents share one lock. A second allocation waits for the first
 # to commit state/lead_assignments.json before choosing leads.
@@ -223,12 +224,15 @@ jobs:
       - name: Import callable Reaper leads into Zack CRM
         if: ${{ steps.crm_payload.outputs.callable_count != '0' }}
         env:
-          REAPER_CRM_INGEST_TOKEN: ${{ secrets.REAPER_CRM_INGEST_TOKEN }}
           PAYLOAD_PATH: ${{ steps.crm_payload.outputs.payload_path }}
           CRM_INGEST_URL: https://real-track-app.lovable.app/api/public/reaper/ingest
         run: |
-          if [ -z "$REAPER_CRM_INGEST_TOKEN" ]; then
-            echo 'REAPER_CRM_INGEST_TOKEN is not configured in GitHub Actions secrets.' >&2
+          OIDC_RESPONSE=$(curl --silent --show-error \
+            --header "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=zacks-crm-reaper")
+          OIDC_TOKEN=$(python -c 'import json,sys; print(json.load(sys.stdin)["value"])' <<< "$OIDC_RESPONSE")
+          if [ -z "$OIDC_TOKEN" ]; then
+            echo 'Failed to obtain GitHub Actions OIDC token.' >&2
             exit 1
           fi
 
@@ -238,7 +242,7 @@ jobs:
             --write-out '%{http_code}' \
             --request POST "$CRM_INGEST_URL" \
             --header 'Content-Type: application/json' \
-            --header "Authorization: Bearer $REAPER_CRM_INGEST_TOKEN" \
+            --header "Authorization: Bearer $OIDC_TOKEN" \
             --data-binary "@$PAYLOAD_PATH")
 
           cat "$RESPONSE"
