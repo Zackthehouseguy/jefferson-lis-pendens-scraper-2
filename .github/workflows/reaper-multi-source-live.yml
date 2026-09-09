@@ -79,7 +79,6 @@ jobs:
           run_one wills --search-mode auto
           run_one louisville_code_violations
           run_one tax_delinquent
-          run_one louisville_landbank --limit 1000
 
           echo "===== SOURCE EXIT CODES ====="
           cat "$ROOT/source_exit_codes.txt"
