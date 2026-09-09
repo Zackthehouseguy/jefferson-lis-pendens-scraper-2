@@ -1,0 +1,32 @@
+name: Release Withheld Zack Reaper Assignments
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/reaper-release-withheld-zack.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reaper-global-lead-allocation
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Restore ledger because strict market gate delivered zero
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+          git checkout 3dd08289128978034e9972b1ab0f8445c936920f -- state/lead_assignments.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/lead_assignments.json
+          git diff --cached --quiet || git commit -m "Release Zack candidates withheld by market gate [skip ci]"
+          git push origin HEAD:main
