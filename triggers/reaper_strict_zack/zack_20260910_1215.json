@@ -1,0 +1,7 @@
+{
+  "agent_id": "zack",
+  "requested_at": "2026-09-10T12:15:00Z",
+  "house_limit": 25,
+  "land_limit": 25,
+  "mode": "strict_off_market_verified"
+}
