@@ -1,0 +1,11 @@
+{
+  "agent_id": "zack",
+  "requested_at": "2026-09-10T13:55:00-04:00",
+  "source_pool": "reports/reaper_multi_source_live/bulk_qualified.json",
+  "house_limit": 25,
+  "land_limit": 25,
+  "market_status_gate": false,
+  "exclude_public_landbank": true,
+  "use_shared_sticky_allocator": true,
+  "state_file": "state/lead_assignments.json"
+}
