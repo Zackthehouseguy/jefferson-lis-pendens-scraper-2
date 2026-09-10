@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "generated_at_et": "2026-09-10T08:06:22.844422-04:00",
+  "generated_at_et": "2026-09-10T13:53:21.560458-04:00",
   "query_window": {
     "start_date": "2026-09-07",
     "end_date": "2026-09-10"
@@ -13,14 +13,14 @@
     "louisville_landbank": "MISSING_OR_FAILED"
   },
   "source_record_counts": {
-    "lis_pendens": 9,
+    "lis_pendens": 11,
     "wills": 1,
     "louisville_code_violations": 361,
     "tax_delinquent": 0,
     "louisville_landbank": 0
   },
-  "properties_after_stacking": 359,
-  "fresh_individual_candidates": 341,
+  "properties_after_stacking": 361,
+  "fresh_individual_candidates": 343,
   "fresh_individual_high_count": 0,
   "fresh_individual_medium_count": 0,
   "top_fresh_individual": [
@@ -294,6 +294,80 @@
           "amount": null,
           "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=601+W+Market+St&searchType=StreetSearch#results",
           "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTA5LzIwMjYxMTA5NjAudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::4616 N RUTLAND AVE",
+      "property_address": "4616 N Rutland Ave, Louisville, KY 40215",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "JONES TONY M; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/10/2026",
+          "property_address": "4616 N Rutland Ave, Louisville, KY 40215",
+          "normalized_address": "4616 N RUTLAND AVE",
+          "parcel_id": null,
+          "party_or_owner": "JONES TONY M; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=4616+N+Rutland+Ave&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTEwLzIwMjYxMTEwNzIudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::106 W BURNETT AVE",
+      "property_address": "106 W Burnett Ave, Louisville, KY 40208",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "KRAHULEC SHARON; BENTLEY SHARON; KRAHULEC KENNETH"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/10/2026",
+          "property_address": "106 W Burnett Ave, Louisville, KY 40208",
+          "normalized_address": "106 W BURNETT AVE",
+          "parcel_id": null,
+          "party_or_owner": "KRAHULEC SHARON; BENTLEY SHARON; KRAHULEC KENNETH",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=106+W+Burnett+Ave&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTEwLzIwMjYxMTEyNzMudGlm&type=pdf",
           "raw_distress_score": null
         }
       ]
@@ -13112,6 +13186,80 @@
       ]
     },
     {
+      "property_key": "ADDR::4616 N RUTLAND AVE",
+      "property_address": "4616 N Rutland Ave, Louisville, KY 40215",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "JONES TONY M; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/10/2026",
+          "property_address": "4616 N Rutland Ave, Louisville, KY 40215",
+          "normalized_address": "4616 N RUTLAND AVE",
+          "parcel_id": null,
+          "party_or_owner": "JONES TONY M; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=4616+N+Rutland+Ave&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTEwLzIwMjYxMTEwNzIudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::106 W BURNETT AVE",
+      "property_address": "106 W Burnett Ave, Louisville, KY 40208",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "KRAHULEC SHARON; BENTLEY SHARON; KRAHULEC KENNETH"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/10/2026",
+          "property_address": "106 W Burnett Ave, Louisville, KY 40208",
+          "normalized_address": "106 W BURNETT AVE",
+          "parcel_id": null,
+          "party_or_owner": "KRAHULEC SHARON; BENTLEY SHARON; KRAHULEC KENNETH",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=106+W+Burnett+Ave&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTEwLzIwMjYxMTEyNzMudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
       "property_key": "PARCEL::110100040003",
       "property_address": "2604 FRANKLIN AVE, LOUISVILLE, KY 40216",
       "parcel_id": "110100040003",
@@ -16466,80 +16614,6 @@
           "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 14 | Status: Citation Referral | Occupancy: VACANT LOT | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Citation amount: $800 | Violation rows: 2 | Date: 2026-09-08 | Case IDs: ENF-PMNT-25-013180-14 | Parcel: 003M01240000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 14
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::003F00380000",
-      "property_address": "2231 ROWAN ST, LOUISVILLE, KY 40212-0000",
-      "parcel_id": "003F00380000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Hold"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation, roof, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-09",
-          "property_address": "2231 ROWAN ST, LOUISVILLE, KY 40212-0000",
-          "normalized_address": "2231 ROWAN ST",
-          "parcel_id": "003F00380000",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "roof/gutters; public hazard; structural/foundation; fence/accessory; exterior/foundation | X50 Roof/Gutters, X78 Fence/Accessory, X19 Exterior/Foundation | Priority: HIGH | Distress score: 13 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: roof/gutters; public hazard; structural/foundation; fence/accessory; exterior/foundation | Violations: X50 Roof/Gutters, X78 Fence/Accessory, X19 Exterior/Foundation | Violation rows: 3 | Date: 2026-09-09 | Case IDs: 14PM17732-PM-57 | Parcel: 003F00380000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 13
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::074000170000",
-      "property_address": "4446 POPLAR LEVEL RD, LOUISVILLE, KY 40213",
-      "parcel_id": "074000170000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Hold"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation, roof, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-09",
-          "property_address": "4446 POPLAR LEVEL RD, LOUISVILLE, KY 40213",
-          "normalized_address": "4446 POPLAR LEVEL RD",
-          "parcel_id": "074000170000",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "roof/gutters; public hazard; structural/foundation; fence/accessory; exterior/foundation | X50 Roof/Gutters, X78 Fence/Accessory, X19 Exterior/Foundation | Priority: HIGH | Distress score: 13 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: roof/gutters; public hazard; structural/foundation; fence/accessory; exterior/foundation | Violations: X50 Roof/Gutters, X78 Fence/Accessory, X19 Exterior/Foundation | Violation rows: 3 | Date: 2026-09-09 | Case IDs: ENF-PMNT-26-017545-2 | Parcel: 074000170000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 13
         }
       ]
     }
