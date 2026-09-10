@@ -1,4 +1,4 @@
-name: Reaper Zack Strict Delivery
+name: Reaper Zack Delivery
 
 on:
   push:
@@ -21,15 +21,19 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - run: python -m pip install --disable-pip-version-check requests beautifulsoup4
+
       - name: Sync latest shared state
         run: |
           git fetch origin main
           git reset --hard origin/main
           cp state/lead_assignments.json /tmp/lead_assignments_before.json
+
       - name: Allocate through shared sticky allocator
         run: |
           mkdir -p reports/agent_batches/zack
@@ -41,95 +45,141 @@ jobs:
             --land-limit 25 \
             --state-file state/lead_assignments.json \
             --output reports/agent_batches/zack/latest.json
-      - name: Verify current public market status
-        run: |
-          python -m scrapers.market_verifier --input reports/agent_batches/zack/latest.json
-      - name: Apply strict delivery gate and restore withheld assignments
+
+      - name: Exclude public and Landbank ownership only
         run: |
           python - <<'PY'
           import json, pathlib
-          batch_p=pathlib.Path('reports/agent_batches/zack/latest.json')
-          state_p=pathlib.Path('state/lead_assignments.json')
-          before=json.load(open('/tmp/lead_assignments_before.json',encoding='utf-8'))
-          state=json.load(open(state_p,encoding='utf-8'))
-          batch=json.load(open(batch_p,encoding='utf-8'))
-          kept=[]; withheld=[]
-          def key(x): return x.get('reaper_property_key') or x.get('property_key') or (f"JEFFERSON_KY::PARCEL::{x.get('parcel_id')}" if x.get('parcel_id') else None)
+
+          batch_p = pathlib.Path('reports/agent_batches/zack/latest.json')
+          state_p = pathlib.Path('state/lead_assignments.json')
+          before = json.load(open('/tmp/lead_assignments_before.json', encoding='utf-8'))
+          state = json.load(open(state_p, encoding='utf-8'))
+          batch = json.load(open(batch_p, encoding='utf-8'))
+
+          def key(x):
+              return (
+                  x.get('reaper_property_key')
+                  or x.get('property_key')
+                  or (f"JEFFERSON_KY::PARCEL::{x.get('parcel_id')}" if x.get('parcel_id') else None)
+              )
+
           def public_owned(x):
-              vals=[]
-              for n in ('pva_owner','verified_owner','owner_name','name'):
-                  if x.get(n): vals.append(str(x.get(n)).upper())
-              vals += [str(v).upper() for v in (x.get('sources') or [])]
-              s=' | '.join(vals)
-              terms=('LANDBANK','LAND BANK','LOUISVILLE METRO','METRO GOVERNMENT','JEFFERSON COUNTY METRO GOVERNMENT','HOUSING AUTHORITY')
-              return any(t in s for t in terms)
-          for lane in ('houses','land'):
-              out=[]
-              for x in batch.get(lane,[]) or []:
-                  ok=x.get('market_status')=='OFF-MARKET VERIFIED' and not public_owned(x)
-                  if ok:
-                      out.append(x); kept.append(x)
-                  else:
-                      withheld.append({'property_key':key(x),'address':x.get('property_address') or x.get('address'),'market_status':x.get('market_status'),'reason':'public/landbank owner' if public_owned(x) else x.get('market_status_reason') or 'market gate failed'})
-                      k=key(x)
-                      if k:
-                          if k in (before.get('properties') or {}):
-                              state.setdefault('properties',{})[k]=before['properties'][k]
-                          else:
-                              state.setdefault('properties',{}).pop(k,None)
-              batch[lane]=out
-          batch['strict_delivery_summary']={'delivered':len(kept),'withheld':len(withheld),'withheld_candidates':withheld,'rule':'Only OFF-MARKET VERIFIED and non-public/non-landbank may be delivered'}
-          state_p.write_text(json.dumps(state,indent=2),encoding='utf-8')
-          batch_p.write_text(json.dumps(batch,indent=2),encoding='utf-8')
-          print(json.dumps(batch['strict_delivery_summary'],indent=2))
+              owner_values = []
+              for n in ('pva_owner', 'verified_owner', 'owner_name', 'full_owner_name', 'name'):
+                  if x.get(n):
+                      owner_values.append(str(x.get(n)).upper())
+              owner = ' | '.join(owner_values)
+              terms = (
+                  'LANDBANK', 'LAND BANK', 'LAND BANK AUTHORITY',
+                  'LOUISVILLE METRO GOVERNMENT', 'LOUISVILLE/JEFFERSON COUNTY METRO GOVERNMENT',
+                  'JEFFERSON COUNTY METRO GOVERNMENT', 'METRO GOVERNMENT',
+                  'HOUSING AUTHORITY', 'LOUISVILLE METRO',
+              )
+              return any(t in owner for t in terms)
+
+          delivered = []
+          withheld = []
+          for lane in ('houses', 'land'):
+              out = []
+              for x in batch.get(lane, []) or []:
+                  if not public_owned(x):
+                      out.append(x)
+                      delivered.append(x)
+                      continue
+
+                  k = key(x)
+                  withheld.append({
+                      'property_key': k,
+                      'address': x.get('property_address') or x.get('address'),
+                      'owner': x.get('pva_owner') or x.get('verified_owner') or x.get('owner_name'),
+                      'reason': 'public/landbank owner',
+                  })
+                  if k:
+                      if k in (before.get('properties') or {}):
+                          state.setdefault('properties', {})[k] = before['properties'][k]
+                      else:
+                          state.setdefault('properties', {}).pop(k, None)
+              batch[lane] = out
+
+          batch['delivery_summary'] = {
+              'delivered': len(delivered),
+              'withheld': len(withheld),
+              'withheld_candidates': withheld,
+              'rule': 'Market status is not a delivery gate. Only public/Landbank ownership is withheld after shared allocation.',
+          }
+          state_p.write_text(json.dumps(state, indent=2), encoding='utf-8')
+          batch_p.write_text(json.dumps(batch, indent=2), encoding='utf-8')
+          print(json.dumps(batch['delivery_summary'], indent=2))
           PY
+
       - name: Render frozen lead cards
         run: python -m scrapers.probe.render_lead_cards --input reports/agent_batches/zack/latest.json --output reports/agent_batches/zack/latest.md --kind mixed
+
       - name: Build CRM payload
         id: crm
         run: |
           python - <<'PY'
           import json, pathlib, os
-          d=json.load(open('reports/agent_batches/zack/latest.json',encoding='utf-8'))
-          def first(x,*names):
+          d = json.load(open('reports/agent_batches/zack/latest.json', encoding='utf-8'))
+
+          def first(x, *names):
               for n in names:
-                  v=x.get(n)
-                  if v is not None and v!='': return v
+                  v = x.get(n)
+                  if v is not None and v != '':
+                      return v
               return None
-          leads=[]
-          for lk,ln in (('houses','house'),('land','land')):
-              for x in d.get(lk,[]) or []:
-                  owner=first(x,'verified_owner','pva_owner','owner_name','full_owner_name')
-                  y={**x,
-                    'name':first(x,'name','owner_name','pva_owner','verified_owner') or owner,
-                    'address':first(x,'address','property_address','source_property_address'),
-                    'reaper_agent_id':'zack','lead_lane':ln,
-                    'overall_priority_score':first(x,'overall_priority_score','priority_score','reaper_priority_score'),
-                    'ai_classification':first(x,'ai_classification','ai_distress_level','ai_motivation_level'),
-                    'distress_score':first(x,'distress_score'),'motivation_score':first(x,'motivation_score'),'builder_fit_score':first(x,'builder_fit_score'),
-                    'saturation_risk':first(x,'saturation_risk','saturation_score'),'freshness_score':first(x,'freshness_score'),
-                    'verified_owner':owner,'ownership_confidence':first(x,'ownership_confidence') or ('PVA VERIFIED' if x.get('pva_verified') and owner else None),
-                    'owner_mailing':first(x,'owner_mailing','owner_mailing_address','pva_mailing_address'),
-                    'parcel_id':first(x,'parcel_id','source_parcel_id','pva_parcel_id'),
-                    'occupancy_status':first(x,'occupancy_status','occupancy'),
-                    'occupancy_source':first(x,'occupancy_source') or ('TheReaper source stack' if first(x,'occupancy_status','occupancy') else None),
-                    'reaper_property_key':first(x,'reaper_property_key','property_key'),
-                    'reaper_material_revision':first(x,'reaper_material_revision','material_revision','event_fingerprint')}
+
+          leads = []
+          for lk, ln in (('houses', 'house'), ('land', 'land')):
+              for x in d.get(lk, []) or []:
+                  owner = first(x, 'verified_owner', 'pva_owner', 'owner_name', 'full_owner_name')
+                  y = {
+                      **x,
+                      'name': first(x, 'name', 'owner_name', 'pva_owner', 'verified_owner') or owner,
+                      'address': first(x, 'address', 'property_address', 'source_property_address'),
+                      'reaper_agent_id': 'zack',
+                      'lead_lane': ln,
+                      'overall_priority_score': first(x, 'overall_priority_score', 'priority_score', 'reaper_priority_score'),
+                      'ai_classification': first(x, 'ai_classification', 'ai_distress_level', 'ai_motivation_level'),
+                      'distress_score': first(x, 'distress_score'),
+                      'motivation_score': first(x, 'motivation_score'),
+                      'builder_fit_score': first(x, 'builder_fit_score'),
+                      'saturation_risk': first(x, 'saturation_risk', 'saturation_score'),
+                      'freshness_score': first(x, 'freshness_score'),
+                      'verified_owner': owner,
+                      'ownership_confidence': first(x, 'ownership_confidence') or ('PVA VERIFIED' if x.get('pva_verified') and owner else None),
+                      'owner_mailing': first(x, 'owner_mailing', 'owner_mailing_address', 'pva_mailing_address'),
+                      'parcel_id': first(x, 'parcel_id', 'source_parcel_id', 'pva_parcel_id'),
+                      'occupancy_status': first(x, 'occupancy_status', 'occupancy'),
+                      'occupancy_source': first(x, 'occupancy_source') or ('TheReaper source stack' if first(x, 'occupancy_status', 'occupancy') else None),
+                      'reaper_property_key': first(x, 'reaper_property_key', 'property_key'),
+                      'reaper_material_revision': first(x, 'reaper_material_revision', 'material_revision', 'event_fingerprint'),
+                  }
                   leads.append(y)
-          p={'source':'thereaper','run_id':f"strict::{d.get('generated_at') or 'current'}::zack",'agent_id':'zack','leads':leads}
-          pathlib.Path('reports/agent_batches/zack/crm_ingest_payload.json').write_text(json.dumps(p,indent=2),encoding='utf-8')
-          with open(os.environ['GITHUB_OUTPUT'],'a') as f: f.write(f"count={len(leads)}\n")
-          print(f'CRM strict leads={len(leads)}')
+
+          payload = {
+              'source': 'thereaper',
+              'run_id': f"delivery::{d.get('generated_at') or 'current'}::zack",
+              'agent_id': 'zack',
+              'leads': leads,
+          }
+          pathlib.Path('reports/agent_batches/zack/crm_ingest_payload.json').write_text(json.dumps(payload, indent=2), encoding='utf-8')
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f"count={len(leads)}\n")
+          print(f'CRM leads={len(leads)}; market status not used as a delivery gate')
           PY
-      - name: Persist strict delivered batch and sticky ledger
+
+      - name: Persist delivered batch and sticky ledger
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase origin main || true
           git add state/lead_assignments.json reports/agent_batches/zack/latest.json reports/agent_batches/zack/latest.md
-          git diff --cached --quiet || git commit -m "Strict Reaper delivery for zack [skip ci]"
+          git diff --cached --quiet || git commit -m "Reaper delivery for zack [skip ci]"
           git push origin HEAD:main
-      - name: Import strict leads into Zack CRM
+
+      - name: Import leads into Zack CRM
         if: ${{ steps.crm.outputs.count != '0' }}
         env:
           CRM_INGEST_URL: https://real-track-app.lovable.app/api/public/reaper/ingest
@@ -141,8 +191,16 @@ jobs:
           cat "$RESPONSE"; echo
           test "$HTTP_CODE" -ge 200 -a "$HTTP_CODE" -lt 300
           python - "$RESPONSE" <<'PY'
-          import json,sys
-          d=json.load(open(sys.argv[1],encoding='utf-8'))
-          if not d.get('ok'): raise SystemExit('CRM response did not report ok=true')
-          print('CRM ingest summary:',json.dumps(d))
+          import json, sys
+          d = json.load(open(sys.argv[1], encoding='utf-8'))
+          if not d.get('ok'):
+              raise SystemExit('CRM response did not report ok=true')
+          print('CRM ingest summary:', json.dumps(d))
           PY
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reaper-zack-delivery
+          path: reports/agent_batches/zack/
+          retention-days: 14
