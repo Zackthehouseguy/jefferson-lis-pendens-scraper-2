@@ -1,0 +1,8 @@
+{
+  "requested_at": "2026-09-10T13:48:00-04:00",
+  "requested_by": "zack",
+  "agent_id": "zack",
+  "purpose": "Jefferson County daily acquisition workflow",
+  "market_status_gate": false,
+  "public_landbank_exclusion": true
+}
