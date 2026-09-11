@@ -4,7 +4,9 @@ on:
   push:
     branches: [main]
     paths:
+      - 'triggers/reaper_zack/*.json'
       - 'triggers/reaper_strict_zack/*.json'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -170,14 +172,40 @@ jobs:
           print(f'CRM leads={len(leads)}; market status not used as a delivery gate')
           PY
 
-      - name: Persist delivered batch and sticky ledger
+      - name: Persist delivered batch and sticky ledger race-safely
         run: |
+          STATE='state/lead_assignments.json'
+          BATCH='reports/agent_batches/zack/latest.json'
+          CARDS='reports/agent_batches/zack/latest.md'
+          CRM='reports/agent_batches/zack/crm_ingest_payload.json'
+          TMP="$(mktemp -d)"
+          cp "$STATE" "$TMP/lead_assignments.json"
+          cp "$BATCH" "$TMP/latest.json"
+          cp "$CARDS" "$TMP/latest.md"
+          cp "$CRM" "$TMP/crm_ingest_payload.json"
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main || true
-          git add state/lead_assignments.json reports/agent_batches/zack/latest.json reports/agent_batches/zack/latest.md
-          git diff --cached --quiet || git commit -m "Reaper delivery for zack [skip ci]"
-          git push origin HEAD:main
+
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            mkdir -p state reports/agent_batches/zack
+            cp "$TMP/lead_assignments.json" "$STATE"
+            cp "$TMP/latest.json" "$BATCH"
+            cp "$TMP/latest.md" "$CARDS"
+            cp "$TMP/crm_ingest_payload.json" "$CRM"
+            git add "$STATE" "$BATCH" "$CARDS"
+            if git diff --cached --quiet; then
+              exit 0
+            fi
+            git commit -m "Reaper delivery for zack [skip ci]"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep $((attempt * 2))
+          done
+          exit 1
 
       - name: Import leads into Zack CRM
         if: ${{ steps.crm.outputs.count != '0' }}
