@@ -132,12 +132,63 @@ jobs:
                       return v
               return None
 
+          SOURCE_LABELS = {
+              'lis_pendens': 'Pre-Foreclosure / Lis Pendens',
+              'jefferson_lis_pendens': 'Pre-Foreclosure / Lis Pendens',
+              'pre_foreclosure': 'Pre-Foreclosure / Lis Pendens',
+              'tax_delinquent': 'Tax Delinquent',
+              'tax_delinquency': 'Tax Delinquent',
+              'jefferson_tax_delinquent': 'Tax Delinquent',
+              'louisville_code_violations': 'Code Enforcement',
+              'code_enforcement': 'Code Enforcement',
+              'property_maintenance': 'Code Enforcement',
+              'wills': 'Probate / Inherited',
+              'probate': 'Probate / Inherited',
+              'wills_probate': 'Probate / Inherited',
+          }
+
+          def distress_classification(x):
+              raw = []
+              for value in (x.get('sources') or []):
+                  key = str(value).strip().lower()
+                  if key and key not in raw:
+                      raw.append(key)
+              for ev in (x.get('evidence') or []):
+                  key = str((ev or {}).get('source') or '').strip().lower()
+                  if key and key not in raw:
+                      raw.append(key)
+              labels = []
+              for key in raw:
+                  label = SOURCE_LABELS.get(key)
+                  if not label:
+                      label = key.replace('_', ' ').title()
+                  if label not in labels:
+                      labels.append(label)
+              if len(labels) > 1:
+                  display = 'Stacked: ' + ' + '.join(labels)
+                  category = 'Stacked'
+              elif labels:
+                  display = labels[0]
+                  category = labels[0]
+              else:
+                  display = 'Unknown Distress Signal'
+                  category = 'Unknown'
+              return raw, labels, category, display
+
           leads = []
           for lk, ln in (('houses', 'house'), ('land', 'land')):
               for x in d.get(lk, []) or []:
                   owner = first(x, 'verified_owner', 'pva_owner', 'owner_name', 'full_owner_name')
+                  raw_sources, signal_labels, signal_category, signal_display = distress_classification(x)
                   y = {
                       **x,
+                      'sources': raw_sources,
+                      'distress_signal_type': signal_category,
+                      'distress_signal_types': signal_labels,
+                      'distress_signal': signal_display,
+                      'lead_source': signal_display,
+                      'source_type': signal_category,
+                      'motivation': signal_display,
                       'name': first(x, 'name', 'owner_name', 'pva_owner', 'verified_owner') or owner,
                       'address': first(x, 'address', 'property_address', 'source_property_address'),
                       'reaper_agent_id': 'zack',
@@ -195,7 +246,7 @@ jobs:
             cp "$TMP/latest.json" "$BATCH"
             cp "$TMP/latest.md" "$CARDS"
             cp "$TMP/crm_ingest_payload.json" "$CRM"
-            git add "$STATE" "$BATCH" "$CARDS"
+            git add "$STATE" "$BATCH" "$CARDS" "$CRM"
             if git diff --cached --quiet; then
               exit 0
             fi
