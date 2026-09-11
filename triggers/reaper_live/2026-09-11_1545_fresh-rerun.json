@@ -1,0 +1,6 @@
+{
+  "requested_at": "2026-09-11T19:45:00Z",
+  "agent_id": "zack",
+  "reason": "fresh source rerun before corrected CRM delivery",
+  "window_days": 3
+}
