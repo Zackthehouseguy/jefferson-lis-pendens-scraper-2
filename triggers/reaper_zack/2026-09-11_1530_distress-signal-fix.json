@@ -1,0 +1,7 @@
+{
+  "agent_id": "zack",
+  "requested_at": "2026-09-11T15:30:00Z",
+  "reason": "rerun after CRM distress-signal classification fix",
+  "market_status_gate": false,
+  "exclude_public_landbank": true
+}
