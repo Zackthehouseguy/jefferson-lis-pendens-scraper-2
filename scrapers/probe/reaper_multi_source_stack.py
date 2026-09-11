@@ -9,8 +9,7 @@ ET=ZoneInfo('America/New_York')
 SOURCE_FILES={
  'lis_pendens':'lis_pendens_results.csv','wills':'wills_results.csv',
  'louisville_code_violations':'louisville_code_violations_results.csv',
- 'tax_delinquent':'jefferson_tax_delinquent_results.csv',
- 'louisville_landbank':'louisville_landbank_results.csv'}
+ 'tax_delinquent':'jefferson_tax_delinquent_results.csv'}
 ENTITY_TERMS=(' LLC',' L.L.C',' INC',' CORPORATION',' CORP',' COMPANY',' TRUST',' ESTATE',' HEIRS',' DEVISEES',' CHURCH',' MINISTRY',' FOUNDATION',' HOLDINGS',' PROPERTIES',' ASSETS',' INVESTMENTS',' DEVELOPMENT',' REALTY',' ASSOCIATION',' PARTNERSHIP',' LLP',' AUTHORITY',' METRO',' COUNTY',' CITY OF ',' COMMONWEALTH',' BANK ',' MORTGAGE ',' FINANCIAL ',' CREDIT UNION ',' SERVICING ')
 
 def clean(v): return re.sub(r'\s+',' ',str(v or '')).strip()
@@ -52,7 +51,7 @@ def parse_source(source,rows):
  for r in rows:
   if source=='wills':
    addr=clean(r.get('Property Address'));party=clean(r.get('Decedent') or r.get('Parties'));date=clean(r.get('Filing Date')) or None;url=clean(r.get('PDF Link'));notes=clean(r.get('Notes'));parcel='';amount=None;status='';details=' | '.join(x for x in [notes,clean(r.get('Complexity Flag')),clean(r.get('Complexity Reasons'))] if x)
-  elif source in {'lis_pendens','louisville_landbank'}:
+  elif source == 'lis_pendens':
    addr=clean(r.get('Property Address'));party=clean(r.get('Defendants/Parties'));date=clean(r.get('Date')) or None;url=clean(r.get('PDF Link'));notes=clean(r.get('Notes'));parcel='';amount=None;status='';details=notes
   elif source=='louisville_code_violations':
    addr=clean(r.get('Property Address'));party=clean(r.get('Parties'));date=clean(r.get('Filing Date')) or None;url=clean(r.get('Source Link') or r.get('PDF Link'));notes=clean(r.get('Notes'));parcel=clean(r.get('Parcel'));amount=money(r.get('Citation Total'));status=clean(r.get('Status'));details=' | '.join(x for x in [clean(r.get('Distress Signals')),clean(r.get('Violation Codes')),notes] if x)
@@ -92,7 +91,6 @@ def score(evidence):
   elif mx>=5000:s+=10;why.append(f'meaningful published delinquent-tax balance (${mx:,.0f})')
   else:why.append('published delinquent-tax listing')
  if 'wills' in sources:s+=18;why.append('will/probate-related filing')
- if 'louisville_landbank' in sources:s+=10;why.append('landbank inventory')
  if 'louisville_code_violations' in sources:
   cr=[e for e in evidence if e['source']=='louisville_code_violations'];raw=max([e.get('raw_distress_score') or 0 for e in cr] or [0]);s+=min(34,max(18,round(raw*.34)))
   text=' '.join(clean(e.get('details')).upper() for e in cr);terms=('CONDEMN','UNSAFE','STRUCTURAL','FOUNDATION','ABANDON','VACANT','TERMINATED UTIL','FIRE','NO WATER','NO ELECTRIC','ROOF');hits=sorted({t for t in terms if t in text})
