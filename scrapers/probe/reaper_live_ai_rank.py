@@ -736,7 +736,7 @@ def score_report(
     ])
     return {
         **report,
-        "status": "PASS",
+        "status": "DEGRADED" if report.get("status") == "DEGRADED" else "PASS",
         "generated_at_et": now.isoformat(),
         "ai_scored_at_et": now.isoformat(),
         "ai_provider": provider,
