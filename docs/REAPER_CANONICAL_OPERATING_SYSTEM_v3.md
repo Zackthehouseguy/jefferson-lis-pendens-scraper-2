@@ -189,3 +189,14 @@ Live market-status screening is disabled. Reaper does not query listing portals 
 The only way to change these rules is an explicit permanent-rule instruction from Zack, such as:
 “Change Reaper rule: [new rule].”
 When that happens, update this canonical file and the Daily Reaper automation before applying it.
+
+
+## PRODUCTION RELIABILITY AND SELF-HEALING
+- The live multi-source workflow runs daily and may also be dispatched manually.
+- Zack delivery starts automatically only after the production source workflow succeeds.
+- A run that loses parcel or current-owner verification systemically is BLOCKED, even if individual scraper commands returned exit code 0. Zero eligible leads is valid only when dependency health is otherwise sound.
+- LOJIC calls are globally paced and retried. Recently verified parcel/land-use results may be read from the repository cache for up to 7 days. During a LOJIC transport outage, a previously verified result up to 30 days old may be used as stale-while-revalidate data, but current PVA ownership must still be checked live. Cache use is reported as DEGRADED, never hidden.
+- A partial source failure is DEGRADED and must be reported. Failure of every configured source is BLOCKED.
+- CRM import must acknowledge every delivered row with zero rejections before the sticky assignment ledger is persisted. A CRM/network failure therefore cannot burn leads as delivered.
+- Lis Pendens and explicit Pre-Foreclosure are distinct display labels in one legal-distress family. They do not count as two stacked signals. Stacked means two or more independent families such as legal plus tax, code, or probate.
+- Market status remains informational and is not a delivery gate. Public/Landbank ownership remains a hard exclusion.

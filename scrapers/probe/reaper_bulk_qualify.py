@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import concurrent.futures as cf
 import json
+import os
 import re
 import threading
 import time
@@ -44,6 +45,105 @@ CREDITOR_TERMS = (
     "REVENUE", "TAX", "SYNCHRONY", "CAPITAL ONE", "MERS", "U.S. BANK", "US BANK",
 )
 _thread = threading.local()
+
+_LOJIC_MIN_GAP = max(0.0, float(os.getenv("REAPER_LOJIC_MIN_REQUEST_GAP", "0.20")))
+_LOJIC_ATTEMPTS = max(1, int(os.getenv("REAPER_LOJIC_ATTEMPTS", "3")))
+_LOJIC_BACKOFF = max(0.1, float(os.getenv("REAPER_LOJIC_RETRY_BACKOFF", "0.75")))
+_lojic_pace_lock = threading.Lock()
+_lojic_next_slot = 0.0
+_lojic_cache_lock = threading.Lock()
+_lojic_cache: dict[str, dict] = {}
+_lojic_cache_path: Path | None = None
+_lojic_cache_dirty = False
+
+
+def error_detail(prefix: str, exc: Exception) -> str:
+    detail = clean(str(exc)).replace("\n", " ")
+    if len(detail) > 240:
+        detail = detail[:237] + "..."
+    return f"{prefix}:{type(exc).__name__}" + (f":{detail}" if detail else "")
+
+
+def _request_with_retry(method: str, url: str, *, lojic: bool = False, **kwargs) -> requests.Response:
+    global _lojic_next_slot
+    attempts = _LOJIC_ATTEMPTS if lojic else 3
+    last: Exception | None = None
+    for attempt in range(attempts):
+        if lojic:
+            with _lojic_pace_lock:
+                now = time.monotonic()
+                slot = max(now, _lojic_next_slot)
+                _lojic_next_slot = slot + _LOJIC_MIN_GAP
+            delay = slot - now
+            if delay > 0:
+                time.sleep(delay)
+        try:
+            response = session().request(method, url, **kwargs)
+            response.raise_for_status()
+            return response
+        except requests.RequestException as exc:
+            last = exc
+            if attempt + 1 < attempts:
+                time.sleep(_LOJIC_BACKOFF * (2 ** attempt))
+    assert last is not None
+    raise last
+
+
+def load_lojic_cache(path: Path) -> None:
+    global _lojic_cache, _lojic_cache_path, _lojic_cache_dirty
+    _lojic_cache_path = path
+    _lojic_cache_dirty = False
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+        parcels = raw.get("parcels") if isinstance(raw, dict) else {}
+        _lojic_cache = parcels if isinstance(parcels, dict) else {}
+    except Exception:
+        _lojic_cache = {}
+
+
+def _cache_value(parcel_id: str, max_age_days: float) -> tuple[dict | None, float | None]:
+    with _lojic_cache_lock:
+        entry = dict(_lojic_cache.get(parcel_id) or {})
+    stamped = parse_date(entry.get("cached_at"))
+    if not entry or not stamped:
+        return None, None
+    age = max(0, (datetime.now(timezone.utc).astimezone(ET).date() - stamped).days)
+    if age > max_age_days:
+        return None, float(age)
+    fields = {
+        k: entry.get(k)
+        for k in ("lojic_parcel_verified", "parcel_type", "pin", "lot_sqft", "lot_acres", "landuse_name")
+    }
+    return fields, float(age)
+
+
+def _cache_store(parcel_id: str, values: dict) -> None:
+    global _lojic_cache_dirty
+    entry = {
+        k: values.get(k)
+        for k in ("lojic_parcel_verified", "parcel_type", "pin", "lot_sqft", "lot_acres", "landuse_name")
+    }
+    if not entry.get("lojic_parcel_verified"):
+        return
+    entry["cached_at"] = datetime.now(timezone.utc).astimezone(ET).isoformat()
+    with _lojic_cache_lock:
+        _lojic_cache[parcel_id] = entry
+        _lojic_cache_dirty = True
+
+
+def save_lojic_cache() -> None:
+    if not _lojic_cache_path or not _lojic_cache_dirty:
+        return
+    with _lojic_cache_lock:
+        payload = {
+            "version": 1,
+            "updated_at": datetime.now(timezone.utc).astimezone(ET).isoformat(),
+            "parcels": dict(sorted(_lojic_cache.items())),
+        }
+    _lojic_cache_path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = _lojic_cache_path.with_suffix(_lojic_cache_path.suffix + ".tmp")
+    tmp.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    tmp.replace(_lojic_cache_path)
 
 
 def session() -> requests.Session:
@@ -127,7 +227,7 @@ def resolve_parcel(address: str) -> tuple[str | None, str | None]:
     if house.isdigit():
         where += f" AND HOUSENO = {int(house)}"
     try:
-        r = session().get(ADDR_QUERY, params={
+        r = _request_with_retry("GET", ADDR_QUERY, lojic=True, params={
             "where": where,
             "outFields": "ADDRESS,HOUSENO,STRNAME,PARCELID,LRSN",
             "returnGeometry": "false",
@@ -152,7 +252,7 @@ def resolve_parcel(address: str) -> tuple[str | None, str | None]:
         pid = clean(best.get("PARCELID")).upper()
         return (pid or None), None if pid else "parcel_blank"
     except Exception as exc:
-        return None, f"lojic_address:{type(exc).__name__}"
+        return None, error_detail("lojic_address", exc)
 
 
 def parcel_enrichment(parcel_id: str) -> tuple[dict, list[str]]:
@@ -163,10 +263,20 @@ def parcel_enrichment(parcel_id: str) -> tuple[dict, list[str]]:
         "lot_sqft": None,
         "lot_acres": None,
         "landuse_name": None,
+        "lojic_enrichment_source": None,
+        "lojic_cache_age_days": None,
     }
+    recent, recent_age = _cache_value(parcel_id, 7)
+    if recent:
+        out.update(recent)
+        out["lojic_enrichment_source"] = "recent_cache"
+        out["lojic_cache_age_days"] = recent_age
+        return out, []
+
     errs: list[str] = []
+    stale, stale_age = _cache_value(parcel_id, 30)
     try:
-        r = session().get(PARCEL_QUERY, params={
+        r = _request_with_retry("GET", PARCEL_QUERY, lojic=True, params={
             "where": f"PARCELID='{parcel_id.replace(chr(39), chr(39)*2)}'",
             "outFields": "PARCELID,PARCEL_TYPE,PIN,SHAPE.AREA",
             "returnGeometry": "true",
@@ -174,7 +284,6 @@ def parcel_enrichment(parcel_id: str) -> tuple[dict, list[str]]:
             "f": "json",
             "resultRecordCount": 3,
         }, timeout=15)
-        r.raise_for_status()
         feats = (r.json() or {}).get("features") or []
         if not feats:
             return out, ["parcel_not_found"]
@@ -191,11 +300,12 @@ def parcel_enrichment(parcel_id: str) -> tuple[dict, list[str]]:
             "pin": clean(a.get("PIN")) or None,
             "lot_sqft": round(area, 1) if area is not None else None,
             "lot_acres": round(area / 43560.0, 4) if area is not None else None,
+            "lojic_enrichment_source": "live",
         })
         geom = feat.get("geometry")
         if geom:
             try:
-                rr = session().post(LANDUSE_QUERY, data={
+                rr = _request_with_retry("POST", LANDUSE_QUERY, lojic=True, data={
                     "where": "1=1",
                     "geometry": json.dumps(geom, separators=(",", ":")),
                     "geometryType": "esriGeometryPolygon",
@@ -205,19 +315,28 @@ def parcel_enrichment(parcel_id: str) -> tuple[dict, list[str]]:
                     "returnGeometry": "false",
                     "f": "json",
                 }, timeout=15)
-                rr.raise_for_status()
                 ff = (rr.json() or {}).get("features") or []
                 if ff:
                     out["landuse_name"] = clean((ff[0].get("attributes") or {}).get("LANDUSE_NAME")).upper() or None
                 else:
                     errs.append("landuse_no_intersection")
             except Exception as exc:
-                errs.append(f"landuse:{type(exc).__name__}")
+                errs.append(error_detail("landuse", exc))
+                if stale and stale.get("landuse_name"):
+                    out["landuse_name"] = stale.get("landuse_name")
+                    out["lojic_enrichment_source"] = "live_with_stale_landuse_cache"
+                    out["lojic_cache_age_days"] = stale_age
         else:
             errs.append("parcel_geometry_missing")
+        _cache_store(parcel_id, out)
+        return out, errs
     except Exception as exc:
-        errs.append(f"parcel:{type(exc).__name__}")
-    return out, errs
+        errs.append(error_detail("parcel", exc))
+        if stale:
+            out.update(stale)
+            out["lojic_enrichment_source"] = "stale_while_revalidate_cache"
+            out["lojic_cache_age_days"] = stale_age
+        return out, errs
 
 
 def pva_lookup(parcel_id: str, expected_address: str) -> tuple[dict, str | None]:
@@ -234,8 +353,7 @@ def pva_lookup(parcel_id: str, expected_address: str) -> tuple[dict, str | None]
     url = f"{PVA_LISTINGS}?psfldParcelId={quote(parcel_id)}&propertySearchFormButton=Search&searchType=ParcelSearch"
     out["pva_url"] = url
     try:
-        r = session().get(url, timeout=20, allow_redirects=True)
-        r.raise_for_status()
+        r = _request_with_retry("GET", url, timeout=20, allow_redirects=True)
         html = r.text or ""
         if len(html) < 500:
             return out, "pva_empty"
@@ -266,7 +384,7 @@ def pva_lookup(parcel_id: str, expected_address: str) -> tuple[dict, str | None]
         out["pva_verified"] = bool(owner and (not page_pid or page_pid == wanted_pid))
         return out, None if out["pva_verified"] else "pva_owner_or_parcel_unverified"
     except Exception as exc:
-        return out, f"pva:{type(exc).__name__}"
+        return out, error_detail("pva", exc)
 
 
 def vacant_lot_context(row: dict) -> bool:
@@ -280,12 +398,9 @@ def vacant_lot_context(row: dict) -> bool:
             ],
         ]
     ).upper()
-    return (
-        "VACANT LOT" in text
-        or "LAND BANK" in text
-        or "LANDBANK" in text
-        or "PROPERTY AVAILABLE FOR PURCHASE" in text
-    )
+    # Land needs explicit source evidence of a vacant lot. A Landbank mention alone
+    # is never enough, and public/Landbank ownership is excluded downstream.
+    return "VACANT LOT" in text
 
 
 def assignment_indexes(path: Path) -> tuple[dict[str, dict], dict[str, dict]]:
@@ -465,7 +580,7 @@ def qualify_one(row: dict, assigned_p: dict, assigned_a: dict, delivered: dict, 
     result["vacant_lot_context"] = vac_ctx
     if landuse == "SINGLE FAMILY":
         candidate_type = "SFR"
-    elif vac_ctx:
+    elif landuse == "VACANT" and vac_ctx:
         candidate_type = "LAND"
     else:
         candidate_type = None
@@ -547,8 +662,10 @@ def main() -> int:
     ap.add_argument("--out", default="reports/reaper_multi_source_live/bulk_qualified.json")
     ap.add_argument("--md", default="reports/reaper_multi_source_live/bulk_qualified.md")
     ap.add_argument("--workers", type=int, default=10)
+    ap.add_argument("--lojic-cache", default="data/lojic_parcel_cache.json")
     args = ap.parse_args()
 
+    load_lojic_cache(Path(args.lojic_cache))
     stacked = json.loads(Path(args.stacked).read_text(encoding="utf-8"))
     rows = stacked.get("top_all") or stacked.get("top_fresh_individual") or []
     assigned_p, assigned_a = assignment_indexes(Path(args.assignments))
@@ -576,9 +693,45 @@ def main() -> int:
     results.sort(key=lambda r: (r.get("qualification_status") == "ELIGIBLE", r.get("reaper_priority_score") or 0), reverse=True)
     eligible_sfr = [r for r in results if r.get("qualification_status") == "ELIGIBLE" and r.get("candidate_type") == "SFR"]
     eligible_land = [r for r in results if r.get("qualification_status") == "ELIGIBLE" and r.get("candidate_type") == "LAND"]
+    parcel_verified = sum(bool(r.get("lojic_parcel_verified")) for r in results)
+    parcel_live = sum(
+        bool(r.get("lojic_parcel_verified")) and str(r.get("lojic_enrichment_source") or "").startswith("live")
+        for r in results
+    )
+    parcel_cache = sum(
+        bool(r.get("lojic_parcel_verified")) and "cache" in str(r.get("lojic_enrichment_source") or "")
+        for r in results
+    )
+    lojic_transport_errors = sum(
+        any(
+            (str(e).startswith(("parcel:", "lojic_address:", "landuse:"))
+             and any(t in str(e).lower() for t in ("connection", "timeout", "proxy", "http", "ssl", "network")))
+            for e in (r.get("qualification_errors") or [])
+        )
+        for r in results
+    )
+    if len(rows) >= 20 and parcel_verified == 0 and lojic_transport_errors >= max(10, len(rows) // 2):
+        dependency_health = {
+            "status": "BLOCKED",
+            "reason": "systemic_lojic_transport_failure",
+            "detail": f"LOJIC verified 0/{len(rows)} parcels with {lojic_transport_errors} transport-error rows",
+        }
+    elif len(rows) >= 20 and parcel_live == 0 and parcel_cache > 0:
+        dependency_health = {
+            "status": "DEGRADED",
+            "reason": "lojic_live_unavailable_using_verified_cache",
+            "detail": f"{parcel_cache} parcels came from the verified LOJIC cache; current PVA ownership was still checked live",
+        }
+    else:
+        dependency_health = {"status": "PASS", "reason": None, "detail": None}
+
     summary = {
         "input_candidates": len(rows),
-        "parcel_verified": sum(bool(r.get("lojic_parcel_verified")) for r in results),
+        "parcel_verified": parcel_verified,
+        "parcel_live_verified": parcel_live,
+        "parcel_cache_verified": parcel_cache,
+        "lojic_transport_error_rows": lojic_transport_errors,
+        "dependency_health": dependency_health,
         "pva_owner_verified": sum(bool(r.get("pva_verified")) for r in results),
         "current_owner_individual": sum(bool(r.get("current_owner_individual")) for r in results),
         "exact_single_family": sum(r.get("landuse_name") == "SINGLE FAMILY" for r in results),
@@ -593,7 +746,7 @@ def main() -> int:
         "errors": sum(r.get("qualification_status") == "ERROR" for r in results),
     }
     report = {
-        "status": "PASS",
+        "status": dependency_health["status"],
         "generated_at_et": datetime.now(timezone.utc).astimezone(ET).isoformat(),
         "source_generated_at_et": stacked.get("generated_at_et"),
         "query_window": stacked.get("query_window"),
@@ -604,19 +757,21 @@ def main() -> int:
         "notes": [
             "Current ownership is accepted only when the public Jefferson PVA page returns an owner tied to the resolved parcel.",
             "SFR requires LOJIC landuse_name exactly SINGLE FAMILY.",
-            "Land requires confirmed vacant-lot/landbank context plus a verified individual current owner.",
+            "Land requires LOJIC landuse_name exactly VACANT plus explicit vacant-lot source context and a verified individual current owner.",
+            "LOJIC parcel/land-use data may use a verified cache up to 30 days old during a transport outage; current PVA ownership is always checked live.",
             "Live market-status screening is disabled and does not affect qualification or delivery. No listing-portal status should be inferred from this report.",
             "Lis pendens is treated as litigation/distress, not automatically as mortgage foreclosure.",
             "Citation amounts are assessed citation events, not claimed current balances.",
         ],
         "runtime_seconds": round(time.perf_counter() - started, 2),
     }
+    save_lojic_cache()
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
     Path(args.md).write_text(render_md(report), encoding="utf-8")
     print(json.dumps(summary, indent=2), flush=True)
-    return 0
+    return 2 if dependency_health["status"] == "BLOCKED" else 0
 
 
 if __name__ == "__main__":

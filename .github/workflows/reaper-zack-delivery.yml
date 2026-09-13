@@ -1,11 +1,13 @@
 name: Reaper Zack Delivery
 
 on:
+  workflow_run:
+    workflows: ["Reaper Multi-Source Live"]
+    types: [completed]
   push:
     branches: [main]
     paths:
       - 'triggers/reaper_zack/*.json'
-      - 'triggers/reaper_strict_zack/*.json'
   workflow_dispatch:
 
 permissions:
@@ -18,10 +20,12 @@ concurrency:
 
 jobs:
   deliver:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
       - uses: actions/setup-python@v5
@@ -35,6 +39,15 @@ jobs:
           git fetch origin main
           git reset --hard origin/main
           cp state/lead_assignments.json /tmp/lead_assignments_before.json
+
+      - name: Require a healthy, fresh production pool
+        run: |
+          python -m scrapers.probe.reaper_health_check \
+            --report reports/reaper_multi_source_live/bulk_qualified.json \
+            --source-exit-codes reports/reaper_multi_source_live/source_exit_codes.txt \
+            --out reports/agent_batches/zack/source_health.json \
+            --max-age-hours 24 \
+            --require-live-ai
 
       - name: Allocate through shared sticky allocator
         run: |
@@ -77,6 +90,11 @@ jobs:
                   'LOUISVILLE METRO GOVERNMENT', 'LOUISVILLE/JEFFERSON COUNTY METRO GOVERNMENT',
                   'JEFFERSON COUNTY METRO GOVERNMENT', 'METRO GOVERNMENT',
                   'HOUSING AUTHORITY', 'LOUISVILLE METRO',
+                  'LOUISVILLE METRO LANDBANK AUTHORITY', 'LOUISVILLE LAND BANK AUTHORITY',
+                  'LOUISVILLE/JEFFERSON COUNTY LANDBANK AUTHORITY',
+                  'JEFFERSON COUNTY GOVERNMENT', 'COMMONWEALTH OF KENTUCKY',
+                  'UNITED STATES OF AMERICA', 'SECRETARY OF HOUSING',
+                  'DEPARTMENT OF HOUSING AND URBAN DEVELOPMENT',
               )
               return any(t in owner for t in terms)
 
@@ -132,20 +150,35 @@ jobs:
                       return v
               return None
 
-          SOURCE_LABELS = {
-              'lis_pendens': 'Pre-Foreclosure / Lis Pendens',
-              'jefferson_lis_pendens': 'Pre-Foreclosure / Lis Pendens',
-              'pre_foreclosure': 'Pre-Foreclosure / Lis Pendens',
-              'tax_delinquent': 'Tax Delinquent',
-              'tax_delinquency': 'Tax Delinquent',
-              'jefferson_tax_delinquent': 'Tax Delinquent',
-              'louisville_code_violations': 'Code Enforcement',
-              'code_enforcement': 'Code Enforcement',
-              'property_maintenance': 'Code Enforcement',
-              'wills': 'Probate / Inherited',
-              'probate': 'Probate / Inherited',
-              'wills_probate': 'Probate / Inherited',
+          SOURCE_FAMILIES = {
+              'lis_pendens': 'lis_pendens',
+              'jefferson_lis_pendens': 'lis_pendens',
+              'pre_foreclosure': 'pre_foreclosure',
+              'tax_delinquent': 'tax_delinquent',
+              'tax_delinquency': 'tax_delinquent',
+              'jefferson_tax_delinquent': 'tax_delinquent',
+              'louisville_code_violations': 'code_enforcement',
+              'code_enforcement': 'code_enforcement',
+              'property_maintenance': 'code_enforcement',
+              'wills': 'probate',
+              'probate': 'probate',
+              'wills_probate': 'probate',
           }
+          FAMILY_LABELS = {
+              'lis_pendens': 'Lis Pendens',
+              'pre_foreclosure': 'Pre-Foreclosure',
+              'tax_delinquent': 'Tax Delinquent',
+              'code_enforcement': 'Code Enforcement',
+              'probate': 'Probate / Inherited',
+          }
+          FAMILY_GROUPS = {
+              'lis_pendens': 'legal',
+              'pre_foreclosure': 'legal',
+              'tax_delinquent': 'tax',
+              'code_enforcement': 'code',
+              'probate': 'probate',
+          }
+          FAMILY_ORDER = ('pre_foreclosure', 'lis_pendens', 'tax_delinquent', 'probate', 'code_enforcement')
 
           def distress_classification(x):
               raw = []
@@ -157,14 +190,14 @@ jobs:
                   key = str((ev or {}).get('source') or '').strip().lower()
                   if key and key not in raw:
                       raw.append(key)
-              labels = []
-              for key in raw:
-                  label = SOURCE_LABELS.get(key)
-                  if not label:
-                      label = key.replace('_', ' ').title()
-                  if label not in labels:
-                      labels.append(label)
-              if len(labels) > 1:
+              families = []
+              for family in FAMILY_ORDER:
+                  if any(SOURCE_FAMILIES.get(key) == family for key in raw):
+                      families.append(family)
+              labels = [FAMILY_LABELS[f] for f in families]
+              groups = list(dict.fromkeys(FAMILY_GROUPS[f] for f in families))
+              stacked = len(groups) >= 2
+              if stacked:
                   display = 'Stacked: ' + ' + '.join(labels)
                   category = 'Stacked'
               elif labels:
@@ -173,19 +206,26 @@ jobs:
               else:
                   display = 'Unknown Distress Signal'
                   category = 'Unknown'
-              return raw, labels, category, display
+              return raw, families, groups, labels, stacked, category, display
 
           leads = []
           for lk, ln in (('houses', 'house'), ('land', 'land')):
               for x in d.get(lk, []) or []:
                   owner = first(x, 'verified_owner', 'pva_owner', 'owner_name', 'full_owner_name')
-                  raw_sources, signal_labels, signal_category, signal_display = distress_classification(x)
+                  raw_sources, signal_families, signal_groups, signal_labels, signal_stacked, signal_category, signal_display = distress_classification(x)
                   y = {
                       **x,
                       'sources': raw_sources,
                       'distress_signal_type': signal_category,
                       'distress_signal_types': signal_labels,
                       'distress_signal': signal_display,
+                      'distress_categories': signal_labels,
+                      'distress_source_families': signal_families,
+                      'distress_groups': signal_groups,
+                      'distress_primary': signal_category,
+                      'distress_stacked': signal_stacked,
+                      'tags': signal_labels,
+                      'owner_name_raw': owner,
                       'lead_source': signal_display,
                       'source_type': signal_category,
                       'motivation': signal_display,
@@ -223,17 +263,48 @@ jobs:
           print(f'CRM leads={len(leads)}; market status not used as a delivery gate')
           PY
 
+      - name: Import leads into Zack CRM
+        if: ${{ steps.crm.outputs.count != '0' }}
+        env:
+          CRM_INGEST_URL: https://real-track-app.lovable.app/api/public/reaper/ingest
+        run: |
+          RESPONSE='reports/agent_batches/zack/crm_ingest_response.json'
+          OIDC_RESPONSE=$(curl --silent --show-error --retry 3 --retry-all-errors --connect-timeout 10 --max-time 60 --header "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=zacks-crm-reaper")
+          OIDC_TOKEN=$(python -c 'import json,sys; print(json.load(sys.stdin)["value"])' <<< "$OIDC_RESPONSE")
+          HTTP_CODE=$(curl --silent --show-error --retry 3 --retry-all-errors --connect-timeout 10 --max-time 120 --output "$RESPONSE" --write-out '%{http_code}' --request POST "$CRM_INGEST_URL" --header 'Content-Type: application/json' --header "Authorization: Bearer $OIDC_TOKEN" --data-binary '@reports/agent_batches/zack/crm_ingest_payload.json')
+          cat "$RESPONSE"; echo
+          test "$HTTP_CODE" -ge 200 -a "$HTTP_CODE" -lt 300
+          python - "$RESPONSE" reports/agent_batches/zack/crm_ingest_payload.json <<'PY'
+          import json, sys
+          d = json.load(open(sys.argv[1], encoding='utf-8'))
+          payload = json.load(open(sys.argv[2], encoding='utf-8'))
+          expected = len(payload.get('leads') or [])
+          if not d.get('ok'):
+              raise SystemExit('CRM response did not report ok=true')
+          rejected = int(d.get('rejected') or 0)
+          completed = int(d.get('accepted') or 0) + int(d.get('duplicates') or 0) + int(d.get('reactivated') or 0)
+          if int(d.get('received') or -1) != expected:
+              raise SystemExit(f'CRM received count mismatch: expected {expected}, got {d.get("received")}')
+          if rejected:
+              raise SystemExit(f'CRM rejected {rejected} lead(s)')
+          if completed != expected:
+              raise SystemExit(f'CRM acknowledgement mismatch: expected {expected}, completed {completed}')
+          print('CRM ingest summary:', json.dumps(d))
+          PY
+
       - name: Persist delivered batch and sticky ledger race-safely
         run: |
           STATE='state/lead_assignments.json'
           BATCH='reports/agent_batches/zack/latest.json'
           CARDS='reports/agent_batches/zack/latest.md'
           CRM='reports/agent_batches/zack/crm_ingest_payload.json'
+          CRMRESP='reports/agent_batches/zack/crm_ingest_response.json'
           TMP="$(mktemp -d)"
           cp "$STATE" "$TMP/lead_assignments.json"
           cp "$BATCH" "$TMP/latest.json"
           cp "$CARDS" "$TMP/latest.md"
           cp "$CRM" "$TMP/crm_ingest_payload.json"
+          if [ -f "$CRMRESP" ]; then cp "$CRMRESP" "$TMP/crm_ingest_response.json"; fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -246,7 +317,9 @@ jobs:
             cp "$TMP/latest.json" "$BATCH"
             cp "$TMP/latest.md" "$CARDS"
             cp "$TMP/crm_ingest_payload.json" "$CRM"
+            if [ -f "$TMP/crm_ingest_response.json" ]; then cp "$TMP/crm_ingest_response.json" "$CRMRESP"; fi
             git add "$STATE" "$BATCH" "$CARDS" "$CRM"
+            if [ -f "$CRMRESP" ]; then git add "$CRMRESP"; fi
             if git diff --cached --quiet; then
               exit 0
             fi
@@ -257,25 +330,6 @@ jobs:
             sleep $((attempt * 2))
           done
           exit 1
-
-      - name: Import leads into Zack CRM
-        if: ${{ steps.crm.outputs.count != '0' }}
-        env:
-          CRM_INGEST_URL: https://real-track-app.lovable.app/api/public/reaper/ingest
-        run: |
-          OIDC_RESPONSE=$(curl --silent --show-error --header "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=zacks-crm-reaper")
-          OIDC_TOKEN=$(python -c 'import json,sys; print(json.load(sys.stdin)["value"])' <<< "$OIDC_RESPONSE")
-          RESPONSE=$(mktemp)
-          HTTP_CODE=$(curl --silent --show-error --output "$RESPONSE" --write-out '%{http_code}' --request POST "$CRM_INGEST_URL" --header 'Content-Type: application/json' --header "Authorization: Bearer $OIDC_TOKEN" --data-binary '@reports/agent_batches/zack/crm_ingest_payload.json')
-          cat "$RESPONSE"; echo
-          test "$HTTP_CODE" -ge 200 -a "$HTTP_CODE" -lt 300
-          python - "$RESPONSE" <<'PY'
-          import json, sys
-          d = json.load(open(sys.argv[1], encoding='utf-8'))
-          if not d.get('ok'):
-              raise SystemExit('CRM response did not report ok=true')
-          print('CRM ingest summary:', json.dumps(d))
-          PY
 
       - uses: actions/upload-artifact@v4
         if: always()
