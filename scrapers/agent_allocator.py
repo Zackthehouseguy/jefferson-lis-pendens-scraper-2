@@ -59,6 +59,16 @@ def property_material_revision(rows: list[dict[str, Any]]) -> str:
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:24]
 
 
+def _verified_private_individual(row: dict[str, Any]) -> bool:
+    owner = clean(row.get("verified_owner") or row.get("pva_owner") or row.get("owner_name"))
+    return (
+        bool(row.get("lojic_parcel_verified"))
+        and bool(row.get("pva_verified"))
+        and row.get("current_owner_individual") is True
+        and bool(owner)
+    )
+
+
 def qualify_house(row: dict[str, Any]) -> bool:
     try:
         return (
@@ -67,7 +77,7 @@ def qualify_house(row: dict[str, Any]) -> bool:
             and int(row.get("priority_score") or 0) >= 60
             and int(row.get("distress_score") or 0) >= 50
             and clean(row.get("landuse_name")).upper() == "SINGLE FAMILY"
-            and bool(row.get("lojic_parcel_verified", True))
+            and _verified_private_individual(row)
         )
     except Exception:
         return False
@@ -75,21 +85,15 @@ def qualify_house(row: dict[str, Any]) -> bool:
 
 def qualify_land(row: dict[str, Any]) -> bool:
     try:
-        site = clean(row.get("occupancy") or row.get("site_status") or "vacant lot").upper()
-        land_context = (
-            "VACANT" in site
-            or bool(row.get("vacant_lot_context"))
-            or "VACANT LOT" in clean(row.get("recent_window_occupancies")).upper()
-            or clean(row.get("property_type") or row.get("candidate_type")).upper() == "LAND"
-        )
         return (
             clean(row.get("ai_scoring_status")).upper() == "LIVE"
             and clean(row.get("ai_contract_version")) == "reaper-live-ai-v1"
             and int(row.get("priority_score") or 0) >= 60
             and int(row.get("motivation_score") or 0) >= 50
             and int(row.get("builder_fit_score") or 0) >= 50
-            and land_context
-            and bool(row.get("lojic_parcel_verified", True))
+            and clean(row.get("landuse_name")).upper() == "VACANT"
+            and row.get("vacant_lot_context") is True
+            and _verified_private_individual(row)
         )
     except Exception:
         return False
