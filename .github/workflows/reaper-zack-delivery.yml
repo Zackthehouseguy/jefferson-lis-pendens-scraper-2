@@ -141,6 +141,7 @@ jobs:
         run: |
           python - <<'PY'
           import json, pathlib, os
+          from scrapers.owner_name import format_owner_name
           d = json.load(open('reports/agent_batches/zack/latest.json', encoding='utf-8'))
 
           def first(x, *names):
@@ -212,6 +213,7 @@ jobs:
           for lk, ln in (('houses', 'house'), ('land', 'land')):
               for x in d.get(lk, []) or []:
                   owner = first(x, 'verified_owner', 'pva_owner', 'owner_name', 'full_owner_name')
+                  formatted_owner = format_owner_name(owner)
                   raw_sources, signal_families, signal_groups, signal_labels, signal_stacked, signal_category, signal_display = distress_classification(x)
                   y = {
                       **x,
@@ -226,10 +228,17 @@ jobs:
                       'distress_stacked': signal_stacked,
                       'tags': signal_labels,
                       'owner_name_raw': owner,
+                      'owner_name_display': formatted_owner['display'],
+                      'owner_name_is_entity': formatted_owner['is_entity'],
+                      'owner_name_ambiguous': formatted_owner['ambiguous'],
+                      'owner_name_review_needed': formatted_owner['review_needed'],
+                      'owner_name_provenance': 'pva_verified',
+                      'owner_name_order': 'natural' if formatted_owner['changed'] else 'source',
+                      'normalizer_version': 2,
                       'lead_source': signal_display,
                       'source_type': signal_category,
                       'motivation': signal_display,
-                      'name': first(x, 'name', 'owner_name', 'pva_owner', 'verified_owner') or owner,
+                      'name': formatted_owner['display'] or owner,
                       'address': first(x, 'address', 'property_address', 'source_property_address'),
                       'reaper_agent_id': 'zack',
                       'lead_lane': ln,
