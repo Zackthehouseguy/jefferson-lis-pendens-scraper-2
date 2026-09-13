@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "blockers": [],
+  "warnings": [],
+  "report_age_hours": 0.0,
+  "source_exit_codes": {
+    "lis_pendens": 0,
+    "wills": 0,
+    "louisville_code_violations": 0,
+    "tax_delinquent": 0
+  },
+  "summary": {
+    "input_candidates": 560,
+    "parcel_verified": 550,
+    "parcel_live_verified": 191,
+    "parcel_cache_verified": 359,
+    "pva_owner_verified": 550,
+    "eligible_sfr": 163,
+    "eligible_land": 2,
+    "ai_scoring_status": "LIVE"
+  }
+}
