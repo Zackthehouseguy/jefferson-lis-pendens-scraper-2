@@ -1,0 +1,11 @@
+{
+  "requested_by": "reaper_health_guard",
+  "reason": "scheduled_source_run_missing_after_nominal_window",
+  "requested_at": "2026-09-14T13:07:14Z",
+  "agent_id": "zack",
+  "rules": {
+    "market_status_delivery_gate": false,
+    "exclude_public_landbank": true,
+    "persist_assignment_after_crm_ack": true
+  }
+}
