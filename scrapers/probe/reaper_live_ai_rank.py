@@ -237,6 +237,16 @@ def _json_from_text(value: str) -> dict[str, Any]:
     return parsed
 
 
+def _is_permanent_provider_error(exc: Exception) -> bool:
+    """Return True for provider failures that cannot recover within this run."""
+    detail = str(exc).lower()
+    return any(marker in detail for marker in (
+        "exceeded your monthly quota",
+        "monthly quota exceeded",
+        "insufficient_quota",
+    ))
+
+
 def _copilot_classify_batch(
     rows: list[dict[str, Any]], lane: str, model: str, github_token: str
 ) -> dict[str, dict[str, Any]]:
@@ -294,6 +304,8 @@ def _copilot_classify_batch(
             return _validate_exact_keys(parsed["classifications"], rows)
         except Exception as exc:
             last_error = exc
+            if _is_permanent_provider_error(exc):
+                raise RuntimeError(f"permanent_ai_provider_failure:{exc}") from exc
     raise RuntimeError(f"copilot_classification_failed:{type(last_error).__name__}:{last_error}")
 
 
@@ -333,6 +345,14 @@ def classify_live(
             output.update(result)
             completed_batches += 1
             print(f"[ai] {provider} batch {completed_batches}/{len(batches)} accepted", flush=True)
+
+    permanent_failures = [item for item in failed_batches if _is_permanent_provider_error(item[2])]
+    if permanent_failures:
+        errors = [
+            f"{lane}:{','.join(model_key(row) for row in batch)}:{type(exc).__name__}:{exc}"
+            for lane, batch, exc in permanent_failures
+        ]
+        raise RuntimeError("permanent_ai_batch_failures:" + " | ".join(errors))
 
     # Copilot/API throttling can affect several concurrent requests at once.
     # Retry only failed batches serially so a transient provider wobble does not
