@@ -10,6 +10,7 @@ from scrapers.probe.reaper_live_ai_rank import (
     HouseBatch,
     _copilot_classify_batch,
     _ground_ai_signals,
+    classify_live,
     main,
     model_key,
     score_report,
@@ -342,6 +343,38 @@ def test_copilot_retries_with_validation_feedback_and_tools_denied(monkeypatch):
     assert len(calls) == 2
     assert "--deny-tool=shell,write,read,url,memory" in calls[0]
     assert "previous response failed validation" in calls[1][2]
+
+
+def test_classify_live_serially_recovers_only_failed_batches(monkeypatch):
+    source = _report()
+    rows = source["all_results"][:2]
+    expected = _classifications(source)
+    attempts = {}
+    sleep_calls = []
+
+    def flaky_batch(batch, lane, model, credential):
+        key = model_key(batch[0])
+        attempts[key] = attempts.get(key, 0) + 1
+        if key == model_key(rows[0]) and attempts[key] == 1:
+            raise RuntimeError("temporary provider failure")
+        return {model_key(row): expected[model_key(row)] for row in batch}
+
+    monkeypatch.setattr("scrapers.probe.reaper_live_ai_rank._copilot_classify_batch", flaky_batch)
+    monkeypatch.setattr("scrapers.probe.reaper_live_ai_rank.time.sleep", sleep_calls.append)
+
+    result = classify_live(
+        rows,
+        model="auto",
+        credential="test-token",
+        provider="GitHub Copilot CLI",
+        batch_size=1,
+        workers=2,
+    )
+
+    assert set(result) == {model_key(row) for row in rows}
+    assert attempts[model_key(rows[0])] == 2
+    assert attempts[model_key(rows[1])] == 1
+    assert sleep_calls == [3]
 
 
 def test_cli_fixture_path_writes_complete_scored_report(tmp_path, monkeypatch):
