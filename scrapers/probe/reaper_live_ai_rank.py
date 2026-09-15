@@ -14,6 +14,7 @@ import os
 import re
 import subprocess
 import tempfile
+import time
 from collections import Counter
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -307,7 +308,7 @@ def classify_live(
             batches.append((lane, lane_rows[start:start + max(1, batch_size)]))
     output: dict[str, dict[str, Any]] = {}
     classify_batch = _api_classify_batch if provider == "OpenAI Responses API" else _copilot_classify_batch
-    errors: list[str] = []
+    failed_batches: list[tuple[str, list[dict[str, Any]], Exception]] = []
     completed_batches = 0
     with cf.ThreadPoolExecutor(max_workers=max(1, workers)) as executor:
         futures = {
@@ -319,19 +320,58 @@ def classify_live(
             try:
                 result = future.result()
             except Exception as exc:
-                errors.append(f"{lane}:{','.join(model_key(row) for row in batch)}:{type(exc).__name__}:{exc}")
+                failed_batches.append((lane, batch, exc))
                 continue
             overlap = set(output) & set(result)
             if overlap:
-                errors.append(f"duplicate_ai_results_across_batches:{sorted(overlap)}")
+                failed_batches.append((
+                    lane,
+                    batch,
+                    RuntimeError(f"duplicate_ai_results_across_batches:{sorted(overlap)}"),
+                ))
                 continue
             output.update(result)
             completed_batches += 1
             print(f"[ai] {provider} batch {completed_batches}/{len(batches)} accepted", flush=True)
-    if errors:
+
+    # Copilot/API throttling can affect several concurrent requests at once.
+    # Retry only failed batches serially so a transient provider wobble does not
+    # discard successful classifications. The stage still fails closed unless
+    # every requested property receives a validated result.
+    for retry_round in range(2):
+        if not failed_batches:
+            break
+        pending, failed_batches = failed_batches, []
+        for lane, batch, _previous_error in pending:
+            time.sleep(3 * (retry_round + 1))
+            try:
+                result = classify_batch(batch, lane, model, credential)
+            except Exception as exc:
+                failed_batches.append((lane, batch, exc))
+                continue
+            overlap = set(output) & set(result)
+            if overlap:
+                failed_batches.append((
+                    lane,
+                    batch,
+                    RuntimeError(f"duplicate_ai_results_across_batches:{sorted(overlap)}"),
+                ))
+                continue
+            output.update(result)
+            completed_batches += 1
+            print(
+                f"[ai] {provider} serial recovery batch "
+                f"{completed_batches}/{len(batches)} accepted",
+                flush=True,
+            )
+
+    if failed_batches:
+        errors = [
+            f"{lane}:{','.join(model_key(row) for row in batch)}:{type(exc).__name__}:{exc}"
+            for lane, batch, exc in failed_batches
+        ]
         raise RuntimeError("ai_batch_failures:" + " | ".join(errors))
     return output
-
 
 def load_fixture_classifications(path: Path, rows: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
     data = json.loads(path.read_text(encoding="utf-8"))
