@@ -377,6 +377,32 @@ def test_classify_live_serially_recovers_only_failed_batches(monkeypatch):
     assert sleep_calls == [3]
 
 
+def test_classify_live_does_not_retry_permanent_quota_failure(monkeypatch):
+    source = _report()
+    row = source["all_results"][0]
+    attempts = []
+    sleep_calls = []
+
+    def quota_failure(batch, lane, model, credential):
+        attempts.append(model_key(batch[0]))
+        raise RuntimeError("permanent_ai_provider_failure:You have exceeded your monthly quota")
+
+    monkeypatch.setattr("scrapers.probe.reaper_live_ai_rank._copilot_classify_batch", quota_failure)
+    monkeypatch.setattr("scrapers.probe.reaper_live_ai_rank.time.sleep", sleep_calls.append)
+
+    with pytest.raises(RuntimeError, match="permanent_ai_batch_failures"):
+        classify_live(
+            [row],
+            model="auto",
+            credential="test-token",
+            provider="GitHub Copilot CLI",
+            batch_size=1,
+            workers=1,
+        )
+
+    assert attempts == [model_key(row)]
+    assert sleep_calls == []
+
 def test_cli_fixture_path_writes_complete_scored_report(tmp_path, monkeypatch):
     source = _report()
     input_path = tmp_path / "input.json"
