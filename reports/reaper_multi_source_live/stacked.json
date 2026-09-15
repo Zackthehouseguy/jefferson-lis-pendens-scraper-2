@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "generated_at_et": "2026-09-15T09:09:20.679955-04:00",
+  "generated_at_et": "2026-09-15T12:28:54.771249-04:00",
   "query_window": {
     "start_date": "2026-09-12",
     "end_date": "2026-09-15"
@@ -12,13 +12,13 @@
     "tax_delinquent": "OK"
   },
   "source_record_counts": {
-    "lis_pendens": 6,
-    "wills": 0,
+    "lis_pendens": 7,
+    "wills": 1,
     "louisville_code_violations": 186,
     "tax_delinquent": 0
   },
-  "properties_after_stacking": 189,
-  "fresh_individual_candidates": 174,
+  "properties_after_stacking": 190,
+  "fresh_individual_candidates": 175,
   "fresh_individual_high_count": 0,
   "fresh_individual_medium_count": 0,
   "top_fresh_individual": [
@@ -101,7 +101,7 @@
       "property_address": "2011 Keeneland Blvd, Louisville, KY 40223",
       "parcel_id": null,
       "parties_or_owners": [
-        "SEGAR JESSICA; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT & COMMONWEALTH OF KENTUCKY; OFFICE OF UNEMPLOYMENT INSURANCE"
+        "SEGAR JESSICA; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT; COMMONWEALTH OF KENTUCKY OFFICE OF UNEMPLOYMENT INSURANCE"
       ],
       "individual_owner_or_party_likely": true,
       "sources": [
@@ -123,7 +123,7 @@
           "property_address": "2011 Keeneland Blvd, Louisville, KY 40223",
           "normalized_address": "2011 KEENELAND BLVD",
           "parcel_id": null,
-          "party_or_owner": "SEGAR JESSICA; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT & COMMONWEALTH OF KENTUCKY; OFFICE OF UNEMPLOYMENT INSURANCE",
+          "party_or_owner": "SEGAR JESSICA; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT; COMMONWEALTH OF KENTUCKY OFFICE OF UNEMPLOYMENT INSURANCE",
           "individual_party_likely": true,
           "status": null,
           "amount": null,
@@ -6342,6 +6342,43 @@
       ]
     },
     {
+      "property_key": "ADDR::UNKNOWN",
+      "property_address": "Unknown",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "CHARLES H. LANGLEY"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "wills"
+      ],
+      "signal_count": 1,
+      "motivation_score": 18,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "will/probate-related filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "wills",
+          "signal_date": "09/15/2026",
+          "property_address": "Unknown",
+          "normalized_address": "UNKNOWN",
+          "parcel_id": null,
+          "party_or_owner": "CHARLES H. LANGLEY",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Source: WILLS; Address not found in OCR text.; Legal Desc: 26P002419; Legal Desc: 26P002419; Reasons: Corporate fiduciary referenced (administrator is anonrasident of this state and designa); No clear beneficiary identified; No property address identified | Avoid - Trust/Complex | Corporate fiduciary referenced (administrator is anonrasident of this state and designa); No clear beneficiary identified; No property address identified",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTE1LzIwMjYxMTMzMzgudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
       "property_key": "PARCEL::013A00500000",
       "property_address": "545 S 17TH ST, LOUISVILLE, KY 40203",
       "parcel_id": "013A00500000",
@@ -6570,7 +6607,7 @@
       "property_address": "2011 Keeneland Blvd, Louisville, KY 40223",
       "parcel_id": null,
       "parties_or_owners": [
-        "SEGAR JESSICA; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT & COMMONWEALTH OF KENTUCKY; OFFICE OF UNEMPLOYMENT INSURANCE"
+        "SEGAR JESSICA; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT; COMMONWEALTH OF KENTUCKY OFFICE OF UNEMPLOYMENT INSURANCE"
       ],
       "individual_owner_or_party_likely": true,
       "sources": [
@@ -6592,7 +6629,7 @@
           "property_address": "2011 Keeneland Blvd, Louisville, KY 40223",
           "normalized_address": "2011 KEENELAND BLVD",
           "parcel_id": null,
-          "party_or_owner": "SEGAR JESSICA; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT & COMMONWEALTH OF KENTUCKY; OFFICE OF UNEMPLOYMENT INSURANCE",
+          "party_or_owner": "SEGAR JESSICA; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT; COMMONWEALTH OF KENTUCKY OFFICE OF UNEMPLOYMENT INSURANCE",
           "individual_party_likely": true,
           "status": null,
           "amount": null,

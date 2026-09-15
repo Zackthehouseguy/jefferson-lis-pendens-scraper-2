@@ -1,7 +1,7 @@
 # Reaper Bulk Qualification
 
-Generated: 2026-09-15T09:11:15.897919-04:00
-Input candidates: 174
+Generated: 2026-09-15T12:30:52.917964-04:00
+Input candidates: 175
 Eligible SFR: 3
 Eligible land: 0
 AI scoring status: PRE-AI QUALIFICATION ONLY
