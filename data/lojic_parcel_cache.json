@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-15T09:11:15.897956-04:00",
+  "updated_at": "2026-09-16T09:03:24.280373-04:00",
   "parcels": {
     "001300300000": {
       "lojic_parcel_verified": true,
@@ -7264,6 +7264,15 @@
       "lot_acres": 0.6858,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-15T09:09:24.178989-04:00"
+    },
+    "209601180000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9384.0,
+      "lot_acres": 0.2154,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-16T09:01:18.882680-04:00"
     },
     "209800K10000": {
       "lojic_parcel_verified": true,
