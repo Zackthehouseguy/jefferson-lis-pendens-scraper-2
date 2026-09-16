@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "generated_at_et": "2026-09-16T09:01:17.166587-04:00",
+  "generated_at_et": "2026-09-16T12:20:20.509810-04:00",
   "query_window": {
     "start_date": "2026-09-13",
     "end_date": "2026-09-16"
@@ -12,13 +12,13 @@
     "tax_delinquent": "OK"
   },
   "source_record_counts": {
-    "lis_pendens": 8,
+    "lis_pendens": 10,
     "wills": 1,
     "louisville_code_violations": 186,
     "tax_delinquent": 0
   },
-  "properties_after_stacking": 191,
-  "fresh_individual_candidates": 176,
+  "properties_after_stacking": 193,
+  "fresh_individual_candidates": 177,
   "fresh_individual_high_count": 0,
   "fresh_individual_medium_count": 0,
   "top_fresh_individual": [
@@ -240,6 +240,43 @@
           "amount": null,
           "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=923+South+47th+St&searchType=StreetSearch#results",
           "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTE1LzIwMjYxMTI5OTEudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::5305 SLOANE CT",
+      "property_address": "5305 Sloane Ct, Louisville, KY 40291",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "LEAKE JAMES R JR; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT; SYNCHRONY BANK"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/16/2026",
+          "property_address": "5305 Sloane Ct, Louisville, KY 40291",
+          "normalized_address": "5305 SLOANE CT",
+          "parcel_id": null,
+          "party_or_owner": "LEAKE JAMES R JR; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT; SYNCHRONY BANK",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=5305+Sloane+Ct&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTE2LzIwMjYxMTM3MTYudGlm&type=pdf",
           "raw_distress_score": null
         }
       ]
@@ -6788,6 +6825,80 @@
       ]
     },
     {
+      "property_key": "ADDR::5615 REGAL DR",
+      "property_address": "5615 Regal Dr, Louisville KY 40218",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "5615 REGAL DRIVE LAND TRUST"
+      ],
+      "individual_owner_or_party_likely": false,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/16/2026",
+          "property_address": "5615 Regal Dr, Louisville KY 40218",
+          "normalized_address": "5615 REGAL DR",
+          "parcel_id": null,
+          "party_or_owner": "5615 REGAL DRIVE LAND TRUST",
+          "individual_party_likely": false,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=5615+Regal+Dr&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTE2LzIwMjYxMTM1NzQudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::5305 SLOANE CT",
+      "property_address": "5305 Sloane Ct, Louisville, KY 40291",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "LEAKE JAMES R JR; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT; SYNCHRONY BANK"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/16/2026",
+          "property_address": "5305 Sloane Ct, Louisville, KY 40291",
+          "normalized_address": "5305 SLOANE CT",
+          "parcel_id": null,
+          "party_or_owner": "LEAKE JAMES R JR; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT; SYNCHRONY BANK",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=5305+Sloane+Ct&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTE2LzIwMjYxMTM3MTYudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
       "property_key": "PARCEL::055800030000",
       "property_address": "268 DERBY AVE, LOUISVILLE, KY 40218",
       "parcel_id": "055800030000",
@@ -10201,80 +10312,6 @@
           "status": "Violation Notice",
           "amount": null,
           "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-09-14 | Case IDs: ENF-PMNT-26-016559-2 | Parcel: 043E01380000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 10
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::004B00060000",
-      "property_address": "2737 BANK ST, LOUISVILLE, KY 40212",
-      "parcel_id": "004B00060000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, vacant"
-      ],
-      "previously_assigned": true,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": false,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-14",
-          "property_address": "2737 BANK ST, LOUISVILLE, KY 40212",
-          "normalized_address": "2737 BANK ST",
-          "parcel_id": "004B00060000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-09-14 | Case IDs: ENF-PMNT-26-017445-3 | Parcel: 004B00060000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 10
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::039A01040000",
-      "property_address": "1753 DUMESNIL ST, LOUISVILLE, KY 40210",
-      "parcel_id": "039A01040000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-14",
-          "property_address": "1753 DUMESNIL ST, LOUISVILLE, KY 40210",
-          "normalized_address": "1753 DUMESNIL ST",
-          "parcel_id": "039A01040000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-09-14 | Case IDs: ENF-PMNT-26-021025-1 | Parcel: 039A01040000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 10
         }
