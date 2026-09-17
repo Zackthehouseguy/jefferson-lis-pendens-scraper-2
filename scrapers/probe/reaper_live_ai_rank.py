@@ -322,10 +322,31 @@ def classify_live(
     classify_batch = _api_classify_batch if provider == "OpenAI Responses API" else _copilot_classify_batch
     failed_batches: list[tuple[str, list[dict[str, Any]], Exception]] = []
     completed_batches = 0
+    remaining_batches = list(batches)
+
+    # Probe Copilot with one real batch before launching concurrent work. This
+    # prevents a known permanent quota failure from needlessly firing every
+    # batch at once, while preserving the normal transient-error recovery path.
+    if provider == "GitHub Copilot CLI" and remaining_batches:
+        lane, batch = remaining_batches.pop(0)
+        try:
+            result = classify_batch(batch, lane, model, credential)
+        except Exception as exc:
+            if _is_permanent_provider_error(exc):
+                keys = ",".join(model_key(row) for row in batch)
+                raise RuntimeError(
+                    f"permanent_ai_batch_failures:{lane}:{keys}:{type(exc).__name__}:{exc}"
+                ) from exc
+            failed_batches.append((lane, batch, exc))
+        else:
+            output.update(result)
+            completed_batches += 1
+            print(f"[ai] {provider} probe batch {completed_batches}/{len(batches)} accepted", flush=True)
+
     with cf.ThreadPoolExecutor(max_workers=max(1, workers)) as executor:
         futures = {
             executor.submit(classify_batch, batch, lane, model, credential): (lane, batch)
-            for lane, batch in batches
+            for lane, batch in remaining_batches
         }
         for future in cf.as_completed(futures):
             lane, batch = futures[future]
