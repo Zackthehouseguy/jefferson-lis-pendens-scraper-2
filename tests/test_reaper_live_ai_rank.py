@@ -379,7 +379,7 @@ def test_classify_live_serially_recovers_only_failed_batches(monkeypatch):
 
 def test_classify_live_does_not_retry_permanent_quota_failure(monkeypatch):
     source = _report()
-    row = source["all_results"][0]
+    rows = source["all_results"][:2]
     attempts = []
     sleep_calls = []
 
@@ -392,15 +392,15 @@ def test_classify_live_does_not_retry_permanent_quota_failure(monkeypatch):
 
     with pytest.raises(RuntimeError, match="permanent_ai_batch_failures"):
         classify_live(
-            [row],
+            rows,
             model="auto",
             credential="test-token",
             provider="GitHub Copilot CLI",
             batch_size=1,
-            workers=1,
+            workers=2,
         )
 
-    assert attempts == [model_key(row)]
+    assert attempts == [model_key(rows[0])]
     assert sleep_calls == []
 
 def test_cli_fixture_path_writes_complete_scored_report(tmp_path, monkeypatch):
