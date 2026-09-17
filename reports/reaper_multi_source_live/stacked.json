@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "generated_at_et": "2026-09-17T09:03:38.826418-04:00",
+  "generated_at_et": "2026-09-17T12:29:32.156772-04:00",
   "query_window": {
     "start_date": "2026-09-14",
     "end_date": "2026-09-17"
@@ -12,13 +12,13 @@
     "tax_delinquent": "OK"
   },
   "source_record_counts": {
-    "lis_pendens": 19,
+    "lis_pendens": 24,
     "wills": 1,
     "louisville_code_violations": 620,
     "tax_delinquent": 0
   },
-  "properties_after_stacking": 619,
-  "fresh_individual_candidates": 577,
+  "properties_after_stacking": 624,
+  "fresh_individual_candidates": 582,
   "fresh_individual_high_count": 0,
   "fresh_individual_medium_count": 0,
   "top_fresh_individual": [
@@ -541,11 +541,122 @@
       ]
     },
     {
+      "property_key": "ADDR::4401 WILMOTH AVE",
+      "property_address": "4401 WILMOTH AVE, Louisville KY 40216",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "BURBA MICHELLE; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/17/2026",
+          "property_address": "4401 WILMOTH AVE, Louisville KY 40216",
+          "normalized_address": "4401 WILMOTH AVE",
+          "parcel_id": null,
+          "party_or_owner": "BURBA MICHELLE; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=4401+WILMOTH+AVE&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTE3LzIwMjYxMTQzNjEudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::13307 TENNIS BLVD",
+      "property_address": "13307 Tennis Blvd, Louisville, KY 40272",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "COPE CANDY L; COPE CANDY LYNN; BURTON CANDY LYNN; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT; COMMONWEALTH OF KENTUCKY DIVISION OF UNEMPLOYMENT INSURANCE; HALE DANA LYNNE"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/17/2026",
+          "property_address": "13307 Tennis Blvd, Louisville, KY 40272",
+          "normalized_address": "13307 TENNIS BLVD",
+          "parcel_id": null,
+          "party_or_owner": "COPE CANDY L; COPE CANDY LYNN; BURTON CANDY LYNN; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT; COMMONWEALTH OF KENTUCKY DIVISION OF UNEMPLOYMENT INSURANCE; HALE DANA LYNNE",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=13307+Tennis+Blvd&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTE3LzIwMjYxMTQzNzgudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::8210 GLIMMER WAY",
+      "property_address": "8210 Glimmer Way, Louisville, KY 40214",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "JORDAN KAREN M; JORDAN TERRY L; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT COMMONWEALTH OF KENTUCKY COUNTY OF JEFFERSON; HAM CURTIS"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/17/2026",
+          "property_address": "8210 Glimmer Way, Louisville, KY 40214",
+          "normalized_address": "8210 GLIMMER WAY",
+          "parcel_id": null,
+          "party_or_owner": "JORDAN KAREN M; JORDAN TERRY L; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT COMMONWEALTH OF KENTUCKY COUNTY OF JEFFERSON; HAM CURTIS",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=8210+Glimmer+Way&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTE3LzIwMjYxMTQzNTEudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
       "property_key": "ADDR::7237 SOUTHSIDE DR",
       "property_address": "7237 Southside Dr, Louisville, KY 40214",
       "parcel_id": null,
       "parties_or_owners": [
-        "LANKFORD PHYLLIS ANN; LANKFORD WC III; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; LANKFORD JASON; LOMAS MORTGAGE PARTNERSHIP LP"
+        "LANKFORD PHYLLIS ANN; LANKFORD WC III; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; LANKFORD JASON"
       ],
       "individual_owner_or_party_likely": true,
       "sources": [
@@ -567,7 +678,7 @@
           "property_address": "7237 Southside Dr, Louisville, KY 40214",
           "normalized_address": "7237 SOUTHSIDE DR",
           "parcel_id": null,
-          "party_or_owner": "LANKFORD PHYLLIS ANN; LANKFORD WC III; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; LANKFORD JASON; LOMAS MORTGAGE PARTNERSHIP LP",
+          "party_or_owner": "LANKFORD PHYLLIS ANN; LANKFORD WC III; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; LANKFORD JASON",
           "individual_party_likely": true,
           "status": null,
           "amount": null,
@@ -578,11 +689,48 @@
       ]
     },
     {
+      "property_key": "ADDR::3324 FERNHEATHER DR",
+      "property_address": "3324 Fernheather Dr, Louisville, KY 40216",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "STIVERS WILLIAM E; STIVERS ARGERRINE V; CITY OF SHIVELY; ENVESTOR LLC; GREENRIVER INVESTMENTS LLC; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/17/2026",
+          "property_address": "3324 Fernheather Dr, Louisville, KY 40216",
+          "normalized_address": "3324 FERNHEATHER DR",
+          "parcel_id": null,
+          "party_or_owner": "STIVERS WILLIAM E; STIVERS ARGERRINE V; CITY OF SHIVELY; ENVESTOR LLC; GREENRIVER INVESTMENTS LLC; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=3324+Fernheather+Dr&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTE3LzIwMjYxMTQzNTIudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
       "property_key": "ADDR::3205 GRAND AVE",
       "property_address": "3205 Grand Ave, Louisville, KY 40211",
       "parcel_id": null,
       "parties_or_owners": [
-        "SUMMERS COURTNEY; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT OFFICE OF HOUSING & COMMUNITY DEVELOPMENT; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT"
+        "SUMMERS COURTNEY; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT HOUSING & URBAN DEVELOPMENTN; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT"
       ],
       "individual_owner_or_party_likely": true,
       "sources": [
@@ -604,12 +752,49 @@
           "property_address": "3205 Grand Ave, Louisville, KY 40211",
           "normalized_address": "3205 GRAND AVE",
           "parcel_id": null,
-          "party_or_owner": "SUMMERS COURTNEY; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT OFFICE OF HOUSING & COMMUNITY DEVELOPMENT; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT",
+          "party_or_owner": "SUMMERS COURTNEY; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT HOUSING & URBAN DEVELOPMENTN; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT",
           "individual_party_likely": true,
           "status": null,
           "amount": null,
           "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=3205+Grand+Ave&searchType=StreetSearch#results",
           "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTE3LzIwMjYxMTQxMjYudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::4710 NOTTINGHAMSHIRE DR",
+      "property_address": "4710 Nottinghamshire Dr, Louisville, KY 40299",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "WARREN VOLONDA REA; WARREN HULON J; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/17/2026",
+          "property_address": "4710 Nottinghamshire Dr, Louisville, KY 40299",
+          "normalized_address": "4710 NOTTINGHAMSHIRE DR",
+          "parcel_id": null,
+          "party_or_owner": "WARREN VOLONDA REA; WARREN HULON J; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=4710+Nottinghamshire+Dr&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTE3LzIwMjYxMTQxNTcudGlm&type=pdf",
           "raw_distress_score": null
         }
       ]
@@ -22189,11 +22374,122 @@
       ]
     },
     {
+      "property_key": "ADDR::4401 WILMOTH AVE",
+      "property_address": "4401 WILMOTH AVE, Louisville KY 40216",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "BURBA MICHELLE; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/17/2026",
+          "property_address": "4401 WILMOTH AVE, Louisville KY 40216",
+          "normalized_address": "4401 WILMOTH AVE",
+          "parcel_id": null,
+          "party_or_owner": "BURBA MICHELLE; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=4401+WILMOTH+AVE&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTE3LzIwMjYxMTQzNjEudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::13307 TENNIS BLVD",
+      "property_address": "13307 Tennis Blvd, Louisville, KY 40272",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "COPE CANDY L; COPE CANDY LYNN; BURTON CANDY LYNN; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT; COMMONWEALTH OF KENTUCKY DIVISION OF UNEMPLOYMENT INSURANCE; HALE DANA LYNNE"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/17/2026",
+          "property_address": "13307 Tennis Blvd, Louisville, KY 40272",
+          "normalized_address": "13307 TENNIS BLVD",
+          "parcel_id": null,
+          "party_or_owner": "COPE CANDY L; COPE CANDY LYNN; BURTON CANDY LYNN; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT; COMMONWEALTH OF KENTUCKY DIVISION OF UNEMPLOYMENT INSURANCE; HALE DANA LYNNE",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=13307+Tennis+Blvd&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTE3LzIwMjYxMTQzNzgudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::8210 GLIMMER WAY",
+      "property_address": "8210 Glimmer Way, Louisville, KY 40214",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "JORDAN KAREN M; JORDAN TERRY L; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT COMMONWEALTH OF KENTUCKY COUNTY OF JEFFERSON; HAM CURTIS"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/17/2026",
+          "property_address": "8210 Glimmer Way, Louisville, KY 40214",
+          "normalized_address": "8210 GLIMMER WAY",
+          "parcel_id": null,
+          "party_or_owner": "JORDAN KAREN M; JORDAN TERRY L; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT COMMONWEALTH OF KENTUCKY COUNTY OF JEFFERSON; HAM CURTIS",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=8210+Glimmer+Way&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTE3LzIwMjYxMTQzNTEudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
       "property_key": "ADDR::7237 SOUTHSIDE DR",
       "property_address": "7237 Southside Dr, Louisville, KY 40214",
       "parcel_id": null,
       "parties_or_owners": [
-        "LANKFORD PHYLLIS ANN; LANKFORD WC III; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; LANKFORD JASON; LOMAS MORTGAGE PARTNERSHIP LP"
+        "LANKFORD PHYLLIS ANN; LANKFORD WC III; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; LANKFORD JASON"
       ],
       "individual_owner_or_party_likely": true,
       "sources": [
@@ -22215,7 +22511,7 @@
           "property_address": "7237 Southside Dr, Louisville, KY 40214",
           "normalized_address": "7237 SOUTHSIDE DR",
           "parcel_id": null,
-          "party_or_owner": "LANKFORD PHYLLIS ANN; LANKFORD WC III; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; LANKFORD JASON; LOMAS MORTGAGE PARTNERSHIP LP",
+          "party_or_owner": "LANKFORD PHYLLIS ANN; LANKFORD WC III; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; LANKFORD JASON",
           "individual_party_likely": true,
           "status": null,
           "amount": null,
@@ -22226,11 +22522,48 @@
       ]
     },
     {
+      "property_key": "ADDR::3324 FERNHEATHER DR",
+      "property_address": "3324 Fernheather Dr, Louisville, KY 40216",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "STIVERS WILLIAM E; STIVERS ARGERRINE V; CITY OF SHIVELY; ENVESTOR LLC; GREENRIVER INVESTMENTS LLC; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/17/2026",
+          "property_address": "3324 Fernheather Dr, Louisville, KY 40216",
+          "normalized_address": "3324 FERNHEATHER DR",
+          "parcel_id": null,
+          "party_or_owner": "STIVERS WILLIAM E; STIVERS ARGERRINE V; CITY OF SHIVELY; ENVESTOR LLC; GREENRIVER INVESTMENTS LLC; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=3324+Fernheather+Dr&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTE3LzIwMjYxMTQzNTIudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
       "property_key": "ADDR::3205 GRAND AVE",
       "property_address": "3205 Grand Ave, Louisville, KY 40211",
       "parcel_id": null,
       "parties_or_owners": [
-        "SUMMERS COURTNEY; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT OFFICE OF HOUSING & COMMUNITY DEVELOPMENT; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT"
+        "SUMMERS COURTNEY; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT HOUSING & URBAN DEVELOPMENTN; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT"
       ],
       "individual_owner_or_party_likely": true,
       "sources": [
@@ -22252,12 +22585,49 @@
           "property_address": "3205 Grand Ave, Louisville, KY 40211",
           "normalized_address": "3205 GRAND AVE",
           "parcel_id": null,
-          "party_or_owner": "SUMMERS COURTNEY; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT OFFICE OF HOUSING & COMMUNITY DEVELOPMENT; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT",
+          "party_or_owner": "SUMMERS COURTNEY; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT HOUSING & URBAN DEVELOPMENTN; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT",
           "individual_party_likely": true,
           "status": null,
           "amount": null,
           "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=3205+Grand+Ave&searchType=StreetSearch#results",
           "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTE3LzIwMjYxMTQxMjYudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::4710 NOTTINGHAMSHIRE DR",
+      "property_address": "4710 Nottinghamshire Dr, Louisville, KY 40299",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "WARREN VOLONDA REA; WARREN HULON J; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/17/2026",
+          "property_address": "4710 Nottinghamshire Dr, Louisville, KY 40299",
+          "normalized_address": "4710 NOTTINGHAMSHIRE DR",
+          "parcel_id": null,
+          "party_or_owner": "WARREN VOLONDA REA; WARREN HULON J; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=4710+Nottinghamshire+Dr&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTE3LzIwMjYxMTQxNTcudGlm&type=pdf",
           "raw_distress_score": null
         }
       ]
@@ -25190,191 +25560,6 @@
           "details": "exterior/foundation; trash/weeds; graffiti; public hazard; roof/gutters; sewage/plumbing; electric | 02A Cleaning, X48 Public Hazard, X50 Roof/Gutters, U01 | Priority: HIGH | Distress score: 19 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; public hazard; roof/gutters; sewage/plumbing; electric | Violations: 02A Cleaning, X48 Public Hazard, X50 Roof/Gutters, U01 | Citation amount: $3200 | Violation rows: 4 | Date: 2026-09-15 | Case IDs: ENF-PMNT-24-008893-22 | Parcel: 011E01570000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 19
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::236200710000",
-      "property_address": "4808 W OVERBROOK DR, LOUISVILLE, KY 40216",
-      "parcel_id": "236200710000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Citation Referral"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, condemn, foundation, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-14",
-          "property_address": "4808 W OVERBROOK DR, LOUISVILLE, KY 40216",
-          "normalized_address": "4808 W OVERBROOK DR",
-          "parcel_id": "236200710000",
-          "party_or_owner": "LMG Codes & Regulations - Citation Referral",
-          "individual_party_likely": true,
-          "status": "Citation Referral",
-          "amount": 2100.0,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned; structural/foundation | 02A Cleaning, I21, C01 | Priority: HIGH | Distress score: 19 | Status: Citation Referral | Occupancy: CONDEMNED | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; structural/foundation | Violations: 02A Cleaning, I21, C01 | Citation amount: $2100 | Violation rows: 3 | Date: 2026-09-14 | Case IDs: ENF-PMNT-24-001892-21 | Parcel: 236200710000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 19
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::036F00040000",
-      "property_address": "2529 GARLAND AVE, LOUISVILLE, KY 40211-0000",
-      "parcel_id": "036F00040000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Citation"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, roof, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-14",
-          "property_address": "2529 GARLAND AVE, LOUISVILLE, KY 40211-0000",
-          "normalized_address": "2529 GARLAND AVE",
-          "parcel_id": "036F00040000",
-          "party_or_owner": "LMG Codes & Regulations - Citation",
-          "individual_party_likely": true,
-          "status": "Citation",
-          "amount": 1800.0,
-          "details": "roof/gutters; public hazard; vacant/abandoned; structural/foundation; exterior/foundation | X50 Roof/Gutters, X69 Address Numbers, X19 Exterior/Foundation | Priority: HIGH | Distress score: 19 | Status: Citation | Occupancy: VACANT STRUCTURE | Distress signals: roof/gutters; public hazard; vacant/abandoned; structural/foundation; exterior/foundation | Violations: X50 Roof/Gutters, X69 Address Numbers, X19 Exterior/Foundation | Citation amount: $1800 | Violation rows: 3 | Date: 2026-09-14 | Case IDs: 18PM6407-PM-33 | Parcel: 036F00040000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 19
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::038B00910000",
-      "property_address": "2100 DATE ST, LOUISVILLE, KY 40210",
-      "parcel_id": "038B00910000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, roof, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-14",
-          "property_address": "2100 DATE ST, LOUISVILLE, KY 40210",
-          "normalized_address": "2100 DATE ST",
-          "parcel_id": "038B00910000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; windows/doors; vacant/abandoned; structural/foundation; fence/accessory; roof/gutters | 02A Cleaning, X72, X78 Fence/Accessory, X19 Exterior/Foundation | Priority: HIGH | Distress score: 19 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; windows/doors; vacant/abandoned; structural/foundation; fence/accessory; roof/gutters | Violations: 02A Cleaning, X72, X78 Fence/Accessory, X19 Exterior/Foundation | Violation rows: 4 | Date: 2026-09-14 | Case IDs: ENF-PMNT-20-006785-64 | Parcel: 038B00910000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 19
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::010E00270000",
-      "property_address": "201 N 34TH ST, LOUISVILLE, KY 40212",
-      "parcel_id": "010E00270000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, roof, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-14",
-          "property_address": "201 N 34TH ST, LOUISVILLE, KY 40212",
-          "normalized_address": "201 N 34TH ST",
-          "parcel_id": "010E00270000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle; structural/foundation; roof/gutters | 02A Cleaning, 05A Abandoned Vehicle, X19 Exterior/Foundation | Priority: HIGH | Distress score: 19 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle; structural/foundation; roof/gutters | Violations: 02A Cleaning, 05A Abandoned Vehicle, X19 Exterior/Foundation | Violation rows: 3 | Date: 2026-09-14 | Case IDs: ENF-PMNT-24-002469-18 | Parcel: 010E00270000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 19
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::066300340000",
-      "property_address": "9206 PENNSYLVANIA RUN RD, LOUISVILLE, KY 40228",
-      "parcel_id": "066300340000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, structural, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-16",
-          "property_address": "9206 PENNSYLVANIA RUN RD, LOUISVILLE, KY 40228",
-          "normalized_address": "9206 PENNSYLVANIA RUN RD",
-          "parcel_id": "066300340000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; structural/foundation; fence/accessory; vacant/abandoned; abandoned vehicle | 02A Cleaning, X78 Fence/Accessory, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 18 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; structural/foundation; fence/accessory; vacant/abandoned; abandoned vehicle | Violations: 02A Cleaning, X78 Fence/Accessory, 05A Abandoned Vehicle | Violation rows: 3 | Date: 2026-09-16 | Case IDs: ENF-PMNT-26-020931-1 | Parcel: 066300340000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 18
         }
       ]
     }
