@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-17T09:10:27.475226-04:00",
+  "updated_at": "2026-09-18T09:14:00.804845-04:00",
   "parcels": {
     "001300300000": {
       "lojic_parcel_verified": true,
@@ -19,6 +19,24 @@
       "lot_acres": 0.1362,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:10:00.242770-04:00"
+    },
+    "001A00810000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4073.2,
+      "lot_acres": 0.0935,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:34.931735-04:00"
+    },
+    "001A00910000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3787.3,
+      "lot_acres": 0.0869,
+      "landuse_name": "COMMERCIAL",
+      "cached_at": "2026-09-18T09:06:50.970494-04:00"
     },
     "001A01360000": {
       "lojic_parcel_verified": true,
@@ -317,6 +335,42 @@
       "landuse_name": "MULTI-FAMILY",
       "cached_at": "2026-09-15T09:11:08.760443-04:00"
     },
+    "002B00340000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3054.0,
+      "lot_acres": 0.0701,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:08:36.280992-04:00"
+    },
+    "002C00170000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4551.5,
+      "lot_acres": 0.1045,
+      "landuse_name": "PUBLIC AND SEMI-PUBLIC",
+      "cached_at": "2026-09-18T09:10:01.837299-04:00"
+    },
+    "002C00760000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 2503.0,
+      "lot_acres": 0.0575,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:07:06.084322-04:00"
+    },
+    "002C00980000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 23124.4,
+      "lot_acres": 0.5309,
+      "landuse_name": "COMMERCIAL",
+      "cached_at": "2026-09-18T09:08:40.288818-04:00"
+    },
     "002D00120000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -487,6 +541,15 @@
       "lot_acres": 0.1289,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-15T09:10:47.215297-04:00"
+    },
+    "002H01270000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 8504.0,
+      "lot_acres": 0.1952,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:10:58.462438-04:00"
     },
     "002J00490000": {
       "lojic_parcel_verified": true,
@@ -722,6 +785,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-12T23:27:25.462975-04:00"
     },
+    "003B00490000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 2082.4,
+      "lot_acres": 0.0478,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:13:00.382457-04:00"
+    },
     "003B00500000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -758,6 +830,15 @@
       "landuse_name": "VACANT",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "003C00800000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 7605.6,
+      "lot_acres": 0.1746,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:07:30.185054-04:00"
+    },
     "003C00810000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -766,6 +847,15 @@
       "lot_acres": 0.1128,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "003D00810000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3321.4,
+      "lot_acres": 0.0762,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:22.037103-04:00"
     },
     "003D00900000": {
       "lojic_parcel_verified": true,
@@ -874,6 +964,51 @@
       "lot_acres": 0.1231,
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-15T09:10:52.156740-04:00"
+    },
+    "003F01660000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4320.7,
+      "lot_acres": 0.0992,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:12:54.835612-04:00"
+    },
+    "003F01680000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4992.6,
+      "lot_acres": 0.1146,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:13:11.946051-04:00"
+    },
+    "003F02160000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 1659.0,
+      "lot_acres": 0.0381,
+      "landuse_name": "PUBLIC AND SEMI-PUBLIC",
+      "cached_at": "2026-09-18T09:09:52.218762-04:00"
+    },
+    "003F02290000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 2058.1,
+      "lot_acres": 0.0472,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:12:52.702693-04:00"
+    },
+    "003G00320000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5023.0,
+      "lot_acres": 0.1153,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:13:15.030042-04:00"
     },
     "003G00360000": {
       "lojic_parcel_verified": true,
@@ -1451,6 +1586,15 @@
       "landuse_name": "VACANT",
       "cached_at": "2026-09-17T09:03:57.147601-04:00"
     },
+    "004A00100000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4452.9,
+      "lot_acres": 0.1022,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:13:09.082603-04:00"
+    },
     "004A00380000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -1613,6 +1757,15 @@
       "landuse_name": "VACANT",
       "cached_at": "2026-09-12T23:26:37.384154-04:00"
     },
+    "004F01460000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4189.0,
+      "lot_acres": 0.0962,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:13:08.511888-04:00"
+    },
     "004G00130000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -1631,6 +1784,24 @@
       "landuse_name": "VACANT",
       "cached_at": "2026-09-17T09:05:59.153160-04:00"
     },
+    "004G00330000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4801.5,
+      "lot_acres": 0.1102,
+      "landuse_name": "VACANT",
+      "cached_at": "2026-09-18T09:07:37.144027-04:00"
+    },
+    "004G00400000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5074.2,
+      "lot_acres": 0.1165,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:13:10.281022-04:00"
+    },
     "004G00440000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -1648,6 +1819,24 @@
       "lot_acres": 0.2079,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "004G00750000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3733.3,
+      "lot_acres": 0.0857,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:47.670520-04:00"
+    },
+    "004G00760000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3394.1,
+      "lot_acres": 0.0779,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:31.959459-04:00"
     },
     "004G01090000": {
       "lojic_parcel_verified": true,
@@ -1910,6 +2099,24 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-12T23:25:42.462491-04:00"
     },
+    "005G00040000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5964.4,
+      "lot_acres": 0.1369,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:10:45.505694-04:00"
+    },
+    "005G00170000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 8190.1,
+      "lot_acres": 0.188,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:10:45.905236-04:00"
+    },
     "006C00360000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -1945,6 +2152,15 @@
       "lot_acres": 0.1751,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-15T09:10:22.790858-04:00"
+    },
+    "006E01050000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 7178.8,
+      "lot_acres": 0.1648,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:22.423288-04:00"
     },
     "006E01150000": {
       "lojic_parcel_verified": true,
@@ -2009,6 +2225,15 @@
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-17T09:06:43.400268-04:00"
     },
+    "006F01290000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5435.5,
+      "lot_acres": 0.1248,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:08:35.111695-04:00"
+    },
     "006G00670000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -2026,6 +2251,15 @@
       "lot_acres": 0.1282,
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "006G01040000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5543.8,
+      "lot_acres": 0.1273,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:11:37.703405-04:00"
     },
     "006G01200000": {
       "lojic_parcel_verified": true,
@@ -2098,6 +2332,24 @@
       "lot_acres": 0.1344,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "007C00350000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6012.4,
+      "lot_acres": 0.138,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:07:55.606562-04:00"
+    },
+    "007C00420000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5463.6,
+      "lot_acres": 0.1254,
+      "landuse_name": "VACANT",
+      "cached_at": "2026-09-18T09:09:48.075572-04:00"
     },
     "007C00630000": {
       "lojic_parcel_verified": true,
@@ -2180,6 +2432,24 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "007F00010000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5816.7,
+      "lot_acres": 0.1335,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:09:53.288467-04:00"
+    },
+    "007F00770000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 2673.2,
+      "lot_acres": 0.0614,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:07:55.828258-04:00"
+    },
     "007J00010000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -2198,6 +2468,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:05:13.638680-04:00"
     },
+    "008401160000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 42226.3,
+      "lot_acres": 0.9694,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:07:03.831179-04:00"
+    },
     "008401960000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -2206,6 +2485,15 @@
       "lot_acres": 10.0534,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:07:05.858535-04:00"
+    },
+    "008500660000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 434641.1,
+      "lot_acres": 9.978,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:38.331050-04:00"
     },
     "008602180000": {
       "lojic_parcel_verified": true,
@@ -2233,6 +2521,15 @@
       "lot_acres": 0.1215,
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "008B00910000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9021.8,
+      "lot_acres": 0.2071,
+      "landuse_name": "MULTI-FAMILY",
+      "cached_at": "2026-09-18T09:13:48.185901-04:00"
     },
     "008B01090000": {
       "lojic_parcel_verified": true,
@@ -2269,6 +2566,24 @@
       "lot_acres": 0.1773,
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "008D00380000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4217.4,
+      "lot_acres": 0.0968,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:38.890199-04:00"
+    },
+    "008D01230000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4252.2,
+      "lot_acres": 0.0976,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:10:34.091413-04:00"
     },
     "008E00560000": {
       "lojic_parcel_verified": true,
@@ -2324,6 +2639,15 @@
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-17T09:07:27.617726-04:00"
     },
+    "009001830000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 37405.6,
+      "lot_acres": 0.8587,
+      "landuse_name": "COMMERCIAL",
+      "cached_at": "2026-09-18T09:07:29.181062-04:00"
+    },
     "009100090000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -2332,6 +2656,15 @@
       "lot_acres": 32.1577,
       "landuse_name": "PARKS AND OPEN SPACE",
       "cached_at": "2026-09-12T23:30:57.865614-04:00"
+    },
+    "009101000000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 650888.0,
+      "lot_acres": 14.9423,
+      "landuse_name": "VACANT",
+      "cached_at": "2026-09-18T09:09:53.697005-04:00"
     },
     "009A00270000": {
       "lojic_parcel_verified": true,
@@ -2342,6 +2675,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-15T09:10:01.317671-04:00"
     },
+    "009D00540000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 8011.5,
+      "lot_acres": 0.1839,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:06:43.434663-04:00"
+    },
     "009D00980000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -2350,6 +2692,24 @@
       "lot_acres": 0.1359,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "009E00430000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5315.9,
+      "lot_acres": 0.122,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:36.157701-04:00"
+    },
+    "009E00490000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5424.8,
+      "lot_acres": 0.1245,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:08:51.720195-04:00"
     },
     "009F01300000": {
       "lojic_parcel_verified": true,
@@ -2386,6 +2746,15 @@
       "lot_acres": 0.126,
       "landuse_name": "VACANT",
       "cached_at": "2026-09-12T23:26:18.653001-04:00"
+    },
+    "009J00620000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 7052.1,
+      "lot_acres": 0.1619,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:08:49.638664-04:00"
     },
     "009K01010000": {
       "lojic_parcel_verified": true,
@@ -2459,6 +2828,24 @@
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-15T09:10:36.778160-04:00"
     },
+    "010D00350000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 17424.9,
+      "lot_acres": 0.4,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:13:09.888169-04:00"
+    },
+    "010E00240000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5903.8,
+      "lot_acres": 0.1355,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:13:09.480885-04:00"
+    },
     "010E00270000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -2467,6 +2854,15 @@
       "lot_acres": 0.1032,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-15T09:09:42.211967-04:00"
+    },
+    "010E01240000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4094.8,
+      "lot_acres": 0.094,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:08:05.831336-04:00"
     },
     "010F00430000": {
       "lojic_parcel_verified": true,
@@ -2485,6 +2881,15 @@
       "lot_acres": 0.1534,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "011B00950000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3406.8,
+      "lot_acres": 0.0782,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:28.665217-04:00"
     },
     "011D00060000": {
       "lojic_parcel_verified": true,
@@ -2630,6 +3035,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:05:51.962742-04:00"
     },
+    "015F01600000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4254.1,
+      "lot_acres": 0.0977,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:07:04.084110-04:00"
+    },
     "015F02180000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -2729,6 +3143,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "016K00010000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 12045.3,
+      "lot_acres": 0.2765,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:07:15.783508-04:00"
+    },
     "017D00810000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -2764,6 +3187,15 @@
       "lot_acres": 0.0865,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:04:05.035798-04:00"
+    },
+    "019G01630000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 10361.7,
+      "lot_acres": 0.2379,
+      "landuse_name": "COMMERCIAL",
+      "cached_at": "2026-09-18T09:08:06.687585-04:00"
     },
     "021B00010032": {
       "lojic_parcel_verified": true,
@@ -2837,6 +3269,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-12T23:28:28.751560-04:00"
     },
+    "022F00690000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4233.6,
+      "lot_acres": 0.0972,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:07:16.012764-04:00"
+    },
     "022F00970000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -2890,6 +3331,15 @@
       "lot_acres": 0.0702,
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-15T09:09:28.689695-04:00"
+    },
+    "023D00010000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6117.3,
+      "lot_acres": 0.1404,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:07:40.574092-04:00"
     },
     "023D00870000": {
       "lojic_parcel_verified": true,
@@ -2953,6 +3403,15 @@
       "lot_acres": 0.1863,
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-17T09:06:34.234550-04:00"
+    },
+    "025B00770000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3746.1,
+      "lot_acres": 0.086,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:06:43.655893-04:00"
     },
     "025D00290000": {
       "lojic_parcel_verified": true,
@@ -3359,6 +3818,15 @@
       "landuse_name": "MULTI-FAMILY",
       "cached_at": "2026-09-12T23:29:46.252534-04:00"
     },
+    "032E00780000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6805.7,
+      "lot_acres": 0.1562,
+      "landuse_name": "MULTI-FAMILY",
+      "cached_at": "2026-09-18T09:09:55.301960-04:00"
+    },
     "032E00890000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -3467,6 +3935,15 @@
       "landuse_name": "MULTI-FAMILY",
       "cached_at": "2026-09-17T09:05:06.170495-04:00"
     },
+    "033C00490000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3706.5,
+      "lot_acres": 0.0851,
+      "landuse_name": "MULTI-FAMILY",
+      "cached_at": "2026-09-18T09:06:51.406566-04:00"
+    },
     "033C00580000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -3512,6 +3989,24 @@
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-17T09:09:34.773416-04:00"
     },
+    "034C00010000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6372.8,
+      "lot_acres": 0.1463,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:10:33.092120-04:00"
+    },
+    "034C00020000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5170.8,
+      "lot_acres": 0.1187,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:47.878120-04:00"
+    },
     "034C00130000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -3547,6 +4042,15 @@
       "lot_acres": 0.1001,
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-17T09:04:25.316526-04:00"
+    },
+    "034F00920000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9058.1,
+      "lot_acres": 0.2079,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:13:03.512515-04:00"
     },
     "035100140032": {
       "lojic_parcel_verified": true,
@@ -3647,6 +4151,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "037D00040000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5536.5,
+      "lot_acres": 0.1271,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:10:33.301752-04:00"
+    },
     "037D00080000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -3655,6 +4168,15 @@
       "lot_acres": 0.1821,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "037D00930000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 41552.9,
+      "lot_acres": 0.9539,
+      "landuse_name": "PUBLIC AND SEMI-PUBLIC",
+      "cached_at": "2026-09-18T09:08:51.128960-04:00"
     },
     "037D01810000": {
       "lojic_parcel_verified": true,
@@ -3673,6 +4195,15 @@
       "lot_acres": 0.0664,
       "landuse_name": "VACANT",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "037D02870000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5570.7,
+      "lot_acres": 0.1279,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:31.910698-04:00"
     },
     "037F00170000": {
       "lojic_parcel_verified": true,
@@ -3745,6 +4276,15 @@
       "lot_acres": 0.1377,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "037F01460000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6027.4,
+      "lot_acres": 0.1384,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:54.284459-04:00"
     },
     "037G00070000": {
       "lojic_parcel_verified": true,
@@ -3844,6 +4384,15 @@
       "lot_acres": 0.0939,
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-15T09:09:41.677454-04:00"
+    },
+    "038B01270000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4547.4,
+      "lot_acres": 0.1044,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:07:40.704961-04:00"
     },
     "038B01290000": {
       "lojic_parcel_verified": true,
@@ -3953,6 +4502,24 @@
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "038E00880000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3878.8,
+      "lot_acres": 0.089,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:08:53.108439-04:00"
+    },
+    "038E01080000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4022.7,
+      "lot_acres": 0.0923,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:39.102519-04:00"
+    },
     "038F00020000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -3979,6 +4546,15 @@
       "lot_acres": 0.3025,
       "landuse_name": "COMMERCIAL",
       "cached_at": "2026-09-12T23:26:11.670412-04:00"
+    },
+    "038F00830000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4032.0,
+      "lot_acres": 0.0926,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:28.149885-04:00"
     },
     "038F00910000": {
       "lojic_parcel_verified": true,
@@ -4628,6 +5204,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:10:06.812571-04:00"
     },
+    "039D00550000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3283.7,
+      "lot_acres": 0.0754,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:58.829942-04:00"
+    },
     "039D00650000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -4753,6 +5338,15 @@
       "lot_acres": 0.1257,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-12T23:26:17.545084-04:00"
+    },
+    "040G00630000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 7283.3,
+      "lot_acres": 0.1672,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:00.883655-04:00"
     },
     "040H01110000": {
       "lojic_parcel_verified": true,
@@ -5285,6 +5879,42 @@
       "landuse_name": "VACANT",
       "cached_at": "2026-09-17T09:09:37.107198-04:00"
     },
+    "042C00720000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 2258.5,
+      "lot_acres": 0.0518,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:12:51.957206-04:00"
+    },
+    "042C00730000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 2081.5,
+      "lot_acres": 0.0478,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:32.903012-04:00"
+    },
+    "042C00750000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 2142.7,
+      "lot_acres": 0.0492,
+      "landuse_name": "COMMERCIAL",
+      "cached_at": "2026-09-18T09:12:51.756076-04:00"
+    },
+    "042C00760000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 43844.0,
+      "lot_acres": 1.0065,
+      "landuse_name": "VACANT",
+      "cached_at": "2026-09-18T09:12:51.563975-04:00"
+    },
     "042D00040000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -5321,6 +5951,24 @@
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "043A00410000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 7086.9,
+      "lot_acres": 0.1627,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:07:30.590715-04:00"
+    },
+    "043A00640000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6368.7,
+      "lot_acres": 0.1462,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:08:37.361619-04:00"
+    },
     "043B00600000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -5339,6 +5987,24 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:09:57.470323-04:00"
     },
+    "043C00650000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 7855.0,
+      "lot_acres": 0.1803,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:13:16.372697-04:00"
+    },
+    "043C01210000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5511.6,
+      "lot_acres": 0.1265,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:10:56.191080-04:00"
+    },
     "043C01390000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -5347,6 +6013,24 @@
       "lot_acres": 0.144,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:06:21.603844-04:00"
+    },
+    "043E00080000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5696.7,
+      "lot_acres": 0.1308,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:08:48.861608-04:00"
+    },
+    "043E00090000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6690.1,
+      "lot_acres": 0.1536,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:32.380485-04:00"
     },
     "043E00360000": {
       "lojic_parcel_verified": true,
@@ -5401,6 +6085,15 @@
       "lot_acres": 0.1193,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "043F00070000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5881.9,
+      "lot_acres": 0.135,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:08:04.814183-04:00"
     },
     "043F00490000": {
       "lojic_parcel_verified": true,
@@ -5482,6 +6175,42 @@
       "lot_acres": 0.0731,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:03:57.575087-04:00"
+    },
+    "043H02250000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3072.2,
+      "lot_acres": 0.0705,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:07:29.792237-04:00"
+    },
+    "043H02290000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3021.2,
+      "lot_acres": 0.0694,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:10:34.694333-04:00"
+    },
+    "043H02310000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 2794.2,
+      "lot_acres": 0.0641,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:34.164339-04:00"
+    },
+    "043H02630000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3176.3,
+      "lot_acres": 0.0729,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:06:55.261317-04:00"
     },
     "044A00680000": {
       "lojic_parcel_verified": true,
@@ -5627,6 +6356,24 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:05:49.723768-04:00"
     },
+    "045A00200000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4845.7,
+      "lot_acres": 0.1112,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:10:55.678351-04:00"
+    },
+    "045A00630000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6796.5,
+      "lot_acres": 0.156,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:07:04.227260-04:00"
+    },
     "045A00670000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -5681,6 +6428,15 @@
       "landuse_name": "VACANT",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "045F00120000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5902.7,
+      "lot_acres": 0.1355,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:13:00.578918-04:00"
+    },
     "045F00380000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -5698,6 +6454,15 @@
       "lot_acres": 0.1638,
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-17T09:03:47.365609-04:00"
+    },
+    "045F01090000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3236.9,
+      "lot_acres": 0.0743,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:13:10.831298-04:00"
     },
     "045H00130000": {
       "lojic_parcel_verified": true,
@@ -5735,6 +6500,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "046C00570000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 29902.9,
+      "lot_acres": 0.6865,
+      "landuse_name": "MULTI-FAMILY",
+      "cached_at": "2026-09-18T09:08:23.409240-04:00"
+    },
     "046D01020000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -5743,6 +6517,24 @@
       "lot_acres": 0.1203,
       "landuse_name": "PUBLIC AND SEMI-PUBLIC",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "046E00240000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4172.2,
+      "lot_acres": 0.0958,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:04.898977-04:00"
+    },
+    "046E00490000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3881.9,
+      "lot_acres": 0.0891,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:08:07.690879-04:00"
     },
     "046G00350000": {
       "lojic_parcel_verified": true,
@@ -5779,6 +6571,15 @@
       "lot_acres": 0.1166,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:06:58.980796-04:00"
+    },
+    "046J00170000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 7043.2,
+      "lot_acres": 0.1617,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:13:07.220973-04:00"
     },
     "046J00440000": {
       "lojic_parcel_verified": true,
@@ -5824,6 +6625,15 @@
       "lot_acres": 0.5292,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "047B00050000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3588.8,
+      "lot_acres": 0.0824,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:34.145746-04:00"
     },
     "047B00110000": {
       "lojic_parcel_verified": true,
@@ -5897,6 +6707,15 @@
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-12T23:30:50.531986-04:00"
     },
+    "047G01800000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5223.6,
+      "lot_acres": 0.1199,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:49.080623-04:00"
+    },
     "048C00030000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -5923,6 +6742,15 @@
       "lot_acres": 0.2614,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-12T23:31:00.469451-04:00"
+    },
+    "048H00630000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 7226.3,
+      "lot_acres": 0.1659,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:48.882464-04:00"
     },
     "048J00300000": {
       "lojic_parcel_verified": true,
@@ -6005,6 +6833,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "049D00180000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5096.8,
+      "lot_acres": 0.117,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:07:51.070383-04:00"
+    },
     "049D00360000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -6067,6 +6904,24 @@
       "lot_acres": 0.0624,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-12T23:27:36.540288-04:00"
+    },
+    "050D00770000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5889.5,
+      "lot_acres": 0.1352,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:13:07.419229-04:00"
+    },
+    "050D00780000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 7022.0,
+      "lot_acres": 0.1612,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:13:02.396633-04:00"
     },
     "050D01030000": {
       "lojic_parcel_verified": true,
@@ -6212,6 +7067,24 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "050J01430000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 2279.0,
+      "lot_acres": 0.0523,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:07:56.662936-04:00"
+    },
+    "050J01480000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 1933.4,
+      "lot_acres": 0.0444,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:54.482841-04:00"
+    },
     "051D00840000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -6229,6 +7102,15 @@
       "lot_acres": 0.2187,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:09:54.028679-04:00"
+    },
+    "052A00370000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4850.9,
+      "lot_acres": 0.1114,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:48.896809-04:00"
     },
     "052A00410000": {
       "lojic_parcel_verified": true,
@@ -6383,6 +7265,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:08:45.852456-04:00"
     },
+    "052C00710000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3857.6,
+      "lot_acres": 0.0886,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:10:44.263055-04:00"
+    },
     "052D00200000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -6428,6 +7319,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "052F01360000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9833.2,
+      "lot_acres": 0.2257,
+      "landuse_name": "MULTI-FAMILY",
+      "cached_at": "2026-09-18T09:13:51.210000-04:00"
+    },
     "052F01710000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -6436,6 +7336,15 @@
       "lot_acres": 0.0903,
       "landuse_name": "MULTI-FAMILY",
       "cached_at": "2026-09-12T23:29:56.213375-04:00"
+    },
+    "052H00560000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3972.5,
+      "lot_acres": 0.0912,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:12:56.830980-04:00"
     },
     "052H01260000": {
       "lojic_parcel_verified": true,
@@ -6563,6 +7472,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:08:30.986475-04:00"
     },
+    "053H00200000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 15585.9,
+      "lot_acres": 0.3578,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:10:34.890068-04:00"
+    },
     "053J00230000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -6643,6 +7561,24 @@
       "lot_acres": 0.247,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:07:19.852528-04:00"
+    },
+    "054G00660000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6978.4,
+      "lot_acres": 0.1602,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:55.695412-04:00"
+    },
+    "054G00770000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 8023.4,
+      "lot_acres": 0.1842,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:01.919154-04:00"
     },
     "055800030000": {
       "lojic_parcel_verified": true,
@@ -6788,6 +7724,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:04:57.296203-04:00"
     },
+    "059L00860000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 28816.8,
+      "lot_acres": 0.6615,
+      "landuse_name": "MULTI-FAMILY",
+      "cached_at": "2026-09-18T09:10:51.360169-04:00"
+    },
     "059M00320000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -6823,6 +7768,15 @@
       "lot_acres": 0.4161,
       "landuse_name": "COMMERCIAL",
       "cached_at": "2026-09-17T09:07:18.351182-04:00"
+    },
+    "060H00560000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 279114.7,
+      "lot_acres": 6.4076,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:08:24.158739-04:00"
     },
     "061501080000": {
       "lojic_parcel_verified": true,
@@ -6895,6 +7849,33 @@
       "lot_acres": 0.1258,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:08:13.100667-04:00"
+    },
+    "061M00010000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 3354.5,
+      "lot_acres": 0.077,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:13:05.592384-04:00"
+    },
+    "062302240000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 15859.7,
+      "lot_acres": 0.3641,
+      "landuse_name": "VACANT",
+      "cached_at": "2026-09-18T09:12:46.268559-04:00"
+    },
+    "062303710005": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 12350.7,
+      "lot_acres": 0.2835,
+      "landuse_name": "COMMERCIAL",
+      "cached_at": "2026-09-18T09:13:16.173367-04:00"
     },
     "062C00230000": {
       "lojic_parcel_verified": true,
@@ -7022,6 +8003,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:06:59.989918-04:00"
     },
+    "062N02050000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 18216.9,
+      "lot_acres": 0.4182,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:08:21.471719-04:00"
+    },
     "062N02500000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -7085,6 +8075,15 @@
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-12T23:27:40.033973-04:00"
     },
+    "063300470000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 170996.6,
+      "lot_acres": 3.9255,
+      "landuse_name": "MULTI-FAMILY",
+      "cached_at": "2026-09-18T09:09:20.899606-04:00"
+    },
     "063300850000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -7093,6 +8092,33 @@
       "lot_acres": 0.2547,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:07:38.915127-04:00"
+    },
+    "063302200000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 13509.1,
+      "lot_acres": 0.3101,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:45.387505-04:00"
+    },
+    "063302540000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 10954.5,
+      "lot_acres": 0.2515,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:08:52.694152-04:00"
+    },
+    "063402150000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 143274.0,
+      "lot_acres": 3.2891,
+      "landuse_name": "COMMERCIAL",
+      "cached_at": "2026-09-18T09:08:35.881816-04:00"
     },
     "063601300000": {
       "lojic_parcel_verified": true,
@@ -7355,6 +8381,24 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:04:58.910683-04:00"
     },
+    "064D00890000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6324.6,
+      "lot_acres": 0.1452,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:52.610932-04:00"
+    },
+    "064D00900000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4776.3,
+      "lot_acres": 0.1096,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:08:06.892939-04:00"
+    },
     "064D01150000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -7382,6 +8426,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:05:38.052150-04:00"
     },
+    "065100340000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 23257.6,
+      "lot_acres": 0.5339,
+      "landuse_name": "COMMERCIAL",
+      "cached_at": "2026-09-18T09:07:51.257147-04:00"
+    },
     "065103660000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -7391,6 +8444,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:06:25.910947-04:00"
     },
+    "065103730000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 14313.7,
+      "lot_acres": 0.3286,
+      "landuse_name": "MULTI-FAMILY",
+      "cached_at": "2026-09-18T09:07:26.019498-04:00"
+    },
     "065103800000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -7399,6 +8461,15 @@
       "lot_acres": 0.3746,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-15T09:09:24.808533-04:00"
+    },
+    "065104280000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 13453.8,
+      "lot_acres": 0.3089,
+      "landuse_name": "INDUSTRY",
+      "cached_at": "2026-09-18T09:06:51.777471-04:00"
     },
     "065200450000": {
       "lojic_parcel_verified": true,
@@ -7436,6 +8507,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-12T23:26:55.610465-04:00"
     },
+    "065B00790000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5512.6,
+      "lot_acres": 0.1266,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:12:57.649719-04:00"
+    },
     "065B00970000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -7444,6 +8524,15 @@
       "lot_acres": 0.1085,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "065E01030000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 7410.4,
+      "lot_acres": 0.1701,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:46.487213-04:00"
     },
     "065F00090000": {
       "lojic_parcel_verified": true,
@@ -7489,6 +8578,15 @@
       "lot_acres": 0.1613,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:04:56.885754-04:00"
+    },
+    "066200500000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 50179.4,
+      "lot_acres": 1.152,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:10:59.715006-04:00"
     },
     "066300340000": {
       "lojic_parcel_verified": true,
@@ -7670,6 +8768,15 @@
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-15T09:10:42.492831-04:00"
     },
+    "067F01140000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5420.1,
+      "lot_acres": 0.1244,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:10:50.054136-04:00"
+    },
     "067J00240000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -7678,6 +8785,15 @@
       "lot_acres": 0.3526,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:07:59.952218-04:00"
+    },
+    "067N00450027": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 23953.3,
+      "lot_acres": 0.5499,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:07:22.744133-04:00"
     },
     "068G00330000": {
       "lojic_parcel_verified": true,
@@ -7696,6 +8812,15 @@
       "lot_acres": 0.0776,
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-12T23:26:40.992433-04:00"
+    },
+    "068J00050000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 955606.8,
+      "lot_acres": 21.9377,
+      "landuse_name": "INDUSTRY",
+      "cached_at": "2026-09-18T09:10:45.359527-04:00"
     },
     "068L00010000": {
       "lojic_parcel_verified": true,
@@ -7877,6 +9002,15 @@
       "landuse_name": "COMMERCIAL",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "074801200000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 7455.7,
+      "lot_acres": 0.1712,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:12:59.351207-04:00"
+    },
     "075B00470000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -8048,6 +9182,15 @@
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-15T09:10:42.083050-04:00"
     },
+    "083201390016": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 13082.1,
+      "lot_acres": 0.3003,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:08:51.308182-04:00"
+    },
     "083201450009": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -8101,6 +9244,15 @@
       "lot_acres": 0.1837,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:06:49.053861-04:00"
+    },
+    "084A00040000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6327.6,
+      "lot_acres": 0.1453,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:07:28.792085-04:00"
     },
     "084A00220449": {
       "lojic_parcel_verified": true,
@@ -8183,6 +9335,15 @@
       "landuse_name": "VACANT",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "085600940149": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6899.1,
+      "lot_acres": 0.1584,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:07:14.009156-04:00"
+    },
     "085601290155": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -8200,6 +9361,15 @@
       "lot_acres": 0.1415,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "085A0027PT20": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 10477.9,
+      "lot_acres": 0.2405,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:09:31.015587-04:00"
     },
     "085B00090333": {
       "lojic_parcel_verified": true,
@@ -8227,6 +9397,15 @@
       "lot_acres": 0.2021,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:07:21.565700-04:00"
+    },
+    "085B01200000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 8757.1,
+      "lot_acres": 0.201,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:32.109306-04:00"
     },
     "085B01580000": {
       "lojic_parcel_verified": true,
@@ -8291,6 +9470,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-12T23:26:38.613964-04:00"
     },
+    "085K01460031": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6544.5,
+      "lot_acres": 0.1502,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:07:50.464320-04:00"
+    },
     "086000040067": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -8299,6 +9487,33 @@
       "lot_acres": 0.1536,
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-17T09:08:58.814396-04:00"
+    },
+    "086000370061": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6059.8,
+      "lot_acres": 0.1391,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:12:54.025440-04:00"
+    },
+    "086200280000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 10532.3,
+      "lot_acres": 0.2418,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:12:43.459344-04:00"
+    },
+    "086500810192": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 14223.2,
+      "lot_acres": 0.3265,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:43.477416-04:00"
     },
     "086E01150000": {
       "lojic_parcel_verified": true,
@@ -8372,6 +9587,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:08:09.832848-04:00"
     },
+    "087G01640000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 10119.5,
+      "lot_acres": 0.2323,
+      "landuse_name": "MULTI-FAMILY",
+      "cached_at": "2026-09-18T09:13:52.182237-04:00"
+    },
     "087H01340000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -8408,6 +9632,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-12T23:26:26.021363-04:00"
     },
+    "087K01710000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6592.2,
+      "lot_acres": 0.1513,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:46.897058-04:00"
+    },
     "087K01950000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -8416,6 +9649,15 @@
       "lot_acres": 0.1493,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-12T23:29:49.268840-04:00"
+    },
+    "087P00630000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 535385.7,
+      "lot_acres": 12.2908,
+      "landuse_name": "COMMERCIAL",
+      "cached_at": "2026-09-18T09:08:30.709102-04:00"
     },
     "087Z00K10000": {
       "lojic_parcel_verified": true,
@@ -8669,6 +9911,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "090300970000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9408.3,
+      "lot_acres": 0.216,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:03.822929-04:00"
+    },
     "090400770077": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -8804,6 +10055,42 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:05:46.132691-04:00"
     },
+    "093500010000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9886.9,
+      "lot_acres": 0.227,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:11:31.723500-04:00"
+    },
+    "093500020000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 31589.0,
+      "lot_acres": 0.7252,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:11:30.008179-04:00"
+    },
+    "093502280000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 31969.1,
+      "lot_acres": 0.7339,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:07:37.323599-04:00"
+    },
+    "093800290000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9405.8,
+      "lot_acres": 0.2159,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:11:38.088708-04:00"
+    },
     "095700030000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -8822,6 +10109,15 @@
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "096700880000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5923.4,
+      "lot_acres": 0.136,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:06:59.384019-04:00"
+    },
     "097900890000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -8831,6 +10127,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "100301740000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 237597.0,
+      "lot_acres": 5.4545,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:12:53.566002-04:00"
+    },
     "100400220000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -8839,6 +10144,15 @@
       "lot_acres": 27.4804,
       "landuse_name": "PUBLIC AND SEMI-PUBLIC",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "100500460000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 67140.7,
+      "lot_acres": 1.5413,
+      "landuse_name": "MULTI-FAMILY",
+      "cached_at": "2026-09-18T09:12:46.899254-04:00"
     },
     "100501050000": {
       "lojic_parcel_verified": true,
@@ -8921,6 +10235,15 @@
       "landuse_name": "COMMERCIAL",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "100802510000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 12555.7,
+      "lot_acres": 0.2882,
+      "landuse_name": "COMMERCIAL",
+      "cached_at": "2026-09-18T09:11:33.780311-04:00"
+    },
     "100803870000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -8948,6 +10271,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-12T23:29:37.663215-04:00"
     },
+    "101100300030": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 25755.9,
+      "lot_acres": 0.5913,
+      "landuse_name": "VACANT",
+      "cached_at": "2026-09-18T09:12:50.782277-04:00"
+    },
     "101300250000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -8957,6 +10289,15 @@
       "landuse_name": "PUBLIC AND SEMI-PUBLIC",
       "cached_at": "2026-09-12T23:27:50.885576-04:00"
     },
+    "101300430000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 19906.2,
+      "lot_acres": 0.457,
+      "landuse_name": "COMMERCIAL",
+      "cached_at": "2026-09-18T09:12:50.574851-04:00"
+    },
     "101300640000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -8965,6 +10306,60 @@
       "lot_acres": 16.8349,
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-17T09:05:20.932274-04:00"
+    },
+    "101301080000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 11388.5,
+      "lot_acres": 0.2614,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:08:54.280883-04:00"
+    },
+    "101301620000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 10448.2,
+      "lot_acres": 0.2399,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:10:36.209582-04:00"
+    },
+    "101301630000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 10210.5,
+      "lot_acres": 0.2344,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:07:57.006304-04:00"
+    },
+    "101302000000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 14672.3,
+      "lot_acres": 0.3368,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:08:54.470263-04:00"
+    },
+    "101302180000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 24215.0,
+      "lot_acres": 0.5559,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:39.685497-04:00"
+    },
+    "101303090000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 10278.4,
+      "lot_acres": 0.236,
+      "landuse_name": "VACANT",
+      "cached_at": "2026-09-18T09:10:35.721283-04:00"
     },
     "101504970000": {
       "lojic_parcel_verified": true,
@@ -9055,6 +10450,15 @@
       "lot_acres": 1.1776,
       "landuse_name": "MULTI-FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "102605810000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 59134.2,
+      "lot_acres": 1.3575,
+      "landuse_name": "COMMERCIAL",
+      "cached_at": "2026-09-18T09:11:44.703527-04:00"
     },
     "103200310000": {
       "lojic_parcel_verified": true,
@@ -9155,6 +10559,15 @@
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-17T09:06:39.046103-04:00"
     },
+    "104501050000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 49390.7,
+      "lot_acres": 1.1339,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:09:55.505018-04:00"
+    },
     "104501220000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -9163,6 +10576,33 @@
       "lot_acres": 1.1989,
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-17T09:05:31.111015-04:00"
+    },
+    "104600310000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 72672.9,
+      "lot_acres": 1.6683,
+      "landuse_name": "COMMERCIAL",
+      "cached_at": "2026-09-18T09:07:36.428609-04:00"
+    },
+    "104600320000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 25070.6,
+      "lot_acres": 0.5755,
+      "landuse_name": "COMMERCIAL",
+      "cached_at": "2026-09-18T09:08:34.049255-04:00"
+    },
+    "104600940000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 177694.3,
+      "lot_acres": 4.0793,
+      "landuse_name": "PUBLIC AND SEMI-PUBLIC",
+      "cached_at": "2026-09-18T09:06:58.210268-04:00"
     },
     "104708230823": {
       "lojic_parcel_verified": true,
@@ -9200,6 +10640,24 @@
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "104901650000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 24540.2,
+      "lot_acres": 0.5634,
+      "landuse_name": "VACANT",
+      "cached_at": "2026-09-18T09:08:22.083956-04:00"
+    },
+    "105001400000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 70556.8,
+      "lot_acres": 1.6198,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:08:34.255269-04:00"
+    },
     "105002050000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -9217,6 +10675,15 @@
       "lot_acres": 3.0035,
       "landuse_name": "VACANT",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "105200970001": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 44145.3,
+      "lot_acres": 1.0134,
+      "landuse_name": "PARKS AND OPEN SPACE",
+      "cached_at": "2026-09-18T09:09:56.078687-04:00"
     },
     "105202010000": {
       "lojic_parcel_verified": true,
@@ -9236,6 +10703,15 @@
       "landuse_name": "PUBLIC AND SEMI-PUBLIC",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "105501610000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 102424.1,
+      "lot_acres": 2.3513,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:46.908196-04:00"
+    },
     "105600280000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -9244,6 +10720,15 @@
       "lot_acres": 5.1505,
       "landuse_name": "VACANT",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "105702030000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 27325.4,
+      "lot_acres": 0.6273,
+      "landuse_name": "VACANT",
+      "cached_at": "2026-09-18T09:09:33.391354-04:00"
     },
     "105901290000": {
       "lojic_parcel_verified": true,
@@ -9353,6 +10838,24 @@
       "landuse_name": "INDUSTRY",
       "cached_at": "2026-09-17T09:07:01.822698-04:00"
     },
+    "109401020036": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5098.9,
+      "lot_acres": 0.1171,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:09:49.268952-04:00"
+    },
+    "109401030037": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5208.6,
+      "lot_acres": 0.1196,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:09:32.949371-04:00"
+    },
     "109602100006": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -9379,6 +10882,15 @@
       "lot_acres": 0.1373,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-12T23:25:58.189064-04:00"
+    },
+    "109901620017": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4146.3,
+      "lot_acres": 0.0952,
+      "landuse_name": "VACANT",
+      "cached_at": "2026-09-18T09:12:47.959903-04:00"
     },
     "110100040003": {
       "lojic_parcel_verified": true,
@@ -9479,6 +10991,33 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-15T09:10:54.294077-04:00"
     },
+    "113302410017": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 4970.7,
+      "lot_acres": 0.1141,
+      "landuse_name": "VACANT",
+      "cached_at": "2026-09-18T09:08:07.480427-04:00"
+    },
+    "113400150041": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 2576.8,
+      "lot_acres": 0.0592,
+      "landuse_name": "VACANT",
+      "cached_at": "2026-09-18T09:13:01.100942-04:00"
+    },
+    "113500280062": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 8837.5,
+      "lot_acres": 0.2029,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:12:47.063937-04:00"
+    },
     "113500590000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -9487,6 +11026,15 @@
       "lot_acres": 0.0769,
       "landuse_name": "VACANT",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "113500760000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9496.4,
+      "lot_acres": 0.218,
+      "landuse_name": "VACANT",
+      "cached_at": "2026-09-18T09:06:37.032615-04:00"
     },
     "113600490001": {
       "lojic_parcel_verified": true,
@@ -9550,6 +11098,24 @@
       "lot_acres": 0.3045,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:09:12.865194-04:00"
+    },
+    "118000280250": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9258.2,
+      "lot_acres": 0.2125,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:07:56.822507-04:00"
+    },
+    "118300280000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 10135.3,
+      "lot_acres": 0.2327,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:08:32.201967-04:00"
     },
     "118600610036": {
       "lojic_parcel_verified": true,
@@ -9632,6 +11198,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-15T09:09:52.189107-04:00"
     },
+    "120700450665": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9217.7,
+      "lot_acres": 0.2116,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:06:37.201363-04:00"
+    },
     "121101270067": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -9677,6 +11252,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:09:11.951703-04:00"
     },
+    "121900320600": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 11577.9,
+      "lot_acres": 0.2658,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:45.811268-04:00"
+    },
     "121900680319": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -9694,6 +11278,15 @@
       "lot_acres": 0.1739,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "122900370000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9285.9,
+      "lot_acres": 0.2132,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:12:43.769399-04:00"
     },
     "123100620839": {
       "lojic_parcel_verified": true,
@@ -9785,6 +11378,15 @@
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "129000390000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9564.6,
+      "lot_acres": 0.2196,
+      "landuse_name": "MULTI-FAMILY",
+      "cached_at": "2026-09-18T09:11:43.074549-04:00"
+    },
     "129400790000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -9793,6 +11395,24 @@
       "lot_acres": 0.209,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:09:15.663674-04:00"
+    },
+    "129601360000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 12894.8,
+      "lot_acres": 0.296,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:08:36.680907-04:00"
+    },
+    "131100230000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 8112.8,
+      "lot_acres": 0.1862,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:06:42.047278-04:00"
     },
     "131906360000": {
       "lojic_parcel_verified": true,
@@ -9875,6 +11495,24 @@
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-17T09:06:30.502491-04:00"
     },
+    "135500660000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 8457.1,
+      "lot_acres": 0.1941,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:35.740890-04:00"
+    },
+    "135500670000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 8224.7,
+      "lot_acres": 0.1888,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:34.937214-04:00"
+    },
     "136002880000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -9929,6 +11567,15 @@
       "landuse_name": "MULTI-FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "137701810000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9405.3,
+      "lot_acres": 0.2159,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:06:53.281491-04:00"
+    },
     "138000060000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -9965,6 +11612,33 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:06:50.705291-04:00"
     },
+    "138703210000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9007.4,
+      "lot_acres": 0.2068,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:08:34.696763-04:00"
+    },
+    "138703720000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 15124.9,
+      "lot_acres": 0.3472,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:06:41.117133-04:00"
+    },
+    "139303090000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9686.1,
+      "lot_acres": 0.2224,
+      "landuse_name": "MULTI-FAMILY",
+      "cached_at": "2026-09-18T09:11:39.910061-04:00"
+    },
     "139800860000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -9973,6 +11647,33 @@
       "lot_acres": 0.2133,
       "landuse_name": "MULTI-FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "142201190000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 10320.8,
+      "lot_acres": 0.2369,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:10:40.639182-04:00"
+    },
+    "143205840000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9402.0,
+      "lot_acres": 0.2158,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:41.668163-04:00"
+    },
+    "143800890000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6638.5,
+      "lot_acres": 0.1524,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:10:58.056152-04:00"
     },
     "144400020000": {
       "lojic_parcel_verified": true,
@@ -10073,6 +11774,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "154300920000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 13433.9,
+      "lot_acres": 0.3084,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:08:53.692054-04:00"
+    },
     "156701030000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -10163,6 +11873,15 @@
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "183900810000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 11642.1,
+      "lot_acres": 0.2673,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:07:30.438493-04:00"
+    },
     "184400490000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -10189,6 +11908,15 @@
       "lot_acres": 0.2071,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:08:53.615487-04:00"
+    },
+    "189100060000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9913.5,
+      "lot_acres": 0.2276,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:06:43.223516-04:00"
     },
     "189508580000": {
       "lojic_parcel_verified": true,
@@ -10271,6 +11999,33 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-12T23:29:39.772564-04:00"
     },
+    "200600070000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 55943.3,
+      "lot_acres": 1.2843,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:07:36.028868-04:00"
+    },
+    "201502680000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 1649.6,
+      "lot_acres": 0.0379,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:07:25.609660-04:00"
+    },
+    "201502960000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 1697.4,
+      "lot_acres": 0.039,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:13:53.221868-04:00"
+    },
     "201504060000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -10325,6 +12080,24 @@
       "landuse_name": "MULTI-FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "202901300000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 7547.9,
+      "lot_acres": 0.1733,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:40.612716-04:00"
+    },
+    "202901310000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6822.7,
+      "lot_acres": 0.1566,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:46.432892-04:00"
+    },
     "203000290000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -10369,6 +12142,33 @@
       "lot_acres": 0.1713,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "204301760000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 10332.1,
+      "lot_acres": 0.2372,
+      "landuse_name": "PARKS AND OPEN SPACE",
+      "cached_at": "2026-09-18T09:10:33.902893-04:00"
+    },
+    "204301920000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 10151.0,
+      "lot_acres": 0.233,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:13:48.006249-04:00"
+    },
+    "204301930000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9883.2,
+      "lot_acres": 0.2269,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:13:53.930177-04:00"
     },
     "205100030000": {
       "lojic_parcel_verified": true,
@@ -10415,6 +12215,33 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "206800760000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 8312.7,
+      "lot_acres": 0.1908,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:08:23.610541-04:00"
+    },
+    "207100550000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5665.2,
+      "lot_acres": 0.1301,
+      "landuse_name": "PARKS AND OPEN SPACE",
+      "cached_at": "2026-09-18T09:10:59.897626-04:00"
+    },
+    "207100820000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5667.0,
+      "lot_acres": 0.1301,
+      "landuse_name": "PARKS AND OPEN SPACE",
+      "cached_at": "2026-09-18T09:09:34.738305-04:00"
+    },
     "207401400000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -10423,6 +12250,33 @@
       "lot_acres": 0.6858,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-15T09:09:24.178989-04:00"
+    },
+    "207900110000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 5293.5,
+      "lot_acres": 0.1215,
+      "landuse_name": "VACANT",
+      "cached_at": "2026-09-18T09:11:00.328005-04:00"
+    },
+    "208201760000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6124.1,
+      "lot_acres": 0.1406,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:46.276695-04:00"
+    },
+    "208400540000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 17581.5,
+      "lot_acres": 0.4036,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:30.230425-04:00"
     },
     "209200170000": {
       "lojic_parcel_verified": true,
@@ -10486,6 +12340,33 @@
       "lot_acres": 0.2136,
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "210702090000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 7476.5,
+      "lot_acres": 0.1716,
+      "landuse_name": "PARKS AND OPEN SPACE",
+      "cached_at": "2026-09-18T09:11:47.598542-04:00"
+    },
+    "211100850000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 41765.5,
+      "lot_acres": 0.9588,
+      "landuse_name": "MULTI-FAMILY",
+      "cached_at": "2026-09-18T09:08:04.405435-04:00"
+    },
+    "211100920000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 184891.6,
+      "lot_acres": 4.2445,
+      "landuse_name": "INDUSTRY",
+      "cached_at": "2026-09-18T09:08:38.394141-04:00"
     },
     "212701160000": {
       "lojic_parcel_verified": true,
@@ -10622,6 +12503,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-15T09:09:56.527423-04:00"
     },
+    "283101250000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 11631.3,
+      "lot_acres": 0.267,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:11:33.132529-04:00"
+    },
     "283801930000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -10667,6 +12557,15 @@
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
     },
+    "297800060000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 7209.8,
+      "lot_acres": 0.1655,
+      "landuse_name": "PUBLIC AND SEMI-PUBLIC",
+      "cached_at": "2026-09-18T09:11:29.222361-04:00"
+    },
     "298804160000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -10675,6 +12574,15 @@
       "lot_acres": 0.1264,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "308601700000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 14169.8,
+      "lot_acres": 0.3253,
+      "landuse_name": "RIGHT-OF-WAY",
+      "cached_at": "2026-09-18T09:11:30.458594-04:00"
     },
     "310800690000": {
       "lojic_parcel_verified": true,
@@ -10748,6 +12656,15 @@
       "landuse_name": "RIGHT-OF-WAY",
       "cached_at": "2026-09-17T09:06:48.387435-04:00"
     },
+    "333800290000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 6300.2,
+      "lot_acres": 0.1446,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:49.813926-04:00"
+    },
     "334800170000": {
       "lojic_parcel_verified": true,
       "parcel_type": 0,
@@ -10765,6 +12682,15 @@
       "lot_acres": 12.2253,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-17T09:03:44.003345-04:00"
+    },
+    "336900470000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 9604.4,
+      "lot_acres": 0.2205,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:43.589709-04:00"
     },
     "338000680000": {
       "lojic_parcel_verified": true,
@@ -10792,6 +12718,15 @@
       "lot_acres": 0.1898,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-12T23:28:50.799645-04:00"
+    },
+    "350500070000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 248780.7,
+      "lot_acres": 5.7112,
+      "landuse_name": "COMMERCIAL",
+      "cached_at": "2026-09-18T09:11:27.462322-04:00"
     },
     "350500090000": {
       "lojic_parcel_verified": true,
@@ -10828,6 +12763,15 @@
       "lot_acres": 0.1389,
       "landuse_name": "SINGLE FAMILY",
       "cached_at": "2026-09-11T15:56:02.413488-04:00"
+    },
+    "392703270000": {
+      "lojic_parcel_verified": true,
+      "parcel_type": 0,
+      "pin": null,
+      "lot_sqft": 8889.1,
+      "lot_acres": 0.2041,
+      "landuse_name": "SINGLE FAMILY",
+      "cached_at": "2026-09-18T09:09:59.248520-04:00"
     },
     "402200470000": {
       "lojic_parcel_verified": true,
