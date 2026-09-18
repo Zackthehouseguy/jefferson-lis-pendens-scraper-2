@@ -3,7 +3,9 @@
   "blockers": [
     "live_ai_scoring_missing"
   ],
-  "warnings": [],
+  "warnings": [
+    "lojic_live_unavailable_using_verified_cache"
+  ],
   "report_age_hours": 0.0,
   "source_exit_codes": {
     "lis_pendens": 0,
@@ -14,8 +16,8 @@
   "summary": {
     "input_candidates": 655,
     "parcel_verified": 648,
-    "parcel_live_verified": 216,
-    "parcel_cache_verified": 432,
+    "parcel_live_verified": 0,
+    "parcel_cache_verified": 648,
     "pva_owner_verified": 647,
     "eligible_sfr": 12,
     "eligible_land": 0,
