@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "generated_at_et": "2026-09-21T09:29:44.730904-04:00",
+  "generated_at_et": "2026-09-21T13:59:59.174423-04:00",
   "query_window": {
     "start_date": "2026-09-18",
     "end_date": "2026-09-21"
@@ -12,13 +12,13 @@
     "tax_delinquent": "OK"
   },
   "source_record_counts": {
-    "lis_pendens": 10,
+    "lis_pendens": 13,
     "wills": 0,
     "louisville_code_violations": 213,
     "tax_delinquent": 0
   },
-  "properties_after_stacking": 207,
-  "fresh_individual_candidates": 195,
+  "properties_after_stacking": 209,
+  "fresh_individual_candidates": 197,
   "fresh_individual_high_count": 0,
   "fresh_individual_medium_count": 0,
   "top_fresh_individual": [
@@ -282,11 +282,48 @@
       ]
     },
     {
+      "property_key": "ADDR::1239 DAHL RD",
+      "property_address": "1239 Dahl Rd, Louisville, KY 40213",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "BROOKS LINDA; BROOKS THOMAS; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT DEPARTMENT OF CODES & REGULATIONS; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; AB; FERONTE BERNADETTE; BROOKS DOMINIC; HILDENBRANDT JACOB; BROOKS JESSICA; HILDENBRANDT JESSICA; BROOKS JULIE; BOOKS JEFFREY; BROOKS LINDA L"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/21/2026",
+          "property_address": "1239 Dahl Rd, Louisville, KY 40213",
+          "normalized_address": "1239 DAHL RD",
+          "parcel_id": null,
+          "party_or_owner": "BROOKS LINDA; BROOKS THOMAS; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT DEPARTMENT OF CODES & REGULATIONS; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; AB; FERONTE BERNADETTE; BROOKS DOMINIC; HILDENBRANDT JACOB; BROOKS JESSICA; HILDENBRANDT JESSICA; BROOKS JULIE; BOOKS JEFFREY; BROOKS LINDA L",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=1239+Dahl+Rd&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIxLzIwMjYxMTUxMTYudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
       "property_key": "ADDR::6601 CRESTON DR",
       "property_address": "6601 Creston Dr, Louisville, KY 40258",
       "parcel_id": null,
       "parties_or_owners": [
-        "CROFT AMBER M; CROFT AMBER; MILLER DOUGLAS LEE; JEFFERSON COUNTY KENTUCKY AS AGENT OF THE COMMONWEALTH OF KENTUCKY; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT COMMONWEALTH OF KENTUCKY DEPARTMENT OF REVENUE DIVISION OF COLLECTIONS; ENFIN RESIDENTIAL SOLAR FINANCE I LLC; HIKES POINT PAINT INDUSTRIAL INC; HIKES POINT PAINT & WALLPAPER INC"
+        "CROFT AMBER M; CROFT AMBER; MILLER DOUGLAS LEE; JEFFERSON COUNTY KENTUCKY AS AGENT OF COMMONWEALTH OF KENTUCKY; LOUISVILLE JEFFERSON COUTNY METRO GORVERNMENT; COMMONWEALTH OF KENTUCKY DEPARTMENT OF REVENUE DIVISION OF COLLECTIONS; ENFIN RESIDENTIAL SOLAR FINANCEQ I LLC & HIKES POINT PAINT INDUSTRIAL INC; HIKES POINT PAINT & WALLPAPER INC"
       ],
       "individual_owner_or_party_likely": true,
       "sources": [
@@ -308,7 +345,7 @@
           "property_address": "6601 Creston Dr, Louisville, KY 40258",
           "normalized_address": "6601 CRESTON DR",
           "parcel_id": null,
-          "party_or_owner": "CROFT AMBER M; CROFT AMBER; MILLER DOUGLAS LEE; JEFFERSON COUNTY KENTUCKY AS AGENT OF THE COMMONWEALTH OF KENTUCKY; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT COMMONWEALTH OF KENTUCKY DEPARTMENT OF REVENUE DIVISION OF COLLECTIONS; ENFIN RESIDENTIAL SOLAR FINANCE I LLC; HIKES POINT PAINT INDUSTRIAL INC; HIKES POINT PAINT & WALLPAPER INC",
+          "party_or_owner": "CROFT AMBER M; CROFT AMBER; MILLER DOUGLAS LEE; JEFFERSON COUNTY KENTUCKY AS AGENT OF COMMONWEALTH OF KENTUCKY; LOUISVILLE JEFFERSON COUTNY METRO GORVERNMENT; COMMONWEALTH OF KENTUCKY DEPARTMENT OF REVENUE DIVISION OF COLLECTIONS; ENFIN RESIDENTIAL SOLAR FINANCEQ I LLC & HIKES POINT PAINT INDUSTRIAL INC; HIKES POINT PAINT & WALLPAPER INC",
           "individual_party_likely": true,
           "status": null,
           "amount": null,
@@ -360,7 +397,7 @@
       "property_address": "106 N Hite Ave, Louisville, KY 40206",
       "parcel_id": null,
       "parties_or_owners": [
-        "ROBY ALEXANDER P"
+        "HUNTINGTON NATIONAL BANK; ROBY ALEXANDER P"
       ],
       "individual_owner_or_party_likely": true,
       "sources": [
@@ -382,12 +419,49 @@
           "property_address": "106 N Hite Ave, Louisville, KY 40206",
           "normalized_address": "106 N HITE AVE",
           "parcel_id": null,
-          "party_or_owner": "ROBY ALEXANDER P",
+          "party_or_owner": "HUNTINGTON NATIONAL BANK; ROBY ALEXANDER P",
           "individual_party_likely": true,
           "status": null,
           "amount": null,
           "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=106+N+Hite+Ave&searchType=StreetSearch#results",
           "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIxLzIwMjYxMTUwODcudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::5803 LAKE ERIE DR",
+      "property_address": "5803 Lake Erie Dr, Louisville, KY 40291",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "LAUYANS KARLI ALIZABETH; LAUYANS KARLI A; HUDSON LAKE ESTATES HOMEOWNERS ASSN INC; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/21/2026",
+          "property_address": "5803 Lake Erie Dr, Louisville, KY 40291",
+          "normalized_address": "5803 LAKE ERIE DR",
+          "parcel_id": null,
+          "party_or_owner": "LAUYANS KARLI ALIZABETH; LAUYANS KARLI A; HUDSON LAKE ESTATES HOMEOWNERS ASSN INC; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=5803+Lake+Erie+Dr&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIxLzIwMjYxMTU1NTIudGlm&type=pdf",
           "raw_distress_score": null
         }
       ]
@@ -7725,11 +7799,48 @@
       ]
     },
     {
+      "property_key": "ADDR::1239 DAHL RD",
+      "property_address": "1239 Dahl Rd, Louisville, KY 40213",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "BROOKS LINDA; BROOKS THOMAS; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT DEPARTMENT OF CODES & REGULATIONS; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; AB; FERONTE BERNADETTE; BROOKS DOMINIC; HILDENBRANDT JACOB; BROOKS JESSICA; HILDENBRANDT JESSICA; BROOKS JULIE; BOOKS JEFFREY; BROOKS LINDA L"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/21/2026",
+          "property_address": "1239 Dahl Rd, Louisville, KY 40213",
+          "normalized_address": "1239 DAHL RD",
+          "parcel_id": null,
+          "party_or_owner": "BROOKS LINDA; BROOKS THOMAS; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT DEPARTMENT OF CODES & REGULATIONS; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT; AB; FERONTE BERNADETTE; BROOKS DOMINIC; HILDENBRANDT JACOB; BROOKS JESSICA; HILDENBRANDT JESSICA; BROOKS JULIE; BOOKS JEFFREY; BROOKS LINDA L",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=1239+Dahl+Rd&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIxLzIwMjYxMTUxMTYudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
       "property_key": "ADDR::6601 CRESTON DR",
       "property_address": "6601 Creston Dr, Louisville, KY 40258",
       "parcel_id": null,
       "parties_or_owners": [
-        "CROFT AMBER M; CROFT AMBER; MILLER DOUGLAS LEE; JEFFERSON COUNTY KENTUCKY AS AGENT OF THE COMMONWEALTH OF KENTUCKY; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT COMMONWEALTH OF KENTUCKY DEPARTMENT OF REVENUE DIVISION OF COLLECTIONS; ENFIN RESIDENTIAL SOLAR FINANCE I LLC; HIKES POINT PAINT INDUSTRIAL INC; HIKES POINT PAINT & WALLPAPER INC"
+        "CROFT AMBER M; CROFT AMBER; MILLER DOUGLAS LEE; JEFFERSON COUNTY KENTUCKY AS AGENT OF COMMONWEALTH OF KENTUCKY; LOUISVILLE JEFFERSON COUTNY METRO GORVERNMENT; COMMONWEALTH OF KENTUCKY DEPARTMENT OF REVENUE DIVISION OF COLLECTIONS; ENFIN RESIDENTIAL SOLAR FINANCEQ I LLC & HIKES POINT PAINT INDUSTRIAL INC; HIKES POINT PAINT & WALLPAPER INC"
       ],
       "individual_owner_or_party_likely": true,
       "sources": [
@@ -7751,7 +7862,7 @@
           "property_address": "6601 Creston Dr, Louisville, KY 40258",
           "normalized_address": "6601 CRESTON DR",
           "parcel_id": null,
-          "party_or_owner": "CROFT AMBER M; CROFT AMBER; MILLER DOUGLAS LEE; JEFFERSON COUNTY KENTUCKY AS AGENT OF THE COMMONWEALTH OF KENTUCKY; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT COMMONWEALTH OF KENTUCKY DEPARTMENT OF REVENUE DIVISION OF COLLECTIONS; ENFIN RESIDENTIAL SOLAR FINANCE I LLC; HIKES POINT PAINT INDUSTRIAL INC; HIKES POINT PAINT & WALLPAPER INC",
+          "party_or_owner": "CROFT AMBER M; CROFT AMBER; MILLER DOUGLAS LEE; JEFFERSON COUNTY KENTUCKY AS AGENT OF COMMONWEALTH OF KENTUCKY; LOUISVILLE JEFFERSON COUTNY METRO GORVERNMENT; COMMONWEALTH OF KENTUCKY DEPARTMENT OF REVENUE DIVISION OF COLLECTIONS; ENFIN RESIDENTIAL SOLAR FINANCEQ I LLC & HIKES POINT PAINT INDUSTRIAL INC; HIKES POINT PAINT & WALLPAPER INC",
           "individual_party_likely": true,
           "status": null,
           "amount": null,
@@ -7803,7 +7914,7 @@
       "property_address": "106 N Hite Ave, Louisville, KY 40206",
       "parcel_id": null,
       "parties_or_owners": [
-        "ROBY ALEXANDER P"
+        "HUNTINGTON NATIONAL BANK; ROBY ALEXANDER P"
       ],
       "individual_owner_or_party_likely": true,
       "sources": [
@@ -7825,12 +7936,49 @@
           "property_address": "106 N Hite Ave, Louisville, KY 40206",
           "normalized_address": "106 N HITE AVE",
           "parcel_id": null,
-          "party_or_owner": "ROBY ALEXANDER P",
+          "party_or_owner": "HUNTINGTON NATIONAL BANK; ROBY ALEXANDER P",
           "individual_party_likely": true,
           "status": null,
           "amount": null,
           "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=106+N+Hite+Ave&searchType=StreetSearch#results",
           "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIxLzIwMjYxMTUwODcudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::5803 LAKE ERIE DR",
+      "property_address": "5803 Lake Erie Dr, Louisville, KY 40291",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "LAUYANS KARLI ALIZABETH; LAUYANS KARLI A; HUDSON LAKE ESTATES HOMEOWNERS ASSN INC; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/21/2026",
+          "property_address": "5803 Lake Erie Dr, Louisville, KY 40291",
+          "normalized_address": "5803 LAKE ERIE DR",
+          "parcel_id": null,
+          "party_or_owner": "LAUYANS KARLI ALIZABETH; LAUYANS KARLI A; HUDSON LAKE ESTATES HOMEOWNERS ASSN INC; LOUISVILLE JEFFERSON COUNTY METRO GOVERNMENT",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=5803+Lake+Erie+Dr&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIxLzIwMjYxMTU1NTIudGlm&type=pdf",
           "raw_distress_score": null
         }
       ]
@@ -11285,80 +11433,6 @@
           "details": "structural/foundation; exterior/foundation; trash/weeds; public hazard | I11, I18 Public Hazard | Priority: HIGH | Distress score: 11 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; exterior/foundation; trash/weeds; public hazard | Violations: I11, I18 Public Hazard | Violation rows: 2 | Date: 2026-09-18 | Case IDs: ENF-PMNT-26-021412-1 | Parcel: 032C00080000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 11
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::015A00040000",
-      "property_address": "1725 W MAIN ST, LOUISVILLE, KY 40203",
-      "parcel_id": "015A00040000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Emergency Referral"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-18",
-          "property_address": "1725 W MAIN ST, LOUISVILLE, KY 40203",
-          "normalized_address": "1725 W MAIN ST",
-          "parcel_id": "015A00040000",
-          "party_or_owner": "LMG Codes & Regulations - Emergency Referral",
-          "individual_party_likely": true,
-          "status": "Emergency Referral",
-          "amount": 1800.0,
-          "details": "vacant/abandoned; windows/doors | 01A, X156 | Priority: HIGH | Distress score: 12 | Status: Emergency Referral | Occupancy: ABANDONED STRUCTURE | Distress signals: vacant/abandoned; windows/doors | Violations: 01A, X156 | Citation amount: $1800 | Violation rows: 3 | Date: 2026-09-18 | Case IDs: ENF-PMNT-25-017502-16 | Parcel: 015A00040000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 12
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::006H01470000",
-      "property_address": "3209 W BROADWAY, LOUISVILLE, KY 40211",
-      "parcel_id": "006H01470000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Hold"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, roof, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-18",
-          "property_address": "3209 W BROADWAY, LOUISVILLE, KY 40211",
-          "normalized_address": "3209 W BROADWAY",
-          "parcel_id": "006H01470000",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "structural/foundation; exterior/foundation; roof/gutters; vacant/abandoned | X19 Exterior/Foundation | Priority: HIGH | Distress score: 12 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: structural/foundation; exterior/foundation; roof/gutters; vacant/abandoned | Violations: X19 Exterior/Foundation | Violation rows: 1 | Date: 2026-09-18 | Case IDs: ENF-PMNT-25-010538-8 | Parcel: 006H01470000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 12
         }
       ]
     }
