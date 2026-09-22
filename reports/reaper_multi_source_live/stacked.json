@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "generated_at_et": "2026-09-22T09:05:00.950453-04:00",
+  "generated_at_et": "2026-09-22T12:29:31.974788-04:00",
   "query_window": {
     "start_date": "2026-09-19",
     "end_date": "2026-09-22"
@@ -12,13 +12,13 @@
     "tax_delinquent": "OK"
   },
   "source_record_counts": {
-    "lis_pendens": 12,
+    "lis_pendens": 20,
     "wills": 0,
     "louisville_code_violations": 164,
     "tax_delinquent": 0
   },
-  "properties_after_stacking": 168,
-  "fresh_individual_candidates": 153,
+  "properties_after_stacking": 176,
+  "fresh_individual_candidates": 161,
   "fresh_individual_high_count": 0,
   "fresh_individual_medium_count": 0,
   "top_fresh_individual": [
@@ -245,6 +245,80 @@
       ]
     },
     {
+      "property_key": "ADDR::642 SOUTH 41ST ST",
+      "property_address": "642 South 41st St, Louisville, KY 40211",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "DUBOSE MICHAEL"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/22/2026",
+          "property_address": "642 South 41st St, Louisville, KY 40211",
+          "normalized_address": "642 SOUTH 41ST ST",
+          "parcel_id": null,
+          "party_or_owner": "DUBOSE MICHAEL",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=642+South+41st+St&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIyLzIwMjYxMTYwMTkudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::10802 HOLLYVIEW CT",
+      "property_address": "10802 Hollyview Ct, Louisville, KY 40299",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "GREGORY THERESA ANN; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT; SPRINGVIEW HOMEOWNERS ASSOCIATION INC; VELOCITY INVESTMENTS LLC"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/22/2026",
+          "property_address": "10802 Hollyview Ct, Louisville, KY 40299",
+          "normalized_address": "10802 HOLLYVIEW CT",
+          "parcel_id": null,
+          "party_or_owner": "GREGORY THERESA ANN; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT; SPRINGVIEW HOMEOWNERS ASSOCIATION INC; VELOCITY INVESTMENTS LLC",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=10802+Hollyview+Ct&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIyLzIwMjYxMTYyNTAudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
       "property_key": "ADDR::1022 FRANKLIN ST",
       "property_address": "1022 Franklin St, Louisville, KY 40206",
       "parcel_id": null,
@@ -319,11 +393,159 @@
       ]
     },
     {
+      "property_key": "ADDR::1231 BELMAR DR",
+      "property_address": "1231 Belmar Dr, Louisville, KY 40213",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "JAGGERS ASHLEY; SCHROERING DEREK"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/22/2026",
+          "property_address": "1231 Belmar Dr, Louisville, KY 40213",
+          "normalized_address": "1231 BELMAR DR",
+          "parcel_id": null,
+          "party_or_owner": "JAGGERS ASHLEY; SCHROERING DEREK",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=1231+Belmar+Dr&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIyLzIwMjYxMTYwMTMudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::3477 GLENDALE AVE",
+      "property_address": "3477 GLENDALE AVE, Louisville, KY 40215",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "JAGGERS DUSTY; JAGGERS SHIRLEY D; SMITH TONIE RAE"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/22/2026",
+          "property_address": "3477 GLENDALE AVE, Louisville, KY 40215",
+          "normalized_address": "3477 GLENDALE AVE",
+          "parcel_id": null,
+          "party_or_owner": "JAGGERS DUSTY; JAGGERS SHIRLEY D; SMITH TONIE RAE",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=3477+GLENDALE+AVE&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIyLzIwMjYxMTYyNzQudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::5115 WITHORN SQ",
+      "property_address": "5115 Withorn Sq, Louisville, KY 40241",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "SANDERS JILL L; SANDERS JILL; COBBLESTONE HOMEOWNERS ASSOCIATION INC"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/22/2026",
+          "property_address": "5115 Withorn Sq, Louisville, KY 40241",
+          "normalized_address": "5115 WITHORN SQ",
+          "parcel_id": null,
+          "party_or_owner": "SANDERS JILL L; SANDERS JILL; COBBLESTONE HOMEOWNERS ASSOCIATION INC",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=5115+Withorn+Sq&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIyLzIwMjYxMTYyNTQudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::1322 LOUIS COLEMAN JR DR",
+      "property_address": "1322 LOUIS COLEMAN JR DR, Louisville KY 40211",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "SHEAD MICHAEL; SHEAD DEWAYNE; SHEAD DEWAYNE SR; SHEAD SELOIS; 3906 SPRINGHURST LLC"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/22/2026",
+          "property_address": "1322 LOUIS COLEMAN JR DR, Louisville KY 40211",
+          "normalized_address": "1322 LOUIS COLEMAN JR DR",
+          "parcel_id": null,
+          "party_or_owner": "SHEAD MICHAEL; SHEAD DEWAYNE; SHEAD DEWAYNE SR; SHEAD SELOIS; 3906 SPRINGHURST LLC",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=1322+LOUIS+COLEMAN+JR+DR&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIyLzIwMjYxMTYyNzkudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
       "property_key": "ADDR::1459 FOREST DR",
       "property_address": "1459 Forest Dr, Louisville, KY 40219",
       "parcel_id": null,
       "parties_or_owners": [
-        "SMITH SHAWNEISHA KENYADA; UNITED STATES OF AMERICA; SECRETARY OF HOUSING & URBAN DEVELOPMENT"
+        "SMITH SHAWNEISHA KENYADA; UNITED STATES OF AMERICA SECTARY OF HOUSING & URBANDEVELOPMENT"
       ],
       "individual_owner_or_party_likely": true,
       "sources": [
@@ -345,12 +567,86 @@
           "property_address": "1459 Forest Dr, Louisville, KY 40219",
           "normalized_address": "1459 FOREST DR",
           "parcel_id": null,
-          "party_or_owner": "SMITH SHAWNEISHA KENYADA; UNITED STATES OF AMERICA; SECRETARY OF HOUSING & URBAN DEVELOPMENT",
+          "party_or_owner": "SMITH SHAWNEISHA KENYADA; UNITED STATES OF AMERICA SECTARY OF HOUSING & URBANDEVELOPMENT",
           "individual_party_likely": true,
           "status": null,
           "amount": null,
           "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=1459+Forest+Dr&searchType=StreetSearch#results",
           "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIyLzIwMjYxMTU4MDMudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::7512 GLASER LN",
+      "property_address": "7512 Glaser Ln, Louisville, KY 40228",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "STANTON KAREN L"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/22/2026",
+          "property_address": "7512 Glaser Ln, Louisville, KY 40228",
+          "normalized_address": "7512 GLASER LN",
+          "parcel_id": null,
+          "party_or_owner": "STANTON KAREN L",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=7512+Glaser+Ln&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIyLzIwMjYxMTYwMjEudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::7950 STOVALL CT",
+      "property_address": "7950 Stovall Ct, Louisville, KY 40228",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "THOMAS FRANCES"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/22/2026",
+          "property_address": "7950 Stovall Ct, Louisville, KY 40228",
+          "normalized_address": "7950 STOVALL CT",
+          "parcel_id": null,
+          "party_or_owner": "THOMAS FRANCES",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=7950+Stovall+Ct&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIyLzIwMjYxMTYwMTcudGlm&type=pdf",
           "raw_distress_score": null
         }
       ]
@@ -6008,6 +6304,80 @@
       ]
     },
     {
+      "property_key": "ADDR::642 SOUTH 41ST ST",
+      "property_address": "642 South 41st St, Louisville, KY 40211",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "DUBOSE MICHAEL"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/22/2026",
+          "property_address": "642 South 41st St, Louisville, KY 40211",
+          "normalized_address": "642 SOUTH 41ST ST",
+          "parcel_id": null,
+          "party_or_owner": "DUBOSE MICHAEL",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=642+South+41st+St&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIyLzIwMjYxMTYwMTkudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::10802 HOLLYVIEW CT",
+      "property_address": "10802 Hollyview Ct, Louisville, KY 40299",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "GREGORY THERESA ANN; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT; SPRINGVIEW HOMEOWNERS ASSOCIATION INC; VELOCITY INVESTMENTS LLC"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/22/2026",
+          "property_address": "10802 Hollyview Ct, Louisville, KY 40299",
+          "normalized_address": "10802 HOLLYVIEW CT",
+          "parcel_id": null,
+          "party_or_owner": "GREGORY THERESA ANN; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT; SPRINGVIEW HOMEOWNERS ASSOCIATION INC; VELOCITY INVESTMENTS LLC",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=10802+Hollyview+Ct&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIyLzIwMjYxMTYyNTAudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
       "property_key": "ADDR::1022 FRANKLIN ST",
       "property_address": "1022 Franklin St, Louisville, KY 40206",
       "parcel_id": null,
@@ -6082,11 +6452,159 @@
       ]
     },
     {
+      "property_key": "ADDR::1231 BELMAR DR",
+      "property_address": "1231 Belmar Dr, Louisville, KY 40213",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "JAGGERS ASHLEY; SCHROERING DEREK"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/22/2026",
+          "property_address": "1231 Belmar Dr, Louisville, KY 40213",
+          "normalized_address": "1231 BELMAR DR",
+          "parcel_id": null,
+          "party_or_owner": "JAGGERS ASHLEY; SCHROERING DEREK",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=1231+Belmar+Dr&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIyLzIwMjYxMTYwMTMudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::3477 GLENDALE AVE",
+      "property_address": "3477 GLENDALE AVE, Louisville, KY 40215",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "JAGGERS DUSTY; JAGGERS SHIRLEY D; SMITH TONIE RAE"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/22/2026",
+          "property_address": "3477 GLENDALE AVE, Louisville, KY 40215",
+          "normalized_address": "3477 GLENDALE AVE",
+          "parcel_id": null,
+          "party_or_owner": "JAGGERS DUSTY; JAGGERS SHIRLEY D; SMITH TONIE RAE",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=3477+GLENDALE+AVE&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIyLzIwMjYxMTYyNzQudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::5115 WITHORN SQ",
+      "property_address": "5115 Withorn Sq, Louisville, KY 40241",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "SANDERS JILL L; SANDERS JILL; COBBLESTONE HOMEOWNERS ASSOCIATION INC"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/22/2026",
+          "property_address": "5115 Withorn Sq, Louisville, KY 40241",
+          "normalized_address": "5115 WITHORN SQ",
+          "parcel_id": null,
+          "party_or_owner": "SANDERS JILL L; SANDERS JILL; COBBLESTONE HOMEOWNERS ASSOCIATION INC",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=5115+Withorn+Sq&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIyLzIwMjYxMTYyNTQudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::1322 LOUIS COLEMAN JR DR",
+      "property_address": "1322 LOUIS COLEMAN JR DR, Louisville KY 40211",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "SHEAD MICHAEL; SHEAD DEWAYNE; SHEAD DEWAYNE SR; SHEAD SELOIS; 3906 SPRINGHURST LLC"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/22/2026",
+          "property_address": "1322 LOUIS COLEMAN JR DR, Louisville KY 40211",
+          "normalized_address": "1322 LOUIS COLEMAN JR DR",
+          "parcel_id": null,
+          "party_or_owner": "SHEAD MICHAEL; SHEAD DEWAYNE; SHEAD DEWAYNE SR; SHEAD SELOIS; 3906 SPRINGHURST LLC",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=1322+LOUIS+COLEMAN+JR+DR&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIyLzIwMjYxMTYyNzkudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
       "property_key": "ADDR::1459 FOREST DR",
       "property_address": "1459 Forest Dr, Louisville, KY 40219",
       "parcel_id": null,
       "parties_or_owners": [
-        "SMITH SHAWNEISHA KENYADA; UNITED STATES OF AMERICA; SECRETARY OF HOUSING & URBAN DEVELOPMENT"
+        "SMITH SHAWNEISHA KENYADA; UNITED STATES OF AMERICA SECTARY OF HOUSING & URBANDEVELOPMENT"
       ],
       "individual_owner_or_party_likely": true,
       "sources": [
@@ -6108,12 +6626,86 @@
           "property_address": "1459 Forest Dr, Louisville, KY 40219",
           "normalized_address": "1459 FOREST DR",
           "parcel_id": null,
-          "party_or_owner": "SMITH SHAWNEISHA KENYADA; UNITED STATES OF AMERICA; SECRETARY OF HOUSING & URBAN DEVELOPMENT",
+          "party_or_owner": "SMITH SHAWNEISHA KENYADA; UNITED STATES OF AMERICA SECTARY OF HOUSING & URBANDEVELOPMENT",
           "individual_party_likely": true,
           "status": null,
           "amount": null,
           "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=1459+Forest+Dr&searchType=StreetSearch#results",
           "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIyLzIwMjYxMTU4MDMudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::7512 GLASER LN",
+      "property_address": "7512 Glaser Ln, Louisville, KY 40228",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "STANTON KAREN L"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/22/2026",
+          "property_address": "7512 Glaser Ln, Louisville, KY 40228",
+          "normalized_address": "7512 GLASER LN",
+          "parcel_id": null,
+          "party_or_owner": "STANTON KAREN L",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=7512+Glaser+Ln&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIyLzIwMjYxMTYwMjEudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::7950 STOVALL CT",
+      "property_address": "7950 Stovall Ct, Louisville, KY 40228",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "THOMAS FRANCES"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/22/2026",
+          "property_address": "7950 Stovall Ct, Louisville, KY 40228",
+          "normalized_address": "7950 STOVALL CT",
+          "parcel_id": null,
+          "party_or_owner": "THOMAS FRANCES",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=7950+Stovall+Ct&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIyLzIwMjYxMTYwMTcudGlm&type=pdf",
           "raw_distress_score": null
         }
       ]
@@ -9269,302 +9861,6 @@
           "status": "Violation Notice",
           "amount": null,
           "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 2 | Date: 2026-09-21 | Case IDs: ENF-PMNT-25-022529-6 | Parcel: 003J00710000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 10
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::101400320000",
-      "property_address": "4220 ORCHARD WAY, LOUISVILLE, KY 40216",
-      "parcel_id": "101400320000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation, roof, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-21",
-          "property_address": "4220 ORCHARD WAY, LOUISVILLE, KY 40216",
-          "normalized_address": "4220 ORCHARD WAY",
-          "parcel_id": "101400320000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "structural/foundation; fence/accessory; exterior/foundation; roof/gutters | X78 Fence/Accessory, X19 Exterior/Foundation | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; fence/accessory; exterior/foundation; roof/gutters | Violations: X78 Fence/Accessory, X19 Exterior/Foundation | Violation rows: 2 | Date: 2026-09-21 | Case IDs: ENF-PMNT-24-013917-12 | Parcel: 101400320000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 10
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::002B00080000",
-      "property_address": "2723 CEDAR ST, LOUISVILLE, KY 40212",
-      "parcel_id": "002B00080000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-21",
-          "property_address": "2723 CEDAR ST, LOUISVILLE, KY 40212",
-          "normalized_address": "2723 CEDAR ST",
-          "parcel_id": "002B00080000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-09-21 | Case IDs: ENF-PMNT-26-021587-1 | Parcel: 002B00080000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 10
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::001H00430000",
-      "property_address": "2330 MAGAZINE ST, LOUISVILLE, KY 40211",
-      "parcel_id": "001H00430000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-21",
-          "property_address": "2330 MAGAZINE ST, LOUISVILLE, KY 40211",
-          "normalized_address": "2330 MAGAZINE ST",
-          "parcel_id": "001H00430000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT LOT | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-09-21 | Case IDs: ENF-PMNT-26-012000-7 | Parcel: 001H00430000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 10
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::040J00370000",
-      "property_address": "2512 WILSON AVE, LOUISVILLE, KY 40210",
-      "parcel_id": "040J00370000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, vacant"
-      ],
-      "previously_assigned": true,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": false,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-21",
-          "property_address": "2512 WILSON AVE, LOUISVILLE, KY 40210",
-          "normalized_address": "2512 WILSON AVE",
-          "parcel_id": "040J00370000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-09-21 | Case IDs: ENF-PMNT-26-020832-2 | Parcel: 040J00370000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 10
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::004B01090000",
-      "property_address": "514 LOCHER ALY, LOUISVILLE, KY 40212",
-      "parcel_id": "004B01090000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-21",
-          "property_address": "514 LOCHER ALY, LOUISVILLE, KY 40212",
-          "normalized_address": "514 LOCHER ALY",
-          "parcel_id": "004B01090000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT LOT | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-09-21 | Case IDs: ENF-PMNT-26-021387-1 | Parcel: 004B01090000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 10
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::001A01280000",
-      "property_address": "2726 W MADISON ST, LOUISVILLE, KY 40211",
-      "parcel_id": "001A01280000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-21",
-          "property_address": "2726 W MADISON ST, LOUISVILLE, KY 40211",
-          "normalized_address": "2726 W MADISON ST",
-          "parcel_id": "001A01280000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 2 | Date: 2026-09-21 | Case IDs: ENF-PMNT-26-008139-3 | Parcel: 001A01280000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 10
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::034C00300049",
-      "property_address": "2305 RODMAN ST, LOUISVILLE, KY 40208",
-      "parcel_id": "034C00300049",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-21",
-          "property_address": "2305 RODMAN ST, LOUISVILLE, KY 40208",
-          "normalized_address": "2305 RODMAN ST",
-          "parcel_id": "034C00300049",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "structural/foundation; dangerous tree; infestation; public hazard | X90 Tree, R01 Rental Reg. | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; dangerous tree; infestation; public hazard | Violations: X90 Tree, R01 Rental Reg. | Violation rows: 2 | Date: 2026-09-21 | Case IDs: ENF-PMNT-26-020676-1 | Parcel: 034C00300049 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 10
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::038K00140000",
-      "property_address": "1331 S 26TH ST, LOUISVILLE, KY 40210",
-      "parcel_id": "038K00140000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-21",
-          "property_address": "1331 S 26TH ST, LOUISVILLE, KY 40210",
-          "normalized_address": "1331 S 26TH ST",
-          "parcel_id": "038K00140000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-09-21 | Case IDs: ENF-PMNT-26-021584-1 | Parcel: 038K00140000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 10
         }
