@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "generated_at_et": "2026-09-24T09:03:40.468993-04:00",
+  "generated_at_et": "2026-09-24T12:45:31.875354-04:00",
   "query_window": {
     "start_date": "2026-09-21",
     "end_date": "2026-09-24"
@@ -12,13 +12,13 @@
     "tax_delinquent": "OK"
   },
   "source_record_counts": {
-    "lis_pendens": 22,
+    "lis_pendens": 30,
     "wills": 1,
     "louisville_code_violations": 598,
     "tax_delinquent": 0
   },
-  "properties_after_stacking": 594,
-  "fresh_individual_candidates": 551,
+  "properties_after_stacking": 599,
+  "fresh_individual_candidates": 555,
   "fresh_individual_high_count": 0,
   "fresh_individual_medium_count": 0,
   "top_fresh_individual": [
@@ -795,6 +795,198 @@
           "amount": null,
           "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=2101+Ronnie+Ave&searchType=StreetSearch#results",
           "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTIzLzIwMjYxMTY5ODcudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::13104 LAVENIA LN",
+      "property_address": "13104 Lavenia Ln, Louisville, KY 40272",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "ARAGON JOSE A CHAVEZ; MONTENEGRO INDIRA; PLEASANT GROVE HOMEOWNERS ASSOCIATION INC; BANK OF AMERICA NA"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/24/2026",
+          "property_address": "13104 Lavenia Ln, Louisville, KY 40272",
+          "normalized_address": "13104 LAVENIA LN",
+          "parcel_id": null,
+          "party_or_owner": "ARAGON JOSE A CHAVEZ; MONTENEGRO INDIRA; PLEASANT GROVE HOMEOWNERS ASSOCIATION INC; BANK OF AMERICA NA",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=13104+Lavenia+Ln&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI0LzIwMjYxMTcyMDcudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::330 N SHAWNEE TER",
+      "property_address": "330 N Shawnee Ter, Louisville, KY 40212",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "COMMONWEALTH OF KENTUCKY DEPARTMENT OF REVENUE DIVISION OF UNEMPLOYMENT INSURANCE; US BANK NATIONAL ASSOCIATION; FIRSTPLUS ASSETBACKED CERTIFICATES SERIES 1997-4; BRENT RICKY; BRENT RICKY L; LOUISVILLE JEFFERSONCOUNTY METRO GOVERNMENT; PROPERTY SOLUTIONS LLC"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/24/2026",
+          "property_address": "330 N Shawnee Ter, Louisville, KY 40212",
+          "normalized_address": "330 N SHAWNEE TER",
+          "parcel_id": null,
+          "party_or_owner": "COMMONWEALTH OF KENTUCKY DEPARTMENT OF REVENUE DIVISION OF UNEMPLOYMENT INSURANCE; US BANK NATIONAL ASSOCIATION; FIRSTPLUS ASSETBACKED CERTIFICATES SERIES 1997-4; BRENT RICKY; BRENT RICKY L; LOUISVILLE JEFFERSONCOUNTY METRO GOVERNMENT; PROPERTY SOLUTIONS LLC",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=330+N+Shawnee+Ter&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI0LzIwMjYxMTcxMjMudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::5100 US HWY 42",
+      "property_address": "5100 Us Highway 42, Louisville, KY 40241",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "CROPPER WILLIAM JR; CROPPER LIVING TRUST; COUNCIL OF CO OWNERS OF GLENVIEW EAST COND INC"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/24/2026",
+          "property_address": "5100 Us Highway 42, Louisville, KY 40241",
+          "normalized_address": "5100 US HWY 42",
+          "parcel_id": null,
+          "party_or_owner": "CROPPER WILLIAM JR; CROPPER LIVING TRUST; COUNCIL OF CO OWNERS OF GLENVIEW EAST COND INC",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=5100+Us+Highway+42&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI0LzIwMjYxMTcyMDgudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::200 S FIFTH ST SUITE 300N",
+      "property_address": "200 S Fifth St, Suite 300N Louisville, KY 40202",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "HARKINS RICHARD L; MID SOUTH CAPTAL PARTNERS LP; WILLIS DOUG; WILLIS REGINA",
+        "KY MEDICAL CENTER HOTEL LLC",
+        "LIGHTHOUSE ESTATES LLC; SIMAYA INNOVATIONS LLC; COMMONWEALTH OF KENTUCKY WORKFORCE DEVELOPMENT CABINET EX REL DIVISION OF UNEMPLOYMENT INSURANCE; COMMONWEALTH OF KENTUCKY DEPARTMENT OF REVENUE DIVISION OF COLLECTIONS"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/24/2026",
+          "property_address": "200 S Fifth St, Suite 300N Louisville, KY 40202",
+          "normalized_address": "200 S FIFTH ST SUITE 300N",
+          "parcel_id": null,
+          "party_or_owner": "HARKINS RICHARD L; MID SOUTH CAPTAL PARTNERS LP; WILLIS DOUG; WILLIS REGINA",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=200+S+Fifth+St%2C+Suite+300N&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI0LzIwMjYxMTczMTUudGlm&type=pdf",
+          "raw_distress_score": null
+        },
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/24/2026",
+          "property_address": "200 S Fifth St, Suite 300N Louisville, KY 40202",
+          "normalized_address": "200 S FIFTH ST SUITE 300N",
+          "parcel_id": null,
+          "party_or_owner": "KY MEDICAL CENTER HOTEL LLC",
+          "individual_party_likely": false,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=200+S+Fifth+St%2C+Suite+300N&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI0LzIwMjYxMTczMTgudGlm&type=pdf",
+          "raw_distress_score": null
+        },
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/24/2026",
+          "property_address": "200 S Fifth St, Suite 300N Louisville, KY 40202",
+          "normalized_address": "200 S FIFTH ST SUITE 300N",
+          "parcel_id": null,
+          "party_or_owner": "KY MEDICAL CENTER HOTEL LLC",
+          "individual_party_likely": false,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=200+S+Fifth+St%2C+Suite+300N&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI0LzIwMjYxMTczMTkudGlm&type=pdf",
+          "raw_distress_score": null
+        },
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/24/2026",
+          "property_address": "200 S Fifth St, Suite 300N Louisville, KY 40202",
+          "normalized_address": "200 S FIFTH ST SUITE 300N",
+          "parcel_id": null,
+          "party_or_owner": "LIGHTHOUSE ESTATES LLC; SIMAYA INNOVATIONS LLC; COMMONWEALTH OF KENTUCKY WORKFORCE DEVELOPMENT CABINET EX REL DIVISION OF UNEMPLOYMENT INSURANCE; COMMONWEALTH OF KENTUCKY DEPARTMENT OF REVENUE DIVISION OF COLLECTIONS",
+          "individual_party_likely": false,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=200+S+Fifth+St%2C+Suite+300N&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI0LzIwMjYxMTczMTcudGlm&type=pdf",
           "raw_distress_score": null
         }
       ]
@@ -21558,6 +21750,235 @@
       ]
     },
     {
+      "property_key": "ADDR::13104 LAVENIA LN",
+      "property_address": "13104 Lavenia Ln, Louisville, KY 40272",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "ARAGON JOSE A CHAVEZ; MONTENEGRO INDIRA; PLEASANT GROVE HOMEOWNERS ASSOCIATION INC; BANK OF AMERICA NA"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/24/2026",
+          "property_address": "13104 Lavenia Ln, Louisville, KY 40272",
+          "normalized_address": "13104 LAVENIA LN",
+          "parcel_id": null,
+          "party_or_owner": "ARAGON JOSE A CHAVEZ; MONTENEGRO INDIRA; PLEASANT GROVE HOMEOWNERS ASSOCIATION INC; BANK OF AMERICA NA",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=13104+Lavenia+Ln&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI0LzIwMjYxMTcyMDcudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::330 N SHAWNEE TER",
+      "property_address": "330 N Shawnee Ter, Louisville, KY 40212",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "COMMONWEALTH OF KENTUCKY DEPARTMENT OF REVENUE DIVISION OF UNEMPLOYMENT INSURANCE; US BANK NATIONAL ASSOCIATION; FIRSTPLUS ASSETBACKED CERTIFICATES SERIES 1997-4; BRENT RICKY; BRENT RICKY L; LOUISVILLE JEFFERSONCOUNTY METRO GOVERNMENT; PROPERTY SOLUTIONS LLC"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/24/2026",
+          "property_address": "330 N Shawnee Ter, Louisville, KY 40212",
+          "normalized_address": "330 N SHAWNEE TER",
+          "parcel_id": null,
+          "party_or_owner": "COMMONWEALTH OF KENTUCKY DEPARTMENT OF REVENUE DIVISION OF UNEMPLOYMENT INSURANCE; US BANK NATIONAL ASSOCIATION; FIRSTPLUS ASSETBACKED CERTIFICATES SERIES 1997-4; BRENT RICKY; BRENT RICKY L; LOUISVILLE JEFFERSONCOUNTY METRO GOVERNMENT; PROPERTY SOLUTIONS LLC",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=330+N+Shawnee+Ter&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI0LzIwMjYxMTcxMjMudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::5100 US HWY 42",
+      "property_address": "5100 Us Highway 42, Louisville, KY 40241",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "CROPPER WILLIAM JR; CROPPER LIVING TRUST; COUNCIL OF CO OWNERS OF GLENVIEW EAST COND INC"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/24/2026",
+          "property_address": "5100 Us Highway 42, Louisville, KY 40241",
+          "normalized_address": "5100 US HWY 42",
+          "parcel_id": null,
+          "party_or_owner": "CROPPER WILLIAM JR; CROPPER LIVING TRUST; COUNCIL OF CO OWNERS OF GLENVIEW EAST COND INC",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=5100+Us+Highway+42&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI0LzIwMjYxMTcyMDgudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::200 S FIFTH ST SUITE 300N",
+      "property_address": "200 S Fifth St, Suite 300N Louisville, KY 40202",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "HARKINS RICHARD L; MID SOUTH CAPTAL PARTNERS LP; WILLIS DOUG; WILLIS REGINA",
+        "KY MEDICAL CENTER HOTEL LLC",
+        "LIGHTHOUSE ESTATES LLC; SIMAYA INNOVATIONS LLC; COMMONWEALTH OF KENTUCKY WORKFORCE DEVELOPMENT CABINET EX REL DIVISION OF UNEMPLOYMENT INSURANCE; COMMONWEALTH OF KENTUCKY DEPARTMENT OF REVENUE DIVISION OF COLLECTIONS"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/24/2026",
+          "property_address": "200 S Fifth St, Suite 300N Louisville, KY 40202",
+          "normalized_address": "200 S FIFTH ST SUITE 300N",
+          "parcel_id": null,
+          "party_or_owner": "HARKINS RICHARD L; MID SOUTH CAPTAL PARTNERS LP; WILLIS DOUG; WILLIS REGINA",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=200+S+Fifth+St%2C+Suite+300N&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI0LzIwMjYxMTczMTUudGlm&type=pdf",
+          "raw_distress_score": null
+        },
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/24/2026",
+          "property_address": "200 S Fifth St, Suite 300N Louisville, KY 40202",
+          "normalized_address": "200 S FIFTH ST SUITE 300N",
+          "parcel_id": null,
+          "party_or_owner": "KY MEDICAL CENTER HOTEL LLC",
+          "individual_party_likely": false,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=200+S+Fifth+St%2C+Suite+300N&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI0LzIwMjYxMTczMTgudGlm&type=pdf",
+          "raw_distress_score": null
+        },
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/24/2026",
+          "property_address": "200 S Fifth St, Suite 300N Louisville, KY 40202",
+          "normalized_address": "200 S FIFTH ST SUITE 300N",
+          "parcel_id": null,
+          "party_or_owner": "KY MEDICAL CENTER HOTEL LLC",
+          "individual_party_likely": false,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=200+S+Fifth+St%2C+Suite+300N&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI0LzIwMjYxMTczMTkudGlm&type=pdf",
+          "raw_distress_score": null
+        },
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/24/2026",
+          "property_address": "200 S Fifth St, Suite 300N Louisville, KY 40202",
+          "normalized_address": "200 S FIFTH ST SUITE 300N",
+          "parcel_id": null,
+          "party_or_owner": "LIGHTHOUSE ESTATES LLC; SIMAYA INNOVATIONS LLC; COMMONWEALTH OF KENTUCKY WORKFORCE DEVELOPMENT CABINET EX REL DIVISION OF UNEMPLOYMENT INSURANCE; COMMONWEALTH OF KENTUCKY DEPARTMENT OF REVENUE DIVISION OF COLLECTIONS",
+          "individual_party_likely": false,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=200+S+Fifth+St%2C+Suite+300N&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI0LzIwMjYxMTczMTcudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::3440 W JEFFERSON ST",
+      "property_address": "3440 W Jefferson St, Louisville, Jefferson County, KY 40212",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "MULLINS INVESTMENTS OF LOUISVILLE LLC"
+      ],
+      "individual_owner_or_party_likely": false,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/24/2026",
+          "property_address": "3440 W Jefferson St, Louisville, Jefferson County, KY 40212",
+          "normalized_address": "3440 W JEFFERSON ST",
+          "parcel_id": null,
+          "party_or_owner": "MULLINS INVESTMENTS OF LOUISVILLE LLC",
+          "individual_party_likely": false,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=3440+W+Jefferson+St%2C+Louisville%2C+Jefferson+County%2C+KY+40212&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI0LzIwMjYxMTczMTYudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
       "property_key": "PARCEL::101800270000",
       "property_address": "3325 WOODLAND DR, LOUISVILLE, KY 40216",
       "parcel_id": "101800270000",
@@ -24460,191 +24881,6 @@
           "status": "Citation",
           "amount": 2100.0,
           "details": "porch/stairs; fence/accessory; public hazard; structural/foundation; exterior/foundation; roof/gutters | X13, X19 Exterior/Foundation, X57 | Priority: HIGH | Distress score: 18 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: porch/stairs; fence/accessory; public hazard; structural/foundation; exterior/foundation; roof/gutters | Violations: X13, X19 Exterior/Foundation, X57 | Citation amount: $2100 | Violation rows: 3 | Date: 2026-09-23 | Case IDs: ENF-PMNT-23-013902-8 | Parcel: 027B01460000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 18
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::044B00160000",
-      "property_address": "917 S 45TH ST, LOUISVILLE, KY 40211",
-      "parcel_id": "044B00160000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation, roof, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-23",
-          "property_address": "917 S 45TH ST, LOUISVILLE, KY 40211",
-          "normalized_address": "917 S 45TH ST",
-          "parcel_id": "044B00160000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard; windows/doors; structural/foundation; porch/stairs | 02A Cleaning, X50 Roof/Gutters, X72, X40 Porch/Stairs, X04 | Priority: HIGH | Distress score: 18 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard; windows/doors; structural/foundation; porch/stairs | Violations: 02A Cleaning, X50 Roof/Gutters, X72, X40 Porch/Stairs, X04 | Violation rows: 5 | Date: 2026-09-23 | Case IDs: ENF-PMNT-23-010981-37 | Parcel: 044B00160000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 18
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::050H00520000",
-      "property_address": "721 BURTON AVE, LOUISVILLE, KY 40208",
-      "parcel_id": "050H00520000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Citation Referral"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, condemn, foundation, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-23",
-          "property_address": "721 BURTON AVE, LOUISVILLE, KY 40208",
-          "normalized_address": "721 BURTON AVE",
-          "parcel_id": "050H00520000",
-          "party_or_owner": "LMG Codes & Regulations - Citation Referral",
-          "individual_party_likely": true,
-          "status": "Citation Referral",
-          "amount": 1200.0,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned; structural/foundation | 02A Cleaning, C01 | Priority: HIGH | Distress score: 18 | Status: Citation Referral | Occupancy: CONDEMNED | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; structural/foundation | Violations: 02A Cleaning, C01 | Citation amount: $1200 | Violation rows: 2 | Date: 2026-09-23 | Case IDs: ENF-PMNT-24-011128-25 | Parcel: 050H00520000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 18
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::084D01980000",
-      "property_address": "1415 NIGHTINGALE RD 4, LOUISVILLE, KY 40213",
-      "parcel_id": "084D01980000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Citation"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-23",
-          "property_address": "1415 NIGHTINGALE RD 4, LOUISVILLE, KY 40213",
-          "normalized_address": "1415 NIGHTINGALE RD 4",
-          "parcel_id": "084D01980000",
-          "party_or_owner": "LMG Codes & Regulations - Citation",
-          "individual_party_likely": true,
-          "status": "Citation",
-          "amount": null,
-          "details": "windows/doors; fence/accessory; structural/foundation; sewage/plumbing; heating; exterior/foundation; infestation | E03, I03, I11, K09, K10, T05 +3 more | Priority: HIGH | Distress score: 18 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: windows/doors; fence/accessory; structural/foundation; sewage/plumbing; heating; exterior/foundation; infestation | Violations: E03, I03, I11, K09, K10, T05 +3 more | Violation rows: 9 | Date: 2026-09-23 | Case IDs: ENF-PMNT-26-012524-4 | Parcel: 084D01980000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 18
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::104903910000",
-      "property_address": "1906 PENILE RD, LOUISVILLE, KY 40272",
-      "parcel_id": "104903910000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-23",
-          "property_address": "1906 PENILE RD, LOUISVILLE, KY 40272",
-          "normalized_address": "1906 PENILE RD",
-          "parcel_id": "104903910000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; drainage; sewage/plumbing; vacant/abandoned; abandoned vehicle | 02A Cleaning, X47 Drainage, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 18 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; drainage; sewage/plumbing; vacant/abandoned; abandoned vehicle | Violations: 02A Cleaning, X47 Drainage, 05A Abandoned Vehicle | Violation rows: 3 | Date: 2026-09-23 | Case IDs: ENF-PMNT-26-021432-1 | Parcel: 104903910000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 18
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::043G00050000",
-      "property_address": "3506 W BROADWAY, LOUISVILLE, KY 40211",
-      "parcel_id": "043G00050000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Citation"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, roof, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-23",
-          "property_address": "3506 W BROADWAY, LOUISVILLE, KY 40211",
-          "normalized_address": "3506 W BROADWAY",
-          "parcel_id": "043G00050000",
-          "party_or_owner": "LMG Codes & Regulations - Citation",
-          "individual_party_likely": true,
-          "status": "Citation",
-          "amount": 1400.0,
-          "details": "roof/gutters; public hazard; vacant/abandoned; structural/foundation; exterior/foundation | X50 Roof/Gutters, X19 Exterior/Foundation | Priority: HIGH | Distress score: 18 | Status: Citation | Occupancy: VACANT STRUCTURE | Distress signals: roof/gutters; public hazard; vacant/abandoned; structural/foundation; exterior/foundation | Violations: X50 Roof/Gutters, X19 Exterior/Foundation | Citation amount: $1400 | Violation rows: 2 | Date: 2026-09-23 | Case IDs: ENF-PMNT-25-008452-11 | Parcel: 043G00050000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 18
         }
