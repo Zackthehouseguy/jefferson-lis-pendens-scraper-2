@@ -1,6 +1,6 @@
 # Reaper Bulk Qualification
 
-Generated: 2026-09-25T09:13:56.427964-04:00
+Generated: 2026-09-25T12:55:59.245352-04:00
 Input candidates: 609
 Eligible SFR: 11
 Eligible land: 0
@@ -29,17 +29,17 @@ Market-status screening: disabled (not an eligibility gate)
    - Priority: 65 | Distress: PENDING | AI: PENDING
    - Saturation: PENDING | Freshness: PENDING | Parcel: 205901160000 | Land use: SINGLE FAMILY
    - Sources: lis_pendens
-6. **1322 LOUIS COLEMAN JR DR, Louisville KY 40211** — SHEAD MICHAEL & SHEAD DEWAYNE SR
-   - Priority: 61 | Distress: PENDING | AI: PENDING
-   - Saturation: PENDING | Freshness: PENDING | Parcel: 048B01380003 | Land use: SINGLE FAMILY
-   - Sources: lis_pendens
-7. **9810 Agena Dr, Louisville, KY 40229** — HOERTER JOSEPH H & SEDILLIA R
+6. **9810 Agena Dr, Louisville, KY 40229** — HOERTER JOSEPH H & SEDILLIA R
    - Priority: 61 | Distress: PENDING | AI: PENDING
    - Saturation: PENDING | Freshness: PENDING | Parcel: 098200370000 | Land use: SINGLE FAMILY
    - Sources: lis_pendens
-8. **1231 Belmar Dr, Louisville, KY 40213** — JAGGERS ASHLEY
+7. **1231 Belmar Dr, Louisville, KY 40213** — JAGGERS ASHLEY
    - Priority: 61 | Distress: PENDING | AI: PENDING
    - Saturation: PENDING | Freshness: PENDING | Parcel: 084E02010189 | Land use: SINGLE FAMILY
+   - Sources: lis_pendens
+8. **1322 LOUIS COLEMAN JR DR, Louisville KY 40211** — SHEAD MICHAEL & SHEAD DEWAYNE SR
+   - Priority: 61 | Distress: PENDING | AI: PENDING
+   - Saturation: PENDING | Freshness: PENDING | Parcel: 048B01380003 | Land use: SINGLE FAMILY
    - Sources: lis_pendens
 9. **1459 Forest Dr, Louisville, KY 40219** — SMITH SHAWNEISHA KENYADA
    - Priority: 61 | Distress: PENDING | AI: PENDING
