@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "generated_at_et": "2026-09-28T10:13:20.370260-04:00",
+  "generated_at_et": "2026-09-28T15:23:47.230711-04:00",
   "query_window": {
     "start_date": "2026-09-25",
     "end_date": "2026-09-28"
@@ -12,13 +12,13 @@
     "tax_delinquent": "OK"
   },
   "source_record_counts": {
-    "lis_pendens": 6,
+    "lis_pendens": 9,
     "wills": 0,
     "louisville_code_violations": 169,
     "tax_delinquent": 0
   },
-  "properties_after_stacking": 168,
-  "fresh_individual_candidates": 154,
+  "properties_after_stacking": 171,
+  "fresh_individual_candidates": 157,
   "fresh_individual_high_count": 0,
   "fresh_individual_medium_count": 0,
   "top_fresh_individual": [
@@ -190,7 +190,7 @@
       "property_address": "5012 W Pages Ln, Louisville, KY 40258",
       "parcel_id": null,
       "parties_or_owners": [
-        "DUCEY CHRISOPHER BRYAN; DUCEY CHRISTOPHER"
+        "DUCEY CHRISTOPHER BRYAN; DUCEY CHRISTOPHER"
       ],
       "individual_owner_or_party_likely": true,
       "sources": [
@@ -212,12 +212,123 @@
           "property_address": "5012 W Pages Ln, Louisville, KY 40258",
           "normalized_address": "5012 W PAGES LN",
           "parcel_id": null,
-          "party_or_owner": "DUCEY CHRISOPHER BRYAN; DUCEY CHRISTOPHER",
+          "party_or_owner": "DUCEY CHRISTOPHER BRYAN; DUCEY CHRISTOPHER",
           "individual_party_likely": true,
           "status": null,
           "amount": null,
           "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=5012+W+Pages+Ln&searchType=StreetSearch#results",
           "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI4LzIwMjYxMTgwMzMudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::1027 CHARLES ST",
+      "property_address": "1027 Charles St, Louisville, KY 40204",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "KOLB LISA; FIFTH THIRD BANK"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/28/2026",
+          "property_address": "1027 Charles St, Louisville, KY 40204",
+          "normalized_address": "1027 CHARLES ST",
+          "parcel_id": null,
+          "party_or_owner": "KOLB LISA; FIFTH THIRD BANK",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=1027+Charles+St&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI4LzIwMjYxMTgyNzQudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::8811 COTTINGHAM WAY",
+      "property_address": "8811 Cottingham Way, Louisville, KY 40258",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "RUISECO DARELL LUIS JIMENEZ; JIMENEZ DARELL L; SANCHEZ ANA P; DISCOVER BNAK; LOUISVILLE JEFFERSON COUNTY METRO DEPARTMENT OF CODES & REGULATIONS"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/28/2026",
+          "property_address": "8811 Cottingham Way, Louisville, KY 40258",
+          "normalized_address": "8811 COTTINGHAM WAY",
+          "parcel_id": null,
+          "party_or_owner": "RUISECO DARELL LUIS JIMENEZ; JIMENEZ DARELL L; SANCHEZ ANA P; DISCOVER BNAK; LOUISVILLE JEFFERSON COUNTY METRO DEPARTMENT OF CODES & REGULATIONS",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=8811+Cottingham+Way&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI4LzIwMjYxMTgyNzEudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::2710 ALPS RD",
+      "property_address": "2710 Alps Rd",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "SPADIE JEFFREY D"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/28/2026",
+          "property_address": "2710 Alps Rd",
+          "normalized_address": "2710 ALPS RD",
+          "parcel_id": null,
+          "party_or_owner": "SPADIE JEFFREY D",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Partial address extracted by OCR; verify manually.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=2710+Alps+Rd&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI4LzIwMjYxMTgyNzIudGlm&type=pdf",
           "raw_distress_score": null
         }
       ]
@@ -5991,7 +6102,7 @@
       "property_address": "5012 W Pages Ln, Louisville, KY 40258",
       "parcel_id": null,
       "parties_or_owners": [
-        "DUCEY CHRISOPHER BRYAN; DUCEY CHRISTOPHER"
+        "DUCEY CHRISTOPHER BRYAN; DUCEY CHRISTOPHER"
       ],
       "individual_owner_or_party_likely": true,
       "sources": [
@@ -6013,12 +6124,123 @@
           "property_address": "5012 W Pages Ln, Louisville, KY 40258",
           "normalized_address": "5012 W PAGES LN",
           "parcel_id": null,
-          "party_or_owner": "DUCEY CHRISOPHER BRYAN; DUCEY CHRISTOPHER",
+          "party_or_owner": "DUCEY CHRISTOPHER BRYAN; DUCEY CHRISTOPHER",
           "individual_party_likely": true,
           "status": null,
           "amount": null,
           "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=5012+W+Pages+Ln&searchType=StreetSearch#results",
           "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI4LzIwMjYxMTgwMzMudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::1027 CHARLES ST",
+      "property_address": "1027 Charles St, Louisville, KY 40204",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "KOLB LISA; FIFTH THIRD BANK"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/28/2026",
+          "property_address": "1027 Charles St, Louisville, KY 40204",
+          "normalized_address": "1027 CHARLES ST",
+          "parcel_id": null,
+          "party_or_owner": "KOLB LISA; FIFTH THIRD BANK",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=1027+Charles+St&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI4LzIwMjYxMTgyNzQudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::8811 COTTINGHAM WAY",
+      "property_address": "8811 Cottingham Way, Louisville, KY 40258",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "RUISECO DARELL LUIS JIMENEZ; JIMENEZ DARELL L; SANCHEZ ANA P; DISCOVER BNAK; LOUISVILLE JEFFERSON COUNTY METRO DEPARTMENT OF CODES & REGULATIONS"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/28/2026",
+          "property_address": "8811 Cottingham Way, Louisville, KY 40258",
+          "normalized_address": "8811 COTTINGHAM WAY",
+          "parcel_id": null,
+          "party_or_owner": "RUISECO DARELL LUIS JIMENEZ; JIMENEZ DARELL L; SANCHEZ ANA P; DISCOVER BNAK; LOUISVILLE JEFFERSON COUNTY METRO DEPARTMENT OF CODES & REGULATIONS",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=8811+Cottingham+Way&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI4LzIwMjYxMTgyNzEudGlm&type=pdf",
+          "raw_distress_score": null
+        }
+      ]
+    },
+    {
+      "property_key": "ADDR::2710 ALPS RD",
+      "property_address": "2710 Alps Rd",
+      "parcel_id": null,
+      "parties_or_owners": [
+        "SPADIE JEFFREY D"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "lis_pendens"
+      ],
+      "signal_count": 1,
+      "motivation_score": 48,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "recent lis pendens filing"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "lis_pendens",
+          "signal_date": "09/28/2026",
+          "property_address": "2710 Alps Rd",
+          "normalized_address": "2710 ALPS RD",
+          "parcel_id": null,
+          "party_or_owner": "SPADIE JEFFREY D",
+          "individual_party_likely": true,
+          "status": null,
+          "amount": null,
+          "details": "Partial address extracted by OCR; verify manually.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=2710+Alps+Rd&searchType=StreetSearch#results",
+          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8wOTI4LzIwMjYxMTgyNzIudGlm&type=pdf",
           "raw_distress_score": null
         }
       ]
@@ -9481,132 +9703,6 @@
           "details": "vacant/abandoned; abandoned vehicle; exterior/foundation | 05A Abandoned Vehicle, Z01 | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: vacant/abandoned; abandoned vehicle; exterior/foundation | Violations: 05A Abandoned Vehicle, Z01 | Violation rows: 2 | Date: 2026-09-25 | Case IDs: ENF-PMNT-26-015390-4 | Parcel: 304900010000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 10
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::006A00010000",
-      "property_address": "4307 ELLIOTT AVE, LOUISVILLE, KY 40211",
-      "parcel_id": "006A00010000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Citation",
-        "LMG Codes & Regulations - Hold"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-25",
-          "property_address": "4307 ELLIOTT AVE, LOUISVILLE, KY 40211",
-          "normalized_address": "4307 ELLIOTT AVE",
-          "parcel_id": "006A00010000",
-          "party_or_owner": "LMG Codes & Regulations - Citation",
-          "individual_party_likely": true,
-          "status": "Citation",
-          "amount": 600.0,
-          "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning, R01 Rental Reg. | Priority: HIGH | Distress score: 10 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning, R01 Rental Reg. | Citation amount: $600 | Violation rows: 2 | Date: 2026-09-25 | Case IDs: ENF-PMNT-26-016884-2 | Parcel: 006A00010000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 10
-        },
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-25",
-          "property_address": "4309 ELLIOTT AVE 1, LOUISVILLE, KY 40211",
-          "normalized_address": "4309 ELLIOTT AVE 1",
-          "parcel_id": "006A00010000",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "fence/accessory; sewage/plumbing; windows/doors | E03, K09, T22, X72, I13, K11 +1 more | Priority: MEDIUM | Distress score: 7 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: fence/accessory; sewage/plumbing; windows/doors | Violations: E03, K09, T22, X72, I13, K11 +1 more | Violation rows: 7 | Date: 2026-09-25 | Case IDs: ENF-PMNT-26-021156-2 | Parcel: 006A00010000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 7
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::006D00860000",
-      "property_address": "666 S 43RD ST, LOUISVILLE, KY 40211",
-      "parcel_id": "006D00860000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Citation"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-25",
-          "property_address": "666 S 43RD ST, LOUISVILLE, KY 40211",
-          "normalized_address": "666 S 43RD ST",
-          "parcel_id": "006D00860000",
-          "party_or_owner": "LMG Codes & Regulations - Citation",
-          "individual_party_likely": true,
-          "status": "Citation",
-          "amount": 600.0,
-          "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning | Priority: HIGH | Distress score: 9 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning | Citation amount: $600 | Violation rows: 1 | Date: 2026-09-25 | Case IDs: ENF-PMNT-26-010101-7 | Parcel: 006D00860000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 9
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::129400790000",
-      "property_address": "7315 RIDAN WAY, LOUISVILLE, KY 40214",
-      "parcel_id": "129400790000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Citation"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-09-25",
-          "property_address": "7315 RIDAN WAY, LOUISVILLE, KY 40214",
-          "normalized_address": "7315 RIDAN WAY",
-          "parcel_id": "129400790000",
-          "party_or_owner": "LMG Codes & Regulations - Citation",
-          "individual_party_likely": true,
-          "status": "Citation",
-          "amount": 200.0,
-          "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning | Priority: HIGH | Distress score: 9 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning | Citation amount: $200 | Violation rows: 1 | Date: 2026-09-25 | Case IDs: ENF-PMNT-26-019691-4 | Parcel: 129400790000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 9
         }
       ]
     }
