@@ -1,0 +1,4 @@
+{
+  "requested_at": "2026-09-28T14:11:00Z",
+  "reason": "Recover missing September 28 source run; user requested repair. Preserve normal qualification, allocation, and CRM delivery guards."
+}
