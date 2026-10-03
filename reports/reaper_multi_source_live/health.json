@@ -1,9 +1,7 @@
 {
-  "status": "DEGRADED",
+  "status": "PASS",
   "blockers": [],
-  "warnings": [
-    "lojic_live_unavailable_using_verified_cache"
-  ],
+  "warnings": [],
   "report_age_hours": 0.0,
   "source_exit_codes": {
     "lis_pendens": 0,
@@ -12,12 +10,12 @@
     "tax_delinquent": 0
   },
   "summary": {
-    "input_candidates": 532,
-    "parcel_verified": 435,
-    "parcel_live_verified": 0,
-    "parcel_cache_verified": 435,
-    "pva_owner_verified": 508,
-    "eligible_sfr": 134,
+    "input_candidates": 485,
+    "parcel_verified": 478,
+    "parcel_live_verified": 317,
+    "parcel_cache_verified": 161,
+    "pva_owner_verified": 478,
+    "eligible_sfr": 154,
     "eligible_land": 0,
     "ai_scoring_status": "LIVE"
   }
