@@ -1,12 +1,12 @@
 # TheReaper — Assigned Lead Cards
 
-Records: **27**
+Records: **25**
 
 > Numeric scores are deterministic. GPT classifies evidence; it does not invent the score values.
 
 # 🏠 SINGLE-FAMILY HOMES
 
-## #1  🔥  4608 SHASTA TRL, LOUISVILLE, KY 40213
+## #1  🔥  3525 BELLS LN, LOUISVILLE, KY 40211-0000
 **SINGLE-FAMILY · CALL FIRST**
 
 **Overall Priority Score:** **94/100** — combined call-order score
@@ -18,120 +18,32 @@ Records: **27**
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** The 2026-10-06 Louisville Metro citation reports multiple severe exterior, structural, sanitation, abandonment, and roof/gutter concerns.
-**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle; structural/foundation; roof/gutters | 02A Cleaning, 05A Abandoned Vehicle, X19 Exterior/Foundation, Z01 | Priority: HIGH | Distress score: 22 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; aba…
-**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle; structural/foundation; roof/gutters | 02A Cleaning, 05A Abandoned Vehicle, X19 Exterior/Foundation, Z01 | Priority: HIGH | Distress score: 22 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; aba…
-**Owner:** GILBERT HENRY F & MARSHA L & DICKERS
+**Why this lead:** The Louisville Metro citation reports a vacant structure, numerous exterior and utility-related violations, roof/gutter concerns, a public hazard, and a substantial citation amount.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; drainage; sewage/plumbing; roof/gutters; public hazard; windows/doors; porch/stairs; fence/accessory; abandoned vehicle | 02A Cleaning, X19 Exterior/Foundation, X47 Drainage, X50 Roof/Gutters, X72, X13 +2 more | Priority: HIGH | Distress score: 29 | Status: Citation | Occupancy: VACANT STRUCTURE…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; drainage; sewage/plumbing; roof/gutters; public hazard; windows/doors; porch/stairs; fence/accessory; abandoned vehicle | 02A Cleaning, X19 Exterior/Foundation, X47 Drainage, X50 Roof/Gutters, X72, X13 +2 more | Priority: HIGH | Distress score: 29 | Status: Citation | Occupancy: VACANT STRUCTURE…
+**Owner:** GRUNDY WILLIAM C & WILLIAMS CONNIE
 **Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
 **Owner mailing:** —
 **Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `087600850181`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `087600850181`
+**Parcel ID:** `047G00950000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `047G00950000`
 **Parcel-data source:** LOJIC / Jefferson County parcel data
 **SFR screen:** LOJIC land use = SINGLE FAMILY
 
 ### Distress/source status
 
 **Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
 **Tax delinquency:** UNKNOWN / not verified in this run
 **Will/probate-source signal:** Not returned in this scrape
-**Citation:** $3,600 assessed; current outstanding balance NOT VERIFIED
+**Citation:** $9,600 assessed; current outstanding balance NOT VERIFIED
 **Demolition:** Not verified
 **Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
 
 ### Exact official/public sources
 
 - **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=087600850181&propertySearchFormButton=Search&searchType=ParcelSearch
-
-**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
-**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
-
-### Property-specific questions
-
-1. What kind of shape is the property in right now, beyond normal cosmetic work?
-2. Is anybody living there right now, and if not, how long has it been vacant?
-3. What happened with the structural or safety issues, and has anyone quoted the repairs?
-4. Has the roof or water intrusion been repaired, and is there any remaining mold or interior damage?
-5. What cleanup, pest, debris, or exterior work still needs to be handled?
-6. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
-7. If the numbers made sense, how quickly would you realistically want it sold?
-
-### Frozen outreach package
-
-**Call opener:**
-> “Hey GILBERT HENRY F & MARSHA L & DICKERS, this is Zack. I wanted to call you about your property over on 4608 SHASTA TRL, LOUISVILLE, KY 40213. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
-
-**If the seller asks what you are offering:**
-> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
-
-**How did you find me?:**
-> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
-
-**Confirmed-owner voicemail:**
-> “Hey GILBERT HENRY F & MARSHA L & DICKERS, this is Zack. I was giving you a quick call regarding your property over on 4608 SHASTA TRL, LOUISVILLE, KY 40213 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
-
-**Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with GILBERT HENRY F & MARSHA L & DICKERS regarding a property over on 4608 SHASTA TRL, LOUISVILLE, KY 40213 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if GILBERT HENRY F & MARSHA L & DICKERS would consider selling the property if the price made sense. If this is GILBERT HENRY F & MARSHA L & DICKERS, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
-
-**Confirmed-owner text:**
-> “Hey GILBERT HENRY F & MARSHA L & DICKERS, this is Zack. I’m reaching out about the property you own over on 4608 SHASTA TRL, LOUISVILLE, KY 40213 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
-
-**Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with GILBERT HENRY F & MARSHA L & DICKERS regarding a property over on 4608 SHASTA TRL, LOUISVILLE, KY 40213 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is GILBERT HENRY F & MARSHA L & DICKERS, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
-
-### Universal seller qualification flow
-
-1. **Condition:** “What kind of shape is the property in right now?”
-2. **Occupancy:** “Is anybody living there right now?”
-3. **Motivation:** “What has you open to selling it instead of just keeping it?”
-4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
-5. **Price:** “What were you hoping to get for it?”
-6. **Debt/terms:** “Do you still have any financing on the property?”
-7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
-8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
-
----
-
-## #2  🔥  7216 HILLSIDE DR, LOUISVILLE, KY 40214
-**SINGLE-FAMILY · CALL FIRST**
-
-**Overall Priority Score:** **94/100** — combined call-order score
-**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
-**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Public-Source Exposure:** **7/100** — deterministic saturation heuristic; not observed investor competition
-**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; detail_rich_source_narrative=-10; multiple_specific_distress_terms=-7; bounded_score=7
-**Freshness Score:** **82/100** — 1-3 DAYS
-
-**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** The 2026-10-06 Louisville Metro violation notice reports multiple severe structural, utility, electrical, sanitation, abandonment, and roof/gutter concerns.
-**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle; sewage/plumbing; electric; structural/foundation; roof/gutters | 02A Cleaning, I21, 05A Abandoned Vehicle, U01, X19 Exterior/Foundation, Z01 | Priority: HIGH | Distress score: 23 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation;…
-**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle; sewage/plumbing; electric; structural/foundation; roof/gutters | 02A Cleaning, I21, 05A Abandoned Vehicle, U01, X19 Exterior/Foundation, Z01 | Priority: HIGH | Distress score: 23 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation;…
-**Owner:** PUCKETT GARY & SHARON L
-**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
-**Owner mailing:** —
-**Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `104200040000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `104200040000`
-**Parcel-data source:** LOJIC / Jefferson County parcel data
-**SFR screen:** LOJIC land use = SINGLE FAMILY
-
-### Distress/source status
-
-**Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
-**Tax delinquency:** UNKNOWN / not verified in this run
-**Will/probate-source signal:** Not returned in this scrape
-**Citation:** No assessed citation in current extract
-**Demolition:** Not verified
-**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
-
-### Exact official/public sources
-
-- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=104200040000&propertySearchFormButton=Search&searchType=ParcelSearch
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=047G00950000&propertySearchFormButton=Search&searchType=ParcelSearch
 
 **Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
 **GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
@@ -149,7 +61,7 @@ Records: **27**
 ### Frozen outreach package
 
 **Call opener:**
-> “Hey PUCKETT GARY & SHARON L, this is Zack. I wanted to call you about your property over on 7216 HILLSIDE DR, LOUISVILLE, KY 40214. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+> “Hey GRUNDY WILLIAM C & WILLIAMS CONNIE, this is Zack. I wanted to call you about your property over on 3525 BELLS LN, LOUISVILLE, KY 40211-0000. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
 
 **If the seller asks what you are offering:**
 > “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
@@ -158,16 +70,16 @@ Records: **27**
 > “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
 
 **Confirmed-owner voicemail:**
-> “Hey PUCKETT GARY & SHARON L, this is Zack. I was giving you a quick call regarding your property over on 7216 HILLSIDE DR, LOUISVILLE, KY 40214 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+> “Hey GRUNDY WILLIAM C & WILLIAMS CONNIE, this is Zack. I was giving you a quick call regarding your property over on 3525 BELLS LN, LOUISVILLE, KY 40211-0000 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
 
 **Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with PUCKETT GARY & SHARON L regarding a property over on 7216 HILLSIDE DR, LOUISVILLE, KY 40214 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if PUCKETT GARY & SHARON L would consider selling the property if the price made sense. If this is PUCKETT GARY & SHARON L, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+> “Hey, this is Zack. I’m trying to get in touch with GRUNDY WILLIAM C & WILLIAMS CONNIE regarding a property over on 3525 BELLS LN, LOUISVILLE, KY 40211-0000 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if GRUNDY WILLIAM C & WILLIAMS CONNIE would consider selling the property if the price made sense. If this is GRUNDY WILLIAM C & WILLIAMS CONNIE, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
 
 **Confirmed-owner text:**
-> “Hey PUCKETT GARY & SHARON L, this is Zack. I’m reaching out about the property you own over on 7216 HILLSIDE DR, LOUISVILLE, KY 40214 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+> “Hey GRUNDY WILLIAM C & WILLIAMS CONNIE, this is Zack. I’m reaching out about the property you own over on 3525 BELLS LN, LOUISVILLE, KY 40211-0000 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
 
 **Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with PUCKETT GARY & SHARON L regarding a property over on 7216 HILLSIDE DR, LOUISVILLE, KY 40214 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is PUCKETT GARY & SHARON L, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+> “Hey, my name’s Zack. I’m trying to get in touch with GRUNDY WILLIAM C & WILLIAMS CONNIE regarding a property over on 3525 BELLS LN, LOUISVILLE, KY 40211-0000 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is GRUNDY WILLIAM C & WILLIAMS CONNIE, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
 
 ### Universal seller qualification flow
 
@@ -182,7 +94,7 @@ Records: **27**
 
 ---
 
-## #3  🔥  2515 CEDAR ST, LOUISVILLE, KY 40212
+## #2  🔥  1836 W KENTUCKY ST, LOUISVILLE, KY 40210
 **SINGLE-FAMILY · CALL FIRST**
 
 **Overall Priority Score:** **94/100** — combined call-order score
@@ -194,120 +106,32 @@ Records: **27**
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** The 2026-10-06 Louisville Metro violation notice identifies a vacant structure and reports multiple structural, utility, electrical, sanitation, and exterior concerns.
-**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; structural/foundation; fence/accessory; vacant/abandoned; sewage/plumbing; electric; windows/doors | 02A Cleaning, X78 Fence/Accessory, I21, U01, X07 | Priority: HIGH | Distress score: 21 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; struct…
-**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; structural/foundation; fence/accessory; vacant/abandoned; sewage/plumbing; electric; windows/doors | 02A Cleaning, X78 Fence/Accessory, I21, U01, X07 | Priority: HIGH | Distress score: 21 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; struct…
-**Owner:** EVANS DIANCO
+**Why this lead:** The Louisville Metro citation referral reports vacancy, structural and foundation concerns, roof/gutter issues, exterior deterioration, and a public hazard.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; structural/foundation; vacant/abandoned; roof/gutters; public hazard; porch/stairs | 02A Cleaning, I33 Structural, X50 Roof/Gutters, X40 Porch/Stairs, X19 Exterior/Foundation | Priority: HIGH | Distress score: 25 | Status: Citation Referral | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; tra…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; structural/foundation; vacant/abandoned; roof/gutters; public hazard; porch/stairs | 02A Cleaning, I33 Structural, X50 Roof/Gutters, X40 Porch/Stairs, X19 Exterior/Foundation | Priority: HIGH | Distress score: 25 | Status: Citation Referral | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; tra…
+**Owner:** HARRIS BLAINE G JR
 **Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
 **Owner mailing:** —
 **Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `002C01780000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `002C01780000`
+**Parcel ID:** `038C00220000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `038C00220000`
 **Parcel-data source:** LOJIC / Jefferson County parcel data
 **SFR screen:** LOJIC land use = SINGLE FAMILY
 
 ### Distress/source status
 
 **Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
 **Tax delinquency:** UNKNOWN / not verified in this run
 **Will/probate-source signal:** Not returned in this scrape
-**Citation:** No assessed citation in current extract
+**Citation:** $3,000 assessed; current outstanding balance NOT VERIFIED
 **Demolition:** Not verified
 **Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
 
 ### Exact official/public sources
 
 - **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=002C01780000&propertySearchFormButton=Search&searchType=ParcelSearch
-
-**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
-**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
-
-### Property-specific questions
-
-1. What kind of shape is the property in right now, beyond normal cosmetic work?
-2. Is anybody living there right now, and if not, how long has it been vacant?
-3. What happened with the structural or safety issues, and has anyone quoted the repairs?
-4. Are the utilities currently on, and are there known electrical, fire, plumbing, HVAC, or permit issues?
-5. What cleanup, pest, debris, or exterior work still needs to be handled?
-6. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
-7. If the numbers made sense, how quickly would you realistically want it sold?
-
-### Frozen outreach package
-
-**Call opener:**
-> “Hey EVANS DIANCO, this is Zack. I wanted to call you about your property over on 2515 CEDAR ST, LOUISVILLE, KY 40212. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
-
-**If the seller asks what you are offering:**
-> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
-
-**How did you find me?:**
-> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
-
-**Confirmed-owner voicemail:**
-> “Hey EVANS DIANCO, this is Zack. I was giving you a quick call regarding your property over on 2515 CEDAR ST, LOUISVILLE, KY 40212 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
-
-**Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with EVANS DIANCO regarding a property over on 2515 CEDAR ST, LOUISVILLE, KY 40212 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if EVANS DIANCO would consider selling the property if the price made sense. If this is EVANS DIANCO, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
-
-**Confirmed-owner text:**
-> “Hey EVANS DIANCO, this is Zack. I’m reaching out about the property you own over on 2515 CEDAR ST, LOUISVILLE, KY 40212 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
-
-**Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with EVANS DIANCO regarding a property over on 2515 CEDAR ST, LOUISVILLE, KY 40212 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is EVANS DIANCO, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
-
-### Universal seller qualification flow
-
-1. **Condition:** “What kind of shape is the property in right now?”
-2. **Occupancy:** “Is anybody living there right now?”
-3. **Motivation:** “What has you open to selling it instead of just keeping it?”
-4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
-5. **Price:** “What were you hoping to get for it?”
-6. **Debt/terms:** “Do you still have any financing on the property?”
-7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
-8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
-
----
-
-## #6  🔥  2206 GARLAND AVE, LOUISVILLE, KY 40211
-**SINGLE-FAMILY · CALL FIRST**
-
-**Overall Priority Score:** **94/100** — combined call-order score
-**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
-**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Public-Source Exposure:** **7/100** — deterministic saturation heuristic; not observed investor competition
-**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; detail_rich_source_narrative=-10; multiple_specific_distress_terms=-7; bounded_score=7
-**Freshness Score:** **82/100** — 1-3 DAYS
-
-**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro Code Violations reports an occupied property on hold with structural, roof/gutter, plumbing, electrical, exterior, and public-hazard issues.
-**Key complaint / distress:** windows/doors; roof/gutters; public hazard; structural/foundation; fence/accessory; sewage/plumbing; electric; exterior/foundation | I03, X50 Roof/Gutters, X72, X78 Fence/Accessory, U01, Z01 | Priority: HIGH | Distress score: 18 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: windows/doors; roof/gutters; public hazard; structural/foundati…
-**Inspector / confirmed evidence:** windows/doors; roof/gutters; public hazard; structural/foundation; fence/accessory; sewage/plumbing; electric; exterior/foundation | I03, X50 Roof/Gutters, X72, X78 Fence/Accessory, U01, Z01 | Priority: HIGH | Distress score: 18 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: windows/doors; roof/gutters; public hazard; structural/foundati…
-**Owner:** COMPTON CLEVELAND
-**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
-**Owner mailing:** —
-**Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `038B01270000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `038B01270000`
-**Parcel-data source:** LOJIC / Jefferson County parcel data
-**SFR screen:** LOJIC land use = SINGLE FAMILY
-
-### Distress/source status
-
-**Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
-**Tax delinquency:** UNKNOWN / not verified in this run
-**Will/probate-source signal:** Not returned in this scrape
-**Citation:** No assessed citation in current extract
-**Demolition:** Not verified
-**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
-
-### Exact official/public sources
-
-- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=038B01270000&propertySearchFormButton=Search&searchType=ParcelSearch
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=038C00220000&propertySearchFormButton=Search&searchType=ParcelSearch
 
 **Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
 **GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
@@ -318,14 +142,14 @@ Records: **27**
 2. Is anybody living there right now, and if not, how long has it been vacant?
 3. What happened with the structural or safety issues, and has anyone quoted the repairs?
 4. Has the roof or water intrusion been repaired, and is there any remaining mold or interior damage?
-5. Are the utilities currently on, and are there known electrical, fire, plumbing, HVAC, or permit issues?
+5. What cleanup, pest, debris, or exterior work still needs to be handled?
 6. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
 7. If the numbers made sense, how quickly would you realistically want it sold?
 
 ### Frozen outreach package
 
 **Call opener:**
-> “Hey COMPTON CLEVELAND, this is Zack. I wanted to call you about your property over on 2206 GARLAND AVE, LOUISVILLE, KY 40211. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+> “Hey HARRIS BLAINE G JR, this is Zack. I wanted to call you about your property over on 1836 W KENTUCKY ST, LOUISVILLE, KY 40210. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
 
 **If the seller asks what you are offering:**
 > “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
@@ -334,16 +158,16 @@ Records: **27**
 > “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
 
 **Confirmed-owner voicemail:**
-> “Hey COMPTON CLEVELAND, this is Zack. I was giving you a quick call regarding your property over on 2206 GARLAND AVE, LOUISVILLE, KY 40211 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+> “Hey HARRIS BLAINE G JR, this is Zack. I was giving you a quick call regarding your property over on 1836 W KENTUCKY ST, LOUISVILLE, KY 40210 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
 
 **Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with COMPTON CLEVELAND regarding a property over on 2206 GARLAND AVE, LOUISVILLE, KY 40211 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if COMPTON CLEVELAND would consider selling the property if the price made sense. If this is COMPTON CLEVELAND, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+> “Hey, this is Zack. I’m trying to get in touch with HARRIS BLAINE G JR regarding a property over on 1836 W KENTUCKY ST, LOUISVILLE, KY 40210 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if HARRIS BLAINE G JR would consider selling the property if the price made sense. If this is HARRIS BLAINE G JR, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
 
 **Confirmed-owner text:**
-> “Hey COMPTON CLEVELAND, this is Zack. I’m reaching out about the property you own over on 2206 GARLAND AVE, LOUISVILLE, KY 40211 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+> “Hey HARRIS BLAINE G JR, this is Zack. I’m reaching out about the property you own over on 1836 W KENTUCKY ST, LOUISVILLE, KY 40210 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
 
 **Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with COMPTON CLEVELAND regarding a property over on 2206 GARLAND AVE, LOUISVILLE, KY 40211 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is COMPTON CLEVELAND, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+> “Hey, my name’s Zack. I’m trying to get in touch with HARRIS BLAINE G JR regarding a property over on 1836 W KENTUCKY ST, LOUISVILLE, KY 40210 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is HARRIS BLAINE G JR, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
 
 ### Universal seller qualification flow
 
@@ -358,7 +182,7 @@ Records: **27**
 
 ---
 
-## #8  🔥  7908 SUNBURY LN, LOUISVILLE, KY 40220
+## #5  🔥  9307 OMAR KHAYYAM BLVD, LOUISVILLE, KY 40272
 **SINGLE-FAMILY · CALL FIRST**
 
 **Overall Priority Score:** **94/100** — combined call-order score
@@ -370,22 +194,22 @@ Records: **27**
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro Code Violations reports an occupied property with a violation notice covering structural, exterior, roof/gutter, drainage, plumbing, and sanitation issues.
-**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; drainage; sewage/plumbing; structural/foundation; roof/gutters | 02A Cleaning, X47 Drainage, X19 Exterior/Foundation | Priority: HIGH | Distress score: 17 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; drainage; sewage/plumbing; structural…
-**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; drainage; sewage/plumbing; structural/foundation; roof/gutters | 02A Cleaning, X47 Drainage, X19 Exterior/Foundation | Priority: HIGH | Distress score: 17 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; drainage; sewage/plumbing; structural…
-**Owner:** AGSALON MARTINA N & PRUDENCIO ANITA N
+**Why this lead:** The 2026-10-07 Louisville Metro code record identifies a vacant structure and reports structural, roof, exterior, public-hazard, and nuisance conditions.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; roof/gutters; public hazard; structural/foundation; fence/accessory; abandoned vehicle | 02A Cleaning, X50 Roof/Gutters, X78 Fence/Accessory, 05A Abandoned Vehicle, X19 Exterior/Foundation | Priority: HIGH | Distress score: 22 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: exter…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; roof/gutters; public hazard; structural/foundation; fence/accessory; abandoned vehicle | 02A Cleaning, X50 Roof/Gutters, X78 Fence/Accessory, 05A Abandoned Vehicle, X19 Exterior/Foundation | Priority: HIGH | Distress score: 22 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: exter…
+**Owner:** DAVIS RAYNENA
 **Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
 **Owner mailing:** —
 **Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `190000230000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `190000230000`
+**Parcel ID:** `117800020212`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `117800020212`
 **Parcel-data source:** LOJIC / Jefferson County parcel data
 **SFR screen:** LOJIC land use = SINGLE FAMILY
 
 ### Distress/source status
 
 **Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
 **Tax delinquency:** UNKNOWN / not verified in this run
 **Will/probate-source signal:** Not returned in this scrape
 **Citation:** No assessed citation in current extract
@@ -395,7 +219,95 @@ Records: **27**
 ### Exact official/public sources
 
 - **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=190000230000&propertySearchFormButton=Search&searchType=ParcelSearch
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=117800020212&propertySearchFormButton=Search&searchType=ParcelSearch
+
+**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
+**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
+
+### Property-specific questions
+
+1. What kind of shape is the property in right now, beyond normal cosmetic work?
+2. Is anybody living there right now, and if not, how long has it been vacant?
+3. What happened with the structural or safety issues, and has anyone quoted the repairs?
+4. Has the roof or water intrusion been repaired, and is there any remaining mold or interior damage?
+5. What cleanup, pest, debris, or exterior work still needs to be handled?
+6. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
+7. If the numbers made sense, how quickly would you realistically want it sold?
+
+### Frozen outreach package
+
+**Call opener:**
+> “Hey DAVIS RAYNENA, this is Zack. I wanted to call you about your property over on 9307 OMAR KHAYYAM BLVD, LOUISVILLE, KY 40272. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+
+**If the seller asks what you are offering:**
+> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
+
+**How did you find me?:**
+> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
+
+**Confirmed-owner voicemail:**
+> “Hey DAVIS RAYNENA, this is Zack. I was giving you a quick call regarding your property over on 9307 OMAR KHAYYAM BLVD, LOUISVILLE, KY 40272 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+
+**Unconfirmed-owner voicemail:**
+> “Hey, this is Zack. I’m trying to get in touch with DAVIS RAYNENA regarding a property over on 9307 OMAR KHAYYAM BLVD, LOUISVILLE, KY 40272 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if DAVIS RAYNENA would consider selling the property if the price made sense. If this is DAVIS RAYNENA, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+
+**Confirmed-owner text:**
+> “Hey DAVIS RAYNENA, this is Zack. I’m reaching out about the property you own over on 9307 OMAR KHAYYAM BLVD, LOUISVILLE, KY 40272 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+
+**Unconfirmed-owner text:**
+> “Hey, my name’s Zack. I’m trying to get in touch with DAVIS RAYNENA regarding a property over on 9307 OMAR KHAYYAM BLVD, LOUISVILLE, KY 40272 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is DAVIS RAYNENA, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+
+### Universal seller qualification flow
+
+1. **Condition:** “What kind of shape is the property in right now?”
+2. **Occupancy:** “Is anybody living there right now?”
+3. **Motivation:** “What has you open to selling it instead of just keeping it?”
+4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
+5. **Price:** “What were you hoping to get for it?”
+6. **Debt/terms:** “Do you still have any financing on the property?”
+7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
+8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
+
+---
+
+## #6  🔥  5303 ILEX AVE, LOUISVILLE, KY 40213
+**SINGLE-FAMILY · CALL FIRST**
+
+**Overall Priority Score:** **94/100** — combined call-order score
+**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
+**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
+**Public-Source Exposure:** **7/100** — deterministic saturation heuristic; not observed investor competition
+**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
+**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; detail_rich_source_narrative=-10; multiple_specific_distress_terms=-7; bounded_score=7
+**Freshness Score:** **82/100** — 1-3 DAYS
+
+**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
+**Why this lead:** The 2026-10-07 Louisville Metro code citation reports multiple structural, roof, plumbing, electrical, exterior, and nuisance conditions at an occupied structure.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; windows/doors; structural/foundation; roof/gutters; sewage/plumbing; electric | 02A Cleaning, X72, X19 Exterior/Foundation, U01 | Priority: HIGH | Distress score: 21 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; windows/doors; structural/foundati…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; windows/doors; structural/foundation; roof/gutters; sewage/plumbing; electric | 02A Cleaning, X72, X19 Exterior/Foundation, U01 | Priority: HIGH | Distress score: 21 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; windows/doors; structural/foundati…
+**Owner:** RUSSELL DELORES
+**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
+**Owner mailing:** —
+**Mailing vs property:** UNKNOWN — mailing address unavailable
+**Parcel ID:** `085600940149`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `085600940149`
+**Parcel-data source:** LOJIC / Jefferson County parcel data
+**SFR screen:** LOJIC land use = SINGLE FAMILY
+
+### Distress/source status
+
+**Lis Pendens:** Not returned in this scrape
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
+**Tax delinquency:** UNKNOWN / not verified in this run
+**Will/probate-source signal:** Not returned in this scrape
+**Citation:** $2,400 assessed; current outstanding balance NOT VERIFIED
+**Demolition:** Not verified
+**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
+
+### Exact official/public sources
+
+- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=085600940149&propertySearchFormButton=Search&searchType=ParcelSearch
 
 **Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
 **GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
@@ -413,7 +325,7 @@ Records: **27**
 ### Frozen outreach package
 
 **Call opener:**
-> “Hey AGSALON MARTINA N & PRUDENCIO ANITA N, this is Zack. I wanted to call you about your property over on 7908 SUNBURY LN, LOUISVILLE, KY 40220. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+> “Hey RUSSELL DELORES, this is Zack. I wanted to call you about your property over on 5303 ILEX AVE, LOUISVILLE, KY 40213. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
 
 **If the seller asks what you are offering:**
 > “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
@@ -422,16 +334,16 @@ Records: **27**
 > “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
 
 **Confirmed-owner voicemail:**
-> “Hey AGSALON MARTINA N & PRUDENCIO ANITA N, this is Zack. I was giving you a quick call regarding your property over on 7908 SUNBURY LN, LOUISVILLE, KY 40220 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+> “Hey RUSSELL DELORES, this is Zack. I was giving you a quick call regarding your property over on 5303 ILEX AVE, LOUISVILLE, KY 40213 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
 
 **Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with AGSALON MARTINA N & PRUDENCIO ANITA N regarding a property over on 7908 SUNBURY LN, LOUISVILLE, KY 40220 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if AGSALON MARTINA N & PRUDENCIO ANITA N would consider selling the property if the price made sense. If this is AGSALON MARTINA N & PRUDENCIO ANITA N, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+> “Hey, this is Zack. I’m trying to get in touch with RUSSELL DELORES regarding a property over on 5303 ILEX AVE, LOUISVILLE, KY 40213 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if RUSSELL DELORES would consider selling the property if the price made sense. If this is RUSSELL DELORES, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
 
 **Confirmed-owner text:**
-> “Hey AGSALON MARTINA N & PRUDENCIO ANITA N, this is Zack. I’m reaching out about the property you own over on 7908 SUNBURY LN, LOUISVILLE, KY 40220 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+> “Hey RUSSELL DELORES, this is Zack. I’m reaching out about the property you own over on 5303 ILEX AVE, LOUISVILLE, KY 40213 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
 
 **Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with AGSALON MARTINA N & PRUDENCIO ANITA N regarding a property over on 7908 SUNBURY LN, LOUISVILLE, KY 40220 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is AGSALON MARTINA N & PRUDENCIO ANITA N, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+> “Hey, my name’s Zack. I’m trying to get in touch with RUSSELL DELORES regarding a property over on 5303 ILEX AVE, LOUISVILLE, KY 40213 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is RUSSELL DELORES, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
 
 ### Universal seller qualification flow
 
@@ -446,7 +358,7 @@ Records: **27**
 
 ---
 
-## #9  🔥  1042 LYNNHURST AVE, LOUISVILLE, KY 40215
+## #7  🔥  1707 W ORMSBY AVE, LOUISVILLE, KY 40210
 **SINGLE-FAMILY · CALL FIRST**
 
 **Overall Priority Score:** **94/100** — combined call-order score
@@ -458,22 +370,286 @@ Records: **27**
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro Code Violations reports an occupied property with a violation notice and multiple structural, exterior, sanitation, infestation, and public-hazard issues.
+**Why this lead:** The 2026-10-07 Louisville Metro code record identifies a vacant structure and reports structural, roof, exterior, public-hazard, and nuisance conditions.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; roof/gutters; public hazard; abandoned vehicle; structural/foundation | 02A Cleaning, X50 Roof/Gutters, 05A Abandoned Vehicle, X19 Exterior/Foundation | Priority: HIGH | Distress score: 21 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti;…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; roof/gutters; public hazard; abandoned vehicle; structural/foundation | 02A Cleaning, X50 Roof/Gutters, 05A Abandoned Vehicle, X19 Exterior/Foundation | Priority: HIGH | Distress score: 21 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti;…
+**Owner:** WHEELER BYRON
+**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
+**Owner mailing:** —
+**Mailing vs property:** UNKNOWN — mailing address unavailable
+**Parcel ID:** `039A00630000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `039A00630000`
+**Parcel-data source:** LOJIC / Jefferson County parcel data
+**SFR screen:** LOJIC land use = SINGLE FAMILY
+
+### Distress/source status
+
+**Lis Pendens:** Not returned in this scrape
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
+**Tax delinquency:** UNKNOWN / not verified in this run
+**Will/probate-source signal:** Not returned in this scrape
+**Citation:** No assessed citation in current extract
+**Demolition:** Not verified
+**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
+
+### Exact official/public sources
+
+- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=039A00630000&propertySearchFormButton=Search&searchType=ParcelSearch
+
+**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
+**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
+
+### Property-specific questions
+
+1. What kind of shape is the property in right now, beyond normal cosmetic work?
+2. Is anybody living there right now, and if not, how long has it been vacant?
+3. What happened with the structural or safety issues, and has anyone quoted the repairs?
+4. Has the roof or water intrusion been repaired, and is there any remaining mold or interior damage?
+5. What cleanup, pest, debris, or exterior work still needs to be handled?
+6. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
+7. If the numbers made sense, how quickly would you realistically want it sold?
+
+### Frozen outreach package
+
+**Call opener:**
+> “Hey WHEELER BYRON, this is Zack. I wanted to call you about your property over on 1707 W ORMSBY AVE, LOUISVILLE, KY 40210. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+
+**If the seller asks what you are offering:**
+> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
+
+**How did you find me?:**
+> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
+
+**Confirmed-owner voicemail:**
+> “Hey WHEELER BYRON, this is Zack. I was giving you a quick call regarding your property over on 1707 W ORMSBY AVE, LOUISVILLE, KY 40210 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+
+**Unconfirmed-owner voicemail:**
+> “Hey, this is Zack. I’m trying to get in touch with WHEELER BYRON regarding a property over on 1707 W ORMSBY AVE, LOUISVILLE, KY 40210 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if WHEELER BYRON would consider selling the property if the price made sense. If this is WHEELER BYRON, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+
+**Confirmed-owner text:**
+> “Hey WHEELER BYRON, this is Zack. I’m reaching out about the property you own over on 1707 W ORMSBY AVE, LOUISVILLE, KY 40210 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+
+**Unconfirmed-owner text:**
+> “Hey, my name’s Zack. I’m trying to get in touch with WHEELER BYRON regarding a property over on 1707 W ORMSBY AVE, LOUISVILLE, KY 40210 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is WHEELER BYRON, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+
+### Universal seller qualification flow
+
+1. **Condition:** “What kind of shape is the property in right now?”
+2. **Occupancy:** “Is anybody living there right now?”
+3. **Motivation:** “What has you open to selling it instead of just keeping it?”
+4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
+5. **Price:** “What were you hoping to get for it?”
+6. **Debt/terms:** “Do you still have any financing on the property?”
+7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
+8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
+
+---
+
+## #8  🔥  3711 VALDOSTA AVE, LOUISVILLE, KY 40218
+**SINGLE-FAMILY · CALL FIRST**
+
+**Overall Priority Score:** **94/100** — combined call-order score
+**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
+**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
+**Public-Source Exposure:** **7/100** — deterministic saturation heuristic; not observed investor competition
+**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
+**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; detail_rich_source_narrative=-10; multiple_specific_distress_terms=-7; bounded_score=7
+**Freshness Score:** **82/100** — 1-3 DAYS
+
+**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
+**Why this lead:** The 2026-10-07 Louisville Metro violation notice identifies a vacant structure and reports structural, roof, exterior, public-hazard, and nuisance conditions.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; roof/gutters; public hazard; structural/foundation | 02A Cleaning, X50 Roof/Gutters, X19 Exterior/Foundation | Priority: HIGH | Distress score: 19 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; roof/gutter…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; roof/gutters; public hazard; structural/foundation | 02A Cleaning, X50 Roof/Gutters, X19 Exterior/Foundation | Priority: HIGH | Distress score: 19 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; roof/gutter…
+**Owner:** CLAXTON WILLIAM Jr & CLAXTON ALINE
+**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
+**Owner mailing:** —
+**Mailing vs property:** UNKNOWN — mailing address unavailable
+**Parcel ID:** `058200120000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `058200120000`
+**Parcel-data source:** LOJIC / Jefferson County parcel data
+**SFR screen:** LOJIC land use = SINGLE FAMILY
+
+### Distress/source status
+
+**Lis Pendens:** Not returned in this scrape
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
+**Tax delinquency:** UNKNOWN / not verified in this run
+**Will/probate-source signal:** Not returned in this scrape
+**Citation:** No assessed citation in current extract
+**Demolition:** Not verified
+**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
+
+### Exact official/public sources
+
+- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=058200120000&propertySearchFormButton=Search&searchType=ParcelSearch
+
+**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
+**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
+
+### Property-specific questions
+
+1. What kind of shape is the property in right now, beyond normal cosmetic work?
+2. Is anybody living there right now, and if not, how long has it been vacant?
+3. What happened with the structural or safety issues, and has anyone quoted the repairs?
+4. Has the roof or water intrusion been repaired, and is there any remaining mold or interior damage?
+5. What cleanup, pest, debris, or exterior work still needs to be handled?
+6. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
+7. If the numbers made sense, how quickly would you realistically want it sold?
+
+### Frozen outreach package
+
+**Call opener:**
+> “Hey CLAXTON WILLIAM Jr & CLAXTON ALINE, this is Zack. I wanted to call you about your property over on 3711 VALDOSTA AVE, LOUISVILLE, KY 40218. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+
+**If the seller asks what you are offering:**
+> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
+
+**How did you find me?:**
+> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
+
+**Confirmed-owner voicemail:**
+> “Hey CLAXTON WILLIAM Jr & CLAXTON ALINE, this is Zack. I was giving you a quick call regarding your property over on 3711 VALDOSTA AVE, LOUISVILLE, KY 40218 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+
+**Unconfirmed-owner voicemail:**
+> “Hey, this is Zack. I’m trying to get in touch with CLAXTON WILLIAM Jr & CLAXTON ALINE regarding a property over on 3711 VALDOSTA AVE, LOUISVILLE, KY 40218 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if CLAXTON WILLIAM Jr & CLAXTON ALINE would consider selling the property if the price made sense. If this is CLAXTON WILLIAM Jr & CLAXTON ALINE, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+
+**Confirmed-owner text:**
+> “Hey CLAXTON WILLIAM Jr & CLAXTON ALINE, this is Zack. I’m reaching out about the property you own over on 3711 VALDOSTA AVE, LOUISVILLE, KY 40218 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+
+**Unconfirmed-owner text:**
+> “Hey, my name’s Zack. I’m trying to get in touch with CLAXTON WILLIAM Jr & CLAXTON ALINE regarding a property over on 3711 VALDOSTA AVE, LOUISVILLE, KY 40218 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is CLAXTON WILLIAM Jr & CLAXTON ALINE, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+
+### Universal seller qualification flow
+
+1. **Condition:** “What kind of shape is the property in right now?”
+2. **Occupancy:** “Is anybody living there right now?”
+3. **Motivation:** “What has you open to selling it instead of just keeping it?”
+4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
+5. **Price:** “What were you hoping to get for it?”
+6. **Debt/terms:** “Do you still have any financing on the property?”
+7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
+8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
+
+---
+
+## #9  🔥  1155 LORETTA ST, LOUISVILLE, KY 40213
+**SINGLE-FAMILY · CALL FIRST**
+
+**Overall Priority Score:** **94/100** — combined call-order score
+**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
+**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
+**Public-Source Exposure:** **7/100** — deterministic saturation heuristic; not observed investor competition
+**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
+**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; detail_rich_source_narrative=-10; multiple_specific_distress_terms=-7; bounded_score=7
+**Freshness Score:** **82/100** — 1-3 DAYS
+
+**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
+**Why this lead:** The 2026-10-07 Louisville Metro violation notice reports structural, roof, exterior, vacancy-related, and nuisance conditions, while its occupancy field labels the structure occupied.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle; structural/foundation; roof/gutters | 02A Cleaning, 05A Abandoned Vehicle, X19 Exterior/Foundation | Priority: HIGH | Distress score: 19 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned;…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle; structural/foundation; roof/gutters | 02A Cleaning, 05A Abandoned Vehicle, X19 Exterior/Foundation | Priority: HIGH | Distress score: 19 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned;…
+**Owner:** CANETE ELSA ALVAREZ & HERNANDEZ LILIBETH CABRERA
+**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
+**Owner mailing:** —
+**Mailing vs property:** UNKNOWN — mailing address unavailable
+**Parcel ID:** `062202710000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `062202710000`
+**Parcel-data source:** LOJIC / Jefferson County parcel data
+**SFR screen:** LOJIC land use = SINGLE FAMILY
+
+### Distress/source status
+
+**Lis Pendens:** Not returned in this scrape
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
+**Tax delinquency:** UNKNOWN / not verified in this run
+**Will/probate-source signal:** Not returned in this scrape
+**Citation:** No assessed citation in current extract
+**Demolition:** Not verified
+**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
+
+### Exact official/public sources
+
+- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=062202710000&propertySearchFormButton=Search&searchType=ParcelSearch
+
+**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
+**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
+
+### Property-specific questions
+
+1. What kind of shape is the property in right now, beyond normal cosmetic work?
+2. Is anybody living there right now, and if not, how long has it been vacant?
+3. What happened with the structural or safety issues, and has anyone quoted the repairs?
+4. Has the roof or water intrusion been repaired, and is there any remaining mold or interior damage?
+5. What cleanup, pest, debris, or exterior work still needs to be handled?
+6. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
+7. If the numbers made sense, how quickly would you realistically want it sold?
+
+### Frozen outreach package
+
+**Call opener:**
+> “Hey CANETE ELSA ALVAREZ & HERNANDEZ LILIBETH CABRERA, this is Zack. I wanted to call you about your property over on 1155 LORETTA ST, LOUISVILLE, KY 40213. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+
+**If the seller asks what you are offering:**
+> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
+
+**How did you find me?:**
+> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
+
+**Confirmed-owner voicemail:**
+> “Hey CANETE ELSA ALVAREZ & HERNANDEZ LILIBETH CABRERA, this is Zack. I was giving you a quick call regarding your property over on 1155 LORETTA ST, LOUISVILLE, KY 40213 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+
+**Unconfirmed-owner voicemail:**
+> “Hey, this is Zack. I’m trying to get in touch with CANETE ELSA ALVAREZ & HERNANDEZ LILIBETH CABRERA regarding a property over on 1155 LORETTA ST, LOUISVILLE, KY 40213 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if CANETE ELSA ALVAREZ & HERNANDEZ LILIBETH CABRERA would consider selling the property if the price made sense. If this is CANETE ELSA ALVAREZ & HERNANDEZ LILIBETH CABRERA, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+
+**Confirmed-owner text:**
+> “Hey CANETE ELSA ALVAREZ & HERNANDEZ LILIBETH CABRERA, this is Zack. I’m reaching out about the property you own over on 1155 LORETTA ST, LOUISVILLE, KY 40213 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+
+**Unconfirmed-owner text:**
+> “Hey, my name’s Zack. I’m trying to get in touch with CANETE ELSA ALVAREZ & HERNANDEZ LILIBETH CABRERA regarding a property over on 1155 LORETTA ST, LOUISVILLE, KY 40213 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is CANETE ELSA ALVAREZ & HERNANDEZ LILIBETH CABRERA, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+
+### Universal seller qualification flow
+
+1. **Condition:** “What kind of shape is the property in right now?”
+2. **Occupancy:** “Is anybody living there right now?”
+3. **Motivation:** “What has you open to selling it instead of just keeping it?”
+4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
+5. **Price:** “What were you hoping to get for it?”
+6. **Debt/terms:** “Do you still have any financing on the property?”
+7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
+8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
+
+---
+
+## #12  🔥  4168 HAZELWOOD AVE, LOUISVILLE, KY 40215
+**SINGLE-FAMILY · CALL FIRST**
+
+**Overall Priority Score:** **94/100** — combined call-order score
+**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
+**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
+**Public-Source Exposure:** **7/100** — deterministic saturation heuristic; not observed investor competition
+**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
+**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; detail_rich_source_narrative=-10; multiple_specific_distress_terms=-7; bounded_score=7
+**Freshness Score:** **82/100** — 1-3 DAYS
+
+**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
+**Why this lead:** The Louisville code notice reports structural and exterior concerns along with infestation, vegetation, cleanup, and public-hazard issues.
 **Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; structural/foundation; dangerous tree; infestation; public hazard | 02A Cleaning, X69 Address Numbers, X90 Tree | Priority: HIGH | Distress score: 16 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; structural/foundation; dangerous tree; inf…
 **Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; structural/foundation; dangerous tree; infestation; public hazard | 02A Cleaning, X69 Address Numbers, X90 Tree | Priority: HIGH | Distress score: 16 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; structural/foundation; dangerous tree; inf…
-**Owner:** LUCAS JUSTIN
+**Owner:** HASHIM OSMAN SHARIF
 **Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
 **Owner mailing:** —
 **Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `054B01300000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `054B01300000`
+**Parcel ID:** `066E02010000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `066E02010000`
 **Parcel-data source:** LOJIC / Jefferson County parcel data
 **SFR screen:** LOJIC land use = SINGLE FAMILY
 
 ### Distress/source status
 
 **Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
 **Tax delinquency:** UNKNOWN / not verified in this run
 **Will/probate-source signal:** Not returned in this scrape
 **Citation:** No assessed citation in current extract
@@ -483,7 +659,7 @@ Records: **27**
 ### Exact official/public sources
 
 - **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=054B01300000&propertySearchFormButton=Search&searchType=ParcelSearch
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=066E02010000&propertySearchFormButton=Search&searchType=ParcelSearch
 
 **Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
 **GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
@@ -500,7 +676,7 @@ Records: **27**
 ### Frozen outreach package
 
 **Call opener:**
-> “Hey LUCAS JUSTIN, this is Zack. I wanted to call you about your property over on 1042 LYNNHURST AVE, LOUISVILLE, KY 40215. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+> “Hey HASHIM OSMAN SHARIF, this is Zack. I wanted to call you about your property over on 4168 HAZELWOOD AVE, LOUISVILLE, KY 40215. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
 
 **If the seller asks what you are offering:**
 > “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
@@ -509,16 +685,16 @@ Records: **27**
 > “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
 
 **Confirmed-owner voicemail:**
-> “Hey LUCAS JUSTIN, this is Zack. I was giving you a quick call regarding your property over on 1042 LYNNHURST AVE, LOUISVILLE, KY 40215 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+> “Hey HASHIM OSMAN SHARIF, this is Zack. I was giving you a quick call regarding your property over on 4168 HAZELWOOD AVE, LOUISVILLE, KY 40215 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
 
 **Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with LUCAS JUSTIN regarding a property over on 1042 LYNNHURST AVE, LOUISVILLE, KY 40215 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if LUCAS JUSTIN would consider selling the property if the price made sense. If this is LUCAS JUSTIN, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+> “Hey, this is Zack. I’m trying to get in touch with HASHIM OSMAN SHARIF regarding a property over on 4168 HAZELWOOD AVE, LOUISVILLE, KY 40215 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if HASHIM OSMAN SHARIF would consider selling the property if the price made sense. If this is HASHIM OSMAN SHARIF, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
 
 **Confirmed-owner text:**
-> “Hey LUCAS JUSTIN, this is Zack. I’m reaching out about the property you own over on 1042 LYNNHURST AVE, LOUISVILLE, KY 40215 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+> “Hey HASHIM OSMAN SHARIF, this is Zack. I’m reaching out about the property you own over on 4168 HAZELWOOD AVE, LOUISVILLE, KY 40215 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
 
 **Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with LUCAS JUSTIN regarding a property over on 1042 LYNNHURST AVE, LOUISVILLE, KY 40215 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is LUCAS JUSTIN, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+> “Hey, my name’s Zack. I’m trying to get in touch with HASHIM OSMAN SHARIF regarding a property over on 4168 HAZELWOOD AVE, LOUISVILLE, KY 40215 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is HASHIM OSMAN SHARIF, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
 
 ### Universal seller qualification flow
 
@@ -533,7 +709,7 @@ Records: **27**
 
 ---
 
-## #4  🔥  4003 HOPE CT, LOUISVILLE, KY 40220
+## #3  🔥  5123 CHRISTIE AVE, LOUISVILLE, KY 40216
 **SINGLE-FAMILY · CALL FIRST**
 
 **Overall Priority Score:** **94/100** — combined call-order score
@@ -545,815 +721,32 @@ Records: **27**
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** The 2026-10-06 Louisville Metro violation notice reports multiple exterior, sanitation, utility, electrical, and abandonment-related concerns.
-**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; windows/doors; vacant/abandoned; abandoned vehicle; sewage/plumbing; electric | 02A Cleaning, X72, 05A Abandoned Vehicle, U01, HO1 | Priority: HIGH | Distress score: 19 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; windows/doors; vacant/a…
-**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; windows/doors; vacant/abandoned; abandoned vehicle; sewage/plumbing; electric | 02A Cleaning, X72, 05A Abandoned Vehicle, U01, HO1 | Priority: HIGH | Distress score: 19 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; windows/doors; vacant/a…
-**Owner:** OGREN ROSE T & OGREN KIRK C
+**Why this lead:** The Louisville Metro citation reports material structural, electrical, exterior, sanitation, and public-hazard issues; the occupancy information is internally inconsistent.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; structural/foundation; electric; public hazard; vacant/abandoned; abandoned vehicle | 02A Cleaning, E01, 05A Abandoned Vehicle, Z01 | Priority: HIGH | Distress score: 24 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; structural/foundation; electri…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; structural/foundation; electric; public hazard; vacant/abandoned; abandoned vehicle | 02A Cleaning, E01, 05A Abandoned Vehicle, Z01 | Priority: HIGH | Distress score: 24 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; structural/foundation; electri…
+**Owner:** RODRIGUEZ JEFFERY P & JONES TONI L
 **Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
 **Owner mailing:** —
 **Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `091N01710000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `091N01710000`
+**Parcel ID:** `102602840000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `102602840000`
 **Parcel-data source:** LOJIC / Jefferson County parcel data
 **SFR screen:** LOJIC land use = SINGLE FAMILY
 
 ### Distress/source status
 
 **Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
 **Tax delinquency:** UNKNOWN / not verified in this run
 **Will/probate-source signal:** Not returned in this scrape
-**Citation:** No assessed citation in current extract
+**Citation:** $3,600 assessed; current outstanding balance NOT VERIFIED
 **Demolition:** Not verified
 **Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
 
 ### Exact official/public sources
 
 - **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=091N01710000&propertySearchFormButton=Search&searchType=ParcelSearch
-
-**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
-**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
-
-### Property-specific questions
-
-1. What kind of shape is the property in right now, beyond normal cosmetic work?
-2. Is anybody living there right now, and if not, how long has it been vacant?
-3. Are the utilities currently on, and are there known electrical, fire, plumbing, HVAC, or permit issues?
-4. What cleanup, pest, debris, or exterior work still needs to be handled?
-5. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
-6. If the numbers made sense, how quickly would you realistically want it sold?
-
-### Frozen outreach package
-
-**Call opener:**
-> “Hey OGREN ROSE T & OGREN KIRK C, this is Zack. I wanted to call you about your property over on 4003 HOPE CT, LOUISVILLE, KY 40220. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
-
-**If the seller asks what you are offering:**
-> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
-
-**How did you find me?:**
-> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
-
-**Confirmed-owner voicemail:**
-> “Hey OGREN ROSE T & OGREN KIRK C, this is Zack. I was giving you a quick call regarding your property over on 4003 HOPE CT, LOUISVILLE, KY 40220 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
-
-**Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with OGREN ROSE T & OGREN KIRK C regarding a property over on 4003 HOPE CT, LOUISVILLE, KY 40220 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if OGREN ROSE T & OGREN KIRK C would consider selling the property if the price made sense. If this is OGREN ROSE T & OGREN KIRK C, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
-
-**Confirmed-owner text:**
-> “Hey OGREN ROSE T & OGREN KIRK C, this is Zack. I’m reaching out about the property you own over on 4003 HOPE CT, LOUISVILLE, KY 40220 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
-
-**Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with OGREN ROSE T & OGREN KIRK C regarding a property over on 4003 HOPE CT, LOUISVILLE, KY 40220 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is OGREN ROSE T & OGREN KIRK C, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
-
-### Universal seller qualification flow
-
-1. **Condition:** “What kind of shape is the property in right now?”
-2. **Occupancy:** “Is anybody living there right now?”
-3. **Motivation:** “What has you open to selling it instead of just keeping it?”
-4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
-5. **Price:** “What were you hoping to get for it?”
-6. **Debt/terms:** “Do you still have any financing on the property?”
-7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
-8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
-
----
-
-## #5  🔥  4008 WHITE PLAINS CT, LOUISVILLE, KY 40218
-**SINGLE-FAMILY · CALL FIRST**
-
-**Overall Priority Score:** **94/100** — combined call-order score
-**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
-**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Public-Source Exposure:** **11/100** — deterministic saturation heuristic; not observed investor competition
-**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; multiple_specific_distress_terms=-7; bounded_score=11
-**Freshness Score:** **82/100** — 1-3 DAYS
-
-**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro Code Violations reports an occupied property with a citation and multiple structural, exterior, sanitation, infestation, and public-hazard issues.
-**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; structural/foundation; dangerous tree; infestation; public hazard | 02A Cleaning, X90 Tree | Priority: HIGH | Distress score: 18 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; structural/foundation; dangerous tree; infestation; public hazard | Vio…
-**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; structural/foundation; dangerous tree; infestation; public hazard | 02A Cleaning, X90 Tree | Priority: HIGH | Distress score: 18 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; structural/foundation; dangerous tree; infestation; public hazard | Vio…
-**Owner:** COMPTON CHRISTINA L
-**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
-**Owner mailing:** —
-**Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `091A02350000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `091A02350000`
-**Parcel-data source:** LOJIC / Jefferson County parcel data
-**SFR screen:** LOJIC land use = SINGLE FAMILY
-
-### Distress/source status
-
-**Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
-**Tax delinquency:** UNKNOWN / not verified in this run
-**Will/probate-source signal:** Not returned in this scrape
-**Citation:** $1,000 assessed; current outstanding balance NOT VERIFIED
-**Demolition:** Not verified
-**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
-
-### Exact official/public sources
-
-- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=091A02350000&propertySearchFormButton=Search&searchType=ParcelSearch
-
-**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
-**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
-
-### Property-specific questions
-
-1. What kind of shape is the property in right now, beyond normal cosmetic work?
-2. Is anybody living there right now, and if not, how long has it been vacant?
-3. What happened with the structural or safety issues, and has anyone quoted the repairs?
-4. What cleanup, pest, debris, or exterior work still needs to be handled?
-5. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
-6. If the numbers made sense, how quickly would you realistically want it sold?
-
-### Frozen outreach package
-
-**Call opener:**
-> “Hey COMPTON CHRISTINA L, this is Zack. I wanted to call you about your property over on 4008 WHITE PLAINS CT, LOUISVILLE, KY 40218. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
-
-**If the seller asks what you are offering:**
-> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
-
-**How did you find me?:**
-> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
-
-**Confirmed-owner voicemail:**
-> “Hey COMPTON CHRISTINA L, this is Zack. I was giving you a quick call regarding your property over on 4008 WHITE PLAINS CT, LOUISVILLE, KY 40218 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
-
-**Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with COMPTON CHRISTINA L regarding a property over on 4008 WHITE PLAINS CT, LOUISVILLE, KY 40218 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if COMPTON CHRISTINA L would consider selling the property if the price made sense. If this is COMPTON CHRISTINA L, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
-
-**Confirmed-owner text:**
-> “Hey COMPTON CHRISTINA L, this is Zack. I’m reaching out about the property you own over on 4008 WHITE PLAINS CT, LOUISVILLE, KY 40218 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
-
-**Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with COMPTON CHRISTINA L regarding a property over on 4008 WHITE PLAINS CT, LOUISVILLE, KY 40218 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is COMPTON CHRISTINA L, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
-
-### Universal seller qualification flow
-
-1. **Condition:** “What kind of shape is the property in right now?”
-2. **Occupancy:** “Is anybody living there right now?”
-3. **Motivation:** “What has you open to selling it instead of just keeping it?”
-4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
-5. **Price:** “What were you hoping to get for it?”
-6. **Debt/terms:** “Do you still have any financing on the property?”
-7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
-8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
-
----
-
-## #7  🔥  3907 VALLEY STATION RD, LOUISVILLE, KY 40272
-**SINGLE-FAMILY · CALL FIRST**
-
-**Overall Priority Score:** **94/100** — combined call-order score
-**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
-**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Public-Source Exposure:** **11/100** — deterministic saturation heuristic; not observed investor competition
-**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; multiple_specific_distress_terms=-7; bounded_score=11
-**Freshness Score:** **82/100** — 1-3 DAYS
-
-**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro Code Violations reports an occupied property with a citation and multiple structural, exterior, sanitation, infestation, and public-hazard issues.
-**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; structural/foundation; dangerous tree; infestation; public hazard | 02A Cleaning, X90 Tree | Priority: HIGH | Distress score: 18 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; structural/foundation; dangerous tree; infestation; public hazard | Vio…
-**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; structural/foundation; dangerous tree; infestation; public hazard | 02A Cleaning, X90 Tree | Priority: HIGH | Distress score: 18 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; structural/foundation; dangerous tree; infestation; public hazard | Vio…
-**Owner:** WATANABE AMANDA E & WEBER DAVID PAUL Jr
-**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
-**Owner mailing:** —
-**Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `117401990000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `117401990000`
-**Parcel-data source:** LOJIC / Jefferson County parcel data
-**SFR screen:** LOJIC land use = SINGLE FAMILY
-
-### Distress/source status
-
-**Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
-**Tax delinquency:** UNKNOWN / not verified in this run
-**Will/probate-source signal:** Not returned in this scrape
-**Citation:** $600 assessed; current outstanding balance NOT VERIFIED
-**Demolition:** Not verified
-**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
-
-### Exact official/public sources
-
-- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=117401990000&propertySearchFormButton=Search&searchType=ParcelSearch
-
-**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
-**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
-
-### Property-specific questions
-
-1. What kind of shape is the property in right now, beyond normal cosmetic work?
-2. Is anybody living there right now, and if not, how long has it been vacant?
-3. What happened with the structural or safety issues, and has anyone quoted the repairs?
-4. What cleanup, pest, debris, or exterior work still needs to be handled?
-5. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
-6. If the numbers made sense, how quickly would you realistically want it sold?
-
-### Frozen outreach package
-
-**Call opener:**
-> “Hey WATANABE AMANDA E & WEBER DAVID PAUL Jr, this is Zack. I wanted to call you about your property over on 3907 VALLEY STATION RD, LOUISVILLE, KY 40272. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
-
-**If the seller asks what you are offering:**
-> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
-
-**How did you find me?:**
-> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
-
-**Confirmed-owner voicemail:**
-> “Hey WATANABE AMANDA E & WEBER DAVID PAUL Jr, this is Zack. I was giving you a quick call regarding your property over on 3907 VALLEY STATION RD, LOUISVILLE, KY 40272 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
-
-**Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with WATANABE AMANDA E & WEBER DAVID PAUL Jr regarding a property over on 3907 VALLEY STATION RD, LOUISVILLE, KY 40272 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if WATANABE AMANDA E & WEBER DAVID PAUL Jr would consider selling the property if the price made sense. If this is WATANABE AMANDA E & WEBER DAVID PAUL Jr, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
-
-**Confirmed-owner text:**
-> “Hey WATANABE AMANDA E & WEBER DAVID PAUL Jr, this is Zack. I’m reaching out about the property you own over on 3907 VALLEY STATION RD, LOUISVILLE, KY 40272 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
-
-**Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with WATANABE AMANDA E & WEBER DAVID PAUL Jr regarding a property over on 3907 VALLEY STATION RD, LOUISVILLE, KY 40272 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is WATANABE AMANDA E & WEBER DAVID PAUL Jr, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
-
-### Universal seller qualification flow
-
-1. **Condition:** “What kind of shape is the property in right now?”
-2. **Occupancy:** “Is anybody living there right now?”
-3. **Motivation:** “What has you open to selling it instead of just keeping it?”
-4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
-5. **Price:** “What were you hoping to get for it?”
-6. **Debt/terms:** “Do you still have any financing on the property?”
-7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
-8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
-
----
-
-## #10  🔥  4327 DIAMOND WAY, LOUISVILLE, KY 40216
-**SINGLE-FAMILY · CALL FIRST**
-
-**Overall Priority Score:** **94/100** — combined call-order score
-**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
-**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Public-Source Exposure:** **11/100** — deterministic saturation heuristic; not observed investor competition
-**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; multiple_specific_distress_terms=-7; bounded_score=11
-**Freshness Score:** **82/100** — 1-3 DAYS
-
-**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro code evidence identifies an abandoned structure with reported structural, infestation, dangerous-tree, and public-hazard concerns.
-**Key complaint / distress:** structural/foundation; dangerous tree; infestation; public hazard; vacant/abandoned | X90 Tree, X156 | Priority: HIGH | Distress score: 14 | Status: Hold | Occupancy: ABANDONED STRUCTURE | Distress signals: structural/foundation; dangerous tree; infestation; public hazard; vacant/abandoned | Violations: X90 Tree, X156 | Violation rows: 2 | Date: 2026-10-06…
-**Inspector / confirmed evidence:** structural/foundation; dangerous tree; infestation; public hazard; vacant/abandoned | X90 Tree, X156 | Priority: HIGH | Distress score: 14 | Status: Hold | Occupancy: ABANDONED STRUCTURE | Distress signals: structural/foundation; dangerous tree; infestation; public hazard; vacant/abandoned | Violations: X90 Tree, X156 | Violation rows: 2 | Date: 2026-10-06…
-**Owner:** HICKS ANGELIA D
-**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
-**Owner mailing:** —
-**Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `121101140004`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `121101140004`
-**Parcel-data source:** LOJIC / Jefferson County parcel data
-**SFR screen:** LOJIC land use = SINGLE FAMILY
-
-### Distress/source status
-
-**Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
-**Tax delinquency:** UNKNOWN / not verified in this run
-**Will/probate-source signal:** Not returned in this scrape
-**Citation:** No assessed citation in current extract
-**Demolition:** Not verified
-**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
-
-### Exact official/public sources
-
-- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=121101140004&propertySearchFormButton=Search&searchType=ParcelSearch
-
-**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
-**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
-
-### Property-specific questions
-
-1. What kind of shape is the property in right now, beyond normal cosmetic work?
-2. Is anybody living there right now, and if not, how long has it been vacant?
-3. What happened with the structural or safety issues, and has anyone quoted the repairs?
-4. What cleanup, pest, debris, or exterior work still needs to be handled?
-5. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
-6. If the numbers made sense, how quickly would you realistically want it sold?
-
-### Frozen outreach package
-
-**Call opener:**
-> “Hey HICKS ANGELIA D, this is Zack. I wanted to call you about your property over on 4327 DIAMOND WAY, LOUISVILLE, KY 40216. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
-
-**If the seller asks what you are offering:**
-> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
-
-**How did you find me?:**
-> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
-
-**Confirmed-owner voicemail:**
-> “Hey HICKS ANGELIA D, this is Zack. I was giving you a quick call regarding your property over on 4327 DIAMOND WAY, LOUISVILLE, KY 40216 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
-
-**Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with HICKS ANGELIA D regarding a property over on 4327 DIAMOND WAY, LOUISVILLE, KY 40216 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if HICKS ANGELIA D would consider selling the property if the price made sense. If this is HICKS ANGELIA D, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
-
-**Confirmed-owner text:**
-> “Hey HICKS ANGELIA D, this is Zack. I’m reaching out about the property you own over on 4327 DIAMOND WAY, LOUISVILLE, KY 40216 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
-
-**Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with HICKS ANGELIA D regarding a property over on 4327 DIAMOND WAY, LOUISVILLE, KY 40216 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is HICKS ANGELIA D, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
-
-### Universal seller qualification flow
-
-1. **Condition:** “What kind of shape is the property in right now?”
-2. **Occupancy:** “Is anybody living there right now?”
-3. **Motivation:** “What has you open to selling it instead of just keeping it?”
-4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
-5. **Price:** “What were you hoping to get for it?”
-6. **Debt/terms:** “Do you still have any financing on the property?”
-7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
-8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
-
----
-
-## #11  🔥  3632 GREENWOOD AVE, LOUISVILLE, KY 40211
-**SINGLE-FAMILY · CALL FIRST**
-
-**Overall Priority Score:** **94/100** — combined call-order score
-**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
-**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Public-Source Exposure:** **11/100** — deterministic saturation heuristic; not observed investor competition
-**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; multiple_specific_distress_terms=-7; bounded_score=11
-**Freshness Score:** **82/100** — 1-3 DAYS
-
-**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** The Louisville code-violation record on Hold identifies a vacant structure and reports structural, exterior, and roof/gutter concerns.
-**Key complaint / distress:** structural/foundation; exterior/foundation; roof/gutters; vacant/abandoned | X19 Exterior/Foundation | Priority: HIGH | Distress score: 12 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: structural/foundation; exterior/foundation; roof/gutters; vacant/abandoned | Violations: X19 Exterior/Foundation | Violation rows: 1 | Date: 2026-10-06 | C…
-**Inspector / confirmed evidence:** structural/foundation; exterior/foundation; roof/gutters; vacant/abandoned | X19 Exterior/Foundation | Priority: HIGH | Distress score: 12 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: structural/foundation; exterior/foundation; roof/gutters; vacant/abandoned | Violations: X19 Exterior/Foundation | Violation rows: 1 | Date: 2026-10-06 | C…
-**Owner:** MOSES JUDY
-**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
-**Owner mailing:** —
-**Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `045D00710000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `045D00710000`
-**Parcel-data source:** LOJIC / Jefferson County parcel data
-**SFR screen:** LOJIC land use = SINGLE FAMILY
-
-### Distress/source status
-
-**Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
-**Tax delinquency:** UNKNOWN / not verified in this run
-**Will/probate-source signal:** Not returned in this scrape
-**Citation:** No assessed citation in current extract
-**Demolition:** Not verified
-**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
-
-### Exact official/public sources
-
-- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=045D00710000&propertySearchFormButton=Search&searchType=ParcelSearch
-
-**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
-**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
-
-### Property-specific questions
-
-1. What kind of shape is the property in right now, beyond normal cosmetic work?
-2. Is anybody living there right now, and if not, how long has it been vacant?
-3. What happened with the structural or safety issues, and has anyone quoted the repairs?
-4. Has the roof or water intrusion been repaired, and is there any remaining mold or interior damage?
-5. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
-6. If the numbers made sense, how quickly would you realistically want it sold?
-
-### Frozen outreach package
-
-**Call opener:**
-> “Hey MOSES JUDY, this is Zack. I wanted to call you about your property over on 3632 GREENWOOD AVE, LOUISVILLE, KY 40211. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
-
-**If the seller asks what you are offering:**
-> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
-
-**How did you find me?:**
-> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
-
-**Confirmed-owner voicemail:**
-> “Hey MOSES JUDY, this is Zack. I was giving you a quick call regarding your property over on 3632 GREENWOOD AVE, LOUISVILLE, KY 40211 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
-
-**Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with MOSES JUDY regarding a property over on 3632 GREENWOOD AVE, LOUISVILLE, KY 40211 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if MOSES JUDY would consider selling the property if the price made sense. If this is MOSES JUDY, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
-
-**Confirmed-owner text:**
-> “Hey MOSES JUDY, this is Zack. I’m reaching out about the property you own over on 3632 GREENWOOD AVE, LOUISVILLE, KY 40211 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
-
-**Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with MOSES JUDY regarding a property over on 3632 GREENWOOD AVE, LOUISVILLE, KY 40211 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is MOSES JUDY, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
-
-### Universal seller qualification flow
-
-1. **Condition:** “What kind of shape is the property in right now?”
-2. **Occupancy:** “Is anybody living there right now?”
-3. **Motivation:** “What has you open to selling it instead of just keeping it?”
-4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
-5. **Price:** “What were you hoping to get for it?”
-6. **Debt/terms:** “Do you still have any financing on the property?”
-7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
-8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
-
----
-
-## #12  🔥  1834 W GAULBERT AVE, LOUISVILLE, KY 40210
-**SINGLE-FAMILY · CALL FIRST**
-
-**Overall Priority Score:** **94/100** — combined call-order score
-**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
-**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Public-Source Exposure:** **11/100** — deterministic saturation heuristic; not observed investor competition
-**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; multiple_specific_distress_terms=-7; bounded_score=11
-**Freshness Score:** **82/100** — 1-3 DAYS
-
-**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** The Louisville code-violation record on Hold identifies a vacant structure and reports structural, exterior, and roof/gutter concerns.
-**Key complaint / distress:** structural/foundation; exterior/foundation; roof/gutters; vacant/abandoned | X19 Exterior/Foundation | Priority: HIGH | Distress score: 12 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: structural/foundation; exterior/foundation; roof/gutters; vacant/abandoned | Violations: X19 Exterior/Foundation | Violation rows: 1 | Date: 2026-10-06 | C…
-**Inspector / confirmed evidence:** structural/foundation; exterior/foundation; roof/gutters; vacant/abandoned | X19 Exterior/Foundation | Priority: HIGH | Distress score: 12 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: structural/foundation; exterior/foundation; roof/gutters; vacant/abandoned | Violations: X19 Exterior/Foundation | Violation rows: 1 | Date: 2026-10-06 | C…
-**Owner:** CUMMINGS DONALD WILLARD
-**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
-**Owner mailing:** —
-**Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `041D01290000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `041D01290000`
-**Parcel-data source:** LOJIC / Jefferson County parcel data
-**SFR screen:** LOJIC land use = SINGLE FAMILY
-
-### Distress/source status
-
-**Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
-**Tax delinquency:** UNKNOWN / not verified in this run
-**Will/probate-source signal:** Not returned in this scrape
-**Citation:** No assessed citation in current extract
-**Demolition:** Not verified
-**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
-
-### Exact official/public sources
-
-- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=041D01290000&propertySearchFormButton=Search&searchType=ParcelSearch
-
-**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
-**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
-
-### Property-specific questions
-
-1. What kind of shape is the property in right now, beyond normal cosmetic work?
-2. Is anybody living there right now, and if not, how long has it been vacant?
-3. What happened with the structural or safety issues, and has anyone quoted the repairs?
-4. Has the roof or water intrusion been repaired, and is there any remaining mold or interior damage?
-5. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
-6. If the numbers made sense, how quickly would you realistically want it sold?
-
-### Frozen outreach package
-
-**Call opener:**
-> “Hey CUMMINGS DONALD WILLARD, this is Zack. I wanted to call you about your property over on 1834 W GAULBERT AVE, LOUISVILLE, KY 40210. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
-
-**If the seller asks what you are offering:**
-> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
-
-**How did you find me?:**
-> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
-
-**Confirmed-owner voicemail:**
-> “Hey CUMMINGS DONALD WILLARD, this is Zack. I was giving you a quick call regarding your property over on 1834 W GAULBERT AVE, LOUISVILLE, KY 40210 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
-
-**Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with CUMMINGS DONALD WILLARD regarding a property over on 1834 W GAULBERT AVE, LOUISVILLE, KY 40210 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if CUMMINGS DONALD WILLARD would consider selling the property if the price made sense. If this is CUMMINGS DONALD WILLARD, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
-
-**Confirmed-owner text:**
-> “Hey CUMMINGS DONALD WILLARD, this is Zack. I’m reaching out about the property you own over on 1834 W GAULBERT AVE, LOUISVILLE, KY 40210 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
-
-**Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with CUMMINGS DONALD WILLARD regarding a property over on 1834 W GAULBERT AVE, LOUISVILLE, KY 40210 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is CUMMINGS DONALD WILLARD, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
-
-### Universal seller qualification flow
-
-1. **Condition:** “What kind of shape is the property in right now?”
-2. **Occupancy:** “Is anybody living there right now?”
-3. **Motivation:** “What has you open to selling it instead of just keeping it?”
-4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
-5. **Price:** “What were you hoping to get for it?”
-6. **Debt/terms:** “Do you still have any financing on the property?”
-7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
-8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
-
----
-
-## #13  🔥  4200 HUNSINGER LN, LOUISVILLE, KY 40220
-**SINGLE-FAMILY · CALL FIRST**
-
-**Overall Priority Score:** **94/100** — combined call-order score
-**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
-**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Public-Source Exposure:** **11/100** — deterministic saturation heuristic; not observed investor competition
-**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; multiple_specific_distress_terms=-7; bounded_score=11
-**Freshness Score:** **82/100** — 1-3 DAYS
-
-**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro Code Violations reports roof/gutter and structural/foundation issues together with a public-hazard indicator.
-**Key complaint / distress:** roof/gutters; public hazard; structural/foundation; fence/accessory | X50 Roof/Gutters, X78 Fence/Accessory | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: roof/gutters; public hazard; structural/foundation; fence/accessory | Violations: X50 Roof/Gutters, X78 Fence/Accessory | Violation ro…
-**Inspector / confirmed evidence:** roof/gutters; public hazard; structural/foundation; fence/accessory | X50 Roof/Gutters, X78 Fence/Accessory | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: roof/gutters; public hazard; structural/foundation; fence/accessory | Violations: X50 Roof/Gutters, X78 Fence/Accessory | Violation ro…
-**Owner:** HOOKER RONDELL A & DANIEL RACHEL D
-**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
-**Owner mailing:** —
-**Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `225500250000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `225500250000`
-**Parcel-data source:** LOJIC / Jefferson County parcel data
-**SFR screen:** LOJIC land use = SINGLE FAMILY
-
-### Distress/source status
-
-**Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
-**Tax delinquency:** UNKNOWN / not verified in this run
-**Will/probate-source signal:** Not returned in this scrape
-**Citation:** No assessed citation in current extract
-**Demolition:** Not verified
-**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
-
-### Exact official/public sources
-
-- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=225500250000&propertySearchFormButton=Search&searchType=ParcelSearch
-
-**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
-**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
-
-### Property-specific questions
-
-1. What kind of shape is the property in right now, beyond normal cosmetic work?
-2. Is anybody living there right now, and if not, how long has it been vacant?
-3. What happened with the structural or safety issues, and has anyone quoted the repairs?
-4. Has the roof or water intrusion been repaired, and is there any remaining mold or interior damage?
-5. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
-6. If the numbers made sense, how quickly would you realistically want it sold?
-
-### Frozen outreach package
-
-**Call opener:**
-> “Hey HOOKER RONDELL A & DANIEL RACHEL D, this is Zack. I wanted to call you about your property over on 4200 HUNSINGER LN, LOUISVILLE, KY 40220. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
-
-**If the seller asks what you are offering:**
-> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
-
-**How did you find me?:**
-> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
-
-**Confirmed-owner voicemail:**
-> “Hey HOOKER RONDELL A & DANIEL RACHEL D, this is Zack. I was giving you a quick call regarding your property over on 4200 HUNSINGER LN, LOUISVILLE, KY 40220 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
-
-**Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with HOOKER RONDELL A & DANIEL RACHEL D regarding a property over on 4200 HUNSINGER LN, LOUISVILLE, KY 40220 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if HOOKER RONDELL A & DANIEL RACHEL D would consider selling the property if the price made sense. If this is HOOKER RONDELL A & DANIEL RACHEL D, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
-
-**Confirmed-owner text:**
-> “Hey HOOKER RONDELL A & DANIEL RACHEL D, this is Zack. I’m reaching out about the property you own over on 4200 HUNSINGER LN, LOUISVILLE, KY 40220 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
-
-**Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with HOOKER RONDELL A & DANIEL RACHEL D regarding a property over on 4200 HUNSINGER LN, LOUISVILLE, KY 40220 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is HOOKER RONDELL A & DANIEL RACHEL D, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
-
-### Universal seller qualification flow
-
-1. **Condition:** “What kind of shape is the property in right now?”
-2. **Occupancy:** “Is anybody living there right now?”
-3. **Motivation:** “What has you open to selling it instead of just keeping it?”
-4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
-5. **Price:** “What were you hoping to get for it?”
-6. **Debt/terms:** “Do you still have any financing on the property?”
-7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
-8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
-
----
-
-## #14  🔥  8907 SPALAGO CT, LOUISVILLE, KY 40299
-**SINGLE-FAMILY · CALL FIRST**
-
-**Overall Priority Score:** **94/100** — combined call-order score
-**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
-**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Public-Source Exposure:** **11/100** — deterministic saturation heuristic; not observed investor competition
-**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; multiple_specific_distress_terms=-7; bounded_score=11
-**Freshness Score:** **82/100** — 1-3 DAYS
-
-**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro Code Violations reports an occupied property on hold with structural/foundation, dangerous-tree, infestation, and public-hazard issues.
-**Key complaint / distress:** structural/foundation; dangerous tree; infestation; public hazard | X90 Tree | Priority: MEDIUM | Distress score: 9 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; dangerous tree; infestation; public hazard | Violations: X90 Tree | Violation rows: 1 | Date: 2026-10-06 | Case IDs: ENF-PMNT-26-011091-4 | Parcel: 18490…
-**Inspector / confirmed evidence:** structural/foundation; dangerous tree; infestation; public hazard | X90 Tree | Priority: MEDIUM | Distress score: 9 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; dangerous tree; infestation; public hazard | Violations: X90 Tree | Violation rows: 1 | Date: 2026-10-06 | Case IDs: ENF-PMNT-26-011091-4 | Parcel: 18490…
-**Owner:** MEREDITH ADAM T
-**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
-**Owner mailing:** —
-**Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `184900420000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `184900420000`
-**Parcel-data source:** LOJIC / Jefferson County parcel data
-**SFR screen:** LOJIC land use = SINGLE FAMILY
-
-### Distress/source status
-
-**Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
-**Tax delinquency:** UNKNOWN / not verified in this run
-**Will/probate-source signal:** Not returned in this scrape
-**Citation:** No assessed citation in current extract
-**Demolition:** Not verified
-**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
-
-### Exact official/public sources
-
-- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=184900420000&propertySearchFormButton=Search&searchType=ParcelSearch
-
-**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
-**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
-
-### Property-specific questions
-
-1. What kind of shape is the property in right now, beyond normal cosmetic work?
-2. Is anybody living there right now, and if not, how long has it been vacant?
-3. What happened with the structural or safety issues, and has anyone quoted the repairs?
-4. What cleanup, pest, debris, or exterior work still needs to be handled?
-5. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
-6. If the numbers made sense, how quickly would you realistically want it sold?
-
-### Frozen outreach package
-
-**Call opener:**
-> “Hey MEREDITH ADAM T, this is Zack. I wanted to call you about your property over on 8907 SPALAGO CT, LOUISVILLE, KY 40299. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
-
-**If the seller asks what you are offering:**
-> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
-
-**How did you find me?:**
-> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
-
-**Confirmed-owner voicemail:**
-> “Hey MEREDITH ADAM T, this is Zack. I was giving you a quick call regarding your property over on 8907 SPALAGO CT, LOUISVILLE, KY 40299 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
-
-**Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with MEREDITH ADAM T regarding a property over on 8907 SPALAGO CT, LOUISVILLE, KY 40299 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if MEREDITH ADAM T would consider selling the property if the price made sense. If this is MEREDITH ADAM T, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
-
-**Confirmed-owner text:**
-> “Hey MEREDITH ADAM T, this is Zack. I’m reaching out about the property you own over on 8907 SPALAGO CT, LOUISVILLE, KY 40299 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
-
-**Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with MEREDITH ADAM T regarding a property over on 8907 SPALAGO CT, LOUISVILLE, KY 40299 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is MEREDITH ADAM T, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
-
-### Universal seller qualification flow
-
-1. **Condition:** “What kind of shape is the property in right now?”
-2. **Occupancy:** “Is anybody living there right now?”
-3. **Motivation:** “What has you open to selling it instead of just keeping it?”
-4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
-5. **Price:** “What were you hoping to get for it?”
-6. **Debt/terms:** “Do you still have any financing on the property?”
-7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
-8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
-
----
-
-## #15  🔥  5202 FIRWOOD LN, LOUISVILLE, KY 40291
-**SINGLE-FAMILY · CALL FIRST**
-
-**Overall Priority Score:** **94/100** — combined call-order score
-**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
-**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Public-Source Exposure:** **11/100** — deterministic saturation heuristic; not observed investor competition
-**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; multiple_specific_distress_terms=-7; bounded_score=11
-**Freshness Score:** **82/100** — 1-3 DAYS
-
-**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro Code Violations reports an occupied property on hold with structural/foundation, dangerous-tree, infestation, and public-hazard issues.
-**Key complaint / distress:** structural/foundation; dangerous tree; infestation; public hazard | X90 Tree | Priority: MEDIUM | Distress score: 9 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; dangerous tree; infestation; public hazard | Violations: X90 Tree | Violation rows: 1 | Date: 2026-10-06 | Case IDs: ENF-PMNT-26-021114-2 | Parcel: 18720…
-**Inspector / confirmed evidence:** structural/foundation; dangerous tree; infestation; public hazard | X90 Tree | Priority: MEDIUM | Distress score: 9 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; dangerous tree; infestation; public hazard | Violations: X90 Tree | Violation rows: 1 | Date: 2026-10-06 | Case IDs: ENF-PMNT-26-021114-2 | Parcel: 18720…
-**Owner:** TAYLOR JUSTIN
-**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
-**Owner mailing:** —
-**Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `187207390000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `187207390000`
-**Parcel-data source:** LOJIC / Jefferson County parcel data
-**SFR screen:** LOJIC land use = SINGLE FAMILY
-
-### Distress/source status
-
-**Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
-**Tax delinquency:** UNKNOWN / not verified in this run
-**Will/probate-source signal:** Not returned in this scrape
-**Citation:** No assessed citation in current extract
-**Demolition:** Not verified
-**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
-
-### Exact official/public sources
-
-- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=187207390000&propertySearchFormButton=Search&searchType=ParcelSearch
-
-**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
-**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
-
-### Property-specific questions
-
-1. What kind of shape is the property in right now, beyond normal cosmetic work?
-2. Is anybody living there right now, and if not, how long has it been vacant?
-3. What happened with the structural or safety issues, and has anyone quoted the repairs?
-4. What cleanup, pest, debris, or exterior work still needs to be handled?
-5. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
-6. If the numbers made sense, how quickly would you realistically want it sold?
-
-### Frozen outreach package
-
-**Call opener:**
-> “Hey TAYLOR JUSTIN, this is Zack. I wanted to call you about your property over on 5202 FIRWOOD LN, LOUISVILLE, KY 40291. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
-
-**If the seller asks what you are offering:**
-> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
-
-**How did you find me?:**
-> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
-
-**Confirmed-owner voicemail:**
-> “Hey TAYLOR JUSTIN, this is Zack. I was giving you a quick call regarding your property over on 5202 FIRWOOD LN, LOUISVILLE, KY 40291 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
-
-**Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with TAYLOR JUSTIN regarding a property over on 5202 FIRWOOD LN, LOUISVILLE, KY 40291 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if TAYLOR JUSTIN would consider selling the property if the price made sense. If this is TAYLOR JUSTIN, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
-
-**Confirmed-owner text:**
-> “Hey TAYLOR JUSTIN, this is Zack. I’m reaching out about the property you own over on 5202 FIRWOOD LN, LOUISVILLE, KY 40291 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
-
-**Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with TAYLOR JUSTIN regarding a property over on 5202 FIRWOOD LN, LOUISVILLE, KY 40291 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is TAYLOR JUSTIN, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
-
-### Universal seller qualification flow
-
-1. **Condition:** “What kind of shape is the property in right now?”
-2. **Occupancy:** “Is anybody living there right now?”
-3. **Motivation:** “What has you open to selling it instead of just keeping it?”
-4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
-5. **Price:** “What were you hoping to get for it?”
-6. **Debt/terms:** “Do you still have any financing on the property?”
-7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
-8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
-
----
-
-## #16  🔥  4115 PINECROFT DR 4, LOUISVILLE, KY 40219
-**SINGLE-FAMILY · CALL FIRST**
-
-**Overall Priority Score:** **93/100** — combined call-order score
-**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
-**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Public-Source Exposure:** **14/100** — deterministic saturation heuristic; not observed investor competition
-**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; specific_distress_term=-4; bounded_score=14
-**Freshness Score:** **82/100** — 1-3 DAYS
-
-**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro Code Violations reports an occupied property with a citation and multiple structural, electrical, exterior, and public-hazard issues.
-**Key complaint / distress:** structural/foundation; electric; public hazard; windows/doors; exterior/foundation; trash/weeds | E03, E05, I13, I18 Public Hazard | Priority: HIGH | Distress score: 18 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; electric; public hazard; windows/doors; exterior/foundation; trash/weeds | Violations: E03, E05,…
-**Inspector / confirmed evidence:** structural/foundation; electric; public hazard; windows/doors; exterior/foundation; trash/weeds | E03, E05, I13, I18 Public Hazard | Priority: HIGH | Distress score: 18 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; electric; public hazard; windows/doors; exterior/foundation; trash/weeds | Violations: E03, E05,…
-**Owner:** MICHAEL S POLLARD REVOCABLE LIVING T
-**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
-**Owner mailing:** —
-**Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `065100590000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `065100590000`
-**Parcel-data source:** LOJIC / Jefferson County parcel data
-**SFR screen:** LOJIC land use = SINGLE FAMILY
-
-### Distress/source status
-
-**Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
-**Tax delinquency:** UNKNOWN / not verified in this run
-**Will/probate-source signal:** Not returned in this scrape
-**Citation:** $800 assessed; current outstanding balance NOT VERIFIED
-**Demolition:** Not verified
-**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
-
-### Exact official/public sources
-
-- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=065100590000&propertySearchFormButton=Search&searchType=ParcelSearch
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=102602840000&propertySearchFormButton=Search&searchType=ParcelSearch
 
 **Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
 **GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
@@ -1371,7 +764,7 @@ Records: **27**
 ### Frozen outreach package
 
 **Call opener:**
-> “Hey MICHAEL S POLLARD REVOCABLE LIVING T, this is Zack. I wanted to call you about your property over on 4115 PINECROFT DR 4, LOUISVILLE, KY 40219. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+> “Hey RODRIGUEZ JEFFERY P & JONES TONI L, this is Zack. I wanted to call you about your property over on 5123 CHRISTIE AVE, LOUISVILLE, KY 40216. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
 
 **If the seller asks what you are offering:**
 > “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
@@ -1380,16 +773,16 @@ Records: **27**
 > “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
 
 **Confirmed-owner voicemail:**
-> “Hey MICHAEL S POLLARD REVOCABLE LIVING T, this is Zack. I was giving you a quick call regarding your property over on 4115 PINECROFT DR 4, LOUISVILLE, KY 40219 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+> “Hey RODRIGUEZ JEFFERY P & JONES TONI L, this is Zack. I was giving you a quick call regarding your property over on 5123 CHRISTIE AVE, LOUISVILLE, KY 40216 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
 
 **Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with MICHAEL S POLLARD REVOCABLE LIVING T regarding a property over on 4115 PINECROFT DR 4, LOUISVILLE, KY 40219 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if MICHAEL S POLLARD REVOCABLE LIVING T would consider selling the property if the price made sense. If this is MICHAEL S POLLARD REVOCABLE LIVING T, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+> “Hey, this is Zack. I’m trying to get in touch with RODRIGUEZ JEFFERY P & JONES TONI L regarding a property over on 5123 CHRISTIE AVE, LOUISVILLE, KY 40216 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if RODRIGUEZ JEFFERY P & JONES TONI L would consider selling the property if the price made sense. If this is RODRIGUEZ JEFFERY P & JONES TONI L, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
 
 **Confirmed-owner text:**
-> “Hey MICHAEL S POLLARD REVOCABLE LIVING T, this is Zack. I’m reaching out about the property you own over on 4115 PINECROFT DR 4, LOUISVILLE, KY 40219 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+> “Hey RODRIGUEZ JEFFERY P & JONES TONI L, this is Zack. I’m reaching out about the property you own over on 5123 CHRISTIE AVE, LOUISVILLE, KY 40216 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
 
 **Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with MICHAEL S POLLARD REVOCABLE LIVING T regarding a property over on 4115 PINECROFT DR 4, LOUISVILLE, KY 40219 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is MICHAEL S POLLARD REVOCABLE LIVING T, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+> “Hey, my name’s Zack. I’m trying to get in touch with RODRIGUEZ JEFFERY P & JONES TONI L regarding a property over on 5123 CHRISTIE AVE, LOUISVILLE, KY 40216 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is RODRIGUEZ JEFFERY P & JONES TONI L, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
 
 ### Universal seller qualification flow
 
@@ -1404,44 +797,44 @@ Records: **27**
 
 ---
 
-## #17  🔥  1820 STANDARD AVE, LOUISVILLE, KY 40210
+## #4  🔥  10502 MCCLURE CT, LOUISVILLE, KY 40241
 **SINGLE-FAMILY · CALL FIRST**
 
-**Overall Priority Score:** **93/100** — combined call-order score
+**Overall Priority Score:** **94/100** — combined call-order score
 **AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Public-Source Exposure:** **14/100** — deterministic saturation heuristic; not observed investor competition
+**Public-Source Exposure:** **10/100** — deterministic saturation heuristic; not observed investor competition
 **Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; specific_distress_term=-4; bounded_score=14
+**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; detail_rich_source_narrative=-10; specific_distress_term=-4; bounded_score=10
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro Code Violations reports a vacant lot subject to a citation referral for vacancy, exterior, trash/weeds, and graffiti issues.
-**Key complaint / distress:** vacant/abandoned; exterior/foundation; trash/weeds; graffiti | 02A Cleaning | Priority: HIGH | Distress score: 14 | Status: Citation Referral | Occupancy: VACANT LOT | Distress signals: vacant/abandoned; exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning | Citation amount: $200 | Violation rows: 2 | Date: 2026-10-06 | Case IDs: ENF-PMNT-2…
-**Inspector / confirmed evidence:** vacant/abandoned; exterior/foundation; trash/weeds; graffiti | 02A Cleaning | Priority: HIGH | Distress score: 14 | Status: Citation Referral | Occupancy: VACANT LOT | Distress signals: vacant/abandoned; exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning | Citation amount: $200 | Violation rows: 2 | Date: 2026-10-06 | Case IDs: ENF-PMNT-2…
-**Owner:** ROGESTER SEAN LEE STEFON
+**Why this lead:** The 2026-10-07 Louisville Metro code citation reports multiple structural, exterior, public-hazard, electrical, heating, and nuisance conditions at an occupied structure.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; public hazard; structural/foundation; porch/stairs; electric; heating | 02A Cleaning, X48 Public Hazard, X81, X93 | Priority: HIGH | Distress score: 22 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; public hazard; structural/foundation; porch/stai…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; public hazard; structural/foundation; porch/stairs; electric; heating | 02A Cleaning, X48 Public Hazard, X81, X93 | Priority: HIGH | Distress score: 22 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; public hazard; structural/foundation; porch/stai…
+**Owner:** GULCZEWSKI JASON P & GULCZEWSKI JULIE MARIE
 **Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
 **Owner mailing:** —
 **Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `041C02010000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `041C02010000`
+**Parcel ID:** `166900550000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `166900550000`
 **Parcel-data source:** LOJIC / Jefferson County parcel data
 **SFR screen:** LOJIC land use = SINGLE FAMILY
 
 ### Distress/source status
 
 **Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
 **Tax delinquency:** UNKNOWN / not verified in this run
 **Will/probate-source signal:** Not returned in this scrape
-**Citation:** $200 assessed; current outstanding balance NOT VERIFIED
+**Citation:** $2,800 assessed; current outstanding balance NOT VERIFIED
 **Demolition:** Not verified
 **Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
 
 ### Exact official/public sources
 
 - **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=041C02010000&propertySearchFormButton=Search&searchType=ParcelSearch
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=166900550000&propertySearchFormButton=Search&searchType=ParcelSearch
 
 **Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
 **GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
@@ -1450,14 +843,16 @@ Records: **27**
 
 1. What kind of shape is the property in right now, beyond normal cosmetic work?
 2. Is anybody living there right now, and if not, how long has it been vacant?
-3. What cleanup, pest, debris, or exterior work still needs to be handled?
-4. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
-5. If the numbers made sense, how quickly would you realistically want it sold?
+3. What happened with the structural or safety issues, and has anyone quoted the repairs?
+4. Are the utilities currently on, and are there known electrical, fire, plumbing, HVAC, or permit issues?
+5. What cleanup, pest, debris, or exterior work still needs to be handled?
+6. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
+7. If the numbers made sense, how quickly would you realistically want it sold?
 
 ### Frozen outreach package
 
 **Call opener:**
-> “Hey ROGESTER SEAN LEE STEFON, this is Zack. I wanted to call you about your property over on 1820 STANDARD AVE, LOUISVILLE, KY 40210. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+> “Hey GULCZEWSKI JASON P & GULCZEWSKI JULIE MARIE, this is Zack. I wanted to call you about your property over on 10502 MCCLURE CT, LOUISVILLE, KY 40241. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
 
 **If the seller asks what you are offering:**
 > “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
@@ -1466,16 +861,16 @@ Records: **27**
 > “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
 
 **Confirmed-owner voicemail:**
-> “Hey ROGESTER SEAN LEE STEFON, this is Zack. I was giving you a quick call regarding your property over on 1820 STANDARD AVE, LOUISVILLE, KY 40210 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+> “Hey GULCZEWSKI JASON P & GULCZEWSKI JULIE MARIE, this is Zack. I was giving you a quick call regarding your property over on 10502 MCCLURE CT, LOUISVILLE, KY 40241 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
 
 **Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with ROGESTER SEAN LEE STEFON regarding a property over on 1820 STANDARD AVE, LOUISVILLE, KY 40210 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if ROGESTER SEAN LEE STEFON would consider selling the property if the price made sense. If this is ROGESTER SEAN LEE STEFON, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+> “Hey, this is Zack. I’m trying to get in touch with GULCZEWSKI JASON P & GULCZEWSKI JULIE MARIE regarding a property over on 10502 MCCLURE CT, LOUISVILLE, KY 40241 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if GULCZEWSKI JASON P & GULCZEWSKI JULIE MARIE would consider selling the property if the price made sense. If this is GULCZEWSKI JASON P & GULCZEWSKI JULIE MARIE, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
 
 **Confirmed-owner text:**
-> “Hey ROGESTER SEAN LEE STEFON, this is Zack. I’m reaching out about the property you own over on 1820 STANDARD AVE, LOUISVILLE, KY 40210 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+> “Hey GULCZEWSKI JASON P & GULCZEWSKI JULIE MARIE, this is Zack. I’m reaching out about the property you own over on 10502 MCCLURE CT, LOUISVILLE, KY 40241 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
 
 **Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with ROGESTER SEAN LEE STEFON regarding a property over on 1820 STANDARD AVE, LOUISVILLE, KY 40210 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is ROGESTER SEAN LEE STEFON, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+> “Hey, my name’s Zack. I’m trying to get in touch with GULCZEWSKI JASON P & GULCZEWSKI JULIE MARIE regarding a property over on 10502 MCCLURE CT, LOUISVILLE, KY 40241 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is GULCZEWSKI JASON P & GULCZEWSKI JULIE MARIE, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
 
 ### Universal seller qualification flow
 
@@ -1490,34 +885,121 @@ Records: **27**
 
 ---
 
-## #18  🔥  6511 CADY DR, LOUISVILLE, KY 40258
+## #10  🔥  685 SOUTHWESTERN PKY, LOUISVILLE, KY 40211
 **SINGLE-FAMILY · CALL FIRST**
 
-**Overall Priority Score:** **93/100** — combined call-order score
+**Overall Priority Score:** **94/100** — combined call-order score
 **AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
 **Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Public-Source Exposure:** **14/100** — deterministic saturation heuristic; not observed investor competition
+**Public-Source Exposure:** **11/100** — deterministic saturation heuristic; not observed investor competition
 **Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; specific_distress_term=-4; bounded_score=14
+**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; multiple_specific_distress_terms=-7; bounded_score=11
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro code evidence reports multiple exterior and nuisance conditions, including a vacant/abandoned signal, although the record labels the structure occupied.
-**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | 02A Cleaning, 05A Abandoned Vehicle, Z01 | Priority: HIGH | Distress score: 14 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | Violations: 02A Cleaning, 05A Abandon…
-**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | 02A Cleaning, 05A Abandoned Vehicle, Z01 | Priority: HIGH | Distress score: 14 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | Violations: 02A Cleaning, 05A Abandon…
-**Owner:** MARTINEZ MIGUEL
+**Why this lead:** The 2026-10-07 Louisville Metro code citation identifies a vacant structure and reports structural, roof, exterior, and public-hazard conditions.
+**Key complaint / distress:** roof/gutters; public hazard; vacant/abandoned; structural/foundation; exterior/foundation | X50 Roof/Gutters, X19 Exterior/Foundation | Priority: HIGH | Distress score: 18 | Status: Citation | Occupancy: VACANT STRUCTURE | Distress signals: roof/gutters; public hazard; vacant/abandoned; structural/foundation; exterior/foundation | Violations: X50 Roof/Gutte…
+**Inspector / confirmed evidence:** roof/gutters; public hazard; vacant/abandoned; structural/foundation; exterior/foundation | X50 Roof/Gutters, X19 Exterior/Foundation | Priority: HIGH | Distress score: 18 | Status: Citation | Occupancy: VACANT STRUCTURE | Distress signals: roof/gutters; public hazard; vacant/abandoned; structural/foundation; exterior/foundation | Violations: X50 Roof/Gutte…
+**Owner:** WADDELL SEAN R Sr
 **Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
 **Owner mailing:** —
 **Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `147300590000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `147300590000`
+**Parcel ID:** `006D00420000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `006D00420000`
 **Parcel-data source:** LOJIC / Jefferson County parcel data
 **SFR screen:** LOJIC land use = SINGLE FAMILY
 
 ### Distress/source status
 
 **Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
+**Tax delinquency:** UNKNOWN / not verified in this run
+**Will/probate-source signal:** Not returned in this scrape
+**Citation:** $1,400 assessed; current outstanding balance NOT VERIFIED
+**Demolition:** Not verified
+**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
+
+### Exact official/public sources
+
+- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=006D00420000&propertySearchFormButton=Search&searchType=ParcelSearch
+
+**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
+**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
+
+### Property-specific questions
+
+1. What kind of shape is the property in right now, beyond normal cosmetic work?
+2. Is anybody living there right now, and if not, how long has it been vacant?
+3. What happened with the structural or safety issues, and has anyone quoted the repairs?
+4. Has the roof or water intrusion been repaired, and is there any remaining mold or interior damage?
+5. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
+6. If the numbers made sense, how quickly would you realistically want it sold?
+
+### Frozen outreach package
+
+**Call opener:**
+> “Hey WADDELL SEAN R Sr, this is Zack. I wanted to call you about your property over on 685 SOUTHWESTERN PKY, LOUISVILLE, KY 40211. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+
+**If the seller asks what you are offering:**
+> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
+
+**How did you find me?:**
+> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
+
+**Confirmed-owner voicemail:**
+> “Hey WADDELL SEAN R Sr, this is Zack. I was giving you a quick call regarding your property over on 685 SOUTHWESTERN PKY, LOUISVILLE, KY 40211 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+
+**Unconfirmed-owner voicemail:**
+> “Hey, this is Zack. I’m trying to get in touch with WADDELL SEAN R Sr regarding a property over on 685 SOUTHWESTERN PKY, LOUISVILLE, KY 40211 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if WADDELL SEAN R Sr would consider selling the property if the price made sense. If this is WADDELL SEAN R Sr, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+
+**Confirmed-owner text:**
+> “Hey WADDELL SEAN R Sr, this is Zack. I’m reaching out about the property you own over on 685 SOUTHWESTERN PKY, LOUISVILLE, KY 40211 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+
+**Unconfirmed-owner text:**
+> “Hey, my name’s Zack. I’m trying to get in touch with WADDELL SEAN R Sr regarding a property over on 685 SOUTHWESTERN PKY, LOUISVILLE, KY 40211 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is WADDELL SEAN R Sr, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+
+### Universal seller qualification flow
+
+1. **Condition:** “What kind of shape is the property in right now?”
+2. **Occupancy:** “Is anybody living there right now?”
+3. **Motivation:** “What has you open to selling it instead of just keeping it?”
+4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
+5. **Price:** “What were you hoping to get for it?”
+6. **Debt/terms:** “Do you still have any financing on the property?”
+7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
+8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
+
+---
+
+## #11  🔥  9310 OMAR KHAYYAM BLVD, LOUISVILLE, KY 40272
+**SINGLE-FAMILY · CALL FIRST**
+
+**Overall Priority Score:** **94/100** — combined call-order score
+**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
+**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
+**Public-Source Exposure:** **11/100** — deterministic saturation heuristic; not observed investor competition
+**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
+**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; multiple_specific_distress_terms=-7; bounded_score=11
+**Freshness Score:** **82/100** — 1-3 DAYS
+
+**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
+**Why this lead:** The Louisville code record reports multiple material building-condition and safety issues, including structural, electrical, and roof-related concerns.
+**Key complaint / distress:** roof/gutters; public hazard; structural/foundation; fence/accessory; exterior/foundation; porch/stairs; electric | X50 Roof/Gutters, X78 Fence/Accessory, X15 | Priority: HIGH | Distress score: 17 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: roof/gutters; public hazard; structural/foundation; fence/accessory; exterior/foundation; porch/…
+**Inspector / confirmed evidence:** roof/gutters; public hazard; structural/foundation; fence/accessory; exterior/foundation; porch/stairs; electric | X50 Roof/Gutters, X78 Fence/Accessory, X15 | Priority: HIGH | Distress score: 17 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: roof/gutters; public hazard; structural/foundation; fence/accessory; exterior/foundation; porch/…
+**Owner:** BROWN DOUGLAS L
+**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
+**Owner mailing:** —
+**Mailing vs property:** UNKNOWN — mailing address unavailable
+**Parcel ID:** `118000280250`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `118000280250`
+**Parcel-data source:** LOJIC / Jefferson County parcel data
+**SFR screen:** LOJIC land use = SINGLE FAMILY
+
+### Distress/source status
+
+**Lis Pendens:** Not returned in this scrape
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
 **Tax delinquency:** UNKNOWN / not verified in this run
 **Will/probate-source signal:** Not returned in this scrape
 **Citation:** No assessed citation in current extract
@@ -1527,7 +1009,445 @@ Records: **27**
 ### Exact official/public sources
 
 - **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=147300590000&propertySearchFormButton=Search&searchType=ParcelSearch
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=118000280250&propertySearchFormButton=Search&searchType=ParcelSearch
+
+**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
+**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
+
+### Property-specific questions
+
+1. What kind of shape is the property in right now, beyond normal cosmetic work?
+2. Is anybody living there right now, and if not, how long has it been vacant?
+3. What happened with the structural or safety issues, and has anyone quoted the repairs?
+4. Has the roof or water intrusion been repaired, and is there any remaining mold or interior damage?
+5. Are the utilities currently on, and are there known electrical, fire, plumbing, HVAC, or permit issues?
+6. What cleanup, pest, debris, or exterior work still needs to be handled?
+7. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
+
+### Frozen outreach package
+
+**Call opener:**
+> “Hey BROWN DOUGLAS L, this is Zack. I wanted to call you about your property over on 9310 OMAR KHAYYAM BLVD, LOUISVILLE, KY 40272. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+
+**If the seller asks what you are offering:**
+> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
+
+**How did you find me?:**
+> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
+
+**Confirmed-owner voicemail:**
+> “Hey BROWN DOUGLAS L, this is Zack. I was giving you a quick call regarding your property over on 9310 OMAR KHAYYAM BLVD, LOUISVILLE, KY 40272 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+
+**Unconfirmed-owner voicemail:**
+> “Hey, this is Zack. I’m trying to get in touch with BROWN DOUGLAS L regarding a property over on 9310 OMAR KHAYYAM BLVD, LOUISVILLE, KY 40272 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if BROWN DOUGLAS L would consider selling the property if the price made sense. If this is BROWN DOUGLAS L, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+
+**Confirmed-owner text:**
+> “Hey BROWN DOUGLAS L, this is Zack. I’m reaching out about the property you own over on 9310 OMAR KHAYYAM BLVD, LOUISVILLE, KY 40272 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+
+**Unconfirmed-owner text:**
+> “Hey, my name’s Zack. I’m trying to get in touch with BROWN DOUGLAS L regarding a property over on 9310 OMAR KHAYYAM BLVD, LOUISVILLE, KY 40272 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is BROWN DOUGLAS L, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+
+### Universal seller qualification flow
+
+1. **Condition:** “What kind of shape is the property in right now?”
+2. **Occupancy:** “Is anybody living there right now?”
+3. **Motivation:** “What has you open to selling it instead of just keeping it?”
+4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
+5. **Price:** “What were you hoping to get for it?”
+6. **Debt/terms:** “Do you still have any financing on the property?”
+7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
+8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
+
+---
+
+## #13  🔥  5605 GOLDENROD RD, LOUISVILLE, KY 40272
+**SINGLE-FAMILY · CALL FIRST**
+
+**Overall Priority Score:** **94/100** — combined call-order score
+**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
+**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
+**Public-Source Exposure:** **11/100** — deterministic saturation heuristic; not observed investor competition
+**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
+**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; multiple_specific_distress_terms=-7; bounded_score=11
+**Freshness Score:** **82/100** — 1-3 DAYS
+
+**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
+**Why this lead:** The Louisville code notice reports structural, exterior, roof, and abandoned-vehicle concerns, with conflicting occupancy information.
+**Key complaint / distress:** vacant/abandoned; abandoned vehicle; structural/foundation; exterior/foundation; roof/gutters | 05A Abandoned Vehicle, X19 Exterior/Foundation | Priority: HIGH | Distress score: 15 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: vacant/abandoned; abandoned vehicle; structural/foundation; exterior/foundation; roof/gutters | Vio…
+**Inspector / confirmed evidence:** vacant/abandoned; abandoned vehicle; structural/foundation; exterior/foundation; roof/gutters | 05A Abandoned Vehicle, X19 Exterior/Foundation | Priority: HIGH | Distress score: 15 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: vacant/abandoned; abandoned vehicle; structural/foundation; exterior/foundation; roof/gutters | Vio…
+**Owner:** RIGGS JAMES W
+**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
+**Owner mailing:** —
+**Mailing vs property:** UNKNOWN — mailing address unavailable
+**Parcel ID:** `117900080515`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `117900080515`
+**Parcel-data source:** LOJIC / Jefferson County parcel data
+**SFR screen:** LOJIC land use = SINGLE FAMILY
+
+### Distress/source status
+
+**Lis Pendens:** Not returned in this scrape
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
+**Tax delinquency:** UNKNOWN / not verified in this run
+**Will/probate-source signal:** Not returned in this scrape
+**Citation:** No assessed citation in current extract
+**Demolition:** Not verified
+**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
+
+### Exact official/public sources
+
+- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=117900080515&propertySearchFormButton=Search&searchType=ParcelSearch
+
+**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
+**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
+
+### Property-specific questions
+
+1. What kind of shape is the property in right now, beyond normal cosmetic work?
+2. Is anybody living there right now, and if not, how long has it been vacant?
+3. What happened with the structural or safety issues, and has anyone quoted the repairs?
+4. Has the roof or water intrusion been repaired, and is there any remaining mold or interior damage?
+5. What cleanup, pest, debris, or exterior work still needs to be handled?
+6. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
+7. If the numbers made sense, how quickly would you realistically want it sold?
+
+### Frozen outreach package
+
+**Call opener:**
+> “Hey RIGGS JAMES W, this is Zack. I wanted to call you about your property over on 5605 GOLDENROD RD, LOUISVILLE, KY 40272. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+
+**If the seller asks what you are offering:**
+> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
+
+**How did you find me?:**
+> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
+
+**Confirmed-owner voicemail:**
+> “Hey RIGGS JAMES W, this is Zack. I was giving you a quick call regarding your property over on 5605 GOLDENROD RD, LOUISVILLE, KY 40272 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+
+**Unconfirmed-owner voicemail:**
+> “Hey, this is Zack. I’m trying to get in touch with RIGGS JAMES W regarding a property over on 5605 GOLDENROD RD, LOUISVILLE, KY 40272 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if RIGGS JAMES W would consider selling the property if the price made sense. If this is RIGGS JAMES W, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+
+**Confirmed-owner text:**
+> “Hey RIGGS JAMES W, this is Zack. I’m reaching out about the property you own over on 5605 GOLDENROD RD, LOUISVILLE, KY 40272 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+
+**Unconfirmed-owner text:**
+> “Hey, my name’s Zack. I’m trying to get in touch with RIGGS JAMES W regarding a property over on 5605 GOLDENROD RD, LOUISVILLE, KY 40272 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is RIGGS JAMES W, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+
+### Universal seller qualification flow
+
+1. **Condition:** “What kind of shape is the property in right now?”
+2. **Occupancy:** “Is anybody living there right now?”
+3. **Motivation:** “What has you open to selling it instead of just keeping it?”
+4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
+5. **Price:** “What were you hoping to get for it?”
+6. **Debt/terms:** “Do you still have any financing on the property?”
+7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
+8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
+
+---
+
+## #14  🔥  12518 HEDGEAPPLE WAY, LOUISVILLE, KY 40272
+**SINGLE-FAMILY · CALL FIRST**
+
+**Overall Priority Score:** **94/100** — combined call-order score
+**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
+**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
+**Public-Source Exposure:** **11/100** — deterministic saturation heuristic; not observed investor competition
+**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
+**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; multiple_specific_distress_terms=-7; bounded_score=11
+**Freshness Score:** **82/100** — 1-3 DAYS
+
+**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
+**Why this lead:** Louisville Metro code evidence records structural/foundation, dangerous-tree, infestation, and public-hazard concerns at the occupied property.
+**Key complaint / distress:** structural/foundation; dangerous tree; infestation; public hazard | X90 Tree | Priority: MEDIUM | Distress score: 9 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; dangerous tree; infestation; public hazard | Violations: X90 Tree | Violation rows: 1 | Date: 2026-10-07 | Case IDs: ENF-PMNT-26-013735-2 | P…
+**Inspector / confirmed evidence:** structural/foundation; dangerous tree; infestation; public hazard | X90 Tree | Priority: MEDIUM | Distress score: 9 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; dangerous tree; infestation; public hazard | Violations: X90 Tree | Violation rows: 1 | Date: 2026-10-07 | Case IDs: ENF-PMNT-26-013735-2 | P…
+**Owner:** MUGISHA MYLES & MAHORO PROVIDENCE
+**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
+**Owner mailing:** —
+**Mailing vs property:** UNKNOWN — mailing address unavailable
+**Parcel ID:** `333901080000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `333901080000`
+**Parcel-data source:** LOJIC / Jefferson County parcel data
+**SFR screen:** LOJIC land use = SINGLE FAMILY
+
+### Distress/source status
+
+**Lis Pendens:** Not returned in this scrape
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
+**Tax delinquency:** UNKNOWN / not verified in this run
+**Will/probate-source signal:** Not returned in this scrape
+**Citation:** No assessed citation in current extract
+**Demolition:** Not verified
+**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
+
+### Exact official/public sources
+
+- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=333901080000&propertySearchFormButton=Search&searchType=ParcelSearch
+
+**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
+**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
+
+### Property-specific questions
+
+1. What kind of shape is the property in right now, beyond normal cosmetic work?
+2. Is anybody living there right now, and if not, how long has it been vacant?
+3. What happened with the structural or safety issues, and has anyone quoted the repairs?
+4. What cleanup, pest, debris, or exterior work still needs to be handled?
+5. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
+6. If the numbers made sense, how quickly would you realistically want it sold?
+
+### Frozen outreach package
+
+**Call opener:**
+> “Hey MUGISHA MYLES & MAHORO PROVIDENCE, this is Zack. I wanted to call you about your property over on 12518 HEDGEAPPLE WAY, LOUISVILLE, KY 40272. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+
+**If the seller asks what you are offering:**
+> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
+
+**How did you find me?:**
+> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
+
+**Confirmed-owner voicemail:**
+> “Hey MUGISHA MYLES & MAHORO PROVIDENCE, this is Zack. I was giving you a quick call regarding your property over on 12518 HEDGEAPPLE WAY, LOUISVILLE, KY 40272 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+
+**Unconfirmed-owner voicemail:**
+> “Hey, this is Zack. I’m trying to get in touch with MUGISHA MYLES & MAHORO PROVIDENCE regarding a property over on 12518 HEDGEAPPLE WAY, LOUISVILLE, KY 40272 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if MUGISHA MYLES & MAHORO PROVIDENCE would consider selling the property if the price made sense. If this is MUGISHA MYLES & MAHORO PROVIDENCE, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+
+**Confirmed-owner text:**
+> “Hey MUGISHA MYLES & MAHORO PROVIDENCE, this is Zack. I’m reaching out about the property you own over on 12518 HEDGEAPPLE WAY, LOUISVILLE, KY 40272 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+
+**Unconfirmed-owner text:**
+> “Hey, my name’s Zack. I’m trying to get in touch with MUGISHA MYLES & MAHORO PROVIDENCE regarding a property over on 12518 HEDGEAPPLE WAY, LOUISVILLE, KY 40272 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is MUGISHA MYLES & MAHORO PROVIDENCE, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+
+### Universal seller qualification flow
+
+1. **Condition:** “What kind of shape is the property in right now?”
+2. **Occupancy:** “Is anybody living there right now?”
+3. **Motivation:** “What has you open to selling it instead of just keeping it?”
+4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
+5. **Price:** “What were you hoping to get for it?”
+6. **Debt/terms:** “Do you still have any financing on the property?”
+7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
+8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
+
+---
+
+## #15  🔥  2521 GRIFFITHS AVE, LOUISVILLE, KY 40212
+**SINGLE-FAMILY · CALL FIRST**
+
+**Overall Priority Score:** **93/100** — combined call-order score
+**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
+**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
+**Public-Source Exposure:** **14/100** — deterministic saturation heuristic; not observed investor competition
+**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
+**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; specific_distress_term=-4; bounded_score=14
+**Freshness Score:** **82/100** — 1-3 DAYS
+
+**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
+**Why this lead:** The Louisville code record identifies a vacant structure and reports exterior, cleanup, roof, opening, and public-hazard concerns.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; windows/doors; roof/gutters; public hazard | 02A Cleaning, 01A, X50 Roof/Gutters | Priority: HIGH | Distress score: 17 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; windows/doors; roof/gutters; public haz…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; windows/doors; roof/gutters; public hazard | 02A Cleaning, 01A, X50 Roof/Gutters | Priority: HIGH | Distress score: 17 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; windows/doors; roof/gutters; public haz…
+**Owner:** GOURDINE NATHANIEL AMAL
+**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
+**Owner mailing:** —
+**Mailing vs property:** UNKNOWN — mailing address unavailable
+**Parcel ID:** `004H00210000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `004H00210000`
+**Parcel-data source:** LOJIC / Jefferson County parcel data
+**SFR screen:** LOJIC land use = SINGLE FAMILY
+
+### Distress/source status
+
+**Lis Pendens:** Not returned in this scrape
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
+**Tax delinquency:** UNKNOWN / not verified in this run
+**Will/probate-source signal:** Not returned in this scrape
+**Citation:** No assessed citation in current extract
+**Demolition:** Not verified
+**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
+
+### Exact official/public sources
+
+- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=004H00210000&propertySearchFormButton=Search&searchType=ParcelSearch
+
+**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
+**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
+
+### Property-specific questions
+
+1. What kind of shape is the property in right now, beyond normal cosmetic work?
+2. Is anybody living there right now, and if not, how long has it been vacant?
+3. Has the roof or water intrusion been repaired, and is there any remaining mold or interior damage?
+4. What cleanup, pest, debris, or exterior work still needs to be handled?
+5. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
+6. If the numbers made sense, how quickly would you realistically want it sold?
+
+### Frozen outreach package
+
+**Call opener:**
+> “Hey GOURDINE NATHANIEL AMAL, this is Zack. I wanted to call you about your property over on 2521 GRIFFITHS AVE, LOUISVILLE, KY 40212. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+
+**If the seller asks what you are offering:**
+> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
+
+**How did you find me?:**
+> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
+
+**Confirmed-owner voicemail:**
+> “Hey GOURDINE NATHANIEL AMAL, this is Zack. I was giving you a quick call regarding your property over on 2521 GRIFFITHS AVE, LOUISVILLE, KY 40212 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+
+**Unconfirmed-owner voicemail:**
+> “Hey, this is Zack. I’m trying to get in touch with GOURDINE NATHANIEL AMAL regarding a property over on 2521 GRIFFITHS AVE, LOUISVILLE, KY 40212 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if GOURDINE NATHANIEL AMAL would consider selling the property if the price made sense. If this is GOURDINE NATHANIEL AMAL, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+
+**Confirmed-owner text:**
+> “Hey GOURDINE NATHANIEL AMAL, this is Zack. I’m reaching out about the property you own over on 2521 GRIFFITHS AVE, LOUISVILLE, KY 40212 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+
+**Unconfirmed-owner text:**
+> “Hey, my name’s Zack. I’m trying to get in touch with GOURDINE NATHANIEL AMAL regarding a property over on 2521 GRIFFITHS AVE, LOUISVILLE, KY 40212 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is GOURDINE NATHANIEL AMAL, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+
+### Universal seller qualification flow
+
+1. **Condition:** “What kind of shape is the property in right now?”
+2. **Occupancy:** “Is anybody living there right now?”
+3. **Motivation:** “What has you open to selling it instead of just keeping it?”
+4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
+5. **Price:** “What were you hoping to get for it?”
+6. **Debt/terms:** “Do you still have any financing on the property?”
+7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
+8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
+
+---
+
+## #16  🔥  2600 ELMHURST AVE, LOUISVILLE, KY 40216
+**SINGLE-FAMILY · CALL FIRST**
+
+**Overall Priority Score:** **93/100** — combined call-order score
+**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
+**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
+**Public-Source Exposure:** **14/100** — deterministic saturation heuristic; not observed investor competition
+**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
+**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; specific_distress_term=-4; bounded_score=14
+**Freshness Score:** **82/100** — 1-3 DAYS
+
+**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
+**Why this lead:** The Louisville code record reports multiple serious structural, electrical, heating, exterior, and public-safety concerns at the occupied structure.
+**Key complaint / distress:** structural/foundation; electric; public hazard; windows/doors; heating; exterior/foundation; trash/weeds | E05, I07, I13, M67, I18 Public Hazard | Priority: HIGH | Distress score: 17 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; electric; public hazard; windows/doors; heating; exterior/foundation; trash/weeds | Vi…
+**Inspector / confirmed evidence:** structural/foundation; electric; public hazard; windows/doors; heating; exterior/foundation; trash/weeds | E05, I07, I13, M67, I18 Public Hazard | Priority: HIGH | Distress score: 17 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; electric; public hazard; windows/doors; heating; exterior/foundation; trash/weeds | Vi…
+**Owner:** LUNDY LANA E & MYERS JAMES RAY
+**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
+**Owner mailing:** —
+**Mailing vs property:** UNKNOWN — mailing address unavailable
+**Parcel ID:** `110101380000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `110101380000`
+**Parcel-data source:** LOJIC / Jefferson County parcel data
+**SFR screen:** LOJIC land use = SINGLE FAMILY
+
+### Distress/source status
+
+**Lis Pendens:** Not returned in this scrape
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
+**Tax delinquency:** UNKNOWN / not verified in this run
+**Will/probate-source signal:** Not returned in this scrape
+**Citation:** No assessed citation in current extract
+**Demolition:** Not verified
+**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
+
+### Exact official/public sources
+
+- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=110101380000&propertySearchFormButton=Search&searchType=ParcelSearch
+
+**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
+**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
+
+### Property-specific questions
+
+1. What kind of shape is the property in right now, beyond normal cosmetic work?
+2. Is anybody living there right now, and if not, how long has it been vacant?
+3. What happened with the structural or safety issues, and has anyone quoted the repairs?
+4. Are the utilities currently on, and are there known electrical, fire, plumbing, HVAC, or permit issues?
+5. What cleanup, pest, debris, or exterior work still needs to be handled?
+6. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
+7. If the numbers made sense, how quickly would you realistically want it sold?
+
+### Frozen outreach package
+
+**Call opener:**
+> “Hey LUNDY LANA E & MYERS JAMES RAY, this is Zack. I wanted to call you about your property over on 2600 ELMHURST AVE, LOUISVILLE, KY 40216. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+
+**If the seller asks what you are offering:**
+> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
+
+**How did you find me?:**
+> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
+
+**Confirmed-owner voicemail:**
+> “Hey LUNDY LANA E & MYERS JAMES RAY, this is Zack. I was giving you a quick call regarding your property over on 2600 ELMHURST AVE, LOUISVILLE, KY 40216 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+
+**Unconfirmed-owner voicemail:**
+> “Hey, this is Zack. I’m trying to get in touch with LUNDY LANA E & MYERS JAMES RAY regarding a property over on 2600 ELMHURST AVE, LOUISVILLE, KY 40216 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if LUNDY LANA E & MYERS JAMES RAY would consider selling the property if the price made sense. If this is LUNDY LANA E & MYERS JAMES RAY, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+
+**Confirmed-owner text:**
+> “Hey LUNDY LANA E & MYERS JAMES RAY, this is Zack. I’m reaching out about the property you own over on 2600 ELMHURST AVE, LOUISVILLE, KY 40216 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+
+**Unconfirmed-owner text:**
+> “Hey, my name’s Zack. I’m trying to get in touch with LUNDY LANA E & MYERS JAMES RAY regarding a property over on 2600 ELMHURST AVE, LOUISVILLE, KY 40216 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is LUNDY LANA E & MYERS JAMES RAY, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+
+### Universal seller qualification flow
+
+1. **Condition:** “What kind of shape is the property in right now?”
+2. **Occupancy:** “Is anybody living there right now?”
+3. **Motivation:** “What has you open to selling it instead of just keeping it?”
+4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
+5. **Price:** “What were you hoping to get for it?”
+6. **Debt/terms:** “Do you still have any financing on the property?”
+7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
+8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
+
+---
+
+## #17  🔥  6907 SKY BLUE AVE, LOUISVILLE, KY 40258
+**SINGLE-FAMILY · CALL FIRST**
+
+**Overall Priority Score:** **93/100** — combined call-order score
+**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
+**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
+**Public-Source Exposure:** **14/100** — deterministic saturation heuristic; not observed investor competition
+**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
+**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; specific_distress_term=-4; bounded_score=14
+**Freshness Score:** **82/100** — 1-3 DAYS
+
+**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
+**Why this lead:** The Louisville code citation reports exterior and cleanup problems plus vacant/abandoned and abandoned-vehicle concerns, although its occupancy fields conflict.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | 02A Cleaning, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 16 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | Violations: 02A Cleaning, 05A Abandoned Vehicle |…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | 02A Cleaning, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 16 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | Violations: 02A Cleaning, 05A Abandoned Vehicle |…
+**Owner:** LINDSAY YONA
+**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
+**Owner mailing:** —
+**Mailing vs property:** UNKNOWN — mailing address unavailable
+**Parcel ID:** `103101350368`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `103101350368`
+**Parcel-data source:** LOJIC / Jefferson County parcel data
+**SFR screen:** LOJIC land use = SINGLE FAMILY
+
+### Distress/source status
+
+**Lis Pendens:** Not returned in this scrape
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
+**Tax delinquency:** UNKNOWN / not verified in this run
+**Will/probate-source signal:** Not returned in this scrape
+**Citation:** $600 assessed; current outstanding balance NOT VERIFIED
+**Demolition:** Not verified
+**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
+
+### Exact official/public sources
+
+- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=103101350368&propertySearchFormButton=Search&searchType=ParcelSearch
 
 **Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
 **GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
@@ -1543,7 +1463,7 @@ Records: **27**
 ### Frozen outreach package
 
 **Call opener:**
-> “Hey MARTINEZ MIGUEL, this is Zack. I wanted to call you about your property over on 6511 CADY DR, LOUISVILLE, KY 40258. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+> “Hey LINDSAY YONA, this is Zack. I wanted to call you about your property over on 6907 SKY BLUE AVE, LOUISVILLE, KY 40258. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
 
 **If the seller asks what you are offering:**
 > “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
@@ -1552,16 +1472,16 @@ Records: **27**
 > “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
 
 **Confirmed-owner voicemail:**
-> “Hey MARTINEZ MIGUEL, this is Zack. I was giving you a quick call regarding your property over on 6511 CADY DR, LOUISVILLE, KY 40258 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+> “Hey LINDSAY YONA, this is Zack. I was giving you a quick call regarding your property over on 6907 SKY BLUE AVE, LOUISVILLE, KY 40258 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
 
 **Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with MARTINEZ MIGUEL regarding a property over on 6511 CADY DR, LOUISVILLE, KY 40258 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if MARTINEZ MIGUEL would consider selling the property if the price made sense. If this is MARTINEZ MIGUEL, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+> “Hey, this is Zack. I’m trying to get in touch with LINDSAY YONA regarding a property over on 6907 SKY BLUE AVE, LOUISVILLE, KY 40258 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if LINDSAY YONA would consider selling the property if the price made sense. If this is LINDSAY YONA, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
 
 **Confirmed-owner text:**
-> “Hey MARTINEZ MIGUEL, this is Zack. I’m reaching out about the property you own over on 6511 CADY DR, LOUISVILLE, KY 40258 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+> “Hey LINDSAY YONA, this is Zack. I’m reaching out about the property you own over on 6907 SKY BLUE AVE, LOUISVILLE, KY 40258 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
 
 **Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with MARTINEZ MIGUEL regarding a property over on 6511 CADY DR, LOUISVILLE, KY 40258 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is MARTINEZ MIGUEL, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+> “Hey, my name’s Zack. I’m trying to get in touch with LINDSAY YONA regarding a property over on 6907 SKY BLUE AVE, LOUISVILLE, KY 40258 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is LINDSAY YONA, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
 
 ### Universal seller qualification flow
 
@@ -1576,7 +1496,7 @@ Records: **27**
 
 ---
 
-## #19  🔥  435 S 28TH ST, LOUISVILLE, KY 40212
+## #18  🔥  8703 JUMPER PL, LOUISVILLE, KY 40291
 **SINGLE-FAMILY · CALL FIRST**
 
 **Overall Priority Score:** **93/100** — combined call-order score
@@ -1588,22 +1508,108 @@ Records: **27**
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro code evidence reports a vacant lot with exterior, cleaning, vegetation, graffiti, and abandonment-related issues under a Citation Referral.
-**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 14 | Status: Citation Referral | Occupancy: VACANT LOT | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Citation amount: $1200 | Violation rows: 2 | Date: 2026-10-06 | Case IDs: ENF-PMNT-…
-**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 14 | Status: Citation Referral | Occupancy: VACANT LOT | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Citation amount: $1200 | Violation rows: 2 | Date: 2026-10-06 | Case IDs: ENF-PMNT-…
-**Owner:** SMITH TONY NATHANIEL
+**Why this lead:** The Louisville code referral identifies a vacant lot and reports cleanup, exterior, graffiti, and abandonment-related concerns.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 14 | Status: Citation Referral | Occupancy: VACANT LOT | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Citation amount: $600 | Violation rows: 2 | Date: 2026-10-07 | Case IDs: ENF-PMNT-2…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 14 | Status: Citation Referral | Occupancy: VACANT LOT | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Citation amount: $600 | Violation rows: 2 | Date: 2026-10-07 | Case IDs: ENF-PMNT-2…
+**Owner:** BREWER DONNA
 **Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
 **Owner mailing:** —
 **Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `002G01470000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `002G01470000`
+**Parcel ID:** `206800750000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `206800750000`
 **Parcel-data source:** LOJIC / Jefferson County parcel data
 **SFR screen:** LOJIC land use = SINGLE FAMILY
 
 ### Distress/source status
 
 **Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
+**Tax delinquency:** UNKNOWN / not verified in this run
+**Will/probate-source signal:** Not returned in this scrape
+**Citation:** $600 assessed; current outstanding balance NOT VERIFIED
+**Demolition:** Not verified
+**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
+
+### Exact official/public sources
+
+- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=206800750000&propertySearchFormButton=Search&searchType=ParcelSearch
+
+**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
+**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
+
+### Property-specific questions
+
+1. What kind of shape is the property in right now, beyond normal cosmetic work?
+2. Is anybody living there right now, and if not, how long has it been vacant?
+3. What cleanup, pest, debris, or exterior work still needs to be handled?
+4. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
+5. If the numbers made sense, how quickly would you realistically want it sold?
+
+### Frozen outreach package
+
+**Call opener:**
+> “Hey BREWER DONNA, this is Zack. I wanted to call you about your property over on 8703 JUMPER PL, LOUISVILLE, KY 40291. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+
+**If the seller asks what you are offering:**
+> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
+
+**How did you find me?:**
+> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
+
+**Confirmed-owner voicemail:**
+> “Hey BREWER DONNA, this is Zack. I was giving you a quick call regarding your property over on 8703 JUMPER PL, LOUISVILLE, KY 40291 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+
+**Unconfirmed-owner voicemail:**
+> “Hey, this is Zack. I’m trying to get in touch with BREWER DONNA regarding a property over on 8703 JUMPER PL, LOUISVILLE, KY 40291 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if BREWER DONNA would consider selling the property if the price made sense. If this is BREWER DONNA, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+
+**Confirmed-owner text:**
+> “Hey BREWER DONNA, this is Zack. I’m reaching out about the property you own over on 8703 JUMPER PL, LOUISVILLE, KY 40291 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+
+**Unconfirmed-owner text:**
+> “Hey, my name’s Zack. I’m trying to get in touch with BREWER DONNA regarding a property over on 8703 JUMPER PL, LOUISVILLE, KY 40291 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is BREWER DONNA, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+
+### Universal seller qualification flow
+
+1. **Condition:** “What kind of shape is the property in right now?”
+2. **Occupancy:** “Is anybody living there right now?”
+3. **Motivation:** “What has you open to selling it instead of just keeping it?”
+4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
+5. **Price:** “What were you hoping to get for it?”
+6. **Debt/terms:** “Do you still have any financing on the property?”
+7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
+8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
+
+---
+
+## #19  🔥  4600 FLINTLOCK DR, LOUISVILLE, KY 40216
+**SINGLE-FAMILY · CALL FIRST**
+
+**Overall Priority Score:** **93/100** — combined call-order score
+**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
+**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
+**Public-Source Exposure:** **14/100** — deterministic saturation heuristic; not observed investor competition
+**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
+**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; specific_distress_term=-4; bounded_score=14
+**Freshness Score:** **82/100** — 1-3 DAYS
+
+**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
+**Why this lead:** The Louisville code referral identifies a vacant structure and reports exterior deterioration, cleanup, graffiti, and abandonment-related concerns.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 14 | Status: Citation Referral | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Citation amount: $1200 | Violation rows: 2 | Date: 2026-10-07 | Case IDs: ENF…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 14 | Status: Citation Referral | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Citation amount: $1200 | Violation rows: 2 | Date: 2026-10-07 | Case IDs: ENF…
+**Owner:** DURHAM LARRY P & DURHAM ROBIN L
+**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
+**Owner mailing:** —
+**Mailing vs property:** UNKNOWN — mailing address unavailable
+**Parcel ID:** `123200240018`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `123200240018`
+**Parcel-data source:** LOJIC / Jefferson County parcel data
+**SFR screen:** LOJIC land use = SINGLE FAMILY
+
+### Distress/source status
+
+**Lis Pendens:** Not returned in this scrape
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
 **Tax delinquency:** UNKNOWN / not verified in this run
 **Will/probate-source signal:** Not returned in this scrape
 **Citation:** $1,200 assessed; current outstanding balance NOT VERIFIED
@@ -1613,7 +1619,7 @@ Records: **27**
 ### Exact official/public sources
 
 - **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=002G01470000&propertySearchFormButton=Search&searchType=ParcelSearch
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=123200240018&propertySearchFormButton=Search&searchType=ParcelSearch
 
 **Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
 **GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
@@ -1629,7 +1635,7 @@ Records: **27**
 ### Frozen outreach package
 
 **Call opener:**
-> “Hey SMITH TONY NATHANIEL, this is Zack. I wanted to call you about your property over on 435 S 28TH ST, LOUISVILLE, KY 40212. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+> “Hey DURHAM LARRY P & DURHAM ROBIN L, this is Zack. I wanted to call you about your property over on 4600 FLINTLOCK DR, LOUISVILLE, KY 40216. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
 
 **If the seller asks what you are offering:**
 > “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
@@ -1638,16 +1644,16 @@ Records: **27**
 > “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
 
 **Confirmed-owner voicemail:**
-> “Hey SMITH TONY NATHANIEL, this is Zack. I was giving you a quick call regarding your property over on 435 S 28TH ST, LOUISVILLE, KY 40212 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+> “Hey DURHAM LARRY P & DURHAM ROBIN L, this is Zack. I was giving you a quick call regarding your property over on 4600 FLINTLOCK DR, LOUISVILLE, KY 40216 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
 
 **Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with SMITH TONY NATHANIEL regarding a property over on 435 S 28TH ST, LOUISVILLE, KY 40212 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if SMITH TONY NATHANIEL would consider selling the property if the price made sense. If this is SMITH TONY NATHANIEL, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+> “Hey, this is Zack. I’m trying to get in touch with DURHAM LARRY P & DURHAM ROBIN L regarding a property over on 4600 FLINTLOCK DR, LOUISVILLE, KY 40216 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if DURHAM LARRY P & DURHAM ROBIN L would consider selling the property if the price made sense. If this is DURHAM LARRY P & DURHAM ROBIN L, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
 
 **Confirmed-owner text:**
-> “Hey SMITH TONY NATHANIEL, this is Zack. I’m reaching out about the property you own over on 435 S 28TH ST, LOUISVILLE, KY 40212 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+> “Hey DURHAM LARRY P & DURHAM ROBIN L, this is Zack. I’m reaching out about the property you own over on 4600 FLINTLOCK DR, LOUISVILLE, KY 40216 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
 
 **Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with SMITH TONY NATHANIEL regarding a property over on 435 S 28TH ST, LOUISVILLE, KY 40212 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is SMITH TONY NATHANIEL, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+> “Hey, my name’s Zack. I’m trying to get in touch with DURHAM LARRY P & DURHAM ROBIN L regarding a property over on 4600 FLINTLOCK DR, LOUISVILLE, KY 40216 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is DURHAM LARRY P & DURHAM ROBIN L, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
 
 ### Universal seller qualification flow
 
@@ -1662,7 +1668,7 @@ Records: **27**
 
 ---
 
-## #20  🔥  3214 NEW LYNNVIEW DR, LOUISVILLE, KY 40216
+## #20  🔥  4316 HANEY WAY, LOUISVILLE, KY 40272
 **SINGLE-FAMILY · CALL FIRST**
 
 **Overall Priority Score:** **93/100** — combined call-order score
@@ -1674,32 +1680,32 @@ Records: **27**
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro code evidence reports multiple exterior, cleaning, vehicle, and rental-registration issues, although the structure is labeled occupied.
-**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | 02A Cleaning, R01 Rental Reg., 05A Abandoned Vehicle, Z01 | Priority: HIGH | Distress score: 14 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | Violations: 02A Clea…
-**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | 02A Cleaning, R01 Rental Reg., 05A Abandoned Vehicle, Z01 | Priority: HIGH | Distress score: 14 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | Violations: 02A Clea…
-**Owner:** RODRIGUEZ LEANDRO A DOMINGUEZ & RODRIQUEZ DORIS NOELIA
+**Why this lead:** Louisville Metro code evidence records a vacant structure with exterior/foundation and property-maintenance issues under a 2026-10-07 Citation Referral.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 14 | Status: Citation Referral | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Citation amount: $100 | Violation rows: 1 | Date: 2026-10-07 | Case IDs: ENF-…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 14 | Status: Citation Referral | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Citation amount: $100 | Violation rows: 1 | Date: 2026-10-07 | Case IDs: ENF-…
+**Owner:** TOBE GINA C
 **Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
 **Owner mailing:** —
 **Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `101302590000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `101302590000`
+**Parcel ID:** `146902730000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `146902730000`
 **Parcel-data source:** LOJIC / Jefferson County parcel data
 **SFR screen:** LOJIC land use = SINGLE FAMILY
 
 ### Distress/source status
 
 **Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
 **Tax delinquency:** UNKNOWN / not verified in this run
 **Will/probate-source signal:** Not returned in this scrape
-**Citation:** No assessed citation in current extract
+**Citation:** $100 assessed; current outstanding balance NOT VERIFIED
 **Demolition:** Not verified
 **Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
 
 ### Exact official/public sources
 
 - **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=101302590000&propertySearchFormButton=Search&searchType=ParcelSearch
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=146902730000&propertySearchFormButton=Search&searchType=ParcelSearch
 
 **Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
 **GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
@@ -1715,7 +1721,7 @@ Records: **27**
 ### Frozen outreach package
 
 **Call opener:**
-> “Hey RODRIGUEZ LEANDRO A DOMINGUEZ & RODRIQUEZ DORIS NOELIA, this is Zack. I wanted to call you about your property over on 3214 NEW LYNNVIEW DR, LOUISVILLE, KY 40216. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+> “Hey TOBE GINA C, this is Zack. I wanted to call you about your property over on 4316 HANEY WAY, LOUISVILLE, KY 40272. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
 
 **If the seller asks what you are offering:**
 > “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
@@ -1724,16 +1730,16 @@ Records: **27**
 > “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
 
 **Confirmed-owner voicemail:**
-> “Hey RODRIGUEZ LEANDRO A DOMINGUEZ & RODRIQUEZ DORIS NOELIA, this is Zack. I was giving you a quick call regarding your property over on 3214 NEW LYNNVIEW DR, LOUISVILLE, KY 40216 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+> “Hey TOBE GINA C, this is Zack. I was giving you a quick call regarding your property over on 4316 HANEY WAY, LOUISVILLE, KY 40272 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
 
 **Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with RODRIGUEZ LEANDRO A DOMINGUEZ & RODRIQUEZ DORIS NOELIA regarding a property over on 3214 NEW LYNNVIEW DR, LOUISVILLE, KY 40216 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if RODRIGUEZ LEANDRO A DOMINGUEZ & RODRIQUEZ DORIS NOELIA would consider selling the property if the price made sense. If this is RODRIGUEZ LEANDRO A DOMINGUEZ & RODRIQUEZ DORIS NOELIA, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+> “Hey, this is Zack. I’m trying to get in touch with TOBE GINA C regarding a property over on 4316 HANEY WAY, LOUISVILLE, KY 40272 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if TOBE GINA C would consider selling the property if the price made sense. If this is TOBE GINA C, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
 
 **Confirmed-owner text:**
-> “Hey RODRIGUEZ LEANDRO A DOMINGUEZ & RODRIQUEZ DORIS NOELIA, this is Zack. I’m reaching out about the property you own over on 3214 NEW LYNNVIEW DR, LOUISVILLE, KY 40216 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+> “Hey TOBE GINA C, this is Zack. I’m reaching out about the property you own over on 4316 HANEY WAY, LOUISVILLE, KY 40272 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
 
 **Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with RODRIGUEZ LEANDRO A DOMINGUEZ & RODRIQUEZ DORIS NOELIA regarding a property over on 3214 NEW LYNNVIEW DR, LOUISVILLE, KY 40216 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is RODRIGUEZ LEANDRO A DOMINGUEZ & RODRIQUEZ DORIS NOELIA, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+> “Hey, my name’s Zack. I’m trying to get in touch with TOBE GINA C regarding a property over on 4316 HANEY WAY, LOUISVILLE, KY 40272 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is TOBE GINA C, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
 
 ### Universal seller qualification flow
 
@@ -1748,7 +1754,7 @@ Records: **27**
 
 ---
 
-## #21  🔥  730 S 42ND ST, LOUISVILLE, KY 40211
+## #21  🔥  5408 ANATAHAN CT, LOUISVILLE, KY 40272
 **SINGLE-FAMILY · CALL FIRST**
 
 **Overall Priority Score:** **93/100** — combined call-order score
@@ -1760,22 +1766,22 @@ Records: **27**
 **Freshness Score:** **82/100** — 1-3 DAYS
 
 **Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro code evidence identifies a vacant structure with reported structural, exterior, porch or stair, and fence or accessory concerns.
-**Key complaint / distress:** structural/foundation; exterior/foundation; porch/stairs; fence/accessory; vacant/abandoned | X57, X78 Fence/Accessory | Priority: HIGH | Distress score: 14 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: structural/foundation; exterior/foundation; porch/stairs; fence/accessory; vacant/abandoned | Violations: X57, X78 Fence/Accessory | Viol…
-**Inspector / confirmed evidence:** structural/foundation; exterior/foundation; porch/stairs; fence/accessory; vacant/abandoned | X57, X78 Fence/Accessory | Priority: HIGH | Distress score: 14 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: structural/foundation; exterior/foundation; porch/stairs; fence/accessory; vacant/abandoned | Violations: X57, X78 Fence/Accessory | Viol…
-**Owner:** WILLAIMS QUIANA
+**Why this lead:** Louisville Metro Code Violations reports a vacant structure with a current violation notice and multiple exterior, cleanup, and abandonment-related conditions.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; windows/doors | 02A Cleaning, X72 | Priority: HIGH | Distress score: 12 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; windows/doors | Violations: 02A Cleaning, X72 | Violation rows: 2 | Date: 2026-10-07 |…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; windows/doors | 02A Cleaning, X72 | Priority: HIGH | Distress score: 12 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; windows/doors | Violations: 02A Cleaning, X72 | Violation rows: 2 | Date: 2026-10-07 |…
+**Owner:** HOGG TONIA R
 **Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
 **Owner mailing:** —
 **Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `043C00820000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `043C00820000`
+**Parcel ID:** `144300560000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `144300560000`
 **Parcel-data source:** LOJIC / Jefferson County parcel data
 **SFR screen:** LOJIC land use = SINGLE FAMILY
 
 ### Distress/source status
 
 **Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
 **Tax delinquency:** UNKNOWN / not verified in this run
 **Will/probate-source signal:** Not returned in this scrape
 **Citation:** No assessed citation in current extract
@@ -1785,7 +1791,351 @@ Records: **27**
 ### Exact official/public sources
 
 - **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=043C00820000&propertySearchFormButton=Search&searchType=ParcelSearch
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=144300560000&propertySearchFormButton=Search&searchType=ParcelSearch
+
+**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
+**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
+
+### Property-specific questions
+
+1. What kind of shape is the property in right now, beyond normal cosmetic work?
+2. Is anybody living there right now, and if not, how long has it been vacant?
+3. What cleanup, pest, debris, or exterior work still needs to be handled?
+4. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
+5. If the numbers made sense, how quickly would you realistically want it sold?
+
+### Frozen outreach package
+
+**Call opener:**
+> “Hey HOGG TONIA R, this is Zack. I wanted to call you about your property over on 5408 ANATAHAN CT, LOUISVILLE, KY 40272. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+
+**If the seller asks what you are offering:**
+> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
+
+**How did you find me?:**
+> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
+
+**Confirmed-owner voicemail:**
+> “Hey HOGG TONIA R, this is Zack. I was giving you a quick call regarding your property over on 5408 ANATAHAN CT, LOUISVILLE, KY 40272 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+
+**Unconfirmed-owner voicemail:**
+> “Hey, this is Zack. I’m trying to get in touch with HOGG TONIA R regarding a property over on 5408 ANATAHAN CT, LOUISVILLE, KY 40272 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if HOGG TONIA R would consider selling the property if the price made sense. If this is HOGG TONIA R, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+
+**Confirmed-owner text:**
+> “Hey HOGG TONIA R, this is Zack. I’m reaching out about the property you own over on 5408 ANATAHAN CT, LOUISVILLE, KY 40272 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+
+**Unconfirmed-owner text:**
+> “Hey, my name’s Zack. I’m trying to get in touch with HOGG TONIA R regarding a property over on 5408 ANATAHAN CT, LOUISVILLE, KY 40272 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is HOGG TONIA R, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+
+### Universal seller qualification flow
+
+1. **Condition:** “What kind of shape is the property in right now?”
+2. **Occupancy:** “Is anybody living there right now?”
+3. **Motivation:** “What has you open to selling it instead of just keeping it?”
+4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
+5. **Price:** “What were you hoping to get for it?”
+6. **Debt/terms:** “Do you still have any financing on the property?”
+7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
+8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
+
+---
+
+## #22  🔥  1912 W MUHAMMAD ALI BLVD, LOUISVILLE, KY 40203
+**SINGLE-FAMILY · CALL FIRST**
+
+**Overall Priority Score:** **93/100** — combined call-order score
+**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
+**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
+**Public-Source Exposure:** **14/100** — deterministic saturation heuristic; not observed investor competition
+**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
+**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; specific_distress_term=-4; bounded_score=14
+**Freshness Score:** **82/100** — 1-3 DAYS
+
+**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
+**Why this lead:** Louisville Metro Code Violations reports a vacant structure under a violation notice with exterior, cleanup, graffiti, and abandonment-related conditions.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-10-07 | Case IDs: ENF-PMNT-26-022652-1 | Parcel…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-10-07 | Case IDs: ENF-PMNT-26-022652-1 | Parcel…
+**Owner:** ROBINSON SHANNON F
+**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
+**Owner mailing:** —
+**Mailing vs property:** UNKNOWN — mailing address unavailable
+**Parcel ID:** `002L00410000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `002L00410000`
+**Parcel-data source:** LOJIC / Jefferson County parcel data
+**SFR screen:** LOJIC land use = SINGLE FAMILY
+
+### Distress/source status
+
+**Lis Pendens:** Not returned in this scrape
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
+**Tax delinquency:** UNKNOWN / not verified in this run
+**Will/probate-source signal:** Not returned in this scrape
+**Citation:** No assessed citation in current extract
+**Demolition:** Not verified
+**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
+
+### Exact official/public sources
+
+- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=002L00410000&propertySearchFormButton=Search&searchType=ParcelSearch
+
+**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
+**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
+
+### Property-specific questions
+
+1. What kind of shape is the property in right now, beyond normal cosmetic work?
+2. Is anybody living there right now, and if not, how long has it been vacant?
+3. What cleanup, pest, debris, or exterior work still needs to be handled?
+4. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
+5. If the numbers made sense, how quickly would you realistically want it sold?
+
+### Frozen outreach package
+
+**Call opener:**
+> “Hey ROBINSON SHANNON F, this is Zack. I wanted to call you about your property over on 1912 W MUHAMMAD ALI BLVD, LOUISVILLE, KY 40203. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+
+**If the seller asks what you are offering:**
+> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
+
+**How did you find me?:**
+> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
+
+**Confirmed-owner voicemail:**
+> “Hey ROBINSON SHANNON F, this is Zack. I was giving you a quick call regarding your property over on 1912 W MUHAMMAD ALI BLVD, LOUISVILLE, KY 40203 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+
+**Unconfirmed-owner voicemail:**
+> “Hey, this is Zack. I’m trying to get in touch with ROBINSON SHANNON F regarding a property over on 1912 W MUHAMMAD ALI BLVD, LOUISVILLE, KY 40203 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if ROBINSON SHANNON F would consider selling the property if the price made sense. If this is ROBINSON SHANNON F, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+
+**Confirmed-owner text:**
+> “Hey ROBINSON SHANNON F, this is Zack. I’m reaching out about the property you own over on 1912 W MUHAMMAD ALI BLVD, LOUISVILLE, KY 40203 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+
+**Unconfirmed-owner text:**
+> “Hey, my name’s Zack. I’m trying to get in touch with ROBINSON SHANNON F regarding a property over on 1912 W MUHAMMAD ALI BLVD, LOUISVILLE, KY 40203 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is ROBINSON SHANNON F, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+
+### Universal seller qualification flow
+
+1. **Condition:** “What kind of shape is the property in right now?”
+2. **Occupancy:** “Is anybody living there right now?”
+3. **Motivation:** “What has you open to selling it instead of just keeping it?”
+4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
+5. **Price:** “What were you hoping to get for it?”
+6. **Debt/terms:** “Do you still have any financing on the property?”
+7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
+8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
+
+---
+
+## #23  🔥  500 DENMARK ST, LOUISVILLE, KY 40215
+**SINGLE-FAMILY · CALL FIRST**
+
+**Overall Priority Score:** **93/100** — combined call-order score
+**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
+**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
+**Public-Source Exposure:** **14/100** — deterministic saturation heuristic; not observed investor competition
+**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
+**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; specific_distress_term=-4; bounded_score=14
+**Freshness Score:** **82/100** — 1-3 DAYS
+
+**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
+**Why this lead:** Louisville Metro Code Violations reports a vacant structure under a violation notice with exterior, cleanup, graffiti, and abandonment-related conditions.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-10-07 | Case IDs: ENF-PMNT-26-017435-2 | Parcel…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-10-07 | Case IDs: ENF-PMNT-26-017435-2 | Parcel…
+**Owner:** HINES KYLE
+**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
+**Owner mailing:** —
+**Mailing vs property:** UNKNOWN — mailing address unavailable
+**Parcel ID:** `052F01040000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `052F01040000`
+**Parcel-data source:** LOJIC / Jefferson County parcel data
+**SFR screen:** LOJIC land use = SINGLE FAMILY
+
+### Distress/source status
+
+**Lis Pendens:** Not returned in this scrape
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
+**Tax delinquency:** UNKNOWN / not verified in this run
+**Will/probate-source signal:** Not returned in this scrape
+**Citation:** No assessed citation in current extract
+**Demolition:** Not verified
+**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
+
+### Exact official/public sources
+
+- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=052F01040000&propertySearchFormButton=Search&searchType=ParcelSearch
+
+**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
+**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
+
+### Property-specific questions
+
+1. What kind of shape is the property in right now, beyond normal cosmetic work?
+2. Is anybody living there right now, and if not, how long has it been vacant?
+3. What cleanup, pest, debris, or exterior work still needs to be handled?
+4. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
+5. If the numbers made sense, how quickly would you realistically want it sold?
+
+### Frozen outreach package
+
+**Call opener:**
+> “Hey HINES KYLE, this is Zack. I wanted to call you about your property over on 500 DENMARK ST, LOUISVILLE, KY 40215. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+
+**If the seller asks what you are offering:**
+> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
+
+**How did you find me?:**
+> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
+
+**Confirmed-owner voicemail:**
+> “Hey HINES KYLE, this is Zack. I was giving you a quick call regarding your property over on 500 DENMARK ST, LOUISVILLE, KY 40215 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+
+**Unconfirmed-owner voicemail:**
+> “Hey, this is Zack. I’m trying to get in touch with HINES KYLE regarding a property over on 500 DENMARK ST, LOUISVILLE, KY 40215 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if HINES KYLE would consider selling the property if the price made sense. If this is HINES KYLE, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+
+**Confirmed-owner text:**
+> “Hey HINES KYLE, this is Zack. I’m reaching out about the property you own over on 500 DENMARK ST, LOUISVILLE, KY 40215 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+
+**Unconfirmed-owner text:**
+> “Hey, my name’s Zack. I’m trying to get in touch with HINES KYLE regarding a property over on 500 DENMARK ST, LOUISVILLE, KY 40215 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is HINES KYLE, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+
+### Universal seller qualification flow
+
+1. **Condition:** “What kind of shape is the property in right now?”
+2. **Occupancy:** “Is anybody living there right now?”
+3. **Motivation:** “What has you open to selling it instead of just keeping it?”
+4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
+5. **Price:** “What were you hoping to get for it?”
+6. **Debt/terms:** “Do you still have any financing on the property?”
+7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
+8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
+
+---
+
+## #24  🔥  3905 SERENE WAY, LOUISVILLE, KY 40219
+**SINGLE-FAMILY · CALL FIRST**
+
+**Overall Priority Score:** **93/100** — combined call-order score
+**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
+**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
+**Public-Source Exposure:** **14/100** — deterministic saturation heuristic; not observed investor competition
+**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
+**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; specific_distress_term=-4; bounded_score=14
+**Freshness Score:** **82/100** — 1-3 DAYS
+
+**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
+**Why this lead:** Louisville Metro code evidence records a vacant structure with exterior/foundation, cleaning, vegetation, debris, and graffiti issues.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 2 | Date: 2026-10-07 | Case IDs: ENF-PMNT-26-005862-3 | Parcel…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 2 | Date: 2026-10-07 | Case IDs: ENF-PMNT-26-005862-3 | Parcel…
+**Owner:** MCKEVIER CONNIE
+**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
+**Owner mailing:** —
+**Mailing vs property:** UNKNOWN — mailing address unavailable
+**Parcel ID:** `093700390000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `093700390000`
+**Parcel-data source:** LOJIC / Jefferson County parcel data
+**SFR screen:** LOJIC land use = SINGLE FAMILY
+
+### Distress/source status
+
+**Lis Pendens:** Not returned in this scrape
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-07
+**Tax delinquency:** UNKNOWN / not verified in this run
+**Will/probate-source signal:** Not returned in this scrape
+**Citation:** No assessed citation in current extract
+**Demolition:** Not verified
+**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
+
+### Exact official/public sources
+
+- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=093700390000&propertySearchFormButton=Search&searchType=ParcelSearch
+
+**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
+**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
+
+### Property-specific questions
+
+1. What kind of shape is the property in right now, beyond normal cosmetic work?
+2. Is anybody living there right now, and if not, how long has it been vacant?
+3. What cleanup, pest, debris, or exterior work still needs to be handled?
+4. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
+5. If the numbers made sense, how quickly would you realistically want it sold?
+
+### Frozen outreach package
+
+**Call opener:**
+> “Hey MCKEVIER CONNIE, this is Zack. I wanted to call you about your property over on 3905 SERENE WAY, LOUISVILLE, KY 40219. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+
+**If the seller asks what you are offering:**
+> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
+
+**How did you find me?:**
+> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
+
+**Confirmed-owner voicemail:**
+> “Hey MCKEVIER CONNIE, this is Zack. I was giving you a quick call regarding your property over on 3905 SERENE WAY, LOUISVILLE, KY 40219 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+
+**Unconfirmed-owner voicemail:**
+> “Hey, this is Zack. I’m trying to get in touch with MCKEVIER CONNIE regarding a property over on 3905 SERENE WAY, LOUISVILLE, KY 40219 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if MCKEVIER CONNIE would consider selling the property if the price made sense. If this is MCKEVIER CONNIE, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+
+**Confirmed-owner text:**
+> “Hey MCKEVIER CONNIE, this is Zack. I’m reaching out about the property you own over on 3905 SERENE WAY, LOUISVILLE, KY 40219 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+
+**Unconfirmed-owner text:**
+> “Hey, my name’s Zack. I’m trying to get in touch with MCKEVIER CONNIE regarding a property over on 3905 SERENE WAY, LOUISVILLE, KY 40219 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is MCKEVIER CONNIE, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+
+### Universal seller qualification flow
+
+1. **Condition:** “What kind of shape is the property in right now?”
+2. **Occupancy:** “Is anybody living there right now?”
+3. **Motivation:** “What has you open to selling it instead of just keeping it?”
+4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
+5. **Price:** “What were you hoping to get for it?”
+6. **Debt/terms:** “Do you still have any financing on the property?”
+7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
+8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
+
+---
+
+## #25  🔥  2713 W JEFFERSON ST, LOUISVILLE, KY 40212
+**SINGLE-FAMILY · CALL FIRST**
+
+**Overall Priority Score:** **93/100** — combined call-order score
+**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
+**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
+**Public-Source Exposure:** **14/100** — deterministic saturation heuristic; not observed investor competition
+**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
+**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; specific_distress_term=-4; bounded_score=14
+**Freshness Score:** **82/100** — 1-3 DAYS
+
+**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
+**Why this lead:** Louisville Metro code evidence reports multiple material exterior, sanitation, access, and plumbing issues with an active citation.
+**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; windows/doors; porch/stairs; sewage/plumbing | 02A Cleaning, I03, I11, T30, X65, I13 +1 more | Priority: HIGH | Distress score: 16 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; windows/doors; porch/stairs; sewage/plumbing | Violations: 02A Cleani…
+**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; windows/doors; porch/stairs; sewage/plumbing | 02A Cleaning, I03, I11, T30, X65, I13 +1 more | Priority: HIGH | Distress score: 16 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; windows/doors; porch/stairs; sewage/plumbing | Violations: 02A Cleani…
+**Owner:** MY BOYS L LC
+**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
+**Owner mailing:** —
+**Mailing vs property:** UNKNOWN — mailing address unavailable
+**Parcel ID:** `002B00800000`
+**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `002B00800000`
+**Parcel-data source:** LOJIC / Jefferson County parcel data
+**SFR screen:** LOJIC land use = SINGLE FAMILY
+
+### Distress/source status
+
+**Lis Pendens:** Not returned in this scrape
+**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
+**Tax delinquency:** UNKNOWN / not verified in this run
+**Will/probate-source signal:** Not returned in this scrape
+**Citation:** $4,200 assessed; current outstanding balance NOT VERIFIED
+**Demolition:** Not verified
+**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
+
+### Exact official/public sources
+
+- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
+- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=002B00800000&propertySearchFormButton=Search&searchType=ParcelSearch
 
 **Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
 **GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
@@ -1795,265 +2145,7 @@ Records: **27**
 1. What kind of shape is the property in right now, beyond normal cosmetic work?
 2. Is anybody living there right now, and if not, how long has it been vacant?
 3. What happened with the structural or safety issues, and has anyone quoted the repairs?
-4. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
-5. If the numbers made sense, how quickly would you realistically want it sold?
-
-### Frozen outreach package
-
-**Call opener:**
-> “Hey WILLAIMS QUIANA, this is Zack. I wanted to call you about your property over on 730 S 42ND ST, LOUISVILLE, KY 40211. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
-
-**If the seller asks what you are offering:**
-> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
-
-**How did you find me?:**
-> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
-
-**Confirmed-owner voicemail:**
-> “Hey WILLAIMS QUIANA, this is Zack. I was giving you a quick call regarding your property over on 730 S 42ND ST, LOUISVILLE, KY 40211 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
-
-**Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with WILLAIMS QUIANA regarding a property over on 730 S 42ND ST, LOUISVILLE, KY 40211 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if WILLAIMS QUIANA would consider selling the property if the price made sense. If this is WILLAIMS QUIANA, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
-
-**Confirmed-owner text:**
-> “Hey WILLAIMS QUIANA, this is Zack. I’m reaching out about the property you own over on 730 S 42ND ST, LOUISVILLE, KY 40211 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
-
-**Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with WILLAIMS QUIANA regarding a property over on 730 S 42ND ST, LOUISVILLE, KY 40211 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is WILLAIMS QUIANA, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
-
-### Universal seller qualification flow
-
-1. **Condition:** “What kind of shape is the property in right now?”
-2. **Occupancy:** “Is anybody living there right now?”
-3. **Motivation:** “What has you open to selling it instead of just keeping it?”
-4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
-5. **Price:** “What were you hoping to get for it?”
-6. **Debt/terms:** “Do you still have any financing on the property?”
-7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
-8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
-
----
-
-## #22  🔥  1614 GAGEL AVE, LOUISVILLE, KY 40216
-**SINGLE-FAMILY · CALL FIRST**
-
-**Overall Priority Score:** **93/100** — combined call-order score
-**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
-**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Public-Source Exposure:** **14/100** — deterministic saturation heuristic; not observed investor competition
-**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; specific_distress_term=-4; bounded_score=14
-**Freshness Score:** **82/100** — 1-3 DAYS
-
-**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro code evidence reports multiple exterior and nuisance conditions, including a vacant/abandoned signal, although the structure is labeled occupied.
-**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | 02A Cleaning, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 13 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | Violations: 02A Cleaning, 05A Abandoned Ve…
-**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | 02A Cleaning, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 13 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | Violations: 02A Cleaning, 05A Abandoned Ve…
-**Owner:** CAPOTE KEYLAN PENA
-**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
-**Owner mailing:** —
-**Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `102102840000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `102102840000`
-**Parcel-data source:** LOJIC / Jefferson County parcel data
-**SFR screen:** LOJIC land use = SINGLE FAMILY
-
-### Distress/source status
-
-**Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
-**Tax delinquency:** UNKNOWN / not verified in this run
-**Will/probate-source signal:** Not returned in this scrape
-**Citation:** No assessed citation in current extract
-**Demolition:** Not verified
-**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
-
-### Exact official/public sources
-
-- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=102102840000&propertySearchFormButton=Search&searchType=ParcelSearch
-
-**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
-**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
-
-### Property-specific questions
-
-1. What kind of shape is the property in right now, beyond normal cosmetic work?
-2. Is anybody living there right now, and if not, how long has it been vacant?
-3. What cleanup, pest, debris, or exterior work still needs to be handled?
-4. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
-5. If the numbers made sense, how quickly would you realistically want it sold?
-
-### Frozen outreach package
-
-**Call opener:**
-> “Hey CAPOTE KEYLAN PENA, this is Zack. I wanted to call you about your property over on 1614 GAGEL AVE, LOUISVILLE, KY 40216. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
-
-**If the seller asks what you are offering:**
-> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
-
-**How did you find me?:**
-> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
-
-**Confirmed-owner voicemail:**
-> “Hey CAPOTE KEYLAN PENA, this is Zack. I was giving you a quick call regarding your property over on 1614 GAGEL AVE, LOUISVILLE, KY 40216 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
-
-**Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with CAPOTE KEYLAN PENA regarding a property over on 1614 GAGEL AVE, LOUISVILLE, KY 40216 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if CAPOTE KEYLAN PENA would consider selling the property if the price made sense. If this is CAPOTE KEYLAN PENA, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
-
-**Confirmed-owner text:**
-> “Hey CAPOTE KEYLAN PENA, this is Zack. I’m reaching out about the property you own over on 1614 GAGEL AVE, LOUISVILLE, KY 40216 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
-
-**Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with CAPOTE KEYLAN PENA regarding a property over on 1614 GAGEL AVE, LOUISVILLE, KY 40216 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is CAPOTE KEYLAN PENA, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
-
-### Universal seller qualification flow
-
-1. **Condition:** “What kind of shape is the property in right now?”
-2. **Occupancy:** “Is anybody living there right now?”
-3. **Motivation:** “What has you open to selling it instead of just keeping it?”
-4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
-5. **Price:** “What were you hoping to get for it?”
-6. **Debt/terms:** “Do you still have any financing on the property?”
-7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
-8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
-
----
-
-## #23  🔥  5602 TAMARACK LN, LOUISVILLE, KY 40258
-**SINGLE-FAMILY · CALL FIRST**
-
-**Overall Priority Score:** **93/100** — combined call-order score
-**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
-**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Public-Source Exposure:** **14/100** — deterministic saturation heuristic; not observed investor competition
-**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; specific_distress_term=-4; bounded_score=14
-**Freshness Score:** **82/100** — 1-3 DAYS
-
-**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro code evidence reports multiple exterior and nuisance conditions, including a vacant/abandoned signal, although the structure is labeled occupied.
-**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | 02A Cleaning, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 13 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | Violations: 02A Cleaning, 05A Abandoned Ve…
-**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | 02A Cleaning, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 13 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | Violations: 02A Cleaning, 05A Abandoned Ve…
-**Owner:** ALEMAN GABRIEL ESPINOSA
-**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
-**Owner mailing:** —
-**Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `123100680841`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `123100680841`
-**Parcel-data source:** LOJIC / Jefferson County parcel data
-**SFR screen:** LOJIC land use = SINGLE FAMILY
-
-### Distress/source status
-
-**Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
-**Tax delinquency:** UNKNOWN / not verified in this run
-**Will/probate-source signal:** Not returned in this scrape
-**Citation:** No assessed citation in current extract
-**Demolition:** Not verified
-**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
-
-### Exact official/public sources
-
-- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=123100680841&propertySearchFormButton=Search&searchType=ParcelSearch
-
-**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
-**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
-
-### Property-specific questions
-
-1. What kind of shape is the property in right now, beyond normal cosmetic work?
-2. Is anybody living there right now, and if not, how long has it been vacant?
-3. What cleanup, pest, debris, or exterior work still needs to be handled?
-4. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
-5. If the numbers made sense, how quickly would you realistically want it sold?
-
-### Frozen outreach package
-
-**Call opener:**
-> “Hey ALEMAN GABRIEL ESPINOSA, this is Zack. I wanted to call you about your property over on 5602 TAMARACK LN, LOUISVILLE, KY 40258. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
-
-**If the seller asks what you are offering:**
-> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
-
-**How did you find me?:**
-> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
-
-**Confirmed-owner voicemail:**
-> “Hey ALEMAN GABRIEL ESPINOSA, this is Zack. I was giving you a quick call regarding your property over on 5602 TAMARACK LN, LOUISVILLE, KY 40258 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
-
-**Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with ALEMAN GABRIEL ESPINOSA regarding a property over on 5602 TAMARACK LN, LOUISVILLE, KY 40258 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if ALEMAN GABRIEL ESPINOSA would consider selling the property if the price made sense. If this is ALEMAN GABRIEL ESPINOSA, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
-
-**Confirmed-owner text:**
-> “Hey ALEMAN GABRIEL ESPINOSA, this is Zack. I’m reaching out about the property you own over on 5602 TAMARACK LN, LOUISVILLE, KY 40258 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
-
-**Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with ALEMAN GABRIEL ESPINOSA regarding a property over on 5602 TAMARACK LN, LOUISVILLE, KY 40258 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is ALEMAN GABRIEL ESPINOSA, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
-
-### Universal seller qualification flow
-
-1. **Condition:** “What kind of shape is the property in right now?”
-2. **Occupancy:** “Is anybody living there right now?”
-3. **Motivation:** “What has you open to selling it instead of just keeping it?”
-4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
-5. **Price:** “What were you hoping to get for it?”
-6. **Debt/terms:** “Do you still have any financing on the property?”
-7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
-8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
-
----
-
-## #24  🔥  1126 LARCHMONT AVE, LOUISVILLE, KY 40215
-**SINGLE-FAMILY · CALL FIRST**
-
-**Overall Priority Score:** **93/100** — combined call-order score
-**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
-**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Public-Source Exposure:** **14/100** — deterministic saturation heuristic; not observed investor competition
-**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; specific_distress_term=-4; bounded_score=14
-**Freshness Score:** **82/100** — 1-3 DAYS
-
-**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro code evidence reports roof or gutter and public-hazard concerns plus abandonment-related signals, although the structure is labeled occupied.
-**Key complaint / distress:** roof/gutters; public hazard; vacant/abandoned; abandoned vehicle | X50 Roof/Gutters, X04, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 13 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: roof/gutters; public hazard; vacant/abandoned; abandoned vehicle | Violations: X50 Roof/Gutters, X04, 05A Abandoned Vehicle | Viol…
-**Inspector / confirmed evidence:** roof/gutters; public hazard; vacant/abandoned; abandoned vehicle | X50 Roof/Gutters, X04, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 13 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: roof/gutters; public hazard; vacant/abandoned; abandoned vehicle | Violations: X50 Roof/Gutters, X04, 05A Abandoned Vehicle | Viol…
-**Owner:** EVANS JALENA M
-**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
-**Owner mailing:** —
-**Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `063K00720000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `063K00720000`
-**Parcel-data source:** LOJIC / Jefferson County parcel data
-**SFR screen:** LOJIC land use = SINGLE FAMILY
-
-### Distress/source status
-
-**Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
-**Tax delinquency:** UNKNOWN / not verified in this run
-**Will/probate-source signal:** Not returned in this scrape
-**Citation:** No assessed citation in current extract
-**Demolition:** Not verified
-**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
-
-### Exact official/public sources
-
-- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=063K00720000&propertySearchFormButton=Search&searchType=ParcelSearch
-
-**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
-**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
-
-### Property-specific questions
-
-1. What kind of shape is the property in right now, beyond normal cosmetic work?
-2. Is anybody living there right now, and if not, how long has it been vacant?
-3. What happened with the structural or safety issues, and has anyone quoted the repairs?
-4. Has the roof or water intrusion been repaired, and is there any remaining mold or interior damage?
+4. Are the utilities currently on, and are there known electrical, fire, plumbing, HVAC, or permit issues?
 5. What cleanup, pest, debris, or exterior work still needs to be handled?
 6. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
 7. If the numbers made sense, how quickly would you realistically want it sold?
@@ -2061,7 +2153,7 @@ Records: **27**
 ### Frozen outreach package
 
 **Call opener:**
-> “Hey EVANS JALENA M, this is Zack. I wanted to call you about your property over on 1126 LARCHMONT AVE, LOUISVILLE, KY 40215. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
+> “Hey MY BOYS L LC, this is Zack. I wanted to call you about your property over on 2713 W JEFFERSON ST, LOUISVILLE, KY 40212. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
 
 **If the seller asks what you are offering:**
 > “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
@@ -2070,104 +2162,16 @@ Records: **27**
 > “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
 
 **Confirmed-owner voicemail:**
-> “Hey EVANS JALENA M, this is Zack. I was giving you a quick call regarding your property over on 1126 LARCHMONT AVE, LOUISVILLE, KY 40215 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
+> “Hey MY BOYS L LC, this is Zack. I was giving you a quick call regarding your property over on 2713 W JEFFERSON ST, LOUISVILLE, KY 40212 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
 
 **Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with EVANS JALENA M regarding a property over on 1126 LARCHMONT AVE, LOUISVILLE, KY 40215 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if EVANS JALENA M would consider selling the property if the price made sense. If this is EVANS JALENA M, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
+> “Hey, this is Zack. I’m trying to get in touch with MY BOYS L LC regarding a property over on 2713 W JEFFERSON ST, LOUISVILLE, KY 40212 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if MY BOYS L LC would consider selling the property if the price made sense. If this is MY BOYS L LC, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
 
 **Confirmed-owner text:**
-> “Hey EVANS JALENA M, this is Zack. I’m reaching out about the property you own over on 1126 LARCHMONT AVE, LOUISVILLE, KY 40215 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
+> “Hey MY BOYS L LC, this is Zack. I’m reaching out about the property you own over on 2713 W JEFFERSON ST, LOUISVILLE, KY 40212 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
 
 **Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with EVANS JALENA M regarding a property over on 1126 LARCHMONT AVE, LOUISVILLE, KY 40215 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is EVANS JALENA M, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
-
-### Universal seller qualification flow
-
-1. **Condition:** “What kind of shape is the property in right now?”
-2. **Occupancy:** “Is anybody living there right now?”
-3. **Motivation:** “What has you open to selling it instead of just keeping it?”
-4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
-5. **Price:** “What were you hoping to get for it?”
-6. **Debt/terms:** “Do you still have any financing on the property?”
-7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
-8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
-
----
-
-## #25  🔥  1038 SOUTHACRES DR, LOUISVILLE, KY 40219
-**SINGLE-FAMILY · CALL FIRST**
-
-**Overall Priority Score:** **93/100** — combined call-order score
-**AI Distress Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
-**Distress Score:** **100/100** — deterministic score from AI-classified + source-grounded distress evidence
-**Public-Source Exposure:** **14/100** — deterministic saturation heuristic; not observed investor competition
-**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; specific_distress_term=-4; bounded_score=14
-**Freshness Score:** **82/100** — 1-3 DAYS
-
-**Occupancy:** Unknown  _(according to Louisville Metro Property Maintenance / Accela; conflicts are shown, never silently resolved)_
-**Why this lead:** Louisville Metro Code Violations reports multiple exterior issues, including a roof/gutter condition and a public hazard.
-**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | 02A Cleaning, X50 Roof/Gutters | Priority: HIGH | Distress score: 11 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | Violations: 02A Cleaning, X50 Roof/Gutters | Violation rows: 3…
-**Inspector / confirmed evidence:** exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | 02A Cleaning, X50 Roof/Gutters | Priority: HIGH | Distress score: 11 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | Violations: 02A Cleaning, X50 Roof/Gutters | Violation rows: 3…
-**Owner:** QUISENBERRY JAMAINE
-**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
-**Owner mailing:** —
-**Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `205500120000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `205500120000`
-**Parcel-data source:** LOJIC / Jefferson County parcel data
-**SFR screen:** LOJIC land use = SINGLE FAMILY
-
-### Distress/source status
-
-**Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
-**Tax delinquency:** UNKNOWN / not verified in this run
-**Will/probate-source signal:** Not returned in this scrape
-**Citation:** No assessed citation in current extract
-**Demolition:** Not verified
-**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
-
-### Exact official/public sources
-
-- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=205500120000&propertySearchFormButton=Search&searchType=ParcelSearch
-
-**Recommended action:** Call first and use the confirmed-owner version only after matching the contacted person; otherwise use the unconfirmed voicemail/text and verify identity before discussing details.
-**GOAL:** Confirm identity, condition, occupancy, motivation, timeline, price, financing, and decision-makers; finish with a clear follow-up, appointment, or offer commitment.
-
-### Property-specific questions
-
-1. What kind of shape is the property in right now, beyond normal cosmetic work?
-2. Is anybody living there right now, and if not, how long has it been vacant?
-3. What happened with the structural or safety issues, and has anyone quoted the repairs?
-4. Has the roof or water intrusion been repaired, and is there any remaining mold or interior damage?
-5. What cleanup, pest, debris, or exterior work still needs to be handled?
-6. What has happened with the city/property-maintenance matter, and are you planning to fix it or sell as-is?
-7. If the numbers made sense, how quickly would you realistically want it sold?
-
-### Frozen outreach package
-
-**Call opener:**
-> “Hey QUISENBERRY JAMAINE, this is Zack. I wanted to call you about your property over on 1038 SOUTHACRES DR, LOUISVILLE, KY 40219. Just wanted to see, man — would you consider selling that property if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
-
-**If the seller asks what you are offering:**
-> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
-
-**How did you find me?:**
-> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your property. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
-
-**Confirmed-owner voicemail:**
-> “Hey QUISENBERRY JAMAINE, this is Zack. I was giving you a quick call regarding your property over on 1038 SOUTHACRES DR, LOUISVILLE, KY 40219 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
-
-**Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with QUISENBERRY JAMAINE regarding a property over on 1038 SOUTHACRES DR, LOUISVILLE, KY 40219 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if QUISENBERRY JAMAINE would consider selling the property if the price made sense. If this is QUISENBERRY JAMAINE, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
-
-**Confirmed-owner text:**
-> “Hey QUISENBERRY JAMAINE, this is Zack. I’m reaching out about the property you own over on 1038 SOUTHACRES DR, LOUISVILLE, KY 40219 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
-
-**Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with QUISENBERRY JAMAINE regarding a property over on 1038 SOUTHACRES DR, LOUISVILLE, KY 40219 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is QUISENBERRY JAMAINE, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
+> “Hey, my name’s Zack. I’m trying to get in touch with MY BOYS L LC regarding a property over on 2713 W JEFFERSON ST, LOUISVILLE, KY 40212 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is MY BOYS L LC, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
 
 ### Universal seller qualification flow
 
@@ -2183,181 +2187,3 @@ Records: **27**
 ---
 
 # 🌱 LAND
-
-## #1  🔥  2615 W MUHAMMAD ALI BLVD, LOUISVILLE, KY 40212
-**PRIVATE LAND · STRONG**
-
-**Overall Priority Score:** **67/100** — combined call-order score
-**AI Motivation Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
-**Land Motivation Score:** **67/100** — deterministic score from verified/grounded motivation evidence
-**Builder Fit Score:** **53/100** — estimated parcel usefulness; not a buildability guarantee
-**Public-Source Exposure:** **14/100** — deterministic saturation heuristic; not observed investor competition
-**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; specific_distress_term=-4; bounded_score=14
-**Freshness Score:** **82/100** — 1-3 DAYS
-
-**Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
-**Why this lead:** Louisville Metro Code Violations reports a vacant lot with trash/weeds, graffiti, and other cited exterior conditions in a Violation Notice dated 2026-10-06; the supplied PVA land-use field is VACANT.
-**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT LOT | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 2 | Date: 2026-10-06 | Case IDs: ENF-PMNT-26-017123-2 | Parcel: 002H…
-**Confirmed facts:** The supplied PVA data classifies the parcel's land use as VACANT.; Louisville Metro Code Violations records a Violation Notice dated 2026-10-06 and identifies the occupancy as VACANT LOT.; The code record reports trash/weeds, graffiti, vacant/abandoned, and exterior/foundation distress signals.
-**Owner:** ROJAS KAYLEN CRYSTAL
-**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
-**Owner mailing:** —
-**Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `002H00870000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `002H00870000`
-**Parcel-data source:** LOJIC / Jefferson County parcel data
-**Lot:** 3528.8 SF / 0.081 ac
-**Zoning:** —  · **Land use:** VACANT
-
-### Distress/source status
-
-**Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
-**Tax delinquency:** UNKNOWN / not verified in this run
-**Will/probate-source signal:** Not returned in this scrape
-**Citation:** No assessed citation in current extract
-**Demolition:** Not verified
-**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
-
-### Exact official/public sources
-
-- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=002H00870000&propertySearchFormButton=Search&searchType=ParcelSearch
-
-**Recommended action:** Call first and use both identity-safe and confirmed-owner outreach; verify parcel access, utilities, cleanup burden, and sell-vs-hold motivation.
-**GOAL:** Confirm that this is a privately controlled usable parcel, uncover the owner’s carrying burden and motivation, establish timeline/price, and secure a follow-up or written offer opportunity.
-
-### Property-specific questions
-
-1. Is the parcel completely vacant today, or is there still any structure or debris on it?
-2. Do you have a recent survey, and is there confirmed legal road access?
-3. What utilities are available at the parcel—water, sewer, electric, or septic/perc information?
-4. What cleanup, mowing, dumping, or abatement work is still needed?
-5. Are there any easements, restrictions, floodplain issues, HOA rules, or adjacent parcels involved?
-6. Were you planning to build, hold it, or sell it—and what changed?
-
-### Frozen outreach package
-
-**Call opener:**
-> “Hey ROJAS KAYLEN CRYSTAL, this is Zack. I wanted to call you about your parcel over on 2615 W MUHAMMAD ALI BLVD, LOUISVILLE, KY 40212. Just wanted to see, man — would you consider selling that parcel if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
-
-**If the seller asks what you are offering:**
-> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
-
-**How did you find me?:**
-> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your parcel. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
-
-**Confirmed-owner voicemail:**
-> “Hey ROJAS KAYLEN CRYSTAL, this is Zack. I was giving you a quick call regarding your parcel over on 2615 W MUHAMMAD ALI BLVD, LOUISVILLE, KY 40212 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
-
-**Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with ROJAS KAYLEN CRYSTAL regarding a parcel over on 2615 W MUHAMMAD ALI BLVD, LOUISVILLE, KY 40212 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if ROJAS KAYLEN CRYSTAL would consider selling the parcel if the price made sense. If this is ROJAS KAYLEN CRYSTAL, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
-
-**Confirmed-owner text:**
-> “Hey ROJAS KAYLEN CRYSTAL, this is Zack. I’m reaching out about the parcel you own over on 2615 W MUHAMMAD ALI BLVD, LOUISVILLE, KY 40212 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
-
-**Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with ROJAS KAYLEN CRYSTAL regarding a parcel over on 2615 W MUHAMMAD ALI BLVD, LOUISVILLE, KY 40212 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is ROJAS KAYLEN CRYSTAL, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
-
-### Universal seller qualification flow
-
-1. **Condition:** “What kind of shape is the property in right now?”
-2. **Occupancy:** “Is anybody living there right now?”
-3. **Motivation:** “What has you open to selling it instead of just keeping it?”
-4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
-5. **Price:** “What were you hoping to get for it?”
-6. **Debt/terms:** “Do you still have any financing on the property?”
-7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
-8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
-
----
-
-## #2  🔥  2617 W MUHAMMAD ALI BLVD, LOUISVILLE, KY 40212
-**PRIVATE LAND · STRONG**
-
-**Overall Priority Score:** **67/100** — combined call-order score
-**AI Motivation Classification:** **HIGH** — GPT evidence classification, not a model-invented numeric score
-**Land Motivation Score:** **67/100** — deterministic score from verified/grounded motivation evidence
-**Builder Fit Score:** **53/100** — estimated parcel usefulness; not a buildability guarantee
-**Public-Source Exposure:** **14/100** — deterministic saturation heuristic; not observed investor competition
-**Exposure method:** PUBLIC_SOURCE_EXPOSURE_HEURISTIC_V2 — not observed competition
-**Exposure factors:** source_base=louisville_code_violations:30; source_base_average=30; one_to_three_days=-6; substantive_source_narrative=-6; specific_distress_term=-4; bounded_score=14
-**Freshness Score:** **82/100** — 1-3 DAYS
-
-**Site status:** Vacant lot  _(according to Louisville Metro Property Maintenance / Accela)_
-**Why this lead:** Louisville Metro Code Violations reports a vacant lot with trash/weeds, graffiti, and other cited exterior conditions in a Violation Notice dated 2026-10-06; the supplied PVA land-use field is VACANT.
-**Key complaint / distress:** exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Violation Notice | Occupancy: VACANT LOT | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-10-06 | Case IDs: ENF-PMNT-26-017128-2 | Parcel: 002H…
-**Confirmed facts:** The supplied PVA data classifies the parcel's land use as VACANT.; Louisville Metro Code Violations records a Violation Notice dated 2026-10-06 and identifies the occupancy as VACANT LOT.; The code record reports trash/weeds, graffiti, vacant/abandoned, and exterior/foundation distress signals.
-**Owner:** HOUSE OF PRAYER EVANGELICAL MINISTRI
-**Ownership confidence:** CONFIRMED CURRENT PVA OWNER — verify the contacted phone/person before discussing private details
-**Owner mailing:** —
-**Mailing vs property:** UNKNOWN — mailing address unavailable
-**Parcel ID:** `002H00860000`
-**PVA lookup:** https://jeffersonpva.ky.gov/property-search/  ·  search Parcel ID `002H00860000`
-**Parcel-data source:** LOJIC / Jefferson County parcel data
-**Lot:** 3924.0 SF / 0.0901 ac
-**Zoning:** —  · **Land use:** VACANT
-
-### Distress/source status
-
-**Lis Pendens:** Not returned in this scrape
-**Louisville code/property-maintenance record:** PRESENT — 2026-10-06
-**Tax delinquency:** UNKNOWN / not verified in this run
-**Will/probate-source signal:** Not returned in this scrape
-**Citation:** No assessed citation in current extract
-**Demolition:** Not verified
-**Current market status:** NOT CHECKED — listing-status screening is disabled by Reaper policy
-
-### Exact official/public sources
-
-- **louisville_code_violations:** https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0
-- **Jefferson PVA:** https://jeffersonpva.ky.gov/property-search/property-listings/?psfldParcelId=002H00860000&propertySearchFormButton=Search&searchType=ParcelSearch
-
-**Recommended action:** Call first and use both identity-safe and confirmed-owner outreach; verify parcel access, utilities, cleanup burden, and sell-vs-hold motivation.
-**GOAL:** Confirm that this is a privately controlled usable parcel, uncover the owner’s carrying burden and motivation, establish timeline/price, and secure a follow-up or written offer opportunity.
-
-### Property-specific questions
-
-1. Is the parcel completely vacant today, or is there still any structure or debris on it?
-2. Do you have a recent survey, and is there confirmed legal road access?
-3. What utilities are available at the parcel—water, sewer, electric, or septic/perc information?
-4. What cleanup, mowing, dumping, or abatement work is still needed?
-5. Are there any easements, restrictions, floodplain issues, HOA rules, or adjacent parcels involved?
-6. Were you planning to build, hold it, or sell it—and what changed?
-
-### Frozen outreach package
-
-**Call opener:**
-> “Hey HOUSE OF PRAYER EVANGELICAL MINISTRI, this is Zack. I wanted to call you about your parcel over on 2617 W MUHAMMAD ALI BLVD, LOUISVILLE, KY 40212. Just wanted to see, man — would you consider selling that parcel if the price made sense? I’m not here to waste your time, I’m just here to make you a good offer.”
-
-**If the seller asks what you are offering:**
-> “Absolutely. I don’t want to throw something random at you without knowing anything about the place. What’s the property like right now?”
-
-**How did you find me?:**
-> “Man, I do quite a bit of property research around LOUISVILLE. I was looking through public property records, including a Louisville Metro property-maintenance record, and came across your parcel. I figured I’d reach out directly and see if selling might make sense for you. If it did, I can buy it as-is, close quickly, and you wouldn’t have to worry about repairs or agent commissions.”
-
-**Confirmed-owner voicemail:**
-> “Hey HOUSE OF PRAYER EVANGELICAL MINISTRI, this is Zack. I was giving you a quick call regarding your parcel over on 2617 W MUHAMMAD ALI BLVD, LOUISVILLE, KY 40212 in LOUISVILLE. Just had a quick question for you about it. Whenever you get a chance, give me a call or shoot me a text back. Again, this is Zack. Thanks.”
-
-**Unconfirmed-owner voicemail:**
-> “Hey, this is Zack. I’m trying to get in touch with HOUSE OF PRAYER EVANGELICAL MINISTRI regarding a parcel over on 2617 W MUHAMMAD ALI BLVD, LOUISVILLE, KY 40212 in LOUISVILLE. I’m not sure if I’ve got the right number or not, but I wanted to see if HOUSE OF PRAYER EVANGELICAL MINISTRI would consider selling the parcel if the price made sense. If this is HOUSE OF PRAYER EVANGELICAL MINISTRI, whenever you get a chance, give me a call or shoot me a text back. If I’ve got the wrong person, no worries at all. Thanks.”
-
-**Confirmed-owner text:**
-> “Hey HOUSE OF PRAYER EVANGELICAL MINISTRI, this is Zack. I’m reaching out about the parcel you own over on 2617 W MUHAMMAD ALI BLVD, LOUISVILLE, KY 40212 in LOUISVILLE. Just wanted to see if you’d consider selling it if the price made sense. I can buy it as-is and keep the process pretty simple. Thanks!”
-
-**Unconfirmed-owner text:**
-> “Hey, my name’s Zack. I’m trying to get in touch with HOUSE OF PRAYER EVANGELICAL MINISTRI regarding a parcel over on 2617 W MUHAMMAD ALI BLVD, LOUISVILLE, KY 40212 in LOUISVILLE. I was reaching out to see if they’d consider selling it if the price made sense. Not sure if I’ve got the right number or not, but if this is HOUSE OF PRAYER EVANGELICAL MINISTRI, if you could shoot me a text or call I’d really appreciate it. If I’ve got the wrong person, sorry to bother you & thanks!”
-
-### Universal seller qualification flow
-
-1. **Condition:** “What kind of shape is the property in right now?”
-2. **Occupancy:** “Is anybody living there right now?”
-3. **Motivation:** “What has you open to selling it instead of just keeping it?”
-4. **Timeline:** “If we could agree on something that made sense, when would you ideally want to have it sold?”
-5. **Price:** “What were you hoping to get for it?”
-6. **Debt/terms:** “Do you still have any financing on the property?”
-7. **Decision:** “Besides yourself, is there anybody else who would need to be involved in deciding whether to sell?”
-8. **Close:** “Gotcha. Based on everything you told me, let me run the numbers and see what I can realistically make work. If I can put something together that makes sense for both of us, are you open to moving forward pretty quickly?”
-
----
