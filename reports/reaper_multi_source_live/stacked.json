@@ -1,9 +1,9 @@
 {
   "status": "PASS",
-  "generated_at_et": "2026-10-11T13:29:38.894371-04:00",
+  "generated_at_et": "2026-10-12T11:17:38.346790-04:00",
   "query_window": {
-    "start_date": "2026-10-08",
-    "end_date": "2026-10-11"
+    "start_date": "2026-10-09",
+    "end_date": "2026-10-12"
   },
   "source_status": {
     "lis_pendens": "OK",
@@ -12,164 +12,16 @@
     "tax_delinquent": "OK"
   },
   "source_record_counts": {
-    "lis_pendens": 18,
-    "wills": 1,
-    "louisville_code_violations": 204,
+    "lis_pendens": 14,
+    "wills": 0,
+    "louisville_code_violations": 182,
     "tax_delinquent": 0
   },
-  "properties_after_stacking": 205,
-  "fresh_individual_candidates": 193,
+  "properties_after_stacking": 179,
+  "fresh_individual_candidates": 170,
   "fresh_individual_high_count": 0,
   "fresh_individual_medium_count": 0,
   "top_fresh_individual": [
-    {
-      "property_key": "ADDR::704 EAST SAINT CATHERINE ST",
-      "property_address": "704 East Saint Catherine St, Louisville, KY 40203",
-      "parcel_id": null,
-      "parties_or_owners": [
-        "CORMAN PHILLIP A; STURGEON EMMA; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "lis_pendens"
-      ],
-      "signal_count": 1,
-      "motivation_score": 48,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "recent lis pendens filing"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "lis_pendens",
-          "signal_date": "10/08/2026",
-          "property_address": "704 East Saint Catherine St, Louisville, KY 40203",
-          "normalized_address": "704 EAST SAINT CATHERINE ST",
-          "parcel_id": null,
-          "party_or_owner": "CORMAN PHILLIP A; STURGEON EMMA; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT",
-          "individual_party_likely": true,
-          "status": null,
-          "amount": null,
-          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=704+East+Saint+Catherine+St&searchType=StreetSearch#results",
-          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8xMDA4LzIwMjYxMjM0MzQudGlm&type=pdf",
-          "raw_distress_score": null
-        }
-      ]
-    },
-    {
-      "property_key": "ADDR::4216 ALGONQUIN PKWY",
-      "property_address": "4216 Algonquin Parkway, Louisville, KY 40211",
-      "parcel_id": null,
-      "parties_or_owners": [
-        "GHOLSTON CASSANDRA C"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "lis_pendens"
-      ],
-      "signal_count": 1,
-      "motivation_score": 48,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "recent lis pendens filing"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "lis_pendens",
-          "signal_date": "10/08/2026",
-          "property_address": "4216 Algonquin Parkway, Louisville, KY 40211",
-          "normalized_address": "4216 ALGONQUIN PKWY",
-          "parcel_id": null,
-          "party_or_owner": "GHOLSTON CASSANDRA C",
-          "individual_party_likely": true,
-          "status": null,
-          "amount": null,
-          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=4216+Algonquin+Parkway&searchType=StreetSearch#results",
-          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8xMDA4LzIwMjYxMjMzNTEudGlm&type=pdf",
-          "raw_distress_score": null
-        }
-      ]
-    },
-    {
-      "property_key": "ADDR::6517 CADY DR",
-      "property_address": "6517 Cady Dr, Louisville, KY 40258",
-      "parcel_id": null,
-      "parties_or_owners": [
-        "WELSCHER MICHAEL G; WELSCHER TAMMY; SECRETARY OF HOUSING AND URBAN DEVELOPMENT; MIDLAND FUNDING LLC; PORTFOLIO RECOVERY ASSOCIATES LLC; PRA GROUP INC; OKINUS INC"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "lis_pendens"
-      ],
-      "signal_count": 1,
-      "motivation_score": 48,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "recent lis pendens filing"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "lis_pendens",
-          "signal_date": "10/08/2026",
-          "property_address": "6517 Cady Dr, Louisville, KY 40258",
-          "normalized_address": "6517 CADY DR",
-          "parcel_id": null,
-          "party_or_owner": "WELSCHER MICHAEL G; WELSCHER TAMMY; SECRETARY OF HOUSING AND URBAN DEVELOPMENT; MIDLAND FUNDING LLC; PORTFOLIO RECOVERY ASSOCIATES LLC; PRA GROUP INC; OKINUS INC",
-          "individual_party_likely": true,
-          "status": null,
-          "amount": null,
-          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=6517+Cady+Dr&searchType=StreetSearch#results",
-          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8xMDA4LzIwMjYxMjMzNzAudGlm&type=pdf",
-          "raw_distress_score": null
-        }
-      ]
-    },
-    {
-      "property_key": "ADDR::6000 FAIRRIDGE CT",
-      "property_address": "6000 Fairridge Ct, Louisville, KY 40229",
-      "parcel_id": null,
-      "parties_or_owners": [
-        "WHITE JARED B; WHITE MEAGAN LYNN"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "lis_pendens"
-      ],
-      "signal_count": 1,
-      "motivation_score": 48,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "recent lis pendens filing"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "lis_pendens",
-          "signal_date": "10/08/2026",
-          "property_address": "6000 Fairridge Ct, Louisville, KY 40229",
-          "normalized_address": "6000 FAIRRIDGE CT",
-          "parcel_id": null,
-          "party_or_owner": "WHITE JARED B; WHITE MEAGAN LYNN",
-          "individual_party_likely": true,
-          "status": null,
-          "amount": null,
-          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=6000+Fairridge+Ct&searchType=StreetSearch#results",
-          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8xMDA4LzIwMjYxMjM0MTMudGlm&type=pdf",
-          "raw_distress_score": null
-        }
-      ]
-    },
     {
       "property_key": "ADDR::9902 WEST AVE",
       "property_address": "9902 West Ave Louisville, KY 40272",
@@ -1381,43 +1233,6 @@
       ]
     },
     {
-      "property_key": "PARCEL::063E00210000",
-      "property_address": "1229 ROADWAY AVE, LOUISVILLE, KY 40208",
-      "parcel_id": "063E00210000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, roof, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "1229 ROADWAY AVE, LOUISVILLE, KY 40208",
-          "normalized_address": "1229 RDWAY AVE",
-          "parcel_id": "063E00210000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; drainage; sewage/plumbing; vacant/abandoned; abandoned vehicle; structural/foundation; roof/gutters | 02A Cleaning, X47 Drainage, 05A Abandoned Vehicle, X19 Exterior/Foundation | Priority: HIGH | Distress score: 23 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; drainage; sewage/plumbing; vacant/abandoned; abandoned vehicle; structural/foundation; roof/gutters | Violations: 02A Cleaning, X47 Drainage, 05A Abandoned Vehicle, X19 Exterior/Foundation | Violation rows: 4 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-006737-4 | Parcel: 063E00210000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 23
-        }
-      ]
-    },
-    {
       "property_key": "PARCEL::062303520000",
       "property_address": "5214 JENNY JUNE DR, LOUISVILLE, KY 40213",
       "parcel_id": "062303520000",
@@ -1671,43 +1486,6 @@
           "status": "Hold",
           "amount": null,
           "details": "roof/gutters; public hazard; vacant/abandoned; exterior/foundation; porch/stairs; electric; structural/foundation | X50 Roof/Gutters, X15, X19 Exterior/Foundation | Priority: HIGH | Distress score: 20 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: roof/gutters; public hazard; vacant/abandoned; exterior/foundation; porch/stairs; electric; structural/foundation | Violations: X50 Roof/Gutters, X15, X19 Exterior/Foundation | Violation rows: 3 | Date: 2026-10-09 | Case IDs: ENF-PMNT-25-001028-9 | Parcel: 060D00180000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 20
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::062403220000",
-      "property_address": "3815 E INDIAN TRL, LOUISVILLE, KY 40213",
-      "parcel_id": "062403220000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Citation"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, roof, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "3815 E INDIAN TRL, LOUISVILLE, KY 40213",
-          "normalized_address": "3815 E INDIAN TRL",
-          "parcel_id": "062403220000",
-          "party_or_owner": "LMG Codes & Regulations - Citation",
-          "individual_party_likely": true,
-          "status": "Citation",
-          "amount": 3200.0,
-          "details": "vacant/abandoned; windows/doors; roof/gutters; public hazard; structural/foundation; exterior/foundation | 01A, X50 Roof/Gutters, X72, X19 Exterior/Foundation | Priority: HIGH | Distress score: 20 | Status: Citation | Occupancy: VACANT STRUCTURE | Distress signals: vacant/abandoned; windows/doors; roof/gutters; public hazard; structural/foundation; exterior/foundation | Violations: 01A, X50 Roof/Gutters, X72, X19 Exterior/Foundation | Citation amount: $3200 | Violation rows: 4 | Date: 2026-10-08 | Case IDs: ENF-PMNT-23-002061-44 | Parcel: 062403220000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 20
         }
@@ -2299,7 +2077,7 @@
           "individual_party_likely": true,
           "status": "Citation",
           "amount": 1400.0,
-          "details": "structural/foundation; exterior/foundation; porch/stairs; trash/weeds; public hazard | X40 Porch/Stairs, I18 Public Hazard | Priority: HIGH | Distress score: 16 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; exterior/foundation; porch/stairs; trash/weeds; public hazard | Violations: X40 Porch/Stairs, I18 Public Hazard | Citation amount: $1400 | Violation rows: 2 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-008140-11 | Parcel: 033B01330134 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "details": "structural/foundation; exterior/foundation; trash/weeds; public hazard; porch/stairs | I18 Public Hazard, X40 Porch/Stairs | Priority: HIGH | Distress score: 16 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; exterior/foundation; trash/weeds; public hazard; porch/stairs | Violations: I18 Public Hazard, X40 Porch/Stairs | Citation amount: $1400 | Violation rows: 2 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-008140-11 | Parcel: 033B01330134 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 16
         }
@@ -2898,43 +2676,6 @@
       ]
     },
     {
-      "property_key": "PARCEL::105010560000",
-      "property_address": "10429 W MANSLICK RD D, LOUISVILLE, KY 40118",
-      "parcel_id": "105010560000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Citation"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "10429 W MANSLICK RD D, LOUISVILLE, KY 40118",
-          "normalized_address": "10429 W MANSLICK RD D",
-          "parcel_id": "105010560000",
-          "party_or_owner": "LMG Codes & Regulations - Citation",
-          "individual_party_likely": true,
-          "status": "Citation",
-          "amount": 300.0,
-          "details": "structural/foundation; exterior/foundation; trash/weeds; public hazard | T30, I22, I18 Public Hazard | Priority: HIGH | Distress score: 15 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; exterior/foundation; trash/weeds; public hazard | Violations: T30, I22, I18 Public Hazard | Citation amount: $300 | Violation rows: 3 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-022705-1 | Parcel: 105010560000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 15
-        }
-      ]
-    },
-    {
       "property_key": "PARCEL::061M00510000",
       "property_address": "6303 LONE OAK TRL, LOUISVILLE, KY 40214",
       "parcel_id": "061M00510000",
@@ -3114,43 +2855,6 @@
           "status": "Hold",
           "amount": null,
           "details": "windows/doors; fence/accessory; structural/foundation; exterior/foundation; trash/weeds; public hazard | I03, K09, I13, I18 Public Hazard | Priority: HIGH | Distress score: 14 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: windows/doors; fence/accessory; structural/foundation; exterior/foundation; trash/weeds; public hazard | Violations: I03, K09, I13, I18 Public Hazard | Violation rows: 4 | Date: 2026-10-09 | Case IDs: ENF-PMNT-24-011561-8 | Parcel: 008F01270000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 14
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::090401920192",
-      "property_address": "4207 SHADY VILLA DR, LOUISVILLE, KY 40219",
-      "parcel_id": "090401920192",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Citation"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation, roof"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "4207 SHADY VILLA DR, LOUISVILLE, KY 40219",
-          "normalized_address": "4207 SHADY VILLA DR",
-          "parcel_id": "090401920192",
-          "party_or_owner": "LMG Codes & Regulations - Citation",
-          "individual_party_likely": true,
-          "status": "Citation",
-          "amount": 600.0,
-          "details": "exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | 02A Cleaning, X50 Roof/Gutters | Priority: HIGH | Distress score: 14 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | Violations: 02A Cleaning, X50 Roof/Gutters | Citation amount: $600 | Violation rows: 2 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-005989-2 | Parcel: 090401920192 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 14
         }
@@ -3446,7 +3150,7 @@
           "individual_party_likely": true,
           "status": "Hold",
           "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | 02A Cleaning, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 13 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | Violations: 02A Cleaning, 05A Abandoned Vehicle | Violation rows: 2 | Date: 2026-10-09 | Case IDs: ENF-PMNT-25-001196-16 | Parcel: 116300050020 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "details": "vacant/abandoned; abandoned vehicle; exterior/foundation; trash/weeds; graffiti | 05A Abandoned Vehicle, 02A Cleaning | Priority: HIGH | Distress score: 13 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: vacant/abandoned; abandoned vehicle; exterior/foundation; trash/weeds; graffiti | Violations: 05A Abandoned Vehicle, 02A Cleaning | Violation rows: 2 | Date: 2026-10-09 | Case IDs: ENF-PMNT-25-001196-16 | Parcel: 116300050020 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 13
         }
@@ -3521,43 +3225,6 @@
           "status": "Violation Notice",
           "amount": null,
           "details": "windows/doors; structural/foundation; sewage/plumbing; heating; exterior/foundation | I14, T05, X72, R01 Rental Reg., X07 | Priority: HIGH | Distress score: 13 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: windows/doors; structural/foundation; sewage/plumbing; heating; exterior/foundation | Violations: I14, T05, X72, R01 Rental Reg., X07 | Violation rows: 5 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-022665-1 | Parcel: 029E01080000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 13
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::058D00260000",
-      "property_address": "4618 S 3RD ST, LOUISVILLE, KY 40214",
-      "parcel_id": "058D00260000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "4618 S 3RD ST, LOUISVILLE, KY 40214",
-          "normalized_address": "4618 S 3RD ST",
-          "parcel_id": "058D00260000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | 02A Cleaning, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 13 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | Violations: 02A Cleaning, 05A Abandoned Vehicle | Violation rows: 2 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-021643-2 | Parcel: 058D00260000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 13
         }
@@ -3706,43 +3373,6 @@
           "status": "Hold",
           "amount": null,
           "details": "structural/foundation; exterior/foundation; roof/gutters; vacant/abandoned | X19 Exterior/Foundation | Priority: HIGH | Distress score: 12 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: structural/foundation; exterior/foundation; roof/gutters; vacant/abandoned | Violations: X19 Exterior/Foundation | Violation rows: 1 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-016785-3 | Parcel: 043F00490000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 12
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::049D00740000",
-      "property_address": "1522 HEMLOCK ST, LOUISVILLE, KY 40211",
-      "parcel_id": "049D00740000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Hold"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, roof, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "1522 HEMLOCK ST, LOUISVILLE, KY 40211",
-          "normalized_address": "1522 HEMLOCK ST",
-          "parcel_id": "049D00740000",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "structural/foundation; exterior/foundation; roof/gutters; vacant/abandoned | X19 Exterior/Foundation | Priority: HIGH | Distress score: 12 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: structural/foundation; exterior/foundation; roof/gutters; vacant/abandoned | Violations: X19 Exterior/Foundation | Violation rows: 1 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-014182-4 | Parcel: 049D00740000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 12
         }
@@ -3965,43 +3595,6 @@
           "status": "Violation Notice",
           "amount": null,
           "details": "exterior/foundation; trash/weeds; graffiti; structural/foundation; fence/accessory | 02A Cleaning, X78 Fence/Accessory | Priority: HIGH | Distress score: 11 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; structural/foundation; fence/accessory | Violations: 02A Cleaning, X78 Fence/Accessory | Violation rows: 2 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-018530-2 | Parcel: 043H01540000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 11
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::058D00230000",
-      "property_address": "4624 S 3RD ST, LOUISVILLE, KY 40214",
-      "parcel_id": "058D00230000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "4624 S 3RD ST, LOUISVILLE, KY 40214",
-          "normalized_address": "4624 S 3RD ST",
-          "parcel_id": "058D00230000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning, X69 Address Numbers | Priority: HIGH | Distress score: 11 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning, X69 Address Numbers | Violation rows: 3 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-002503-6 | Parcel: 058D00230000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 11
         }
@@ -4415,80 +4008,6 @@
       ]
     },
     {
-      "property_key": "PARCEL::063N00330000",
-      "property_address": "1600 EARL AVE, LOUISVILLE, KY 40215",
-      "parcel_id": "063N00330000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Hold"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "1600 EARL AVE, LOUISVILLE, KY 40215",
-          "normalized_address": "1600 EARL AVE",
-          "parcel_id": "063N00330000",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned | 02A Cleaning | Priority: HIGH | Distress score: 10 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-020447-2 | Parcel: 063N00330000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 10
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::049D00830000",
-      "property_address": "1540 HEMLOCK ST, LOUISVILLE, KY 40211",
-      "parcel_id": "049D00830000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Hold"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation, roof, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "1540 HEMLOCK ST, LOUISVILLE, KY 40211",
-          "normalized_address": "1540 HEMLOCK ST",
-          "parcel_id": "049D00830000",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "structural/foundation; fence/accessory; exterior/foundation; roof/gutters | X78 Fence/Accessory, X19 Exterior/Foundation | Priority: HIGH | Distress score: 10 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; fence/accessory; exterior/foundation; roof/gutters | Violations: X78 Fence/Accessory, X19 Exterior/Foundation | Violation rows: 2 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-014181-4 | Parcel: 049D00830000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 10
-        }
-      ]
-    },
-    {
       "property_key": "PARCEL::086000730023",
       "property_address": "5005 MONTICELLO AVE, LOUISVILLE, KY 40218",
       "parcel_id": "086000730023",
@@ -4822,11 +4341,11 @@
       ]
     },
     {
-      "property_key": "PARCEL::087P00630000",
-      "property_address": "200 TRAFALGAR SQ 11, LOUISVILLE, KY 40218",
-      "parcel_id": "087P00630000",
+      "property_key": "PARCEL::029900450000",
+      "property_address": "111 HIGHLAND AVE, LOUISVILLE, KY 40245",
+      "parcel_id": "029900450000",
       "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
+        "LMG Codes & Regulations - Hold"
       ],
       "individual_owner_or_party_likely": true,
       "sources": [
@@ -4836,7 +4355,7 @@
       "motivation_score": 34,
       "motivation_class": "LOW",
       "score_reasons": [
-        "severe code indicators: foundation"
+        "severe code indicators: abandon, vacant"
       ],
       "previously_assigned": false,
       "previously_seen_in_code_queue": false,
@@ -4844,29 +4363,15 @@
       "evidence": [
         {
           "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "200 TRAFALGAR SQ 11, LOUISVILLE, KY 40218",
-          "normalized_address": "200 TRAFALGAR SQ 11",
-          "parcel_id": "087P00630000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "signal_date": "2026-10-12",
+          "property_address": "111 HIGHLAND AVE, LOUISVILLE, KY 40245",
+          "normalized_address": "111 HIGHLAND AVE",
+          "parcel_id": "029900450000",
+          "party_or_owner": "LMG Codes & Regulations - Hold",
           "individual_party_likely": true,
-          "status": "Violation Notice",
+          "status": "Hold",
           "amount": null,
-          "details": "windows/doors; exterior/foundation; infestation | K02, I13, I17 Infestation | Priority: MEDIUM | Distress score: 8 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: windows/doors; exterior/foundation; infestation | Violations: K02, I13, I17 Infestation | Violation rows: 3 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-022710-1 | Parcel: 087P00630000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 8
-        },
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-09",
-          "property_address": "602 WIMBLETON CT 8, LOUISVILLE, KY 40218",
-          "normalized_address": "602 WIMBLETON CT 8",
-          "parcel_id": "087P00630000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; infestation | K02, M100, K06, I17 Infestation | Priority: MEDIUM | Distress score: 7 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; infestation | Violations: K02, M100, K06, I17 Infestation | Violation rows: 4 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-022405-1 | Parcel: 087P00630000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "details": "vacant/abandoned; abandoned vehicle | 05A Abandoned Vehicle | Priority: MEDIUM | Distress score: 7 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: vacant/abandoned; abandoned vehicle | Violations: 05A Abandoned Vehicle | Violation rows: 1 | Date: 2026-10-12 | Case IDs: ENF-PMNT-26-022647-2 | Parcel: 029900450000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 7
         }
@@ -4903,7 +4408,7 @@
           "individual_party_likely": true,
           "status": "Violation Notice",
           "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti | R01 Rental Reg., 02A Cleaning | Priority: MEDIUM | Distress score: 7 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: R01 Rental Reg., 02A Cleaning | Violation rows: 2 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-014811-2 | Parcel: 035L00870000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning, R01 Rental Reg. | Priority: MEDIUM | Distress score: 7 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning, R01 Rental Reg. | Violation rows: 2 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-014811-2 | Parcel: 035L00870000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 7
         }
@@ -4978,6 +4483,43 @@
           "status": "Violation Notice",
           "amount": null,
           "details": "vacant/abandoned; abandoned vehicle | 05A Abandoned Vehicle | Priority: MEDIUM | Distress score: 7 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: vacant/abandoned; abandoned vehicle | Violations: 05A Abandoned Vehicle | Violation rows: 1 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-022670-1 | Parcel: 003F00900000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 7
+        }
+      ]
+    },
+    {
+      "property_key": "PARCEL::087P00630000",
+      "property_address": "602 WIMBLETON CT 8, LOUISVILLE, KY 40218",
+      "parcel_id": "087P00630000",
+      "parties_or_owners": [
+        "LMG Codes & Regulations - Violation Notice"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "motivation_score": 34,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "severe code indicators: foundation"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-10-09",
+          "property_address": "602 WIMBLETON CT 8, LOUISVILLE, KY 40218",
+          "normalized_address": "602 WIMBLETON CT 8",
+          "parcel_id": "087P00630000",
+          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "individual_party_likely": true,
+          "status": "Violation Notice",
+          "amount": null,
+          "details": "exterior/foundation; infestation | K02, M100, K06, I17 Infestation | Priority: MEDIUM | Distress score: 7 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; infestation | Violations: K02, M100, K06, I17 Infestation | Violation rows: 4 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-022405-1 | Parcel: 087P00630000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 7
         }
@@ -5311,43 +4853,6 @@
           "status": "Violation Notice",
           "amount": null,
           "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning, R01 Rental Reg. | Priority: MEDIUM | Distress score: 7 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning, R01 Rental Reg. | Violation rows: 2 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-022748-1 | Parcel: 061L00390000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 7
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::027201160002",
-      "property_address": "9006 PROSPECT ST, LYNDON, KY 40242",
-      "parcel_id": "027201160002",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Hold"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "9006 PROSPECT ST, LYNDON, KY 40242",
-          "normalized_address": "9006 PROSPECT ST LYNDON KY 40242",
-          "parcel_id": "027201160002",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "vacant/abandoned; abandoned vehicle | 05A Abandoned Vehicle | Priority: MEDIUM | Distress score: 7 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: vacant/abandoned; abandoned vehicle | Violations: 05A Abandoned Vehicle | Violation rows: 1 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-022585-2 | Parcel: 027201160002 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 7
         }
@@ -6014,228 +5519,6 @@
           "status": "Violation Notice",
           "amount": null,
           "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning | Priority: MEDIUM | Distress score: 6 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-016719-2 | Parcel: 062P00530000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 6
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::102800500000",
-      "property_address": "2706 HOLLY PARK DR, LOUISVILLE, KY 40214",
-      "parcel_id": "102800500000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Hold"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "2706 HOLLY PARK DR, LOUISVILLE, KY 40214",
-          "normalized_address": "2706 HOLLY PARK DR",
-          "parcel_id": "102800500000",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "vacant/abandoned; windows/doors | 01A | Priority: MEDIUM | Distress score: 6 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: vacant/abandoned; windows/doors | Violations: 01A | Violation rows: 1 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-022604-1 | Parcel: 102800500000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 6
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::308601700000",
-      "property_address": "5617 GRANDEL BLVD, LOUISVILLE, KY 40258",
-      "parcel_id": "308601700000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "5617 GRANDEL BLVD, LOUISVILLE, KY 40258",
-          "normalized_address": "5617 GRANDEL BLVD",
-          "parcel_id": "308601700000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning | Priority: MEDIUM | Distress score: 6 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-021367-3 | Parcel: 308601700000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 6
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::066A00690000",
-      "property_address": "3935 WOODRUFF AVE, LOUISVILLE, KY 40215",
-      "parcel_id": "066A00690000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "3935 WOODRUFF AVE, LOUISVILLE, KY 40215",
-          "normalized_address": "3935 WOODRUFF AVE",
-          "parcel_id": "066A00690000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning | Priority: MEDIUM | Distress score: 6 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-019955-2 | Parcel: 066A00690000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 6
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::051B00080000",
-      "property_address": "3312 BOHANNON AVE, LOUISVILLE, KY 40215",
-      "parcel_id": "051B00080000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "3312 BOHANNON AVE, LOUISVILLE, KY 40215",
-          "normalized_address": "3312 BOHANNON AVE",
-          "parcel_id": "051B00080000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "vacant/abandoned; windows/doors | 01A | Priority: MEDIUM | Distress score: 6 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: vacant/abandoned; windows/doors | Violations: 01A | Violation rows: 1 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-022567-1 | Parcel: 051B00080000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 6
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::098300010000",
-      "property_address": "809 HIGH SCHOOL DR, LOUISVILLE, KY 40219",
-      "parcel_id": "098300010000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "809 HIGH SCHOOL DR, LOUISVILLE, KY 40219",
-          "normalized_address": "809 HIGH SCHOOL DR",
-          "parcel_id": "098300010000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti | 02A Cleaning | Priority: MEDIUM | Distress score: 6 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti | Violations: 02A Cleaning | Violation rows: 1 | Date: 2026-10-08 | Case IDs: ENF-PMNT-25-004090-10 | Parcel: 098300010000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 6
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::048J00980000",
-      "property_address": "1437 HEMLOCK ST, LOUISVILLE, KY 40211",
-      "parcel_id": "048J00980000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "1437 HEMLOCK ST, LOUISVILLE, KY 40211",
-          "normalized_address": "1437 HEMLOCK ST",
-          "parcel_id": "048J00980000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "vacant/abandoned | I21, X156 | Priority: MEDIUM | Distress score: 6 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: vacant/abandoned | Violations: I21, X156 | Violation rows: 2 | Date: 2026-10-08 | Case IDs: ENF-PMNT-25-012429-20 | Parcel: 048J00980000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 6
         }
@@ -7056,117 +6339,6 @@
       ]
     },
     {
-      "property_key": "PARCEL::082F02390000",
-      "property_address": "3127 TALISMAN RD, LOUISVILLE, KY 40220",
-      "parcel_id": "082F02390000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "3127 TALISMAN RD, LOUISVILLE, KY 40220",
-          "normalized_address": "3127 TALISMAN RD",
-          "parcel_id": "082F02390000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "structural/foundation; fence/accessory | X78 Fence/Accessory | Priority: LOW | Distress score: 5 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; fence/accessory | Violations: X78 Fence/Accessory | Violation rows: 1 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-022693-1 | Parcel: 082F02390000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 5
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::049D00710000",
-      "property_address": "1516 HEMLOCK ST, LOUISVILLE, KY 40211-0000",
-      "parcel_id": "049D00710000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Hold"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "1516 HEMLOCK ST, LOUISVILLE, KY 40211-0000",
-          "normalized_address": "1516 HEMLOCK ST",
-          "parcel_id": "049D00710000",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "vacant/abandoned | Priority: LOW | Distress score: 5 | Status: Hold | Occupancy: ABANDONED LOT | Distress signals: vacant/abandoned | Violation rows: 1 | Date: 2026-10-08 | Case IDs: 258450-ENF-PM-71 | Parcel: 049D00710000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 5
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::048J00960000",
-      "property_address": "1443 HEMLOCK ST, LOUISVILLE, KY 40211-0000",
-      "parcel_id": "048J00960000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Hold"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, vacant"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "1443 HEMLOCK ST, LOUISVILLE, KY 40211-0000",
-          "normalized_address": "1443 HEMLOCK ST",
-          "parcel_id": "048J00960000",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "vacant/abandoned | Priority: LOW | Distress score: 5 | Status: Hold | Occupancy: ABANDONED LOT | Distress signals: vacant/abandoned | Violation rows: 1 | Date: 2026-10-08 | Case IDs: 405167-ENF-ZM-72 | Parcel: 048J00960000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 5
-        }
-      ]
-    },
-    {
       "property_key": "PARCEL::062P01370000",
       "property_address": "5535 BRUCE AVE, LOUISVILLE, KY 40214",
       "parcel_id": "062P01370000",
@@ -7234,7 +6406,7 @@
           "individual_party_likely": true,
           "status": "Citation",
           "amount": 2400.0,
-          "details": "sewage/plumbing | K18, T30, K11 | Priority: HIGH | Distress score: 8 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: sewage/plumbing | Violations: K18, T30, K11 | Citation amount: $2400 | Violation rows: 3 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-020870-6 | Parcel: 084D02130000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "details": "sewage/plumbing | T30, K11, K18 | Priority: HIGH | Distress score: 8 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: sewage/plumbing | Violations: T30, K11, K18 | Citation amount: $2400 | Violation rows: 3 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-020870-6 | Parcel: 084D02130000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 8
         }
@@ -7350,194 +6522,9 @@
           "raw_distress_score": 5
         }
       ]
-    },
-    {
-      "property_key": "PARCEL::070A00220000",
-      "property_address": "1801 PAYNE ST, LOUISVILLE, KY 40206",
-      "parcel_id": "070A00220000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Hold"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 18,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "active code-enforcement distress"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "1801 PAYNE ST, LOUISVILLE, KY 40206",
-          "normalized_address": "1801 PAYNE ST",
-          "parcel_id": "070A00220000",
-          "party_or_owner": "LMG Codes & Regulations - Hold",
-          "individual_party_likely": true,
-          "status": "Hold",
-          "amount": null,
-          "details": "drainage; sewage/plumbing | X47 Drainage | Priority: LOW | Distress score: 5 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: drainage; sewage/plumbing | Violations: X47 Drainage | Violation rows: 1 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-020328-2 | Parcel: 070A00220000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 5
-        }
-      ]
     }
   ],
   "top_all": [
-    {
-      "property_key": "ADDR::704 EAST SAINT CATHERINE ST",
-      "property_address": "704 East Saint Catherine St, Louisville, KY 40203",
-      "parcel_id": null,
-      "parties_or_owners": [
-        "CORMAN PHILLIP A; STURGEON EMMA; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "lis_pendens"
-      ],
-      "signal_count": 1,
-      "motivation_score": 48,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "recent lis pendens filing"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "lis_pendens",
-          "signal_date": "10/08/2026",
-          "property_address": "704 East Saint Catherine St, Louisville, KY 40203",
-          "normalized_address": "704 EAST SAINT CATHERINE ST",
-          "parcel_id": null,
-          "party_or_owner": "CORMAN PHILLIP A; STURGEON EMMA; UNITED STATES OF AMERICA SECRETARY OF HOUSING & URBAN DEVELOPMENT",
-          "individual_party_likely": true,
-          "status": null,
-          "amount": null,
-          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=704+East+Saint+Catherine+St&searchType=StreetSearch#results",
-          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8xMDA4LzIwMjYxMjM0MzQudGlm&type=pdf",
-          "raw_distress_score": null
-        }
-      ]
-    },
-    {
-      "property_key": "ADDR::4216 ALGONQUIN PKWY",
-      "property_address": "4216 Algonquin Parkway, Louisville, KY 40211",
-      "parcel_id": null,
-      "parties_or_owners": [
-        "GHOLSTON CASSANDRA C"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "lis_pendens"
-      ],
-      "signal_count": 1,
-      "motivation_score": 48,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "recent lis pendens filing"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "lis_pendens",
-          "signal_date": "10/08/2026",
-          "property_address": "4216 Algonquin Parkway, Louisville, KY 40211",
-          "normalized_address": "4216 ALGONQUIN PKWY",
-          "parcel_id": null,
-          "party_or_owner": "GHOLSTON CASSANDRA C",
-          "individual_party_likely": true,
-          "status": null,
-          "amount": null,
-          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=4216+Algonquin+Parkway&searchType=StreetSearch#results",
-          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8xMDA4LzIwMjYxMjMzNTEudGlm&type=pdf",
-          "raw_distress_score": null
-        }
-      ]
-    },
-    {
-      "property_key": "ADDR::6517 CADY DR",
-      "property_address": "6517 Cady Dr, Louisville, KY 40258",
-      "parcel_id": null,
-      "parties_or_owners": [
-        "WELSCHER MICHAEL G; WELSCHER TAMMY; SECRETARY OF HOUSING AND URBAN DEVELOPMENT; MIDLAND FUNDING LLC; PORTFOLIO RECOVERY ASSOCIATES LLC; PRA GROUP INC; OKINUS INC"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "lis_pendens"
-      ],
-      "signal_count": 1,
-      "motivation_score": 48,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "recent lis pendens filing"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "lis_pendens",
-          "signal_date": "10/08/2026",
-          "property_address": "6517 Cady Dr, Louisville, KY 40258",
-          "normalized_address": "6517 CADY DR",
-          "parcel_id": null,
-          "party_or_owner": "WELSCHER MICHAEL G; WELSCHER TAMMY; SECRETARY OF HOUSING AND URBAN DEVELOPMENT; MIDLAND FUNDING LLC; PORTFOLIO RECOVERY ASSOCIATES LLC; PRA GROUP INC; OKINUS INC",
-          "individual_party_likely": true,
-          "status": null,
-          "amount": null,
-          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=6517+Cady+Dr&searchType=StreetSearch#results",
-          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8xMDA4LzIwMjYxMjMzNzAudGlm&type=pdf",
-          "raw_distress_score": null
-        }
-      ]
-    },
-    {
-      "property_key": "ADDR::6000 FAIRRIDGE CT",
-      "property_address": "6000 Fairridge Ct, Louisville, KY 40229",
-      "parcel_id": null,
-      "parties_or_owners": [
-        "WHITE JARED B; WHITE MEAGAN LYNN"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "lis_pendens"
-      ],
-      "signal_count": 1,
-      "motivation_score": 48,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "recent lis pendens filing"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "lis_pendens",
-          "signal_date": "10/08/2026",
-          "property_address": "6000 Fairridge Ct, Louisville, KY 40229",
-          "normalized_address": "6000 FAIRRIDGE CT",
-          "parcel_id": null,
-          "party_or_owner": "WHITE JARED B; WHITE MEAGAN LYNN",
-          "individual_party_likely": true,
-          "status": null,
-          "amount": null,
-          "details": "Property address extracted successfully.; PVA manual verification URL: https://jeffersonpva.ky.gov/property-search/property-listings/?psfldAddress=6000+Fairridge+Ct&searchType=StreetSearch#results",
-          "source_url": "https://search.jeffersondeeds.com/viewimg.php?img=L2ltZy9reS9qZWZmZXJzb24vMjAyNi8xMDA4LzIwMjYxMjM0MTMudGlm&type=pdf",
-          "raw_distress_score": null
-        }
-      ]
-    },
     {
       "property_key": "ADDR::9902 WEST AVE",
       "property_address": "9902 West Ave Louisville, KY 40272",
@@ -8749,80 +7736,6 @@
       ]
     },
     {
-      "property_key": "PARCEL::160600800000",
-      "property_address": "3910 BENJE WAY, LOUISVILLE, KY 40241",
-      "parcel_id": "160600800000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Citation"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, roof, structural"
-      ],
-      "previously_assigned": true,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": false,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "3910 BENJE WAY, LOUISVILLE, KY 40241",
-          "normalized_address": "3910 BENJE WAY",
-          "parcel_id": "160600800000",
-          "party_or_owner": "LMG Codes & Regulations - Citation",
-          "individual_party_likely": true,
-          "status": "Citation",
-          "amount": 2100.0,
-          "details": "roof/gutters; public hazard; vacant/abandoned; exterior/foundation; infestation; structural/foundation; trash/weeds | X50 Roof/Gutters, I17 Infestation, I18 Public Hazard | Priority: HIGH | Distress score: 23 | Status: Citation | Occupancy: VACANT STRUCTURE | Distress signals: roof/gutters; public hazard; vacant/abandoned; exterior/foundation; infestation; structural/foundation; trash/weeds | Violations: X50 Roof/Gutters, I17 Infestation, I18 Public Hazard | Citation amount: $2100 | Violation rows: 3 | Date: 2026-10-08 | Case IDs: ENF-PMNT-25-009565-39 | Parcel: 160600800000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 23
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::063E00210000",
-      "property_address": "1229 ROADWAY AVE, LOUISVILLE, KY 40208",
-      "parcel_id": "063E00210000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, roof, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "1229 ROADWAY AVE, LOUISVILLE, KY 40208",
-          "normalized_address": "1229 RDWAY AVE",
-          "parcel_id": "063E00210000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; drainage; sewage/plumbing; vacant/abandoned; abandoned vehicle; structural/foundation; roof/gutters | 02A Cleaning, X47 Drainage, 05A Abandoned Vehicle, X19 Exterior/Foundation | Priority: HIGH | Distress score: 23 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; drainage; sewage/plumbing; vacant/abandoned; abandoned vehicle; structural/foundation; roof/gutters | Violations: 02A Cleaning, X47 Drainage, 05A Abandoned Vehicle, X19 Exterior/Foundation | Violation rows: 4 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-006737-4 | Parcel: 063E00210000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 23
-        }
-      ]
-    },
-    {
       "property_key": "PARCEL::062303520000",
       "property_address": "5214 JENNY JUNE DR, LOUISVILLE, KY 40213",
       "parcel_id": "062303520000",
@@ -9082,43 +7995,6 @@
       ]
     },
     {
-      "property_key": "PARCEL::062403220000",
-      "property_address": "3815 E INDIAN TRL, LOUISVILLE, KY 40213",
-      "parcel_id": "062403220000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Citation"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, roof, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "3815 E INDIAN TRL, LOUISVILLE, KY 40213",
-          "normalized_address": "3815 E INDIAN TRL",
-          "parcel_id": "062403220000",
-          "party_or_owner": "LMG Codes & Regulations - Citation",
-          "individual_party_likely": true,
-          "status": "Citation",
-          "amount": 3200.0,
-          "details": "vacant/abandoned; windows/doors; roof/gutters; public hazard; structural/foundation; exterior/foundation | 01A, X50 Roof/Gutters, X72, X19 Exterior/Foundation | Priority: HIGH | Distress score: 20 | Status: Citation | Occupancy: VACANT STRUCTURE | Distress signals: vacant/abandoned; windows/doors; roof/gutters; public hazard; structural/foundation; exterior/foundation | Violations: 01A, X50 Roof/Gutters, X72, X19 Exterior/Foundation | Citation amount: $3200 | Violation rows: 4 | Date: 2026-10-08 | Case IDs: ENF-PMNT-23-002061-44 | Parcel: 062403220000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 20
-        }
-      ]
-    },
-    {
       "property_key": "PARCEL::001H01210000",
       "property_address": "647 S 22ND ST, LOUISVILLE, KY 40211",
       "parcel_id": "001H01210000",
@@ -9372,43 +8248,6 @@
           "status": "Violation Notice",
           "amount": null,
           "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle; structural/foundation; roof/gutters | 02A Cleaning, 05A Abandoned Vehicle, X19 Exterior/Foundation | Priority: HIGH | Distress score: 19 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle; structural/foundation; roof/gutters | Violations: 02A Cleaning, 05A Abandoned Vehicle, X19 Exterior/Foundation | Violation rows: 4 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-018533-2 | Parcel: 043H01550000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 19
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::049D00730000",
-      "property_address": "1520 HEMLOCK ST, LOUISVILLE, KY 40211",
-      "parcel_id": "049D00730000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: abandon, foundation, structural, vacant"
-      ],
-      "previously_assigned": true,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": false,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "1520 HEMLOCK ST, LOUISVILLE, KY 40211",
-          "normalized_address": "1520 HEMLOCK ST",
-          "parcel_id": "049D00730000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
-          "individual_party_likely": true,
-          "status": "Violation Notice",
-          "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; structural/foundation; dangerous tree; infestation; public hazard; vacant/abandoned | 02A Cleaning, X90 Tree | Priority: HIGH | Distress score: 19 | Status: Violation Notice | Occupancy: VACANT STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; structural/foundation; dangerous tree; infestation; public hazard; vacant/abandoned | Violations: 02A Cleaning, X90 Tree | Violation rows: 3 | Date: 2026-10-08 | Case IDs: ENF-PMNT-25-014088-17 | Parcel: 049D00730000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 19
         }
@@ -9815,7 +8654,7 @@
           "individual_party_likely": true,
           "status": "Citation",
           "amount": 1400.0,
-          "details": "structural/foundation; exterior/foundation; porch/stairs; trash/weeds; public hazard | X40 Porch/Stairs, I18 Public Hazard | Priority: HIGH | Distress score: 16 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; exterior/foundation; porch/stairs; trash/weeds; public hazard | Violations: X40 Porch/Stairs, I18 Public Hazard | Citation amount: $1400 | Violation rows: 2 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-008140-11 | Parcel: 033B01330134 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "details": "structural/foundation; exterior/foundation; trash/weeds; public hazard; porch/stairs | I18 Public Hazard, X40 Porch/Stairs | Priority: HIGH | Distress score: 16 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; exterior/foundation; trash/weeds; public hazard; porch/stairs | Violations: I18 Public Hazard, X40 Porch/Stairs | Citation amount: $1400 | Violation rows: 2 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-008140-11 | Parcel: 033B01330134 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 16
         }
@@ -10451,43 +9290,6 @@
       ]
     },
     {
-      "property_key": "PARCEL::105010560000",
-      "property_address": "10429 W MANSLICK RD D, LOUISVILLE, KY 40118",
-      "parcel_id": "105010560000",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Citation"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation, structural"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "10429 W MANSLICK RD D, LOUISVILLE, KY 40118",
-          "normalized_address": "10429 W MANSLICK RD D",
-          "parcel_id": "105010560000",
-          "party_or_owner": "LMG Codes & Regulations - Citation",
-          "individual_party_likely": true,
-          "status": "Citation",
-          "amount": 300.0,
-          "details": "structural/foundation; exterior/foundation; trash/weeds; public hazard | T30, I22, I18 Public Hazard | Priority: HIGH | Distress score: 15 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; exterior/foundation; trash/weeds; public hazard | Violations: T30, I22, I18 Public Hazard | Citation amount: $300 | Violation rows: 3 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-022705-1 | Parcel: 105010560000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 15
-        }
-      ]
-    },
-    {
       "property_key": "PARCEL::061M00510000",
       "property_address": "6303 LONE OAK TRL, LOUISVILLE, KY 40214",
       "parcel_id": "061M00510000",
@@ -10667,43 +9469,6 @@
           "status": "Hold",
           "amount": null,
           "details": "windows/doors; fence/accessory; structural/foundation; exterior/foundation; trash/weeds; public hazard | I03, K09, I13, I18 Public Hazard | Priority: HIGH | Distress score: 14 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: windows/doors; fence/accessory; structural/foundation; exterior/foundation; trash/weeds; public hazard | Violations: I03, K09, I13, I18 Public Hazard | Violation rows: 4 | Date: 2026-10-09 | Case IDs: ENF-PMNT-24-011561-8 | Parcel: 008F01270000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
-          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 14
-        }
-      ]
-    },
-    {
-      "property_key": "PARCEL::090401920192",
-      "property_address": "4207 SHADY VILLA DR, LOUISVILLE, KY 40219",
-      "parcel_id": "090401920192",
-      "parties_or_owners": [
-        "LMG Codes & Regulations - Citation"
-      ],
-      "individual_owner_or_party_likely": true,
-      "sources": [
-        "louisville_code_violations"
-      ],
-      "signal_count": 1,
-      "motivation_score": 34,
-      "motivation_class": "LOW",
-      "score_reasons": [
-        "severe code indicators: foundation, roof"
-      ],
-      "previously_assigned": false,
-      "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
-      "evidence": [
-        {
-          "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "4207 SHADY VILLA DR, LOUISVILLE, KY 40219",
-          "normalized_address": "4207 SHADY VILLA DR",
-          "parcel_id": "090401920192",
-          "party_or_owner": "LMG Codes & Regulations - Citation",
-          "individual_party_likely": true,
-          "status": "Citation",
-          "amount": 600.0,
-          "details": "exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | 02A Cleaning, X50 Roof/Gutters | Priority: HIGH | Distress score: 14 | Status: Citation | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | Violations: 02A Cleaning, X50 Roof/Gutters | Citation amount: $600 | Violation rows: 2 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-005989-2 | Parcel: 090401920192 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 14
         }
@@ -11036,7 +9801,7 @@
           "individual_party_likely": true,
           "status": "Hold",
           "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | 02A Cleaning, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 13 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | Violations: 02A Cleaning, 05A Abandoned Vehicle | Violation rows: 2 | Date: 2026-10-09 | Case IDs: ENF-PMNT-25-001196-16 | Parcel: 116300050020 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "details": "vacant/abandoned; abandoned vehicle; exterior/foundation; trash/weeds; graffiti | 05A Abandoned Vehicle, 02A Cleaning | Priority: HIGH | Distress score: 13 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: vacant/abandoned; abandoned vehicle; exterior/foundation; trash/weeds; graffiti | Violations: 05A Abandoned Vehicle, 02A Cleaning | Violation rows: 2 | Date: 2026-10-09 | Case IDs: ENF-PMNT-25-001196-16 | Parcel: 116300050020 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 13
         }
@@ -11117,11 +9882,11 @@
       ]
     },
     {
-      "property_key": "PARCEL::058D00260000",
-      "property_address": "4618 S 3RD ST, LOUISVILLE, KY 40214",
-      "parcel_id": "058D00260000",
+      "property_key": "PARCEL::063M00780000",
+      "property_address": "1429 THORNBERRY AVE, LOUISVILLE, KY 40215",
+      "parcel_id": "063M00780000",
       "parties_or_owners": [
-        "LMG Codes & Regulations - Violation Notice"
+        "LMG Codes & Regulations - Hold"
       ],
       "individual_owner_or_party_likely": true,
       "sources": [
@@ -11131,25 +9896,25 @@
       "motivation_score": 34,
       "motivation_class": "LOW",
       "score_reasons": [
-        "severe code indicators: abandon, foundation, vacant"
+        "severe code indicators: foundation"
       ],
-      "previously_assigned": false,
+      "previously_assigned": true,
       "previously_seen_in_code_queue": false,
-      "fresh_unworked_candidate": true,
+      "fresh_unworked_candidate": false,
       "evidence": [
         {
           "source": "louisville_code_violations",
-          "signal_date": "2026-10-08",
-          "property_address": "4618 S 3RD ST, LOUISVILLE, KY 40214",
-          "normalized_address": "4618 S 3RD ST",
-          "parcel_id": "058D00260000",
-          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "signal_date": "2026-10-12",
+          "property_address": "1429 THORNBERRY AVE, LOUISVILLE, KY 40215",
+          "normalized_address": "1429 THORNBERRY AVE",
+          "parcel_id": "063M00780000",
+          "party_or_owner": "LMG Codes & Regulations - Hold",
           "individual_party_likely": true,
-          "status": "Violation Notice",
+          "status": "Hold",
           "amount": null,
-          "details": "exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | 02A Cleaning, 05A Abandoned Vehicle | Priority: HIGH | Distress score: 13 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; vacant/abandoned; abandoned vehicle | Violations: 02A Cleaning, 05A Abandoned Vehicle | Violation rows: 2 | Date: 2026-10-08 | Case IDs: ENF-PMNT-26-021643-2 | Parcel: 058D00260000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "details": "exterior/foundation; trash/weeds; graffiti; sewage/plumbing; electric | 02A Cleaning, I21, U01 | Priority: HIGH | Distress score: 12 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; sewage/plumbing; electric | Violations: 02A Cleaning, I21, U01 | Violation rows: 3 | Date: 2026-10-12 | Case IDs: ENF-PMNT-26-022498-2 | Parcel: 063M00780000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
-          "raw_distress_score": 13
+          "raw_distress_score": 12
         }
       ]
     },
@@ -11298,6 +10063,376 @@
           "details": "exterior/foundation; trash/weeds; graffiti; structural/foundation; fence/accessory | 02A Cleaning, X69 Address Numbers, X78 Fence/Accessory, R01 Rental Reg. | Priority: HIGH | Distress score: 12 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; structural/foundation; fence/accessory | Violations: 02A Cleaning, X69 Address Numbers, X78 Fence/Accessory, R01 Rental Reg. | Violation rows: 4 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-022739-1 | Parcel: 061L00020000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
           "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
           "raw_distress_score": 12
+        }
+      ]
+    },
+    {
+      "property_key": "PARCEL::043F00490000",
+      "property_address": "741 S 37TH ST, LOUISVILLE, KY 40211",
+      "parcel_id": "043F00490000",
+      "parties_or_owners": [
+        "LMG Codes & Regulations - Hold"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "motivation_score": 34,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "severe code indicators: abandon, foundation, roof, structural"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-10-09",
+          "property_address": "741 S 37TH ST, LOUISVILLE, KY 40211",
+          "normalized_address": "741 S 37TH ST",
+          "parcel_id": "043F00490000",
+          "party_or_owner": "LMG Codes & Regulations - Hold",
+          "individual_party_likely": true,
+          "status": "Hold",
+          "amount": null,
+          "details": "structural/foundation; exterior/foundation; roof/gutters; vacant/abandoned | X19 Exterior/Foundation | Priority: HIGH | Distress score: 12 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: structural/foundation; exterior/foundation; roof/gutters; vacant/abandoned | Violations: X19 Exterior/Foundation | Violation rows: 1 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-016785-3 | Parcel: 043F00490000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 12
+        }
+      ]
+    },
+    {
+      "property_key": "PARCEL::037B00260000",
+      "property_address": "1536 GARLAND AVE, LOUISVILLE, KY 40210",
+      "parcel_id": "037B00260000",
+      "parties_or_owners": [
+        "LMG Codes & Regulations - Hold"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "motivation_score": 34,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "severe code indicators: foundation, structural"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-10-09",
+          "property_address": "1536 GARLAND AVE, LOUISVILLE, KY 40210",
+          "normalized_address": "1536 GARLAND AVE",
+          "parcel_id": "037B00260000",
+          "party_or_owner": "LMG Codes & Regulations - Hold",
+          "individual_party_likely": true,
+          "status": "Hold",
+          "amount": null,
+          "details": "structural/foundation; sewage/plumbing; heating; windows/doors | I11, M99, T05, I13 | Priority: HIGH | Distress score: 11 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; sewage/plumbing; heating; windows/doors | Violations: I11, M99, T05, I13 | Violation rows: 4 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-021131-4 | Parcel: 037B00260000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 11
+        }
+      ]
+    },
+    {
+      "property_key": "PARCEL::009H01450000",
+      "property_address": "131 N 41ST ST, LOUISVILLE, KY 40212",
+      "parcel_id": "009H01450000",
+      "parties_or_owners": [
+        "LMG Codes & Regulations - Violation Notice"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "motivation_score": 34,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "severe code indicators: foundation, roof"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-10-09",
+          "property_address": "131 N 41ST ST, LOUISVILLE, KY 40212",
+          "normalized_address": "131 N 41ST ST",
+          "parcel_id": "009H01450000",
+          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "individual_party_likely": true,
+          "status": "Violation Notice",
+          "amount": null,
+          "details": "exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | 02A Cleaning, X50 Roof/Gutters | Priority: HIGH | Distress score: 11 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; roof/gutters; public hazard | Violations: 02A Cleaning, X50 Roof/Gutters | Violation rows: 2 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-020055-2 | Parcel: 009H01450000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 11
+        }
+      ]
+    },
+    {
+      "property_key": "PARCEL::002B01230000",
+      "property_address": "2611 W JEFFERSON ST, LOUISVILLE, KY 40212",
+      "parcel_id": "002B01230000",
+      "parties_or_owners": [
+        "LMG Codes & Regulations - Violation Notice"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "motivation_score": 34,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "severe code indicators: foundation"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-10-09",
+          "property_address": "2611 W JEFFERSON ST, LOUISVILLE, KY 40212",
+          "normalized_address": "2611 W JEFFERSON ST",
+          "parcel_id": "002B01230000",
+          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "individual_party_likely": true,
+          "status": "Violation Notice",
+          "amount": null,
+          "details": "exterior/foundation; trash/weeds; graffiti; windows/doors; heating | 02A Cleaning, I03, I11, I13, M23 | Priority: HIGH | Distress score: 11 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; windows/doors; heating | Violations: 02A Cleaning, I03, I11, I13, M23 | Violation rows: 5 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-016541-5 | Parcel: 002B01230000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 11
+        }
+      ]
+    },
+    {
+      "property_key": "PARCEL::059L00960000",
+      "property_address": "6713 STRAWBERRY LN, LOUISVILLE, KY 40214",
+      "parcel_id": "059L00960000",
+      "parties_or_owners": [
+        "LMG Codes & Regulations - Violation Notice"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "motivation_score": 34,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "severe code indicators: foundation, structural"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-10-09",
+          "property_address": "6713 STRAWBERRY LN, LOUISVILLE, KY 40214",
+          "normalized_address": "6713 STRAWBERRY LN",
+          "parcel_id": "059L00960000",
+          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "individual_party_likely": true,
+          "status": "Violation Notice",
+          "amount": null,
+          "details": "exterior/foundation; trash/weeds; graffiti; structural/foundation; fence/accessory | 02A Cleaning, X78 Fence/Accessory | Priority: HIGH | Distress score: 11 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; structural/foundation; fence/accessory | Violations: 02A Cleaning, X78 Fence/Accessory | Violation rows: 2 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-010265-6 | Parcel: 059L00960000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 11
+        }
+      ]
+    },
+    {
+      "property_key": "PARCEL::060K00250000",
+      "property_address": "312 GHEENS AVE, LOUISVILLE, KY 40214",
+      "parcel_id": "060K00250000",
+      "parties_or_owners": [
+        "LMG Codes & Regulations - Violation Notice"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "motivation_score": 34,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "severe code indicators: foundation, roof, structural"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-10-09",
+          "property_address": "312 GHEENS AVE, LOUISVILLE, KY 40214",
+          "normalized_address": "312 GHEENS AVE",
+          "parcel_id": "060K00250000",
+          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "individual_party_likely": true,
+          "status": "Violation Notice",
+          "amount": null,
+          "details": "structural/foundation; exterior/foundation; porch/stairs; roof/gutters | X40 Porch/Stairs, X19 Exterior/Foundation | Priority: HIGH | Distress score: 11 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: structural/foundation; exterior/foundation; porch/stairs; roof/gutters | Violations: X40 Porch/Stairs, X19 Exterior/Foundation | Violation rows: 2 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-011156-3 | Parcel: 060K00250000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 11
+        }
+      ]
+    },
+    {
+      "property_key": "PARCEL::043H01540000",
+      "property_address": "820 HAZEL ST, LOUISVILLE, KY 40211",
+      "parcel_id": "043H01540000",
+      "parties_or_owners": [
+        "LMG Codes & Regulations - Violation Notice"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "motivation_score": 34,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "severe code indicators: foundation, structural"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-10-09",
+          "property_address": "820 HAZEL ST, LOUISVILLE, KY 40211",
+          "normalized_address": "820 HAZEL ST",
+          "parcel_id": "043H01540000",
+          "party_or_owner": "LMG Codes & Regulations - Violation Notice",
+          "individual_party_likely": true,
+          "status": "Violation Notice",
+          "amount": null,
+          "details": "exterior/foundation; trash/weeds; graffiti; structural/foundation; fence/accessory | 02A Cleaning, X78 Fence/Accessory | Priority: HIGH | Distress score: 11 | Status: Violation Notice | Occupancy: OCCUPIED STRUCTURE | Distress signals: exterior/foundation; trash/weeds; graffiti; structural/foundation; fence/accessory | Violations: 02A Cleaning, X78 Fence/Accessory | Violation rows: 2 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-018530-2 | Parcel: 043H01540000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 11
+        }
+      ]
+    },
+    {
+      "property_key": "PARCEL::004G01340194",
+      "property_address": "2706 GILLIGAN ST, LOUISVILLE, KY 40212",
+      "parcel_id": "004G01340194",
+      "parties_or_owners": [
+        "LMG Codes & Regulations - Hold"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "motivation_score": 34,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "severe code indicators: abandon, foundation, structural, vacant"
+      ],
+      "previously_assigned": true,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": false,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-10-09",
+          "property_address": "2706 GILLIGAN ST, LOUISVILLE, KY 40212",
+          "normalized_address": "2706 GILLIGAN ST",
+          "parcel_id": "004G01340194",
+          "party_or_owner": "LMG Codes & Regulations - Hold",
+          "individual_party_likely": true,
+          "status": "Hold",
+          "amount": null,
+          "details": "vacant/abandoned; structural/foundation; fence/accessory | X69 Address Numbers, X78 Fence/Accessory | Priority: HIGH | Distress score: 10 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: vacant/abandoned; structural/foundation; fence/accessory | Violations: X69 Address Numbers, X78 Fence/Accessory | Violation rows: 2 | Date: 2026-10-09 | Case IDs: ENF-PMNT-21-006280-33 | Parcel: 004G01340194 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 10
+        }
+      ]
+    },
+    {
+      "property_key": "PARCEL::043H00860000",
+      "property_address": "3223 GARLAND AVE, LOUISVILLE, KY 40211",
+      "parcel_id": "043H00860000",
+      "parties_or_owners": [
+        "LMG Codes & Regulations - Hold"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "motivation_score": 34,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "severe code indicators: roof"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-10-09",
+          "property_address": "3223 GARLAND AVE, LOUISVILLE, KY 40211",
+          "normalized_address": "3223 GARLAND AVE",
+          "parcel_id": "043H00860000",
+          "party_or_owner": "LMG Codes & Regulations - Hold",
+          "individual_party_likely": true,
+          "status": "Hold",
+          "amount": null,
+          "details": "drainage; sewage/plumbing; roof/gutters; public hazard | X47 Drainage, X50 Roof/Gutters | Priority: HIGH | Distress score: 10 | Status: Hold | Occupancy: OCCUPIED STRUCTURE | Distress signals: drainage; sewage/plumbing; roof/gutters; public hazard | Violations: X47 Drainage, X50 Roof/Gutters | Violation rows: 2 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-018836-2 | Parcel: 043H00860000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 10
+        }
+      ]
+    },
+    {
+      "property_key": "PARCEL::003F00910000",
+      "property_address": "2315 DUNCAN ST, LOUISVILLE, KY 40212",
+      "parcel_id": "003F00910000",
+      "parties_or_owners": [
+        "LMG Codes & Regulations - Hold"
+      ],
+      "individual_owner_or_party_likely": true,
+      "sources": [
+        "louisville_code_violations"
+      ],
+      "signal_count": 1,
+      "motivation_score": 34,
+      "motivation_class": "LOW",
+      "score_reasons": [
+        "severe code indicators: abandon, vacant"
+      ],
+      "previously_assigned": false,
+      "previously_seen_in_code_queue": false,
+      "fresh_unworked_candidate": true,
+      "evidence": [
+        {
+          "source": "louisville_code_violations",
+          "signal_date": "2026-10-09",
+          "property_address": "2315 DUNCAN ST, LOUISVILLE, KY 40212",
+          "normalized_address": "2315 DUNCAN ST",
+          "parcel_id": "003F00910000",
+          "party_or_owner": "LMG Codes & Regulations - Hold",
+          "individual_party_likely": true,
+          "status": "Hold",
+          "amount": null,
+          "details": "demolition; vacant/abandoned | X94 Demolition | Priority: HIGH | Distress score: 10 | Status: Hold | Occupancy: VACANT STRUCTURE | Distress signals: demolition; vacant/abandoned | Violations: X94 Demolition | Violation rows: 1 | Date: 2026-10-09 | Case IDs: ENF-PMNT-26-012105-7 | Parcel: 003F00910000 | Source: Louisville Metro Code Violations (PM_SiteVisit_Violations)",
+          "source_url": "https://services1.arcgis.com/79kfd2K6fskCAkyg/arcgis/rest/services/PM_SiteVisit_Violations/FeatureServer/0",
+          "raw_distress_score": 10
         }
       ]
     }

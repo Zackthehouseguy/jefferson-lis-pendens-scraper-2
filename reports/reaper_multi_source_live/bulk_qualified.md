@@ -1,8 +1,8 @@
 # Reaper Bulk Qualification
 
-Generated: 2026-10-11T13:32:07.562293-04:00
-Input candidates: 193
-Eligible SFR: 7
+Generated: 2026-10-12T11:20:12.868832-04:00
+Input candidates: 170
+Eligible SFR: 6
 Eligible land: 0
 AI scoring status: PRE-AI QUALIFICATION ONLY
 Market-status screening: disabled (not an eligibility gate)
@@ -17,23 +17,19 @@ Market-status screening: disabled (not an eligibility gate)
    - Priority: 65 | Distress: PENDING | AI: PENDING
    - Saturation: PENDING | Freshness: PENDING | Parcel: 126900240024 | Land use: SINGLE FAMILY
    - Sources: lis_pendens
-3. **4216 Algonquin Parkway, Louisville, KY 40211** — GHOLSTON CASSANDRA C
-   - Priority: 61 | Distress: PENDING | AI: PENDING
-   - Saturation: PENDING | Freshness: PENDING | Parcel: 100300040000 | Land use: SINGLE FAMILY
-   - Sources: lis_pendens
-4. **10208 Charleswood Rd, Louisville, KY 40229** — MCINTYRE CODY LEE
-   - Priority: 61 | Distress: PENDING | AI: PENDING
-   - Saturation: PENDING | Freshness: PENDING | Parcel: 095700720000 | Land use: SINGLE FAMILY
-   - Sources: lis_pendens
-5. **3215 Bridwell Dr, Louisville, KY 40216** — MCCLENDON CHARLES & MCCLENDON HEATHER
-   - Priority: 61 | Distress: PENDING | AI: PENDING
-   - Saturation: PENDING | Freshness: PENDING | Parcel: 101800950000 | Land use: SINGLE FAMILY
-   - Sources: lis_pendens
-6. **5811 Jerry Ln, Louisville, KY 40258** — PAYNE MATTHEW R
+3. **5811 Jerry Ln, Louisville, KY 40258** — PAYNE MATTHEW R
    - Priority: 61 | Distress: PENDING | AI: PENDING
    - Saturation: PENDING | Freshness: PENDING | Parcel: 122000340035 | Land use: SINGLE FAMILY
    - Sources: lis_pendens
-7. **1473 Belmar Dr, Louisville, KY 40213** — THOMAS DEVUONO JADEN LEWIS & RIOZZI FRANCESCA
+4. **3215 Bridwell Dr, Louisville, KY 40216** — MCCLENDON CHARLES & MCCLENDON HEATHER
+   - Priority: 61 | Distress: PENDING | AI: PENDING
+   - Saturation: PENDING | Freshness: PENDING | Parcel: 101800950000 | Land use: SINGLE FAMILY
+   - Sources: lis_pendens
+5. **10208 Charleswood Rd, Louisville, KY 40229** — MCINTYRE CODY LEE
+   - Priority: 61 | Distress: PENDING | AI: PENDING
+   - Saturation: PENDING | Freshness: PENDING | Parcel: 095700720000 | Land use: SINGLE FAMILY
+   - Sources: lis_pendens
+6. **1473 Belmar Dr, Louisville, KY 40213** — THOMAS DEVUONO JADEN LEWIS & RIOZZI FRANCESCA
    - Priority: 61 | Distress: PENDING | AI: PENDING
    - Saturation: PENDING | Freshness: PENDING | Parcel: 085B02001269 | Land use: SINGLE FAMILY
    - Sources: lis_pendens
