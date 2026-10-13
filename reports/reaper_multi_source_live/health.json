@@ -3,10 +3,8 @@
   "blockers": [
     "live_ai_scoring_missing"
   ],
-  "warnings": [
-    "lojic_live_unavailable_using_verified_cache"
-  ],
-  "report_age_hours": 0.06,
+  "warnings": [],
+  "report_age_hours": 0.05,
   "source_exit_codes": {
     "lis_pendens": 0,
     "wills": 0,
@@ -14,11 +12,11 @@
     "tax_delinquent": 0
   },
   "summary": {
-    "input_candidates": 157,
-    "parcel_verified": 157,
-    "parcel_live_verified": 0,
-    "parcel_cache_verified": 157,
-    "pva_owner_verified": 157,
+    "input_candidates": 148,
+    "parcel_verified": 148,
+    "parcel_live_verified": 137,
+    "parcel_cache_verified": 11,
+    "pva_owner_verified": 148,
     "eligible_sfr": 0,
     "eligible_land": 0,
     "ai_scoring_status": null
