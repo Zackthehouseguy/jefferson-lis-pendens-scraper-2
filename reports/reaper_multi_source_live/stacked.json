@@ -1,9 +1,9 @@
 {
   "status": "PASS",
-  "generated_at_et": "2026-10-13T15:00:22.663481-04:00",
+  "generated_at_et": "2026-10-14T12:44:03.199098-04:00",
   "query_window": {
-    "start_date": "2026-10-10",
-    "end_date": "2026-10-13"
+    "start_date": "2026-10-11",
+    "end_date": "2026-10-14"
   },
   "source_status": {
     "lis_pendens": "OK",
