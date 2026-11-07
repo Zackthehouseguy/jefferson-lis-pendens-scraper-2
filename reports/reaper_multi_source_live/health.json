@@ -1,11 +1,10 @@
 {
   "status": "BLOCKED",
   "blockers": [
-    "report_stale:24.0h",
     "live_ai_scoring_missing"
   ],
   "warnings": [],
-  "report_age_hours": 23.97,
+  "report_age_hours": 0.17,
   "source_exit_codes": {
     "lis_pendens": 0,
     "wills": 0,
@@ -13,11 +12,11 @@
     "tax_delinquent": 0
   },
   "summary": {
-    "input_candidates": 542,
-    "parcel_verified": 542,
-    "parcel_live_verified": 161,
-    "parcel_cache_verified": 381,
-    "pva_owner_verified": 542,
+    "input_candidates": 524,
+    "parcel_verified": 524,
+    "parcel_live_verified": 339,
+    "parcel_cache_verified": 185,
+    "pva_owner_verified": 524,
     "eligible_sfr": 0,
     "eligible_land": 0,
     "ai_scoring_status": null
