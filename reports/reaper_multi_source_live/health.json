@@ -12,11 +12,11 @@
     "tax_delinquent": 0
   },
   "summary": {
-    "input_candidates": 558,
-    "parcel_verified": 558,
-    "parcel_live_verified": 105,
-    "parcel_cache_verified": 453,
-    "pva_owner_verified": 558,
+    "input_candidates": 592,
+    "parcel_verified": 592,
+    "parcel_live_verified": 197,
+    "parcel_cache_verified": 395,
+    "pva_owner_verified": 591,
     "eligible_sfr": 0,
     "eligible_land": 0,
     "ai_scoring_status": null
